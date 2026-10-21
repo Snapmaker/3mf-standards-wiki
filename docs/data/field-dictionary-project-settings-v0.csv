@@ -1,0 +1,833 @@
+﻿key,source_type,default_value,observed_in_samples,sample_value,note,category
+absolute_correction,coFloat,(new ConfigOptionFloat(0.0,-,,,SLA树脂流程专用
+accel_to_decel_enable,coBools,(new ConfigOptionBools{ true },Y,1,,落盘字段
+accel_to_decel_factor,coPercents,(new ConfigOptionPercents { 50. },Y,50%,,落盘字段
+activate_air_filtration,coBools,(new ConfigOptionBools{false},Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+activate_chamber_temp_control,coBools,(new ConfigOptionBools{false},Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+adaptive_bed_mesh_margin,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+adaptive_layer_height,coBool,(new ConfigOptionBool(0,-,,,GUI内部/废弃候选
+adaptive_pressure_advance,coBools,(new ConfigOptionBools{ false },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+adaptive_pressure_advance_bridges,coFloats,(new ConfigOptionFloats { 0.0 },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+adaptive_pressure_advance_model,coStrings,"(new ConfigOptionStrings{""0,0,0\n0,0,0""}",Y,"['0,0,0\n0,0,0', '0,0,0\n0,0,0', '0,0,0\n0,0,0', '0,0,0\n0,0,0', '0,0,0\n0,0,0',",,落盘字段
+adaptive_pressure_advance_overhangs,coBools,(new ConfigOptionBools{ false },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+additional_cooling_fan_speed,coInts,(new ConfigOptionInts { 0 },Y,"['70', '70', '70', '70', '70', '70', '70', '70', '70']",,落盘字段
+align_infill_direction_to_model,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+align_xy,coPoint,"(new ConfigOptionPoint(Vec2d(100,100",-,,,CLI动作参数
+allow_multicolor_oneplate,coBool,(new ConfigOptionBool(true,-,,,GUI内部/废弃候选
+allow_newer_file,coBool,(new  ConfigOptionBool(false,-,,,GUI内部/废弃候选
+allow_rotations,coBool,(new ConfigOptionBool(true,-,,,GUI内部/废弃候选
+alternate_extra_wall,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+area_fill,coFloat,(new ConfigOptionFloat(50.,-,,,SLA树脂流程专用
+arrange,coInt,(new ConfigOptionInt(0,-,,,CLI动作参数
+assemble,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+autosave,coString,(new ConfigOptionString(,-,,,GUI内部/废弃候选
+auxiliary_fan,coBool,(new ConfigOptionBool(false,Y,1,,落盘字段
+avoid_extrusion_cali_region,coBool,(new ConfigOptionBool(false,-,,,GUI内部/废弃候选
+bbl_calib_mark_logo,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+bbl_use_printhost,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+bed_custom_model,coString,(new ConfigOptionString(,Y,,,落盘字段
+bed_custom_texture,coString,(new ConfigOptionString(,Y,,,落盘字段
+bed_exclude_area,coPoints,"(new ConfigOptionPoints{ Vec2d(0, 0) }",Y,['0x0'],,落盘字段
+bed_mesh_max,coPoint,"(new ConfigOptionPoint(Vec2d(99999, 99999",Y,"99999,99999",,落盘字段
+bed_mesh_min,coPoint,"(new ConfigOptionPoint(Vec2d(-99999, -99999",Y,"-99999,-99999",,落盘字段
+bed_mesh_probe_distance,coPoint,"(new ConfigOptionPoint(Vec2d(50, 50",Y,"50,50",,落盘字段
+before_layer_change_gcode,coString,(new ConfigOptionString(,Y,";BEFORE_LAYER_CHANGE
+;[layer_z]
+G92 E0
+TIMELAPSE_TAKE_FRAME
+DEFECT_DETECTION_DET",,落盘字段
+best_object_pos,coPoint,"(new ConfigOptionPoint(Vec2d(0.5, 0.5",Y,"0.5,0.5",,落盘字段
+bottle_cost,coFloat,(new ConfigOptionFloat(0.0,-,,,SLA树脂流程专用
+bottle_volume,coFloat,(new ConfigOptionFloat(1000.0,-,,,SLA树脂流程专用
+bottle_weight,coFloat,(new ConfigOptionFloat(1.0,-,,,SLA树脂流程专用
+bottom_shell_layers,coInt,(new ConfigOptionInt(3,Y,3,,落盘字段
+bottom_shell_thickness,coFloat,(new ConfigOptionFloat(0.,Y,0,,落盘字段
+bottom_solid_infill_flow_ratio,coFloat,(new ConfigOptionFloat(1,Y,1,,落盘字段
+bottom_surface_density,coPercent,(new ConfigOptionPercent(100,Y,100%,,落盘字段
+bottom_surface_pattern,coEnum,(new ConfigOptionEnum<InfillPattern>(ipMonotonic,Y,monotonic,,落盘字段
+bridge_acceleration,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{50., true",Y,50%,,落盘字段
+bridge_angle,coFloat,(new ConfigOptionFloat(0.,Y,0,,落盘字段
+bridge_density,coPercent,(new ConfigOptionPercent(100,Y,100%,,落盘字段
+bridge_flow,coFloat,(new ConfigOptionFloat(1,Y,1,,落盘字段
+bridge_no_support,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+bridge_speed,coFloats,(new ConfigOptionFloats { 25. },Y,50,,落盘字段
+brim_ears,coBool,(new ConfigOptionBool(false,-,,,GUI内部/废弃候选
+brim_ears_detection_length,coFloat,(new ConfigOptionFloat(1,Y,1,,落盘字段
+brim_ears_max_angle,coFloat,(new ConfigOptionFloat(125,Y,125,,落盘字段
+brim_object_gap,coFloat,(new ConfigOptionFloat(0.,Y,0.1,,落盘字段
+brim_type,coEnum,(new ConfigOptionEnum<BrimType>(btAutoBrim,Y,auto_brim,,落盘字段
+brim_width,coFloat,(new ConfigOptionFloat(0.,Y,5,,落盘字段
+calib_flowrate_topinfill_special_order,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+center,coPoint,"(new ConfigOptionPoint(Vec2d(100,100",-,,,CLI动作参数
+chamber_temperature,coInts,(new ConfigOptionInts{0},Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+change_extrusion_role_gcode,coString,(new ConfigOptionString(,Y,,,落盘字段
+change_filament_gcode,coString,(new ConfigOptionString(,Y,";===== date: 20251213=====================
+; Change Tool[previous_extruder] -> T",,落盘字段
+clone_objects,coInts,(new ConfigOptionInts(,-,,,CLI动作参数
+close_fan_the_first_x_layers,coInts,(new ConfigOptionInts { 1 },Y,"['1', '1', '1', '1', '1', '1', '1', '1', '1']",,落盘字段
+compatible_machine_expression_group,coStrings,(new ConfigOptionStrings(,-,,,预设系统内部
+compatible_printers,coStrings,(new ConfigOptionStrings(,-,,,预设系统内部
+compatible_printers_condition,coString,(new ConfigOptionString(,-,,,预设系统内部
+compatible_prints,coStrings,(new ConfigOptionStrings(,-,,,预设系统内部
+compatible_prints_condition,coString,(new ConfigOptionString(,-,,,预设系统内部
+compatible_process_expression_group,coStrings,(new ConfigOptionStrings(,-,,,预设系统内部
+complete_print_exhaust_fan_speed,coInts,(new ConfigOptionInts{80},Y,"['70', '70', '70', '70', '70', '70', '70', '70', '70']",,落盘字段
+config_compatibility,coEnum,(new ConfigOptionEnum<ForwardCompatibilitySubstitutionRule>(,-,,,预设系统内部
+convert_unit,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+cool_plate_temp,coInts,(new ConfigOptionInts{ 35 },Y,"['30', '60', '30', '60', '60', '60', '30', '60', '30']",,落盘字段
+cool_plate_temp_initial_layer,coInts,(new ConfigOptionInts{ 35 },Y,"['30', '60', '30', '60', '60', '60', '30', '60', '30']",,落盘字段
+cooling_tube_length,coFloat,(new ConfigOptionFloat(5.,Y,5,,落盘字段
+cooling_tube_retraction,coFloat,(new ConfigOptionFloat(91.5,Y,91.5,,落盘字段
+copy,coInt,(new ConfigOptionInt(1,-,,,CLI动作参数
+counterbore_hole_bridging,coEnum,(new ConfigOptionEnum<CounterboreHoleBridgingOption>(chbNone,Y,none,,落盘字段
+curr_bed_type,coEnum,(new ConfigOptionEnum<BedType>(btPC,Y,Textured PEI Plate,,落盘字段
+current_extruder,coInt,,-,,,运行时派生状态
+current_object_idx,coInt,,-,,,运行时派生状态
+cut,coFloat,(new ConfigOptionFloat(0,-,,,CLI动作参数
+cut_grid,coFloat,(new ConfigOptionPoint(,-,,,CLI动作参数
+cut_x,coFloat,(new ConfigOptionFloat(0,-,,,CLI动作参数
+cut_y,coFloat,(new ConfigOptionFloat(0,-,,,CLI动作参数
+datadir,coString,(new ConfigOptionString(,-,,,CLI动作参数
+day,coInt,,-,,,运行时派生状态
+debug,coInt,(new ConfigOptionInt(1,-,,,CLI动作参数
+default_acceleration,coFloats,(new ConfigOptionFloats { 500.0 },Y,10000,,落盘字段
+default_bed_type,coString,(new ConfigOptionString(,Y,Textured PEI Plate,,落盘字段
+default_filament_colour,coStrings,"(new ConfigOptionStrings{""""}",Y,"['', '', '', '', '', '', '', '', '']",,落盘字段
+default_filament_profile,coStrings,(new ConfigOptionStrings(,Y,['Snapmaker PLA'],,落盘字段
+default_jerk,coFloats,(new ConfigOptionFloats { 0. },Y,0,,落盘字段
+default_junction_deviation,coFloats,(new ConfigOptionFloats { 0. },Y,0,,落盘字段
+default_print_profile,coString,(new ConfigOptionString(,Y,0.20 Standard @Snapmaker U1 (0.4 nozzle),,落盘字段
+default_sla_material_profile,coString,(new ConfigOptionString(,-,,,SLA树脂流程专用
+default_sla_print_profile,coString,(new ConfigOptionString(,-,,,SLA树脂流程专用
+delta_temperature,coInt,(new ConfigOptionInt(0,Y,0,,落盘字段
+deretraction_speed,coFloats,(new ConfigOptionFloats { 0. },Y,"['30', '30', '30', '30']",,落盘字段
+detect_narrow_internal_solid_infill,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+detect_overhang_wall,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+detect_thin_wall,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+different_settings_to_system,coStrings,(new ConfigOptionStrings(,Y,['bottom_shell_layers;brim_type;default_acceleration;enable_support;infill_direc,,落盘字段
+disable_m73,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+display_height,coFloat,(new ConfigOptionFloat(68.,-,,,SLA树脂流程专用
+display_mirror_x,coBool,(new ConfigOptionBool(true,-,,,SLA树脂流程专用
+display_mirror_y,coBool,(new ConfigOptionBool(false,-,,,SLA树脂流程专用
+display_orientation,coEnum,(new ConfigOptionEnum<SLADisplayOrientation>(sladoPortrait,-,,,SLA树脂流程专用
+display_pixels_x,coInt,(new ConfigOptionInt(2560,-,,,SLA树脂流程专用
+display_pixels_y,coInt,(new ConfigOptionInt(1440,-,,,SLA树脂流程专用
+display_width,coFloat,(new ConfigOptionFloat(120.,-,,,SLA树脂流程专用
+dithering_local_z_direct_multicolor,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+dithering_local_z_infill,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+dithering_local_z_mode,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+dithering_local_z_whole_objects,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+dithering_step_painted_zones_only,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+dithering_z_step_size,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+dont_filter_internal_bridges,coEnum,(new ConfigOptionEnum<InternalBridgeFilter>(ibfDisabled,Y,disabled,,落盘字段
+dont_slow_down_outer_wall,coBools,(new ConfigOptionBools { false },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+downward_check,coBool,(new ConfigOptionBool(false,-,,,SLA树脂流程专用
+downward_settings,coStrings,(new ConfigOptionStrings(,-,,,SLA树脂流程专用
+draft_shield,coEnum,(new ConfigOptionEnum<DraftShield>(dsDisabled,Y,disabled,,落盘字段
+duplicate_grid,coPoint,(new ConfigOptionBool(false,-,,,CLI动作参数
+during_print_exhaust_fan_speed,coInts,(new ConfigOptionInts{60},Y,"['70', '70', '70', '70', '70', '70', '70', '70', '70']",,落盘字段
+e_position,coFloats,,-,,,运行时派生状态
+e_restart_extra,coFloats,,-,,,运行时派生状态
+e_retracted,coFloats,,-,,,运行时派生状态
+elefant_foot_compensation,coFloat,(new ConfigOptionFloat(0.,Y,0.15,,落盘字段
+elefant_foot_compensation_layers,coInt,(new ConfigOptionInt(1,Y,1,,落盘字段
+elefant_foot_min_width,coFloat,(new ConfigOptionFloat(0.2,-,,,SLA树脂流程专用
+emit_machine_limits_to_gcode,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+enable_arc_fitting,coBool,(new ConfigOptionBool(0,Y,0,,落盘字段
+enable_change_pressure_when_wiping,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+enable_extra_bridge_layer,coEnum,,Y,disabled,,落盘字段
+enable_filament_ramming,coBool,(new ConfigOptionBool(true,Y,0,,落盘字段
+enable_long_retraction_when_cut,coInt,(new ConfigOptionInt {0},Y,0,,落盘字段
+enable_overhang_bridge_fan,coBools,(new ConfigOptionBools{ true },Y,"['1', '1', '1', '1', '1', '1', '1', '1', '1']",,落盘字段
+enable_overhang_speed,coBools,(new ConfigOptionBools{ true },Y,1,,落盘字段
+enable_pressure_advance,coBools,(new ConfigOptionBools{ false },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+enable_prime_tower,coBool,(new ConfigOptionBool(false,Y,1,,落盘字段
+enable_support,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+enable_timelapse,coBool,(new ConfigOptionBool(false,-,,,GUI内部/废弃候选
+enforce_support_layers,coInt,(new ConfigOptionInt(0,Y,0,,落盘字段
+eng_plate_temp,coInts,(new ConfigOptionInts{ 45 },Y,"['30', '60', '30', '60', '60', '60', '30', '60', '30']",,落盘字段
+eng_plate_temp_initial_layer,coInts,(new ConfigOptionInts{ 45 },Y,"['30', '60', '30', '60', '60', '60', '30', '60', '30']",,落盘字段
+ensure_on_bed,coBool,(new ConfigOptionBool(false,-,,,GUI内部/废弃候选
+ensure_vertical_shell_thickness,coEnum,(new ConfigOptionEnum<EnsureVerticalShellThickness>(EnsureVe,Y,ensure_all,,落盘字段
+exclude_object,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+export_3mf,coString,"(new ConfigOptionString(""output.3mf""",-,,,CLI动作参数
+export_amf,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+export_gcode,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+export_obj,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+export_settings,coString,"(new ConfigOptionString(""output.json""",-,,,CLI动作参数
+export_sla,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+export_slicedata,coString,"(new ConfigOptionString(""cached_data""",-,,,CLI动作参数
+export_stl,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+export_stls,coString,"(new ConfigOptionString(""stl_path""",-,,,CLI动作参数
+export_svg,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+exposure_time,coFloat,(new ConfigOptionFloat(10,-,,,SLA树脂流程专用
+extra_loading_move,coFloat,(new ConfigOptionFloat(-2.,Y,-2,,落盘字段
+extra_perimeters_on_overhangs,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+extra_solid_infills,coString,(new ConfigOptionString(,Y,,,落盘字段
+extruded_volume,coFloats,,-,,,运行时派生状态
+extruded_volume_total,coFloat,,-,,,运行时派生状态
+extruded_weight,coFloats,,-,,,运行时派生状态
+extruded_weight_total,coFloat,,-,,,运行时派生状态
+extruder,coInt,(new ConfigOptionInt{0},-,,,运行时派生状态
+extruder_clearance_height_to_lid,coFloat,(new ConfigOptionFloat(120,Y,140,,落盘字段
+extruder_clearance_height_to_rod,coFloat,(new ConfigOptionFloat(40,Y,27.5,,落盘字段
+extruder_clearance_radius,coFloat,(new ConfigOptionFloat(40,Y,72.5,,落盘字段
+extruder_colour,coStrings,"(new ConfigOptionStrings { """" }",Y,"['#FCE94F', '#FCE94F', '#FCE94F', '#FCE94F']",,落盘字段
+extruder_offset,coPoints,"(new ConfigOptionPoints { Vec2d(0,0) }",Y,"['0x0', '0x0', '0x0', '0x0']",,落盘字段
+extrusion_rate_smoothing_external_perimeter_only,coBools,(new ConfigOptionBools{ false },Y,0,,落盘字段
+faded_layers,coInt,(new ConfigOptionInt(10,-,,,SLA树脂流程专用
+fan_cooling_layer_time,coFloats,(new ConfigOptionFloats{ 60.0f },Y,"['40', '100', '40', '100', '100', '100', '40', '100', '40']",,落盘字段
+fan_kickstart,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+fan_max_speed,coFloats,(new ConfigOptionFloats { 100 },Y,"['50', '100', '50', '100', '100', '100', '50', '100', '50']",,落盘字段
+fan_min_speed,coFloats,(new ConfigOptionFloats { 20 },Y,"['10', '100', '10', '100', '100', '100', '10', '100', '10']",,落盘字段
+fan_speedup_overhangs,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+fan_speedup_time,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+fast_tilt_time,coFloat,(new ConfigOptionFloat(5.,-,,,SLA树脂流程专用
+filament_colour,coStrings,"(new ConfigOptionStrings{ ""#F2754E"" }",Y,"['#0080FF', '#F3D6E6', '#33A259', '#808080', '#F88E0E', '#F0C002', '#585F69', '#",,落盘字段
+filament_colour_mode,coInts,(new ConfigOptionInts{ 0 },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+filament_cooling_final_speed,coFloats,(new ConfigOptionFloats { 3.4 },Y,"['3.4', '3.5', '3.4', '3.5', '3.5', '3.5', '3.4', '3.5', '3.4']",,落盘字段
+filament_cooling_initial_speed,coFloats,(new ConfigOptionFloats { 2.2 },Y,"['2.2', '10', '2.2', '10', '10', '10', '2.2', '10', '2.2']",,落盘字段
+filament_cooling_moves,coInts,(new ConfigOptionInts { 4 },Y,"['4', '2', '4', '2', '2', '2', '4', '2', '4']",,落盘字段
+filament_cost,coFloats,(new ConfigOptionFloats { 0. },Y,"['20', '20', '20', '20', '20', '20', '20', '20', '20']",,落盘字段
+filament_density,coFloats,(new ConfigOptionFloats { 0. },Y,"['1.24', '1.24', '1.24', '1.24', '1.24', '1.24', '1.24', '1.24', '1.24']",,落盘字段
+filament_deretraction_speed,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",,落盘字段
+filament_diameter,coFloats,(new ConfigOptionFloats { 1.75 },Y,"['1.75', '1.75', '1.75', '1.75', '1.75', '1.75', '1.75', '1.75', '1.75']",,落盘字段
+filament_end_gcode,coStrings,"(new ConfigOptionStrings { "" "" }",Y,"['; filament end gcode \n\n', '; filament end gcode \n', '; filament end gcode \",,落盘字段
+filament_extruder_id,coInt,,-,,,运行时派生状态
+filament_flow_ratio,coFloats,(new ConfigOptionFloats { 1. },Y,"['1.067', '0.966', '1.067', '0.966', '0.966', '0.966', '1.067', '0.966', '1.067'",,落盘字段
+filament_flow_step_size,coInts,(new ConfigOptionInts { 1 },Y,"['2', '2', '2', '2']",,落盘字段
+filament_flow_support,coStrings,(new ConfigOptionStrings { FLOW_MODE_STANDARD },Y,"['standard', 'high_flow', 'standard', 'high_flow', 'standard', 'high_flow', 'sta",,落盘字段
+filament_grouping_mode,coString,(new ConfigOptionString(FILAMENT_GROUPING_STANDARD,Y,custom,,落盘字段
+filament_ids,coStrings,(new ConfigOptionStrings(,Y,"['GFU99', '119531393501', 'GFU99', '119531393501', '119531393501', '119531393501",,落盘字段
+filament_is_high_temperature,coBools,(new ConfigOptionBools{false},Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+filament_is_support,coBools,(new ConfigOptionBools { false },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+filament_loading_speed,coFloats,(new ConfigOptionFloats { 28. },Y,"['28', '10', '28', '10', '10', '10', '28', '10', '28']",,落盘字段
+filament_loading_speed_start,coFloats,(new ConfigOptionFloats { 3. },Y,"['3', '50', '3', '50', '50', '50', '3', '50', '3']",,落盘字段
+filament_long_retractions_when_cut,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",,落盘字段
+filament_max_volumetric_speed,coFloats,(new ConfigOptionFloats { 2. },Y,"['9', '20', '9', '20', '20', '20', '9', '20', '9']",,落盘字段
+filament_minimal_purge_on_wipe_tower,coFloats,(new ConfigOptionFloats { 15. },Y,"['15', '15', '15', '15', '15', '15', '15', '15', '15']",,落盘字段
+filament_multi_colors,coStrings,"(new ConfigOptionStrings{ """" }",Y,"['#0080FF', '#F3D6E6', '#33A259', '#808080', '#F88E0E', '#F0C002', '#585F69', '#",,落盘字段
+filament_multitool_ramming,coBools,(new ConfigOptionBools { false },Y,"['1', '1', '1', '1', '1', '1', '1', '1', '1']",,落盘字段
+filament_multitool_ramming_flow,coFloats,(new ConfigOptionFloats { 10. },Y,"['10', '30', '10', '30', '30', '30', '10', '30', '10']",,落盘字段
+filament_multitool_ramming_volume,coFloats,(new ConfigOptionFloats { 10. },Y,"['0.1', '5', '0.1', '5', '5', '5', '0.1', '5', '0.1']",,落盘字段
+filament_notes,coStrings,"(new ConfigOptionStrings { """" }",Y,"['', '', '', '', '', '', '', '', '']",,落盘字段
+filament_preset,coString,,-,,,预设系统内部
+filament_ramming_parameters,coStrings,(new ConfigOptionBools { false },Y,['120 100 6.6 6.8 7.2 7.6 7.9 8.2 8.7 9.4 9.9 10.0| 0.05 6.6 0.45 6.8 0.95 7.8 1,,落盘字段
+filament_retract_before_wipe,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retract_length_toolchange,,,Y,"['6', '5', '6', '5', '5', '5', '6', '5', '6']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retract_lift_above,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retract_lift_below,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retract_lift_enforce,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retract_restart_extra,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retract_restart_extra_toolchange,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retract_when_changing_layer,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retraction_distances_when_cut,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retraction_length,,,Y,"['1', '1.2', '1', '1.2', '1.2', '1.2', '1', '1.2', '1']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retraction_minimum_travel,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_retraction_speed,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",serialized name differs from source def (legacy prefix),落盘字段
+filament_settings_id,coStrings,"(new ConfigOptionStrings { """" }",Y,"['Snapmaker TPU 95A HF @U1(iPhone 16 系列几何纹理手机壳_MOSS 3D.3mf)', 'Snapmaker PLA Sna",,落盘字段
+filament_shrink,coPercents,(new ConfigOptionPercents{ 100 },Y,"['100%', '100%', '100%', '100%', '100%', '100%', '100%', '100%', '100%']",,落盘字段
+filament_shrinkage_compensation_z,coPercents,(new ConfigOptionPercents{ 100 },Y,"['100%', '100%', '100%', '100%', '100%', '100%', '100%', '100%', '100%']",,落盘字段
+filament_soluble,coBools,(new ConfigOptionBools { false },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+filament_stamping_distance,coFloats,(new ConfigOptionFloats { 0. },Y,"['0', '45', '0', '45', '45', '45', '0', '45', '0']",,落盘字段
+filament_stamping_loading_speed,coFloats,(new ConfigOptionFloats { 0. },Y,"['0', '29', '0', '29', '29', '29', '0', '29', '0']",,落盘字段
+filament_start_gcode,coStrings,"(new ConfigOptionStrings { "" "" }",Y,"['; filament start gcode\n', '; filament start gcode\n', '; filament start gcode",,落盘字段
+filament_toolchange_delay,coFloats,(new ConfigOptionFloats { 0. },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+filament_tower_ironing_area,coFloats,(new ConfigOptionFloats{4.},Y,"['4', '4', '4', '4', '4', '4', '4', '4', '4']",,落盘字段
+filament_type,coStrings,"(new ConfigOptionStrings { ""PLA"" }",Y,"['TPU', 'PLA', 'TPU', 'PLA', 'PLA', 'PLA', 'TPU', 'PLA', 'TPU']",,落盘字段
+filament_unloading_speed,coFloats,(new ConfigOptionFloats { 90. },Y,"['90', '100', '90', '100', '100', '100', '90', '100', '90']",,落盘字段
+filament_unloading_speed_start,coFloats,(new ConfigOptionFloats { 100. },Y,"['100', '100', '100', '100', '100', '100', '100', '100', '100']",,落盘字段
+filament_vendor,coStrings,"(new ConfigOptionStrings{L(""(Undefined)"")}",Y,"['Snapmaker', 'Snapmaker', 'Snapmaker', 'Snapmaker', 'Snapmaker', 'Snapmaker', '",,落盘字段
+filament_volume_type,coEnums,(new ConfigOptionEnumsGeneric { fvtStandard },Y,"['high_flow', 'high_flow', 'high_flow', 'high_flow']",,落盘字段
+filament_wipe,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",,落盘字段
+filament_wipe_distance,,,Y,"['nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil', 'nil']",,落盘字段
+filament_z_hop,,,Y,"['nil', '0.4', 'nil', '0.4', '0.4', '0.4', 'nil', '0.4', 'nil']",,落盘字段
+filament_z_hop_types,,,Y,"['nil', 'Slope Lift', 'nil', 'Slope Lift', 'Slope Lift', 'Slope Lift', 'nil', 'S",,落盘字段
+filename_format,coString,"(new ConfigOptionString(""{input_filename_base}_{filament_typ",Y,{input_filename_base}_{filament_type[0]}_{print_time}.gcode,,落盘字段
+fill_multiline,coInt,(new ConfigOptionInt(1,Y,1,,落盘字段
+filter_out_gap_fill,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+first_layer_print_convex_hull,coPoints,,-,,,运行时派生状态
+first_layer_print_max,coFloats,,-,,,运行时派生状态
+first_layer_print_min,coFloats,,-,,,运行时派生状态
+first_layer_print_sequence,coInts,(new ConfigOptionInts{0},Y,['0'],,落盘字段
+first_layer_print_size,coFloats,,-,,,运行时派生状态
+first_layer_sequence_choice,coEnum,(new ConfigOptionEnum<LayerSeq>(flsAuto,-,,,GUI内部/废弃候选
+flush_into_infill,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+flush_into_objects,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+flush_into_support,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+flush_multiplier,coFloat,(new ConfigOptionFloat(0.3,Y,1,,落盘字段
+flush_volumes_matrix,coFloats,(new ConfigOptionFloat(0.3,Y,"['0', '643', '411', '442', '552', '601', '283', '684', '442', '390', '0', '288',",,落盘字段
+flush_volumes_vector,coFloats,"(new ConfigOptionFloats { 140.f, 140.f, 140.f, 140.f, 140.f,",Y,"['140', '140', '140', '140', '140', '140', '140', '140', '140', '140', '140', '1",,落盘字段
+full_fan_speed_layer,coInts,(new ConfigOptionInts { 0 },Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+fuzzy_skin,coEnum,(new ConfigOptionEnum<FuzzySkinType>(FuzzySkinType::None,Y,none,,落盘字段
+fuzzy_skin_first_layer,coBool,(new ConfigOptionBool(0,Y,0,,落盘字段
+fuzzy_skin_mode,coEnum,(new ConfigOptionEnum<FuzzySkinMode>(FuzzySkinMode::Displace,Y,displacement,,落盘字段
+fuzzy_skin_noise_type,coEnum,(new ConfigOptionEnum<NoiseType>(NoiseType::Classic,Y,classic,,落盘字段
+fuzzy_skin_octaves,coInt,(new ConfigOptionInt(4,Y,4,,落盘字段
+fuzzy_skin_persistence,coFloat,(new ConfigOptionFloat(0.5,Y,0.5,,落盘字段
+fuzzy_skin_point_distance,coFloat,(new ConfigOptionFloat(0.3,Y,0.3,,落盘字段
+fuzzy_skin_scale,coFloat,(new ConfigOptionFloat(1.0,Y,1,,落盘字段
+fuzzy_skin_thickness,coFloat,(new ConfigOptionFloat(0.2,Y,0.2,,落盘字段
+gamma_correction,coFloat,(new ConfigOptionFloat(1.0,-,,,SLA树脂流程专用
+gap_fill_target,coEnum,(new ConfigOptionEnum<GapFillTarget>(gftNowhere,Y,topbottom,,落盘字段
+gap_infill_speed,coFloats,(new ConfigOptionFloats { 30. },Y,230,,落盘字段
+gcode_add_line_number,coBool,(new ConfigOptionBool(0,Y,0,,落盘字段
+gcode_comments,coBool,(new ConfigOptionBool(0,Y,0,,落盘字段
+gcode_flavor,coEnum,(new ConfigOptionEnum<GCodeFlavor>(gcfMarlinLegacy,Y,klipper,,落盘字段
+gcode_label_objects,coBool,(new ConfigOptionBool(1,Y,1,,落盘字段
+gcodeviewer,coBool,(new ConfigOptionBool(false,-,,,GUI内部/废弃候选
+graphic_effect_plate_temp,coInts,(new ConfigOptionInts{0},Y,"['35', '65', '35', '65', '65', '65', '35', '65', '35']",,落盘字段
+graphic_effect_plate_temp_initial_layer,coInts,(new ConfigOptionInts{0},Y,"['35', '65', '35', '65', '65', '65', '35', '65', '35']",,落盘字段
+has_scarf_joint_seam,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+has_single_extruder_multi_material_priming,coBool,,-,,,GUI内部/废弃候选
+has_wipe_tower,coBool,,-,,,运行时派生状态
+head_wrap_detect_zone,coPoints,(new ConfigOptionPoints{},Y,[],,落盘字段
+help,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+help_fff,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+help_sla,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+high_current_on_filament_swap,coBool,(new ConfigOptionBool(0,Y,0,,落盘字段
+hole_to_polyhole,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+hole_to_polyhole_threshold,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0.01, false",Y,0.01,,落盘字段
+hole_to_polyhole_twisted,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+hollowing_closing_distance,coFloat,(new ConfigOptionFloat(2.0,-,,,SLA树脂流程专用
+hollowing_enable,coBool,(new ConfigOptionBool(false,-,,,SLA树脂流程专用
+hollowing_min_thickness,coFloat,(new ConfigOptionFloat(3.,-,,,SLA树脂流程专用
+hollowing_quality,coFloat,(new ConfigOptionFloat(0.5,-,,,SLA树脂流程专用
+host_type,coEnum,(new ConfigOptionEnum<PrintHostType>(htOctoPrint,Y,octoprint,,落盘字段
+hot_plate_temp,coInts,(new ConfigOptionInts{ 45 },Y,"['35', '65', '35', '65', '65', '65', '35', '65', '35']",,落盘字段
+hot_plate_temp_initial_layer,coInts,(new ConfigOptionInts{ 45 },Y,"['35', '65', '35', '65', '65', '65', '35', '65', '35']",,落盘字段
+hour,coInt,,-,,,运行时派生状态
+idle_temperature,coInts,(new ConfigOptionInts{0},Y,"['0', '0', '0', '0', '0', '0', '0', '0', '0']",,落盘字段
+ignore_nonexistent_config,coBool,(new ConfigOptionEnum<ForwardCompatibilitySubstitutionRule>(,-,,,CLI动作参数
+independent_support_layer_height,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+infill_anchor,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(400, true",Y,400%,,落盘字段
+infill_anchor_max,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(20, false",Y,20,,落盘字段
+infill_combination,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+infill_combination_max_layer_height,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(100., true",Y,100%,,落盘字段
+infill_direction,coFloat,(new ConfigOptionFloat(45,Y,45,,落盘字段
+infill_jerk,coFloats,(new ConfigOptionFloats { 9. },Y,9,,落盘字段
+infill_lock_depth,coFloat,(new ConfigOptionFloat(1.0,Y,1,,落盘字段
+infill_overhang_angle,coFloat,(new ConfigOptionFloat(60,Y,60,,落盘字段
+infill_shift_step,coFloat,(new ConfigOptionFloat(0.4,Y,0.4,,落盘字段
+infill_wall_overlap,coPercent,(new ConfigOptionPercent(15,Y,15%,,落盘字段
+info,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+inherits,coString,(new ConfigOptionString(,-,,,预设系统内部
+inherits_group,coStrings,(new ConfigOptionStrings(,Y,"['', '', '', '', '', '', '', '', '', '', 'Snapmaker TPU 90A @U1', '', '']",,落盘字段
+initial_exposure_time,coFloat,(new ConfigOptionFloat(15,-,,,SLA树脂流程专用
+initial_extruder,coInt,,-,,,运行时派生状态
+initial_filament_type,coString,,-,,,运行时派生状态
+initial_layer_acceleration,coFloats,(new ConfigOptionFloats { 300. },Y,500,,落盘字段
+initial_layer_height,coFloat,(new ConfigOptionFloat(0.3,-,,,GUI内部/废弃候选
+initial_layer_infill_speed,coFloats,(new ConfigOptionFloats { 60. },Y,105,,落盘字段
+initial_layer_jerk,coFloats,(new ConfigOptionFloats { 9. },Y,9,,落盘字段
+initial_layer_line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0., false",Y,0.5,,落盘字段
+initial_layer_min_bead_width,coPercent,(new ConfigOptionPercent(85,Y,85%,,落盘字段
+initial_layer_print_height,coFloat,(new ConfigOptionFloat(0.2,Y,0.2,,落盘字段
+initial_layer_speed,coFloats,(new ConfigOptionFloats { 30. },Y,50,,落盘字段
+initial_layer_travel_speed,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{100., tru",Y,100%,,落盘字段
+initial_tool,coInt,,-,,,运行时派生状态
+inner_wall_acceleration,coFloats,(new ConfigOptionFloats { 10000. },Y,10000,,落盘字段
+inner_wall_jerk,coFloats,(new ConfigOptionFloats { 9. },Y,9,,落盘字段
+inner_wall_line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0., false",Y,0.45,,落盘字段
+inner_wall_speed,coFloats,(new ConfigOptionFloats { 60. },Y,230,,落盘字段
+input_filename_base,coString,,-,,,运行时派生状态
+interface_shells,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+interlocking_beam,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+interlocking_beam_layer_count,coInt,(new ConfigOptionInt(2,Y,2,,落盘字段
+interlocking_beam_width,coFloat,(new ConfigOptionFloat(0.8,Y,0.8,,落盘字段
+interlocking_boundary_avoidance,coInt,(new ConfigOptionInt(2,Y,2,,落盘字段
+interlocking_depth,coInt,(new ConfigOptionInt(2,Y,2,,落盘字段
+interlocking_orientation,coFloat,(new ConfigOptionFloat(22.5,Y,22.5,,落盘字段
+internal_bridge_angle,coFloat,(new ConfigOptionFloat(0.,Y,0,,落盘字段
+internal_bridge_density,coPercent,(new ConfigOptionPercent(100,Y,100%,,落盘字段
+internal_bridge_fan_speed,coInts,(new ConfigOptionInts{ -1 },Y,"['-1', '-1', '-1', '-1', '-1', '-1', '-1', '-1', '-1']",,落盘字段
+internal_bridge_flow,coFloat,(new ConfigOptionFloat(1,Y,1,,落盘字段
+internal_bridge_speed,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{150., tru",Y,150%,,落盘字段
+internal_solid_infill_acceleration,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{100., tru",Y,100%,,落盘字段
+internal_solid_infill_line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0., false",Y,0.42,,落盘字段
+internal_solid_infill_pattern,coEnum,(new ConfigOptionEnum<InfillPattern>(ipMonotonic,Y,monotonic,,落盘字段
+internal_solid_infill_speed,coFloats,(new ConfigOptionFloats { 100. },Y,230,,落盘字段
+ironing_angle,coFloat,(new ConfigOptionFloat(-1,Y,-1,,落盘字段
+ironing_fan_speed,coInts,(new ConfigOptionInts{ -1 },Y,"['-1', '-1', '-1', '-1', '-1', '-1', '-1', '-1', '-1']",,落盘字段
+ironing_flow,coPercent,(new ConfigOptionPercent(10,Y,10%,,落盘字段
+ironing_inset,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+ironing_pattern,coEnum,(new ConfigOptionEnum<InfillPattern>(ipRectilinear,Y,rectilinear,,落盘字段
+ironing_spacing,coFloat,(new ConfigOptionFloat(0.1,Y,0.15,,落盘字段
+ironing_speed,coFloats,(new ConfigOptionFloats { 20. },Y,30,,落盘字段
+ironing_type,coEnum,(new ConfigOptionEnum<IroningType>(IroningType::NoIroning,Y,no ironing,,落盘字段
+is_extruder_used,coBools,,-,,,运行时派生状态
+is_infill_first,coBool,(new ConfigOptionBool{false},Y,0,,落盘字段
+lateral_lattice_angle_1,coFloat,(new ConfigOptionFloat(-45,Y,-45,,落盘字段
+lateral_lattice_angle_2,coFloat,(new ConfigOptionFloat(45,Y,45,,落盘字段
+layer_change_gcode,coString,(new ConfigOptionString(,Y,";AFTER_LAYER_CHANGE
+;[layer_z]
+SET_PRINT_STATS_INFO TOTAL_LAYER={total_layer_cou",,落盘字段
+layer_height,coFloat,(new ConfigOptionFloat(0.2,Y,0.24,,落盘字段
+layer_num,coInt,,-,,,运行时派生状态
+layer_z,coFloat,,-,,,运行时派生状态
+line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0, false",Y,0.42,,落盘字段
+load,coStrings,(new ConfigOptionStrings(,-,,,CLI动作参数
+load_assemble_list,coString,(new ConfigOptionString(,-,,,CLI动作参数
+load_custom_gcodes,coString,(new ConfigOptionString(,-,,,CLI动作参数
+load_defaultfila,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+load_filament_ids,coInts,(new ConfigOptionInts(,-,,,CLI动作参数
+load_filaments,coStrings,(new ConfigOptionStrings(,-,,,CLI动作参数
+load_settings,coStrings,(new ConfigOptionStrings(,-,,,CLI动作参数
+load_slicedata,coStrings,"(new ConfigOptionString(""cached_data""",-,,,CLI动作参数
+local_z_wipe_tower_purge_lines,coFloat,(new ConfigOptionFloat(3.0,Y,3,,落盘字段
+long_retractions_when_cut,coBools,(new ConfigOptionBools {false},Y,"['0', '0', '0', '0']",,落盘字段
+machine_end_gcode,coString,"(new ConfigOptionString(""M104 S0",Y,"{if print_sequence == ""by object""}
+G91
+G1 X2 Y2 Z1 F24000
+G90
+G1 Z{max_layer_z+2",,落盘字段
+machine_load_filament_time,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+machine_max_acceleration_e,,,Y,"['5000', '5000']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_acceleration_extruding,coFloats,"(new ConfigOptionFloats{ 1500., 1250. }",Y,"['20000', '20000']",,落盘字段
+machine_max_acceleration_retracting,coFloats,"(new ConfigOptionFloats{ 1500., 1250. }",Y,"['5000', '5000']",,落盘字段
+machine_max_acceleration_travel,coFloats,"(new ConfigOptionFloats{ 0., 0. }",Y,"['20000', '20000']",,落盘字段
+machine_max_acceleration_x,,,Y,"['20000', '20000']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_acceleration_y,,,Y,"['20000', '20000']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_acceleration_z,,,Y,"['500', '200']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_jerk_e,,,Y,"['2.5', '2.5']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_jerk_x,,,Y,"['9', '9']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_jerk_y,,,Y,"['9', '9']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_jerk_z,,,Y,"['3', '0.4']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_junction_deviation,coFloats,"(new ConfigOptionFloats{0. ,0. }",Y,"['0', '0']",,落盘字段
+machine_max_speed_e,,,Y,"['30', '25']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_speed_x,,,Y,"['500', '200']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_speed_y,,,Y,"['500', '200']",serialized name differs from source def (legacy prefix),落盘字段
+machine_max_speed_z,,,Y,"['20', '12']",serialized name differs from source def (legacy prefix),落盘字段
+machine_min_extruding_rate,coFloats,"(new ConfigOptionFloats{ 0., 0. }",Y,"['0', '0']",,落盘字段
+machine_min_travel_rate,coFloats,"(new ConfigOptionFloats{ 0., 0. }",Y,"['0', '0']",,落盘字段
+machine_pause_gcode,coString,(new ConfigOptionString(,Y,M600,,落盘字段
+machine_start_gcode,coString,"(new ConfigOptionString(""G28",Y,";===== date: 20260128 =====================
+
+PRINT_START
+DEFECT_DETECTION_START
+",,落盘字段
+machine_tool_change_time,coFloat,(new ConfigOptionFloat { 0. },Y,5,,落盘字段
+machine_unload_filament_time,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+make_overhang_printable,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+make_overhang_printable_angle,coFloat,(new ConfigOptionFloat(55.,Y,55,,落盘字段
+make_overhang_printable_hole_size,coFloat,(new ConfigOptionFloat(0.,Y,0,,落盘字段
+makerlab_name,coString,(new ConfigOptionString(,-,,,GUI内部/废弃候选
+makerlab_version,coString,(new ConfigOptionString(,-,,,GUI内部/废弃候选
+manual_filament_change,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+material_colour,coString,"(new ConfigOptionString(""#29B2B2""",-,,,SLA树脂流程专用
+material_correction,coFloats,"(new ConfigOptionFloats( { 1., 1., 1. } ",-,,,SLA树脂流程专用
+material_correction_x,coFloat,(new ConfigOptionFloat(1.,-,,,SLA树脂流程专用
+material_correction_y,coFloat,(new ConfigOptionFloat(1.,-,,,SLA树脂流程专用
+material_correction_z,coFloat,(new ConfigOptionFloat(1.,-,,,SLA树脂流程专用
+material_density,coFloat,(new ConfigOptionFloat(1.0,-,,,SLA树脂流程专用
+material_print_speed,coEnum,(new ConfigOptionEnum<SLAMaterialSpeed>(slamsFast,-,,,SLA树脂流程专用
+material_type,coString,"(new ConfigOptionString(""Tough""",-,,,SLA树脂流程专用
+material_vendor,coString,(new ConfigOptionString(,-,,,SLA树脂流程专用
+max_bridge_length,coFloat,(new ConfigOptionFloat(10,Y,10,,落盘字段
+max_exposure_time,coFloat,(new ConfigOptionFloat(100,-,,,SLA树脂流程专用
+max_initial_exposure_time,coFloat,(new ConfigOptionFloat(150,-,,,SLA树脂流程专用
+max_layer_height,coFloats,(new ConfigOptionFloats { 0. },Y,"['0.32', '0.32', '0.32', '0.32']",,落盘字段
+max_layer_z,coFloat,,-,,,运行时派生状态
+max_resonance_avoidance_speed,coFloat,(new ConfigOptionFloat(120,Y,120,,落盘字段
+max_travel_detour_distance,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0., false",Y,0,,落盘字段
+max_volumetric_extrusion_rate_slope,coFloats,(new ConfigOptionFloats { 0. },Y,0,,落盘字段
+max_volumetric_extrusion_rate_slope_segment_length,coFloats,(new ConfigOptionFloats { 3. },Y,3,,落盘字段
+metadata_name,coStrings,(new ConfigOptionStrings(,-,,,运行时派生状态
+metadata_value,coStrings,(new ConfigOptionStrings(,-,,,运行时派生状态
+min_bead_width,coPercent,(new ConfigOptionPercent(85,Y,85%,,落盘字段
+min_exposure_time,coFloat,(new ConfigOptionFloat(0,-,,,SLA树脂流程专用
+min_feature_size,coPercent,(new ConfigOptionPercent(25,Y,25%,,落盘字段
+min_initial_exposure_time,coFloat,(new ConfigOptionFloat(0,-,,,SLA树脂流程专用
+min_layer_height,coFloats,(new ConfigOptionFloats { 0.07 },Y,"['0.08', '0.08', '0.08', '0.08']",,落盘字段
+min_length_factor,coFloat,(new ConfigOptionFloat(0.5,Y,0.5,,落盘字段
+min_resonance_avoidance_speed,coFloat,(new ConfigOptionFloat(70,Y,70,,落盘字段
+min_save,coBool,(new ConfigOptionBool(false,-,,,预设系统内部
+min_skirt_length,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+min_width_top_surface,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(300, true",Y,300%,,落盘字段
+minimum_sparse_infill_area,coFloat,(new ConfigOptionFloat(15,Y,15,,落盘字段
+minute,coInt,,-,,,运行时派生状态
+mixed_color_layer_height_a,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+mixed_color_layer_height_b,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+mixed_filament_advanced_dithering,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+mixed_filament_component_bias_enabled,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+mixed_filament_definitions,coString,"(new ConfigOptionString(""""",Y,,,落盘字段
+mixed_filament_gradient_mode,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+mixed_filament_height_lower_bound,coFloat,(new ConfigOptionFloat(0.04,Y,0.04,,落盘字段
+mixed_filament_height_upper_bound,coFloat,(new ConfigOptionFloat(0.16,Y,0.16,,落盘字段
+mixed_filament_pointillism_line_gap,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+mixed_filament_pointillism_pixel_size,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+mixed_filament_region_collapse,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+mixed_filament_surface_indentation,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+mmu_segmented_region_interlocking_depth,coFloat,(new ConfigOptionFloat(0.,Y,0,,落盘字段
+mmu_segmented_region_max_width,coFloat,(new ConfigOptionFloat(0.,Y,0,,落盘字段
+month,coInt,,-,,,运行时派生状态
+mstpp,coInt,(new ConfigOptionInt(300,-,,,GUI内部/废弃候选
+mtcpp,coInt,(new ConfigOptionInt(1000000,-,,,GUI内部/废弃候选
+no_check,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+normal_print_time,coString,,-,,,运行时派生状态
+normative_check,coBool,(new ConfigOptionBool(true,-,,,预设系统内部
+notes,coString,(new ConfigOptionString(,Y,,,落盘字段
+nozzle_diameter,coFloats,(new ConfigOptionFloats { 0.4 },Y,"['0.4', '0.4', '0.4', '0.4']",,落盘字段
+nozzle_height,coFloat,(new ConfigOptionFloat(2.5,Y,2.5,,落盘字段
+nozzle_hrc,coInt,(new ConfigOptionInt{0},Y,0,,落盘字段
+nozzle_temperature,coInts,(new ConfigOptionInts { 200 },Y,"['230', '220', '230', '220', '220', '220', '230', '220', '230']",,落盘字段
+nozzle_temperature_initial_layer,coInts,(new ConfigOptionInts { 200 },Y,"['230', '220', '230', '220', '220', '220', '230', '220', '230']",,落盘字段
+nozzle_temperature_range_high,coInts,(new ConfigOptionInts { 240 },Y,"['250', '240', '250', '240', '240', '240', '250', '240', '250']",,落盘字段
+nozzle_temperature_range_low,coInts,(new ConfigOptionInts { 190 },Y,"['200', '190', '200', '190', '190', '190', '200', '190', '200']",,落盘字段
+nozzle_type,coEnum,(new ConfigOptionEnum<NozzleType>(ntUndefine,Y,hardened_steel,,落盘字段
+nozzle_volume,coFloat,(new ConfigOptionFloat { 0.0 },Y,143,,落盘字段
+nozzle_volume_type,coEnums,(new ConfigOptionEnumsGeneric { fvtStandard },Y,"['standard', 'high_flow', 'high_flow', 'high_flow']",,落盘字段
+num_extruders,coInt,,-,,,运行时派生状态
+num_instances,coInt,,-,,,运行时派生状态
+num_objects,coInt,,-,,,运行时派生状态
+num_printing_extruders,coInt,,-,,,运行时派生状态
+only_one_wall_first_layer,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+only_one_wall_top,coBool,(new ConfigOptionBool(false,Y,1,,落盘字段
+ooze_prevention,coBool,(new ConfigOptionBool(false,Y,1,,落盘字段
+orient,coInt,(new ConfigOptionInt(0,-,,,CLI动作参数
+other_layers_print_sequence,coInts,(new ConfigOptionInts{0},Y,['0'],,落盘字段
+other_layers_print_sequence_nums,coInt,(new ConfigOptionInt{0},Y,0,,落盘字段
+other_layers_sequence_choice,coEnum,(new ConfigOptionEnum<LayerSeq>(flsAuto,-,,,GUI内部/废弃候选
+outer_wall_acceleration,coFloats,(new ConfigOptionFloats { 500. },Y,5000,,落盘字段
+outer_wall_jerk,coFloats,(new ConfigOptionFloats { 9. },Y,9,,落盘字段
+outer_wall_line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0., false",Y,0.42,,落盘字段
+outer_wall_speed,coFloats,(new ConfigOptionFloats { 60. },Y,200,,落盘字段
+output,coString,(new ConfigOptionString(,-,,,CLI动作参数
+outputdir,coString,(new ConfigOptionString(,-,,,CLI动作参数
+overhang_1_4_speed,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{0., false",Y,0,,落盘字段
+overhang_2_4_speed,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{0., false",Y,50,,落盘字段
+overhang_3_4_speed,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{0., false",Y,30,,落盘字段
+overhang_4_4_speed,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{0., false",Y,10,,落盘字段
+overhang_fan_speed,coInts,(new ConfigOptionInts { 100 },Y,"['100', '100', '100', '100', '100', '100', '100', '100', '100']",,落盘字段
+overhang_fan_threshold,coEnums,(new ConfigOptionEnumsGeneric{ (int)Overhang_threshold_bridg,Y,"['25%', '50%', '25%', '50%', '50%', '50%', '25%', '50%', '25%']",,落盘字段
+overhang_reverse,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+overhang_reverse_internal_only,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+overhang_reverse_threshold,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(50, true",Y,50%,,落盘字段
+pad_around_object,coBool,(new ConfigOptionBool(false,-,,,SLA树脂流程专用
+pad_around_object_everywhere,coBool,(new ConfigOptionBool(false,-,,,SLA树脂流程专用
+pad_brim_size,coFloat,(new ConfigOptionFloat(1.6,-,,,SLA树脂流程专用
+pad_enable,coBool,(new ConfigOptionBool(true,-,,,SLA树脂流程专用
+pad_max_merge_distance,coFloat,(new ConfigOptionFloat(50.0,-,,,SLA树脂流程专用
+pad_object_connector_penetration,coFloat,(new ConfigOptionFloat(0.3,-,,,SLA树脂流程专用
+pad_object_connector_stride,coFloat,(new ConfigOptionFloat(10,-,,,SLA树脂流程专用
+pad_object_connector_width,coFloat,(new ConfigOptionFloat(0.5,-,,,SLA树脂流程专用
+pad_object_gap,coFloat,(new ConfigOptionFloat(1,-,,,SLA树脂流程专用
+pad_wall_height,coFloat,(new ConfigOptionFloat(0.,-,,,SLA树脂流程专用
+pad_wall_slope,coFloat,(new ConfigOptionFloat(90.0,-,,,SLA树脂流程专用
+pad_wall_thickness,coFloat,(new ConfigOptionFloat(2.0,-,,,SLA树脂流程专用
+parking_pos_retraction,coFloat,(new ConfigOptionFloat(92.,Y,92,,落盘字段
+pellet_flow_coefficient,coFloats,(new ConfigOptionFloats{ 0.4157 },Y,"['0.4157', '0.4157', '0.4157', '0.4157', '0.4157', '0.4157', '0.4157', '0.4157',",,落盘字段
+pellet_modded_printer,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+physical_printer_preset,coString,,-,,,预设系统内部
+pipe,coString,(new ConfigOptionString(,-,,,CLI动作参数
+position,coFloats,,-,,,运行时派生状态
+post_process,coStrings,(new ConfigOptionStrings(,Y,[],,落盘字段
+precise_outer_wall,coBool,(new ConfigOptionBool{true},Y,0,,落盘字段
+precise_z_height,coBool,(new ConfigOptionBool(0,Y,0,,落盘字段
+preferred_orientation,coFloat,(new ConfigOptionFloat(0.0,Y,0,,落盘字段
+preheat_steps,coInt,(new ConfigOptionInt(1,Y,1,,落盘字段
+preheat_time,coFloat,(new ConfigOptionFloat(30.0,Y,30,,落盘字段
+preset_name,coString,(new ConfigOptionString(,-,,,预设系统内部
+preset_names,coStrings,(new ConfigOptionStrings(,-,,,预设系统内部
+pressure_advance,coFloats,(new ConfigOptionFloats { 0.02 },Y,"['0.23', '0.02', '0.23', '0.02', '0.02', '0.02', '0.23', '0.02', '0.23']",,落盘字段
+prime_tower_brim_chamfer,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+prime_tower_brim_chamfer_max_width,coFloat,(new ConfigOptionFloat(4.0,Y,4,,落盘字段
+prime_tower_brim_width,coFloat,(new ConfigOptionFloat(3.,Y,5,,落盘字段
+prime_tower_width,coFloat,(new ConfigOptionFloat(60.,Y,30,,落盘字段
+prime_volume,coFloat,(new ConfigOptionFloat(45.,Y,54,,落盘字段
+print_bed_max,coFloats,,-,,,运行时派生状态
+print_bed_min,coFloats,,-,,,运行时派生状态
+print_bed_size,coFloats,,-,,,运行时派生状态
+print_compatible_printers,coStrings,(new ConfigOptionStrings(,Y,['Snapmaker U1 (0.4 nozzle)'],,落盘字段
+print_flow_ratio,coFloat,(new ConfigOptionFloat(1,Y,1,,落盘字段
+print_host,coString,(new ConfigOptionString(,-,,,打印主机连接
+print_host_webui,coString,(new ConfigOptionString(,-,,,打印主机连接
+print_order,coEnum,(new ConfigOptionEnum<PrintOrder>(PrintOrder::Default,Y,default,,落盘字段
+print_preset,coString,,-,,,预设系统内部
+print_sequence,coEnum,(new ConfigOptionEnum<PrintSequence>(PrintSequence::ByLayer,Y,by layer,,落盘字段
+print_settings_id,coString,(new ConfigOptionString(,Y,0.24 Draft @Snapmaker U1 (0.4 nozzle),,落盘字段
+print_time,coString,,-,,,运行时派生状态
+printable_area,coPoints,"(new ConfigOptionPoints{ Vec2d(0, 0), Vec2d(200, 0), Vec2d(2",Y,"['0.5x1', '270.5x1', '270.5x271', '0.5x271']",,落盘字段
+printable_height,coFloat,(new ConfigOptionFloat(100.0,Y,270.05,,落盘字段
+printer_flow_support,coStrings,(new ConfigOptionStrings { FLOW_MODE_STANDARD },Y,"['standard', 'high_flow']",,落盘字段
+printer_model,coString,(new ConfigOptionString(,Y,Snapmaker U1,,落盘字段
+printer_notes,coString,(new ConfigOptionString(,Y,,,落盘字段
+printer_preset,coString,,-,,,预设系统内部
+printer_settings_id,coString,(new ConfigOptionString(,Y,Snapmaker U1 (0.4 nozzle),,落盘字段
+printer_structure,coEnum,(new ConfigOptionEnum<PrinterStructure>(psUndefine,Y,undefine,,落盘字段
+printer_technology,coEnum,(new ConfigOptionEnum<PrinterTechnology>(ptFFF,Y,FFF,,落盘字段
+printer_variant,coString,(new ConfigOptionString(,Y,0.4,,落盘字段
+printhost_apikey,coString,(new ConfigOptionString(,-,,,打印主机连接
+printhost_authorization_type,coEnum,(new ConfigOptionEnum<AuthorizationType>(atKeyPassword,Y,key,,落盘字段
+printhost_cafile,coString,(new ConfigOptionString(,-,,,打印主机连接
+printhost_password,coString,(new ConfigOptionString(,-,,,打印主机连接
+printhost_port,coString,(new ConfigOptionString(,-,,,打印主机连接
+printhost_ssl_ignore_revoke,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+printhost_user,coString,(new ConfigOptionString(,-,,,打印主机连接
+printing_by_object_gcode,coString,(new ConfigOptionString(,Y,,,落盘字段
+printing_filament_types,coString,,-,,,运行时派生状态
+process_flow_support,coStrings,(new ConfigOptionStrings { FLOW_MODE_STANDARD },Y,"['standard', 'high_flow']",,落盘字段
+project_schema_version,,,Y,1,schema version field,落盘字段
+purge_in_prime_tower,coBool,(new ConfigOptionBool(true,Y,0,,落盘字段
+raft_contact_distance,coFloat,(new ConfigOptionFloat(0.1,Y,0.1,,落盘字段
+raft_expansion,coFloat,(new ConfigOptionFloat(1.5,Y,1.5,,落盘字段
+raft_first_layer_density,coPercent,(new ConfigOptionPercent(90,Y,90%,,落盘字段
+raft_first_layer_expansion,coFloat,(new ConfigOptionFloat(2.0,Y,2,,落盘字段
+raft_layers,coInt,(new ConfigOptionInt(0,Y,0,,落盘字段
+ramming_line_width_ratio,coFloat,(new ConfigOptionFloat(2.0,Y,2,,落盘字段
+ramming_pressure_advance_value,coFloat,(new ConfigOptionFloat(0.0,Y,0.02,,落盘字段
+reduce_crossing_wall,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+reduce_fan_stop_start_freq,coBools,(new ConfigOptionBools { false },Y,"['1', '1', '1', '1', '1', '1', '1', '1', '1']",,落盘字段
+reduce_infill_retraction,coBool,(new ConfigOptionBool(false,Y,1,,落盘字段
+relative_correction,coFloats,"(new ConfigOptionFloats( { 1., 1.} ",-,,,SLA树脂流程专用
+relative_correction_x,coFloat,(new ConfigOptionFloat(1.,-,,,SLA树脂流程专用
+relative_correction_y,coFloat,(new ConfigOptionFloat(1.,-,,,SLA树脂流程专用
+relative_correction_z,coFloat,(new ConfigOptionFloat(1.,-,,,SLA树脂流程专用
+repair,coBool,(new ConfigOptionBool(false,-,,,CLI动作参数
+repetitions,coInt,(new ConfigOptionInt(1,-,,,CLI动作参数
+required_nozzle_HRC,coInts,(new ConfigOptionInts{0},Y,"['3', '0', '3', '0', '0', '0', '3', '0', '3']",,落盘字段
+resolution,coFloat,(new ConfigOptionFloat(0.01,Y,0.012,,落盘字段
+resonance_avoidance,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+retract_before_wipe,coPercents,(new ConfigOptionPercents { 100 },Y,"['0%', '0%', '0%', '0%']",,落盘字段
+retract_length_toolchange,coFloats,(new ConfigOptionFloats { 10. },Y,"['10', '10', '10', '10']",,落盘字段
+retract_lift_above,coFloats,(new ConfigOptionFloats{0.},Y,"['0', '0', '0', '0']",,落盘字段
+retract_lift_below,coFloats,(new ConfigOptionFloats{0.},Y,"['269', '269', '269', '269']",,落盘字段
+retract_lift_enforce,coEnums,(new ConfigOptionEnumsGeneric{RetractLiftEnforceType ::rletA,Y,"['All Surfaces', 'All Surfaces', 'All Surfaces', 'All Surfaces']",,落盘字段
+retract_restart_extra,coFloats,(new ConfigOptionFloats { 0. },Y,"['0', '0', '0', '0']",,落盘字段
+retract_restart_extra_toolchange,coFloats,(new ConfigOptionFloats { 0. },Y,"['0', '0', '0', '0']",,落盘字段
+retract_when_changing_layer,coBools,(new ConfigOptionBools { false },Y,"['1', '1', '1', '1']",,落盘字段
+retraction_distances_when_cut,coFloats,(new ConfigOptionFloats {18},Y,"['18', '18', '18', '18']",,落盘字段
+retraction_length,coFloats,(new ConfigOptionFloats { 0.8 },Y,"['1.5', '1.5', '1.5', '1.5']",,落盘字段
+retraction_minimum_travel,coFloats,(new ConfigOptionFloats { 2. },Y,"['1', '1', '1', '1']",,落盘字段
+retraction_speed,coFloats,(new ConfigOptionFloats { 30. },Y,"['30', '30', '30', '30']",,落盘字段
+role_based_wipe_speed,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+rotate,coFloat,(new ConfigOptionFloat(0,-,,,CLI动作参数
+rotate_x,coFloat,(new ConfigOptionFloat(0,-,,,CLI动作参数
+rotate_y,coFloat,(new ConfigOptionFloat(0,-,,,CLI动作参数
+scale,coStrings,,-,,,CLI动作参数
+scale_to_fit,coPoint3,"(new ConfigOptionPoint3(Vec3d(0,0,0",-,,,CLI动作参数
+scan_first_layer,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+scarf_angle_threshold,coInt,(new ConfigOptionInt(155,Y,155,,落盘字段
+scarf_joint_flow_ratio,coFloat,(new ConfigOptionFloat(1,Y,1,,落盘字段
+scarf_joint_speed,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(100, true",Y,100%,,落盘字段
+scarf_overhang_threshold,coPercent,(new ConfigOptionPercent(40,Y,40%,,落盘字段
+seam_gap,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(10,true",Y,10%,,落盘字段
+seam_position,coEnum,(new ConfigOptionEnum<SeamPosition>(spAligned,Y,aligned,,落盘字段
+seam_slope_conditional,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+seam_slope_entire_loop,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+seam_slope_inner_walls,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+seam_slope_min_length,coFloat,(new ConfigOptionFloat(20,Y,20,,落盘字段
+seam_slope_start_height,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0, false",Y,0,,落盘字段
+seam_slope_steps,coInt,(new ConfigOptionInt(10,Y,10,,落盘字段
+seam_slope_type,coEnum,(new ConfigOptionEnum<SeamScarfType>(SeamScarfType::None,Y,none,,落盘字段
+second,coInt,,-,,,运行时派生状态
+silent_mode,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+silent_print_time,coString,,-,,,运行时派生状态
+single_extruder_multi_material,coBool,(new ConfigOptionBool(true,Y,0,,落盘字段
+single_extruder_multi_material_priming,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+single_instance,coBool,(new ConfigOptionString(,-,,,CLI动作参数
+single_loop_draft_shield,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+skeleton_infill_density,coPercent,(new ConfigOptionPercent(25,Y,25%,,落盘字段
+skeleton_infill_line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(100, true",Y,100%,,落盘字段
+skin_infill_density,coPercent,(new ConfigOptionPercent(25,Y,25%,,落盘字段
+skin_infill_depth,coFloat,(new ConfigOptionFloat(2.0,Y,2,,落盘字段
+skin_infill_line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(100, true",Y,100%,,落盘字段
+skip_modified_gcodes,coBool,(new ConfigOptionBool(false,-,,,GUI内部/废弃候选
+skip_objects,coInts,(new ConfigOptionInts(,-,,,GUI内部/废弃候选
+skirt_distance,coFloat,(new ConfigOptionFloat(2,Y,2,,落盘字段
+skirt_height,coInt,(new ConfigOptionInt(1,Y,1,,落盘字段
+skirt_loops,coInt,(new ConfigOptionInt(1,Y,0,,落盘字段
+skirt_speed,coFloat,(new ConfigOptionFloat(50.0,Y,50,,落盘字段
+skirt_start_angle,coFloat,(new ConfigOptionFloat(-135,Y,-135,,落盘字段
+skirt_type,coEnum,(new ConfigOptionEnum<SkirtType>(stCombined,Y,combined,,落盘字段
+sla_material_settings_id,coString,(new ConfigOptionString(,-,,,SLA树脂流程专用
+sla_print_settings_id,coString,(new ConfigOptionString(,-,,,SLA树脂流程专用
+slice,coInt,(new ConfigOptionInt(0,-,,,CLI动作参数
+slice_closing_radius,coFloat,(new ConfigOptionFloat(0.049,Y,0.049,,落盘字段
+slicing_mode,coEnum,(new ConfigOptionEnum<SlicingMode>(SlicingMode::Regular,Y,regular,,落盘字段
+slow_down_for_layer_cooling,coBools,(new ConfigOptionBools { true },Y,"['1', '1', '1', '1', '1', '1', '1', '1', '1']",,落盘字段
+slow_down_layer_time,coFloats,(new ConfigOptionFloats { 5.0f },Y,"['10', '4', '10', '4', '4', '4', '10', '4', '10']",,落盘字段
+slow_down_layers,coInts,(new ConfigOptionInts { 0 },Y,0,,落盘字段
+slow_down_min_speed,coFloats,(new ConfigOptionFloats { 10. },Y,"['10', '20', '10', '20', '20', '20', '10', '20', '10']",,落盘字段
+slow_tilt_time,coFloat,(new ConfigOptionFloat(8.,-,,,SLA树脂流程专用
+slowdown_for_curled_perimeters,coBools,(new ConfigOptionBools{ true },Y,0,,落盘字段
+small_area_infill_flow_compensation,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+small_area_infill_flow_compensation_model,coStrings,(new ConfigOptionBool(false,Y,"['0,0', '\n0.2,0.4444', '\n0.4,0.6145', '\n0.6,0.7059', '\n0.8,0.7619', '\n1.5,0",,落盘字段
+small_perimeter_speed,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{50., true",Y,50%,,落盘字段
+small_perimeter_threshold,coFloats,(new ConfigOptionFloats { 0. },Y,0,,落盘字段
+solid_infill_direction,coFloat,(new ConfigOptionFloat(45,Y,45,,落盘字段
+solid_infill_filament,coInt,(new ConfigOptionInt(1,Y,1,,落盘字段
+solid_infill_rotate_template,coString,"(new ConfigOptionString(""""",Y,,,落盘字段
+spaghetti_detector,coBool,(new ConfigOptionBool(false,-,,,GUI内部/废弃候选
+sparse_infill_acceleration,coFloatsOrPercents,"(new ConfigOptionFloatsOrPercents { FloatOrPercent{100., tru",Y,100%,,落盘字段
+sparse_infill_density,coPercent,(new ConfigOptionPercent(20,Y,15%,,落盘字段
+sparse_infill_filament,coInt,(new ConfigOptionInt(1,Y,1,,落盘字段
+sparse_infill_line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0., false",Y,0.45,,落盘字段
+sparse_infill_pattern,coEnum,,Y,grid,,落盘字段
+sparse_infill_rotate_template,coString,"(new ConfigOptionString(""""",Y,,,落盘字段
+sparse_infill_speed,coFloats,(new ConfigOptionFloats { 100. },Y,230,,落盘字段
+spiral_finishing_flow_ratio,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+spiral_mode,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+spiral_mode_max_xy_smoothing,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(200, true",Y,200%,,落盘字段
+spiral_mode_smooth,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+spiral_starting_flow_ratio,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+split,coBool,"(new ConfigOptionPoint3(Vec3d(0,0,0",-,,,CLI动作参数
+staggered_inner_seams,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+standby_temperature_delta,coInt,(new ConfigOptionInt(-5,Y,-150,,落盘字段
+start_end_points,coPoints,"(new ConfigOptionPoints{Vec2d(30, -3), Vec2d(54, 245)}",Y,"['30x-3', '54x245']",,落盘字段
+supertack_plate_temp,coInts,(new ConfigOptionInts{35},Y,"['35', '40', '35', '40', '40', '40', '35', '40', '35']",,落盘字段
+supertack_plate_temp_initial_layer,coInts,(new ConfigOptionInts{ 35 },Y,"['35', '40', '35', '40', '40', '40', '35', '40', '35']",,落盘字段
+support_air_filtration,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+support_angle,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+support_base_diameter,coFloat,(new ConfigOptionFloat(4.0,-,,,SLA树脂流程专用
+support_base_height,coFloat,(new ConfigOptionFloat(1.0,-,,,SLA树脂流程专用
+support_base_pattern,coEnum,(new ConfigOptionEnum<SupportMaterialPattern>(smpDefault,Y,default,,落盘字段
+support_base_pattern_spacing,coFloat,(new ConfigOptionFloat(2.5,Y,2.5,,落盘字段
+support_base_safety_distance,coFloat,(new ConfigOptionFloat(1,-,,,SLA树脂流程专用
+support_bottom_interface_spacing,coFloat,(new ConfigOptionFloat(0.5,Y,0.5,,落盘字段
+support_bottom_z_distance,coFloat,(new ConfigOptionFloat(0.2,Y,0.2,,落盘字段
+support_buildplate_only,coBool,(new ConfigOptionBool(false,-,,,SLA树脂流程专用
+support_chamber_temp_control,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+support_critical_angle,coFloat,(new ConfigOptionFloat(45,-,,,SLA树脂流程专用
+support_critical_regions_only,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+support_expansion,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+support_filament,coInt,(new ConfigOptionInt(0,Y,0,,落盘字段
+support_head_front_diameter,coFloat,(new ConfigOptionFloat(0.4,-,,,SLA树脂流程专用
+support_head_penetration,coFloat,(new ConfigOptionFloat(0.2,-,,,SLA树脂流程专用
+support_head_width,coFloat,(new ConfigOptionFloat(1.0,-,,,SLA树脂流程专用
+support_interface_bottom_layers,coInt,(new ConfigOptionInt(0,Y,2,,落盘字段
+support_interface_filament,coInt,(new ConfigOptionInt(0,Y,0,,落盘字段
+support_interface_loop_pattern,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+support_interface_not_for_body,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+support_interface_pattern,coEnum,(new ConfigOptionEnum<SupportMaterialInterfacePattern>(smipA,Y,auto,,落盘字段
+support_interface_spacing,coFloat,(new ConfigOptionFloat(0.5,Y,0.5,,落盘字段
+support_interface_speed,coFloats,(new ConfigOptionFloats { 80. },Y,80,,落盘字段
+support_interface_top_layers,coInt,(new ConfigOptionInt(3,Y,2,,落盘字段
+support_ironing,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+support_ironing_flow,coPercent,(new ConfigOptionPercent(10,Y,10%,,落盘字段
+support_ironing_pattern,coEnum,(new ConfigOptionEnum<InfillPattern>(ipRectilinear,Y,rectilinear,,落盘字段
+support_ironing_spacing,coFloat,(new ConfigOptionFloat(0.1,Y,0.1,,落盘字段
+support_line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0., false",Y,0.42,,落盘字段
+support_material_interface_fan_speed,coInts,(new ConfigOptionInts{ -1 },Y,"['-1', '-1', '-1', '-1', '-1', '-1', '-1', '-1', '-1']",,落盘字段
+support_max_bridge_length,coFloat,(new ConfigOptionFloat(15.0,-,,,SLA树脂流程专用
+support_max_bridges_on_pillar,coInt,(new ConfigOptionInt(3,-,,,SLA树脂流程专用
+support_max_pillar_link_distance,coFloat,(new ConfigOptionFloat(10.0,-,,,SLA树脂流程专用
+support_multi_bed_types,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+support_object_elevation,coFloat,(new ConfigOptionFloat(5.0,-,,,SLA树脂流程专用
+support_object_first_layer_gap,coFloat,(new ConfigOptionFloat(0.2,Y,0.2,,落盘字段
+support_object_xy_distance,coFloat,(new ConfigOptionFloat(0.35,Y,0.35,,落盘字段
+support_on_build_plate_only,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+support_pillar_connection_mode,coEnum,(new ConfigOptionEnum<SLAPillarConnectionMode>(slapcmDynamic,-,,,SLA树脂流程专用
+support_pillar_diameter,coFloat,(new ConfigOptionFloat(1.0,-,,,SLA树脂流程专用
+support_pillar_widening_factor,coFloat,(new ConfigOptionFloat(0.0,-,,,SLA树脂流程专用
+support_points_density_relative,coInt,(new ConfigOptionInt(100,-,,,SLA树脂流程专用
+support_points_minimal_distance,coFloat,(new ConfigOptionFloat(1.,-,,,SLA树脂流程专用
+support_remove_small_overhang,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+support_small_pillar_diameter_percent,coPercent,(new ConfigOptionPercent(50,-,,,SLA树脂流程专用
+support_speed,coFloats,(new ConfigOptionFloats { 80. },Y,150,,落盘字段
+support_style,coEnum,(new ConfigOptionEnum<SupportMaterialStyle>(smsDefault,Y,default,,落盘字段
+support_threshold_angle,coInt,(new ConfigOptionInt(30,Y,35,,落盘字段
+support_threshold_overlap,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(50., true",Y,50%,,落盘字段
+support_top_z_distance,coFloat,(new ConfigOptionFloat(0.2,Y,0.2,,落盘字段
+support_type,coEnum,(new ConfigOptionEnum<SupportType>(stNormalAuto,Y,tree(auto),,落盘字段
+supports_enable,coBool,(new ConfigOptionBool(true,-,,,SLA树脂流程专用
+sw_renderer,coBool,(new ConfigOptionString(,-,,,SLA树脂流程专用
+symmetric_infill_y_axis,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+temperature_vitrification,coInts,(new ConfigOptionInts{ 100 },Y,"['30', '45', '30', '45', '45', '45', '30', '45', '30']",,落盘字段
+template_custom_gcode,coString,(new ConfigOptionString(,Y,,,落盘字段
+textured_cool_plate_temp,coInts,(new ConfigOptionInts{ 40 },Y,"['40', '40', '40', '40', '40', '40', '40', '40', '40']",,落盘字段
+textured_cool_plate_temp_initial_layer,coInts,(new ConfigOptionInts{ 40 },Y,"['40', '40', '40', '40', '40', '40', '40', '40', '40']",,落盘字段
+textured_plate_temp,coInts,(new ConfigOptionInts{45},Y,"['35', '65', '35', '65', '65', '65', '35', '65', '35']",,落盘字段
+textured_plate_temp_initial_layer,coInts,(new ConfigOptionInts{45},Y,"['35', '65', '35', '65', '65', '65', '35', '65', '35']",,落盘字段
+thick_bridges,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+thick_internal_bridges,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+thumb0,coStrings,"(new ConfigOptionString{""""}",-,,,GUI内部/废弃候选
+thumb1,coStrings,"(new ConfigOptionString{""""}",-,,,GUI内部/废弃候选
+thumbnails,coString,"(new ConfigOptionString(""48x48/PNG,300x300/PNG""",Y,"48x48/PNG, 300x300/PNG",,落盘字段
+thumbnails_format,coEnum,(new ConfigOptionEnum<GCodeThumbnailsFormat>(GCodeThumbnails,Y,PNG,,落盘字段
+time_cost,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+time_lapse_gcode,coString,(new ConfigOptionString(,Y,,,落盘字段
+timelapse_type,coEnum,(new ConfigOptionEnum<TimelapseType>(tlTraditional,Y,0,,落盘字段
+timestamp,coString,,-,,,运行时派生状态
+tool_change_temprature_wait,coBool,(new ConfigOptionBool(true,Y,0,,落盘字段
+top_bottom_infill_wall_overlap,coPercent,(new ConfigOptionPercent(25,Y,25%,,落盘字段
+top_shell_layers,coInt,(new ConfigOptionInt(4,Y,4,,落盘字段
+top_shell_thickness,coFloat,(new ConfigOptionFloat(0.6,Y,1,,落盘字段
+top_solid_infill_flow_ratio,coFloat,(new ConfigOptionFloat(1,Y,1,,落盘字段
+top_surface_acceleration,coFloats,(new ConfigOptionFloats { 500. },Y,2000,,落盘字段
+top_surface_density,coPercent,(new ConfigOptionPercent(100,Y,100%,,落盘字段
+top_surface_jerk,coFloats,(new ConfigOptionFloats { 9. },Y,9,,落盘字段
+top_surface_line_width,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(0., false",Y,0.45,,落盘字段
+top_surface_pattern,coEnum,(new ConfigOptionEnum<InfillPattern>(ipMonotonicLine,Y,monotonicline,,落盘字段
+top_surface_speed,coFloats,(new ConfigOptionFloats { 100. },Y,200,,落盘字段
+total_cost,coFloat,,-,,,运行时派生状态
+total_layer_count,coInt,,-,,,运行时派生状态
+total_toolchanges,coInt,,-,,,运行时派生状态
+total_weight,coFloat,,-,,,运行时派生状态
+total_wipe_tower_cost,coFloat,,-,,,运行时派生状态
+total_wipe_tower_filament,coFloat,,-,,,运行时派生状态
+travel_acceleration,coFloats,(new ConfigOptionFloats { 10000. },Y,10000,,落盘字段
+travel_jerk,coFloats,(new ConfigOptionFloats { 12. },Y,12,,落盘字段
+travel_slope,coFloats,(new ConfigOptionFloats { 3 },Y,"['3', '3', '3', '3']",,落盘字段
+travel_speed,coFloats,(new ConfigOptionFloats { 120. },Y,500,,落盘字段
+travel_speed_z,coFloat,(new ConfigOptionFloat(0.,Y,0,,落盘字段
+tree_support_adaptive_layer_height,coBool,(new ConfigOptionBool(1,Y,1,,落盘字段
+tree_support_angle_slow,coFloat,(new ConfigOptionFloat(25,Y,25,,落盘字段
+tree_support_auto_brim,coBool,(new ConfigOptionBool(1,Y,1,,落盘字段
+tree_support_branch_angle,coFloat,(new ConfigOptionFloat(40.,Y,45,,落盘字段
+tree_support_branch_angle_organic,coFloat,(new ConfigOptionFloat(40.,Y,40,,落盘字段
+tree_support_branch_diameter,coFloat,(new ConfigOptionFloat(5.,Y,2,,落盘字段
+tree_support_branch_diameter_angle,coFloat,(new ConfigOptionFloat(5,Y,5,,落盘字段
+tree_support_branch_diameter_organic,coFloat,(new ConfigOptionFloat(2.,Y,2,,落盘字段
+tree_support_branch_distance,coFloat,(new ConfigOptionFloat(5.,Y,5,,落盘字段
+tree_support_branch_distance_organic,coFloat,(new ConfigOptionFloat(1.,Y,1,,落盘字段
+tree_support_brim_width,coFloat,(new ConfigOptionFloat(3,Y,3,,落盘字段
+tree_support_tip_diameter,coFloat,(new ConfigOptionFloat(0.8,Y,0.8,,落盘字段
+tree_support_top_rate,coPercent,(new ConfigOptionPercent(30,Y,30%,,落盘字段
+tree_support_wall_count,coInt,(new ConfigOptionInt(0,Y,0,,落盘字段
+tree_support_with_infill,coBool,(new ConfigOptionBool(false,-,,,GUI内部/废弃候选
+uptodate,coBool,(new ConfigOptionBool(false,-,,,预设系统内部
+uptodate_filaments,coStrings,(new ConfigOptionStrings(,-,,,预设系统内部
+uptodate_settings,coStrings,(new ConfigOptionStrings(,-,,,预设系统内部
+upward_compatible_machine,coStrings,(new ConfigOptionStrings(,Y,[],,落盘字段
+use_firmware_retraction,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+use_relative_e_distances,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+used_filament,coFloat,,-,,,运行时派生状态
+wall_direction,coEnum,(new ConfigOptionEnum<WallDirection>(WallDirection::Auto,Y,auto,,落盘字段
+wall_distribution_count,coInt,(new ConfigOptionInt(1,Y,1,,落盘字段
+wall_filament,coInt,(new ConfigOptionInt(1,Y,1,,落盘字段
+wall_generator,coEnum,(new ConfigOptionEnum<PerimeterGeneratorType>(PerimeterGener,Y,classic,,落盘字段
+wall_loops,coInt,(new ConfigOptionInt(2,Y,2,,落盘字段
+wall_sequence,coEnum,(new ConfigOptionEnum<WallSequence>(WallSequence::InnerOuter,Y,inner wall/outer wall,,落盘字段
+wall_transition_angle,coFloat,(new ConfigOptionFloat(10.,Y,10,,落盘字段
+wall_transition_filter_deviation,coPercent,(new ConfigOptionPercent(25,Y,25%,,落盘字段
+wall_transition_length,coPercent,(new ConfigOptionPercent(100,Y,100%,,落盘字段
+wipe,coBools,(new ConfigOptionBools { false },Y,"['1', '1', '1', '1']",,落盘字段
+wipe_before_external_loop,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+wipe_distance,coFloats,(new ConfigOptionFloats { 1. },Y,"['2', '2', '2', '2']",,落盘字段
+wipe_on_loops,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+wipe_speed,coFloatOrPercent,"(new ConfigOptionFloatOrPercent(80,true",Y,80%,,落盘字段
+wipe_tower_bridging,coFloat,(new ConfigOptionFloat(10.,Y,10,,落盘字段
+wipe_tower_cone_angle,coFloat,(new ConfigOptionFloat(30.0,Y,15,,落盘字段
+wipe_tower_extra_flow,coPercent,(new ConfigOptionPercent(100.,Y,100%,,落盘字段
+wipe_tower_extra_rib_length,coFloat,(new ConfigOptionFloat(0,Y,8,,落盘字段
+wipe_tower_extra_spacing,coPercent,(new ConfigOptionPercent(100.,Y,120%,,落盘字段
+wipe_tower_filament,coInt,(new ConfigOptionInt(0,Y,0,,落盘字段
+wipe_tower_fillet_wall,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+wipe_tower_max_purge_speed,coFloat,(new ConfigOptionFloat(90.,Y,90,,落盘字段
+wipe_tower_no_sparse_layers,coBool,(new ConfigOptionBool(false,Y,0,,落盘字段
+wipe_tower_rib_width,coFloat,(new ConfigOptionFloat(8,Y,8,,落盘字段
+wipe_tower_rotation_angle,coFloat,(new ConfigOptionFloat(0.,Y,0,,落盘字段
+wipe_tower_wall_gap,coBool,(new ConfigOptionBool(true,Y,1,,落盘字段
+wipe_tower_wall_type,coEnum,(new ConfigOptionEnum<WipeTowerWallType>(wtwRectangle,Y,rib,,落盘字段
+wipe_tower_x,coFloats,(new ConfigOptionFloats{ 15. },Y,"['13', '13', '13', '13', '13']",,落盘字段
+wipe_tower_y,coFloats,(new ConfigOptionFloats{ 220. },Y,"['193', '193', '193', '193', '193']",,落盘字段
+wiping_volumes_extruders,coFloats,"(new ConfigOptionFloats { 70., 70., 70., 70., 70., 70., 70.,",Y,"['70', '70', '70', '70', '70', '70', '70', '70', '70', '70']",,落盘字段
+xy_contour_compensation,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+xy_hole_compensation,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+year,coInt,,-,,,运行时派生状态
+z_hop,coFloats,(new ConfigOptionFloats { 0.4 },Y,"['0.4', '0.4', '0.4', '0.4']",,落盘字段
+z_hop_types,coEnums,(new ConfigOptionEnumsGeneric{ ZHopType::zhtSlope },Y,"['Auto Lift', 'Auto Lift', 'Auto Lift', 'Auto Lift']",,落盘字段
+z_hop_when_prime,coBools,(new ConfigOptionBools{true},Y,"['0', '0', '0', '0']",,落盘字段
+z_offset,coFloat,(new ConfigOptionFloat(0,Y,0,,落盘字段
+zhop,coFloat,,-,,,GUI内部/废弃候选
