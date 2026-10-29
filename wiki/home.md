@@ -23,10 +23,20 @@
 | [03-现状盘点-model_settings与嵌入预设](../docs/03-现状盘点-model_settings与嵌入预设.md) | 三层字段实测 + 嵌入预设文件 |
 | [04-问题清单-切片软件团队对齐](../docs/04-问题清单-切片软件团队对齐.md) | 进入阶段二（规范设计）前待裁决的 Q1–Q22 |
 
+## 设置参数文档
+
+按 fork 实际 UI 每「键」一文档，内容优先拷贝上游 OrcaSlicer wiki 对应小节，上游未收录的建占位页（附 `PrintConfig.cpp` 元数据）：
+
+| 总览页 | 覆盖范围 |
+|---|---|
+| [打印机设置参数总览](printer_settings/printer_settings_overview.md) | 6 页面 104 键 |
+| [耗材设置参数总览](material_settings/material_settings_overview.md) | 7 页面 107 键（含 18 个回抽覆盖交叉引用） |
+| [工艺设置参数总览](print_settings/print_settings_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
+
 ## 规划中
 
 - 3MF 规范设计（阶段二）：问题清单 P0 项闭环后开写
-- fork 完整使用文档：按上游 OrcaSlicer wiki 的目录名扩展（printer_settings/、material_settings/、print_settings/ 等，见 [AGENTS.md](../AGENTS.md) 目录表）
+- fork 完整使用文档：在上述三个设置目录基础上继续扩展（见 [AGENTS.md](../AGENTS.md) 目录表）
 
 ## 参与贡献
 

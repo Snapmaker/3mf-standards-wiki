@@ -1,0 +1,346 @@
+# 工艺设置参数总览
+
+> 页面结构按 fork 实际 UI（Tab.cpp `TabPrint::build` / `TabPrintPlate::build`，2026-10-28 核实）。
+> 每键一文档；✅ = 内容拷贝自上游 OrcaSlicer wiki，🚧 = 占位待补，🔗 = 交叉引用。
+
+## Quality（`quality/`）
+
+- ✅ [`layer_height`](quality/layer_height.md)（Layer height）
+- ✅ [`initial_layer_print_height`](quality/initial_layer_print_height.md)（Layer height）
+- ✅ [`line_width`](quality/line_width.md)（Line width）
+- ✅ [`initial_layer_line_width`](quality/initial_layer_line_width.md)（Line width）
+- ✅ [`outer_wall_line_width`](quality/outer_wall_line_width.md)（Line width）
+- ✅ [`inner_wall_line_width`](quality/inner_wall_line_width.md)（Line width）
+- ✅ [`top_surface_line_width`](quality/top_surface_line_width.md)（Line width）
+- ✅ [`sparse_infill_line_width`](quality/sparse_infill_line_width.md)（Line width）
+- ✅ [`internal_solid_infill_line_width`](quality/internal_solid_infill_line_width.md)（Line width）
+- ✅ [`support_line_width`](quality/support_line_width.md)（Line width）
+- ✅ [`seam_position`](quality/seam_position.md)（Seam）
+- ✅ [`staggered_inner_seams`](quality/staggered_inner_seams.md)（Seam）
+- ✅ [`seam_gap`](quality/seam_gap.md)（Seam）
+- ✅ [`seam_slope_type`](quality/seam_slope_type.md)（Seam）
+- ✅ [`seam_slope_conditional`](quality/seam_slope_conditional.md)（Seam）
+- ✅ [`scarf_angle_threshold`](quality/scarf_angle_threshold.md)（Seam）
+- ✅ [`scarf_overhang_threshold`](quality/scarf_overhang_threshold.md)（Seam）
+- ✅ [`scarf_joint_speed`](quality/scarf_joint_speed.md)（Seam）
+- ✅ [`seam_slope_start_height`](quality/seam_slope_start_height.md)（Seam）
+- ✅ [`seam_slope_entire_loop`](quality/seam_slope_entire_loop.md)（Seam）
+- ✅ [`seam_slope_min_length`](quality/seam_slope_min_length.md)（Seam）
+- ✅ [`seam_slope_steps`](quality/seam_slope_steps.md)（Seam）
+- ✅ [`scarf_joint_flow_ratio`](quality/scarf_joint_flow_ratio.md)（Seam）
+- ✅ [`seam_slope_inner_walls`](quality/seam_slope_inner_walls.md)（Seam）
+- ✅ [`role_based_wipe_speed`](quality/role_based_wipe_speed.md)（Seam）
+- ✅ [`wipe_speed`](quality/wipe_speed.md)（Seam）
+- ✅ [`wipe_on_loops`](quality/wipe_on_loops.md)（Seam）
+- ✅ [`wipe_before_external_loop`](quality/wipe_before_external_loop.md)（Seam）
+- ✅ [`slice_closing_radius`](quality/slice_closing_radius.md)（Precision）
+- ✅ [`resolution`](quality/resolution.md)（Precision）
+- ✅ [`enable_arc_fitting`](quality/enable_arc_fitting.md)（Precision）
+- ✅ [`xy_hole_compensation`](quality/xy_hole_compensation.md)（Precision）
+- ✅ [`xy_contour_compensation`](quality/xy_contour_compensation.md)（Precision）
+- ✅ [`elefant_foot_compensation`](quality/elefant_foot_compensation.md)（Precision）
+- ✅ [`elefant_foot_compensation_layers`](quality/elefant_foot_compensation_layers.md)（Precision）
+- ✅ [`precise_outer_wall`](quality/precise_outer_wall.md)（Precision）
+- ✅ [`precise_z_height`](quality/precise_z_height.md)（Precision）
+- ✅ [`hole_to_polyhole`](quality/hole_to_polyhole.md)（Precision）
+- ✅ [`hole_to_polyhole_threshold`](quality/hole_to_polyhole_threshold.md)（Precision）
+- ✅ [`hole_to_polyhole_twisted`](quality/hole_to_polyhole_twisted.md)（Precision）
+- ✅ [`ironing_type`](quality/ironing_type.md)（Ironing）
+- ✅ [`ironing_pattern`](quality/ironing_pattern.md)（Ironing）
+- ✅ [`ironing_flow`](quality/ironing_flow.md)（Ironing）
+- ✅ [`ironing_spacing`](quality/ironing_spacing.md)（Ironing）
+- ✅ [`ironing_inset`](quality/ironing_inset.md)（Ironing）
+- ✅ [`ironing_angle`](quality/ironing_angle.md)（Ironing）
+- ✅ [`wall_generator`](quality/wall_generator.md)（Wall generator）
+- ✅ [`wall_transition_angle`](quality/wall_transition_angle.md)（Wall generator）
+- ✅ [`wall_transition_filter_deviation`](quality/wall_transition_filter_deviation.md)（Wall generator）
+- ✅ [`wall_transition_length`](quality/wall_transition_length.md)（Wall generator）
+- ✅ [`wall_distribution_count`](quality/wall_distribution_count.md)（Wall generator）
+- ✅ [`initial_layer_min_bead_width`](quality/initial_layer_min_bead_width.md)（Wall generator）
+- ✅ [`min_bead_width`](quality/min_bead_width.md)（Wall generator）
+- ✅ [`min_feature_size`](quality/min_feature_size.md)（Wall generator）
+- ✅ [`min_length_factor`](quality/min_length_factor.md)（Wall generator）
+- ✅ [`wall_sequence`](quality/wall_sequence.md)（Walls and surfaces）
+- ✅ [`is_infill_first`](quality/is_infill_first.md)（Walls and surfaces）
+- ✅ [`wall_direction`](quality/wall_direction.md)（Walls and surfaces）
+- ✅ [`print_flow_ratio`](quality/print_flow_ratio.md)（Walls and surfaces）
+- ✅ [`top_solid_infill_flow_ratio`](quality/top_solid_infill_flow_ratio.md)（Walls and surfaces）
+- ✅ [`bottom_solid_infill_flow_ratio`](quality/bottom_solid_infill_flow_ratio.md)（Walls and surfaces）
+- ✅ [`only_one_wall_top`](quality/only_one_wall_top.md)（Walls and surfaces）
+- ✅ [`min_width_top_surface`](quality/min_width_top_surface.md)（Walls and surfaces）
+- ✅ [`only_one_wall_first_layer`](quality/only_one_wall_first_layer.md)（Walls and surfaces）
+- ✅ [`reduce_crossing_wall`](quality/reduce_crossing_wall.md)（Walls and surfaces）
+- ✅ [`max_travel_detour_distance`](quality/max_travel_detour_distance.md)（Walls and surfaces）
+- ✅ [`small_area_infill_flow_compensation`](quality/small_area_infill_flow_compensation.md)（Walls and surfaces）
+- ✅ [`small_area_infill_flow_compensation_model`](quality/small_area_infill_flow_compensation_model.md)（Walls and surfaces）
+- ✅ [`bridge_flow`](quality/bridge_flow.md)（Bridging）
+- ✅ [`internal_bridge_flow`](quality/internal_bridge_flow.md)（Bridging）
+- ✅ [`bridge_density`](quality/bridge_density.md)（Bridging）
+- ✅ [`internal_bridge_density`](quality/internal_bridge_density.md)（Bridging）
+- ✅ [`thick_bridges`](quality/thick_bridges.md)（Bridging）
+- ✅ [`thick_internal_bridges`](quality/thick_internal_bridges.md)（Bridging）
+- ✅ [`enable_extra_bridge_layer`](quality/enable_extra_bridge_layer.md)（Bridging）
+- ✅ [`dont_filter_internal_bridges`](quality/dont_filter_internal_bridges.md)（Bridging）
+- ✅ [`counterbore_hole_bridging`](quality/counterbore_hole_bridging.md)（Bridging）
+- ✅ [`detect_overhang_wall`](quality/detect_overhang_wall.md)（Overhangs）
+- ✅ [`make_overhang_printable`](quality/make_overhang_printable.md)（Overhangs）
+- ✅ [`make_overhang_printable_angle`](quality/make_overhang_printable_angle.md)（Overhangs）
+- ✅ [`make_overhang_printable_hole_size`](quality/make_overhang_printable_hole_size.md)（Overhangs）
+- ✅ [`extra_perimeters_on_overhangs`](quality/extra_perimeters_on_overhangs.md)（Overhangs）
+- ✅ [`overhang_reverse`](quality/overhang_reverse.md)（Overhangs）
+- ✅ [`overhang_reverse_internal_only`](quality/overhang_reverse_internal_only.md)（Overhangs）
+- ✅ [`overhang_reverse_threshold`](quality/overhang_reverse_threshold.md)（Overhangs）
+
+## Strength（`strength/`）
+
+- ✅ [`wall_loops`](strength/wall_loops.md)（Walls）
+- ✅ [`alternate_extra_wall`](strength/alternate_extra_wall.md)（Walls）
+- ✅ [`detect_thin_wall`](strength/detect_thin_wall.md)（Walls）
+- ✅ [`top_surface_pattern`](strength/top_surface_pattern.md)（Top/bottom shells）
+- ✅ [`top_shell_layers`](strength/top_shell_layers.md)（Top/bottom shells）
+- ✅ [`top_shell_thickness`](strength/top_shell_thickness.md)（Top/bottom shells）
+- ✅ [`top_color_penetration_layers`](strength/top_color_penetration_layers.md)（Top/bottom shells）
+- ✅ [`bottom_surface_pattern`](strength/bottom_surface_pattern.md)（Top/bottom shells）
+- ✅ [`bottom_shell_layers`](strength/bottom_shell_layers.md)（Top/bottom shells）
+- ✅ [`bottom_shell_thickness`](strength/bottom_shell_thickness.md)（Top/bottom shells）
+- ✅ [`bottom_color_penetration_layers`](strength/bottom_color_penetration_layers.md)（Top/bottom shells）
+- ✅ [`top_bottom_infill_wall_overlap`](strength/top_bottom_infill_wall_overlap.md)（Top/bottom shells）
+- ✅ [`sparse_infill_density`](strength/sparse_infill_density.md)（Infill）
+- ✅ [`fill_multiline`](strength/fill_multiline.md)（Infill）
+- ✅ [`sparse_infill_pattern`](strength/sparse_infill_pattern.md)（Infill）
+- ✅ [`infill_direction`](strength/infill_direction.md)（Infill）
+- ✅ [`sparse_infill_rotate_template`](strength/sparse_infill_rotate_template.md)（Infill）
+- ✅ [`skin_infill_density`](strength/skin_infill_density.md)（Infill）
+- ✅ [`skeleton_infill_density`](strength/skeleton_infill_density.md)（Infill）
+- ✅ [`infill_lock_depth`](strength/infill_lock_depth.md)（Infill）
+- ✅ [`skin_infill_depth`](strength/skin_infill_depth.md)（Infill）
+- ✅ [`skin_infill_line_width`](strength/skin_infill_line_width.md)（Infill）
+- ✅ [`skeleton_infill_line_width`](strength/skeleton_infill_line_width.md)（Infill）
+- ✅ [`symmetric_infill_y_axis`](strength/symmetric_infill_y_axis.md)（Infill）
+- ✅ [`infill_shift_step`](strength/infill_shift_step.md)（Infill）
+- ✅ [`lateral_lattice_angle_1`](strength/lateral_lattice_angle_1.md)（Infill）
+- ✅ [`lateral_lattice_angle_2`](strength/lateral_lattice_angle_2.md)（Infill）
+- ✅ [`infill_overhang_angle`](strength/infill_overhang_angle.md)（Infill）
+- ✅ [`infill_anchor_max`](strength/infill_anchor_max.md)（Infill）
+- ✅ [`infill_anchor`](strength/infill_anchor.md)（Infill）
+- ✅ [`internal_solid_infill_pattern`](strength/internal_solid_infill_pattern.md)（Infill）
+- ✅ [`solid_infill_direction`](strength/solid_infill_direction.md)（Infill）
+- ✅ [`solid_infill_rotate_template`](strength/solid_infill_rotate_template.md)（Infill）
+- ✅ [`gap_fill_target`](strength/gap_fill_target.md)（Infill）
+- ✅ [`filter_out_gap_fill`](strength/filter_out_gap_fill.md)（Infill）
+- ✅ [`infill_wall_overlap`](strength/infill_wall_overlap.md)（Infill）
+- ✅ [`align_infill_direction_to_model`](strength/align_infill_direction_to_model.md)（Advanced）
+- ✅ [`extra_solid_infills`](strength/extra_solid_infills.md)（Advanced）
+- ✅ [`bridge_angle`](strength/bridge_angle.md)（Advanced）
+- ✅ [`internal_bridge_angle`](strength/internal_bridge_angle.md)（Advanced）
+- ✅ [`minimum_sparse_infill_area`](strength/minimum_sparse_infill_area.md)（Advanced）
+- ✅ [`infill_combination`](strength/infill_combination.md)（Advanced）
+- ✅ [`infill_combination_max_layer_height`](strength/infill_combination_max_layer_height.md)（Advanced）
+- ✅ [`detect_narrow_internal_solid_infill`](strength/detect_narrow_internal_solid_infill.md)（Advanced）
+- ✅ [`ensure_vertical_shell_thickness`](strength/ensure_vertical_shell_thickness.md)（Advanced）
+
+## Speed（`speed/`）
+
+- ✅ [`initial_layer_speed`](speed/initial_layer_speed.md)（Initial layer speed）
+- ✅ [`initial_layer_infill_speed`](speed/initial_layer_infill_speed.md)（Initial layer speed）
+- ✅ [`initial_layer_travel_speed`](speed/initial_layer_travel_speed.md)（Initial layer speed）
+- ✅ [`slow_down_layers`](speed/slow_down_layers.md)（Initial layer speed）
+- ✅ [`outer_wall_speed`](speed/outer_wall_speed.md)（Other layers speed）
+- ✅ [`inner_wall_speed`](speed/inner_wall_speed.md)（Other layers speed）
+- ✅ [`small_perimeter_speed`](speed/small_perimeter_speed.md)（Other layers speed）
+- ✅ [`small_perimeter_threshold`](speed/small_perimeter_threshold.md)（Other layers speed）
+- ✅ [`sparse_infill_speed`](speed/sparse_infill_speed.md)（Other layers speed）
+- ✅ [`internal_solid_infill_speed`](speed/internal_solid_infill_speed.md)（Other layers speed）
+- ✅ [`top_surface_speed`](speed/top_surface_speed.md)（Other layers speed）
+- ✅ [`gap_infill_speed`](speed/gap_infill_speed.md)（Other layers speed）
+- ✅ [`ironing_speed`](speed/ironing_speed.md)（Other layers speed）
+- ✅ [`support_speed`](speed/support_speed.md)（Other layers speed）
+- ✅ [`support_interface_speed`](speed/support_interface_speed.md)（Other layers speed）
+- ✅ [`enable_overhang_speed`](speed/enable_overhang_speed.md)（Overhang speed）
+- ✅ [`slowdown_for_curled_perimeters`](speed/slowdown_for_curled_perimeters.md)（Overhang speed）
+- ✅ [`overhang_1_4_speed`](speed/overhang_1_4_speed.md)（Overhang speed）
+- ✅ [`overhang_2_4_speed`](speed/overhang_2_4_speed.md)（Overhang speed）
+- ✅ [`overhang_3_4_speed`](speed/overhang_3_4_speed.md)（Overhang speed）
+- ✅ [`overhang_4_4_speed`](speed/overhang_4_4_speed.md)（Overhang speed）
+- 🚧 [`bridge_speed`](speed/bridge_speed.md)（Overhang speed）
+- 🚧 [`internal_bridge_speed`](speed/internal_bridge_speed.md)（Overhang speed）
+- ✅ [`travel_speed`](speed/travel_speed.md)（Travel speed）
+- ✅ [`default_acceleration`](speed/default_acceleration.md)（Acceleration）
+- ✅ [`outer_wall_acceleration`](speed/outer_wall_acceleration.md)（Acceleration）
+- ✅ [`inner_wall_acceleration`](speed/inner_wall_acceleration.md)（Acceleration）
+- ✅ [`bridge_acceleration`](speed/bridge_acceleration.md)（Acceleration）
+- ✅ [`sparse_infill_acceleration`](speed/sparse_infill_acceleration.md)（Acceleration）
+- ✅ [`internal_solid_infill_acceleration`](speed/internal_solid_infill_acceleration.md)（Acceleration）
+- ✅ [`initial_layer_acceleration`](speed/initial_layer_acceleration.md)（Acceleration）
+- ✅ [`first_layer_travel_acceleration`](speed/first_layer_travel_acceleration.md)（Acceleration）
+- ✅ [`top_surface_acceleration`](speed/top_surface_acceleration.md)（Acceleration）
+- ✅ [`travel_acceleration`](speed/travel_acceleration.md)（Acceleration）
+- ✅ [`accel_to_decel_enable`](speed/accel_to_decel_enable.md)（Acceleration）
+- ✅ [`accel_to_decel_factor`](speed/accel_to_decel_factor.md)（Acceleration）
+- ✅ [`default_jerk`](speed/default_jerk.md)（Jerk(XY)）
+- ✅ [`outer_wall_jerk`](speed/outer_wall_jerk.md)（Jerk(XY)）
+- ✅ [`inner_wall_jerk`](speed/inner_wall_jerk.md)（Jerk(XY)）
+- ✅ [`infill_jerk`](speed/infill_jerk.md)（Jerk(XY)）
+- ✅ [`top_surface_jerk`](speed/top_surface_jerk.md)（Jerk(XY)）
+- ✅ [`initial_layer_jerk`](speed/initial_layer_jerk.md)（Jerk(XY)）
+- ✅ [`first_layer_travel_jerk`](speed/first_layer_travel_jerk.md)（Jerk(XY)）
+- ✅ [`travel_jerk`](speed/travel_jerk.md)（Jerk(XY)）
+- ✅ [`default_junction_deviation`](speed/default_junction_deviation.md)（Jerk(XY)）
+- ✅ [`max_volumetric_extrusion_rate_slope`](speed/max_volumetric_extrusion_rate_slope.md)（Advanced）
+- ✅ [`max_volumetric_extrusion_rate_slope_segment_length`](speed/max_volumetric_extrusion_rate_slope_segment_length.md)（Advanced）
+- ✅ [`extrusion_rate_smoothing_external_perimeter_only`](speed/extrusion_rate_smoothing_external_perimeter_only.md)（Advanced）
+
+## Support（`support/`）
+
+- ✅ [`enable_support`](support/enable_support.md)（Support）
+- ✅ [`support_type`](support/support_type.md)（Support）
+- ✅ [`support_style`](support/support_style.md)（Support）
+- ✅ [`support_threshold_angle`](support/support_threshold_angle.md)（Support）
+- ✅ [`support_threshold_overlap`](support/support_threshold_overlap.md)（Support）
+- ✅ [`raft_first_layer_density`](support/raft_first_layer_density.md)（Support）
+- ✅ [`raft_first_layer_expansion`](support/raft_first_layer_expansion.md)（Support）
+- ✅ [`support_on_build_plate_only`](support/support_on_build_plate_only.md)（Support）
+- ✅ [`support_critical_regions_only`](support/support_critical_regions_only.md)（Support）
+- ✅ [`support_remove_small_overhang`](support/support_remove_small_overhang.md)（Support）
+- ✅ [`raft_layers`](support/raft_layers.md)（Raft）
+- ✅ [`raft_contact_distance`](support/raft_contact_distance.md)（Raft）
+- ✅ [`support_filament`](support/support_filament.md)（Support filament）
+- ✅ [`support_interface_filament`](support/support_interface_filament.md)（Support filament）
+- ✅ [`support_interface_not_for_body`](support/support_interface_not_for_body.md)（Support filament）
+- ✅ [`support_ironing`](support/support_ironing.md)（Support ironing）
+- ✅ [`support_ironing_pattern`](support/support_ironing_pattern.md)（Support ironing）
+- ✅ [`support_ironing_flow`](support/support_ironing_flow.md)（Support ironing）
+- ✅ [`support_ironing_spacing`](support/support_ironing_spacing.md)（Support ironing）
+- ✅ [`support_top_z_distance`](support/support_top_z_distance.md)（Advanced）
+- ✅ [`support_bottom_z_distance`](support/support_bottom_z_distance.md)（Advanced）
+- ✅ [`tree_support_wall_count`](support/tree_support_wall_count.md)（Advanced）
+- ✅ [`support_base_pattern`](support/support_base_pattern.md)（Advanced）
+- ✅ [`support_base_pattern_spacing`](support/support_base_pattern_spacing.md)（Advanced）
+- ✅ [`support_angle`](support/support_angle.md)（Advanced）
+- ✅ [`support_interface_top_layers`](support/support_interface_top_layers.md)（Advanced）
+- ✅ [`support_interface_bottom_layers`](support/support_interface_bottom_layers.md)（Advanced）
+- ✅ [`support_interface_pattern`](support/support_interface_pattern.md)（Advanced）
+- ✅ [`support_interface_spacing`](support/support_interface_spacing.md)（Advanced）
+- 🚧 [`support_interface_min_area`](support/support_interface_min_area.md)（Advanced）
+- ✅ [`support_bottom_interface_spacing`](support/support_bottom_interface_spacing.md)（Advanced）
+- ✅ [`support_expansion`](support/support_expansion.md)（Advanced）
+- ✅ [`support_object_xy_distance`](support/support_object_xy_distance.md)（Advanced）
+- ✅ [`support_object_first_layer_gap`](support/support_object_first_layer_gap.md)（Advanced）
+- ✅ [`bridge_no_support`](support/bridge_no_support.md)（Advanced）
+- ✅ [`max_bridge_length`](support/max_bridge_length.md)（Advanced）
+- ✅ [`independent_support_layer_height`](support/independent_support_layer_height.md)（Advanced）
+- ✅ [`tree_support_tip_diameter`](support/tree_support_tip_diameter.md)（Tree supports）
+- ✅ [`tree_support_branch_distance`](support/tree_support_branch_distance.md)（Tree supports）
+- ✅ [`tree_support_branch_distance_organic`](support/tree_support_branch_distance_organic.md)（Tree supports）
+- ✅ [`tree_support_top_rate`](support/tree_support_top_rate.md)（Tree supports）
+- ✅ [`tree_support_branch_diameter`](support/tree_support_branch_diameter.md)（Tree supports）
+- ✅ [`tree_support_branch_diameter_organic`](support/tree_support_branch_diameter_organic.md)（Tree supports）
+- ✅ [`tree_support_branch_diameter_angle`](support/tree_support_branch_diameter_angle.md)（Tree supports）
+- ✅ [`tree_support_branch_angle`](support/tree_support_branch_angle.md)（Tree supports）
+- ✅ [`tree_support_branch_angle_organic`](support/tree_support_branch_angle_organic.md)（Tree supports）
+- ✅ [`tree_support_angle_slow`](support/tree_support_angle_slow.md)（Tree supports）
+- 🚧 [`tree_support_adaptive_layer_height`](support/tree_support_adaptive_layer_height.md)（Tree supports）
+- ✅ [`tree_support_auto_brim`](support/tree_support_auto_brim.md)（Tree supports）
+- ✅ [`tree_support_brim_width`](support/tree_support_brim_width.md)（Tree supports）
+
+## Multimaterial（`multimaterial/`）
+
+- ✅ [`enable_prime_tower`](multimaterial/enable_prime_tower.md)（Prime tower）
+- ✅ [`prime_tower_width`](multimaterial/prime_tower_width.md)（Prime tower）
+- ✅ [`prime_volume`](multimaterial/prime_volume.md)（Prime tower）
+- ✅ [`prime_tower_brim_width`](multimaterial/prime_tower_brim_width.md)（Prime tower）
+- ✅ [`wipe_tower_bridging`](multimaterial/wipe_tower_bridging.md)（Prime tower）
+- ✅ [`wipe_tower_extra_spacing`](multimaterial/wipe_tower_extra_spacing.md)（Prime tower）
+- ✅ [`wipe_tower_extra_flow`](multimaterial/wipe_tower_extra_flow.md)（Prime tower）
+- ✅ [`wipe_tower_max_purge_speed`](multimaterial/wipe_tower_max_purge_speed.md)（Prime tower）
+- ✅ [`wipe_tower_wall_type`](multimaterial/wipe_tower_wall_type.md)（Prime tower）
+- ✅ [`wipe_tower_cone_angle`](multimaterial/wipe_tower_cone_angle.md)（Prime tower）
+- ✅ [`wipe_tower_extra_rib_length`](multimaterial/wipe_tower_extra_rib_length.md)（Prime tower）
+- ✅ [`wipe_tower_rib_width`](multimaterial/wipe_tower_rib_width.md)（Prime tower）
+- ✅ [`wipe_tower_fillet_wall`](multimaterial/wipe_tower_fillet_wall.md)（Prime tower）
+- ✅ [`wipe_tower_no_sparse_layers`](multimaterial/wipe_tower_no_sparse_layers.md)（Prime tower）
+- 🚧 [`wipe_tower_wall_gap`](multimaterial/wipe_tower_wall_gap.md)（Prime tower）
+- ✅ [`prime_tower_enable_framework`](multimaterial/prime_tower_enable_framework.md)（Prime tower）
+- ✅ [`enable_tower_interface_features`](multimaterial/enable_tower_interface_features.md)（Prime tower）
+- ✅ [`enable_tower_interface_cooldown_during_tower`](multimaterial/enable_tower_interface_cooldown_during_tower.md)（Prime tower）
+- ✅ [`single_extruder_multi_material_priming`](multimaterial/single_extruder_multi_material_priming.md)（Prime tower）
+- ✅ [`wall_filament`](multimaterial/wall_filament.md)（Filament for Features）
+- ✅ [`sparse_infill_filament`](multimaterial/sparse_infill_filament.md)（Filament for Features）
+- ✅ [`solid_infill_filament`](multimaterial/solid_infill_filament.md)（Filament for Features）
+- ✅ [`wipe_tower_filament`](multimaterial/wipe_tower_filament.md)（Filament for Features）
+- ✅ [`ooze_prevention`](multimaterial/ooze_prevention.md)（Ooze prevention）
+- ✅ [`standby_temperature_delta`](multimaterial/standby_temperature_delta.md)（Ooze prevention）
+- ✅ [`preheat_time`](multimaterial/preheat_time.md)（Ooze prevention）
+- ✅ [`preheat_steps`](multimaterial/preheat_steps.md)（Ooze prevention）
+- ✅ [`delta_temperature`](multimaterial/delta_temperature.md)（Ooze prevention）
+- ✅ [`flush_into_infill`](multimaterial/flush_into_infill.md)（Flush options）
+- ✅ [`flush_into_objects`](multimaterial/flush_into_objects.md)（Flush options）
+- ✅ [`flush_into_support`](multimaterial/flush_into_support.md)（Flush options）
+- ✅ [`interlocking_beam`](multimaterial/interlocking_beam.md)（Advanced）
+- ✅ [`interface_shells`](multimaterial/interface_shells.md)（Advanced）
+- ✅ [`mmu_segmented_region_max_width`](multimaterial/mmu_segmented_region_max_width.md)（Advanced）
+- ✅ [`mmu_segmented_region_interlocking_depth`](multimaterial/mmu_segmented_region_interlocking_depth.md)（Advanced）
+- ✅ [`interlocking_beam_width`](multimaterial/interlocking_beam_width.md)（Advanced）
+- ✅ [`interlocking_orientation`](multimaterial/interlocking_orientation.md)（Advanced）
+- ✅ [`interlocking_beam_layer_count`](multimaterial/interlocking_beam_layer_count.md)（Advanced）
+- ✅ [`interlocking_depth`](multimaterial/interlocking_depth.md)（Advanced）
+- ✅ [`interlocking_boundary_avoidance`](multimaterial/interlocking_boundary_avoidance.md)（Advanced）
+- 🚧 [`dithering_local_z_mode`](multimaterial/dithering_local_z_mode.md)（Color Mixing (Experimental)）
+- 🚧 [`dithering_local_z_whole_objects`](multimaterial/dithering_local_z_whole_objects.md)（Color Mixing (Experimental)）
+- 🚧 [`dithering_local_z_infill`](multimaterial/dithering_local_z_infill.md)（Color Mixing (Experimental)）
+
+## Others（`others/`）
+
+- ✅ [`skirt_loops`](others/skirt_loops.md)（Skirt）
+- ✅ [`skirt_type`](others/skirt_type.md)（Skirt）
+- ✅ [`min_skirt_length`](others/min_skirt_length.md)（Skirt）
+- ✅ [`skirt_distance`](others/skirt_distance.md)（Skirt）
+- ✅ [`skirt_start_angle`](others/skirt_start_angle.md)（Skirt）
+- ✅ [`skirt_speed`](others/skirt_speed.md)（Skirt）
+- ✅ [`skirt_height`](others/skirt_height.md)（Skirt）
+- ✅ [`draft_shield`](others/draft_shield.md)（Skirt）
+- ✅ [`single_loop_draft_shield`](others/single_loop_draft_shield.md)（Skirt）
+- ✅ [`brim_type`](others/brim_type.md)（Brim）
+- ✅ [`brim_width`](others/brim_width.md)（Brim）
+- ✅ [`brim_object_gap`](others/brim_object_gap.md)（Brim）
+- ✅ [`brim_ears_max_angle`](others/brim_ears_max_angle.md)（Brim）
+- ✅ [`brim_ears_detection_length`](others/brim_ears_detection_length.md)（Brim）
+- ✅ [`slicing_mode`](others/slicing_mode.md)（Special mode）
+- ✅ [`print_sequence`](others/print_sequence.md)（Special mode）
+- ✅ [`print_order`](others/print_order.md)（Special mode）
+- ✅ [`spiral_mode`](others/spiral_mode.md)（Special mode）
+- ✅ [`spiral_mode_smooth`](others/spiral_mode_smooth.md)（Special mode）
+- ✅ [`spiral_mode_max_xy_smoothing`](others/spiral_mode_max_xy_smoothing.md)（Special mode）
+- ✅ [`spiral_starting_flow_ratio`](others/spiral_starting_flow_ratio.md)（Special mode）
+- ✅ [`spiral_finishing_flow_ratio`](others/spiral_finishing_flow_ratio.md)（Special mode）
+- ✅ [`timelapse_type`](others/timelapse_type.md)（Special mode）
+- ✅ [`fuzzy_skin`](others/fuzzy_skin.md)（Fuzzy Skin）
+- ✅ [`fuzzy_skin_mode`](others/fuzzy_skin_mode.md)（Fuzzy Skin）
+- ✅ [`fuzzy_skin_noise_type`](others/fuzzy_skin_noise_type.md)（Fuzzy Skin）
+- ✅ [`fuzzy_skin_point_distance`](others/fuzzy_skin_point_distance.md)（Fuzzy Skin）
+- ✅ [`fuzzy_skin_thickness`](others/fuzzy_skin_thickness.md)（Fuzzy Skin）
+- ✅ [`fuzzy_skin_scale`](others/fuzzy_skin_scale.md)（Fuzzy Skin）
+- ✅ [`fuzzy_skin_octaves`](others/fuzzy_skin_octaves.md)（Fuzzy Skin）
+- ✅ [`fuzzy_skin_persistence`](others/fuzzy_skin_persistence.md)（Fuzzy Skin）
+- ✅ [`fuzzy_skin_first_layer`](others/fuzzy_skin_first_layer.md)（Fuzzy Skin）
+- ✅ [`reduce_infill_retraction`](others/reduce_infill_retraction.md)（G-code output）
+- ✅ [`gcode_add_line_number`](others/gcode_add_line_number.md)（G-code output）
+- ✅ [`gcode_comments`](others/gcode_comments.md)（G-code output）
+- ✅ [`gcode_label_objects`](others/gcode_label_objects.md)（G-code output）
+- ✅ [`exclude_object`](others/exclude_object.md)（G-code output）
+- ✅ [`filename_format`](others/filename_format.md)（G-code output）
+- ✅ [`post_process`](others/post_process.md)（Post-processing Scripts）
+- ✅ [`notes`](others/notes.md)（Notes）
+
+## Plate Settings（`plate/`）
+
+- 🚧 [`curr_bed_type`](plate/curr_bed_type.md)（fork 板级参数）
+- 🔗 [`skirt_start_angle`](others/skirt_start_angle.md)（同 Others 页，交叉引用）
+- 🔗 [`print_sequence`](others/print_sequence.md)（同 Others 页，交叉引用）
+- 🔗 [`spiral_mode`](others/spiral_mode.md)（同 Others 页，交叉引用）
+- 🚧 [`first_layer_sequence_choice`](plate/first_layer_sequence_choice.md)（fork 板级参数）
+- 🚧 [`other_layers_sequence_choice`](plate/other_layers_sequence_choice.md)（fork 板级参数）
+
+> Frequent 页为常用参数聚合页，其键均来自上述主页面（`layer_height`、`sparse_infill_density`、`wall_loops`、`enable_support`），不重复建档。
+
+共 311 键：303 拷贝 / 8 占位 / 0 交叉引用。
