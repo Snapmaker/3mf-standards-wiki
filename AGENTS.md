@@ -8,9 +8,11 @@
 
 | 目录 | 状态 | 放什么 |
 |---|---|---|
-| `wiki/3mf/` | 现有 | 3MF 文件格式专题（文件结构、配置文件解析） |
+| `wiki/specification/3mf/` | 现有 | 3MF 文件格式专题（文件结构、配置文件解析、版本管理细则） |
+| `wiki/specification/gcode.3mf/` | 预留（占位） | gcode.3mf 嵌入式格式专题 |
 | `wiki/images/` | 按需建 | wiki 图片集中存放，按主题建子目录 |
-| `wiki/printer/` `wiki/filament/` `wiki/process/` | 现有 | 设置参数每键一文档。目录名按 fork UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
+| `wiki/setting/printer/` `wiki/setting/filament/` `wiki/setting/process/` | 现有 | 设置参数每键一文档。子目录名按 fork UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
+| `wiki/preset/` | 现有 | 预设体系文档（配置文件命名、继承、版本） |
 | `wiki/print_prepare/` `wiki/calibration/` `wiki/general_settings/` `wiki/guides/` `wiki/cli/` `wiki/developer_reference/` `wiki/releases/` | 预留 | fork 完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
 | `docs/` | 现有（内部） | 研发证据链：盘点、对账、问题清单。不是 wiki 正文的层级，不放新人向内容 |
 

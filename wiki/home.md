@@ -8,9 +8,10 @@
 
 | 页面 | 内容 |
 |---|---|
-| [3mf 内部文件组成与作用](3mf/3mf_file_structure.md) | 入门：一个 3mf 是什么、有哪些文件、各自干什么 |
-| [project_settings.config](3mf/3mf_project_settings.md) | 全局打印设置：500 多项参数怎么来的、三个值得知道的事实 |
-| [model_settings.config](3mf/3mf_model_settings.md) | 对象/零件/打印板三层信息与参数覆盖优先级 |
+| [3mf 内部文件组成与作用](specification/3mf/3mf_file_structure.md) | 入门：一个 3mf 是什么、有哪些文件、各自干什么 |
+| [project_settings.config](specification/3mf/3mf_project_settings.md) | 全局打印设置：500 多项参数怎么来的、三个值得知道的事实 |
+| [model_settings.config](specification/3mf/3mf_model_settings.md) | 对象/零件/打印板三层信息与参数覆盖优先级 |
+| [3MF 版本管理细则](specification/3mf/3mf_version_management.md) | 进阶：五层版本标识、兼容性矩阵、变更检查清单 |
 
 ## 研发内部资料（证据链）
 
@@ -29,9 +30,10 @@
 
 | 总览页 | 覆盖范围 |
 |---|---|
-| [打印机设置参数总览](printer/printer_overview.md) | 6 页面 104 键 |
-| [耗材设置参数总览](filament/filament_overview.md) | 7 页面 107 键（含 18 个回抽覆盖交叉引用） |
-| [工艺设置参数总览](process/process_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
+| [打印机设置参数总览](setting/printer/printer_overview.md) | 6 页面 104 键 |
+| [耗材设置参数总览](setting/filament/filament_overview.md) | 7 页面 107 键（含 18 个回抽覆盖交叉引用） |
+| [工艺设置参数总览](setting/process/process_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
+| [打印配置文件：命名与继承](preset/configuration-files.md) | 入门：配置文件叫什么、元信息、参数如何复用 |
 
 ## 规划中
 
