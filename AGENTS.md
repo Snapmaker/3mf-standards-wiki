@@ -10,7 +10,8 @@
 |---|---|---|
 | `wiki/3mf/` | 现有 | 3MF 文件格式专题（文件结构、配置文件解析） |
 | `wiki/images/` | 按需建 | wiki 图片集中存放，按主题建子目录 |
-| `wiki/printer_settings/` `wiki/material_settings/` `wiki/print_settings/` `wiki/print_prepare/` `wiki/calibration/` `wiki/general_settings/` `wiki/guides/` `wiki/developer_reference/` `wiki/releases/` | 预留 | fork 完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
+| `wiki/printer/` `wiki/filament/` `wiki/process/` | 现有 | 设置参数每键一文档。目录名按 fork UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
+| `wiki/print_prepare/` `wiki/calibration/` `wiki/general_settings/` `wiki/guides/` `wiki/cli/` `wiki/developer_reference/` `wiki/releases/` | 预留 | fork 完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
 | `docs/` | 现有（内部） | 研发证据链：盘点、对账、问题清单。不是 wiki 正文的层级，不放新人向内容 |
 
 ## 命名

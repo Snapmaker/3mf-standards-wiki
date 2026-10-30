@@ -29,9 +29,9 @@
 
 | 总览页 | 覆盖范围 |
 |---|---|
-| [打印机设置参数总览](printer_settings/printer_settings_overview.md) | 6 页面 104 键 |
-| [耗材设置参数总览](material_settings/material_settings_overview.md) | 7 页面 107 键（含 18 个回抽覆盖交叉引用） |
-| [工艺设置参数总览](print_settings/print_settings_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
+| [打印机设置参数总览](printer/printer_overview.md) | 6 页面 104 键 |
+| [耗材设置参数总览](filament/filament_overview.md) | 7 页面 107 键（含 18 个回抽覆盖交叉引用） |
+| [工艺设置参数总览](process/process_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
 
 ## 规划中
 
