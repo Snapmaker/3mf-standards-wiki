@@ -13,6 +13,14 @@
 | [model_settings.config](specification/3mf/3mf_model_settings.md) | 对象/零件/打印板三层信息与参数覆盖优先级 |
 | [3MF 版本管理细则](specification/3mf/3mf_version_management.md) | 进阶：五层版本标识、兼容性矩阵、变更检查清单 |
 
+## gcode.3mf 专题
+
+切片成品包（`.gcode.3mf`，内嵌 G-code）的格式文档：
+
+| 页面 | 内容 |
+|---|---|
+| [gcode.3mf 规范 v1.0（草案）](specification/gcode.3mf/gcode_3mf_standard.md) | 标准正文：总体结构 → 盘与打印数据 → 一致性要求，GB/T 体例（技术内容 = v0.9.9） |
+
 ## 研发内部资料（证据链）
 
 [docs/](../docs/) 目录是阶段一盘点与对齐的原始工作文档，wiki 页面的结论都能在这里找到证据：
@@ -23,6 +31,7 @@
 | [02-字段字典对账-project_settings](../docs/02-字段字典对账-project_settings.md) | 源码定义 × 样本落盘逐项对账 |
 | [03-现状盘点-model_settings与嵌入预设](../docs/03-现状盘点-model_settings与嵌入预设.md) | 三层字段实测 + 嵌入预设文件 |
 | [04-问题清单-切片软件团队对齐](../docs/04-问题清单-切片软件团队对齐.md) | 进入阶段二（规范设计）前待裁决的 Q1–Q22 |
+| [06-对账-gcode.3mf与3MF-Toolpath扩展](../docs/06-对账-gcode.3mf与3MF-Toolpath扩展.md) | gcode.3mf 与 3MF 联盟 Toolpath RC 逐机制对账（2026-11-04） |
 
 ## 设置参数文档
 
