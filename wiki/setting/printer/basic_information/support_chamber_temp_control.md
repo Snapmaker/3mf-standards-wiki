@@ -12,7 +12,7 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-chamber-temp-control=1`.  
 OrcaSlicer use `M141/M191` command to control active chamber heater.
 
-If your Filament's [Activate temperature control](../../filament/filament/material_temperatures.md#print-chamber-temperature) and your printer `Support control chamber temperature` option are checked , OrcaSlicer will insert `M191` command at the beginning of the gcode (before `Machine G-code`).
+If your Filament's [Activate temperature control](../../filament/filament/activate_chamber_temp_control.md) and your printer `Support control chamber temperature` option are checked , OrcaSlicer will insert `M191` command at the beginning of the gcode (before `Machine G-code`).
 
 ![Chamber-Temperature-Control-Printer](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Chamber/Chamber-Temperature-Control-Printer.png?raw=true)
 ![Chamber-Temperature-Control-Material](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Chamber/Chamber-Temperature-Control-Material.png?raw=true)

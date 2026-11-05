@@ -28,10 +28,10 @@ Skeleton density * (Infill area - Skin area + Lock depth area) + (Skin density *
     - **Slicing Time:** Normal ![level-to-worse-4](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-4.svg?raw=true)
     - **G-code Size:** Normal-High ![level-to-worse-5](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-5.svg?raw=true)
 - **Extra:**
-    - **[Multiline](../../process/strength/strength_settings_infill.md#fill-multiline):** No
-    - **[Symmetric infill Y axis](../../process/strength/strength_settings_infill.md#symmetric-infill-y-axis):** Yes
-    - **[Smooth Factor](../../process/strength/strength_settings_infill.md#sparse-infill-smooth-factor):** No
+    - **[Multiline](../../process/strength/fill_multiline.md):** No
+    - **[Symmetric infill Y axis](../../process/strength/symmetric_infill_y_axis.md):** Yes
+    - **[Smooth Factor](../../process/strength/sparse_infill_pattern.md):** No
 - **Applies to:**
-    - **[Sparse Infill](../../process/strength/strength_settings_infill.md#sparse-infill-density)**
+    - **[Sparse Infill](../../process/strength/sparse_infill_density.md)**
 
 ![infill-top-locked-zag](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/infill-top-locked-zag.png?raw=true)

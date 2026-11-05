@@ -23,4 +23,4 @@ The top and bottom interfaces are set separately:
 With both set to `0` there is no interface at all: the support prints all the way through with the [Base Pattern](#base-pattern), which is fastest and easiest to remove but leaves the roughest overhangs.
 
 > [!TIP]
-> When the interface has its own filament assigned, this number also decides how the layers are shared between the two materials. See [Interface filament transitions](../../process/support/support_settings_filament.md#interface-filament-transitions).
+> When the interface has its own filament assigned, this number also decides how the layers are shared between the two materials. See [Interface filament transitions](../../process/support/support_interface_filament.md).

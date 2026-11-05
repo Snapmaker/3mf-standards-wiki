@@ -11,4 +11,4 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--spiral-finishing-flow-ratio=1`.  
 Sets the finishing flow ratio when ending the spiral. Normally, the flow scales from 100% to 0% during the last loop, which can lead to under-extrusion at the end.  
-Use this to control the ending and ensure consistent extrusion. Only applied when [Use relative E distances](../../printer/basic_information/printer_basic_information_advanced.md#use-relative-e-distances) is enabled.
+Use this to control the ending and ensure consistent extrusion. Only applied when [Use relative E distances](../../printer/basic_information/use_relative_e_distances.md) is enabled.

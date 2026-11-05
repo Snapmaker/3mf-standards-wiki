@@ -11,4 +11,4 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--overhang-reverse-internal-only=1`.  
 A simple way to reduce the texture on the outer wall is to only reverse the internal walls.
-This will still provide almost all of the benefits of alternating extrusion direction on even layers (if using [inner/outer](../../process/quality/quality_settings_wall_and_surfaces.md#innerouter)), but the outer wall will be printed in the same direction, resulting in a smoother surface finish.
+This will still provide almost all of the benefits of alternating extrusion direction on even layers (if using [inner/outer](../../process/quality/wall_sequence.md)), but the outer wall will be printed in the same direction, resulting in a smoother surface finish.

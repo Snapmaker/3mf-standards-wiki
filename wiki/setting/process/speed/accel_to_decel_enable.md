@@ -12,4 +12,4 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--accel-to-decel-enable=1`.  
 Adjusts Klipper's `max_accel_to_decel` automatically. Each time Orca sets the acceleration with `SET_VELOCITY_LIMIT ACCEL=`, it adds `ACCEL_TO_DECEL=` at the [accel to decel](#accel-to-decel) percentage of that acceleration. When disabled, `ACCEL_TO_DECEL` is not sent.  
-This option is only shown when the [G-code flavor](../../printer/basic_information/printer_basic_information_advanced.md#g-code-flavor) is Klipper, and it is enabled by default.
+This option is only shown when the [G-code flavor](../../printer/basic_information/gcode_flavor.md) is Klipper, and it is enabled by default.

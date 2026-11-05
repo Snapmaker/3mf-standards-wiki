@@ -20,4 +20,4 @@ Infill density determines the amount of material used to fill the interior of a 
 > [!NOTE]
 > Density is usually calculated as a percentage of the total infill volume, not the total print volume.  
 > Nevertheless, **not all patterns interpret density the same way**, so the actual material usage may vary.  
-> You can see each pattern's material usage in the [Patterns section](../../process/strength/strength_settings_patterns.md).
+> You can see each pattern's material usage in the [Patterns section](../../process/strength/sparse_infill_pattern.md).

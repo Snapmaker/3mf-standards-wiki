@@ -14,7 +14,7 @@ By default, walls are printed as closed loops. When a wall is too thin to contai
 Thin walls printed this way may have reduced surface quality and strength because they are not closed loops.
 
 > [!TIP]
-> It is usually recommended to use the [Arachne wall generator](../../process/quality/quality_settings_wall_generator.md#arachne), which disables "Detect thin walls" because it uses a different approach to wall generation.
+> It is usually recommended to use the [Arachne wall generator](../../process/quality/initial_layer_min_bead_width.md), which disables "Detect thin walls" because it uses a different approach to wall generation.
 
 - In small details, it can generate features that wouldn't be possible with traditional wall generation methods.  
   ![walls-small-detect-thin-off](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/walls/walls-small-detect-thin-off.png?raw=true)

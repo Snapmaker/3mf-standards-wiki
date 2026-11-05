@@ -11,7 +11,7 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--auxiliary-fan=1`.  
 Enable this option if machine has auxiliary part cooling fan.  
-The speed will be set for each material in the [material cooling settings](../../filament/cooling/material_cooling.md#auxiliary-part-cooling-fan).
+The speed will be set for each material in the [material cooling settings](../../printer/basic_information/auxiliary_fan.md).
 
 G-code command:
 

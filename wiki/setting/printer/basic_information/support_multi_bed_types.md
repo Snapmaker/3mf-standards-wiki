@@ -14,7 +14,7 @@ Once enabled, you can select the bed type in the drop-down menu, corresponding b
 
 ![bed_type_selector](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/bed/bed_type_selector.png?raw=true)
 
-This also enabled you to set each bed type in the [filament settings](../../filament/filament/material_temperatures.md#bed).
+This also enabled you to set each bed type in the [filament settings](../../filament/filament/cool_plate_temp.md).
 
 ![bed_type_material_temperature](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/bed/bed_type_material_temperature.png?raw=true)
 

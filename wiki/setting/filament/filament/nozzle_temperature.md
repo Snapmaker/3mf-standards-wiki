@@ -13,4 +13,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--nozzle-temperature-initial-layer=1` (same pattern for the other variables above).  
 One of the most critical settings for successful 3D printing is the nozzle temperature.  
 The correct nozzle temperature ensures proper melting and extrusion of the filament, leading to good layer adhesion and overall print quality.  
-You can set a higher temperature for the first layer to improve bed adhesion but be cautious with deformations as [elephant foot](../../process/quality/quality_settings_precision.md#elephant-foot-compensation).
+You can set a higher temperature for the first layer to improve bed adhesion but be cautious with deformations as [elephant foot](../../process/quality/elefant_foot_compensation.md).

@@ -22,7 +22,7 @@ This feature compensates for the "elephant foot" effect, which occurs when the f
 
 To mitigate this effect, OrcaSlicer allows you to specify a positive distance by which the first layer is shrunk, decreasing linearly over the specified number of layers. This adjustment effectively reduces the width of the first few layers, helping to achieve a more accurate final print size.
 
-The compensation is only applied when the object is printed directly on the build plate. It is skipped when a [raft](../../process/support/support_settings_raft.md) is used.
+The compensation is only applied when the object is printed directly on the build plate. It is skipped when a [raft](../../process/support/raft_layers.md) is used.
 
 ![elephant-foot-compensation](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Precision/elephant-foot-compensation.png?raw=true)
 
@@ -59,4 +59,4 @@ Assuming the compensation value is 0.25 mm:
 > [!NOTE]
 > This feature makes the part look like it has a smaller footprint on the build plate in the preview, but the final print (if calibrated correctly) will have the correct dimensions.  
 > That's why the brim may look disconnected from the object when this feature is enabled. But in the final print, the brim will be correctly attached to the object.  
-> If you use a high Elephant foot compensation value, you may want to enable the [Brim use EFC outline](../../process/others/others_settings_brim.md#brim-use-efc-outline) option to ensure proper brim attachment.
+> If you use a high Elephant foot compensation value, you may want to enable the [Brim use EFC outline](../../process/others/brim_type.md) option to ensure proper brim attachment.

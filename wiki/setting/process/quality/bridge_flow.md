@@ -19,5 +19,5 @@ For internal bridges, increasing the flow ratio can enhance strength and upper l
 - Values above 1.0: Increase the amount of material while maintaining line spacing. This can improve line contact and strength.
 - Values below 1.0: Reduce the amount of material while adjusting line spacing to maintain contact. This can reduce sagging.
 
-The actual bridge flow used is calculated by multiplying this value with the [filament flow ratio](../../filament/filament/material_flow_ratio_and_pressure_advance.md#flow-ratio), and if set, the object's flow ratio.  
+The actual bridge flow used is calculated by multiplying this value with the [filament flow ratio](../../filament/filament/filament_flow_ratio.md), and if set, the object's flow ratio.  
 For internal bridges, the internal bridge flow ratio is also multiplied by the bridge flow ratio.

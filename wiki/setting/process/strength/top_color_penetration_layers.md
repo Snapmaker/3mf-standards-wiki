@@ -24,4 +24,4 @@ Each layer further from the surface is colored about two line widths narrower th
 - **Higher values:** give a deeper, more saturated color, which helps with translucent or light filaments that let the layers behind them show through.
 
 > [!WARNING]
-> Keep the value within the shell, which is the larger of [Shell Layers](#shell-layers) and the layers needed to reach [Shell Thickness](#shell-thickness). A larger value also colors the [sparse infill](../../process/strength/strength_settings_infill.md) under or over the painted area, adding filament changes where they can't be seen.
+> Keep the value within the shell, which is the larger of [Shell Layers](#shell-layers) and the layers needed to reach [Shell Thickness](#shell-thickness). A larger value also colors the [sparse infill](../../process/strength/sparse_infill_density.md) under or over the painted area, adding filament changes where they can't be seen.

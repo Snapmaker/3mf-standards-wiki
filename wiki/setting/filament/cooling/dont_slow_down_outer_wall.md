@@ -17,7 +17,7 @@ If enabled, this setting will ensure external perimeters are not slowed down to 
 2. To avoid changes in external wall speed which may create slight wall artifacts that appear like Z banding
 3. To avoid printing at speeds which cause VFAs (fine artifacts) on the external walls
 
-When enabled, the outer walls are left out of the slowdown: they always print at their [outer wall speed](../../process/speed/speed_settings_other_layers_speed.md#outer-wall) and their time counts as fixed time, like travels.
+When enabled, the outer walls are left out of the slowdown: they always print at their [outer wall speed](../../process/speed/outer_wall_acceleration.md) and their time counts as fixed time, like travels.
 
 The whole missing time is then taken from the rest of the extrusions, so:
 

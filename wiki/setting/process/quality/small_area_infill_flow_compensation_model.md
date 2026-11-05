@@ -19,6 +19,6 @@ In these cases, standard extrusion flow may be too much for the available space,
 
 It works by dynamically adjusting the extrusion flow based on the length of the extrusion path, ensuring more precise material deposition in small spaces.
 
-The compensation only applies to internal solid infill, top surfaces and first layer bottom surfaces, and only when that surface uses the [Rectilinear](../../process/strength/strength_settings_patterns.md#rectilinear), [Aligned Rectilinear](../../process/strength/strength_settings_patterns.md#aligned-rectilinear), [Monotonic](../../process/strength/strength_settings_patterns.md#monotonic) or [Monotonic line](../../process/strength/strength_settings_patterns.md#monotonic-line) pattern.
+The compensation only applies to internal solid infill, top surfaces and first layer bottom surfaces, and only when that surface uses the [Rectilinear](../../process/strength/sparse_infill_pattern.md), [Aligned Rectilinear](../../process/strength/sparse_infill_pattern.md), [Monotonic](../../process/strength/sparse_infill_pattern.md) or [Monotonic line](../../process/strength/sparse_infill_pattern.md) pattern.
 
 This is a native implementation of @Alexander-T-Moss's [Small Area Flow Compensation](https://github.com/Alexander-T-Moss/Small-Area-Flow-Comp).

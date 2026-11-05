@@ -18,8 +18,8 @@ When a line end cannot be connected to its neighbor, its anchor runs along the w
 
 Line ends left next to each other, about two line widths apart or closer, are joined with a short straight segment so they print as one path, also when the Maximum length of the infill anchor is `0`.
 
-[Concentric](../../process/strength/strength_settings_patterns.md#concentric) loops follow the outline of the infill area instead of ending at the walls, so there is nothing to anchor and both settings are hidden for that pattern.  
-With the [Line](../../process/strength/strength_settings_patterns.md#line) pattern both settings are disabled, and the Sparse infill anchor length is also disabled whenever the Maximum length of the infill anchor is `0`.
+[Concentric](../../process/strength/sparse_infill_pattern.md) loops follow the outline of the infill area instead of ending at the walls, so there is nothing to anchor and both settings are hidden for that pattern.  
+With the [Line](../../process/strength/sparse_infill_pattern.md) pattern both settings are disabled, and the Sparse infill anchor length is also disabled whenever the Maximum length of the infill anchor is `0`.
 
 - **Anchor Off**
 

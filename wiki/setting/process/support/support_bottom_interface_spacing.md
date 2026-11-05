@@ -15,4 +15,4 @@ Spacing of interface lines. Zero means solid interface.
 
 The top (`support_interface_spacing`) and bottom (`support_bottom_interface_spacing`) values are set separately and neither one affects the other, so a bottom interface keeps the spacing you gave it even if you have turned top interfaces off.
 
-When [Support ironing](../../process/support/support_settings_ironing.md) is enabled, the top interface is always printed solid and the top value is ignored.
+When [Support ironing](../../process/support/support_ironing.md) is enabled, the top interface is always printed solid and the top value is ignored.

@@ -12,4 +12,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--internal-solid-infill-speed=1`.  
 Speed of internal solid infill, which fills the interior of the model with solid layers.  
 This is typically set faster than the [top surface speed](#top-surface) to optimize print time, while still ensuring adequate strength and layer adhesion. Adjusting this speed can help balance print quality and efficiency, especially for models requiring strong internal structures.  
-Solid infill is also considered when [infill % is set to 100%](../../process/strength/strength_settings_infill.md#internal-solid-infill).
+Solid infill is also considered when [infill % is set to 100%](../../process/strength/internal_solid_infill_pattern.md).

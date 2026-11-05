@@ -19,7 +19,7 @@ This happens by reducing the stresses put on the extrusion system as well as red
 This feature is especially helpful when printing at high accelerations and large flow rates as the deviations are larger in these cases.
 
 > [!NOTE]
-> A value of 0 disables Extrusion rate smoothing. Any value greater than 0 turns off [Arc fitting](../../process/quality/quality_settings_precision.md#arc-fitting) and locks that option while smoothing is enabled.
+> A value of 0 disables Extrusion rate smoothing. Any value greater than 0 turns off [Arc fitting](../../process/quality/enable_arc_fitting.md) and locks that option while smoothing is enabled.
 
 ![ers-intro](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/ERS/ers-intro.png?raw=true)
 

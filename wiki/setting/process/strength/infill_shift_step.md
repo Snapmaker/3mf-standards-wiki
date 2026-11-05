@@ -20,12 +20,12 @@ Easier to slice but consider using [TPMS-D](#tpms-d) or [Gyroid](#gyroid) for be
     - **Slicing Time:** Normal ![level-to-worse-4](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-4.svg?raw=true)
     - **G-code Size:** Normal ![level-to-worse-4](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-4.svg?raw=true)
 - **Extra:**
-    - **[Multiline](../../process/strength/strength_settings_infill.md#fill-multiline):** [Classic](../../process/strength/strength_settings_infill.md#classic-strategy)
+    - **[Multiline](../../process/strength/fill_multiline.md):** [Classic](../../process/strength/sparse_infill_pattern.md)
         - **2 lines:** Print Time Normal ![level-to-worse-4](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-4.svg?raw=true) (12% Faster over single line)
         - **3 lines:** Print Time Normal-Low ![level-to-worse-3](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-3.svg?raw=true) (18% Faster over single line)
-    - **[Symmetric infill Y axis](../../process/strength/strength_settings_infill.md#symmetric-infill-y-axis):** No
-    - **[Smooth Factor](../../process/strength/strength_settings_infill.md#sparse-infill-smooth-factor):** Yes
+    - **[Symmetric infill Y axis](../../process/strength/symmetric_infill_y_axis.md):** No
+    - **[Smooth Factor](../../process/strength/sparse_infill_pattern.md):** Yes
 - **Applies to:**
-    - **[Sparse Infill](../../process/strength/strength_settings_infill.md#sparse-infill-density)**
+    - **[Sparse Infill](../../process/strength/sparse_infill_density.md)**
 
 ![infill-top-cross-hatch](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/infill-top-cross-hatch.png?raw=true)

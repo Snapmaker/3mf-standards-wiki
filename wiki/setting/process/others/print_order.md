@@ -13,7 +13,7 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--print-order=default`.  
 Determines the order in which object instances are visited within a single layer, which controls how much travel is spent moving between them.
 
-Shorter, more cyclic paths reduce oozing and avoid dragging the nozzle over parts that have already been printed, which can make [Z Hop](../../printer/extruder/printer_extruder_z_hop.md) and [Avoid crossing walls](../../process/quality/quality_settings_wall_and_surfaces.md#avoid-crossing-walls) unnecessary in many plates.
+Shorter, more cyclic paths reduce oozing and avoid dragging the nozzle over parts that have already been printed, which can make [Z Hop](../../filament/setting_overrides/filament_z_hop.md) and [Avoid crossing walls](../../process/quality/reduce_crossing_wall.md) unnecessary in many plates.
 
 > [!IMPORTANT]
 > NEW FEATURE: **Snake and Best of all (shortest path) intra-layer ordering**  
@@ -35,7 +35,7 @@ Shorter, more cyclic paths reduce oozing and avoid dragging the nozzle over part
 
     > [!TIP]
     >
-    > - **Order By** > **Height** prints the tallest object last. With [By Object](#by-object), only the last object can use the full [Printable height](../../printer/basic_information/printer_basic_information_printable_space.md#printable-height). The objects before it must stay below the extruder clearance [Height to lid](../../printer/basic_information/printer_basic_information_extruder_clearance.md#height-to-lid) or [Height to rod](../../printer/basic_information/printer_basic_information_extruder_clearance.md#height-to-rod). An object reported as too tall may slice once it prints last.
+    > - **Order By** > **Height** prints the tallest object last. With [By Object](#by-object), only the last object can use the full [Printable height](../../printer/basic_information/printable_height.md). The objects before it must stay below the extruder clearance [Height to lid](../../printer/basic_information/extruder_clearance_height_to_lid.md) or [Height to rod](../../printer/basic_information/extruder_clearance_height_to_rod.md). An object reported as too tall may slice once it prints last.
     > - **Order By** > **Filament** prints the objects of each filament one after another, which saves filament changes with [By Object](#by-object).
 
 - **Snake**: Serpentine, row-by-row traversal (objects are grouped into rows and each row is traversed in the opposite direction to the previous one), refined with 2-opt. Well suited to regular grids of many small parts.
@@ -44,6 +44,6 @@ Shorter, more cyclic paths reduce oozing and avoid dragging the nozzle over part
 > [!NOTE]
 > Except with **As object list**, ordering is applied at the island level, not only per instance, so each separate region of a layer is ordered individually. This mainly benefits assemblies and objects whose layers overlap.
 >
-> Inside each island, the infill, ironing and support paths are also printed in a short order, whatever this setting: up to eight paths in the shortest possible order, more by refining a nearest-neighbor chain. Paths that must keep their direction, such as [Grid](../../process/strength/strength_settings_patterns.md#grid) infill, are only reordered.
+> Inside each island, the infill, ironing and support paths are also printed in a short order, whatever this setting: up to eight paths in the shortest possible order, more by refining a nearest-neighbor chain. Paths that must keep their direction, such as [Grid](../../process/strength/sparse_infill_pattern.md) infill, are only reordered.
 >
 > With multiple filaments or tools in the same layer, minimizing tool changes takes priority: objects are grouped by filament first, and this setting only orders the instances within each filament group. The overall sequence may therefore not look like the shortest path across the plate.

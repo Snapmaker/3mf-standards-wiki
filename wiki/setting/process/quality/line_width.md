@@ -27,5 +27,5 @@ However, slightly wider lines generally improve **layer bonding** and **print st
 > You can read more on the flow math here: [Flow Math](https://manual.slic3r.org/advanced/flow-math).
 
 > [!IMPORTANT]
-> This will match only if using the [**Classic** wall generator](../../process/quality/quality_settings_wall_generator.md#classic).  
-> [**Arachne**](../../process/quality/quality_settings_wall_generator.md#arachne) will adjust the line width dynamically based on the model's geometry, using these values as a reference.
+> This will match only if using the [**Classic** wall generator](../../process/quality/wall_generator.md).  
+> [**Arachne**](../../process/quality/initial_layer_min_bead_width.md) will adjust the line width dynamically based on the model's geometry, using these values as a reference.

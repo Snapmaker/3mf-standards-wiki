@@ -22,7 +22,7 @@ A raft helps when:
 In exchange, the bottom of the object is rougher, the print takes more time and material, and the raft has to be removed.
 
 > [!TIP]
-> If the problem is only adhesion or warping, try a [brim](../../process/others/others_settings_brim.md) first. It is faster, uses less material and keeps the bottom surface clean.
+> If the problem is only adhesion or warping, try a [brim](../../process/others/brim_type.md) first. It is faster, uses less material and keeps the bottom surface clean.
 
 - [How a raft is built](#how-a-raft-is-built)
 - [Layers](#layers)

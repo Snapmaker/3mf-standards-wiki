@@ -1,4 +1,4 @@
-# required_nozzle_HRC
+# required_nozzle_hrc
 
 > Location: Filament → Filament → Basic information
 

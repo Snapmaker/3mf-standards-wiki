@@ -16,7 +16,7 @@ Holes are printed in the opposite direction to the contour to maintain alignment
 A hole whose outer wall touches the contour's with nothing between them, like a [narrow wall](#narrow-walls) 2 lines wide, runs with the contour instead, so both walls are laid side by side in the same direction.
 Check [PR 12669](https://github.com/OrcaSlicer/OrcaSlicer/pull/12669) for more details about reversing hole direction.
 
-The usage of [Reverse on even](../../process/quality/quality_settings_overhangs.md#reverse-on-even) will reverse wall direction based on this setting.
+The usage of [Reverse on even](../../process/quality/overhang_reverse.md) will reverse wall direction based on this setting.
 
 > [!NOTE]
 > This option will be disabled if spiral vase mode is enabled.

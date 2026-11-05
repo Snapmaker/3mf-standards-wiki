@@ -14,5 +14,5 @@
 This is the number of solid shell layers, including the surface layer.  
 When the thickness calculated from this value is less than [shell thickness](#shell-thickness), the shell layers will be increased.
 
-These layers are printed over the [sparse infill](../../process/strength/strength_settings_infill.md), so increasing **shell layers** will increase overall part strength and top surface quality.
+These layers are printed over the [sparse infill](../../process/strength/sparse_infill_density.md), so increasing **shell layers** will increase overall part strength and top surface quality.
 It's usually recommended to have at least 3 shell layers for most prints.

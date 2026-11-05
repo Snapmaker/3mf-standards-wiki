@@ -13,8 +13,8 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--print-flow-ratio=1` (same pattern for the other Float variables above).  
 The Flow ratio (`print_flow_ratio`) scales all extrusion flow of the object proportionally.
 
-The top and bottom surface flow ratios affect the amount of material for [top or bottom solid infill](../../process/strength/strength_settings_top_bottom_shells.md). You can decrease them slightly to get a smoother surface finish.  
-The actual top or bottom surface flow used is calculated by multiplying this value by the [filament flow ratio](../../filament/filament/material_flow_ratio_and_pressure_advance.md#flow-ratio), and if set, the object's flow ratio.
+The top and bottom surface flow ratios affect the amount of material for [top or bottom solid infill](../../process/strength/top_shell_thickness.md). You can decrease them slightly to get a smoother surface finish.  
+The actual top or bottom surface flow used is calculated by multiplying this value by the [filament flow ratio](../../filament/filament/filament_flow_ratio.md), and if set, the object's flow ratio.
 
 Other flow ratios, such as ratios for the first layer (does not affect brims and skirts), outer and inner walls, overhang perimeters, sparse infill, internal solid infill, gap fill, support, and support interfaces, can also be adjusted after enabling the "Set other flow ratios" option.
 

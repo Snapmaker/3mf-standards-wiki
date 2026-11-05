@@ -16,5 +16,5 @@ This option doesn't work well when Ensure vertical shell thickness is set to **A
 > [!WARNING]
 > It's not recommended to use this option with:
 >
-> - [Lightning infill](../../process/strength/strength_settings_patterns.md#lightning) as there is limited infill to anchor the extra perimeters to.
-> - **[Ensure vertical shell thickness: All](../../process/strength/strength_settings_advanced.md#ensure-vertical-shell-thickness)**
+> - [Lightning infill](../../process/strength/sparse_infill_pattern.md) as there is limited infill to anchor the extra perimeters to.
+> - **[Ensure vertical shell thickness: All](../../process/strength/ensure_vertical_shell_thickness.md)**

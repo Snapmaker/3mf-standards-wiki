@@ -19,7 +19,7 @@ Replaces many short straight moves (G1 segments) with fewer circular arc command
 
 - **Disabled**: only straight G1 moves are written.
 - **Enabled**: arcs are fitted to all toolpaths.
-- **Sparse infill only**: arcs are fitted to the sparse infill only, so curved patterns such as Gyroid, TPMS or a [smoothed sparse infill](../../process/strength/strength_settings_infill.md#sparse-infill-smooth-factor) get smaller while walls, surfaces and supports stay as G1 moves.
+- **Sparse infill only**: arcs are fitted to the sparse infill only, so curved patterns such as Gyroid, TPMS or a [smoothed sparse infill](../../process/strength/sparse_infill_pattern.md) get smaller while walls, surfaces and supports stay as G1 moves.
 
 Walls and surfaces are fitted within the [Resolution](#resolution), while sparse infill, supports and the wipe tower use fixed tolerances.
 
@@ -30,7 +30,7 @@ Arc fitting mainly changes how the toolpath is *encoded* in G-code. It can be be
 > [!IMPORTANT]
 > Ensure that the printer supports G2/G3 commands!
 
-Arc fitting is not available on [belt printers](../../../guides/belt_printing.md#features-that-are-not-available) or while [Extrusion rate smoothing](../../process/speed/speed_settings_advanced.md) is enabled. Enabling Extrusion rate smoothing also turns arc fitting off.
+Arc fitting is not available on [belt printers](../../../guides/belt_printing.md#features-that-are-not-available) or while [Extrusion rate smoothing](../../process/speed/max_volumetric_extrusion_rate_slope.md) is enabled. Enabling Extrusion rate smoothing also turns arc fitting off.
 
 **Advantages**
 
@@ -39,7 +39,7 @@ Arc fitting is not available on [belt printers](../../../guides/belt_printing.md
     - Less storage usage.
     - Fewer reads/writes to memory, so an SD card uses less of its already limited TBW (total bytes written).
 - Fewer moves for the firmware planner to process:
-    - Helps slower controllers when doing simultaneous tasks, like saving the status for [Power Loss Recovery](../../printer/basic_information/printer_basic_information_advanced.md#power-loss-recovery).
+    - Helps slower controllers when doing simultaneous tasks, like saving the status for [Power Loss Recovery](../../printer/printer_overview.md).
     - Helps on limited connections.
 - Smoother curves when using a low poly model.
 

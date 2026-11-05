@@ -24,4 +24,4 @@ Because the tower ends up below the model, the toolhead has to reach down to it 
 > If the plate layout can't avoid a collision, [Combine sparse layers](#combine-sparse-layers) also cuts the time spent on sparse tower layers while keeping the tower level with the model.
 
 > [!NOTE]
-> This option has no effect when [smooth timelapse](../../process/others/others_settings_special_mode.md#timelapse) or [clumping detection](../../process/others/others_settings_special_mode.md#enable-clumping-detection) is enabled, because both keep every sparse layer of the tower. Enabling it while smooth timelapse is selected switches timelapse to traditional, and selecting smooth timelapse turns this option off.
+> This option has no effect when [smooth timelapse](../../process/others/timelapse_type.md) or [clumping detection](../../process/others/timelapse_type.md) is enabled, because both keep every sparse layer of the tower. Enabling it while smooth timelapse is selected switches timelapse to traditional, and selecting smooth timelapse turns this option off.

@@ -12,4 +12,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--outer-wall-speed=1`.  
 Speed of the outer wall, which is the outermost, visible wall. It is usually printed slower than the [inner wall](#inner-wall) to get better quality and good layer adhesion.
 This setting is also limited by [Machine / Motion ability / Resonance avoidance speed settings](../../../calibration/vfa_calib.md).  
-It can be excluded from the [layer cooling slowdown](../../filament/cooling/material_cooling.md#slow-printing-down-for-better-layer-cooling) with [Don't slow down outer walls](../../filament/cooling/material_cooling.md#dont-slow-down-outer-walls).
+It can be excluded from the [layer cooling slowdown](../../filament/cooling/slow_down_for_layer_cooling.md) with [Don't slow down outer walls](../../filament/cooling/dont_slow_down_outer_wall.md).

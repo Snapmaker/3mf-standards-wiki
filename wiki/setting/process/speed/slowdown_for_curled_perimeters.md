@@ -24,7 +24,7 @@ Root cause of these artifacts is most likely PA tuning being slightly off, espec
 >
 > 1. For Klipper machines: Reduce Pressure Advance smooth time to 0.015 - 0.02 so the extruder reacts quickly to the speed changes.
 > 2. Increase the minimum print speeds to limit the magnitude of the slowdown and reduce the variance between fast and slow segments.
-> 3. If artifacts still appear, enable [Extrusion rate smoothing](../../process/speed/speed_settings_advanced.md) to further smooth the flow transitions.
+> 3. If artifacts still appear, enable [Extrusion rate smoothing](../../process/speed/max_volumetric_extrusion_rate_slope.md) to further smooth the flow transitions.
 
 > [!NOTE]
 > When this option is enabled, overhang perimeters are treated like overhangs, meaning the overhang speed is applied even if the overhanging perimeter is part of a bridge.  

@@ -23,7 +23,7 @@ In addition, it emits an M141 command at the end of the print to turn off the ch
 This option relies on the firmware supporting the M191 and M141 commands either via macros or natively and is usually used when an active chamber heater is installed.
 
 > [!NOTE]
-> Check [Support control chamber temperature](../../printer/basic_information/printer_basic_information_accessory.md#support-controlling-chamber-temperature) in your printer settings to enable chamber temperature control.
+> Check [Support control chamber temperature](../../printer/basic_information/support_chamber_temp_control.md) in your printer settings to enable chamber temperature control.
 
 For high-temperature materials like ABS, ASA, PC, and PA, a higher chamber temperature can help suppress or reduce warping and potentially lead to higher interlayer bonding strength. However, at the same time, a higher chamber temperature will reduce the efficiency of air filtration for ABS and ASA.
 

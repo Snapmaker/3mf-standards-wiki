@@ -10,7 +10,7 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `precise_z_height`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--precise-z-height=1`.  
-This feature ensures the accurate Z height of the model after slicing, even if the model height is not a multiple of the [layer height](../../process/quality/quality_settings_layer_height.md).
+This feature ensures the accurate Z height of the model after slicing, even if the model height is not a multiple of the [layer height](../../process/quality/layer_height.md).
 
 For example, slicing a 20mm x 20mm x 20.1mm cube with a layer height of 0.2mm would typically result in a final height of 20.2mm due to the layer height increments.
 
