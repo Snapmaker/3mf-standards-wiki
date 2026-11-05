@@ -8,10 +8,11 @@
 
 | 页面 | 内容 |
 |---|---|
-| [3mf 内部文件组成与作用](specification/3mf/3mf_file_structure.md) | 入门：一个 3mf 是什么、有哪些文件、各自干什么 |
-| [project_settings.config](specification/3mf/3mf_project_settings.md) | 全局打印设置：500 多项参数怎么来的、三个值得知道的事实 |
-| [model_settings.config](specification/3mf/3mf_model_settings.md) | 对象/零件/打印板三层信息与参数覆盖优先级 |
-| [3MF 版本管理细则](specification/3mf/3mf_version_management.md) | 进阶：五层版本标识、兼容性矩阵、变更检查清单 |
+| [3mf 内部文件组成与作用](specification/3mf/3mf%20documents/3mf_file_structure.md) | 入门：一个 3mf 是什么、有哪些文件、各自干什么 |
+| [project_settings.config](specification/3mf/3mf%20documents/3mf_project_settings.md) | 全局打印设置：500 多项参数怎么来的、三个值得知道的事实 |
+| [model_settings.config](specification/3mf/3mf%20documents/3mf_model_settings.md) | 对象/零件/打印板三层信息与参数覆盖优先级 |
+| [3MF 版本管理细则](specification/3mf/3mf%20documents/3mf_version_management.md) | 进阶：五层版本标识、兼容性矩阵、变更检查清单 |
+| [3mf 工程文件规范 v1.0（草案）](specification/3mf/3mf_standard.md) | 标准正文：包结构 → 模型部件 → 配置与三层覆盖 → 版本兼容，GB/T 体例；未闭环项按现状描述并标注待裁决（Qxx） |
 
 ## gcode.3mf 专题
 
@@ -46,7 +47,7 @@
 
 ## 规划中
 
-- 3MF 规范设计（阶段二）：问题清单 P0 项闭环后开写
+- 3mf 工程文件规范定稿：P0 项闭环后替换正文中的「待裁决」标注（见 [docs/04](../docs/04-问题清单-切片软件团队对齐.md)）
 - fork 完整使用文档：在上述三个设置目录基础上继续扩展（见 [AGENTS.md](../AGENTS.md) 目录表）
 
 ## 参与贡献
