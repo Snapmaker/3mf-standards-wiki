@@ -27,7 +27,8 @@
 
 - 用相对路径带 `.md` 扩展名：`[参数覆盖](3mf_model_settings.md)`、指向 docs/ 用 `../../docs/` 前缀
 - 锚点用 kebab-case 指向真实标题（标题里的编号和空格都算）：`[x](3mf_file_structure.md#3-每个文件的作用)`
-- 每个页面标题下第二行放面包屑：`← [Wiki 首页](../home.md)`
+- 独立页面（专题、规范正文、总览页）标题下第二行放面包屑：`← [Wiki 首页](../home.md)`（层级更深时相应加 `../`）
+- 设置键页面（`wiki/setting/`）用 `> Location: Tab → 分组 → UI 区块` 行替代面包屑，模板见 `new-setting-key-page` skill
 - **孤儿页规则**：新页面必须被 `wiki/home.md`（或其他页面）链接，否则不许合入——没有入口的页面等于不存在
 
 ## 图片
@@ -60,3 +61,11 @@
 ```markdown
 序列化代码位于 `src/libslic3r/Format/bbs_3mf.cpp`（fork 仓库 iesteem/OrcaSlicer）
 ```
+
+## Claude Code Skills
+
+仓库级 skill 存放于 `.claude/skills/<skill-name>/`（`SKILL.md` + 按需 `scripts/`），随仓库对全组生效。新建 skill 在本表登记。
+
+| Skill | 用途 |
+|---|---|
+| `new-setting-key-page` | 新增/更新 `wiki/setting/` 设置键文档的操作流程；其 `scripts/check_page.sh` 是本文件命名/全局唯一/孤儿页规则的机器校验（单页校验，`--all` 全量审计） |
