@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-11-06T16:03:08",
+  "generated_at": "2026-11-06T16:20:15",
   "source_file": "src/libslic3r/PrintConfig.cpp",
   "source_commit": "f77ec1f8e5c425678ebef67f04efa79d7f21557b",
   "stats": {
@@ -428,7 +428,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "Vec2d(0, 0)",
+   "default": "0×0",
    "type": "coPoints",
    "line": 525,
    "derived": false
@@ -443,7 +443,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionPoint(Vec2d(99999, 99999))",
+   "default": "99999×99999",
    "type": "coPoint",
    "line": 1890,
    "derived": false
@@ -458,7 +458,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionPoint(Vec2d(-99999, -99999))",
+   "default": "-99999×-99999",
    "type": "coPoint",
    "line": 1878,
    "derived": false
@@ -473,7 +473,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionPoint(Vec2d(50, 50))",
+   "default": "50×50",
    "type": "coPoint",
    "line": 1902,
    "derived": false
@@ -548,7 +548,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionPoint(Vec2d(0.5, 0.5))",
+   "default": "0.5×0.5",
    "type": "coPoint",
    "line": 3198,
    "derived": false
@@ -698,7 +698,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{50., true} }",
+   "default": "50%",
    "type": "coFloatsOrPercents",
    "line": 2724,
    "derived": false
@@ -856,7 +856,7 @@
     "no_brim"
    ],
    "enum_labels": [],
-   "default": "btAutoBrim",
+   "default": "auto_brim",
    "type": "coEnum",
    "line": 1359,
    "derived": false
@@ -1182,7 +1182,7 @@
     "Supertack Plate"
    ],
    "enum_labels": [],
-   "default": "btPC",
+   "default": "Cool Plate",
    "type": "coEnum",
    "line": 863,
    "derived": false
@@ -1563,7 +1563,7 @@
     " ",
     " "
    ],
-   "default": "sladoPortrait",
+   "default": "portrait",
    "type": "coEnum",
    "line": 6783,
    "derived": false
@@ -1780,7 +1780,7 @@
     "enabled"
    ],
    "enum_labels": [],
-   "default": "dsDisabled",
+   "default": "disabled",
    "type": "coEnum",
    "line": 5009,
    "derived": false
@@ -2486,7 +2486,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "Vec2d(0, 0)",
+   "default": "0×0",
    "type": "coPoints",
    "line": 1926,
    "derived": false
@@ -3878,7 +3878,7 @@
     "Customize"
    ],
    "enum_labels": [],
-   "default": "flsAuto",
+   "default": "Auto",
    "type": "coEnum",
    "line": 930,
    "derived": false
@@ -5093,7 +5093,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{100., true} }",
+   "default": "100%",
    "type": "coFloatsOrPercents",
    "line": 2901,
    "derived": false
@@ -5395,7 +5395,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{150., true} }",
+   "default": "150%",
    "type": "coFloatsOrPercents",
    "line": 1339,
    "derived": false
@@ -5410,7 +5410,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{100., true} }",
+   "default": "100%",
    "type": "coFloatsOrPercents",
    "line": 2742,
    "derived": false
@@ -6457,7 +6457,7 @@
     " ",
     " "
    ],
-   "default": "slamsFast",
+   "default": "fast",
    "type": "coEnum",
    "line": 7363,
    "derived": false
@@ -7614,7 +7614,7 @@
     "Customize"
    ],
    "enum_labels": [],
-   "default": "flsAuto",
+   "default": "Auto",
    "type": "coEnum",
    "line": 941,
    "derived": false
@@ -7719,7 +7719,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{0., false} }",
+   "default": "0",
    "type": "coFloatsOrPercents",
    "line": 1279,
    "derived": false
@@ -7734,7 +7734,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{0., false} }",
+   "default": "0",
    "type": "coFloatsOrPercents",
    "line": 1291,
    "derived": false
@@ -7749,7 +7749,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{0., false} }",
+   "default": "0",
    "type": "coFloatsOrPercents",
    "line": 1303,
    "derived": false
@@ -7764,7 +7764,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{0., false} }",
+   "default": "0",
    "type": "coFloatsOrPercents",
    "line": 1315,
    "derived": false
@@ -7808,7 +7808,7 @@
     "75%",
     "95%"
    ],
-   "default": "(int)Overhang_threshold_bridge",
+   "default": "95%",
    "type": "coEnums",
    "line": 1041,
    "derived": false
@@ -8564,7 +8564,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "Vec2d(0, 0), Vec2d(200, 0), Vec2d(200, 200), Vec2d(0, 200)",
+   "default": "0×0, 200×0, 200×200, 0×200",
    "type": "coPoints",
    "line": 518,
    "derived": false
@@ -9932,7 +9932,7 @@
     "perobject"
    ],
    "enum_labels": [],
-   "default": "stCombined",
+   "default": "combined",
    "type": "coEnum",
    "line": 5024,
    "derived": false
@@ -10146,7 +10146,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{50., true} }",
+   "default": "50%",
    "type": "coFloatsOrPercents",
    "line": 1762,
    "derived": false
@@ -10221,7 +10221,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "new ConfigOptionFloatsOrPercents { FloatOrPercent{100., true} }",
+   "default": "100%",
    "type": "coFloatsOrPercents",
    "line": 2733,
    "derived": false
@@ -10458,7 +10458,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "Vec2d(30, -3), Vec2d(54, 245)",
+   "default": "30×-3, 54×245",
    "type": "coPoints",
    "line": 4222,
    "derived": false
@@ -11164,7 +11164,7 @@
     " ",
     " "
    ],
-   "default": "slapcmDynamic",
+   "default": "dynamic",
    "type": "coEnum",
    "line": 7108,
    "derived": false
@@ -11688,7 +11688,7 @@
     "1"
    ],
    "enum_labels": [],
-   "default": "tlTraditional",
+   "default": "0",
    "type": "coEnum",
    "line": 5164,
    "derived": false

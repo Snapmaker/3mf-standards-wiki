@@ -20,7 +20,7 @@
 |---|---|---|---|
 | 键总数 | 844 | 818 静态 + 18 动态 | 844 = 806（cpp 字面+宏）+ 20（hpp 宏补位）+ 18（filament_* 派生）；手工数 818 含计数口径差（重复定义按一次计） |
 | min / max 非空 | 363 / 156 | 367 / 157 | 手工数为源码出现次数（含 1 处动态拷贝行、重复定义）；提取数为唯一键首匹配 |
-| sidetext 非空 | 307 | 204 | 口径差：提取含 hpp 补位前 cpp 内 `""` 判空后的非空计数（手工统计漏了无 `L()` 包裹的裸 sidetext，如 `"mm/s"`） |
+| sidetext 非空 | 307 | 204 | 口径差（自查修正）：Explore 所引 41 处 `sidetext = ""` **全部在注释里**，剥注释后 311 处赋值全部非空（唯一键 303 + 派生克隆 12）；Explore 的 204 为注释计入且非空判定正则更窄 |
 | aliases | 1 | 1 | 一致 |
 | enum_values 行 | 262 | 277 | 手工数含 `enum_keys_map` 相邻行；提取只收 push_back/emplace_back 实际值行 |
 | nocli | 42 | 43 | 1 处重复定义 |
@@ -49,6 +49,7 @@
 
 - 新行链接统一指向 `general_settings/option_type.md` 预留页的约定锚点（`#default-value` / `#range` / `#aliases`），建页时按锚点写标题。
 - 显示规则三分：有值 → 值；fork 有键但 def 未设默认 → `— 无静态默认值`；fork 无此键 → `—`。
+- 默认值字面量归一化（自查补充）：`60.0f`→`60.0`、`60.`→`60`；枚举常量经 `s_keys_map_*` 静态映射翻译为用户可见串（如 `(int)Overhang_threshold_bridge`→`95%`、`btAutoBrim`→`auto_brim`）；点类型 `Vec2d(a, b)`→`a×b`；`FloatOrPercent{50., true}`→`50%`。hpp 宏注册的枚举（`fvtStandard`、`ipMonotonic` 等）无映射表，保留常量名——它即配置文件里的存储值。
 - 多键小节页镜像复数惯例：`[Defaults]: `key1` (80), `key2` (—)`，顺序跟随 [Variables] 行。
 - **与方案的偏差**：原方案 Range = min/max/sidetext 任一存在即注入；实施收窄为 **min/max 任一存在**（仅 sidetext 的"单位行"信息量为零）。单边界显示 `≥ x` / `≤ x`。
 - 校验：`check_page.sh` 新增 E7（有 [Type] 行的完整页须配 [Default(s)] 行，WARN；`--all` 聚合计数）。

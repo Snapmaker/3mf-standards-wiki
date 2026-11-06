@@ -94,7 +94,7 @@ RE_ADD_ANY = re.compile(r'this\s*->\s*add(?:_nullable)?\s*\(\s*([^,\s]+)')
 SKIP_INTS = {"INT_MIN", "INT_MAX"}
 
 
-def parse_block(block):
+def parse_block(block, enum_display=None):
     """从单个键定义块提取元数据字段（宽松匹配，容忍无空格/tab/对齐写法）。"""
     def field(name, call=False):
         # call=True: 方法调用形式 def->name(...)，如 set_default_value
@@ -129,16 +129,16 @@ def parse_block(block):
         vals = re.findall(
             r'%s\s*\.\s*(?:push_back|emplace_back)\s*\(\s*("[^"]*"|[A-Za-z_]\w*)\s*\)' % ev, block)
         rec[ev] = [v.strip('"') for v in vals]
-    rec["default"] = parse_default(field("set_default_value", call=True) or "")
+    rec["default"] = parse_default(field("set_default_value", call=True) or "", enum_display)
     rec.pop("sidetext_raw", None)
     return rec
 
 
-def parse_default(expr):
+def parse_default(expr, enum_display=None):
     """set_default_value(new ConfigOptionXxx{...}/(...)) → 字面值串。"""
     if not expr:
         return None
-    m = re.search(r'new\s+[\w:]+\s*(?:<[^>]*>)?\s*(?:\{([^{}]*)\}|\(([^()]*)\))', expr, re.S)
+    m = re.search(r'new\s+[\w:]+\s*(?:<[^>]*>)?\s*(?:\{(.*)\}|\((.*)\))\s*$', expr, re.S)
     inner = (m.group(1) if m and m.group(1) is not None else m.group(2)) if m else expr.strip()
     inner = (inner or "").strip()
     if inner == "":
@@ -153,7 +153,24 @@ def parse_default(expr):
         if p.endswith(".") and p[:-1].lstrip("-").replace(".", "", 1).isdigit():
             p = p[:-1]  # 60. → 60
         norm.append(p)
-    return ", ".join(norm)
+    out = ", ".join(norm)
+    # 点类型嵌套：Vec2d(a, b), … → a×b, …
+    if "Vec2d" in out:
+        pts = re.findall(r"Vec2d\(\s*([^)]*)\)", out)
+        if pts:
+            out = ", ".join("×".join(x.strip() for x in pt.split(",")) for pt in pts)
+    # FloatOrPercent{v, is_percent} → v% / v
+    out = re.sub(r"FloatOrPercent\s*\{\s*(-?[\d.]+)\s*,\s*(true|false)\s*\}",
+                 lambda m_: m_.group(1).rstrip(".") + ("%" if m_.group(2) == "true" else ""), out)
+    # 枚举常量默认值 → 用户可见枚举串（s_keys_map_* 静态映射）
+    if enum_display:
+        out = re.sub(r"\(\s*int\s*\)\s*([A-Za-z_]\w*)",
+                     lambda m_: enum_display.get(m_.group(1), m_.group(1)), out)
+        out = re.sub(r"\bint\s*\(\s*([A-Za-z_]\w*)\s*\)",
+                     lambda m_: enum_display.get(m_.group(1), m_.group(1)), out)
+        if re.fullmatch(r"[A-Za-z_]\w*", out or ""):
+            out = enum_display.get(out, out)
+    return out
 
 
 def cmd_extract(args):
@@ -172,11 +189,16 @@ def cmd_extract(args):
 
     keys, dynamic_skips, stats = {}, [], {"min": 0, "max": 0, "sidetext": 0,
                                           "aliases": 0, "enum_rows": 0, "nocli": 0}
+    # 枚举常量 → 用户可见枚举串（s_keys_map_* 静态映射，用于默认值翻译）
+    enum_display = {}
+    for tbl in re.findall(r's_keys_map_\w+\s*=\s*\{(.*?)\};', stripped, re.S):
+        for disp, const in re.findall(r'\{\s*"([^"]*)"\s*,\s*(\w+)\s*\}', tbl):
+            enum_display[const] = disp
     starts = [(m.start(), m.group(1) or m.group(3), m.group(2) or m.group(4))
               for m in RE_DEF.finditer(stripped)]
     for idx, (pos, key, cotype) in enumerate(starts):
         end = starts[idx + 1][0] if idx + 1 < len(starts) else len(stripped)
-        rec = parse_block(stripped[pos:end])
+        rec = parse_block(stripped[pos:end], enum_display)
         rec.update({"type": cotype,
                     "line": stripped[:pos].count("\n") + 1,
                     "derived": False})
