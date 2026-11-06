@@ -50,6 +50,9 @@ description: 新增或更新 wiki/setting/ 下的设置参数键文档（printer
 [Mode](../../../general_settings/option_mode.md): `<Simple|Advanced|Hidden>`.  
 [Variable](../../../general_settings/built_in_placeholders_variables.md): `<键名>`.  
 [Type](../../../general_settings/option_type.md#锚点): `<类型>`.  
+[Default](../../../general_settings/option_type.md#default-value): `<默认值>`.  
+[Range](../../../general_settings/option_type.md#range): `<min–max> <单位>`.  
+[Aliases](../../../general_settings/option_type.md#aliases): `<历史键名>`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--kebab-case-键名=<示例值>`.  
 
 <参数说明正文：拷贝/翻译上游内容，面向新人说人话>
@@ -58,7 +61,7 @@ description: 新增或更新 wiki/setting/ 下的设置参数键文档（printer
 > <可选：注意事项，如与 Klipper 等固件的交互>
 ```
 
-**模板 B —— 占位页**（样例：`wiki/setting/printer/multimaterial/ramming_line_width_ratio.md`）：
+元数据三行（Default/Range/Aliases）**由脚本生成，不要手写**：Default 必有（fork 无此键显示 `—`，有键无静态默认显示 `— 无静态默认值`）；Range 仅 min/max 存在时注入；Aliases 仅存在时注入（fork 仅 `inner_wall_speed` 一处）。多键小节页用复数 `[Defaults]: `键1` (值), `键2` (—)`，顺序跟随 [Variables] 行。格式决策与 fork 缺键清单见 docs/09。
 
 ```markdown
 # <键名>
@@ -80,6 +83,14 @@ description: 新增或更新 wiki/setting/ 下的设置参数键文档（printer
 
 注意：`general_settings/`、`cli/`、`developer_reference/` 是 AGENTS.md 预留目录，链接暂时悬空属预期，校验按 WARN 处理，不要改成别的目标。
 
+新页写完四件套后，跑单页注入补元数据行（幂等，已注入则跳过）：
+
+```bash
+python .claude/skills/new-setting-key-page/scripts/print_config_tools.py inject <页面路径>
+```
+
+数据源是 repo 内 `docs/data/print_config_metadata.json`；若其 `meta.source_commit` 落后于 fork 当前 HEAD，先重跑 `extract <fork>/src/libslic3r/PrintConfig.cpp` 再注入。
+
 ### 4. 更新总览页
 
 在对应 `*_overview.md` 的正确分组列表末尾加一行：
@@ -96,7 +107,7 @@ description: 新增或更新 wiki/setting/ 下的设置参数键文档（printer
 bash .claude/skills/new-setting-key-page/scripts/check_page.sh wiki/setting/<tab>/<分组>/<键名>.md
 ```
 
-检查项：E1 文件名 snake_case（英文小写）｜E2 文件名 wiki 内全局唯一｜E3 Location 行存在｜E4 非孤儿页（已被总览或其他页面链接）｜E5 标题 = 文件名主干｜E6 页内相对链接可达（预留目录降级 WARN）。
+检查项：E1 文件名 snake_case（英文小写）｜E2 文件名 wiki 内全局唯一｜E3 Location 行存在｜E4 非孤儿页（已被总览或其他页面链接）｜E5 标题 = 文件名主干｜E6 页内相对链接可达（预留目录降级 WARN）｜E7 有 [Type] 行的完整页须配 [Default(s)] 行（WARN）。
 
 批量修订后跑 `--all` 审计全部键页。
 
@@ -107,4 +118,6 @@ bash .claude/skills/new-setting-key-page/scripts/check_page.sh wiki/setting/<tab
 ## 已知偏差（依据现状，非拍脑袋）
 
 - AGENTS.md 要求"标题下第二行放面包屑"，但既有 529 个键页统一用 `> Location:` 行替代（0 页带面包屑）。本 skill 沿用现状；若团队裁决键页也要面包屑，改模板 A/B 两处即可。
-- 规则依据：AGENTS.md（命名、全局唯一、孤儿页）；页面格式依据现存 529 页的实际形态（2026-11-05 核实）。
+- 键页中 25 个键的小节属上游内容 fork 未实现（input_shaping、flow_ratio 族等，见 docs/09 §4），Default 显示 `—`，正文暂不删改，待团队裁决。
+- Mode 取值 `Expert`（6 处，上游叫法）与 fork 枚举 `Simple/Advanced/Developer` 不一致，待统一（docs/09 Q4）。
+- 规则依据：AGENTS.md（命名、全局唯一、孤儿页）；页面格式依据现存 529 页的实际形态（2026-11-05 核实）；元数据行格式 2026-11-06 起以 docs/09 §3 为准。

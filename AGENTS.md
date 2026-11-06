@@ -68,4 +68,4 @@
 
 | Skill | 用途 |
 |---|---|
-| `new-setting-key-page` | 新增/更新 `wiki/setting/` 设置键文档的操作流程；其 `scripts/check_page.sh` 是本文件命名/全局唯一/孤儿页规则的机器校验（单页校验，`--all` 全量审计） |
+| `new-setting-key-page` | 新增/更新 `wiki/setting/` 设置键文档的操作流程；其 `scripts/check_page.sh` 是本文件命名/全局唯一/孤儿页规则的机器校验（单页校验，`--all` 全量审计，E7 查 [Default] 行）；其 `scripts/print_config_tools.py` 从 fork `PrintConfig.cpp` 提取键元数据落档 `docs/data/` 并向键页注入 Default/Range/Aliases 行（extract/inject/audit 三子命令，格式与缺键清单见 docs/09） |

@@ -10,6 +10,7 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `dont_slow_down_outer_wall`.  
 [Type](../../../general_settings/option_type.md#list-types): `Boolean list`.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--dont-slow-down-outer-wall=1`.  
 If enabled, this setting will ensure external perimeters are not slowed down to meet the minimum layer time. This is particularly helpful in the below scenarios:
 

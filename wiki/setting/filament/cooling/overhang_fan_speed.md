@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `overhang_fan_speed`.  
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
+[Default](../../../general_settings/option_type.md#default-value): `100`.  
+[Range](../../../general_settings/option_type.md#range): `0–100` %.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--overhang-fan-speed=1`.  
 Use this part cooling fan speed when printing bridges or overhang walls with an overhang threshold that exceeds the value set in the 'Overhangs cooling threshold' parameter above. Increasing the cooling specifically for overhangs and bridges can improve the overall print quality of these features.
 

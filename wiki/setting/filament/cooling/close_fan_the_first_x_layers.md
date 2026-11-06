@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `close_fan_the_first_x_layers`.  
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
+[Default](../../../general_settings/option_type.md#default-value): `1`.  
+[Range](../../../general_settings/option_type.md#range): `0–1000` layers.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--close-fan-the-first-x-layers=1`.  
 Number of initial layers during which part-cooling fans are disabled.
 Disabling the fan for the first few layers improves build-plate adhesion and reduces early-layer warping.
