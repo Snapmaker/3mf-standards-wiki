@@ -34,6 +34,7 @@
 | [04-问题清单-切片软件团队对齐](../docs/04-问题清单-切片软件团队对齐.md) | 进入阶段二（规范设计）前待裁决的 Q1–Q22 |
 | [06-对账-gcode.3mf与3MF-Toolpath扩展](../docs/06-对账-gcode.3mf与3MF-Toolpath扩展.md) | gcode.3mf 与 3MF 联盟 Toolpath RC 逐机制对账（2026-11-04） |
 | [07-对账-设置键UI覆盖度](../docs/07-对账-设置键UI覆盖度.md) | UI 设置键 × wiki 键页面对账：FDM 挂行键 100% 覆盖，缺口 0（2026-11-06） |
+| [08-盘点-预设文件组织与继承实测](../docs/08-盘点-预设文件组织与继承实测.md) | Snapmaker 预设 547 个 JSON 实测：三树层级、键数、三种组织风格与勘误（2026-11-06） |
 
 ## 设置参数文档
 
@@ -44,7 +45,7 @@
 | [打印机设置参数总览](setting/printer/printer_overview.md) | 6 页面 104 键 |
 | [耗材设置参数总览](setting/filament/filament_overview.md) | 7 页面 107 键（含 18 个回抽覆盖交叉引用） |
 | [工艺设置参数总览](setting/process/process_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
-| [打印配置文件：命名与继承](preset/configuration-files.md) | 入门：配置文件叫什么、元信息、参数如何复用 |
+| [打印配置文件：命名与继承](preset/configuration_files.md) | 入门：配置文件叫什么、元信息、参数如何复用 |
 
 ## 规划中
 
