@@ -5,6 +5,47 @@
 
 > 规范性用语：**应 / 不应** = 要求（MUST / MUST NOT）；**宜 / 不宜** = 推荐（SHOULD）；**可** = 允许（MAY）。
 
+## 目录
+
+- [前言](#前言)
+- [引言](#引言)
+- [1 范围](#1-范围)
+- [2 规范性引用文件](#2-规范性引用文件)
+- [3 术语和定义](#3-术语和定义)
+- [4 总体结构](#4-总体结构)
+  - [4.1 包与目录层次](#41-包与目录层次)
+  - [4.2 OPC 基础部件](#42-opc-基础部件)
+  - [4.3 压缩、容量与命名约定](#43-压缩容量与命名约定)
+- [5 模型部件](#5-模型部件)
+  - [5.1 定位](#51-定位)
+  - [5.2 元数据键](#52-元数据键)
+- [6 盘与打印数据](#6-盘与打印数据)
+  - [6.1 盘的标识与盘号分配](#61-盘的标识与盘号分配)
+  - [6.2 盘索引：Metadata/model_settings.config](#62-盘索引metadatamodel_settingsconfig)
+  - [6.3 G-code 关系声明：Metadata/_rels/model_settings.config.rels](#63-g-code-关系声明metadata_relsmodel_settingsconfigrels)
+  - [6.4 切片结果摘要：Metadata/slice_info.config](#64-切片结果摘要metadataslice_infoconfig)
+  - [6.5 G-code 部件与完整性校验](#65-g-code-部件与完整性校验)
+  - [6.6 首层信息：Metadata/plate_N.json](#66-首层信息metadataplate_njson)
+  - [6.7 盘级缩略图族](#67-盘级缩略图族)
+- [7 工程配置与预设](#7-工程配置与预设)
+  - [7.1 全量配置快照：Metadata/project_settings.config](#71-全量配置快照metadataproject_settingsconfig)
+  - [7.2 内嵌预设：Metadata/*_settings_N.config](#72-内嵌预设metadata_settings_nconfig)
+  - [7.3 条件性工程数据文件](#73-条件性工程数据文件)
+  - [7.4 嵌入资源目录：Auxiliaries/](#74-嵌入资源目录auxiliaries)
+- [8 一致性要求](#8-一致性要求)
+  - [8.1 生产者要求](#81-生产者要求)
+  - [8.2 消费者要求](#82-消费者要求)
+  - [8.3 校验模型](#83-校验模型)
+  - [8.4 版本与兼容](#84-版本与兼容)
+- [附录 A（资料性）与 3MF Core / Toolpath 扩展的对照](#附录-a资料性与-3mf-core--toolpath-扩展的对照)
+- [附录 B（资料性）背景：为什么是 .gcode.3mf](#附录-b资料性背景为什么是-gcode3mf)
+- [附录 C（资料性）示例文件剖析](#附录-c资料性示例文件剖析)
+  - [C.1 单盘包（导出当前盘）](#c1-单盘包导出当前盘)
+  - [C.2 G-code 文件自描述结构](#c2-g-code-文件自描述结构)
+  - [C.3 实测备注（2.4.x 真实导出包）](#c3-实测备注24x-真实导出包)
+- [附录 D（规范性）字段字典](#附录-d规范性字段字典)
+- [参考文献](#参考文献)
+
 ## 前言
 
 本规范规定 Snapmaker Orca 切片导出的 `.gcode.3mf` 文件格式。它基于 `.3mf` 文件格式进行扩展，两者共用同一 OPC 容器家族和 `Metadata/` 约定：工程 `.3mf` 保存"怎么切"，`.gcode.3mf` 额外保存"切出来的结果"。两者的共享约定（配置取值形态、路径与关系规则）以[3mf 工程文件规范](../3mf/3mf_standard.md)第 6 章为准，冲突时以各自文件的用途为准。
