@@ -8,7 +8,7 @@
 # 退出码: 0 = 全部通过(允许有 WARN)  1 = 存在 FAIL  2 = 用法错误
 #
 # 检查项:
-#   E1 文件名 snake_case（^[a-z0-9][a-z0-9_]*\.md$，禁止大写/连字符/空格/中文）
+#   E1 文件名 snake_case（^[a-z0-9][a-z0-9_]*\.md$，仅对 wiki/ 页面强制；docs/ 的编号中文名是既有约定）
 #   E2 文件名在 wiki/ 内全局唯一（AGENTS.md 孤儿页之外的全局唯一规则）
 #   E3 Location 行（前 5 行内出现 "> Location: X → Y …"，仅对 wiki/setting 页面强制）
 #   E4 孤儿页（repo 内没有任何 .md 链接指向它）
@@ -87,9 +87,11 @@ check_page() {
   local in_setting=0
   [[ $p == wiki/setting/* ]] && in_setting=1
 
-  # E1 文件名
-  if [[ $base =~ ^[a-z0-9][a-z0-9_]*\.md$ ]]; then say_pass
-  else say_fail "$p" "E1 文件名不符 snake_case: $base"; fi
+  # E1 文件名（仅 wiki/ 页面）
+  if [[ $p == wiki/* ]]; then
+    if [[ $base =~ ^[a-z0-9][a-z0-9_]*\.md$ ]]; then say_pass
+    else say_fail "$p" "E1 文件名不符 snake_case: $base"; fi
+  fi
 
   # E2 全局唯一
   if [[ ${NAME_COUNT[$base]:-0} -gt 1 ]]; then
