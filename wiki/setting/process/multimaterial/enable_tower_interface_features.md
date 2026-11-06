@@ -7,9 +7,10 @@
 
 ## Enable tower interface features
 
-[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_tower_interface_features`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-tower-interface-features=1`.  
 Changes how the prime tower is printed on interface layers, where different materials meet. On these layers the nozzle is heated to the filament's **Interface layer print temperature** (its maximum recommended nozzle temperature when set to -1), and extra filament can be pre-extruded before the purge. These values are set per filament in [Multimaterial Wipe Tower Parameters](../../filament/multimaterial/filament_minimal_purge_on_wipe_tower.md).
 

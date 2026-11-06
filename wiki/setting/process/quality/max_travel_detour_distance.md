@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `max_travel_detour_distance`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
+[Default](../../../general_settings/option_type.md#default-value): `0`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm or %.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--max-travel-detour-distance=20%`.  
 Defines the maximum distance the printer is allowed to detour to avoid crossing a wall.
 Can be set as:

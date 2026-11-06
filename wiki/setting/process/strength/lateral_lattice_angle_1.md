@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `lateral_lattice_angle_1`, `lateral_lattice_angle_2`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `lateral_lattice_angle_1` (-45), `lateral_lattice_angle_2` (45).  
+[Ranges](../../../general_settings/option_type.md#range): `lateral_lattice_angle_1` (`-75–75` °), `lateral_lattice_angle_2` (`-75–75` °).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--lateral-lattice-angle-1=1` (same pattern for the other variables above).  
 Low-strength pattern with good flexibility. You can adjust **Angle 1** and **Angle 2** to optimize the infill for your specific model. Each angle sets the tilt in the Z direction of one of the two sets of lattice elements. 0° is vertical.
 

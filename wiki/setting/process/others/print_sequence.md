@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `print_sequence`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `PrintSequence::ByLayer`.  
 [Options](../../../general_settings/option_type.md#choice): `by layer, by object`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--print-sequence="by layer"`.  
 This setting controls how multiple objects are printed in a single print job.

@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `accel_to_decel_factor`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Percentage`.  
+[Default](../../../general_settings/option_type.md#default-value): `50`.  
+[Range](../../../general_settings/option_type.md#range): `1–100` %.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--accel-to-decel-factor=20%`.  
 Percentage of the acceleration that Klipper's `max_accel_to_decel` is set to, from 1% to 100% (default 50%).  
 For example, at 5000 mm/s² and 50%, Orca sends `SET_VELOCITY_LIMIT ACCEL=5000 ACCEL_TO_DECEL=2500`.  

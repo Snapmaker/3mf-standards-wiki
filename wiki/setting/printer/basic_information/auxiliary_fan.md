@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `auxiliary_fan`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--auxiliary-fan=1`.  
 Enable this option if machine has auxiliary part cooling fan.  
 The speed will be set for each material in the [material cooling settings](../../printer/basic_information/auxiliary_fan.md).

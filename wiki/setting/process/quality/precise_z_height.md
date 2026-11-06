@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `precise_z_height`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--precise-z-height=1`.  
 This feature ensures the accurate Z height of the model after slicing, even if the model height is not a multiple of the [layer height](../../process/quality/layer_height.md).
 

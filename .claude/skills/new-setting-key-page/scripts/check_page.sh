@@ -14,7 +14,7 @@
 #   E4 孤儿页（repo 内没有任何 .md 链接指向它）
 #   E5 一级标题 = 文件名主干（仅对 wiki/setting 页面强制）
 #   E6 页内相对 .md 链接目标存在（AGENTS.md 预留目录降级为 WARN）
-#   E7 有 [Type] 行的完整页须配 [Default(s)] 行（元数据注入，WARN；--all 模式聚合计数）
+#   E7 有 [Type] 行的完整页须配 [Default(s)] 行（元数据注入；FAIL；--all 模式聚合计数）
 
 set -u
 
@@ -49,7 +49,7 @@ resolve() {
 
 is_reserved() { [[ $1 =~ ^($RESERVED_ROOTS)(/|$) ]]; }
 
-fail=0; warn=0; pass=0; AGG=0; E7_PAGES=0   # AGG=1 (--all): 预留目录 WARN 只在索引级各报一次
+fail=0; warn=0; pass=0; AGG=0; E7_PAGES=0; FAIL_PAGES=0   # AGG=1 (--all): 预留目录 WARN 只在索引级各报一次
 say_fail() { printf '[FAIL] %s: %s\n' "$1" "$2"; fail=$((fail+1)); }
 say_warn() { printf '[WARN] %s: %s\n' "$1" "$2"; warn=$((warn+1)); }
 say_pass() { pass=$((pass+1)); }
@@ -130,10 +130,10 @@ check_page() {
   done < <(grep -oE '\]\([^)]+\.md[^)]*\)' "$p" 2>/dev/null)
   (( n_ok > 0 )) && say_pass
 
-  # E7 完整页 [Type] 行须配 [Default(s)] 行（元数据注入；试点期 WARN）
+  # E7 完整页 [Type] 行须配 [Default(s)] 行（元数据注入；全量完成后升级 FAIL）
   if grep -q '^\[Type\]' "$p" 2>/dev/null && ! grep -q '^\[Defaults*\]' "$p" 2>/dev/null; then
-    if (( AGG )); then E7_PAGES=$((E7_PAGES+1))
-    else say_warn "$p" "E7 有 [Type] 行但缺 [Default(s)] 行（可用 print_config_tools.py inject 补）"; fi
+    if (( AGG )); then E7_PAGES=$((E7_PAGES+1)); FAIL_PAGES=$((FAIL_PAGES+1))
+    else say_fail "$p" "E7 有 [Type] 行但缺 [Default(s)] 行（可用 print_config_tools.py inject 补）"; fi
   else say_pass; fi
 }
 
@@ -152,8 +152,8 @@ if [[ ${1:-} == '--all' ]]; then
     else say_fail "$t" "E6 链接目标不存在(被某页引用)"
     fi
   done < "$LINK_INDEX"
-  printf -- '--\n审计 %d 个键页面: PASS %d  FAIL %d  WARN %d  E7缺Default页 %d\n' "$total" "$pass" "$fail" "$warn" "$E7_PAGES"
-  (( fail > 0 )) && exit 1
+  printf -- '--\n审计 %d 个键页面: PASS %d  FAIL %d  WARN %d  E7缺Default页 %d\n' "$total" "$pass" "$((fail+FAIL_PAGES))" "$warn" "$E7_PAGES"
+  (( fail > 0 || FAIL_PAGES > 0 )) && exit 1
   exit 0
 elif [[ $# -ge 1 && $1 != -* ]]; then
   for p in "$@"; do

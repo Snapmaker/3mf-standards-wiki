@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `brim_width`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Default](../../../general_settings/option_type.md#default-value): `0`.  
+[Range](../../../general_settings/option_type.md#range): `0–100` mm.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--brim-width=1`.  
 Distance between the model and the outermost brim line.  
 Increasing this value widens the brim, which can improve adhesion but increases material usage.

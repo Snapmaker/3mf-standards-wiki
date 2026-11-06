@@ -107,7 +107,7 @@ python .claude/skills/new-setting-key-page/scripts/print_config_tools.py inject 
 bash .claude/skills/new-setting-key-page/scripts/check_page.sh wiki/setting/<tab>/<分组>/<键名>.md
 ```
 
-检查项：E1 文件名 snake_case（英文小写）｜E2 文件名 wiki 内全局唯一｜E3 Location 行存在｜E4 非孤儿页（已被总览或其他页面链接）｜E5 标题 = 文件名主干｜E6 页内相对链接可达（预留目录降级 WARN）｜E7 有 [Type] 行的完整页须配 [Default(s)] 行（WARN）。
+检查项：E1 文件名 snake_case（英文小写）｜E2 文件名 wiki 内全局唯一｜E3 Location 行存在｜E4 非孤儿页（已被总览或其他页面链接）｜E5 标题 = 文件名主干｜E6 页内相对链接可达（预留目录降级 WARN）｜E7 有 [Type] 行的完整页须配 [Default(s)] 行（FAIL）。
 
 批量修订后跑 `--all` 审计全部键页。
 

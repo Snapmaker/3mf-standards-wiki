@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `bridge_flow`, `internal_bridge_flow`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `bridge_flow` (1), `internal_bridge_flow` (1).  
+[Ranges](../../../general_settings/option_type.md#range): `bridge_flow` (`≥ 0`), `internal_bridge_flow` (`≥ 0`).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--bridge-flow=1` (same pattern for the other variables above).  
 This value governs the thickness of the bridge layer.
 

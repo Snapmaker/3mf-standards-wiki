@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `minimum_sparse_infill_area`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Default](../../../general_settings/option_type.md#default-value): `15`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm².  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--minimum-sparse-infill-area=1`.  
 Sparse infill areas smaller than the threshold value (in mm²) are replaced by [internal solid infill](../../process/strength/internal_solid_infill_pattern.md).
 This setting helps to ensure that small areas of sparse infill do not compromise the strength of the print. It is particularly useful for models with intricate designs or small features where sparse infill may not provide sufficient support.

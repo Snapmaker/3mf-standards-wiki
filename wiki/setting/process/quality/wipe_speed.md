@@ -9,5 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_speed`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
+[Default](../../../general_settings/option_type.md#default-value): `80%`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm/s or %.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wipe-speed=20%`.  
 If [Role based wipe speed](#role-based-wipe-speed) is disabled, this sets the wipe speed, either as an absolute value or as a percentage of the travel speed.

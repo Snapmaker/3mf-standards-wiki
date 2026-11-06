@@ -7,7 +7,7 @@
 
 - 标签：Other layers filament sequence
 - 类型：coEnum
-- 默认值：—
+- 默认值：Auto
 - 可见模式：简单
 
 （待补：参数作用、取值范围、与同类参数的关系、适用场景）

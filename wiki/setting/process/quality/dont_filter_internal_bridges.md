@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `dont_filter_internal_bridges`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `ibfDisabled`.  
 [Options](../../../general_settings/option_type.md#choice): `disabled, limited, nofilter`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--dont-filter-internal-bridges=disabled`.  
 This option can help reduce pillowing on top surfaces in heavily slanted or curved models.

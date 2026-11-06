@@ -16,6 +16,7 @@ Safeguard maximum jerks for all axes.
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `machine_max_jerk_x`, `machine_max_jerk_y`, `machine_max_jerk_z`, `machine_max_jerk_e`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `machine_max_jerk_x` (— 无静态默认值), `machine_max_jerk_y` (— 无静态默认值), `machine_max_jerk_z` (— 无静态默认值), `machine_max_jerk_e` (— 无静态默认值).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--machine-max-jerk-x=1` (same pattern for the other variables above).  
 Maximum [jerk](../../process/speed/default_jerk.md) for each axis (M205 X, Y, Z, E, only apply if JD = 0 for Marlin 2 Firmware)
 
@@ -24,5 +25,7 @@ Maximum [jerk](../../process/speed/default_jerk.md) for each axis (M205 X, Y, Z,
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_max_junction_deviation`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
+[Default](../../../general_settings/option_type.md#default-value): `0, 0`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--machine-max-junction-deviation=1`.  
 Maximum [junction deviation](../../printer/motion_ability/machine_max_junction_deviation.md) (M205 J, only apply if JD > 0 for Marlin Firmware. If your Marlin 2 printer uses Classic Jerk set this value to 0.)

@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `reduce_crossing_wall`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--reduce-crossing-wall=1`.  
 This option instructs the slicer to avoid crossing perimeters (walls) during travel moves.  
 Instead of traveling directly through a wall, the print head will detour around it, which can significantly reduce surface defects and stringing.

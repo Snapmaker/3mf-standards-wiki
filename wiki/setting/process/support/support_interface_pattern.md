@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_interface_pattern`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `smipAuto`.  
 [Options](../../../general_settings/option_type.md#choice): `auto, rectilinear, concentric, spiralinset, rectilinear_interlaced, grid`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-interface-pattern=auto`.  
 The pattern used for the support interface.

@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `fill_multiline`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  
+[Default](../../../general_settings/option_type.md#default-value): `1`.  
+[Range](../../../general_settings/option_type.md#range): `1–5`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--fill-multiline=1`.  
 This setting allows the selected [infill pattern](#sparse-infill-pattern) to be generated using up to 10 parallel extrusion lines per path, while preserving both the defined [infill density](#sparse-infill-density) and the overall material usage.
 

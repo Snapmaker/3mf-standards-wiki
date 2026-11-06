@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `top_color_penetration_layers`, `bottom_color_penetration_layers`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `top_color_penetration_layers` (4), `bottom_color_penetration_layers` (3).  
+[Ranges](../../../general_settings/option_type.md#range): `top_color_penetration_layers` (`≥ 0` layers), `bottom_color_penetration_layers` (`≥ 0` layers).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--top-color-penetration-layers=1` (same pattern for the other variables above).  
 
 > [!IMPORTANT]

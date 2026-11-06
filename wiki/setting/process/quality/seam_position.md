@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `seam_position`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `spAligned`.  
 [Options](../../../general_settings/option_type.md#choice): `nearest, aligned, aligned_back, back, random`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--seam-position=nearest`.  
 Controlling the position of seams can help improve the appearance and strength of the final print.

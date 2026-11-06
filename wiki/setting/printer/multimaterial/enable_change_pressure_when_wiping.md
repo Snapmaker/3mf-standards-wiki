@@ -7,7 +7,7 @@
 
 - 标签：Enable change pressure advance when wiping
 - 类型：coBool
-- 默认值：—
+- 默认值：true
 - 可见模式：进阶
 
 > 工具提示原文：If it's set to false, the pressure advance value will not be changed.

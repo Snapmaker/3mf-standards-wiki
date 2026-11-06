@@ -7,9 +7,10 @@
 
 ## No sparse layers
 
-[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_tower_no_sparse_layers`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wipe-tower-no-sparse-layers=1`.  
 
 > [!IMPORTANT]

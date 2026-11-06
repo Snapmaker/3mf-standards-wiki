@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `print_order`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `PrintOrder::Default`.  
 [Options](../../../general_settings/option_type.md#choice): `default, as_obj_list, best_of, snake`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--print-order=default`.  
 Determines the order in which object instances are visited within a single layer, which controls how much travel is spent moving between them.

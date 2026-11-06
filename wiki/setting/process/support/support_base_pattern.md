@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_base_pattern`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `smpDefault`.  
 [Options](../../../general_settings/option_type.md#choice): `default, rectilinear, rectilinear-grid, honeycomb, lightning, hollow`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-base-pattern=default`.  
 Line pattern for the base of the support.

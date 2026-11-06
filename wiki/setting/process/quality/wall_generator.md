@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wall_generator`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `PerimeterGeneratorType::Arachne`.  
 [Options](../../../general_settings/option_type.md#choice): `classic, arachne`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wall-generator=classic`.  
 The Wall Generator defines how the outer and inner walls (perimeters) of the model are printed.

@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `adaptive_pressure_advance_bridges`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
+[Default](../../../general_settings/option_type.md#default-value): `0.0`.  
+[Range](../../../general_settings/option_type.md#range): `≤ 2`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--adaptive-pressure-advance-bridges=1`.  
 Pressure advance value for bridges. Set to 0 to disable.  
 A lower PA value when printing bridges helps reduce the appearance of slight under extrusion immediately after bridges.  

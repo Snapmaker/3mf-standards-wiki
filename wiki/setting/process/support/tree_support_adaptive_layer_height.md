@@ -7,7 +7,7 @@
 
 - 标签：Adaptive layer height
 - 类型：coBool
-- 默认值：—
+- 默认值：1
 - 可见模式：-
 
 > 工具提示原文：Enabling this option means the height of tree support layer except the first will be automatically calculated.

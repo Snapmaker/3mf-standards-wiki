@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `infill_overhang_angle`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Default](../../../general_settings/option_type.md#default-value): `60`.  
+[Range](../../../general_settings/option_type.md#range): `15–75` °.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-overhang-angle=1`.  
 Vertical honeycomb pattern with acceptable torsional stiffness, developed for low-density structures like wings. An improvement over [Lateral Lattice](#lateral-lattice), it offers the same performance at lower densities. This infill includes an **Infill overhang angle** parameter to improve the contact between layers and reduce the risk of delamination.
 

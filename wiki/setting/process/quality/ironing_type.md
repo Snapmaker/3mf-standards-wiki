@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `ironing_type`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `IroningType::NoIroning`.  
 [Options](../../../general_settings/option_type.md#choice): `no ironing, top, topmost, solid`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--ironing-type="no ironing"`.  
 This setting controls which layers are ironed.

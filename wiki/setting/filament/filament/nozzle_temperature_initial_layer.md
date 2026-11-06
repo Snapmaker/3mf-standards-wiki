@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `nozzle_temperature_initial_layer`, `nozzle_temperature`.  
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `nozzle_temperature_initial_layer` (200), `nozzle_temperature` (200).  
+[Ranges](../../../general_settings/option_type.md#range): `nozzle_temperature_initial_layer` (`≥ 0` ℃), `nozzle_temperature` (`≥ 0` ℃).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--nozzle-temperature-initial-layer=1` (same pattern for the other variables above).  
 One of the most critical settings for successful 3D printing is the nozzle temperature.  
 The correct nozzle temperature ensures proper melting and extrusion of the filament, leading to good layer adhesion and overall print quality.  

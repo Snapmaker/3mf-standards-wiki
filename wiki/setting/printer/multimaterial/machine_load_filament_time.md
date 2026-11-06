@@ -9,5 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_load_filament_time`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Default](../../../general_settings/option_type.md#default-value): `0.0`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` s.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--machine-load-filament-time=1`.  
 Time to load new filament when switch filament. It's usually applicable for single-extruder multi-material machines. For tool changers or multi-tool machines, it's typically 0. For statistics only.

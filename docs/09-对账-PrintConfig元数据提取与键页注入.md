@@ -2,7 +2,7 @@
 
 > 调研基线：fork 源码 `src/libslic3r/PrintConfig.cpp` + `PrintConfig.hpp`（commit `f77ec1f8`，2026-11-06）；wiki 侧 525 个键页面（不含 3 个总览页）。
 > 回答的问题：**键页四件套（Mode/Variable/Type/CLI Example）之外，fork `ConfigOptionDef` 还提供哪些元数据？如何以脚本化、可复跑的方式补进键页？**
-> 状态：filament/cooling 20 页已按新格式试点注入，其余 ~505 页待团队批准模板后批量注入。
+> 状态：2026-11-06 全量完成。525 键页全部注入元数据行（含试点 20 页），缺键小节加 WARNING 横幅，Mode 对账修正，占位页默认值填充，E7 升级 FAIL。§5 各项已按建议执行完毕。
 
 ## 1. 结论
 
@@ -70,16 +70,20 @@
 
 这些小节是建页时照抄上游 wiki 的内容，**本变更只标注不删改**（是否删除/加警示横幅属于内容决策，待裁决）。
 
-## 5. 待团队裁决
+## 5. 裁决项与执行结果（2026-11-06 按建议全部执行）
 
-| # | 问题 | 建议 |
+| # | 问题 | 决议/结果 |
 |---|---|---|
-| Q1 | 内插式格式（含 `—` 三分显示、多键页 `[Defaults]` 复数样式）是否批准为标准模板 | 批准后 `inject --all` 刷剩余 ~505 页 |
-| Q2 | E7 是否从 WARN 升级为 FAIL（全量注入完成后） | 建议升级，防止新页漏注入 |
-| Q3 | [Options] 补全取 `enum_values` 还是 `enum_labels`（如 `auto_brim` vs 显示文本） | 建议以 `enum_values` 为准（与 CLI/JSON 一致），labels 可后补 |
-| Q4 | Mode 取值不一致：页内有 `Expert`（上游叫法 6 处）vs fork 枚举 `Simple/Advanced/Developer` | 建议统一为 fork 枚举名 |
-| Q5 | §4 的 25 个 fork 无键小节如何处理 | 建议小节头部加 `> [!WARNING] fork 未实现此参数`，正文保留上游内容 |
-| Q6 | 24 个占位页是否统一升级为新格式 | 建议保持"基本信息"结构，仅补 [Default] 链接化 |
+| Q1 | 内插式格式是否批准为标准模板 | ✅ 已全量执行：`inject --all` 430 页 + 试点 20 页 = 450 个含 [Type] 小节的页面全部注入 |
+| Q2 | E7 是否从 WARN 升级为 FAIL | ✅ 已升级（check_page.sh），当前 E7 违规 0 |
+| Q3 | [Options] 补全取值口径 | ✅ 空操作：audit 实测 Choice 页缺 [Options] 为 0（既有 [Options] 行已全覆盖）；行内取值以 `enum_values` 为准（与 CLI/JSON 一致），值为上游显示文本的留待后续人工对账 |
+| Q4 | Mode 取值不一致 | ✅ 单键小节已修正 6 文件（`filament_tower`/`retract_*_toolchange` 族，页标与 fork 可见级真实差异）；`Expert` 6 处全在 fork 无键小节，随 Q5 横幅处理不改名；**混合模式小节**（`filament_tower` 区块 purge=Advanced + tower=Developer）单行 [Mode] 无法表达，audit 已静音，留待模板升级 [Modes] 逐键样式 |
+| Q5 | 25 个 fork 无键小节 | ✅ 20 页小节头部加 `> [!WARNING] fork 未实现` 横幅，正文保留 |
+| Q6 | 24 个占位页 | ✅ 保持"基本信息"结构；默认值 `—` 全部按 JSON 填充真实值（21/24 页原为 `—`，实际 fork 有默认值；2 个 notes 页为空串），漂移复核 0 |
+
+全量执行后验证：`check_page.sh --all` FAIL=0（E7 计 0），audit 的 default_drift/mode_drift/no_default_line 全部归零；key_not_in_json 62 条即 §4 缺键清单在页面上的映射（多页交叉列举同键）。
+
+执行中发现并修复的问题：`required_nozzle_HRC.md` 大小写不一致（git 规范名大写 vs 全部内链小写，Windows 大小写不敏感 FS 掩盖已久，`git checkout` 重写目录项后暴露）——已两步 `git mv` 规范为小写；字符串型默认值带引号显示（thumbnails 等 4 页）——extract 增加整串字符串字面量处理。
 
 ## 6. 工具用法备忘
 

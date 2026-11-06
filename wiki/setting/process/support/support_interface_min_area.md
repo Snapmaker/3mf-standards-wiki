@@ -7,7 +7,7 @@
 
 - 标签：Minimum Support Contact Area
 - 类型：coFloat
-- 默认值：—
+- 默认值：0.25
 - 可见模式：进阶
 
 > 工具提示原文：Lower values generate more support contact surfaces.

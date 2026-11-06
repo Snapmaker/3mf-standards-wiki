@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `bridge_density`, `internal_bridge_density`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Percentage`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `bridge_density` (100), `internal_bridge_density` (100).  
+[Ranges](../../../general_settings/option_type.md#range): `bridge_density` (`10–120` %), `internal_bridge_density` (`10–100` %).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--bridge-density=20%` (same pattern for the other variables above).  
 Controls the density (spacing) of external and internal bridge lines. Default is 100%.  
 Theoretically, 100% means a solid bridge, but due to the tendency of bridge extrusions to sag, 100% may not be sufficient.

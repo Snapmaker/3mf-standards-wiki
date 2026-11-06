@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `infill_combination_max_layer_height`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
+[Default](../../../general_settings/option_type.md#default-value): `100%`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm or %.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-combination-max-layer-height=20%`.  
 Maximum layer height for the combined sparse infill.  
 Set it to 0 or 100% to use the nozzle diameter (for maximum reduction in print time), or to a value of ~80% to maximize sparse infill strength.

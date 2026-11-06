@@ -7,7 +7,7 @@
 
 - 标签：Internal
 - 类型：coFloatsOrPercents
-- 默认值：—
+- 默认值：150%
 - 可见模式：进阶
 
 > 工具提示原文：Speed of internal bridges. If the value is expressed as a percentage, it will be calculated based on the bridge_speed. Default value is 150%.

@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `travel_speed`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
+[Default](../../../general_settings/option_type.md#default-value): `120`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 1` mm/s.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--travel-speed=1`.  
 ![travel-lines](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/speed/travel-lines.png?raw=true)
 

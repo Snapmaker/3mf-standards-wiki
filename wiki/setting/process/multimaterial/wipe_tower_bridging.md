@@ -10,5 +10,6 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_tower_bridging`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Default](../../../general_settings/option_type.md#default-value): `10`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wipe-tower-bridging=1`.  
 Maximal distance between supports on sparse infill sections.

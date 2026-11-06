@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `pellet_flow_coefficient`, `pellet_modded_printer`.  
 [Type](../../../general_settings/option_type.md): `pellet_flow_coefficient` (Float list), `pellet_modded_printer` (Boolean).  
+[Defaults](../../../general_settings/option_type.md#default-value): `pellet_flow_coefficient` (0.4157), `pellet_modded_printer` (false).  
+[Ranges](../../../general_settings/option_type.md#range): `pellet_flow_coefficient` (`≥ 0`).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--pellet-flow-coefficient=1` (`pellet_flow_coefficient` shown; other variables above follow their own type).  
 Enable this option if your printer uses pellets instead of filaments.
 Large format printers with print volumes in the order of 1m^3 generally use pellets for printing.

@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `outer_wall_speed`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
+[Default](../../../general_settings/option_type.md#default-value): `60`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 1` mm/s.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--outer-wall-speed=1`.  
 Speed of the outer wall, which is the outermost, visible wall. It is usually printed slower than the [inner wall](#inner-wall) to get better quality and good layer adhesion.
 This setting is also limited by [Machine / Motion ability / Resonance avoidance speed settings](../../../calibration/vfa_calib.md).  

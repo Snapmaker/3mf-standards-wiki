@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `draft_shield`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `disabled`.  
 [Options](../../../general_settings/option_type.md#choice): `disabled, enabled`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--draft-shield=disabled`.  
 When enabled, the skirt is printed as a draft shield: a taller wall surrounding the part to help protect prints (especially ABS/ASA) from drafts and sudden temperature changes.  

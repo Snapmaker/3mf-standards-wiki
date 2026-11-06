@@ -10,6 +10,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `thick_bridges`, `thick_internal_bridges`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `thick_bridges` (false), `thick_internal_bridges` (true).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--thick-bridges=1` (same pattern for the other variables above).  
 
 When enabled, bridge extrusion uses a line height equal to the nozzle diameter.  

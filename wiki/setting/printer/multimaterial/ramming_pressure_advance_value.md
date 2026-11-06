@@ -7,7 +7,7 @@
 
 - 标签：Pressure advance value when ramming
 - 类型：coFloat
-- 默认值：—
+- 默认值：0.0
 - 可见模式：进阶
 
 > 工具提示原文：Set_Pressure_advance [this value] when ramming on wipe tower

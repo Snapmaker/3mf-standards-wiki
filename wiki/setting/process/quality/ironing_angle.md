@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `ironing_angle`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Default](../../../general_settings/option_type.md#default-value): `-1`.  
+[Range](../../../general_settings/option_type.md#range): `-1–359` °.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--ironing-angle=1`.  
 The angle of ironing lines offset relative to the top surface solid infill direction.  
 This option can only be edited when the ironing [Pattern](#pattern) is Rectilinear.

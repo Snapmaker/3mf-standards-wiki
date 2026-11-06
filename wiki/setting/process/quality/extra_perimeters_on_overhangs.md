@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `extra_perimeters_on_overhangs`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--extra-perimeters-on-overhangs=1`.  
 Create additional perimeter (overhang wall) paths over steep overhangs and areas where bridges cannot be anchored.
 

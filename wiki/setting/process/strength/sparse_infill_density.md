@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `sparse_infill_density`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Percentage`.  
+[Default](../../../general_settings/option_type.md#default-value): `20`.  
+[Range](../../../general_settings/option_type.md#range): `0–100` %.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--sparse-infill-density=20%`.  
 Infill density determines the amount of material used to fill the interior of a 3D print. It is usually expressed as a percentage, with 100% being completely solid.
 

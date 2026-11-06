@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wall_direction`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `WallDirection::Auto`.  
 [Options](../../../general_settings/option_type.md#choice): `ccw, cw`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wall-direction=ccw`.  
 The direction in which the **contour** wall loops are extruded when looking down from the top.  

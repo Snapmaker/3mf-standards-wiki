@@ -7,7 +7,7 @@
 
 - 标签：Full domain
 - 类型：coBool
-- 默认值：—
+- 默认值：false
 - 可见模式：进阶
 
 > 工具提示原文：Experimental. Apply Local-Z thinning across whole mixed-color regions instead of limiting the effect strictly to painted mixed masks.\n\nOnly available when Subdivide Mix Layer is enabled.

@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `change_extrusion_role_gcode`.  
 [Type](../../../general_settings/option_type.md#text): `Text`.  
+[Default](../../../general_settings/option_type.md#default-value): `（空）`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--change-extrusion-role-gcode=value`.  
 This G-code is inserted when the [extrusion role](../../../developer_reference/built_in_placeholders_variables.md#extrusion-roles) is changed.
 This is the Machine section of the feature "Change Extrusion Role G-code" that is also available in the [Material settings](../../printer/machine_gcode/change_extrusion_role_gcode.md) and [Process settings](../../printer/machine_gcode/change_extrusion_role_gcode.md).

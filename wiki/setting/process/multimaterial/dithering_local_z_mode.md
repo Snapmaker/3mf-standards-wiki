@@ -7,7 +7,7 @@
 
 - 标签：Subdivide Mix Layer
 - 类型：coBool
-- 默认值：—
+- 默认值：false
 - 可见模式：进阶
 
 > 工具提示原文：Enable \"Subdivide Mix Layer\" for mixing areas. Layer height will be subdivided for better color mixing results.

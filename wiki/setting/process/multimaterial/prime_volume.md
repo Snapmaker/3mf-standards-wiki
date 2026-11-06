@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `prime_volume`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Default](../../../general_settings/option_type.md#default-value): `45`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--prime-volume=1`.  
 Volume of material, in mm³, printed on the prime tower after each tool change to prime the new extruder. Default is 45 mm³.
 

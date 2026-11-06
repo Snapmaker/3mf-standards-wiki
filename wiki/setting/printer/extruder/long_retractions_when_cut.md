@@ -7,7 +7,7 @@
 
 - 标签：Long retraction when cut (beta)
 - 类型：coBools
-- 默认值：—
+- 默认值：false
 - 可见模式：开发者
 
 > 工具提示原文：Experimental feature: Retracting and cutting off the filament at a longer distance during changes to minimize purge. While this reduces flush significantly, it may also raise the risk of nozzle clogs or other printing problems.

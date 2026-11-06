@@ -10,6 +10,7 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `only_one_wall_first_layer`, `only_one_wall_top`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `only_one_wall_first_layer` (false), `only_one_wall_top` (false).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--only-one-wall-first-layer=1` (same pattern for the other variables above).  
 Use only one wall on flat surfaces, to give more space to the [top infill pattern](../../process/strength/bottom_surface_pattern.md).
 Especially useful in small features, like letters, where the top surface is very small and [concentric pattern](../../process/strength/sparse_infill_pattern.md) from walls would not cover it properly.

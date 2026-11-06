@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `counterbore_hole_bridging`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `chbNone`.  
 [Options](../../../general_settings/option_type.md#choice): `none, partiallybridge, sacrificiallayer`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--counterbore-hole-bridging=none`.  
 When printing counterbore holes, the unsupported area can lead to sagging or poor surface quality. Also, the perimeters of the counterbore hole may not be printed correctly, leading to gaps or weak points in the structure.

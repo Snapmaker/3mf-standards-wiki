@@ -7,7 +7,7 @@
 
 - 标签：Apply subdivision to infill
 - 类型：coBool
-- 默认值：—
+- 默认值：false
 - 可见模式：进阶
 
 > 工具提示原文：Experimental. When Subdivide Mix Layer is enabled, also apply the same subdivision to infill inside mixed-color areas.\n\nThis is enabled automatically with Subdivide Mix Layer. Turn it off to keep infill on the normal layer height.\n\nIt can improve internal color mixing, but may add toolchanges and affect infill behavior.

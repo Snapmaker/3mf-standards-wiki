@@ -7,9 +7,13 @@
 
 ## Print Chamber Temperature
 
+> [!WARNING] fork 未实现
+> `chamber_minimal_temperature` 为上游 OrcaSlicer 参数，fork 未收录；本小节其余参数 fork 正常。
+
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `activate_chamber_temp_control`, `chamber_temperature`, `chamber_minimal_temperature`.  
 [Type](../../../general_settings/option_type.md): `activate_chamber_temp_control` (Boolean list), `chamber_temperature` (Integer list), `chamber_minimal_temperature` (Integer list).  
+[Defaults](../../../general_settings/option_type.md#default-value): `activate_chamber_temp_control` (false), `chamber_temperature` (— 无静态默认值), `chamber_minimal_temperature` (—).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--activate-chamber-temp-control=1` (`activate_chamber_temp_control` shown; other variables above follow their own type).  
 Chamber temperature can affect the print quality, especially for high-temperature filaments.  
 A heated chamber can help to maintain a consistent temperature throughout the print, reducing the risk of warping and improving layer adhesion. However, it is important to monitor the chamber temperature to ensure that it does not exceed the filament's deformation temperature.

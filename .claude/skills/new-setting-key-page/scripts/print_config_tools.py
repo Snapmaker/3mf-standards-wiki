@@ -72,11 +72,14 @@ def strip_comments(text):
 
 
 def string_values(expr):
-    """取 C++ 表达式里的字符串字面量；相邻字面量拼接（多行 tooltip 拼接）。"""
+    """取 C++ 表达式里的字符串字面量；相邻字面量拼接（多行 tooltip 拼接）；解码 \\uXXXX 转义。"""
     lits = re.findall(r'"((?:[^"\\]|\\.)*)"', expr)
     if not lits:
         return None
-    return "".join(lits)
+    s = "".join(lits)
+    s = re.sub(r'\\u([0-9a-fA-F]{4})', lambda m: chr(int(m.group(1), 16)), s)
+    s = re.sub(r'\\x([0-9a-fA-F]{2})', lambda m: chr(int(m.group(1), 16)), s)
+    return s
 
 
 # ---------------------------------------------------------------------------
@@ -116,7 +119,7 @@ def parse_block(block, enum_display=None):
             try:
                 rec[lim] = int(v, 0)
             except ValueError:
-                rec[lim] = v  # 非字面量（少见），保留原文
+                rec[lim] = None  # 标识符/动态边界（如 -max_temp），无法展示
     m = field("mode")
     rec["mode"] = {"comSimple": "Simple", "comAdvanced": "Advanced",
                    "comDevelop": "Developer"}.get(m, m)
@@ -143,6 +146,8 @@ def parse_default(expr, enum_display=None):
     inner = (inner or "").strip()
     if inner == "":
         return ""  # 显式空默认
+    if len(inner) >= 2 and inner[0] == '"' and inner[-1] == '"':
+        return inner[1:-1]  # 整串字符串字面量（含逗号/换行），原样保留不拆分
     parts = [p.strip() for p in inner.split(",")]
     norm = []
     for p in parts:
@@ -162,6 +167,10 @@ def parse_default(expr, enum_display=None):
     # FloatOrPercent{v, is_percent} → v% / v
     out = re.sub(r"FloatOrPercent\s*\{\s*(-?[\d.]+)\s*,\s*(true|false)\s*\}",
                  lambda m_: m_.group(1).rstrip(".") + ("%" if m_.group(2) == "true" else ""), out)
+    # 单值括号形式 ConfigOptionFloatOrPercent(100, true) → 100%
+    m_fp = re.fullmatch(r"(-?[\d.]+),\s*(true|false)", out)
+    if m_fp:
+        out = m_fp.group(1).rstrip(".") + ("%" if m_fp.group(2) == "true" else "")
     # 枚举常量默认值 → 用户可见枚举串（s_keys_map_* 静态映射）
     if enum_display:
         out = re.sub(r"\(\s*int\s*\)\s*([A-Za-z_]\w*)",
@@ -288,6 +297,7 @@ def cmd_extract(args):
 RE_TYPE_LINE = re.compile(r'^\[Type\]')
 RE_CLI_LINE = re.compile(r'^\[CLI Example\]')
 RE_VAR_LINE = re.compile(r'^\[Variables?\]')
+RE_MODE_LINE = re.compile(r'^\[Modes?\]')
 RE_HAS_DEFAULT = re.compile(r'^\[Defaults?\]')
 RE_KEY_TOKEN = re.compile(r'`([a-z0-9_]+)`')
 RE_EOL = re.compile(r'(\r?\n)$')
@@ -382,9 +392,11 @@ def inject_page(path, meta, dry_run):
     for i, ln in enumerate(lines):
         if not RE_TYPE_LINE.match(ln):
             continue
-        # 幂等：Type 与 CLI 之间已有 [Default(s)]
+        # 幂等：小节内已有 [Default(s)]；扫描以空行/下一标签行为界，防跨小节误判
         j = i + 1
-        while j < len(lines) and not RE_CLI_LINE.match(lines[j]):
+        while (j < len(lines) and lines[j].strip()
+               and not RE_CLI_LINE.match(lines[j]) and not RE_TYPE_LINE.match(lines[j])
+               and not RE_MODE_LINE.match(lines[j]) and not RE_VAR_LINE.match(lines[j])):
             if RE_HAS_DEFAULT.match(lines[j]):
                 skipped += 1; break
             j += 1
@@ -431,6 +443,74 @@ def cmd_inject(args):
 
 
 # ---------------------------------------------------------------------------
+# banner（Q5：fork 未实现小节加 WARNING 横幅）
+# ---------------------------------------------------------------------------
+
+def banner_page(path, meta, dry_run):
+    with open(path, encoding="utf-8", newline="") as f:
+        text = f.read()
+    eol = "\r\n" if "\r\n" in text else "\n"
+    lines = text.split(eol)
+    rel = os.path.relpath(path, REPO_ROOT)
+
+    inserts, skipped = [], 0
+    for i, ln in enumerate(lines):
+        if not RE_VAR_LINE.match(ln):
+            continue
+        keys = RE_KEY_TOKEN.findall(ln)
+        if not keys:
+            continue
+        missing = [k for k in keys if k not in meta]
+        if not missing:
+            continue
+        # 定位本小节 [Mode] 行（Mode 在 Variable 上一行）；无则用 Variable 行本身
+        at = i
+        for b in range(i - 1, max(i - 4, -1), -1):
+            if RE_MODE_LINE.match(lines[b]):
+                at = b; break
+            if lines[b].strip() and not RE_VAR_LINE.match(lines[b]) and b < i - 1:
+                break
+        # 幂等：上方 5 行内已有 fork 未实现横幅
+        if any("fork 未实现" in lines[x] for x in range(max(0, at - 5), at)):
+            skipped += 1; continue
+        mk = "、".join("`%s`" % k for k in missing)
+        if len(missing) == len(keys):
+            body = "%s 为上游 OrcaSlicer 参数，fork 源码未收录，以下内容保留供参考。" % mk
+        else:
+            body = "%s 为上游 OrcaSlicer 参数，fork 未收录；本小节其余参数 fork 正常。" % mk
+        blk = ["> [!WARNING] fork 未实现", "> " + body, ""]
+        # 确保横幅上方空行分隔
+        if at > 0 and lines[at - 1].strip():
+            blk.insert(0, "")
+        inserts.append((at, blk))
+
+    if not inserts:
+        return False, skipped
+    for pos, blk in reversed(inserts):
+        lines[pos:pos] = blk
+    out = eol.join(lines)
+    if dry_run:
+        print("[DRY] %s: +%d 横幅" % (rel, len(inserts)))
+    else:
+        with open(path, "w", encoding="utf-8", newline="") as f:
+            f.write(out)
+        print("[OK] %s: +%d 横幅" % (rel, len(inserts)))
+    return True, skipped
+
+
+def cmd_banner(args):
+    meta = json.load(open(args.json, encoding="utf-8"))["keys"]
+    changed, total_skip = 0, 0
+    for p in page_files(args):
+        did, skipped = banner_page(p, meta, args.dry_run)
+        total_skip += skipped
+        changed += 1 if did else 0
+    print("--\n%s %d 页（幂等跳过 %d 处）" % ("将修改" if args.dry_run else "已修改",
+                                          changed, total_skip))
+    return 0
+
+
+# ---------------------------------------------------------------------------
 # audit
 # ---------------------------------------------------------------------------
 
@@ -441,7 +521,7 @@ def norm(v):
 def cmd_audit(args):
     meta = json.load(open(args.json, encoding="utf-8"))["keys"]
     issues = {"no_default_line": [], "default_drift": [], "key_not_in_json": [],
-              "choice_no_options": []}
+              "choice_no_options": [], "mode_drift": []}
     n_pages = n_sections = 0
     for p in page_files(argparse.Namespace(all=True, group=None, pages=None)):
         text = open(p, encoding="utf-8", newline="").read()
@@ -460,6 +540,22 @@ def cmd_audit(args):
                     if keys:
                         break
             keys = keys or [stem]
+            # Q4：Mode 值 vs fork 枚举（fork 无键的小节跳过，由 banner 处理）
+            mval = None
+            for b in range(i - 2, max(i - 8, -1), -1):
+                if RE_MODE_LINE.match(lines[b]):
+                    m = re.search(r'`([A-Za-z]+)`', lines[b])
+                    mval = m.group(1) if m else None
+                    break
+            if mval:
+                # 混合模式小节（fork 各键可见级不同）单行 Mode 无法表达，不报
+                modes = {meta[k].get("mode") for k in keys
+                         if k in meta and meta[k].get("mode")}
+                if len(modes) == 1:
+                    fm = modes.pop()
+                    if fm != mval:
+                        issues["mode_drift"].append(
+                            "%s:%d %s 页标 %s / fork %s" % (rel, i + 1, ", ".join(keys), mval, fm))
             j = i + 1
             dline = None
             while j < len(lines) and not RE_CLI_LINE.match(lines[j]) and lines[j].strip():
@@ -470,13 +566,14 @@ def cmd_audit(args):
                 issues["no_default_line"].append("%s:%d" % (rel, i + 1))
             else:
                 has_default_any = True
+                flat_line = re.sub(r"[\s,`'\"]+", "", dline)
                 for k in keys:
                     if k not in meta:
                         continue
                     exp = meta[k].get("default")
                     if exp in (None, ""):
                         continue
-                    if ("`%s`" % norm(exp)) not in dline and norm(exp) not in dline:
+                    if re.sub(r"[\s,`'\"]+", "", str(exp)) not in flat_line:
                         issues["default_drift"].append(
                             "%s:%d %s 期望 %s 实际 %s" % (rel, i + 1, k, exp, dline.strip()))
             for k in keys:
@@ -523,6 +620,14 @@ def main():
     a = sub.add_parser("audit", help="页内元数据 vs JSON 对账")
     a.add_argument("--json", default=DEFAULT_JSON)
     a.set_defaults(func=cmd_audit)
+
+    b = sub.add_parser("banner", help="fork 未实现小节加 WARNING 横幅（Q5）")
+    b.add_argument("pages", nargs="*", help="页面路径")
+    b.add_argument("--group", help="目录（如 wiki/setting/filament/cooling）")
+    b.add_argument("--all", action="store_true", help="全部键页")
+    b.add_argument("--dry-run", action="store_true")
+    b.add_argument("--json", default=DEFAULT_JSON)
+    b.set_defaults(func=cmd_banner)
 
     args = ap.parse_args()
     sys.exit(args.func(args))

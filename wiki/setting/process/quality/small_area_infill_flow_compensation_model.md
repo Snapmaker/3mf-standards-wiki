@@ -10,6 +10,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `small_area_infill_flow_compensation`, `small_area_infill_flow_compensation_model`.  
 [Type](../../../general_settings/option_type.md): `small_area_infill_flow_compensation` (Boolean), `small_area_infill_flow_compensation_model` (Text list).  
+[Defaults](../../../general_settings/option_type.md#default-value): `small_area_infill_flow_compensation` (false), `small_area_infill_flow_compensation_model` (0,0", "\n0.2,0.4444", "\n0.4,0.6145", "\n0.6,0.7059", "\n0.8,0.7619", "\n1.5,0.8571", "\n2,0.8889", "\n3,0.9231", "\n5,0.9520", "\n10,1).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--small-area-infill-flow-compensation=1` (`small_area_infill_flow_compensation` shown; other variables above follow their own type).  
 Enables adaptive flow control for small infill areas.
 This feature helps address extrusion problems that often occur in small regions of solid infill, such as the tops of narrow letters or fine features.  

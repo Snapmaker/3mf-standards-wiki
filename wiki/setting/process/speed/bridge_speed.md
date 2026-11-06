@@ -7,7 +7,7 @@
 
 - 标签：External
 - 类型：coFloats
-- 默认值：—
+- 默认值：25
 - 可见模式：进阶
 
 > 工具提示原文：Speed of the externally visible bridge extrusions.\n\nIn addition, if Slow down for curled perimeters is disabled or Classic overhang mode is enabled, it will be the print speed of overhang walls that are supported by less than 13%, whether they are part of a bridge or an overhang.

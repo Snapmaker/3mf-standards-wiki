@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `support_top_z_distance`, `support_bottom_z_distance`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `support_top_z_distance` (0.2), `support_bottom_z_distance` (0.2).  
+[Ranges](../../../general_settings/option_type.md#range): `support_top_z_distance` (`≥ 0` mm), `support_bottom_z_distance` (`≥ 0` mm).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-top-z-distance=1` (same pattern for the other variables above).  
 The Z gap between the support and the object: **Top Z distance** is the gap between the top of the support and the overhang above it, and **Bottom Z distance** the gap between the object and a support standing on it. Both are rounded to a multiple of the layer height unless [Independent support layer height](#independent-support-layer-height) is enabled.
 

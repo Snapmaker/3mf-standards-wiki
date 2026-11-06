@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `fan_speedup_time`, `fan_speedup_overhangs`.  
 [Type](../../../general_settings/option_type.md): `fan_speedup_time` (Float), `fan_speedup_overhangs` (Boolean).  
+[Defaults](../../../general_settings/option_type.md#default-value): `fan_speedup_time` (0), `fan_speedup_overhangs` (true).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--fan-speedup-time=1` (`fan_speedup_time` shown; other variables above follow their own type).  
 Start the fan this number of seconds earlier than its target start time (you can use fractional seconds). It assumes infinite acceleration for this time estimation, and will only take into account G1 and G0 moves (arc fitting is unsupported).
 It won't move fan commands from custom G-code (they act as a sort of 'barrier').

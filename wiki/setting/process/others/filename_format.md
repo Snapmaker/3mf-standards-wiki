@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filename_format`.  
 [Type](../../../general_settings/option_type.md#text): `Text`.  
+[Default](../../../general_settings/option_type.md#default-value): `{input_filename_base}_{filament_type[initial_tool]}_{print_time}.gcode`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filename-format={input_filename_base}_{filament_type[initial_tool]}_{print_time}.gcode`.  
 Define a filename template for exported G-code. Templates may include tokens like project name, date, or other metadata to produce consistent and informative filenames on export.
 

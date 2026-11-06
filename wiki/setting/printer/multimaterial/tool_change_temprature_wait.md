@@ -7,7 +7,7 @@
 
 - 标签：Wait for the temperature when changing tools
 - 类型：coBool
-- 默认值：—
+- 默认值：true
 - 可见模式：进阶
 
 > 工具提示原文：It will use the M109 instead of M104 T[target] after changing tools if this is set to true

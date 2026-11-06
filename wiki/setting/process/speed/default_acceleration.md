@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `default_acceleration`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
+[Default](../../../general_settings/option_type.md#default-value): `500.0`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm/s².  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--default-acceleration=1`.  
 The default acceleration for both normal printing and travel after the first layer.
 

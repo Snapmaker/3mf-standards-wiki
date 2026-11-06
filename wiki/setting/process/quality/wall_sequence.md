@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wall_sequence`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `WallSequence::InnerOuter`.  
 [Options](../../../general_settings/option_type.md#choice): `inner wall/outer wall, outer wall/inner wall, inner-outer-inner wall`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wall-sequence="inner wall/outer wall"`.  
 Print sequence of the internal (inner) and external (outer) walls.  

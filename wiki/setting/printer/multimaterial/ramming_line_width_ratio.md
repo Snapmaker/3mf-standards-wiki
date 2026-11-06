@@ -7,7 +7,7 @@
 
 - 标签：Ramming line width ratio
 - 类型：coFloat
-- 默认值：—
+- 默认值：2.0
 - 可见模式：进阶
 
 > 工具提示原文：This is used to decide the line width of wipe tower when ramming, ramming line width = [this ratio] * extruder * 1.25

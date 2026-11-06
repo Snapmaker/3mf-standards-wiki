@@ -13,6 +13,8 @@ Resonance Compensations are the methods used to reduce the vibrations of the pri
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `resonance_avoidance`, `min_resonance_avoidance_speed`, `max_resonance_avoidance_speed`.  
 [Type](../../../general_settings/option_type.md): `resonance_avoidance` (Boolean), `min_resonance_avoidance_speed` (Float), `max_resonance_avoidance_speed` (Float).  
+[Defaults](../../../general_settings/option_type.md#default-value): `resonance_avoidance` (false), `min_resonance_avoidance_speed` (70), `max_resonance_avoidance_speed` (120).  
+[Ranges](../../../general_settings/option_type.md#range): `min_resonance_avoidance_speed` (`≥ 0` mm/s), `max_resonance_avoidance_speed` (`≥ 0` mm/s).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--resonance-avoidance=1` (`resonance_avoidance` shown; other variables above follow their own type).  
 By reducing the speed of the outer wall to avoid the resonance zone of the printer, ringing on the surface of the model are avoided.
 
@@ -21,9 +23,13 @@ By reducing the speed of the outer wall to avoid the resonance zone of the print
 
 ### Input Shaping
 
+> [!WARNING] fork 未实现
+> `input_shaping_emit`、`input_shaping_freq_x`、`input_shaping_freq_y`、`input_shaping_damp_x`、`input_shaping_damp_y` 为上游 OrcaSlicer 参数，fork 源码未收录，以下内容保留供参考。
+
 [Mode](../../../general_settings/option_mode.md): `Expert`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `input_shaping_emit`, `input_shaping_freq_x`, `input_shaping_freq_y`, `input_shaping_damp_x`, `input_shaping_damp_y`.  
 [Type](../../../general_settings/option_type.md): `input_shaping_emit` (Boolean), `input_shaping_freq_x` (Float), `input_shaping_freq_y` (Float), `input_shaping_damp_x` (Float), `input_shaping_damp_y` (Float).  
+[Defaults](../../../general_settings/option_type.md#default-value): `input_shaping_emit` (—), `input_shaping_freq_x` (—), `input_shaping_freq_y` (—), `input_shaping_damp_x` (—), `input_shaping_damp_y` (—).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--input-shaping-emit=1` (`input_shaping_emit` shown; other variables above follow their own type).  
 During high-speed movements, vibrations can cause a phenomenon called "ringing," where periodic ripples appear on the print surface. Input Shaping provides an effective solution by counteracting these vibrations, improving print quality and reducing wear on components without needing to significantly lower print speeds.
 
@@ -41,9 +47,13 @@ During high-speed movements, vibrations can cause a phenomenon called "ringing,"
 
 #### Input Shaping Type
 
+> [!WARNING] fork 未实现
+> `input_shaping_type` 为上游 OrcaSlicer 参数，fork 源码未收录，以下内容保留供参考。
+
 [Mode](../../../general_settings/option_mode.md): `Expert`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `input_shaping_type`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): —.  
 [Options](../../../general_settings/option_type.md#choice): `Default, MZV, ZV, ZVD, ZVDD, ZVDDD, EI, EI2, 2HUMP_EI, EI3, 3HUMP_EI, DAA, Disable`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--input-shaping-type=Default`.  
 The Input Shaping type determines the algorithm used to counteract the vibrations.  

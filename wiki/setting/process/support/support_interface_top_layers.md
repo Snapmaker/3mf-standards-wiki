@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `support_interface_top_layers`, `support_interface_bottom_layers`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `support_interface_top_layers` (3), `support_interface_bottom_layers` (0).  
+[Ranges](../../../general_settings/option_type.md#range): `support_interface_top_layers` (`≥ 0` layers), `support_interface_bottom_layers` (`≥ -1` layers).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-interface-top-layers=1` (same pattern for the other variables above).  
 The number of interface layers.
 

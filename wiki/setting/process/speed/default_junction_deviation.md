@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `default_junction_deviation`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
+[Default](../../../general_settings/option_type.md#default-value): `0`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--default-junction-deviation=1`.  
 Alternative to Jerk, Junction Deviation is the default method for controlling cornering speed in Marlin 2 printers.  
 Instead of setting a cornering speed for each line type, it calculates the cornering speed from [each line's acceleration](../../process/speed/default_acceleration.md) and the corner angle. A Junction Deviation equivalent to a given jerk value can be estimated with the formula:

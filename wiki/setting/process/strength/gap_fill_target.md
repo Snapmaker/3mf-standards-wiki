@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `gap_fill_target`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `gftNowhere`.  
 [Options](../../../general_settings/option_type.md#choice): `everywhere, topbottom, nowhere`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--gap-fill-target=everywhere`.  
 Enables gap fill for the selected solid surfaces.  

@@ -9,6 +9,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `min_width_top_surface`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
+[Default](../../../general_settings/option_type.md#default-value): `300%`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm or %.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--min-width-top-surface=20%`.  
 If a top surface has to be printed and it's partially covered by another layer, it won't be considered as a top layer where its width is below this value. This can be useful to keep *Only one wall on top surfaces* from triggering on surfaces that should be covered only by walls.  
 This value can be in mm or a % of the inner wall line width.

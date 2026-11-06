@@ -7,7 +7,7 @@
 
 - 标签：Filament notes
 - 类型：coStrings
-- 默认值：—
+- 默认值：（空）
 - 可见模式：进阶
 
 > 工具提示原文：You can put your notes regarding the filament here.

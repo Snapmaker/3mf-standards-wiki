@@ -7,7 +7,7 @@
 
 - 标签：Bed type
 - 类型：coEnum
-- 默认值：—
+- 默认值：Cool Plate
 - 可见模式：简单
 
 > 工具提示原文：Bed types supported by the printer.

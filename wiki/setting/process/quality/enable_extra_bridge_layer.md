@@ -9,6 +9,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_extra_bridge_layer`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `eblDisabled`.  
 [Options](../../../general_settings/option_type.md#choice): `disabled, external_bridge_only, internal_bridge_only, apply_to_all`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-extra-bridge-layer=disabled`.  
 This option enables the generation of an extra bridge layer over bridges.

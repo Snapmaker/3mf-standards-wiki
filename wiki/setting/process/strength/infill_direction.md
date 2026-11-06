@@ -10,6 +10,8 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `infill_direction`, `solid_infill_direction`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `infill_direction` (45), `solid_infill_direction` (45).  
+[Ranges](../../../general_settings/option_type.md#range): `infill_direction` (`0–360` °), `solid_infill_direction` (`0–360` °).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-direction=1` (same pattern for the other variables above).  
 Controls the direction of the infill lines to optimize or strengthen the print.
 

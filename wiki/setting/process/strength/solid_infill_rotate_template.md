@@ -10,6 +10,7 @@
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `sparse_infill_rotate_template`, `solid_infill_rotate_template`.  
 [Type](../../../general_settings/option_type.md#text): `Text`.  
+[Defaults](../../../general_settings/option_type.md#default-value): `sparse_infill_rotate_template` (（空）), `solid_infill_rotate_template` (（空）).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--sparse-infill-rotate-template=value` (same pattern for the other variables above).  
 This metalanguage provides a way to define the [direction and rotation](../../process/strength/align_infill_direction_to_model.md) of [patterns](../../process/strength/sparse_infill_pattern.md) in 3D printing.
 

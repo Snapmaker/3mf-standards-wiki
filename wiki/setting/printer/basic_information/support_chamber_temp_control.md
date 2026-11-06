@@ -6,9 +6,10 @@
 
 ## Support controlling chamber temperature
 
-[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_chamber_temp_control`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `true`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-chamber-temp-control=1`.  
 OrcaSlicer use `M141/M191` command to control active chamber heater.
 

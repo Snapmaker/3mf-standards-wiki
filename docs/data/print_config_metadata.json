@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generated_at": "2026-11-06T16:20:15",
+  "generated_at": "2026-11-06T16:54:10",
   "source_file": "src/libslic3r/PrintConfig.cpp",
   "source_commit": "f77ec1f8e5c425678ebef67f04efa79d7f21557b",
   "stats": {
-   "min": 363,
-   "max": 156,
+   "min": 330,
+   "max": 137,
    "sidetext": 307,
    "aliases": 1,
    "enum_rows": 262,
@@ -157,7 +157,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "\"0, 0, 0\\n0, 0, 0\"",
+   "default": "0,0,0\\n0,0,0",
    "type": "coStrings",
    "line": 1988,
    "derived": false
@@ -736,7 +736,7 @@
   "bridge_flow": {
    "sidetext": null,
    "min": 0,
-   "max": "2.0",
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -1087,7 +1087,7 @@
    "derived": false
   },
   "cool_plate_temp": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 300,
    "mode": null,
@@ -1102,7 +1102,7 @@
    "derived": false
   },
   "cool_plate_temp_initial_layer": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 120,
    "mode": null,
@@ -1690,7 +1690,7 @@
   },
   "dithering_z_step_size": {
    "sidetext": "mm",
-   "min": "0.",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -2121,7 +2121,7 @@
    "derived": false
   },
   "eng_plate_temp": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 300,
    "mode": null,
@@ -2136,7 +2136,7 @@
    "derived": false
   },
   "eng_plate_temp_initial_layer": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 300,
    "mode": null,
@@ -3908,7 +3908,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "100, true",
+   "default": "100%",
    "type": "coFloatOrPercent",
    "line": 2759,
    "derived": false
@@ -3923,7 +3923,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "100, true",
+   "default": "100%",
    "type": "coFloatOrPercent",
    "line": 2847,
    "derived": false
@@ -4185,7 +4185,7 @@
   },
   "fuzzy_skin_persistence": {
    "sidetext": null,
-   "min": "0.01",
+   "min": null,
    "max": 1,
    "mode": "Advanced",
    "aliases": [],
@@ -4215,7 +4215,7 @@
   },
   "fuzzy_skin_scale": {
    "sidetext": "mm",
-   "min": "0.1",
+   "min": null,
    "max": 500,
    "mode": "Advanced",
    "aliases": [],
@@ -4362,7 +4362,7 @@
    "derived": false
   },
   "graphic_effect_plate_temp": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 300,
    "mode": null,
@@ -4377,7 +4377,7 @@
    "derived": false
   },
   "graphic_effect_plate_temp_initial_layer": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 300,
    "mode": null,
@@ -4506,7 +4506,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0.01, false",
+   "default": "0.01",
    "type": "coFloatOrPercent",
    "line": 6449,
    "derived": false
@@ -4632,7 +4632,7 @@
    "derived": false
   },
   "hot_plate_temp": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 300,
    "mode": null,
@@ -4647,7 +4647,7 @@
    "derived": false
   },
   "hot_plate_temp_initial_layer": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": null,
    "max": 300,
    "mode": null,
@@ -4677,9 +4677,9 @@
    "derived": false
   },
   "idle_temperature": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
-   "max": "max_temp",
+   "max": null,
    "mode": null,
    "aliases": [],
    "nocli": false,
@@ -4743,7 +4743,7 @@
     "5 mm",
     "10 mm"
    ],
-   "default": "400, true",
+   "default": "400%",
    "type": "coFloatOrPercent",
    "line": 2633,
    "derived": false
@@ -4763,7 +4763,7 @@
     "5 mm",
     "10 mm"
    ],
-   "default": "20, false",
+   "default": "20",
    "type": "coFloatOrPercent",
    "line": 2661,
    "derived": false
@@ -4793,7 +4793,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "100, true",
+   "default": "100%",
    "type": "coFloatOrPercent",
    "line": 3450,
    "derived": false
@@ -5033,7 +5033,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 2856,
    "derived": false
@@ -5168,7 +5168,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 4297,
    "derived": false
@@ -5267,7 +5267,7 @@
   },
   "interlocking_beam_width": {
    "sidetext": "mm",
-   "min": "0.01",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -5373,7 +5373,7 @@
   "internal_bridge_flow": {
    "sidetext": null,
    "min": 0,
-   "max": "2.0",
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -5425,7 +5425,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 5093,
    "derived": false
@@ -5749,7 +5749,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 2029,
    "derived": false
@@ -5861,7 +5861,7 @@
   },
   "local_z_wipe_tower_purge_lines": {
    "sidetext": "lines",
-   "min": "1.0",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -6278,8 +6278,8 @@
   },
   "make_overhang_printable_angle": {
    "sidetext": "°",
-   "min": "0.",
-   "max": "90.",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -6293,7 +6293,7 @@
   },
   "make_overhang_printable_hole_size": {
    "sidetext": "mm²",
-   "min": "0.",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -6598,7 +6598,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 711,
    "derived": false
@@ -6620,7 +6620,7 @@
   },
   "max_volumetric_extrusion_rate_slope_segment_length": {
    "sidetext": "mm",
-   "min": "0.5",
+   "min": null,
    "max": 5,
    "mode": "Advanced",
    "aliases": [],
@@ -6666,7 +6666,7 @@
   "min_bead_width": {
    "sidetext": "%",
    "min": 0,
-   "max": "it_opt->second.max",
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -6740,8 +6740,8 @@
   },
   "min_length_factor": {
    "sidetext": "mm",
-   "min": "0.0",
-   "max": "25.0",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -6808,7 +6808,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "300, true",
+   "default": "300%",
    "type": "coFloatOrPercent",
    "line": 1173,
    "derived": false
@@ -6845,7 +6845,7 @@
   },
   "mixed_color_layer_height_a": {
    "sidetext": "mm",
-   "min": "0.",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -6860,7 +6860,7 @@
   },
   "mixed_color_layer_height_b": {
    "sidetext": "mm",
-   "min": "0.",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -6935,7 +6935,7 @@
   },
   "mixed_filament_height_lower_bound": {
    "sidetext": "mm",
-   "min": "0.01",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -6950,7 +6950,7 @@
   },
   "mixed_filament_height_upper_bound": {
    "sidetext": "mm",
-   "min": "0.01",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -6965,7 +6965,7 @@
   },
   "mixed_filament_pointillism_line_gap": {
    "sidetext": "mm",
-   "min": "0.",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -6980,7 +6980,7 @@
   },
   "mixed_filament_pointillism_pixel_size": {
    "sidetext": "mm",
-   "min": "0.",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -7010,8 +7010,8 @@
   },
   "mixed_filament_surface_indentation": {
    "sidetext": "mm",
-   "min": "-2.0",
-   "max": "2.0",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -7294,9 +7294,9 @@
    "derived": false
   },
   "nozzle_temperature": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
-   "max": "max_temp",
+   "max": null,
    "mode": null,
    "aliases": [],
    "nocli": false,
@@ -7309,9 +7309,9 @@
    "derived": false
   },
   "nozzle_temperature_initial_layer": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
-   "max": "max_temp",
+   "max": null,
    "mode": null,
    "aliases": [],
    "nocli": false,
@@ -7324,9 +7324,9 @@
    "derived": false
   },
   "nozzle_temperature_range_high": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
-   "max": "max_temp",
+   "max": null,
    "mode": null,
    "aliases": [],
    "nocli": false,
@@ -7339,9 +7339,9 @@
    "derived": false
   },
   "nozzle_temperature_range_low": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
-   "max": "max_temp",
+   "max": null,
    "mode": null,
    "aliases": [],
    "nocli": false,
@@ -7659,7 +7659,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 1740,
    "derived": false
@@ -7853,7 +7853,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "50, true",
+   "default": "50%",
    "type": "coFloatOrPercent",
    "line": 1240,
    "derived": false
@@ -8310,7 +8310,7 @@
   },
   "prime_tower_brim_chamfer_max_width": {
    "sidetext": "mm",
-   "min": "0.",
+   "min": null,
    "max": null,
    "mode": "Developer",
    "aliases": [],
@@ -8325,7 +8325,7 @@
   },
   "prime_tower_brim_width": {
    "sidetext": "mm",
-   "min": "0.",
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -8355,7 +8355,7 @@
   },
   "prime_tower_width": {
    "sidetext": "mm",
-   "min": "2.0",
+   "min": null,
    "max": null,
    "mode": "Simple",
    "aliases": [],
@@ -8370,7 +8370,7 @@
   },
   "prime_volume": {
    "sidetext": "mm³",
-   "min": "1.0",
+   "min": null,
    "max": null,
    "mode": "Simple",
    "aliases": [],
@@ -8445,7 +8445,7 @@
   },
   "print_flow_ratio": {
    "sidetext": null,
-   "min": "0.01",
+   "min": null,
    "max": 2,
    "mode": "Advanced",
    "aliases": [],
@@ -9484,7 +9484,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "100, true",
+   "default": "100%",
    "type": "coFloatOrPercent",
    "line": 4885,
    "derived": false
@@ -9514,7 +9514,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "10, true",
+   "default": "10%",
    "type": "coFloatOrPercent",
    "line": 4834,
    "derived": false
@@ -9610,7 +9610,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 4906,
    "derived": false
@@ -9764,7 +9764,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "100, true",
+   "default": "100%",
    "type": "coFloatOrPercent",
    "line": 3431,
    "derived": false
@@ -9809,7 +9809,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "100, true",
+   "default": "100%",
    "type": "coFloatOrPercent",
    "line": 3421,
    "derived": false
@@ -10131,7 +10131,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "\"0, 0\", \"\\n0.2, 0.4444\", \"\\n0.4, 0.6145\", \"\\n0.6, 0.7059\", \"\\n0.8, 0.7619\", \"\\n1.5, 0.8571\", \"\\n2, 0.8889\", \"\\n3, 0.9231\", \"\\n5, 0.9520\", \"\\n10, 1\"",
+   "default": "0,0\", \"\\n0.2,0.4444\", \"\\n0.4,0.6145\", \"\\n0.6,0.7059\", \"\\n0.8,0.7619\", \"\\n1.5,0.8571\", \"\\n2,0.8889\", \"\\n3,0.9231\", \"\\n5,0.9520\", \"\\n10,1",
    "type": "coStrings",
    "line": 3752,
    "derived": false
@@ -10266,7 +10266,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 3472,
    "derived": false
@@ -10383,7 +10383,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "200, true",
+   "default": "200%",
    "type": "coFloatOrPercent",
    "line": 5129,
    "derived": false
@@ -10434,9 +10434,9 @@
    "derived": false
   },
   "standby_temperature_delta": {
-   "sidetext": "∆\\u2103",
-   "min": "-max_temp",
-   "max": "max_temp",
+   "sidetext": "∆℃",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -10464,7 +10464,7 @@
    "derived": false
   },
   "supertack_plate_temp": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 120,
    "mode": null,
@@ -10479,7 +10479,7 @@
    "derived": false
   },
   "supertack_plate_temp_initial_layer": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 120,
    "mode": null,
@@ -11006,7 +11006,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 5474,
    "derived": false
@@ -11322,7 +11322,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "50, true",
+   "default": "50%",
    "type": "coFloatOrPercent",
    "line": 5699,
    "derived": false
@@ -11344,15 +11344,15 @@
   },
   "support_transition_flow_ratio": {
    "sidetext": "%",
-   "min": "0.1",
-   "max": "2.0",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "1.0, false",
+   "default": "1.0",
    "type": "coFloatOrPercent",
    "line": 5759,
    "derived": false
@@ -11438,7 +11438,7 @@
    "derived": false
   },
   "temperature_vitrification": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": null,
    "max": null,
    "mode": "Simple",
@@ -11468,7 +11468,7 @@
    "derived": false
   },
   "textured_cool_plate_temp": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 300,
    "mode": null,
@@ -11483,7 +11483,7 @@
    "derived": false
   },
   "textured_cool_plate_temp_initial_layer": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 120,
    "mode": null,
@@ -11498,7 +11498,7 @@
    "derived": false
   },
   "textured_plate_temp": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 300,
    "mode": null,
@@ -11513,7 +11513,7 @@
    "derived": false
   },
   "textured_plate_temp_initial_layer": {
-   "sidetext": "\\u2103",
+   "sidetext": "℃",
    "min": 0,
    "max": 300,
    "mode": null,
@@ -11613,7 +11613,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "\"48x48/PNG, 300x300/PNG\"",
+   "default": "48x48/PNG,300x300/PNG",
    "type": "coString",
    "line": 6469,
    "derived": false
@@ -11868,7 +11868,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "0, false",
+   "default": "0",
    "type": "coFloatOrPercent",
    "line": 6023,
    "derived": false
@@ -12184,7 +12184,7 @@
   },
   "tree_support_branch_diameter": {
    "sidetext": "mm",
-   "min": "1.0",
+   "min": null,
    "max": 10,
    "mode": "Advanced",
    "aliases": [],
@@ -12214,7 +12214,7 @@
   },
   "tree_support_branch_diameter_organic": {
    "sidetext": "mm",
-   "min": "1.0",
+   "min": null,
    "max": 10,
    "mode": "Advanced",
    "aliases": [],
@@ -12229,7 +12229,7 @@
   },
   "tree_support_branch_distance": {
    "sidetext": "mm",
-   "min": "1.0",
+   "min": null,
    "max": 10,
    "mode": "Advanced",
    "aliases": [],
@@ -12244,7 +12244,7 @@
   },
   "tree_support_branch_distance_organic": {
    "sidetext": "mm",
-   "min": "1.0",
+   "min": null,
    "max": 10,
    "mode": "Advanced",
    "aliases": [],
@@ -12259,7 +12259,7 @@
   },
   "tree_support_brim_width": {
    "sidetext": null,
-   "min": "0.0",
+   "min": null,
    "max": null,
    "mode": null,
    "aliases": [],
@@ -12274,8 +12274,8 @@
   },
   "tree_support_tip_diameter": {
    "sidetext": "mm",
-   "min": "0.1f",
-   "max": "100.f",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -12556,8 +12556,8 @@
   },
   "wall_transition_angle": {
    "sidetext": "°",
-   "min": "1.",
-   "max": "59.",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -12669,7 +12669,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "80, true",
+   "default": "80%",
    "type": "coFloatOrPercent",
    "line": 4966,
    "derived": false
@@ -12691,8 +12691,8 @@
   },
   "wipe_tower_cone_angle": {
    "sidetext": "°",
-   "min": "0.",
-   "max": "90.",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -12706,8 +12706,8 @@
   },
   "wipe_tower_extra_flow": {
    "sidetext": "%",
-   "min": "100.",
-   "max": "300.",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -12736,8 +12736,8 @@
   },
   "wipe_tower_extra_spacing": {
    "sidetext": "%",
-   "min": "100.",
-   "max": "300.",
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
