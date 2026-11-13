@@ -1,13 +1,13 @@
 ---
 name: new-setting-key-page
-description: 新增或更新 wiki/setting/ 下的设置参数键文档（printer/filament/process 三目录，每键一页）。当用户要求"加一个参数页 / 键文档 / 占位页"、"补某个参数的说明"、批量生成或修订设置键页面、或更新 *_overview.md 总览索引时使用。查询参数含义本身不需要本 skill，直接读对应页面即可。
+description: 新增或更新 wiki/settings/ 下的设置参数键文档（printer/filament/process 三目录，每键一页）。当用户要求"加一个参数页 / 键文档 / 占位页"、"补某个参数的说明"、批量生成或修订设置键页面、或更新 *_overview.md 总览索引时使用。查询参数含义本身不需要本 skill，直接读对应页面即可。
 ---
 
 # 新增/更新设置键文档
 
 ## 适用范围
 
-- **适用**：在 `wiki/setting/{printer,filament,process}/<分组>/<键名>.md` 新建页面；修订既有键页内容；把 🚧 占位页补成完整页；更新对应 `*_overview.md` 索引。
+- **适用**：在 `wiki/settings/{printer,filament,process}/<分组>/<键名>.md` 新建页面；修订既有键页内容；把 🚧 占位页补成完整页；更新对应 `*_overview.md` 索引。
 - **不适用**：3mf 规范正文（`wiki/specification/`）、预设体系（`wiki/preset/`）、只是查某个参数是什么意思（直接读页面）。
 
 ## 输入清单（缺项先问用户，禁止编造）
@@ -30,13 +30,13 @@ description: 新增或更新 wiki/setting/ 下的设置参数键文档（printer
 
 - 上游 OrcaSlicer wiki（https://github.com/OrcaSlicer/OrcaSlicer/wiki）对应 Tab 页收录了该键 → **完整页**：拷贝上游小节内容，保留四件套链接结构，索引标记 ✅。
 - 上游未收录（fork 特有参数）→ **占位页**：从 fork 源码 `src/libslic3r/PrintConfig.cpp` 取该键的元数据（标签/类型/默认值/可见模式/tooltip），索引标记 🚧。fork 的 checkout 位置各人不同，不确定就问用户。
-- 该键与既有页面共用同一 UI 区块（一个区块多个键）→ 在两页 Location 行下互加一行 `> 本小节同时涵盖：...`（参照 `wiki/setting/process/multimaterial/delta_temperature.md` 的写法），索引可用 🔗 交叉引用。
+- 该键与既有页面共用同一 UI 区块（一个区块多个键）→ 在两页 Location 行下互加一行 `> 本小节同时涵盖：...`（参照 `wiki/settings/process/multimaterial/delta_temperature.md` 的写法），索引可用 🔗 交叉引用。
 
 ### 3. 生成页面
 
-目录深度固定为 `wiki/setting/<tab>/<分组>/<键名>.md`，所以页内指向 `general_settings/` 等公共页的相对链接前缀恒为 `../../../`。
+目录深度固定为 `wiki/settings/<tab>/<分组>/<键名>.md`，所以页内指向 `general_settings/` 等公共页的相对链接前缀恒为 `../../../`。
 
-**模板 A —— 完整页**（样例：`wiki/setting/printer/basic_information/adaptive_bed_mesh_margin.md`）：
+**模板 A —— 完整页**（样例：`wiki/settings/printer/basic_information/adaptive_bed_mesh_margin.md`）：
 
 ```markdown
 # <键名>
@@ -104,7 +104,7 @@ python .claude/skills/new-setting-key-page/scripts/print_config_tools.py inject 
 ### 5. 校验（必须全过再交付）
 
 ```bash
-bash .claude/skills/new-setting-key-page/scripts/check_page.sh wiki/setting/<tab>/<分组>/<键名>.md
+bash .claude/skills/new-setting-key-page/scripts/check_page.sh wiki/settings/<tab>/<分组>/<键名>.md
 ```
 
 检查项：E1 文件名 snake_case（英文小写）｜E2 文件名 wiki 内全局唯一｜E3 Location 行存在｜E4 非孤儿页（已被总览或其他页面链接）｜E5 标题 = 文件名主干｜E6 页内相对链接可达（预留目录降级 WARN）｜E7 有 [Type] 行的完整页须配 [Default(s)] 行（FAIL）。

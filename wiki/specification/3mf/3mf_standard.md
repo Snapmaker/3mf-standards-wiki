@@ -73,7 +73,7 @@
 - **生产者**——生成工程 `.3mf` 的软件（Snapmaker Orca 的直接保存、通用导出与自动备份三种路径，见附录 B）；
 - **消费者**——回读工程 `.3mf` 的软件（Snapmaker Orca 后续版本、按 3MF Core 读取几何的第三方工具）。
 
-本规范不规定：切片算法与参数语义（见[设置参数文档](../../setting/printer/printer_overview.md)）、`.gcode.3mf` 执行产物（由 [gcode.3mf 规范](../gcode.3mf/gcode_3mf_standard.md) 规定）、PrusaSlicer 管线专有配置文件（`Slic3r_PE.config` 等，支持范围待裁决：Q20）、`plate_N.json` 的坐标语义（本版未冻结，见 6.5）。
+本规范不规定：切片算法与参数语义（见[设置参数文档](../../settings/printer/printer_overview.md)）、`.gcode.3mf` 执行产物（由 [gcode.3mf 规范](../gcode.3mf/gcode_3mf_standard.md) 规定）、PrusaSlicer 管线专有配置文件（`Slic3r_PE.config` 等，支持范围待裁决：Q20）、`plate_N.json` 的坐标语义（本版未冻结，见 6.5）。
 
 ## 2 规范性引用文件
 
@@ -583,7 +583,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 ## 附录 D（规范性）字段字典与写入白名单
 
-`project_settings.config` 及内嵌预设的完整键值以配置字段字典为准（源码静态定义 786 项 × 实测落盘 584 项对账，含类型、默认值、落盘观测与六类归属），随本规范同源维护：[字段字典 CSV](../../../docs/data/field-dictionary-project-settings-v0.csv)；对账方法与结论见 [docs/02](../../../docs/02-字段字典对账-project_settings.md)。切片参数的逐键讲解见[设置参数文档](../../setting/printer/printer_overview.md)（printer / filament / process 三目录）。
+`project_settings.config` 及内嵌预设的完整键值以配置字段字典为准（源码静态定义 786 项 × 实测落盘 584 项对账，含类型、默认值、落盘观测与六类归属），随本规范同源维护：[字段字典 CSV](../../../docs/data/field-dictionary-project-settings-v0.csv)；对账方法与结论见 [docs/02](../../../docs/02-字段字典对账-project_settings.md)。切片参数的逐键讲解见[设置参数文档](../../settings/printer/printer_overview.md)（printer / filament / process 三目录）。
 
 **白名单初始集合**：553 项"源码定义且样本落盘" + 31 项"落盘但无静态定义"（其中 18 项为序列化别名，本规范正式登记：`filament_retract_*` 族 ↔ 源码 `retract_*` 族、`machine_max_{acceleration,jerk,speed}_*` 12 项；别名映射的维护机制与新增参数的统一别名规则待确认，待裁决：Q8）。
 

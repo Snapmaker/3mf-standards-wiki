@@ -42,9 +42,9 @@
 
 | 总览页 | 覆盖范围 |
 |---|---|
-| [打印机设置参数总览](setting/printer/printer_overview.md) | 6 页面 104 键 |
-| [耗材设置参数总览](setting/filament/filament_overview.md) | 7 页面 107 键（含 18 个回抽覆盖交叉引用） |
-| [工艺设置参数总览](setting/process/process_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
+| [打印机设置参数总览](settings/printer/printer_overview.md) | 6 页面 104 键 |
+| [耗材设置参数总览](settings/filament/filament_overview.md) | 7 页面 107 键（含 18 个回抽覆盖交叉引用） |
+| [工艺设置参数总览](settings/process/process_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
 | [打印配置文件：命名与继承](preset/configuration_files.md) | 入门：配置文件叫什么、元信息、参数如何复用 |
 
 ## 规划中

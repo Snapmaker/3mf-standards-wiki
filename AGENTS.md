@@ -11,7 +11,7 @@
 | `wiki/specification/3mf/` | 现有 | 3MF 文件格式专题：`3mf_standard.md` 为工程文件规范正文，`3mf documents/` 子目录放现状盘点类文档（文件结构、配置文件解析、版本管理细则） |
 | `wiki/specification/gcode.3mf/` | 预留（占位） | gcode.3mf 嵌入式格式专题 |
 | `wiki/images/` | 按需建 | wiki 图片集中存放，按主题建子目录 |
-| `wiki/setting/printer/` `wiki/setting/filament/` `wiki/setting/process/` | 现有 | 设置参数每键一文档。子目录名按 fork UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
+| `wiki/settings/printer/` `wiki/settings/filament/` `wiki/settings/process/` | 现有 | 设置参数每键一文档。子目录名按 fork UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
 | `wiki/preset/` | 现有 | 预设体系文档（配置文件命名、继承、版本） |
 | `wiki/print_prepare/` `wiki/calibration/` `wiki/general_settings/` `wiki/guides/` `wiki/cli/` `wiki/developer_reference/` `wiki/releases/` | 预留 | fork 完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
 | `docs/` | 现有（内部） | 研发证据链：盘点、对账、问题清单。不是 wiki 正文的层级，不放新人向内容 |
@@ -28,7 +28,7 @@
 - 用相对路径带 `.md` 扩展名：`[参数覆盖](3mf_model_settings.md)`、指向 docs/ 用 `../../docs/` 前缀
 - 锚点用 kebab-case 指向真实标题（标题里的编号和空格都算）：`[x](3mf_file_structure.md#3-每个文件的作用)`
 - 独立页面（专题、规范正文、总览页）标题下第二行放面包屑：`← [Wiki 首页](../home.md)`（层级更深时相应加 `../`）
-- 设置键页面（`wiki/setting/`）用 `> Location: Tab → 分组 → UI 区块` 行替代面包屑，模板见 `new-setting-key-page` skill
+- 设置键页面（`wiki/settings/`）用 `> Location: Tab → 分组 → UI 区块` 行替代面包屑，模板见 `new-setting-key-page` skill
 - **孤儿页规则**：新页面必须被 `wiki/home.md`（或其他页面）链接，否则不许合入——没有入口的页面等于不存在
 
 ## 图片
@@ -68,4 +68,4 @@
 
 | Skill | 用途 |
 |---|---|
-| `new-setting-key-page` | 新增/更新 `wiki/setting/` 设置键文档的操作流程；其 `scripts/check_page.sh` 是本文件命名/全局唯一/孤儿页规则的机器校验（单页校验，`--all` 全量审计，E7 查 [Default] 行）；其 `scripts/print_config_tools.py` 从 fork `PrintConfig.cpp` 提取键元数据落档 `docs/data/` 并向键页注入 Default/Range/Aliases 行（extract/inject/audit 三子命令，格式与缺键清单见 docs/09） |
+| `new-setting-key-page` | 新增/更新 `wiki/settings/` 设置键文档的操作流程；其 `scripts/check_page.sh` 是本文件命名/全局唯一/孤儿页规则的机器校验（单页校验，`--all` 全量审计，E7 查 [Default] 行）；其 `scripts/print_config_tools.py` 从 fork `PrintConfig.cpp` 提取键元数据落档 `docs/data/` 并向键页注入 Default/Range/Aliases 行（extract/inject/audit 三子命令，格式与缺键清单见 docs/09） |

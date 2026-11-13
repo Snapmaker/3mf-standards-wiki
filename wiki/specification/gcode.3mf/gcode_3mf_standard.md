@@ -554,7 +554,7 @@ Metadata/
 
 ## 附录 D（规范性）字段字典
 
-`project_settings.config` 及内嵌预设的完整键值以配置字段字典为准（699 个注册字段，含中文说明、预设类别与 JSON 版本），随本规范同源维护；切片参数的逐键讲解见 [设置参数文档](../../setting/printer/printer_overview.md)（printer / filament / process 三目录）。字典未收录的键按 7.1 的形态约定处理。
+`project_settings.config` 及内嵌预设的完整键值以配置字段字典为准（699 个注册字段，含中文说明、预设类别与 JSON 版本），随本规范同源维护；切片参数的逐键讲解见 [设置参数文档](../../settings/printer/printer_overview.md)（printer / filament / process 三目录）。字典未收录的键按 7.1 的形态约定处理。
 
 ## 参考文献
 

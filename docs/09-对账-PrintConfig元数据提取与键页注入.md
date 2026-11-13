@@ -92,7 +92,7 @@
 python .claude/skills/new-setting-key-page/scripts/print_config_tools.py extract <fork>/src/libslic3r/PrintConfig.cpp
 
 # 注入（单页 / 整组 / 全量；--dry-run 预览；幂等）
-python .claude/skills/new-setting-key-page/scripts/print_config_tools.py inject --group wiki/setting/filament/cooling
+python .claude/skills/new-setting-key-page/scripts/print_config_tools.py inject --group wiki/settings/filament/cooling
 
 # 对账（值漂移 / Choice 缺 Options / 页键在 JSON 缺失 / 缺 [Default] 行）
 python .claude/skills/new-setting-key-page/scripts/print_config_tools.py audit

@@ -12,7 +12,7 @@
            输出键→元数据 JSON（含 meta.source_commit 溯源与统计）。
            运行时动态键（非字符串字面量键名）跳过并计数；
            filament_* 循环派生键按源键克隆并标 derived=true。
-  inject   在 wiki/setting 键页的 [Type] 行与 [CLI Example] 行之间内插
+  inject   在 wiki/settings 键页的 [Type] 行与 [CLI Example] 行之间内插
            [Default]/[Range]/[Aliases]（存在才注入，Default 必注入，fork 无键则 —）。
            幂等：已有 [Default(s)] 行的小节跳过。
   audit    对账：页内已有元数据行 vs JSON 值漂移、Choice 页缺 [Options]、
@@ -305,7 +305,7 @@ RE_EOL = re.compile(r'(\r?\n)$')
 
 def page_files(args):
     if args.all or args.group:
-        root = os.path.join(REPO_ROOT, "wiki", "setting")
+        root = os.path.join(REPO_ROOT, "wiki", "settings")
         base = args.group
         if base:
             p = os.path.join(REPO_ROOT, base) if os.path.isdir(os.path.join(REPO_ROOT, base)) \
@@ -321,7 +321,7 @@ def page_files(args):
 
 
 def rel_prefix(page_path):
-    """页面到 wiki/ 的 ../ 前缀（键页恒为 wiki/setting/<tab>/<分组>/，即 ../../../）。"""
+    """页面到 wiki/ 的 ../ 前缀（键页恒为 wiki/settings/<tab>/<分组>/，即 ../../../）。"""
     rel = os.path.relpath(os.path.dirname(os.path.abspath(page_path)),
                           os.path.join(REPO_ROOT, "wiki"))
     return "../" * (rel.count(os.sep) + 1)
@@ -611,7 +611,7 @@ def main():
 
     j = sub.add_parser("inject", help="向键页内插 [Default]/[Range]/[Aliases]")
     j.add_argument("pages", nargs="*", help="页面路径")
-    j.add_argument("--group", help="目录（如 wiki/setting/filament/cooling）")
+    j.add_argument("--group", help="目录（如 wiki/settings/filament/cooling）")
     j.add_argument("--all", action="store_true", help="全部键页")
     j.add_argument("--dry-run", action="store_true")
     j.add_argument("--json", default=DEFAULT_JSON)
@@ -623,7 +623,7 @@ def main():
 
     b = sub.add_parser("banner", help="fork 未实现小节加 WARNING 横幅（Q5）")
     b.add_argument("pages", nargs="*", help="页面路径")
-    b.add_argument("--group", help="目录（如 wiki/setting/filament/cooling）")
+    b.add_argument("--group", help="目录（如 wiki/settings/filament/cooling）")
     b.add_argument("--all", action="store_true", help="全部键页")
     b.add_argument("--dry-run", action="store_true")
     b.add_argument("--json", default=DEFAULT_JSON)

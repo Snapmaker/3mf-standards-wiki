@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
-# check_page.sh — wiki/setting 键页面规范校验（只读，不修改任何文件）
+# check_page.sh — wiki/settings 键页面规范校验（只读，不修改任何文件）
 #
 # 用法:
 #   check_page.sh <page.md> [更多页面...]   校验指定页面（全项检查）
-#   check_page.sh --all                    审计 wiki/setting 全部键页面
+#   check_page.sh --all                    审计 wiki/settings 全部键页面
 #
 # 退出码: 0 = 全部通过(允许有 WARN)  1 = 存在 FAIL  2 = 用法错误
 #
 # 检查项:
 #   E1 文件名 snake_case（^[a-z0-9][a-z0-9_]*\.md$，仅对 wiki/ 页面强制；docs/ 的编号中文名是既有约定）
 #   E2 文件名在 wiki/ 内全局唯一（AGENTS.md 孤儿页之外的全局唯一规则）
-#   E3 Location 行（前 5 行内出现 "> Location: X → Y …"，仅对 wiki/setting 页面强制）
+#   E3 Location 行（前 5 行内出现 "> Location: X → Y …"，仅对 wiki/settings 页面强制）
 #   E4 孤儿页（repo 内没有任何 .md 链接指向它）
-#   E5 一级标题 = 文件名主干（仅对 wiki/setting 页面强制）
+#   E5 一级标题 = 文件名主干（仅对 wiki/settings 页面强制）
 #   E6 页内相对 .md 链接目标存在（AGENTS.md 预留目录降级为 WARN）
 #   E7 有 [Type] 行的完整页须配 [Default(s)] 行（元数据注入；FAIL；--all 模式聚合计数）
 
@@ -61,7 +61,7 @@ trap 'rm -f "$LINK_INDEX"' EXIT
 # 注意: AGENTS.md 不入索引——其中的链接是反引号内的示例, 不是真链接
 grep -roE --include='*.md' '\]\([^)]+\)' wiki docs 2>/dev/null \
 | while IFS= read -r line; do
-    src=${line%%:*}                 # 形如 wiki/setting/printer/printer_overview.md
+    src=${line%%:*}                 # 形如 wiki/settings/printer/printer_overview.md
     tgt=${line#*:}; tgt=${tgt#](}; tgt=${tgt%)}
     tgt=${tgt%%#*}                  # 去锚点
     case $tgt in ''|http*|//*|mailto:*) continue ;; esac
@@ -86,7 +86,7 @@ check_page() {
   base=${p##*/}
   stem=${base%.md}
   local in_setting=0
-  [[ $p == wiki/setting/* ]] && in_setting=1
+  [[ $p == wiki/settings/* ]] && in_setting=1
 
   # E1 文件名（仅 wiki/ 页面）
   if [[ $p == wiki/* ]]; then
@@ -144,7 +144,7 @@ if [[ ${1:-} == '--all' ]]; then
   while IFS= read -r p; do
     ((total++))
     check_page "$p"
-  done < <(find wiki/setting -name '*.md' ! -name '*_overview.md' | sort)
+  done < <(find wiki/settings -name '*.md' ! -name '*_overview.md' | sort)
   # 索引级补查: 全部链接目标的存在性(预留目录降级)
   while IFS= read -r t; do
     [[ -f $t ]] && continue
