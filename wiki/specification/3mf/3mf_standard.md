@@ -54,7 +54,7 @@
 
 本规范规定 Snapmaker Orca 保存与导出的工程 `.3mf` 文件格式。工程文件回答"**怎么切**"：一个文件恢复整个切片工程——网格几何与摆放、对象和盘的业务属性、全量参数快照与预设差异。它与回答"切出来的结果"的 [gcode.3mf 规范](../gcode.3mf/gcode_3mf_standard.md) 构成姊妹篇：两者共用同一 OPC 容器家族和 `Metadata/` 约定，工程 `.3mf` 保存工程状态，`.gcode.3mf` 额外携带执行产物。两者的共享约定（配置取值形态、路径与关系规则）以**本规范第 6 章**为准。
 
-工程 `.3mf` 以 3MF Consortium《3MF Core Specification》为基础：几何层（`3D/`）遵循 Core 的模型部件规范，直接保存形态叠加 Production Extension；配置层（`Metadata/`）是 BBS 管线（Bambu Studio 系）沿用的厂商自有层，属 Core 允许的厂商扩展模式（对照见附录 A）。
+工程 `.3mf` 以 3MF Consortium《3MF Core Specification》为基础：几何层（`3D/`）遵循 Core 的模型部件规范，直接保存形态叠加 Production Extension；配置层（`Metadata/`）是切片软件沿用的厂商自有层，属 Core 允许的厂商扩展模式（对照见附录 A）。
 
 ## 引言
 
@@ -109,7 +109,7 @@
 | 内嵌预设（embedded preset） | 随包携带的打印机 / 工艺 / 耗材预设差异文件（`*_settings_N.config`） |
 | 三层覆盖 | 同一参数键可出现在 project（全局）/ object（对象）/ part（零件）三层的参数覆盖机制 |
 | 字段白名单 | 允许写入 `project_settings.config` 的配置键集合（见附录 D） |
-| BBS 管线 | `bbs_3mf.cpp` 实现的主读写路径，本产品 3mf 的全部读写并兼容读取 Bambu Studio 同族文件 |
+| 主管线 | `bbs_3mf.cpp` 实现的主读写路径，本产品 3mf 的全部读写并兼容读取同族文件 |
 
 ## 4 总体结构
 
@@ -236,14 +236,14 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 
 | 键 | 出现 | 说明 |
 |---|---|---|
-| `Application` | 必选 | 生成器标识，如 `Snapmaker_Orca-2.4.0`。读取端以该键前缀判别 BBS 系文件（7.3） |
+| `Application` | 必选 | 生成器标识，如 `Snapmaker_Orca-2.4.0`。读取端以该键前缀判别同族文件（7.3） |
 | `Snapmaker_Orca:3mfVersion` | 必选 | 工程格式版本，当前写 `1`。消费者应同时兼容历史键 `BambuStudio:3mfVersion`、`bamboo_slicer:Version3mf`（三键等价读取） |
 | `Title` / `Origin` / `Designer` / `DesignerCover` / `Description` / `Copyright` / `License` | 可选 | 模型级信息，可为空 |
 | `DesignerUserId` / `CreationDate` / `ModificationDate` | 可选 | **隐私键，恒写空串**（生产者刻意不落盘用户身份与时间信息） |
 | `model_id` / `Region` | 条件 | 平台分发元数据（如 MakerWorld 导入件），按存在性读取 |
 | `MakerLab` / `MakerLabVersion` | 条件 | 上游遗留键（归入废弃候选，待裁决：Q2） |
 
-**去 Bambu 化**：重新保存时，生产者剥除所有 `BambuStudio:` / `bamboo_slicer:` 前缀的元数据键（源码 `src/libslic3r/Format/bbs_3mf.cpp`，行号锚点见 [3mf_version_management](3mf%20documents/3mf_version_management.md) §3.2）。消费者对残留的历史键按存在性读取、未知则忽略。
+**历史品牌键剥除**：重新保存时，生产者剥除所有 `BambuStudio:` / `bamboo_slicer:` 前缀的元数据键（源码 `src/libslic3r/Format/bbs_3mf.cpp`，行号锚点见 [3mf_version_management](3mf%20documents/3mf_version_management.md) §3.2）。消费者对残留的历史键按存在性读取、未知则忽略。
 
 ### 5.5 外拆对象文件与部件关系
 
@@ -258,11 +258,11 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 
 ## 6 工程配置与参数覆盖
 
-`Metadata/` 为 BBS 管线的厂商配置层，Core 规范未定义其中任何文件（对照见附录 A）。扩展名 `.config` 不代表统一格式：`project_settings.config` 是 JSON，`model_settings.config` / `slice_info.config` 是 XML——**不应凭扩展名选择解析器**。
+`Metadata/` 为切片软件的厂商配置层，Core 规范未定义其中任何文件（对照见附录 A）。扩展名 `.config` 不代表统一格式：`project_settings.config` 是 JSON，`model_settings.config` / `slice_info.config` 是 XML——**不应凭扩展名选择解析器**。
 
 ### 6.1 对象与盘索引：`Metadata/model_settings.config`
 
-XML，必选。根节点 `<config>`，按 object → plate → assemble 顺序组织（工程文件中各节正常出现；`.gcode.3mf` 以 SkipModel 策略导出时仅剩 plate 节）：
+XML，必选。对象/零件/盘/实例的概念图解与对照示例见 [model_settings.config：对象与打印板信息](3mf%20documents/3mf_model_settings.md)。根节点 `<config>`，按 object → plate → assemble 顺序组织（工程文件中各节正常出现；`.gcode.3mf` 以 SkipModel 策略导出时仅剩 plate 节）：
 
 ```text
 config
@@ -417,7 +417,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 | # | 版本层 | 载体 | 当前值 | 主要用途 |
 |---|---|---|---|---|
 | 1 | 文件格式版本 | `3dmodel.model` 内 `<metadata name="Snapmaker_Orca:3mfVersion">` | 1（兼容上限 2） | 子模型格式识别；超限检查已禁用 |
-| 2 | 生成器（应用）版本 | `<metadata name="Application">Snapmaker_Orca-x.y.z` | 随构建 | BBS 系判别；旧版热床迁移门槛（<1.5.9） |
+| 2 | 生成器（应用）版本 | `<metadata name="Application">Snapmaker_Orca-x.y.z` | 随构建 | 同族判别；旧版热床迁移门槛（<1.5.9） |
 | 3 | 配置 schema 版本 | `project_settings.config` 内 `project_schema_version` | 1 | 新版文件升级提示（提示不拦截；递增规则待裁决：Q6） |
 | 4 | 子格式版本头 | 各内嵌文件首行 / 字段（`layer_heights_profile_format_version=2`、`brim_points_format_version=0`、`plate_N.json` 的 `version:2` 等） | 2 / 0 / 2 不等 | 对应解析器分支 |
 | 5 | 预设版本 | 内嵌预设 JSON `version`；vendor profile `version` | Semver | 预设系统门控（语义待裁决：Q7） |
@@ -429,7 +429,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 每次保存**应**：
 
 1. 写 `Snapmaker_Orca:3mfVersion` = 1（**不应**停写，子模型识别依赖，见 5.3）；
-2. 写 `Application` = `Snapmaker_Orca-<软件版本>`，不伪装 Bambu Studio——使其他切片器不把本文件当作 Bambu 工程；
+2. 写 `Application` = `Snapmaker_Orca-<软件版本>`，不借用同族软件前缀——使其他切片器不把本文件当作同族工程；
 3. 剥除 `BambuStudio:` / `bamboo_slicer:` 前缀元数据键（历史键只作读取兼容）；
 4. 隐私键（`DesignerUserId` / `CreationDate` / `ModificationDate`）恒置空；
 5. 条件性文本文件带首行版本头（格式演进走版本头，不隐式变更）。
@@ -438,9 +438,9 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 ### 7.3 读取端行为
 
-**双管线**：BBS 管线（`bbs_3mf.cpp`）承担本产品 3mf 的全部读写并兼容读取 Bambu Studio 同族文件；Prusa 管线（`3mf.cpp`）仅嗅探并只读 PrusaSlicer 3mf（只读几何、不加载配置）。判据：包内存在 `3D/_rels/3dmodel.model.rels` → 不是 Prusa；`Application` 含 `PrusaSlicer` → 是 Prusa。Prusa 兼容路径的支持范围待裁决（Q20）。
+**双管线**：主管线（`bbs_3mf.cpp`）承担本产品 3mf 的全部读写并兼容读取同族文件；Prusa 管线（`3mf.cpp`）仅嗅探并只读 PrusaSlicer 3mf（只读几何、不加载配置）。判据：包内存在 `3D/_rels/3dmodel.model.rels` → 不是 Prusa；`Application` 含 `PrusaSlicer` → 是 Prusa。Prusa 兼容路径的支持范围待裁决（Q20）。
 
-**BBS 系判别只看 `Application` 前缀**（`Snapmaker_Orca-` / `BambuStudio-`）；版本键命中不再置该标志。判别结果决定后续行为：BBS 系全量加载；通用 Core 文件（`From_Other`）仅加载几何并触发多实例拆分。
+**同族判别只看 `Application` 前缀**（`Snapmaker_Orca-` / `BambuStudio-`）；版本键命中不再置该标志。判别结果决定后续行为：同族文件全量加载；通用 Core 文件（`From_Other`）仅加载几何并触发多实例拆分。
 
 **版本门现状（审计结论）**：当前**没有任何一道"版本过新即拒载"的硬门槛**——格式版本超限检查、生成器主版本门、未识别键弹窗等均已注释或禁用（清单见 [3mf_version_management](3mf%20documents/3mf_version_management.md) §4.2）。仍在岗的版本行为仅三处：Prusa 判别只读几何、`<1.5.9` 热床尺寸迁移、`project_schema_version` 升级提示（提示，不拦截）。
 
@@ -456,8 +456,8 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 | 新版文件 → 旧程序（未知新键） | ❌ **打不开** | `load_from_json` 未知键中止；无提示、无降级 |
 | 新版文件 → 旧程序（已知键值变化） | ⚠️ 取决于反序列化 | 标量读双值取前缀（静默丢尾）；向量遇 `nil`（≤2.3.6）抛异常 |
 | schema 升版文件 → 旧程序（≥2.4.0） | ⚠️ 弹提示继续加载 | `handle_newer_3mf_schema`；≤2.3.x 无此代码，无感知 |
-| Bambu Studio 3mf → 本程序 | ✅ 完整加载 | `Application` 前缀判别；`nil` 已容忍（2026-09 修复） |
-| 本程序 3mf → Bambu Studio | ✅ 按非 BBS 项目处理 | `Application` 不再写 `BambuStudio-` |
+| 同族软件 3mf → 本程序 | ✅ 完整加载 | `Application` 前缀判别；`nil` 已容忍（2026-09 修复） |
+| 本程序 3mf → 同族软件 | ✅ 按外来项目处理 | `Application` 不再写 `BambuStudio-` |
 | PrusaSlicer 3mf → 本程序 | ✅ 仅几何 | Prusa 分支重置配置 |
 | 通用 3MF Core → 本程序 | ✅ 仅几何 | `From_Other`；多实例拆分 |
 | 本程序 → PrusaSlicer / 通用查看器 | ✅ Core 几何可读 | 通用导出 / Core 兼容几何层 |
@@ -473,7 +473,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 | C 改内嵌文件结构 | 新增文件安全（登记 Content_Types 与读取路由）；删改既有文件名 / 元素名禁止；平面文本演进加首行版本头 |
 | D 动 schema | 仅"旧程序无法正确理解新文件"的不兼容变更才递增；提示不拦截，正确性靠读端迁移 |
 | E 品牌 / 判别键 | 版本键不可停写；新增品牌同步扩展三键等价表与 `Application` 前缀判别 |
-| F 发布前回归 | 新版开：自家旧版、Bambu Studio 各代、Prusa、MakerWorld 件、通用 Core；旧版开新版件须有明确错误信息而非静默半载 |
+| F 发布前回归 | 新版开：自家旧版、同族软件各代、Prusa、MakerWorld 件、通用 Core；旧版开新版件须有明确错误信息而非静默半载 |
 
 ## 8 一致性要求
 
@@ -489,7 +489,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 6. 三层覆盖仅写差异键（覆盖层为稀疏差异，不重复全局值）；
 7. `project_settings.config` 仅写白名单内键（附录 D），凭据类字段序列化前剔除（6.3 禁入项）；
 8. 条件性文件带各自的版本头（6.5）；内嵌预设按 6.4 两形态之一写出；
-9. 隐私键置空、历史 Bambu 品牌键剥除（7.2）。
+9. 隐私键置空、历史品牌键剥除（7.2）。
 
 ### 8.2 消费者要求
 
@@ -537,9 +537,9 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 | 容器 | Core：OPC（ISO/IEC 29500-2）ZIP 包 | 完全遵循 | `[Content_Types].xml`、`_rels`、ZIP64 |
 | 模型语言 | Core：`model`/`resources`/`build`、mesh、3×4 transform | 完全遵循，`unit` 固定 millimeter | 通用导出形态即纯 Core 文件 |
 | 生产扩展 | Production Extension：`p:UUID` 追踪、`p:path` 外部部件 | 直接保存形态采用 | UUID 为确定性合成（非随机）；外拆网格依赖 `p:path` 引用机制 |
-| `Metadata/` 配置层 | Core 未定义 | 厂商自有层（BBS 管线） | 属 Core 允许的包内附加部件 + 厂商扩展模式（gcode.3mf 规范附录 A 已引用的 §2.2.1 厂商约定同族） |
+| `Metadata/` 配置层 | Core 未定义 | 厂商自有层（主管线） | 属 Core 允许的包内附加部件 + 厂商扩展模式（gcode.3mf 规范附录 A 已引用的 §2.2.1 厂商约定同族） |
 | 工具曲线命名 | Core §2.2.1 厂商约定（`.vendor.3mf` 模式） | `.3mf`（工程）/ `.gcode.3mf`（执行产物） | 双扩展名沿用厂商命名模式 |
-| 与 Bambu Studio 关系 | — | 同族格式，读端全兼容、写端去品牌 | 见 7.2 去 Bambu 化与 7.4 矩阵 |
+| 与同族软件关系 | — | 同族格式，读端全兼容、写端去品牌 | 见 7.2 品牌键剥除与 7.4 矩阵 |
 
 结论：几何层"站在标准内"，配置层"站在标准允许的扩展区"。与 Toolpath 扩展路线的对照见 [gcode.3mf 规范](../gcode.3mf/gcode_3mf_standard.md) 附录 A。
 
