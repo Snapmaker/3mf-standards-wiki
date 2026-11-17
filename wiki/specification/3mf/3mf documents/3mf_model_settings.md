@@ -16,14 +16,16 @@
 
 `Metadata/model_settings.config`，一个 XML 文件，描述几何之外的"业务信息"。内容分四层：
 
-| 层 | 管什么 | 固定内容 |
-|---|---|---|
-| object（对象） | 一个可整体操作的模型 | 名称、耗材槽；可按需覆盖全局参数 |
-| part（零件） | 对象内部的组成件 | 位置矩阵、来源文件、网格统计；也可覆盖参数 |
-| plate（打印板） | 一块打印板的布局 | 板名、耗材映射、缩略图文件名 |
-| model_instance（实例） | 对象的每次摆放 | 对象编号、实例编号、identify_id（不透明标识） |
+| 层 | 源码对应 | 管什么 | 固定内容 |
+|---|---|---|---|
+| object（对象） | `ModelObject` | 一个可整体操作的模型 | 名称、耗材槽；可按需覆盖全局参数 |
+| part（零件） | `ModelVolume` | 对象内部的组成件 | 位置矩阵、来源文件、网格统计；也可覆盖参数 |
+| plate（打印板） | —（工程级概念，不属对象侧类） | 一块打印板的布局 | 板名、耗材映射、缩略图文件名 |
+| model_instance（实例） | `ModelInstance` | 对象的每次摆放 | 对象编号、实例编号、identify_id（不透明标识） |
 
 对象的编号与主模型 `3D/3dmodel.model` 里的编号一一对应——那边管几何，这边管属性。
+
+**part 在代码里叫 volume**：这层最容易名字对不上——文件侧是对象节下的 `<part>`，源码侧是 `ModelVolume`（字面"体积"，同一东西的两副名字）。写入时对象内的 volume 按顺序逐个落成 `<part>`，读取时反向重建。part 层元数据的 `source_volume_id` 键名用的就是代码侧叫法；对象/零件两层的参数覆盖，序列化的正是源码里 `ModelObject::config` / `ModelVolume::config` 这两级配置。
 
 ## 四个概念怎么联系起来：两块盘、三只鸭子
 
@@ -93,7 +95,7 @@
     <part id="0" subtype="model_part">
       <metadata key="name" value="身体"/>
       <metadata key="matrix" value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"/>  ← 零件在对象内的摆放（4×4）
-      <metadata key="source_file" value="duck.stl"/>    ← 来源追溯 6 键（原文件/原编号/偏移）
+      <metadata key="source_file" value="duck.stl"/>    ← 来源追溯 6 键（原文件/原 volume 编号/偏移）
       <metadata key="source_object_id" value="1"/>
       <metadata key="source_volume_id" value="0"/>
       <metadata key="source_offset_x" value="0"/>       ← x/y/z 三键各一条，此处省略 y/z
@@ -164,6 +166,7 @@ project_settings.config     全局默认（约 580 键，全量）
 3. `identify_id` 是不透明标识，不应按数组下标解释；`filament_maps` 现状恒写全 `1`（Q12）。
 4. 同一对象跨盘 = 实例分到不同 plate 节，不是几何复制。
 5. `<assemble>` 节（装配视图）条件写入，实测 9 个样本 0 次出现（Q4），普通文件见不到。
+6. **代码的 volume = 文件的 part**：读源码按 `ModelVolume` 找、读文件按 `<part>` 找，是同一个东西；`source_volume_id` 等键名保留代码侧叫法。
 
 ## 深入阅读（研发内部资料）
 
