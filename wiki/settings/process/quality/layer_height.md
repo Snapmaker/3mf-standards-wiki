@@ -37,12 +37,12 @@ Using smaller layer heights increases print time but results in:
 | Nozzle Size | Min | Max | First Layer Height |
 | --- | --- | --- | --- |
 | 0.2mm | 0.04mm | 0.16mm | 0.12mm |
-| 0.3mm | 0.06mm | 0.24mm | 0.18mm |
 | 0.4mm | 0.08mm | 0.32mm | 0.25mm |
-| 0.5mm | 0.10mm | 0.40mm | 0.30mm |
 | 0.6mm | 0.12mm | 0.48mm | 0.35mm |
 | 0.8mm | 0.16mm | 0.64mm | 0.45mm |
-| 1.0mm | 0.20mm | 0.80mm | 0.55mm |
+
+> [!NOTE]
+> 表仅列 U1 机型可用喷嘴尺寸（0.2 / 0.4 / 0.6 / 0.8 mm）；上游完整表另含 0.3 / 0.5 / 1.0 mm 档。
 
 ## Layer Height Guidelines
 
