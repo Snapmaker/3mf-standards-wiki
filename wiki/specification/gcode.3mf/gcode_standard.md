@@ -403,6 +403,7 @@ xxx.gcode
 - 尾部附加 `bed_shape`（打印区域顶点串，`x` 分隔点、逗号分隔点列）与 `first_layer_height`（三位小数）四个兼容键，供旧工具回读。
 - **键名与设置键文档保持一致**：本块键名与 `wiki/settings/` 设置键文档（每键一页）同源，同名键一一对应；嵌入名 ≠ 设置键名的（旧名或聚合名，多为上条兼容键），映射**应**在键页"gcode 嵌入名"行声明，如 [nozzle_temperature_initial_layer](../../settings/filament/filament/nozzle_temperature_initial_layer.md) → `first_layer_temperature`（值取本键）、床温族各板型初层床温键（[cool_plate_temp_initial_layer](../../settings/filament/filament/cool_plate_temp_initial_layer.md) 等）→ `first_layer_bed_temperature`（跨槽位取最大）、[initial_layer_print_height](../../settings/process/quality/initial_layer_print_height.md) → `first_layer_height`。两侧**应**同步维护：任一侧键名变更时同步更新另一侧与本规范示例，不得留无标注的偏差；发现未标注的不一致以源码（`PrintConfig.cpp`）为准修正两侧。
 - 消费者**不应**据本块重新切片或改写 G-code（同容器规范 8.2）。
+- 固件实际解析哪些键、各键语义见 [两端交互字段对照](gcode_3mf_interaction_fields.md)。
 
 ### 7.6 内部占位符
 

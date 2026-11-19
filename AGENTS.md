@@ -9,7 +9,7 @@
 | 目录 | 状态 | 放什么 |
 |---|---|---|
 | `wiki/specification/3mf/` | 现有 | 3MF 文件格式专题：`3mf_standard.md` 为工程文件规范正文，`3mf documents/` 子目录放现状盘点类文档（文件结构、配置文件解析、版本管理细则） |
-| `wiki/specification/gcode.3mf/` | 预留（占位） | gcode.3mf 嵌入式格式专题 |
+| `wiki/specification/gcode.3mf/` | 现有 | gcode.3mf 嵌入式格式专题：`gcode_3mf_standard.md` 容器规范、`gcode_standard.md` G-code 文件规范、`gcode_3mf_interaction_fields.md` 两端交互字段对照 |
 | `wiki/images/` | 按需建 | wiki 图片集中存放，按主题建子目录 |
 | `wiki/settings/printer/` `wiki/settings/filament/` `wiki/settings/process/` | 现有 | 设置参数每键一文档。子目录名按 fork UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
 | `wiki/preset/` | 现有 | 预设体系文档（配置文件命名、继承、版本） |

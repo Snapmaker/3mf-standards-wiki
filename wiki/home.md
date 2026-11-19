@@ -22,6 +22,7 @@
 |---|---|
 | [gcode.3mf 规范 v1.0（草案）](specification/gcode.3mf/gcode_3mf_standard.md) | 标准正文：总体结构 → 盘与打印数据 → 一致性要求，GB/T 体例（技术内容 = v0.9.9） |
 | [G-code 文件规范 v1.0（草案）](specification/gcode.3mf/gcode_standard.md) | 标准正文：文件布局 → 行语法与指令 → 注释标记 → 自描述块与统计，GB/T 体例（基准机型 U1 / Klipper，基于 2.4.x 源码实测） |
+| [两端交互字段对照](specification/gcode.3mf/gcode_3mf_interaction_fields.md) | 切片端写出、固件解析的字段清单（快照自飞书交互协议表）：设置键索引 + 协议字段详解 + 变更记录 |
 
 ## 研发内部资料（证据链）
 
