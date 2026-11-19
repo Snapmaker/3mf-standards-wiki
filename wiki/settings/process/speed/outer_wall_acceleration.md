@@ -12,4 +12,4 @@
 [Default](../../../general_settings/option_type.md#default-value): `500`.  
 [Range](../../../general_settings/option_type.md#range): `≥ 0` mm/s².  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--outer-wall-acceleration=1`.  
-Acceleration for [outer wall](../../process/speed/outer_wall_acceleration.md) printing. This is usually set to a lower value than normal printing to ensure better quality.
+Acceleration for [outer wall](../../process/speed/outer_wall_speed.md) printing. This is usually set to a lower value than normal printing to ensure better quality.

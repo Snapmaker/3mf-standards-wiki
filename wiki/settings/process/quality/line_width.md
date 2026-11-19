@@ -30,4 +30,12 @@ However, slightly wider lines generally improve **layer bonding** and **print st
 
 > [!IMPORTANT]
 > This will match only if using the [**Classic** wall generator](../../process/quality/wall_generator.md).  
-> [**Arachne**](../../process/quality/initial_layer_min_bead_width.md) will adjust the line width dynamically based on the model's geometry, using these values as a reference.
+> [**Arachne**](../../process/quality/wall_generator.md) will adjust the line width dynamically based on the model's geometry, using these values as a reference.
+
+## Line Types
+
+In OrcaSlicer, you can assign different line widths to specific parts of the print. Each type can be customized:
+
+### Default
+
+Fallback value used when a specific line width is not set (set to `0`).
