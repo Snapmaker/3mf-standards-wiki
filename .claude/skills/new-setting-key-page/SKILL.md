@@ -48,7 +48,7 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 ## <UI 标签>
 
 [Mode](../../../general_settings/option_mode.md): `<Simple|Advanced|Hidden>`.  
-[Variable](../../../general_settings/built_in_placeholders_variables.md): `<键名>`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `<键名>`.  
 [Type](../../../general_settings/option_type.md#锚点): `<类型>`.  
 [Default](../../../general_settings/option_type.md#default-value): `<默认值>`.  
 [Range](../../../general_settings/option_type.md#range): `<min–max> <单位>`.  
@@ -81,7 +81,7 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 （待补：参数作用、取值范围、与同类参数的关系、适用场景）
 ```
 
-注意：`general_settings/`、`cli/`、`developer_reference/` 是 AGENTS.md 预留目录，链接暂时悬空属预期，校验按 WARN 处理，不要改成别的目标。
+注意：`general_settings/`、`cli/`、`developer_reference/` 的四件套支撑页已建（2026-11-19：`option_mode` / `option_type` / `built_in_placeholders_variables` / `cli_mode`），链接可达；键页正文仍可能链接 `print_prepare/` 等尚未启用的预留目录，悬空属预期，校验按 WARN 处理，不要改成别的目标。
 
 新页写完四件套后，跑单页注入补元数据行（幂等，已注入则跳过）：
 
@@ -119,5 +119,5 @@ bash .claude/skills/new-setting-key-page/scripts/check_page.sh wiki/settings/<ta
 
 - AGENTS.md 要求"标题下第二行放面包屑"，但既有 529 个键页统一用 `> Location:` 行替代（0 页带面包屑）。本 skill 沿用现状；若团队裁决键页也要面包屑，改模板 A/B 两处即可。
 - 键页中 25 个键的小节属上游内容 fork 未实现（input_shaping、flow_ratio 族等，见 docs/09 §4），Default 显示 `—`，正文暂不删改，待团队裁决。
-- Mode 取值 `Expert`（6 处，上游叫法）与 fork 枚举 `Simple/Advanced/Developer` 不一致，待统一（docs/09 Q4）。
+- ~~Mode 取值 `Expert`（上游叫法）与 fork 枚举不一致，待统一~~ 已解决（2026-11-19）：全库 `Expert` 统一为 fork 叫法 `Develop`（scarf 族的 `scarf_joint_flow_ratio` 在 fork 为 `comDevelop`，input_shaping 等 fork 无键小节按档位映射；docs/09 Q4）。
 - 规则依据：AGENTS.md（命名、全局唯一、孤儿页）；页面格式依据现存 529 页的实际形态（2026-11-05 核实）；元数据行格式 2026-11-06 起以 docs/09 §3 为准。

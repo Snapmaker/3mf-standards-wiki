@@ -48,6 +48,8 @@
 | [工艺设置参数总览](settings/process/process_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
 | [打印配置文件：命名与继承](preset/configuration_files.md) | 入门：配置文件叫什么、元信息、参数如何复用 |
 
+键页元数据行（Mode / Variables / Type / Defaults / Ranges / Aliases / CLI Example）的含义见支撑页：[Mode 显示模式](general_settings/option_mode.md) · [Type 取值类型](general_settings/option_type.md) · [内置占位符变量](developer_reference/built_in_placeholders_variables.md) · [CLI 命令行](cli/cli_mode.md)
+
 ## 规划中
 
 - 3mf 工程文件规范定稿：P0 项闭环后替换正文中的「待裁决」标注（见 [docs/04](../docs/04-问题清单-切片软件团队对齐.md)）

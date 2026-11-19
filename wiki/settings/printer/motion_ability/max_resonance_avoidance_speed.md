@@ -26,7 +26,7 @@ By reducing the speed of the outer wall to avoid the resonance zone of the print
 > [!WARNING] fork 未实现
 > `input_shaping_emit`、`input_shaping_freq_x`、`input_shaping_freq_y`、`input_shaping_damp_x`、`input_shaping_damp_y` 为上游 OrcaSlicer 参数，fork 源码未收录，以下内容保留供参考。
 
-[Mode](../../../general_settings/option_mode.md): `Expert`.  
+[Mode](../../../general_settings/option_mode.md): `Develop`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `input_shaping_emit`, `input_shaping_freq_x`, `input_shaping_freq_y`, `input_shaping_damp_x`, `input_shaping_damp_y`.  
 [Type](../../../general_settings/option_type.md): `input_shaping_emit` (Boolean), `input_shaping_freq_x` (Float), `input_shaping_freq_y` (Float), `input_shaping_damp_x` (Float), `input_shaping_damp_y` (Float).  
 [Defaults](../../../general_settings/option_type.md#default-value): `input_shaping_emit` (—), `input_shaping_freq_x` (—), `input_shaping_freq_y` (—), `input_shaping_damp_x` (—), `input_shaping_damp_y` (—).  
@@ -50,7 +50,7 @@ During high-speed movements, vibrations can cause a phenomenon called "ringing,"
 > [!WARNING] fork 未实现
 > `input_shaping_type` 为上游 OrcaSlicer 参数，fork 源码未收录，以下内容保留供参考。
 
-[Mode](../../../general_settings/option_mode.md): `Expert`.  
+[Mode](../../../general_settings/option_mode.md): `Develop`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `input_shaping_type`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
 [Default](../../../general_settings/option_type.md#default-value): —.  

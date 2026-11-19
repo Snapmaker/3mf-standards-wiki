@@ -13,7 +13,8 @@
 | `wiki/images/` | 按需建 | wiki 图片集中存放，按主题建子目录 |
 | `wiki/settings/printer/` `wiki/settings/filament/` `wiki/settings/process/` | 现有 | 设置参数每键一文档。子目录名按 fork UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
 | `wiki/preset/` | 现有 | 预设体系文档（配置文件命名、继承、版本） |
-| `wiki/print_prepare/` `wiki/calibration/` `wiki/general_settings/` `wiki/guides/` `wiki/cli/` `wiki/developer_reference/` `wiki/releases/` | 预留 | fork 完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
+| `wiki/general_settings/` `wiki/cli/` `wiki/developer_reference/` | 现有（支撑页） | 键页元数据支撑页（`option_mode` / `option_type` / `built_in_placeholders_variables` / `cli_mode`，2026-11-19 自上游移植并按 fork 修订）；其余内容随 fork 完整文档阶段扩充，**目录名与上游 OrcaSlicer wiki 一致** |
+| `wiki/print_prepare/` `wiki/calibration/` `wiki/guides/` `wiki/releases/` | 预留 | fork 完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
 | `docs/` | 现有（内部） | 研发证据链：盘点、对账、问题清单。不是 wiki 正文的层级，不放新人向内容 |
 
 ## 命名

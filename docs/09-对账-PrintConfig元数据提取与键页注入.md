@@ -77,7 +77,7 @@
 | Q1 | 内插式格式是否批准为标准模板 | ✅ 已全量执行：`inject --all` 430 页 + 试点 20 页 = 450 个含 [Type] 小节的页面全部注入 |
 | Q2 | E7 是否从 WARN 升级为 FAIL | ✅ 已升级（check_page.sh），当前 E7 违规 0 |
 | Q3 | [Options] 补全取值口径 | ✅ 空操作：audit 实测 Choice 页缺 [Options] 为 0（既有 [Options] 行已全覆盖）；行内取值以 `enum_values` 为准（与 CLI/JSON 一致），值为上游显示文本的留待后续人工对账 |
-| Q4 | Mode 取值不一致 | ✅ 单键小节已修正 6 文件（`filament_tower`/`retract_*_toolchange` 族，页标与 fork 可见级真实差异）；`Expert` 6 处全在 fork 无键小节，随 Q5 横幅处理不改名；**混合模式小节**（`filament_tower` 区块 purge=Advanced + tower=Developer）单行 [Mode] 无法表达，audit 已静音，留待模板升级 [Modes] 逐键样式 |
+| Q4 | Mode 取值不一致 | ✅ 单键小节已修正 6 文件（`filament_tower`/`retract_*_toolchange` 族，页标与 fork 可见级真实差异）；`Expert` 6 处当时全在 fork 无键小节、随 Q5 横幅处理暂不改名——**2026-11-19 按用户指示改判**：全库统一为 fork 叫法 `Develop`（实测共 14 文件 20 处，非原记 6 处：input_shaping 族 6 处 + scarf/seam_slope `[Modes]` 行 14 处；`scarf_joint_flow_ratio` 在 fork 为 `comDevelop`，同小节其余 10 键 `comAdvanced` 与页面标注相符）；**混合模式小节**（`filament_tower` 区块 purge=Advanced + tower=Developer）单行 [Mode] 无法表达，audit 已静音，留待模板升级 [Modes] 逐键样式 |
 | Q5 | 25 个 fork 无键小节 | ✅ 20 页小节头部加 `> [!WARNING] fork 未实现` 横幅，正文保留 |
 | Q6 | 24 个占位页 | ✅ 保持"基本信息"结构；默认值 `—` 全部按 JSON 填充真实值（21/24 页原为 `—`，实际 fork 有默认值；2 个 notes 页为空串），漂移复核 0 |
 
