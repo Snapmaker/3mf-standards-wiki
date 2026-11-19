@@ -1,7 +1,7 @@
 # overhang_totally_speed
 
 > Location: Process → Speed → Overhang speed
-> 状态：占位——上游 OrcaSlicer wiki 未收录（上游速度表只有 overhang_1_4 ~ 4_4_speed 四档），待补充。
+> 状态：占位——待补充。
 > 本键与 `overhang_1_4_speed` / `overhang_2_4_speed` / `overhang_3_4_speed` / `overhang_4_4_speed` 同属"Slow down for overhang"同一行（第 5 列，标签 100%）。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）

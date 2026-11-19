@@ -7,10 +7,6 @@
 
 ## Multimaterial Wipe Tower Parameters
 
-> [!WARNING]
-> **fork 未实现**
-> `filament_tower_interface_purge_volume` 为上游 OrcaSlicer 参数，fork 未收录；本小节其余参数 fork 正常。
-
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `filament_minimal_purge_on_wipe_tower`, `filament_tower_interface_pre_extrusion_dist`, `filament_tower_interface_pre_extrusion_length`, `filament_tower_ironing_area`, `filament_tower_interface_purge_volume`, `filament_tower_interface_print_temp`.  
 [Type](../../../general_settings/option_type.md): `filament_minimal_purge_on_wipe_tower` (Float list), `filament_tower_interface_pre_extrusion_dist` (Float list), `filament_tower_interface_pre_extrusion_length` (Float list), `filament_tower_ironing_area` (Float list), `filament_tower_interface_purge_volume` (Float list), `filament_tower_interface_print_temp` (Integer list).  

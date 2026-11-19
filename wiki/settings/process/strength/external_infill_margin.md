@@ -1,7 +1,7 @@
 # external_infill_margin
 
 > Location: Process → Strength → Infill
-> 状态：占位——上游 OrcaSlicer wiki 未收录（上游只有 `infill_anchor` 稀疏填充锚点），待补充。
+> 状态：占位——待补充。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）
 

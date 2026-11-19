@@ -1,7 +1,7 @@
 # cooling_perimeter_transition_distance
 
 > Location: Filament → Cooling → Part cooling fan
-> 状态：占位——上游 OrcaSlicer wiki 未收录，fork 新增参数，待补充。
+> 状态：占位——fork 新增参数，待补充。
 > 显隐条件：[`cooling_slowdown_logic`](cooling_slowdown_logic.md) 选为 Consistent surface 时显示。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）

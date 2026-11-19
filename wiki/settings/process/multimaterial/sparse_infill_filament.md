@@ -7,10 +7,6 @@
 
 ## Sparse Infill
 
-> [!WARNING]
-> **fork 未实现**
-> `sparse_infill_filament_id` 为上游 OrcaSlicer 参数，fork 源码未收录，以下内容保留供参考。
-
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `sparse_infill_filament_id`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  

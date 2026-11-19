@@ -1,7 +1,7 @@
 # pellet_flow_coefficient
 
 > Location: Filament → Filament → Flow ratio and Pressure Advance
-> 状态：占位——上游 OrcaSlicer wiki 未收录，待补充。
+> 状态：占位——待补充。
 > 显隐条件（初步梳理，待校对）：仅 pellet（粒料）机型显示
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）

@@ -1,7 +1,7 @@
 # filament_colour
 
 > Location: Filament → Filament → Basic information
-> 状态：占位——上游 OrcaSlicer wiki 未收录（上游只收录了 `default_filament_colour`），待补充。
+> 状态：占位——待补充。
 > 注意：本键不渲染在耗材页签内，编辑入口在准备视图左侧面板的耗材列表色块（见下文）。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）

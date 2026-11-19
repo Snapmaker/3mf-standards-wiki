@@ -1,7 +1,7 @@
 # nozzle_temperature_range_high
 
 > Location: Filament → Filament → Basic information
-> 状态：占位——上游 OrcaSlicer wiki 未收录，待补充。
+> 状态：占位——待补充。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）
 

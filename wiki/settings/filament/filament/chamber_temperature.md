@@ -7,10 +7,6 @@
 
 ## Print Chamber Temperature
 
-> [!WARNING]
-> **fork 未实现**
-> `chamber_minimal_temperature` 为上游 OrcaSlicer 参数，fork 未收录；本小节其余参数 fork 正常。
-
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variables](../../../developer_reference/built_in_placeholders_variables.md): `activate_chamber_temp_control`, `chamber_temperature`, `chamber_minimal_temperature`.  
 [Type](../../../general_settings/option_type.md): `activate_chamber_temp_control` (Boolean list), `chamber_temperature` (Integer list), `chamber_minimal_temperature` (Integer list).  

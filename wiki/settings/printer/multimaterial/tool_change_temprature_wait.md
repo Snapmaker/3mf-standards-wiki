@@ -1,7 +1,7 @@
 # tool_change_temprature_wait
 
 > Location: Printer → Multimaterial → Advanced
-> 状态：占位——上游 OrcaSlicer wiki 未收录，待补充。
+> 状态：占位——待补充。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）
 

@@ -1,7 +1,7 @@
 # enable_change_pressure_when_wiping
 
 > Location: Printer → Multimaterial → Wipe tower
-> 状态：占位——上游 OrcaSlicer wiki 未收录，fork 特有参数，待补充。
+> 状态：占位——fork 特有参数，待补充。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）
 

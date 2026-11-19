@@ -43,7 +43,7 @@ Using smaller layer heights increases print time but results in:
 | 0.8mm | 0.16mm | 0.64mm | 0.45mm |
 
 > [!NOTE]
-> 表仅列 U1 机型可用喷嘴尺寸（0.2 / 0.4 / 0.6 / 0.8 mm）；上游完整表另含 0.3 / 0.5 / 1.0 mm 档。
+> 表仅列 U1 机型可用喷嘴尺寸（0.2 / 0.4 / 0.6 / 0.8 mm）。
 
 ## Layer Height Guidelines
 

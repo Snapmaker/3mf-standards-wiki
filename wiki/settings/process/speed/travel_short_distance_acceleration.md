@@ -1,7 +1,7 @@
 # travel_short_distance_acceleration
 
 > Location: Process → Speed → Acceleration
-> 状态：占位——上游 OrcaSlicer wiki 未收录，fork 新增参数，待补充。
+> 状态：占位——fork 新增参数，待补充。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）
 

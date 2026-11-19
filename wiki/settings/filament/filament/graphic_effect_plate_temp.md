@@ -1,7 +1,7 @@
 # graphic_effect_plate_temp
 
 > Location: Filament → Filament → Bed temperature
-> 状态：占位——上游 OrcaSlicer wiki 未收录，待补充。
+> 状态：占位——待补充。
 > 显隐条件（初步梳理，待校对）：仅当打印机启用对应床型时显示
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）

@@ -6,10 +6,6 @@
 
 ## Outer wall
 
-> [!WARNING]
-> **fork 未实现**
-> Max external volumetric speed 与 Volumetric speeds 为上游 OrcaSlicer（2.5.1+）特性，fork 未收录对应键；正文相关句为上游原文保留。
-
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `outer_wall_speed`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  

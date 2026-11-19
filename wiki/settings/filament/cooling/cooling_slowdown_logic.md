@@ -1,7 +1,7 @@
 # cooling_slowdown_logic
 
 > Location: Filament → Cooling → Part cooling fan
-> 状态：占位——上游 OrcaSlicer wiki 未收录，fork 新增参数，待补充。
+> 状态：占位——fork 新增参数，待补充。
 > 显隐条件：勾选 [`slow_down_for_layer_cooling`](slow_down_for_layer_cooling.md) 后显示（Tab.cpp `toggle_option`）。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）

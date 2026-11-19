@@ -1,7 +1,7 @@
 # support_interface_min_area
 
 > Location: Process → Support → Advanced
-> 状态：占位——上游 OrcaSlicer wiki 未收录，待补充。
+> 状态：占位——待补充。
 
 ## 基本信息（来自 fork `PrintConfig.cpp`）
 
