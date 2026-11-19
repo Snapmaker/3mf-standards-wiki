@@ -2,6 +2,7 @@
 
 > Location: Filament → Filament → Bed temperature
 > 显隐条件（初步梳理，待校对）：仅当打印机启用对应床型时显示
+> gcode 嵌入名：`first_layer_bed_temperature`（聚合值，非直接取本键：取当前板型对应的 initial-layer 床温，跨所用槽位取最大值，便于混料打印统一跑最高床温）。
 > 本小节同时涵盖：`supertack_plate_temp_initial_layer`、`supertack_plate_temp`、`cool_plate_temp`、`textured_cool_plate_temp_initial_layer`、`textured_cool_plate_temp`、`eng_plate_temp_initial_layer`、`eng_plate_temp`、`hot_plate_temp_initial_layer`、`hot_plate_temp`、`textured_plate_temp_initial_layer`、`textured_plate_temp`（各另有独立文档）。
 
 ---

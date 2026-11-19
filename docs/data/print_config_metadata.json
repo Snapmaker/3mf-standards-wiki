@@ -1,16 +1,16 @@
 {
  "meta": {
-  "generated_at": "2026-11-06T16:54:10",
+  "generated_at": "2026-11-17T12:16:10",
   "source_file": "src/libslic3r/PrintConfig.cpp",
-  "source_commit": "f77ec1f8e5c425678ebef67f04efa79d7f21557b",
+  "source_commit": "c0fd44d4d9289fe9f30e177dec22d78ad782adb0",
   "stats": {
-   "min": 330,
-   "max": 137,
-   "sidetext": 307,
+   "min": 334,
+   "max": 138,
+   "sidetext": 311,
    "aliases": 1,
-   "enum_rows": 262,
+   "enum_rows": 270,
    "nocli": 42,
-   "total_keys": 844,
+   "total_keys": 851,
    "derived_keys": 18,
    "hpp_macro_keys": 20,
    "dynamic_skipped": 3,
@@ -39,7 +39,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 6852,
+   "line": 6963,
    "derived": false
   },
   "accel_to_decel_enable": {
@@ -54,7 +54,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBools",
-   "line": 2768,
+   "line": 2858,
    "derived": false
   },
   "accel_to_decel_factor": {
@@ -69,7 +69,7 @@
    "enum_labels": [],
    "default": "50",
    "type": "coPercents",
-   "line": 2774,
+   "line": 2864,
    "derived": false
   },
   "activate_air_filtration": {
@@ -84,7 +84,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 1526,
+   "line": 1603,
    "derived": false
   },
   "activate_chamber_temp_control": {
@@ -99,7 +99,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 5937,
+   "line": 6048,
    "derived": false
   },
   "adaptive_bed_mesh_margin": {
@@ -114,7 +114,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 1911,
+   "line": 1988,
    "derived": false
   },
   "adaptive_pressure_advance": {
@@ -129,7 +129,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 1972,
+   "line": 2049,
    "derived": false
   },
   "adaptive_pressure_advance_bridges": {
@@ -144,7 +144,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloats",
-   "line": 2020,
+   "line": 2097,
    "derived": false
   },
   "adaptive_pressure_advance_model": {
@@ -159,7 +159,7 @@
    "enum_labels": [],
    "default": "0,0,0\\n0,0,0",
    "type": "coStrings",
-   "line": 1988,
+   "line": 2065,
    "derived": false
   },
   "adaptive_pressure_advance_overhangs": {
@@ -174,7 +174,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 2013,
+   "line": 2090,
    "derived": false
   },
   "additional_cooling_fan_speed": {
@@ -189,7 +189,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInts",
-   "line": 4002,
+   "line": 4104,
    "derived": false
   },
   "align_infill_direction_to_model": {
@@ -204,7 +204,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 2521,
+   "line": 2598,
    "derived": false
   },
   "allow_multicolor_oneplate": {
@@ -219,7 +219,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 8874,
+   "line": 8991,
    "derived": false
   },
   "allow_newer_file": {
@@ -234,7 +234,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8919,
+   "line": 9036,
    "derived": false
   },
   "allow_rotations": {
@@ -249,7 +249,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 8879,
+   "line": 8996,
    "derived": false
   },
   "alternate_extra_wall": {
@@ -264,7 +264,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4327,
+   "line": 4429,
    "derived": false
   },
   "area_fill": {
@@ -279,7 +279,7 @@
    "enum_labels": [],
    "default": "50",
    "type": "coFloat",
-   "line": 6812,
+   "line": 6923,
    "derived": false
   },
   "arrange": {
@@ -294,7 +294,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 8652,
+   "line": 8769,
    "derived": false
   },
   "assemble": {
@@ -309,7 +309,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8680,
+   "line": 8797,
    "derived": false
   },
   "auxiliary_fan": {
@@ -324,7 +324,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3204,
+   "line": 3294,
    "derived": false
   },
   "avoid_extrusion_cali_region": {
@@ -339,7 +339,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8884,
+   "line": 9001,
    "derived": false
   },
   "bbl_bed_temperature_gcode": {
@@ -370,7 +370,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 4798,
+   "line": 4900,
    "derived": false
   },
   "bbl_use_printhost": {
@@ -385,7 +385,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 599,
+   "line": 615,
    "derived": false
   },
   "bed_custom_model": {
@@ -400,7 +400,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 539,
+   "line": 555,
    "derived": false
   },
   "bed_custom_texture": {
@@ -415,7 +415,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 533,
+   "line": 549,
    "derived": false
   },
   "bed_exclude_area": {
@@ -430,7 +430,7 @@
    "enum_labels": [],
    "default": "0×0",
    "type": "coPoints",
-   "line": 525,
+   "line": 541,
    "derived": false
   },
   "bed_mesh_max": {
@@ -445,7 +445,7 @@
    "enum_labels": [],
    "default": "99999×99999",
    "type": "coPoint",
-   "line": 1890,
+   "line": 1967,
    "derived": false
   },
   "bed_mesh_min": {
@@ -460,7 +460,7 @@
    "enum_labels": [],
    "default": "-99999×-99999",
    "type": "coPoint",
-   "line": 1878,
+   "line": 1955,
    "derived": false
   },
   "bed_mesh_probe_distance": {
@@ -475,7 +475,7 @@
    "enum_labels": [],
    "default": "50×50",
    "type": "coPoint",
-   "line": 1902,
+   "line": 1979,
    "derived": false
   },
   "bed_temperature": {
@@ -490,7 +490,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInts",
-   "line": 9163,
+   "line": 9280,
    "derived": false
   },
   "bed_temperature_initial_layer": {
@@ -505,7 +505,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInts",
-   "line": 9164,
+   "line": 9281,
    "derived": false
   },
   "bed_temperature_initial_layer_single": {
@@ -520,7 +520,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9165,
+   "line": 9282,
    "derived": false
   },
   "before_layer_change_gcode": {
@@ -535,7 +535,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 952,
+   "line": 968,
    "derived": false
   },
   "best_object_pos": {
@@ -550,7 +550,7 @@
    "enum_labels": [],
    "default": "0.5×0.5",
    "type": "coPoint",
-   "line": 3198,
+   "line": 3288,
    "derived": false
   },
   "bottle_cost": {
@@ -565,7 +565,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 6926,
+   "line": 7037,
    "derived": false
   },
   "bottle_volume": {
@@ -580,7 +580,7 @@
    "enum_labels": [],
    "default": "1000.0",
    "type": "coFloat",
-   "line": 6905,
+   "line": 7016,
    "derived": false
   },
   "bottle_weight": {
@@ -595,7 +595,7 @@
    "enum_labels": [],
    "default": "1.0",
    "type": "coFloat",
-   "line": 6912,
+   "line": 7023,
    "derived": false
   },
   "bottom_color_penetration_layers": {
@@ -610,7 +610,7 @@
    "enum_labels": [],
    "default": "3",
    "type": "coInt",
-   "line": 984,
+   "line": 1000,
    "derived": false
   },
   "bottom_shell_layers": {
@@ -625,7 +625,7 @@
    "enum_labels": [],
    "default": "3",
    "type": "coInt",
-   "line": 961,
+   "line": 977,
    "derived": false
   },
   "bottom_shell_thickness": {
@@ -640,7 +640,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 972,
+   "line": 988,
    "derived": false
   },
   "bottom_solid_infill_flow_ratio": {
@@ -655,7 +655,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 1148,
+   "line": 1186,
    "derived": false
   },
   "bottom_surface_density": {
@@ -670,7 +670,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercent",
-   "line": 6088,
+   "line": 6199,
    "derived": false
   },
   "bottom_surface_pattern": {
@@ -685,7 +685,7 @@
    "enum_labels": [],
    "default": "ipMonotonic",
    "type": "coEnum",
-   "line": 1722,
+   "line": 1799,
    "derived": false
   },
   "bridge_acceleration": {
@@ -700,7 +700,7 @@
    "enum_labels": [],
    "default": "50%",
    "type": "coFloatsOrPercents",
-   "line": 2724,
+   "line": 2814,
    "derived": false
   },
   "bridge_angle": {
@@ -715,7 +715,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 1064,
+   "line": 1102,
    "derived": false
   },
   "bridge_density": {
@@ -730,7 +730,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercent",
-   "line": 1088,
+   "line": 1126,
    "derived": false
   },
   "bridge_flow": {
@@ -745,7 +745,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 1117,
+   "line": 1155,
    "derived": false
   },
   "bridge_no_support": {
@@ -760,7 +760,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 1560,
+   "line": 1637,
    "derived": false
   },
   "bridge_speed": {
@@ -775,7 +775,7 @@
    "enum_labels": [],
    "default": "25",
    "type": "coFloats",
-   "line": 1327,
+   "line": 1377,
    "derived": false
   },
   "brim_ears": {
@@ -790,7 +790,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 1392,
+   "line": 1442,
    "derived": false
   },
   "brim_ears_detection_length": {
@@ -805,7 +805,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 1411,
+   "line": 1461,
    "derived": false
   },
   "brim_ears_max_angle": {
@@ -820,7 +820,7 @@
    "enum_labels": [],
    "default": "125",
    "type": "coFloat",
-   "line": 1399,
+   "line": 1449,
    "derived": false
   },
   "brim_object_gap": {
@@ -835,7 +835,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 1382,
+   "line": 1432,
    "derived": false
   },
   "brim_type": {
@@ -858,7 +858,7 @@
    "enum_labels": [],
    "default": "auto_brim",
    "type": "coEnum",
-   "line": 1359,
+   "line": 1409,
    "derived": false
   },
   "brim_width": {
@@ -873,7 +873,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 1349,
+   "line": 1399,
    "derived": false
   },
   "calib_flowrate_topinfill_special_order": {
@@ -888,7 +888,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3613,
+   "line": 3715,
    "derived": false
   },
   "chamber_temperature": {
@@ -903,7 +903,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInts",
-   "line": 9166,
+   "line": 9283,
    "derived": false
   },
   "change_extrusion_role_gcode": {
@@ -918,7 +918,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 6014,
+   "line": 6125,
    "derived": false
   },
   "change_filament_gcode": {
@@ -933,7 +933,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 6005,
+   "line": 6116,
    "derived": false
   },
   "clone_objects": {
@@ -948,7 +948,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coInts",
-   "line": 8780,
+   "line": 8897,
    "derived": false
   },
   "close_fan_the_first_x_layers": {
@@ -963,7 +963,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInts",
-   "line": 1550,
+   "line": 1627,
    "derived": false
   },
   "compatible_machine_expression_group": {
@@ -978,7 +978,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 1461,
+   "line": 1511,
    "derived": false
   },
   "compatible_printers": {
@@ -993,7 +993,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 1422,
+   "line": 1472,
    "derived": false
   },
   "compatible_printers_condition": {
@@ -1008,7 +1008,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 1435,
+   "line": 1485,
    "derived": false
   },
   "compatible_prints": {
@@ -1023,7 +1023,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 1444,
+   "line": 1494,
    "derived": false
   },
   "compatible_prints_condition": {
@@ -1038,7 +1038,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 1450,
+   "line": 1500,
    "derived": false
   },
   "compatible_process_expression_group": {
@@ -1053,7 +1053,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 1464,
+   "line": 1514,
    "derived": false
   },
   "complete_print_exhaust_fan_speed": {
@@ -1068,7 +1068,7 @@
    "enum_labels": [],
    "default": "80",
    "type": "coInts",
-   "line": 1541,
+   "line": 1618,
    "derived": false
   },
   "convert_unit": {
@@ -1083,7 +1083,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8686,
+   "line": 8803,
    "derived": false
   },
   "cool_plate_temp": {
@@ -1098,7 +1098,7 @@
    "enum_labels": [],
    "default": "35",
    "type": "coInts",
-   "line": 734,
+   "line": 750,
    "derived": false
   },
   "cool_plate_temp_initial_layer": {
@@ -1113,7 +1113,40 @@
    "enum_labels": [],
    "default": "35",
    "type": "coInts",
-   "line": 804,
+   "line": 820,
+   "derived": false
+  },
+  "cooling_perimeter_transition_distance": {
+   "sidetext": "mm",
+   "min": 0,
+   "max": 50,
+   "mode": "Developer",
+   "aliases": [],
+   "nocli": false,
+   "cli": null,
+   "enum_values": [],
+   "enum_labels": [],
+   "default": "10.0",
+   "type": "coFloats",
+   "line": 1572,
+   "derived": false
+  },
+  "cooling_slowdown_logic": {
+   "sidetext": null,
+   "min": null,
+   "max": null,
+   "mode": "Developer",
+   "aliases": [],
+   "nocli": false,
+   "cli": null,
+   "enum_values": [
+    "uniform_cooling",
+    "consistent_surface"
+   ],
+   "enum_labels": [],
+   "default": "uniform_cooling",
+   "type": "coEnums",
+   "line": 1557,
    "derived": false
   },
   "cooling_tube_length": {
@@ -1128,7 +1161,7 @@
    "enum_labels": [],
    "default": "5",
    "type": "coFloat",
-   "line": 4188,
+   "line": 4290,
    "derived": false
   },
   "cooling_tube_retraction": {
@@ -1143,7 +1176,7 @@
    "enum_labels": [],
    "default": "91.5",
    "type": "coFloat",
-   "line": 4180,
+   "line": 4282,
    "derived": false
   },
   "counterbore_hole_bridging": {
@@ -1162,7 +1195,7 @@
    "enum_labels": [],
    "default": "chbNone",
    "type": "coEnum",
-   "line": 1222,
+   "line": 1260,
    "derived": false
   },
   "curr_bed_type": {
@@ -1184,7 +1217,7 @@
    "enum_labels": [],
    "default": "Cool Plate",
    "type": "coEnum",
-   "line": 863,
+   "line": 879,
    "derived": false
   },
   "current_extruder": {
@@ -1199,7 +1232,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 8986,
+   "line": 9103,
    "derived": false
   },
   "current_object_idx": {
@@ -1214,7 +1247,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 8990,
+   "line": 9107,
    "derived": false
   },
   "datadir": {
@@ -1229,7 +1262,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 8832,
+   "line": 8949,
    "derived": false
   },
   "day": {
@@ -1244,7 +1277,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9187,
+   "line": 9304,
    "derived": false
   },
   "debug": {
@@ -1259,7 +1292,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 8843,
+   "line": 8960,
    "derived": false
   },
   "default_acceleration": {
@@ -1274,7 +1307,7 @@
    "enum_labels": [],
    "default": "500.0",
    "type": "coFloats",
-   "line": 1506,
+   "line": 1583,
    "derived": false
   },
   "default_bed_type": {
@@ -1289,7 +1322,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 907,
+   "line": 923,
    "derived": false
   },
   "default_filament_colour": {
@@ -1304,7 +1337,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 2066,
+   "line": 2143,
    "derived": false
   },
   "default_filament_profile": {
@@ -1319,7 +1352,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 1514,
+   "line": 1591,
    "derived": false
   },
   "default_jerk": {
@@ -1334,7 +1367,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 2783,
+   "line": 2873,
    "derived": false
   },
   "default_junction_deviation": {
@@ -1349,7 +1382,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 2791,
+   "line": 2881,
    "derived": false
   },
   "default_print_profile": {
@@ -1364,7 +1397,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 1520,
+   "line": 1597,
    "derived": false
   },
   "default_sla_material_profile": {
@@ -1379,7 +1412,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 7021,
+   "line": 7132,
    "derived": false
   },
   "default_sla_print_profile": {
@@ -1394,7 +1427,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 7033,
+   "line": 7144,
    "derived": false
   },
   "delta_temperature": {
@@ -1409,7 +1442,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 5204,
+   "line": 5306,
    "derived": false
   },
   "deretraction_speed": {
@@ -1424,7 +1457,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 4783,
+   "line": 4885,
    "derived": false
   },
   "detect_narrow_internal_solid_infill": {
@@ -1439,7 +1472,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 6655,
+   "line": 6766,
    "derived": false
   },
   "detect_overhang_wall": {
@@ -1454,7 +1487,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 4280,
+   "line": 4382,
    "derived": false
   },
   "detect_thin_wall": {
@@ -1469,7 +1502,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5997,
+   "line": 6108,
    "derived": false
   },
   "different_settings_to_system": {
@@ -1484,7 +1517,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 1469,
+   "line": 1519,
    "derived": false
   },
   "disable_m73": {
@@ -1499,7 +1532,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4804,
+   "line": 4906,
    "derived": false
   },
   "display_height": {
@@ -1514,7 +1547,7 @@
    "enum_labels": [],
    "default": "68",
    "type": "coFloat",
-   "line": 6749,
+   "line": 6860,
    "derived": false
   },
   "display_mirror_x": {
@@ -1529,7 +1562,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 6769,
+   "line": 6880,
    "derived": false
   },
   "display_mirror_y": {
@@ -1544,7 +1577,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 6776,
+   "line": 6887,
    "derived": false
   },
   "display_orientation": {
@@ -1565,7 +1598,7 @@
    ],
    "default": "portrait",
    "type": "coEnum",
-   "line": 6783,
+   "line": 6894,
    "derived": false
   },
   "display_pixels_x": {
@@ -1580,7 +1613,7 @@
    "enum_labels": [],
    "default": "2560",
    "type": "coInt",
-   "line": 6755,
+   "line": 6866,
    "derived": false
   },
   "display_pixels_y": {
@@ -1595,7 +1628,7 @@
    "enum_labels": [],
    "default": "1440",
    "type": "coInt",
-   "line": 6762,
+   "line": 6873,
    "derived": false
   },
   "display_width": {
@@ -1610,7 +1643,7 @@
    "enum_labels": [],
    "default": "120",
    "type": "coFloat",
-   "line": 6743,
+   "line": 6854,
    "derived": false
   },
   "dithering_local_z_direct_multicolor": {
@@ -1623,9 +1656,9 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "false",
+   "default": "true",
    "type": "coBool",
-   "line": 4510,
+   "line": 4612,
    "derived": false
   },
   "dithering_local_z_infill": {
@@ -1640,7 +1673,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4501,
+   "line": 4603,
    "derived": false
   },
   "dithering_local_z_mode": {
@@ -1655,7 +1688,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4486,
+   "line": 4588,
    "derived": false
   },
   "dithering_local_z_whole_objects": {
@@ -1670,7 +1703,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4493,
+   "line": 4595,
    "derived": false
   },
   "dithering_step_painted_zones_only": {
@@ -1685,7 +1718,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 4518,
+   "line": 4620,
    "derived": false
   },
   "dithering_z_step_size": {
@@ -1700,7 +1733,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 4475,
+   "line": 4577,
    "derived": false
   },
   "dont_filter_internal_bridges": {
@@ -1719,7 +1752,7 @@
    "enum_labels": [],
    "default": "ibfDisabled",
    "type": "coEnum",
-   "line": 1615,
+   "line": 1692,
    "derived": false
   },
   "dont_slow_down_outer_wall": {
@@ -1734,7 +1767,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 2047,
+   "line": 2124,
    "derived": false
   },
   "downward_check": {
@@ -1749,7 +1782,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8798,
+   "line": 8915,
    "derived": false
   },
   "downward_settings": {
@@ -1764,7 +1797,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 8803,
+   "line": 8920,
    "derived": false
   },
   "draft_shield": {
@@ -1782,7 +1815,7 @@
    "enum_labels": [],
    "default": "disabled",
    "type": "coEnum",
-   "line": 5009,
+   "line": 5111,
    "derived": false
   },
   "during_print_exhaust_fan_speed": {
@@ -1797,7 +1830,7 @@
    "enum_labels": [],
    "default": "60",
    "type": "coInts",
-   "line": 1532,
+   "line": 1609,
    "derived": false
   },
   "e_position": {
@@ -1812,7 +1845,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 8977,
+   "line": 9094,
    "derived": false
   },
   "e_restart_extra": {
@@ -1827,7 +1860,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 8973,
+   "line": 9090,
    "derived": false
   },
   "e_retracted": {
@@ -1842,7 +1875,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 8968,
+   "line": 9085,
    "derived": false
   },
   "elefant_foot_compensation": {
@@ -1857,7 +1890,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 545,
+   "line": 561,
    "derived": false
   },
   "elefant_foot_compensation_layers": {
@@ -1872,7 +1905,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 554,
+   "line": 570,
    "derived": false
   },
   "elefant_foot_min_width": {
@@ -1887,7 +1920,7 @@
    "enum_labels": [],
    "default": "0.2",
    "type": "coFloat",
-   "line": 6859,
+   "line": 6970,
    "derived": false
   },
   "emit_machine_limits_to_gcode": {
@@ -1902,7 +1935,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 3720,
+   "line": 3822,
    "derived": false
   },
   "enable_arc_fitting": {
@@ -1917,7 +1950,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coBool",
-   "line": 3123,
+   "line": 3213,
    "derived": false
   },
   "enable_change_pressure_when_wiping": {
@@ -1932,7 +1965,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 5276,
+   "line": 5378,
    "derived": false
   },
   "enable_extra_bridge_layer": {
@@ -1952,7 +1985,7 @@
    "enum_labels": [],
    "default": "eblDisabled",
    "type": "coEnum",
-   "line": 1584,
+   "line": 1661,
    "derived": false
   },
   "enable_filament_ramming": {
@@ -1967,7 +2000,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 5263,
+   "line": 5365,
    "derived": false
   },
   "enable_long_retraction_when_cut": {
@@ -1982,7 +2015,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 4644,
+   "line": 4746,
    "derived": false
   },
   "enable_overhang_bridge_fan": {
@@ -1997,7 +2030,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBools",
-   "line": 1021,
+   "line": 1037,
    "derived": false
   },
   "enable_overhang_speed": {
@@ -2012,7 +2045,22 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBools",
-   "line": 1255,
+   "line": 1293,
+   "derived": false
+  },
+  "enable_overlap_area_carving": {
+   "sidetext": null,
+   "min": null,
+   "max": null,
+   "mode": "Developer",
+   "aliases": [],
+   "nocli": false,
+   "cli": null,
+   "enum_values": [],
+   "enum_labels": [],
+   "default": "false",
+   "type": "coBool",
+   "line": 5428,
    "derived": false
   },
   "enable_pressure_advance": {
@@ -2027,7 +2075,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 1959,
+   "line": 2036,
    "derived": false
   },
   "enable_prime_tower": {
@@ -2042,7 +2090,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 6136,
+   "line": 6247,
    "derived": false
   },
   "enable_support": {
@@ -2057,7 +2105,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5336,
+   "line": 5447,
    "derived": false
   },
   "enable_timelapse": {
@@ -2072,7 +2120,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8850,
+   "line": 8967,
    "derived": false
   },
   "enable_tower_interface_cooldown_during_tower": {
@@ -2087,7 +2135,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 6149,
+   "line": 6260,
    "derived": false
   },
   "enable_tower_interface_features": {
@@ -2102,7 +2150,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 6143,
+   "line": 6254,
    "derived": false
   },
   "enforce_support_layers": {
@@ -2117,7 +2165,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 5444,
+   "line": 5555,
    "derived": false
   },
   "eng_plate_temp": {
@@ -2132,7 +2180,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coInts",
-   "line": 754,
+   "line": 770,
    "derived": false
   },
   "eng_plate_temp_initial_layer": {
@@ -2147,7 +2195,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coInts",
-   "line": 824,
+   "line": 840,
    "derived": false
   },
   "ensure_on_bed": {
@@ -2162,7 +2210,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8665,
+   "line": 8782,
    "derived": false
   },
   "ensure_vertical_shell_thickness": {
@@ -2182,7 +2230,7 @@
    "enum_labels": [],
    "default": "EnsureVerticalShellThickness::evstAll",
    "type": "coEnum",
-   "line": 1680,
+   "line": 1757,
    "derived": false
   },
   "exclude_object": {
@@ -2197,7 +2245,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3316,
+   "line": 3406,
    "derived": false
   },
   "export_3mf": {
@@ -2212,7 +2260,7 @@
    "enum_labels": [],
    "default": "output.3mf",
    "type": "coString",
-   "line": 8477,
+   "line": 8594,
    "derived": false
   },
   "export_settings": {
@@ -2227,7 +2275,7 @@
    "enum_labels": [],
    "default": "output.json",
    "type": "coString",
-   "line": 8601,
+   "line": 8718,
    "derived": false
   },
   "export_slicedata": {
@@ -2242,7 +2290,7 @@
    "enum_labels": [],
    "default": "cached_data",
    "type": "coString",
-   "line": 8483,
+   "line": 8600,
    "derived": false
   },
   "export_stl": {
@@ -2257,7 +2305,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8500,
+   "line": 8617,
    "derived": false
   },
   "export_stls": {
@@ -2272,7 +2320,7 @@
    "enum_labels": [],
    "default": "stl_path",
    "type": "coString",
-   "line": 8505,
+   "line": 8622,
    "derived": false
   },
   "exposure_time": {
@@ -2287,7 +2335,22 @@
    "enum_labels": [],
    "default": "10",
    "type": "coFloat",
-   "line": 6957,
+   "line": 7068,
+   "derived": false
+  },
+  "external_infill_margin": {
+   "sidetext": "mm or %",
+   "min": 0,
+   "max": null,
+   "mode": "Advanced",
+   "aliases": [],
+   "nocli": false,
+   "cli": null,
+   "enum_values": [],
+   "enum_labels": [],
+   "default": "",
+   "type": "coFloatOrPercent",
+   "line": 3600,
    "derived": false
   },
   "extra_loading_move": {
@@ -2302,7 +2365,7 @@
    "enum_labels": [],
    "default": "-2",
    "type": "coFloat",
-   "line": 4213,
+   "line": 4315,
    "derived": false
   },
   "extra_perimeters_on_overhangs": {
@@ -2317,7 +2380,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 1194,
+   "line": 1232,
    "derived": false
   },
   "extra_solid_infills": {
@@ -2332,7 +2395,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 2528,
+   "line": 2605,
    "derived": false
   },
   "extruded_volume": {
@@ -2347,7 +2410,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 9027,
+   "line": 9144,
    "derived": false
   },
   "extruded_volume_total": {
@@ -2362,7 +2425,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9035,
+   "line": 9152,
    "derived": false
   },
   "extruded_weight": {
@@ -2377,7 +2440,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 9039,
+   "line": 9156,
    "derived": false
   },
   "extruded_weight_total": {
@@ -2392,7 +2455,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9043,
+   "line": 9160,
    "derived": false
   },
   "extruder": {
@@ -2413,7 +2476,7 @@
    ],
    "default": "0",
    "type": "coInt",
-   "line": 1827,
+   "line": 1904,
    "derived": false
   },
   "extruder_clearance_height_to_lid": {
@@ -2428,7 +2491,7 @@
    "enum_labels": [],
    "default": "120",
    "type": "coFloat",
-   "line": 1853,
+   "line": 1930,
    "derived": false
   },
   "extruder_clearance_height_to_rod": {
@@ -2443,7 +2506,7 @@
    "enum_labels": [],
    "default": "40",
    "type": "coFloat",
-   "line": 1843,
+   "line": 1920,
    "derived": false
   },
   "extruder_clearance_radius": {
@@ -2458,7 +2521,7 @@
    "enum_labels": [],
    "default": "40",
    "type": "coFloat",
-   "line": 1862,
+   "line": 1939,
    "derived": false
   },
   "extruder_colour": {
@@ -2473,7 +2536,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 1918,
+   "line": 1995,
    "derived": false
   },
   "extruder_offset": {
@@ -2488,7 +2551,7 @@
    "enum_labels": [],
    "default": "0×0",
    "type": "coPoints",
-   "line": 1926,
+   "line": 2003,
    "derived": false
   },
   "extrusion_rate_smoothing_external_perimeter_only": {
@@ -2503,7 +2566,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 3985,
+   "line": 4087,
    "derived": false
   },
   "extrusion_role": {
@@ -2518,7 +2581,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9313,
+   "line": 9430,
    "derived": false
   },
   "faded_layers": {
@@ -2533,7 +2596,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coInt",
-   "line": 6933,
+   "line": 7044,
    "derived": false
   },
   "fan_cooling_layer_time": {
@@ -2548,7 +2611,7 @@
    "enum_labels": [],
    "default": "60.0",
    "type": "coFloats",
-   "line": 2056,
+   "line": 2133,
    "derived": false
   },
   "fan_kickstart": {
@@ -2563,7 +2626,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 3229,
+   "line": 3319,
    "derived": false
   },
   "fan_max_speed": {
@@ -2578,7 +2641,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coFloats",
-   "line": 3933,
+   "line": 4035,
    "derived": false
   },
   "fan_min_speed": {
@@ -2593,7 +2656,7 @@
    "enum_labels": [],
    "default": "20",
    "type": "coFloats",
-   "line": 3993,
+   "line": 4095,
    "derived": false
   },
   "fan_speed": {
@@ -2608,7 +2671,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coNone",
-   "line": 9281,
+   "line": 9398,
    "derived": false
   },
   "fan_speedup_overhangs": {
@@ -2623,7 +2686,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 3223,
+   "line": 3313,
    "derived": false
   },
   "fan_speedup_time": {
@@ -2638,7 +2701,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 3210,
+   "line": 3300,
    "derived": false
   },
   "fast_tilt_time": {
@@ -2653,7 +2716,7 @@
    "enum_labels": [],
    "default": "5",
    "type": "coFloat",
-   "line": 6794,
+   "line": 6905,
    "derived": false
   },
   "filament_adhesiveness_category": {
@@ -2668,7 +2731,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coInts",
-   "line": 6413,
+   "line": 6524,
    "derived": false
   },
   "filament_colour": {
@@ -2683,7 +2746,7 @@
    "enum_labels": [],
    "default": "#F2754E",
    "type": "coStrings",
-   "line": 2074,
+   "line": 2151,
    "derived": false
   },
   "filament_colour_mode": {
@@ -2698,7 +2761,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInts",
-   "line": 2088,
+   "line": 2165,
    "derived": false
   },
   "filament_colour_new": {
@@ -2729,7 +2792,7 @@
    "enum_labels": [],
    "default": "3.4",
    "type": "coFloats",
-   "line": 2345,
+   "line": 2422,
    "derived": false
   },
   "filament_cooling_initial_speed": {
@@ -2744,7 +2807,7 @@
    "enum_labels": [],
    "default": "2.2",
    "type": "coFloats",
-   "line": 2326,
+   "line": 2403,
    "derived": false
   },
   "filament_cooling_moves": {
@@ -2759,7 +2822,7 @@
    "enum_labels": [],
    "default": "4",
    "type": "coInts",
-   "line": 2278,
+   "line": 2355,
    "derived": false
   },
   "filament_cost": {
@@ -2774,7 +2837,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 2467,
+   "line": 2544,
    "derived": false
   },
   "filament_density": {
@@ -2789,7 +2852,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 2384,
+   "line": 2461,
    "derived": false
   },
   "filament_deretraction_speed": {
@@ -2804,7 +2867,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4783,
+   "line": 4885,
    "derived": true
   },
   "filament_diameter": {
@@ -2819,7 +2882,7 @@
    "enum_labels": [],
    "default": "1.75",
    "type": "coFloats",
-   "line": 2172,
+   "line": 2249,
    "derived": false
   },
   "filament_end_gcode": {
@@ -2834,7 +2897,7 @@
    "enum_labels": [],
    "default": " ",
    "type": "coStrings",
-   "line": 1671,
+   "line": 1748,
    "derived": false
   },
   "filament_extruder_id": {
@@ -2849,7 +2912,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9272,
+   "line": 9389,
    "derived": false
   },
   "filament_flow_ratio": {
@@ -2864,7 +2927,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloats",
-   "line": 1936,
+   "line": 2013,
    "derived": false
   },
   "filament_flow_step_size": {
@@ -2879,7 +2942,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInts",
-   "line": 4169,
+   "line": 4271,
    "derived": false
   },
   "filament_flow_support": {
@@ -2894,7 +2957,7 @@
    "enum_labels": [],
    "default": "FLOW_MODE_STANDARD",
    "type": "coStrings",
-   "line": 4136,
+   "line": 4238,
    "derived": false
   },
   "filament_grouping_mode": {
@@ -2909,7 +2972,7 @@
    "enum_labels": [],
    "default": "FILAMENT_GROUPING_STANDARD",
    "type": "coString",
-   "line": 4160,
+   "line": 4262,
    "derived": false
   },
   "filament_ids": {
@@ -2924,7 +2987,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 2480,
+   "line": 2557,
    "derived": false
   },
   "filament_is_high_temperature": {
@@ -2939,7 +3002,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 2452,
+   "line": 2529,
    "derived": false
   },
   "filament_is_support": {
@@ -2954,7 +3017,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 2446,
+   "line": 2523,
    "derived": false
   },
   "filament_loading_speed": {
@@ -2969,7 +3032,7 @@
    "enum_labels": [],
    "default": "28",
    "type": "coFloats",
-   "line": 2235,
+   "line": 2312,
    "derived": false
   },
   "filament_loading_speed_start": {
@@ -2984,7 +3047,7 @@
    "enum_labels": [],
    "default": "3",
    "type": "coFloats",
-   "line": 2243,
+   "line": 2320,
    "derived": false
   },
   "filament_long_retractions_when_cut": {
@@ -2999,7 +3062,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4648,
+   "line": 4750,
    "derived": true
   },
   "filament_max_volumetric_speed": {
@@ -3014,7 +3077,7 @@
    "enum_labels": [],
    "default": "2",
    "type": "coFloats",
-   "line": 2128,
+   "line": 2205,
    "derived": false
   },
   "filament_minimal_purge_on_wipe_tower": {
@@ -3029,7 +3092,7 @@
    "enum_labels": [],
    "default": "15",
    "type": "coFloats",
-   "line": 2334,
+   "line": 2411,
    "derived": false
   },
   "filament_multi_colors": {
@@ -3044,7 +3107,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 2081,
+   "line": 2158,
    "derived": false
   },
   "filament_multitool_ramming": {
@@ -3059,7 +3122,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 2360,
+   "line": 2437,
    "derived": false
   },
   "filament_multitool_ramming_flow": {
@@ -3074,7 +3137,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coFloats",
-   "line": 2376,
+   "line": 2453,
    "derived": false
   },
   "filament_multitool_ramming_volume": {
@@ -3089,7 +3152,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coFloats",
-   "line": 2368,
+   "line": 2445,
    "derived": false
   },
   "filament_notes": {
@@ -3104,7 +3167,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 2110,
+   "line": 2187,
    "derived": false
   },
   "filament_preset": {
@@ -3119,7 +3182,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9208,
+   "line": 9325,
    "derived": false
   },
   "filament_ramming_parameters": {
@@ -3134,7 +3197,7 @@
    "enum_labels": [],
    "default": "120 100 6.6 6.8 7.2 7.6 7.9 8.2 8.7 9.4 9.9 10.0|\"\n       \" 0.05 6.6 0.45 6.8 0.95 7.8 1.45 8.3 1.95 9.7 2.45 10 2.95 7.6 3.45 7.6 3.95 7.6 4.45 7.6 4.95 7.6",
    "type": "coStrings",
-   "line": 2353,
+   "line": 2430,
    "derived": false
   },
   "filament_retract_before_wipe": {
@@ -3149,7 +3212,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4622,
+   "line": 4724,
    "derived": true
   },
   "filament_retract_length_toolchange": {
@@ -3164,7 +3227,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4663,
+   "line": 4765,
    "derived": true
   },
   "filament_retract_lift_above": {
@@ -3179,7 +3242,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4730,
+   "line": 4832,
    "derived": true
   },
   "filament_retract_lift_below": {
@@ -3194,7 +3257,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4737,
+   "line": 4839,
    "derived": true
   },
   "filament_retract_lift_enforce": {
@@ -3214,7 +3277,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4744,
+   "line": 4846,
    "derived": true
   },
   "filament_retract_restart_extra": {
@@ -3229,7 +3292,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4759,
+   "line": 4861,
    "derived": true
   },
   "filament_retract_restart_extra_toolchange": {
@@ -3244,7 +3307,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4767,
+   "line": 4869,
    "derived": true
   },
   "filament_retract_when_changing_layer": {
@@ -3259,7 +3322,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4629,
+   "line": 4731,
    "derived": true
   },
   "filament_retraction_distances_when_cut": {
@@ -3274,7 +3337,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4655,
+   "line": 4757,
    "derived": true
   },
   "filament_retraction_length": {
@@ -3289,7 +3352,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4635,
+   "line": 4737,
    "derived": true
   },
   "filament_retraction_minimum_travel": {
@@ -3304,7 +3367,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4615,
+   "line": 4717,
    "derived": true
   },
   "filament_retraction_speed": {
@@ -3319,7 +3382,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4775,
+   "line": 4877,
    "derived": true
   },
   "filament_settings_id": {
@@ -3334,7 +3397,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 2475,
+   "line": 2552,
    "derived": false
   },
   "filament_shrink": {
@@ -3349,7 +3412,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercents",
-   "line": 2211,
+   "line": 2288,
    "derived": false
   },
   "filament_shrinkage_compensation_z": {
@@ -3364,7 +3427,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercents",
-   "line": 2224,
+   "line": 2301,
    "derived": false
   },
   "filament_soluble": {
@@ -3379,7 +3442,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 2440,
+   "line": 2517,
    "derived": false
   },
   "filament_stamping_distance": {
@@ -3394,7 +3457,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 2294,
+   "line": 2371,
    "derived": false
   },
   "filament_stamping_loading_speed": {
@@ -3409,7 +3472,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 2287,
+   "line": 2364,
    "derived": false
   },
   "filament_start_gcode": {
@@ -3424,7 +3487,7 @@
    "enum_labels": [],
    "default": " ",
    "type": "coStrings",
-   "line": 5234,
+   "line": 5336,
    "derived": false
   },
   "filament_toolchange_delay": {
@@ -3439,7 +3502,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 2268,
+   "line": 2345,
    "derived": false
   },
   "filament_tower_interface_pre_extrusion_dist": {
@@ -3454,7 +3517,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coFloats",
-   "line": 2302,
+   "line": 2379,
    "derived": false
   },
   "filament_tower_interface_pre_extrusion_length": {
@@ -3469,7 +3532,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 2310,
+   "line": 2387,
    "derived": false
   },
   "filament_tower_interface_print_temp": {
@@ -3484,7 +3547,7 @@
    "enum_labels": [],
    "default": "-1",
    "type": "coInts",
-   "line": 2318,
+   "line": 2395,
    "derived": false
   },
   "filament_tower_ironing_area": {
@@ -3499,7 +3562,7 @@
    "enum_labels": [],
    "default": "4",
    "type": "coFloats",
-   "line": 6405,
+   "line": 6516,
    "derived": false
   },
   "filament_type": {
@@ -3554,7 +3617,7 @@
    "enum_labels": [],
    "default": "PLA",
    "type": "coStrings",
-   "line": 2392,
+   "line": 2469,
    "derived": false
   },
   "filament_unloading_speed": {
@@ -3569,7 +3632,7 @@
    "enum_labels": [],
    "default": "90",
    "type": "coFloats",
-   "line": 2251,
+   "line": 2328,
    "derived": false
   },
   "filament_unloading_speed_start": {
@@ -3584,7 +3647,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coFloats",
-   "line": 2260,
+   "line": 2337,
    "derived": false
   },
   "filament_vendor": {
@@ -3599,7 +3662,7 @@
    "enum_labels": [],
    "default": "L(\"(Undefined)\")",
    "type": "coStrings",
-   "line": 2484,
+   "line": 2561,
    "derived": false
   },
   "filament_volume_type": {
@@ -3617,7 +3680,7 @@
    "enum_labels": [],
    "default": "fvtStandard",
    "type": "coEnums",
-   "line": 4096,
+   "line": 4198,
    "derived": false
   },
   "filament_wipe": {
@@ -3632,7 +3695,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 6118,
+   "line": 6229,
    "derived": true
   },
   "filament_wipe_distance": {
@@ -3647,7 +3710,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 6125,
+   "line": 6236,
    "derived": true
   },
   "filament_z_hop": {
@@ -3662,7 +3725,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4674,
+   "line": 4776,
    "derived": true
   },
   "filament_z_hop_types": {
@@ -3682,7 +3745,7 @@
    "enum_labels": [],
    "nocli": false,
    "cli": null,
-   "line": 4701,
+   "line": 4803,
    "derived": true
   },
   "filename_format": {
@@ -3697,7 +3760,7 @@
    "enum_labels": [],
    "default": "{input_filename_base}_{filament_type[initial_tool]}_{print_time}.gcode",
    "type": "coString",
-   "line": 4244,
+   "line": 4346,
    "derived": false
   },
   "fill_multiline": {
@@ -3712,7 +3775,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 2537,
+   "line": 2614,
    "derived": false
   },
   "filter_out_gap_fill": {
@@ -3727,7 +3790,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 3095,
+   "line": 3185,
    "derived": false
   },
   "first_flush_volume": {
@@ -3742,7 +3805,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9291,
+   "line": 9408,
    "derived": false
   },
   "first_layer_bed_temperature": {
@@ -3757,7 +3820,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInts",
-   "line": 9168,
+   "line": 9285,
    "derived": false
   },
   "first_layer_center_no_wipe_tower": {
@@ -3772,7 +3835,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 9155,
+   "line": 9272,
    "derived": false
   },
   "first_layer_height": {
@@ -3787,7 +3850,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9156,
+   "line": 9273,
    "derived": false
   },
   "first_layer_print_convex_hull": {
@@ -3802,7 +3865,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coPoints",
-   "line": 9126,
+   "line": 9243,
    "derived": false
   },
   "first_layer_print_max": {
@@ -3817,7 +3880,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 9135,
+   "line": 9252,
    "derived": false
   },
   "first_layer_print_min": {
@@ -3832,7 +3895,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 9131,
+   "line": 9248,
    "derived": false
   },
   "first_layer_print_sequence": {
@@ -3847,7 +3910,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInts",
-   "line": 914,
+   "line": 930,
    "derived": false
   },
   "first_layer_print_size": {
@@ -3862,7 +3925,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 9139,
+   "line": 9256,
    "derived": false
   },
   "first_layer_sequence_choice": {
@@ -3880,7 +3943,7 @@
    "enum_labels": [],
    "default": "Auto",
    "type": "coEnum",
-   "line": 930,
+   "line": 946,
    "derived": false
   },
   "first_layer_temperature": {
@@ -3895,7 +3958,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInts",
-   "line": 9169,
+   "line": 9286,
    "derived": false
   },
   "first_layer_travel_acceleration": {
@@ -3910,7 +3973,7 @@
    "enum_labels": [],
    "default": "100%",
    "type": "coFloatOrPercent",
-   "line": 2759,
+   "line": 2849,
    "derived": false
   },
   "first_layer_travel_jerk": {
@@ -3925,7 +3988,7 @@
    "enum_labels": [],
    "default": "100%",
    "type": "coFloatOrPercent",
-   "line": 2847,
+   "line": 2937,
    "derived": false
   },
   "flush_into_infill": {
@@ -3940,7 +4003,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 6335,
+   "line": 6446,
    "derived": false
   },
   "flush_into_objects": {
@@ -3955,7 +4018,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 6352,
+   "line": 6463,
    "derived": false
   },
   "flush_into_support": {
@@ -3970,7 +4033,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 6344,
+   "line": 6455,
    "derived": false
   },
   "flush_length_1": {
@@ -3985,7 +4048,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9301,
+   "line": 9418,
    "derived": false
   },
   "flush_length_2": {
@@ -4000,7 +4063,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9302,
+   "line": 9419,
    "derived": false
   },
   "flush_length_3": {
@@ -4015,7 +4078,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9303,
+   "line": 9420,
    "derived": false
   },
   "flush_length_4": {
@@ -4030,7 +4093,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9304,
+   "line": 9421,
    "derived": false
   },
   "flush_multiplier": {
@@ -4045,7 +4108,7 @@
    "enum_labels": [],
    "default": "0.3",
    "type": "coFloat",
-   "line": 6175,
+   "line": 6286,
    "derived": false
   },
   "flush_volumes_matrix": {
@@ -4060,7 +4123,7 @@
    "enum_labels": [],
    "default": "0.f, 280.f, 280.f, 280.f, 280.f, 0.f, 280.f, 280.f, 280.f, 280.f, 0.f, 280.f, 280.f, 280.f, 280.f, 0.f",
    "type": "coFloats",
-   "line": 6165,
+   "line": 6276,
    "derived": false
   },
   "flush_volumes_vector": {
@@ -4075,7 +4138,7 @@
    "enum_labels": [],
    "default": "140.f, 140.f, 140.f, 140.f, 140.f, 140.f, 140.f, 140.f",
    "type": "coFloats",
-   "line": 6155,
+   "line": 6266,
    "derived": false
   },
   "full_fan_speed_layer": {
@@ -4090,7 +4153,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInts",
-   "line": 2930,
+   "line": 3020,
    "derived": false
   },
   "fuzzy_skin": {
@@ -4110,7 +4173,7 @@
    "enum_labels": [],
    "default": "FuzzySkinType::None",
    "type": "coEnum",
-   "line": 2977,
+   "line": 3067,
    "derived": false
   },
   "fuzzy_skin_first_layer": {
@@ -4125,7 +4188,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coBool",
-   "line": 3014,
+   "line": 3104,
    "derived": false
   },
   "fuzzy_skin_mode": {
@@ -4144,7 +4207,7 @@
    "enum_labels": [],
    "default": "FuzzySkinMode::Displacement",
    "type": "coEnum",
-   "line": 3021,
+   "line": 3111,
    "derived": false
   },
   "fuzzy_skin_noise_type": {
@@ -4165,7 +4228,7 @@
    "enum_labels": [],
    "default": "NoiseType::Classic",
    "type": "coEnum",
-   "line": 3044,
+   "line": 3134,
    "derived": false
   },
   "fuzzy_skin_octaves": {
@@ -4180,7 +4243,7 @@
    "enum_labels": [],
    "default": "4",
    "type": "coInt",
-   "line": 3077,
+   "line": 3167,
    "derived": false
   },
   "fuzzy_skin_persistence": {
@@ -4195,7 +4258,7 @@
    "enum_labels": [],
    "default": "0.5",
    "type": "coFloat",
-   "line": 3086,
+   "line": 3176,
    "derived": false
   },
   "fuzzy_skin_point_distance": {
@@ -4210,7 +4273,7 @@
    "enum_labels": [],
    "default": "0.3",
    "type": "coFloat",
-   "line": 3004,
+   "line": 3094,
    "derived": false
   },
   "fuzzy_skin_scale": {
@@ -4225,7 +4288,7 @@
    "enum_labels": [],
    "default": "1.0",
    "type": "coFloat",
-   "line": 3067,
+   "line": 3157,
    "derived": false
   },
   "fuzzy_skin_thickness": {
@@ -4240,7 +4303,7 @@
    "enum_labels": [],
    "default": "0.2",
    "type": "coFloat",
-   "line": 2994,
+   "line": 3084,
    "derived": false
   },
   "gamma_correction": {
@@ -4255,7 +4318,7 @@
    "enum_labels": [],
    "default": "1.0",
    "type": "coFloat",
-   "line": 6868,
+   "line": 6979,
    "derived": false
   },
   "gap_fill_target": {
@@ -4274,7 +4337,7 @@
    "enum_labels": [],
    "default": "gftNowhere",
    "type": "coEnum",
-   "line": 992,
+   "line": 1008,
    "derived": false
   },
   "gap_infill_speed": {
@@ -4289,7 +4352,7 @@
    "enum_labels": [],
    "default": "30",
    "type": "coFloats",
-   "line": 3104,
+   "line": 3194,
    "derived": false
   },
   "gcode_add_line_number": {
@@ -4304,7 +4367,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coBool",
-   "line": 3134,
+   "line": 3224,
    "derived": false
   },
   "gcode_comments": {
@@ -4319,7 +4382,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coBool",
-   "line": 3322,
+   "line": 3412,
    "derived": false
   },
   "gcode_flavor": {
@@ -4343,7 +4406,7 @@
    ],
    "default": "gcfMarlinLegacy",
    "type": "coEnum",
-   "line": 3263,
+   "line": 3353,
    "derived": false
   },
   "gcode_label_objects": {
@@ -4358,7 +4421,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coBool",
-   "line": 3308,
+   "line": 3398,
    "derived": false
   },
   "graphic_effect_plate_temp": {
@@ -4373,7 +4436,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInts",
-   "line": 784,
+   "line": 800,
    "derived": false
   },
   "graphic_effect_plate_temp_initial_layer": {
@@ -4388,7 +4451,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInts",
-   "line": 853,
+   "line": 869,
    "derived": false
   },
   "has_scarf_joint_seam": {
@@ -4403,7 +4466,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3766,
+   "line": 3868,
    "derived": false
   },
   "has_single_extruder_multi_material_priming": {
@@ -4418,7 +4481,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coBool",
-   "line": 9015,
+   "line": 9132,
    "derived": false
   },
   "has_wipe_tower": {
@@ -4433,7 +4496,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coBool",
-   "line": 8994,
+   "line": 9111,
    "derived": false
   },
   "head_wrap_detect_zone": {
@@ -4448,7 +4511,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coPoints",
-   "line": 5992,
+   "line": 6103,
    "derived": false
   },
   "help": {
@@ -4463,7 +4526,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8530,
+   "line": 8647,
    "derived": false
   },
   "high_current_on_filament_swap": {
@@ -4478,7 +4541,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coBool",
-   "line": 4196,
+   "line": 4298,
    "derived": false
   },
   "hole_to_polyhole": {
@@ -4493,7 +4556,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 6440,
+   "line": 6551,
    "derived": false
   },
   "hole_to_polyhole_threshold": {
@@ -4508,7 +4571,7 @@
    "enum_labels": [],
    "default": "0.01",
    "type": "coFloatOrPercent",
-   "line": 6449,
+   "line": 6560,
    "derived": false
   },
   "hole_to_polyhole_twisted": {
@@ -4523,7 +4586,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 6462,
+   "line": 6573,
    "derived": false
   },
   "hollowing_closing_distance": {
@@ -4538,7 +4601,7 @@
    "enum_labels": [],
    "default": "2.0",
    "type": "coFloat",
-   "line": 7353,
+   "line": 7464,
    "derived": false
   },
   "hollowing_enable": {
@@ -4553,7 +4616,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 7327,
+   "line": 7438,
    "derived": false
   },
   "hollowing_min_thickness": {
@@ -4568,7 +4631,7 @@
    "enum_labels": [],
    "default": "3",
    "type": "coFloat",
-   "line": 7334,
+   "line": 7445,
    "derived": false
   },
   "hollowing_quality": {
@@ -4583,7 +4646,7 @@
    "enum_labels": [],
    "default": "0.5",
    "type": "coFloat",
-   "line": 7344,
+   "line": 7455,
    "derived": false
   },
   "host_type": {
@@ -4628,7 +4691,7 @@
    ],
    "default": "htOctoPrint",
    "type": "coEnum",
-   "line": 4048,
+   "line": 4150,
    "derived": false
   },
   "hot_plate_temp": {
@@ -4643,7 +4706,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coInts",
-   "line": 764,
+   "line": 780,
    "derived": false
   },
   "hot_plate_temp_initial_layer": {
@@ -4658,7 +4721,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coInts",
-   "line": 834,
+   "line": 850,
    "derived": false
   },
   "hour": {
@@ -4673,7 +4736,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9190,
+   "line": 9307,
    "derived": false
   },
   "idle_temperature": {
@@ -4688,7 +4751,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInts",
-   "line": 6396,
+   "line": 6507,
    "derived": false
   },
   "in_head_wrap_detect_zone": {
@@ -4703,7 +4766,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coBool",
-   "line": 9020,
+   "line": 9137,
    "derived": false
   },
   "independent_support_layer_height": {
@@ -4718,7 +4781,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5681,
+   "line": 5792,
    "derived": false
   },
   "infill_anchor": {
@@ -4745,7 +4808,7 @@
    ],
    "default": "400%",
    "type": "coFloatOrPercent",
-   "line": 2633,
+   "line": 2710,
    "derived": false
   },
   "infill_anchor_max": {
@@ -4765,7 +4828,7 @@
    ],
    "default": "20",
    "type": "coFloatOrPercent",
-   "line": 2661,
+   "line": 2738,
    "derived": false
   },
   "infill_combination": {
@@ -4780,7 +4843,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3331,
+   "line": 3421,
    "derived": false
   },
   "infill_combination_max_layer_height": {
@@ -4795,7 +4858,7 @@
    "enum_labels": [],
    "default": "100%",
    "type": "coFloatOrPercent",
-   "line": 3450,
+   "line": 3540,
    "derived": false
   },
   "infill_direction": {
@@ -4810,7 +4873,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coFloat",
-   "line": 2491,
+   "line": 2568,
    "derived": false
   },
   "infill_jerk": {
@@ -4825,7 +4888,7 @@
    "enum_labels": [],
    "default": "9",
    "type": "coFloats",
-   "line": 2823,
+   "line": 2913,
    "derived": false
   },
   "infill_lock_depth": {
@@ -4840,7 +4903,7 @@
    "enum_labels": [],
    "default": "1.0",
    "type": "coFloat",
-   "line": 3411,
+   "line": 3501,
    "derived": false
   },
   "infill_overhang_angle": {
@@ -4855,7 +4918,7 @@
    "enum_labels": [],
    "default": "60",
    "type": "coFloat",
-   "line": 2623,
+   "line": 2700,
    "derived": false
   },
   "infill_shift_step": {
@@ -4870,7 +4933,7 @@
    "enum_labels": [],
    "default": "0.4",
    "type": "coFloat",
-   "line": 3339,
+   "line": 3429,
    "derived": false
   },
   "infill_wall_overlap": {
@@ -4885,7 +4948,7 @@
    "enum_labels": [],
    "default": "15",
    "type": "coPercent",
-   "line": 3484,
+   "line": 3574,
    "derived": false
   },
   "info": {
@@ -4900,7 +4963,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8596,
+   "line": 8713,
    "derived": false
   },
   "inherits": {
@@ -4915,7 +4978,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 3519,
+   "line": 3621,
    "derived": false
   },
   "inherits_group": {
@@ -4930,7 +4993,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 3529,
+   "line": 3631,
    "derived": false
   },
   "initial_exposure_time": {
@@ -4945,7 +5008,7 @@
    "enum_labels": [],
    "default": "15",
    "type": "coFloat",
-   "line": 6980,
+   "line": 7091,
    "derived": false
   },
   "initial_extruder": {
@@ -4960,7 +5023,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 8998,
+   "line": 9115,
    "derived": false
   },
   "initial_layer_acceleration": {
@@ -4975,7 +5038,7 @@
    "enum_labels": [],
    "default": "300",
    "type": "coFloats",
-   "line": 2751,
+   "line": 2841,
    "derived": false
   },
   "initial_layer_height": {
@@ -4990,7 +5053,7 @@
    "enum_labels": [],
    "default": "0.3",
    "type": "coFloat",
-   "line": 6898,
+   "line": 7009,
    "derived": false
   },
   "initial_layer_infill_speed": {
@@ -5005,7 +5068,7 @@
    "enum_labels": [],
    "default": "60",
    "type": "coFloats",
-   "line": 2893,
+   "line": 2983,
    "derived": false
   },
   "initial_layer_jerk": {
@@ -5020,7 +5083,7 @@
    "enum_labels": [],
    "default": "9",
    "type": "coFloats",
-   "line": 2831,
+   "line": 2921,
    "derived": false
   },
   "initial_layer_line_width": {
@@ -5035,7 +5098,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 2856,
+   "line": 2946,
    "derived": false
   },
   "initial_layer_min_bead_width": {
@@ -5050,7 +5113,7 @@
    "enum_labels": [],
    "default": "85",
    "type": "coPercent",
-   "line": 6589,
+   "line": 6700,
    "derived": false
   },
   "initial_layer_print_height": {
@@ -5065,7 +5128,7 @@
    "enum_labels": [],
    "default": "0.2",
    "type": "coFloat",
-   "line": 2869,
+   "line": 2959,
    "derived": false
   },
   "initial_layer_speed": {
@@ -5080,7 +5143,7 @@
    "enum_labels": [],
    "default": "30",
    "type": "coFloats",
-   "line": 2885,
+   "line": 2975,
    "derived": false
   },
   "initial_layer_travel_speed": {
@@ -5095,7 +5158,7 @@
    "enum_labels": [],
    "default": "100%",
    "type": "coFloatsOrPercents",
-   "line": 2901,
+   "line": 2991,
    "derived": false
   },
   "initial_no_support_extruder": {
@@ -5110,7 +5173,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9019,
+   "line": 9136,
    "derived": false
   },
   "initial_tool": {
@@ -5125,7 +5188,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9002,
+   "line": 9119,
    "derived": false
   },
   "inner_wall_acceleration": {
@@ -5140,7 +5203,7 @@
    "enum_labels": [],
    "default": "10000",
    "type": "coFloats",
-   "line": 2692,
+   "line": 2769,
    "derived": false
   },
   "inner_wall_jerk": {
@@ -5155,7 +5218,7 @@
    "enum_labels": [],
    "default": "9",
    "type": "coFloats",
-   "line": 2807,
+   "line": 2897,
    "derived": false
   },
   "inner_wall_line_width": {
@@ -5170,7 +5233,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 4297,
+   "line": 4399,
    "derived": false
   },
   "inner_wall_speed": {
@@ -5187,7 +5250,7 @@
    "enum_labels": [],
    "default": "60",
    "type": "coFloats",
-   "line": 4309,
+   "line": 4411,
    "derived": false
   },
   "input_filename": {
@@ -5202,7 +5265,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9115,
+   "line": 9232,
    "derived": false
   },
   "input_filename_base": {
@@ -5217,7 +5280,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9111,
+   "line": 9228,
    "derived": false
   },
   "interface_shells": {
@@ -5232,7 +5295,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3533,
+   "line": 3635,
    "derived": false
   },
   "interlocking_beam": {
@@ -5247,7 +5310,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3562,
+   "line": 3664,
    "derived": false
   },
   "interlocking_beam_layer_count": {
@@ -5262,7 +5325,7 @@
    "enum_labels": [],
    "default": "2",
    "type": "coInt",
-   "line": 3588,
+   "line": 3690,
    "derived": false
   },
   "interlocking_beam_width": {
@@ -5277,7 +5340,7 @@
    "enum_labels": [],
    "default": "0.8",
    "type": "coFloat",
-   "line": 3569,
+   "line": 3671,
    "derived": false
   },
   "interlocking_boundary_avoidance": {
@@ -5292,7 +5355,7 @@
    "enum_labels": [],
    "default": "2",
    "type": "coInt",
-   "line": 3604,
+   "line": 3706,
    "derived": false
   },
   "interlocking_depth": {
@@ -5307,7 +5370,7 @@
    "enum_labels": [],
    "default": "2",
    "type": "coInt",
-   "line": 3596,
+   "line": 3698,
    "derived": false
   },
   "interlocking_orientation": {
@@ -5322,7 +5385,7 @@
    "enum_labels": [],
    "default": "22.5",
    "type": "coFloat",
-   "line": 3578,
+   "line": 3680,
    "derived": false
   },
   "internal_bridge_angle": {
@@ -5337,7 +5400,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 1077,
+   "line": 1115,
    "derived": false
   },
   "internal_bridge_density": {
@@ -5352,7 +5415,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercent",
-   "line": 1103,
+   "line": 1141,
    "derived": false
   },
   "internal_bridge_fan_speed": {
@@ -5367,7 +5430,7 @@
    "enum_labels": [],
    "default": "-1",
    "type": "coInts",
-   "line": 2955,
+   "line": 3045,
    "derived": false
   },
   "internal_bridge_flow": {
@@ -5382,7 +5445,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 1127,
+   "line": 1165,
    "derived": false
   },
   "internal_bridge_speed": {
@@ -5397,7 +5460,7 @@
    "enum_labels": [],
    "default": "150%",
    "type": "coFloatsOrPercents",
-   "line": 1339,
+   "line": 1389,
    "derived": false
   },
   "internal_solid_infill_acceleration": {
@@ -5412,7 +5475,7 @@
    "enum_labels": [],
    "default": "100%",
    "type": "coFloatsOrPercents",
-   "line": 2742,
+   "line": 2832,
    "derived": false
   },
   "internal_solid_infill_line_width": {
@@ -5427,7 +5490,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 5093,
+   "line": 5195,
    "derived": false
   },
   "internal_solid_infill_pattern": {
@@ -5440,9 +5503,9 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "ipMonotonic",
+   "default": "ipMonotonicLine",
    "type": "coEnum",
-   "line": 1731,
+   "line": 1808,
    "derived": false
   },
   "internal_solid_infill_speed": {
@@ -5457,7 +5520,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coFloats",
-   "line": 5105,
+   "line": 5207,
    "derived": false
   },
   "ironing_angle": {
@@ -5472,7 +5535,7 @@
    "enum_labels": [],
    "default": "-1",
    "type": "coFloat",
-   "line": 3687,
+   "line": 3789,
    "derived": false
   },
   "ironing_direction": {
@@ -5503,7 +5566,7 @@
    "enum_labels": [],
    "default": "-1",
    "type": "coInts",
-   "line": 2966,
+   "line": 3056,
    "derived": false
   },
   "ironing_flow": {
@@ -5518,7 +5581,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coPercent",
-   "line": 3646,
+   "line": 3748,
    "derived": false
   },
   "ironing_inset": {
@@ -5533,7 +5596,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 3668,
+   "line": 3770,
    "derived": false
   },
   "ironing_pattern": {
@@ -5551,7 +5614,7 @@
    "enum_labels": [],
    "default": "ipRectilinear",
    "type": "coEnum",
-   "line": 3634,
+   "line": 3736,
    "derived": false
   },
   "ironing_spacing": {
@@ -5566,7 +5629,7 @@
    "enum_labels": [],
    "default": "0.1",
    "type": "coFloat",
-   "line": 3658,
+   "line": 3760,
    "derived": false
   },
   "ironing_speed": {
@@ -5581,7 +5644,7 @@
    "enum_labels": [],
    "default": "20",
    "type": "coFloats",
-   "line": 3678,
+   "line": 3780,
    "derived": false
   },
   "ironing_type": {
@@ -5601,7 +5664,7 @@
    "enum_labels": [],
    "default": "IroningType::NoIroning",
    "type": "coEnum",
-   "line": 3617,
+   "line": 3719,
    "derived": false
   },
   "is_extruder_used": {
@@ -5616,7 +5679,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coBools",
-   "line": 9006,
+   "line": 9123,
    "derived": false
   },
   "is_infill_first": {
@@ -5631,7 +5694,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 1806,
+   "line": 1883,
    "derived": false
   },
   "last_extrusion_role": {
@@ -5646,7 +5709,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9314,
+   "line": 9431,
    "derived": false
   },
   "lateral_lattice_angle_1": {
@@ -5661,7 +5724,7 @@
    "enum_labels": [],
    "default": "-45",
    "type": "coFloat",
-   "line": 2603,
+   "line": 2680,
    "derived": false
   },
   "lateral_lattice_angle_2": {
@@ -5676,7 +5739,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coFloat",
-   "line": 2613,
+   "line": 2690,
    "derived": false
   },
   "layer_change_gcode": {
@@ -5691,7 +5754,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 3697,
+   "line": 3799,
    "derived": false
   },
   "layer_height": {
@@ -5706,7 +5769,7 @@
    "enum_labels": [],
    "default": "0.2",
    "type": "coFloat",
-   "line": 565,
+   "line": 581,
    "derived": false
   },
   "layer_num": {
@@ -5721,7 +5784,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9260,
+   "line": 9377,
    "derived": false
   },
   "layer_z": {
@@ -5736,7 +5799,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9264,
+   "line": 9381,
    "derived": false
   },
   "line_width": {
@@ -5751,7 +5814,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 2029,
+   "line": 2106,
    "derived": false
   },
   "load_assemble_list": {
@@ -5766,7 +5829,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 8809,
+   "line": 8926,
    "derived": false
   },
   "load_custom_gcodes": {
@@ -5781,7 +5844,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 8862,
+   "line": 8979,
    "derived": false
   },
   "load_defaultfila": {
@@ -5796,7 +5859,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8548,
+   "line": 8665,
    "derived": false
   },
   "load_filament_ids": {
@@ -5811,7 +5874,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coInts",
-   "line": 8868,
+   "line": 8985,
    "derived": false
   },
   "load_filaments": {
@@ -5826,7 +5889,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 8768,
+   "line": 8885,
    "derived": false
   },
   "load_settings": {
@@ -5841,7 +5904,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 8762,
+   "line": 8879,
    "derived": false
   },
   "load_slicedata": {
@@ -5856,7 +5919,7 @@
    "enum_labels": [],
    "default": "cached_data",
    "type": "coStrings",
-   "line": 8489,
+   "line": 8606,
    "derived": false
   },
   "local_z_wipe_tower_purge_lines": {
@@ -5871,7 +5934,7 @@
    "enum_labels": [],
    "default": "3.0",
    "type": "coFloat",
-   "line": 6386,
+   "line": 6497,
    "derived": false
   },
   "long_retractions_when_cut": {
@@ -5886,7 +5949,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 4648,
+   "line": 4750,
    "derived": false
   },
   "machine_end_gcode": {
@@ -5901,7 +5964,7 @@
    "enum_labels": [],
    "default": "M104 S0 ; turn off temperature\\nG28 X0  ; home X axis\\nM84     ; disable motors\\n",
    "type": "coString",
-   "line": 1653,
+   "line": 1730,
    "derived": false
   },
   "machine_load_filament_time": {
@@ -5916,7 +5979,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 2138,
+   "line": 2215,
    "derived": false
   },
   "machine_max_acceleration_e": {
@@ -5947,7 +6010,7 @@
    "enum_labels": [],
    "default": "1500, 1250",
    "type": "coFloats",
-   "line": 3873,
+   "line": 3975,
    "derived": false
   },
   "machine_max_acceleration_retracting": {
@@ -5962,7 +6025,7 @@
    "enum_labels": [],
    "default": "1500, 1250",
    "type": "coFloats",
-   "line": 3887,
+   "line": 3989,
    "derived": false
   },
   "machine_max_acceleration_travel": {
@@ -5977,7 +6040,7 @@
    "enum_labels": [],
    "default": "0, 0",
    "type": "coFloats",
-   "line": 3898,
+   "line": 4000,
    "derived": false
   },
   "machine_max_acceleration_x": {
@@ -6104,7 +6167,7 @@
    "enum_labels": [],
    "default": "0, 0",
    "type": "coFloats",
-   "line": 3843,
+   "line": 3945,
    "derived": false
   },
   "machine_max_speed_e": {
@@ -6183,7 +6246,7 @@
    "enum_labels": [],
    "default": "0, 0",
    "type": "coFloats",
-   "line": 3853,
+   "line": 3955,
    "derived": false
   },
   "machine_min_travel_rate": {
@@ -6198,7 +6261,7 @@
    "enum_labels": [],
    "default": "0, 0",
    "type": "coFloats",
-   "line": 3863,
+   "line": 3965,
    "derived": false
   },
   "machine_pause_gcode": {
@@ -6213,7 +6276,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 3728,
+   "line": 3830,
    "derived": false
   },
   "machine_start_gcode": {
@@ -6228,7 +6291,7 @@
    "enum_labels": [],
    "default": "G28 ; home all axes\\nG1 Z5 F5000 ; lift nozzle\\n",
    "type": "coString",
-   "line": 5225,
+   "line": 5327,
    "derived": false
   },
   "machine_tool_change_time": {
@@ -6243,7 +6306,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 2156,
+   "line": 2233,
    "derived": false
   },
   "machine_unload_filament_time": {
@@ -6258,7 +6321,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 2147,
+   "line": 2224,
    "derived": false
   },
   "make_overhang_printable": {
@@ -6273,7 +6336,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4251,
+   "line": 4353,
    "derived": false
   },
   "make_overhang_printable_angle": {
@@ -6288,7 +6351,7 @@
    "enum_labels": [],
    "default": "55",
    "type": "coFloat",
-   "line": 4258,
+   "line": 4360,
    "derived": false
   },
   "make_overhang_printable_hole_size": {
@@ -6303,7 +6366,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 4270,
+   "line": 4372,
    "derived": false
   },
   "makerlab_name": {
@@ -6318,7 +6381,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 8895,
+   "line": 9012,
    "derived": false
   },
   "makerlab_version": {
@@ -6333,7 +6396,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 8901,
+   "line": 9018,
    "derived": false
   },
   "manual_filament_change": {
@@ -6348,7 +6411,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5249,
+   "line": 5351,
    "derived": false
   },
   "material_colour": {
@@ -6363,7 +6426,7 @@
    "enum_labels": [],
    "default": "#29B2B2",
    "type": "coString",
-   "line": 6880,
+   "line": 6991,
    "derived": false
   },
   "material_correction": {
@@ -6378,7 +6441,7 @@
    "enum_labels": [],
    "default": "{ 1., 1, 1. }",
    "type": "coFloats",
-   "line": 6987,
+   "line": 7098,
    "derived": false
   },
   "material_correction_x": {
@@ -6393,7 +6456,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 6994,
+   "line": 7105,
    "derived": false
   },
   "material_correction_y": {
@@ -6408,7 +6471,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 7001,
+   "line": 7112,
    "derived": false
   },
   "material_correction_z": {
@@ -6423,7 +6486,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 7008,
+   "line": 7119,
    "derived": false
   },
   "material_density": {
@@ -6438,7 +6501,7 @@
    "enum_labels": [],
    "default": "1.0",
    "type": "coFloat",
-   "line": 6919,
+   "line": 7030,
    "derived": false
   },
   "material_print_speed": {
@@ -6459,7 +6522,7 @@
    ],
    "default": "fast",
    "type": "coEnum",
-   "line": 7363,
+   "line": 7474,
    "derived": false
   },
   "material_type": {
@@ -6480,7 +6543,7 @@
    "enum_labels": [],
    "default": "Tough",
    "type": "coString",
-   "line": 6886,
+   "line": 6997,
    "derived": false
   },
   "material_vendor": {
@@ -6495,7 +6558,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 7015,
+   "line": 7126,
    "derived": false
   },
   "max_bridge_length": {
@@ -6510,7 +6573,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 1644,
+   "line": 1721,
    "derived": false
   },
   "max_exposure_time": {
@@ -6525,7 +6588,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coFloat",
-   "line": 6949,
+   "line": 7060,
    "derived": false
   },
   "max_initial_exposure_time": {
@@ -6540,7 +6603,7 @@
    "enum_labels": [],
    "default": "150",
    "type": "coFloat",
-   "line": 6972,
+   "line": 7083,
    "derived": false
   },
   "max_layer_height": {
@@ -6555,7 +6618,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 3943,
+   "line": 4045,
    "derived": false
   },
   "max_layer_z": {
@@ -6570,7 +6633,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9268,
+   "line": 9385,
    "derived": false
   },
   "max_resonance_avoidance_speed": {
@@ -6585,7 +6648,7 @@
    "enum_labels": [],
    "default": "120",
    "type": "coFloat",
-   "line": 3925,
+   "line": 4027,
    "derived": false
   },
   "max_travel_detour_distance": {
@@ -6600,7 +6663,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 711,
+   "line": 727,
    "derived": false
   },
   "max_volumetric_extrusion_rate_slope": {
@@ -6615,7 +6678,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 3952,
+   "line": 4054,
    "derived": false
   },
   "max_volumetric_extrusion_rate_slope_segment_length": {
@@ -6630,7 +6693,7 @@
    "enum_labels": [],
    "default": "3",
    "type": "coFloats",
-   "line": 3973,
+   "line": 4075,
    "derived": false
   },
   "metadata_name": {
@@ -6645,7 +6708,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 8907,
+   "line": 9024,
    "derived": false
   },
   "metadata_value": {
@@ -6660,7 +6723,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 8913,
+   "line": 9030,
    "derived": false
   },
   "min_bead_width": {
@@ -6675,7 +6738,7 @@
    "enum_labels": [],
    "default": "85",
    "type": "coPercent",
-   "line": 6599,
+   "line": 6710,
    "derived": false
   },
   "min_exposure_time": {
@@ -6690,7 +6753,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 6941,
+   "line": 7052,
    "derived": false
   },
   "min_feature_size": {
@@ -6705,7 +6768,7 @@
    "enum_labels": [],
    "default": "25",
    "type": "coPercent",
-   "line": 6564,
+   "line": 6675,
    "derived": false
   },
   "min_initial_exposure_time": {
@@ -6720,7 +6783,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 6964,
+   "line": 7075,
    "derived": false
   },
   "min_layer_height": {
@@ -6735,7 +6798,7 @@
    "enum_labels": [],
    "default": "0.07",
    "type": "coFloats",
-   "line": 4012,
+   "line": 4114,
    "derived": false
   },
   "min_length_factor": {
@@ -6750,7 +6813,7 @@
    "enum_labels": [],
    "default": "0.5",
    "type": "coFloat",
-   "line": 6575,
+   "line": 6686,
    "derived": false
   },
   "min_resonance_avoidance_speed": {
@@ -6765,7 +6828,7 @@
    "enum_labels": [],
    "default": "70",
    "type": "coFloat",
-   "line": 3917,
+   "line": 4019,
    "derived": false
   },
   "min_save": {
@@ -6780,7 +6843,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8554,
+   "line": 8671,
    "derived": false
   },
   "min_skirt_length": {
@@ -6795,7 +6858,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 5054,
+   "line": 5156,
    "derived": false
   },
   "min_width_top_surface": {
@@ -6810,7 +6873,7 @@
    "enum_labels": [],
    "default": "300%",
    "type": "coFloatOrPercent",
-   "line": 1173,
+   "line": 1211,
    "derived": false
   },
   "minimum_sparse_infill_area": {
@@ -6825,7 +6888,7 @@
    "enum_labels": [],
    "default": "15",
    "type": "coFloat",
-   "line": 5075,
+   "line": 5177,
    "derived": false
   },
   "minute": {
@@ -6840,7 +6903,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9193,
+   "line": 9310,
    "derived": false
   },
   "mixed_color_layer_height_a": {
@@ -6855,7 +6918,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 4349,
+   "line": 4451,
    "derived": false
   },
   "mixed_color_layer_height_b": {
@@ -6870,7 +6933,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 4360,
+   "line": 4462,
    "derived": false
   },
   "mixed_filament_advanced_dithering": {
@@ -6885,7 +6948,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4404,
+   "line": 4506,
    "derived": false
   },
   "mixed_filament_component_bias_enabled": {
@@ -6900,7 +6963,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4437,
+   "line": 4539,
    "derived": false
   },
   "mixed_filament_definitions": {
@@ -6915,7 +6978,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 4467,
+   "line": 4569,
    "derived": false
   },
   "mixed_filament_gradient_mode": {
@@ -6930,7 +6993,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4371,
+   "line": 4473,
    "derived": false
   },
   "mixed_filament_height_lower_bound": {
@@ -6945,7 +7008,7 @@
    "enum_labels": [],
    "default": "0.04",
    "type": "coFloat",
-   "line": 4382,
+   "line": 4484,
    "derived": false
   },
   "mixed_filament_height_upper_bound": {
@@ -6960,7 +7023,7 @@
    "enum_labels": [],
    "default": "0.16",
    "type": "coFloat",
-   "line": 4393,
+   "line": 4495,
    "derived": false
   },
   "mixed_filament_pointillism_line_gap": {
@@ -6975,7 +7038,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 4426,
+   "line": 4528,
    "derived": false
   },
   "mixed_filament_pointillism_pixel_size": {
@@ -6990,7 +7053,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 4415,
+   "line": 4517,
    "derived": false
   },
   "mixed_filament_region_collapse": {
@@ -7005,7 +7068,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 4458,
+   "line": 4560,
    "derived": false
   },
   "mixed_filament_surface_indentation": {
@@ -7020,7 +7083,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 4446,
+   "line": 4548,
    "derived": false
   },
   "mmu_segmented_region_interlocking_depth": {
@@ -7035,7 +7098,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 3551,
+   "line": 3653,
    "derived": false
   },
   "mmu_segmented_region_max_width": {
@@ -7050,7 +7113,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 3542,
+   "line": 3644,
    "derived": false
   },
   "month": {
@@ -7065,7 +7128,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9184,
+   "line": 9301,
    "derived": false
   },
   "mstpp": {
@@ -7080,7 +7143,7 @@
    "enum_labels": [],
    "default": "300",
    "type": "coInt",
-   "line": 8567,
+   "line": 8684,
    "derived": false
   },
   "mtcpp": {
@@ -7095,7 +7158,7 @@
    "enum_labels": [],
    "default": "1000000",
    "type": "coInt",
-   "line": 8560,
+   "line": 8677,
    "derived": false
   },
   "new_filament_e_feedrate": {
@@ -7110,7 +7173,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9294,
+   "line": 9411,
    "derived": false
   },
   "new_filament_temp": {
@@ -7125,7 +7188,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9287,
+   "line": 9404,
    "derived": false
   },
   "new_retract_length": {
@@ -7140,7 +7203,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9283,
+   "line": 9400,
    "derived": false
   },
   "new_retract_length_toolchange": {
@@ -7155,7 +7218,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9285,
+   "line": 9402,
    "derived": false
   },
   "next_extruder": {
@@ -7170,7 +7233,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9278,
+   "line": 9395,
    "derived": false
   },
   "next_wipe_x": {
@@ -7185,7 +7248,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9305,
+   "line": 9422,
    "derived": false
   },
   "next_wipe_y": {
@@ -7200,7 +7263,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9306,
+   "line": 9423,
    "derived": false
   },
   "no_check": {
@@ -7215,7 +7278,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8575,
+   "line": 8692,
    "derived": false
   },
   "normative_check": {
@@ -7230,7 +7293,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 8580,
+   "line": 8697,
    "derived": false
   },
   "notes": {
@@ -7245,7 +7308,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 4038,
+   "line": 4140,
    "derived": false
   },
   "nozzle_diameter": {
@@ -7260,7 +7323,7 @@
    "enum_labels": [],
    "default": "0.4",
    "type": "coFloats",
-   "line": 4030,
+   "line": 4132,
    "derived": false
   },
   "nozzle_height": {
@@ -7275,7 +7338,7 @@
    "enum_labels": [],
    "default": "2.5",
    "type": "coFloat",
-   "line": 1870,
+   "line": 1947,
    "derived": false
   },
   "nozzle_hrc": {
@@ -7290,7 +7353,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 3172,
+   "line": 3262,
    "derived": false
   },
   "nozzle_temperature": {
@@ -7305,7 +7368,7 @@
    "enum_labels": [],
    "default": "200",
    "type": "coInts",
-   "line": 5967,
+   "line": 6078,
    "derived": false
   },
   "nozzle_temperature_initial_layer": {
@@ -7320,7 +7383,7 @@
    "enum_labels": [],
    "default": "200",
    "type": "coInts",
-   "line": 2921,
+   "line": 3011,
    "derived": false
   },
   "nozzle_temperature_range_high": {
@@ -7335,7 +7398,7 @@
    "enum_labels": [],
    "default": "240",
    "type": "coInts",
-   "line": 5984,
+   "line": 6095,
    "derived": false
   },
   "nozzle_temperature_range_low": {
@@ -7350,7 +7413,7 @@
    "enum_labels": [],
    "default": "190",
    "type": "coInts",
-   "line": 5976,
+   "line": 6087,
    "derived": false
   },
   "nozzle_type": {
@@ -7370,7 +7433,7 @@
    "enum_labels": [],
    "default": "ntUndefine",
    "type": "coEnum",
-   "line": 3155,
+   "line": 3245,
    "derived": false
   },
   "nozzle_volume": {
@@ -7385,7 +7448,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 4086,
+   "line": 4188,
    "derived": false
   },
   "nozzle_volume_type": {
@@ -7403,7 +7466,7 @@
    "enum_labels": [],
    "default": "fvtStandard",
    "type": "coEnums",
-   "line": 4114,
+   "line": 4216,
    "derived": false
   },
   "num_extruders": {
@@ -7418,7 +7481,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9221,
+   "line": 9338,
    "derived": false
   },
   "num_instances": {
@@ -7433,7 +7496,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9101,
+   "line": 9218,
    "derived": false
   },
   "num_objects": {
@@ -7448,7 +7511,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9097,
+   "line": 9214,
    "derived": false
   },
   "old_filament_e_feedrate": {
@@ -7463,7 +7526,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9293,
+   "line": 9410,
    "derived": false
   },
   "old_filament_temp": {
@@ -7478,7 +7541,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9286,
+   "line": 9403,
    "derived": false
   },
   "old_retract_length": {
@@ -7493,7 +7556,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9282,
+   "line": 9399,
    "derived": false
   },
   "old_retract_length_toolchange": {
@@ -7508,7 +7571,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9284,
+   "line": 9401,
    "derived": false
   },
   "only_one_wall_first_layer": {
@@ -7523,7 +7586,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 1188,
+   "line": 1226,
    "derived": false
   },
   "only_one_wall_top": {
@@ -7538,7 +7601,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 1166,
+   "line": 1204,
    "derived": false
   },
   "ooze_prevention": {
@@ -7553,7 +7616,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4238,
+   "line": 4340,
    "derived": false
   },
   "orient": {
@@ -7568,7 +7631,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 8691,
+   "line": 8808,
    "derived": false
   },
   "other_layers_print_sequence": {
@@ -7583,7 +7646,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInts",
-   "line": 920,
+   "line": 936,
    "derived": false
   },
   "other_layers_print_sequence_nums": {
@@ -7598,7 +7661,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 926,
+   "line": 942,
    "derived": false
   },
   "other_layers_sequence_choice": {
@@ -7616,7 +7679,7 @@
    "enum_labels": [],
    "default": "Auto",
    "type": "coEnum",
-   "line": 941,
+   "line": 957,
    "derived": false
   },
   "outer_wall_acceleration": {
@@ -7631,7 +7694,7 @@
    "enum_labels": [],
    "default": "500",
    "type": "coFloats",
-   "line": 2716,
+   "line": 2806,
    "derived": false
   },
   "outer_wall_jerk": {
@@ -7646,7 +7709,7 @@
    "enum_labels": [],
    "default": "9",
    "type": "coFloats",
-   "line": 2799,
+   "line": 2889,
    "derived": false
   },
   "outer_wall_line_width": {
@@ -7661,7 +7724,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 1740,
+   "line": 1817,
    "derived": false
   },
   "outer_wall_speed": {
@@ -7676,7 +7739,7 @@
    "enum_labels": [],
    "default": "60",
    "type": "coFloats",
-   "line": 1752,
+   "line": 1829,
    "derived": false
   },
   "outputdir": {
@@ -7691,7 +7754,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 8837,
+   "line": 8954,
    "derived": false
   },
   "overall_chamber_temperature": {
@@ -7706,7 +7769,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9167,
+   "line": 9284,
    "derived": false
   },
   "overhang_1_4_speed": {
@@ -7721,7 +7784,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatsOrPercents",
-   "line": 1279,
+   "line": 1317,
    "derived": false
   },
   "overhang_2_4_speed": {
@@ -7736,7 +7799,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatsOrPercents",
-   "line": 1291,
+   "line": 1329,
    "derived": false
   },
   "overhang_3_4_speed": {
@@ -7751,7 +7814,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatsOrPercents",
-   "line": 1303,
+   "line": 1341,
    "derived": false
   },
   "overhang_4_4_speed": {
@@ -7766,7 +7829,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatsOrPercents",
-   "line": 1315,
+   "line": 1353,
    "derived": false
   },
   "overhang_fan_speed": {
@@ -7781,7 +7844,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coInts",
-   "line": 1028,
+   "line": 1044,
    "derived": false
   },
   "overhang_fan_threshold": {
@@ -7810,7 +7873,7 @@
    ],
    "default": "95%",
    "type": "coEnums",
-   "line": 1041,
+   "line": 1057,
    "derived": false
   },
   "overhang_reverse": {
@@ -7825,7 +7888,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 1201,
+   "line": 1239,
    "derived": false
   },
   "overhang_reverse_internal_only": {
@@ -7840,7 +7903,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 1209,
+   "line": 1247,
    "derived": false
   },
   "overhang_reverse_threshold": {
@@ -7855,7 +7918,51 @@
    "enum_labels": [],
    "default": "50%",
    "type": "coFloatOrPercent",
-   "line": 1240,
+   "line": 1278,
+   "derived": false
+  },
+  "overhang_threshold_participating_cooling": {
+   "sidetext": null,
+   "min": null,
+   "max": null,
+   "mode": "Advanced",
+   "aliases": [],
+   "nocli": false,
+   "cli": null,
+   "enum_values": [
+    "0%",
+    "10%",
+    "25%",
+    "50%",
+    "75%",
+    "100%"
+   ],
+   "enum_labels": [
+    "0%",
+    "10%",
+    "25%",
+    "50%",
+    "75%",
+    "100%"
+   ],
+   "default": "95%",
+   "type": "coEnums",
+   "line": 1080,
+   "derived": false
+  },
+  "overhang_totally_speed": {
+   "sidetext": "mm/s or %",
+   "min": 0,
+   "max": null,
+   "mode": "Advanced",
+   "aliases": [],
+   "nocli": false,
+   "cli": null,
+   "enum_values": [],
+   "enum_labels": [],
+   "default": "10",
+   "type": "coFloatsOrPercents",
+   "line": 1365,
    "derived": false
   },
   "pad_around_object": {
@@ -7870,7 +7977,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 7276,
+   "line": 7387,
    "derived": false
   },
   "pad_around_object_everywhere": {
@@ -7885,7 +7992,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 7283,
+   "line": 7394,
    "derived": false
   },
   "pad_brim_size": {
@@ -7900,7 +8007,7 @@
    "enum_labels": [],
    "default": "1.6",
    "type": "coFloat",
-   "line": 7247,
+   "line": 7358,
    "derived": false
   },
   "pad_enable": {
@@ -7915,7 +8022,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 7220,
+   "line": 7331,
    "derived": false
   },
   "pad_max_merge_distance": {
@@ -7930,7 +8037,7 @@
    "enum_labels": [],
    "default": "50.0",
    "type": "coFloat",
-   "line": 7257,
+   "line": 7368,
    "derived": false
   },
   "pad_object_connector_penetration": {
@@ -7945,7 +8052,7 @@
    "enum_labels": [],
    "default": "0.3",
    "type": "coFloat",
-   "line": 7318,
+   "line": 7429,
    "derived": false
   },
   "pad_object_connector_stride": {
@@ -7960,7 +8067,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coFloat",
-   "line": 7300,
+   "line": 7411,
    "derived": false
   },
   "pad_object_connector_width": {
@@ -7975,7 +8082,7 @@
    "enum_labels": [],
    "default": "0.5",
    "type": "coFloat",
-   "line": 7309,
+   "line": 7420,
    "derived": false
   },
   "pad_object_gap": {
@@ -7990,7 +8097,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 7290,
+   "line": 7401,
    "derived": false
   },
   "pad_wall_height": {
@@ -8005,7 +8112,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 7237,
+   "line": 7348,
    "derived": false
   },
   "pad_wall_slope": {
@@ -8020,7 +8127,7 @@
    "enum_labels": [],
    "default": "90.0",
    "type": "coFloat",
-   "line": 7266,
+   "line": 7377,
    "derived": false
   },
   "pad_wall_thickness": {
@@ -8035,7 +8142,7 @@
    "enum_labels": [],
    "default": "2.0",
    "type": "coFloat",
-   "line": 7227,
+   "line": 7338,
    "derived": false
   },
   "parking_pos_retraction": {
@@ -8050,7 +8157,7 @@
    "enum_labels": [],
    "default": "92",
    "type": "coFloat",
-   "line": 4204,
+   "line": 4306,
    "derived": false
   },
   "pellet_flow_coefficient": {
@@ -8065,7 +8172,7 @@
    "enum_labels": [],
    "default": "0.4157",
    "type": "coFloats",
-   "line": 2205,
+   "line": 2282,
    "derived": false
   },
   "pellet_modded_printer": {
@@ -8080,7 +8187,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3296,
+   "line": 3386,
    "derived": false
   },
   "physical_printer_preset": {
@@ -8095,7 +8202,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9217,
+   "line": 9334,
    "derived": false
   },
   "pipe": {
@@ -8110,7 +8217,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 8607,
+   "line": 8724,
    "derived": false
   },
   "plate_name": {
@@ -8125,7 +8232,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9116,
+   "line": 9233,
    "derived": false
   },
   "position": {
@@ -8140,7 +8247,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 8963,
+   "line": 9080,
    "derived": false
   },
   "post_process": {
@@ -8155,7 +8262,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 4336,
+   "line": 4438,
    "derived": false
   },
   "precise_outer_wall": {
@@ -8170,7 +8277,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 1159,
+   "line": 1197,
    "derived": false
   },
   "precise_z_height": {
@@ -8185,7 +8292,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coBool",
-   "line": 3114,
+   "line": 3204,
    "derived": false
   },
   "preferred_orientation": {
@@ -8200,7 +8307,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 582,
+   "line": 598,
    "derived": false
   },
   "preheat_steps": {
@@ -8215,7 +8322,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 5215,
+   "line": 5317,
    "derived": false
   },
   "preheat_time": {
@@ -8230,7 +8337,7 @@
    "enum_labels": [],
    "default": "30.0",
    "type": "coFloat",
-   "line": 5193,
+   "line": 5295,
    "derived": false
   },
   "preset_name": {
@@ -8245,7 +8352,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 692,
+   "line": 708,
    "derived": false
   },
   "preset_names": {
@@ -8260,7 +8367,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 672,
+   "line": 688,
    "derived": false
   },
   "pressure_advance": {
@@ -8275,7 +8382,7 @@
    "enum_labels": [],
    "default": "0.02",
    "type": "coFloats",
-   "line": 1964,
+   "line": 2041,
    "derived": false
   },
   "previous_extruder": {
@@ -8290,7 +8397,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9277,
+   "line": 9394,
    "derived": false
   },
   "prime_tower_brim_chamfer": {
@@ -8305,7 +8412,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 6229,
+   "line": 6340,
    "derived": false
   },
   "prime_tower_brim_chamfer_max_width": {
@@ -8320,7 +8427,7 @@
    "enum_labels": [],
    "default": "4.0",
    "type": "coFloat",
-   "line": 6237,
+   "line": 6348,
    "derived": false
   },
   "prime_tower_brim_width": {
@@ -8335,7 +8442,7 @@
    "enum_labels": [],
    "default": "3",
    "type": "coFloat",
-   "line": 6221,
+   "line": 6332,
    "derived": false
   },
   "prime_tower_enable_framework": {
@@ -8350,7 +8457,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 6322,
+   "line": 6433,
    "derived": false
   },
   "prime_tower_width": {
@@ -8365,7 +8472,7 @@
    "enum_labels": [],
    "default": "60",
    "type": "coFloat",
-   "line": 6206,
+   "line": 6317,
    "derived": false
   },
   "prime_volume": {
@@ -8380,7 +8487,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coFloat",
-   "line": 6182,
+   "line": 6293,
    "derived": false
   },
   "print_bed_max": {
@@ -8395,7 +8502,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 9147,
+   "line": 9264,
    "derived": false
   },
   "print_bed_min": {
@@ -8410,7 +8517,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 9143,
+   "line": 9260,
    "derived": false
   },
   "print_bed_size": {
@@ -8425,7 +8532,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloats",
-   "line": 9151,
+   "line": 9268,
    "derived": false
   },
   "print_compatible_printers": {
@@ -8440,7 +8547,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 1473,
+   "line": 1523,
    "derived": false
   },
   "print_flow_ratio": {
@@ -8455,7 +8562,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 1947,
+   "line": 2024,
    "derived": false
   },
   "print_host": {
@@ -8470,7 +8577,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 606,
+   "line": 622,
    "derived": false
   },
   "print_host_webui": {
@@ -8485,7 +8592,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 616,
+   "line": 632,
    "derived": false
   },
   "print_order": {
@@ -8503,7 +8610,7 @@
    "enum_labels": [],
    "default": "PrintOrder::Default",
    "type": "coEnum",
-   "line": 1488,
+   "line": 1538,
    "derived": false
   },
   "print_preset": {
@@ -8518,7 +8625,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9204,
+   "line": 9321,
    "derived": false
   },
   "print_sequence": {
@@ -8536,7 +8643,7 @@
    "enum_labels": [],
    "default": "PrintSequence::ByLayer",
    "type": "coEnum",
-   "line": 1477,
+   "line": 1527,
    "derived": false
   },
   "print_settings_id": {
@@ -8551,7 +8658,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 4548,
+   "line": 4650,
    "derived": false
   },
   "printable_area": {
@@ -8566,7 +8673,7 @@
    "enum_labels": [],
    "default": "0×0, 200×0, 200×200, 0×200",
    "type": "coPoints",
-   "line": 518,
+   "line": 534,
    "derived": false
   },
   "printable_height": {
@@ -8581,7 +8688,7 @@
    "enum_labels": [],
    "default": "100.0",
    "type": "coFloat",
-   "line": 573,
+   "line": 589,
    "derived": false
   },
   "printer_flow_support": {
@@ -8596,7 +8703,7 @@
    "enum_labels": [],
    "default": "FLOW_MODE_STANDARD",
    "type": "coStrings",
-   "line": 4152,
+   "line": 4254,
    "derived": false
   },
   "printer_model": {
@@ -8611,7 +8718,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 4527,
+   "line": 4629,
    "derived": false
   },
   "printer_notes": {
@@ -8626,7 +8733,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 4533,
+   "line": 4635,
    "derived": false
   },
   "printer_preset": {
@@ -8641,7 +8748,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9213,
+   "line": 9330,
    "derived": false
   },
   "printer_settings_id": {
@@ -8656,7 +8763,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 4553,
+   "line": 4655,
    "derived": false
   },
   "printer_structure": {
@@ -8677,7 +8784,7 @@
    "enum_labels": [],
    "default": "psUndefine",
    "type": "coEnum",
-   "line": 3181,
+   "line": 3271,
    "derived": false
   },
   "printer_technology": {
@@ -8695,7 +8802,7 @@
    "enum_labels": [],
    "default": "ptFFF",
    "type": "coEnum",
-   "line": 510,
+   "line": 526,
    "derived": false
   },
   "printer_variant": {
@@ -8710,7 +8817,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 4542,
+   "line": 4644,
    "derived": false
   },
   "printhost_apikey": {
@@ -8725,7 +8832,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 623,
+   "line": 639,
    "derived": false
   },
   "printhost_authorization_type": {
@@ -8743,7 +8850,7 @@
    "enum_labels": [],
    "default": "atKeyPassword",
    "type": "coEnum",
-   "line": 678,
+   "line": 694,
    "derived": false
   },
   "printhost_cafile": {
@@ -8758,7 +8865,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 639,
+   "line": 655,
    "derived": false
   },
   "printhost_password": {
@@ -8773,7 +8880,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 656,
+   "line": 672,
    "derived": false
   },
   "printhost_port": {
@@ -8788,7 +8895,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 631,
+   "line": 647,
    "derived": false
   },
   "printhost_ssl_ignore_revoke": {
@@ -8803,7 +8910,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 664,
+   "line": 680,
    "derived": false
   },
   "printhost_user": {
@@ -8818,7 +8925,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 649,
+   "line": 665,
    "derived": false
   },
   "printing_by_object_gcode": {
@@ -8833,7 +8940,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 1662,
+   "line": 1739,
    "derived": false
   },
   "process_flow_support": {
@@ -8848,7 +8955,7 @@
    "enum_labels": [],
    "default": "FLOW_MODE_STANDARD",
    "type": "coStrings",
-   "line": 4144,
+   "line": 4246,
    "derived": false
   },
   "project_schema_version": {
@@ -8879,7 +8986,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 5257,
+   "line": 5359,
    "derived": false
   },
   "raft_contact_distance": {
@@ -8894,7 +9001,7 @@
    "enum_labels": [],
    "default": "0.1",
    "type": "coFloat",
-   "line": 4558,
+   "line": 4660,
    "derived": false
   },
   "raft_expansion": {
@@ -8909,7 +9016,7 @@
    "enum_labels": [],
    "default": "1.5",
    "type": "coFloat",
-   "line": 4567,
+   "line": 4669,
    "derived": false
   },
   "raft_first_layer_density": {
@@ -8924,7 +9031,7 @@
    "enum_labels": [],
    "default": "90",
    "type": "coPercent",
-   "line": 4576,
+   "line": 4678,
    "derived": false
   },
   "raft_first_layer_expansion": {
@@ -8939,7 +9046,7 @@
    "enum_labels": [],
    "default": "-1",
    "type": "coFloat",
-   "line": 4586,
+   "line": 4688,
    "derived": false
   },
   "raft_layers": {
@@ -8954,7 +9061,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 4595,
+   "line": 4697,
    "derived": false
   },
   "ramming_line_width_ratio": {
@@ -8969,7 +9076,7 @@
    "enum_labels": [],
    "default": "2.0",
    "type": "coFloat",
-   "line": 5269,
+   "line": 5371,
    "derived": false
   },
   "ramming_pressure_advance_value": {
@@ -8984,7 +9091,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 5282,
+   "line": 5384,
    "derived": false
   },
   "reduce_crossing_wall": {
@@ -8999,7 +9106,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 704,
+   "line": 720,
    "derived": false
   },
   "reduce_fan_stop_start_freq": {
@@ -9014,7 +9121,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 2041,
+   "line": 2118,
    "derived": false
   },
   "reduce_infill_retraction": {
@@ -9029,7 +9136,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4230,
+   "line": 4332,
    "derived": false
   },
   "relative_correction": {
@@ -9044,7 +9151,7 @@
    "enum_labels": [],
    "default": "{ 1., 1.}",
    "type": "coFloats",
-   "line": 6820,
+   "line": 6931,
    "derived": false
   },
   "relative_correction_x": {
@@ -9059,7 +9166,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 6828,
+   "line": 6939,
    "derived": false
   },
   "relative_correction_y": {
@@ -9074,7 +9181,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 6836,
+   "line": 6947,
    "derived": false
   },
   "relative_correction_z": {
@@ -9089,7 +9196,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 6844,
+   "line": 6955,
    "derived": false
   },
   "relative_e_axis": {
@@ -9104,7 +9211,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coBool",
-   "line": 9279,
+   "line": 9396,
    "derived": false
   },
   "repetitions": {
@@ -9119,7 +9226,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 8659,
+   "line": 8776,
    "derived": false
   },
   "required_nozzle_hrc": {
@@ -9151,7 +9258,7 @@
    "enum_labels": [],
    "default": "0.01",
    "type": "coFloat",
-   "line": 4606,
+   "line": 4708,
    "derived": false
   },
   "resonance_avoidance": {
@@ -9166,7 +9273,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3909,
+   "line": 4011,
    "derived": false
   },
   "retract_before_wipe": {
@@ -9181,7 +9288,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercents",
-   "line": 4622,
+   "line": 4724,
    "derived": false
   },
   "retract_length_toolchange": {
@@ -9196,7 +9303,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coFloats",
-   "line": 4663,
+   "line": 4765,
    "derived": false
   },
   "retract_lift_above": {
@@ -9211,7 +9318,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 4730,
+   "line": 4832,
    "derived": false
   },
   "retract_lift_below": {
@@ -9226,7 +9333,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 4737,
+   "line": 4839,
    "derived": false
   },
   "retract_lift_enforce": {
@@ -9246,7 +9353,7 @@
    "enum_labels": [],
    "default": "RetractLiftEnforceType ::rletAllSurfaces",
    "type": "coEnums",
-   "line": 4744,
+   "line": 4846,
    "derived": false
   },
   "retract_restart_extra": {
@@ -9261,7 +9368,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 4759,
+   "line": 4861,
    "derived": false
   },
   "retract_restart_extra_toolchange": {
@@ -9276,7 +9383,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 4767,
+   "line": 4869,
    "derived": false
   },
   "retract_when_changing_layer": {
@@ -9291,7 +9398,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 4629,
+   "line": 4731,
    "derived": false
   },
   "retraction_distances_when_cut": {
@@ -9306,7 +9413,7 @@
    "enum_labels": [],
    "default": "18",
    "type": "coFloats",
-   "line": 4655,
+   "line": 4757,
    "derived": false
   },
   "retraction_length": {
@@ -9321,7 +9428,7 @@
    "enum_labels": [],
    "default": "0.8",
    "type": "coFloats",
-   "line": 4635,
+   "line": 4737,
    "derived": false
   },
   "retraction_minimum_travel": {
@@ -9336,7 +9443,7 @@
    "enum_labels": [],
    "default": "2",
    "type": "coFloats",
-   "line": 4615,
+   "line": 4717,
    "derived": false
   },
   "retraction_speed": {
@@ -9351,7 +9458,7 @@
    "enum_labels": [],
    "default": "30",
    "type": "coFloats",
-   "line": 4775,
+   "line": 4877,
    "derived": false
   },
   "role_based_wipe_speed": {
@@ -9366,7 +9473,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 4943,
+   "line": 5045,
    "derived": false
   },
   "rotate": {
@@ -9381,7 +9488,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 8702,
+   "line": 8819,
    "derived": false
   },
   "rotate_x": {
@@ -9396,7 +9503,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 8708,
+   "line": 8825,
    "derived": false
   },
   "rotate_y": {
@@ -9411,7 +9518,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 8714,
+   "line": 8831,
    "derived": false
   },
   "scale": {
@@ -9426,7 +9533,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coStrings",
-   "line": 9105,
+   "line": 9222,
    "derived": false
   },
   "scan_first_layer": {
@@ -9441,7 +9548,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3141,
+   "line": 3231,
    "derived": false
   },
   "scarf_angle_threshold": {
@@ -9456,7 +9563,7 @@
    "enum_labels": [],
    "default": "155",
    "type": "coInt",
-   "line": 4862,
+   "line": 4964,
    "derived": false
   },
   "scarf_joint_flow_ratio": {
@@ -9471,7 +9578,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 4899,
+   "line": 5001,
    "derived": false
   },
   "scarf_joint_speed": {
@@ -9486,7 +9593,7 @@
    "enum_labels": [],
    "default": "100%",
    "type": "coFloatOrPercent",
-   "line": 4885,
+   "line": 4987,
    "derived": false
   },
   "scarf_overhang_threshold": {
@@ -9501,7 +9608,7 @@
    "enum_labels": [],
    "default": "40",
    "type": "coPercent",
-   "line": 4873,
+   "line": 4975,
    "derived": false
   },
   "seam_gap": {
@@ -9516,7 +9623,7 @@
    "enum_labels": [],
    "default": "10%",
    "type": "coFloatOrPercent",
-   "line": 4834,
+   "line": 4936,
    "derived": false
   },
   "seam_position": {
@@ -9537,7 +9644,7 @@
    "enum_labels": [],
    "default": "spAligned",
    "type": "coEnum",
-   "line": 4810,
+   "line": 4912,
    "derived": false
   },
   "seam_slope_conditional": {
@@ -9552,7 +9659,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4856,
+   "line": 4958,
    "derived": false
   },
   "seam_slope_entire_loop": {
@@ -9567,7 +9674,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4916,
+   "line": 5018,
    "derived": false
   },
   "seam_slope_inner_walls": {
@@ -9582,7 +9689,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4937,
+   "line": 5039,
    "derived": false
   },
   "seam_slope_min_length": {
@@ -9597,7 +9704,7 @@
    "enum_labels": [],
    "default": "20",
    "type": "coFloat",
-   "line": 4922,
+   "line": 5024,
    "derived": false
   },
   "seam_slope_start_height": {
@@ -9612,7 +9719,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 4906,
+   "line": 5008,
    "derived": false
   },
   "seam_slope_steps": {
@@ -9627,7 +9734,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coInt",
-   "line": 4930,
+   "line": 5032,
    "derived": false
   },
   "seam_slope_type": {
@@ -9646,7 +9753,7 @@
    "enum_labels": [],
    "default": "SeamScarfType::None",
    "type": "coEnum",
-   "line": 4843,
+   "line": 4945,
    "derived": false
   },
   "second": {
@@ -9661,7 +9768,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9196,
+   "line": 9313,
    "derived": false
   },
   "second_flush_volume": {
@@ -9676,7 +9783,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9292,
+   "line": 9409,
    "derived": false
   },
   "silent_mode": {
@@ -9691,7 +9798,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3714,
+   "line": 3816,
    "derived": false
   },
   "single_extruder_multi_material": {
@@ -9706,7 +9813,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 5243,
+   "line": 5345,
    "derived": false
   },
   "single_extruder_multi_material_priming": {
@@ -9721,7 +9828,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5296,
+   "line": 5398,
    "derived": false
   },
   "single_loop_draft_shield": {
@@ -9736,7 +9843,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5003,
+   "line": 5105,
    "derived": false
   },
   "skeleton_infill_density": {
@@ -9751,7 +9858,7 @@
    "enum_labels": [],
    "default": "25",
    "type": "coPercent",
-   "line": 3375,
+   "line": 3465,
    "derived": false
   },
   "skeleton_infill_line_width": {
@@ -9766,7 +9873,7 @@
    "enum_labels": [],
    "default": "100%",
    "type": "coFloatOrPercent",
-   "line": 3431,
+   "line": 3521,
    "derived": false
   },
   "skin_infill_density": {
@@ -9781,7 +9888,7 @@
    "enum_labels": [],
    "default": "25",
    "type": "coPercent",
-   "line": 3388,
+   "line": 3478,
    "derived": false
   },
   "skin_infill_depth": {
@@ -9796,7 +9903,7 @@
    "enum_labels": [],
    "default": "2.0",
    "type": "coFloat",
-   "line": 3401,
+   "line": 3491,
    "derived": false
   },
   "skin_infill_line_width": {
@@ -9811,7 +9918,7 @@
    "enum_labels": [],
    "default": "100%",
    "type": "coFloatOrPercent",
-   "line": 3421,
+   "line": 3511,
    "derived": false
   },
   "skip_modified_gcodes": {
@@ -9826,7 +9933,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8889,
+   "line": 9006,
    "derived": false
   },
   "skip_objects": {
@@ -9841,7 +9948,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coInts",
-   "line": 8774,
+   "line": 8891,
    "derived": false
   },
   "skirt_distance": {
@@ -9856,7 +9963,7 @@
    "enum_labels": [],
    "default": "2",
    "type": "coFloat",
-   "line": 4977,
+   "line": 5079,
    "derived": false
   },
   "skirt_height": {
@@ -9871,7 +9978,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 4995,
+   "line": 5097,
    "derived": false
   },
   "skirt_loops": {
@@ -9886,7 +9993,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 5036,
+   "line": 5138,
    "derived": false
   },
   "skirt_speed": {
@@ -9901,7 +10008,7 @@
    "enum_labels": [],
    "default": "50.0",
    "type": "coFloat",
-   "line": 5045,
+   "line": 5147,
    "derived": false
   },
   "skirt_start_angle": {
@@ -9916,7 +10023,7 @@
    "enum_labels": [],
    "default": "-135",
    "type": "coFloat",
-   "line": 4986,
+   "line": 5088,
    "derived": false
   },
   "skirt_type": {
@@ -9934,7 +10041,7 @@
    "enum_labels": [],
    "default": "combined",
    "type": "coEnum",
-   "line": 5024,
+   "line": 5126,
    "derived": false
   },
   "sla_material_settings_id": {
@@ -9949,7 +10056,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 7027,
+   "line": 7138,
    "derived": false
   },
   "sla_print_settings_id": {
@@ -9964,7 +10071,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 7039,
+   "line": 7150,
    "derived": false
   },
   "slice": {
@@ -9979,7 +10086,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 8523,
+   "line": 8640,
    "derived": false
   },
   "slice_closing_radius": {
@@ -9994,7 +10101,7 @@
    "enum_labels": [],
    "default": "0.049",
    "type": "coFloat",
-   "line": 5302,
+   "line": 5404,
    "derived": false
   },
   "slicing_mode": {
@@ -10013,7 +10120,7 @@
    "enum_labels": [],
    "default": "SlicingMode::Regular",
    "type": "coEnum",
-   "line": 5312,
+   "line": 5414,
    "derived": false
   },
   "slow_down_for_layer_cooling": {
@@ -10028,7 +10135,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBools",
-   "line": 1499,
+   "line": 1549,
    "derived": false
   },
   "slow_down_layer_time": {
@@ -10043,7 +10150,7 @@
    "enum_labels": [],
    "default": "5.0",
    "type": "coFloats",
-   "line": 5065,
+   "line": 5167,
    "derived": false
   },
   "slow_down_layers": {
@@ -10058,7 +10165,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInts",
-   "line": 2911,
+   "line": 3001,
    "derived": false
   },
   "slow_down_min_speed": {
@@ -10073,7 +10180,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coFloats",
-   "line": 4021,
+   "line": 4123,
    "derived": false
   },
   "slow_tilt_time": {
@@ -10088,7 +10195,7 @@
    "enum_labels": [],
    "default": "8",
    "type": "coFloat",
-   "line": 6803,
+   "line": 6914,
    "derived": false
   },
   "slowdown_for_curled_perimeters": {
@@ -10103,7 +10210,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBools",
-   "line": 1262,
+   "line": 1300,
    "derived": false
   },
   "small_area_infill_flow_compensation": {
@@ -10118,7 +10225,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3746,
+   "line": 3848,
    "derived": false
   },
   "small_area_infill_flow_compensation_model": {
@@ -10133,7 +10240,7 @@
    "enum_labels": [],
    "default": "0,0\", \"\\n0.2,0.4444\", \"\\n0.4,0.6145\", \"\\n0.6,0.7059\", \"\\n0.8,0.7619\", \"\\n1.5,0.8571\", \"\\n2,0.8889\", \"\\n3,0.9231\", \"\\n5,0.9520\", \"\\n10,1",
    "type": "coStrings",
-   "line": 3752,
+   "line": 3854,
    "derived": false
   },
   "small_perimeter_speed": {
@@ -10148,7 +10255,7 @@
    "enum_labels": [],
    "default": "50%",
    "type": "coFloatsOrPercents",
-   "line": 1762,
+   "line": 1839,
    "derived": false
   },
   "small_perimeter_threshold": {
@@ -10163,7 +10270,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloats",
-   "line": 1774,
+   "line": 1851,
    "derived": false
   },
   "solid_infill_direction": {
@@ -10178,7 +10285,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coFloat",
-   "line": 2501,
+   "line": 2578,
    "derived": false
   },
   "solid_infill_filament": {
@@ -10193,7 +10300,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 5084,
+   "line": 5186,
    "derived": false
   },
   "solid_infill_rotate_template": {
@@ -10208,7 +10315,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 3364,
+   "line": 3454,
    "derived": false
   },
   "sparse_infill_acceleration": {
@@ -10223,7 +10330,7 @@
    "enum_labels": [],
    "default": "100%",
    "type": "coFloatsOrPercents",
-   "line": 2733,
+   "line": 2823,
    "derived": false
   },
   "sparse_infill_density": {
@@ -10238,7 +10345,7 @@
    "enum_labels": [],
    "default": "20",
    "type": "coPercent",
-   "line": 2511,
+   "line": 2588,
    "derived": false
   },
   "sparse_infill_filament": {
@@ -10253,7 +10360,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 3463,
+   "line": 3553,
    "derived": false
   },
   "sparse_infill_line_width": {
@@ -10268,7 +10375,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 3472,
+   "line": 3562,
    "derived": false
   },
   "sparse_infill_pattern": {
@@ -10310,7 +10417,7 @@
    "enum_labels": [],
    "default": "ipCrossHatch",
    "type": "coEnum",
-   "line": 2544,
+   "line": 2621,
    "derived": false
   },
   "sparse_infill_rotate_template": {
@@ -10325,7 +10432,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 3350,
+   "line": 3440,
    "derived": false
   },
   "sparse_infill_speed": {
@@ -10340,7 +10447,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coFloats",
-   "line": 3510,
+   "line": 3612,
    "derived": false
   },
   "spiral_finishing_flow_ratio": {
@@ -10355,7 +10462,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 5153,
+   "line": 5255,
    "derived": false
   },
   "spiral_mode": {
@@ -10370,7 +10477,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5114,
+   "line": 5216,
    "derived": false
   },
   "spiral_mode_max_xy_smoothing": {
@@ -10385,7 +10492,7 @@
    "enum_labels": [],
    "default": "200%",
    "type": "coFloatOrPercent",
-   "line": 5129,
+   "line": 5231,
    "derived": false
   },
   "spiral_mode_smooth": {
@@ -10400,7 +10507,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5122,
+   "line": 5224,
    "derived": false
   },
   "spiral_starting_flow_ratio": {
@@ -10415,7 +10522,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 5142,
+   "line": 5244,
    "derived": false
   },
   "staggered_inner_seams": {
@@ -10430,7 +10537,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4828,
+   "line": 4930,
    "derived": false
   },
   "standby_temperature_delta": {
@@ -10445,7 +10552,7 @@
    "enum_labels": [],
    "default": "-5",
    "type": "coInt",
-   "line": 5181,
+   "line": 5283,
    "derived": false
   },
   "start_end_points": {
@@ -10460,7 +10567,7 @@
    "enum_labels": [],
    "default": "30×-3, 54×245",
    "type": "coPoints",
-   "line": 4222,
+   "line": 4324,
    "derived": false
   },
   "supertack_plate_temp": {
@@ -10475,7 +10582,7 @@
    "enum_labels": [],
    "default": "35",
    "type": "coInts",
-   "line": 724,
+   "line": 740,
    "derived": false
   },
   "supertack_plate_temp_initial_layer": {
@@ -10490,7 +10597,7 @@
    "enum_labels": [],
    "default": "35",
    "type": "coInts",
-   "line": 794,
+   "line": 810,
    "derived": false
   },
   "support_air_filtration": {
@@ -10505,7 +10612,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 3257,
+   "line": 3347,
    "derived": false
   },
   "support_angle": {
@@ -10520,7 +10627,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 5382,
+   "line": 5493,
    "derived": false
   },
   "support_base_diameter": {
@@ -10535,7 +10642,7 @@
    "enum_labels": [],
    "default": "4.0",
    "type": "coFloat",
-   "line": 7137,
+   "line": 7248,
    "derived": false
   },
   "support_base_height": {
@@ -10550,7 +10657,7 @@
    "enum_labels": [],
    "default": "1.0",
    "type": "coFloat",
-   "line": 7147,
+   "line": 7258,
    "derived": false
   },
   "support_base_pattern": {
@@ -10572,7 +10679,7 @@
    "enum_labels": [],
    "default": "smpDefault",
    "type": "coEnum",
-   "line": 5582,
+   "line": 5693,
    "derived": false
   },
   "support_base_pattern_spacing": {
@@ -10587,7 +10694,7 @@
    "enum_labels": [],
    "default": "2.5",
    "type": "coFloat",
-   "line": 5627,
+   "line": 5738,
    "derived": false
   },
   "support_base_safety_distance": {
@@ -10602,7 +10709,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 7156,
+   "line": 7267,
    "derived": false
   },
   "support_bottom_interface_spacing": {
@@ -10617,7 +10724,7 @@
    "enum_labels": [],
    "default": "0.5",
    "type": "coFloat",
-   "line": 5564,
+   "line": 5675,
    "derived": false
   },
   "support_bottom_z_distance": {
@@ -10632,7 +10739,7 @@
    "enum_labels": [],
    "default": "0.2",
    "type": "coFloat",
-   "line": 5435,
+   "line": 5546,
    "derived": false
   },
   "support_buildplate_only": {
@@ -10647,7 +10754,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 7121,
+   "line": 7232,
    "derived": false
   },
   "support_chamber_temp_control": {
@@ -10662,7 +10769,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 3250,
+   "line": 3340,
    "derived": false
   },
   "support_critical_angle": {
@@ -10677,7 +10784,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coFloat",
-   "line": 7166,
+   "line": 7277,
    "derived": false
   },
   "support_critical_regions_only": {
@@ -10692,7 +10799,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5400,
+   "line": 5511,
    "derived": false
   },
   "support_expansion": {
@@ -10707,7 +10814,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 5636,
+   "line": 5747,
    "derived": false
   },
   "support_filament": {
@@ -10722,7 +10829,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 5458,
+   "line": 5569,
    "derived": false
   },
   "support_head_front_diameter": {
@@ -10737,7 +10844,7 @@
    "enum_labels": [],
    "default": "0.4",
    "type": "coFloat",
-   "line": 7052,
+   "line": 7163,
    "derived": false
   },
   "support_head_penetration": {
@@ -10752,7 +10859,7 @@
    "enum_labels": [],
    "default": "0.2",
    "type": "coFloat",
-   "line": 7061,
+   "line": 7172,
    "derived": false
   },
   "support_head_width": {
@@ -10767,7 +10874,7 @@
    "enum_labels": [],
    "default": "1.0",
    "type": "coFloat",
-   "line": 7070,
+   "line": 7181,
    "derived": false
   },
   "support_interface_bottom_layers": {
@@ -10784,7 +10891,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 5521,
+   "line": 5632,
    "derived": false
   },
   "support_interface_filament": {
@@ -10799,7 +10906,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 5493,
+   "line": 5604,
    "derived": false
   },
   "support_interface_loop_pattern": {
@@ -10814,7 +10921,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5486,
+   "line": 5597,
    "derived": false
   },
   "support_interface_min_area": {
@@ -10839,7 +10946,7 @@
    ],
    "default": "0.25",
    "type": "coFloat",
-   "line": 5545,
+   "line": 5656,
    "derived": false
   },
   "support_interface_not_for_body": {
@@ -10854,7 +10961,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 5467,
+   "line": 5578,
    "derived": false
   },
   "support_interface_pattern": {
@@ -10875,7 +10982,7 @@
    "enum_labels": [],
    "default": "smipAuto",
    "type": "coEnum",
-   "line": 5607,
+   "line": 5718,
    "derived": false
   },
   "support_interface_spacing": {
@@ -10890,7 +10997,7 @@
    "enum_labels": [],
    "default": "0.5",
    "type": "coFloat",
-   "line": 5535,
+   "line": 5646,
    "derived": false
   },
   "support_interface_speed": {
@@ -10905,7 +11012,7 @@
    "enum_labels": [],
    "default": "80",
    "type": "coFloats",
-   "line": 5573,
+   "line": 5684,
    "derived": false
   },
   "support_interface_top_layers": {
@@ -10930,7 +11037,7 @@
    ],
    "default": "3",
    "type": "coInt",
-   "line": 5503,
+   "line": 5614,
    "derived": false
   },
   "support_ironing": {
@@ -10945,7 +11052,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5895,
+   "line": 6006,
    "derived": false
   },
   "support_ironing_flow": {
@@ -10960,7 +11067,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coPercent",
-   "line": 5915,
+   "line": 6026,
    "derived": false
   },
   "support_ironing_pattern": {
@@ -10978,7 +11085,7 @@
    "enum_labels": [],
    "default": "ipRectilinear",
    "type": "coEnum",
-   "line": 5903,
+   "line": 6014,
    "derived": false
   },
   "support_ironing_spacing": {
@@ -10993,7 +11100,7 @@
    "enum_labels": [],
    "default": "0.1",
    "type": "coFloat",
-   "line": 5927,
+   "line": 6038,
    "derived": false
   },
   "support_line_width": {
@@ -11008,7 +11115,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 5474,
+   "line": 5585,
    "derived": false
   },
   "support_material_interface_fan_speed": {
@@ -11023,7 +11130,7 @@
    "enum_labels": [],
    "default": "-1",
    "type": "coInts",
-   "line": 2942,
+   "line": 3032,
    "derived": false
   },
   "support_max_bridge_length": {
@@ -11038,7 +11145,7 @@
    "enum_labels": [],
    "default": "15.0",
    "type": "coFloat",
-   "line": 7176,
+   "line": 7287,
    "derived": false
   },
   "support_max_bridges_on_pillar": {
@@ -11053,7 +11160,7 @@
    "enum_labels": [],
    "default": "3",
    "type": "coInt",
-   "line": 7100,
+   "line": 7211,
    "derived": false
   },
   "support_max_pillar_link_distance": {
@@ -11068,7 +11175,7 @@
    "enum_labels": [],
    "default": "10.0",
    "type": "coFloat",
-   "line": 7185,
+   "line": 7296,
    "derived": false
   },
   "support_multi_bed_types": {
@@ -11083,7 +11190,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3302,
+   "line": 3392,
    "derived": false
   },
   "support_object_elevation": {
@@ -11098,7 +11205,7 @@
    "enum_labels": [],
    "default": "5.0",
    "type": "coFloat",
-   "line": 7194,
+   "line": 7305,
    "derived": false
   },
   "support_object_first_layer_gap": {
@@ -11113,7 +11220,7 @@
    "enum_labels": [],
    "default": "0.2",
    "type": "coFloat",
-   "line": 5371,
+   "line": 5482,
    "derived": false
   },
   "support_object_xy_distance": {
@@ -11128,7 +11235,7 @@
    "enum_labels": [],
    "default": "0.35",
    "type": "coFloat",
-   "line": 5360,
+   "line": 5471,
    "derived": false
   },
   "support_on_build_plate_only": {
@@ -11143,7 +11250,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5392,
+   "line": 5503,
    "derived": false
   },
   "support_pillar_connection_mode": {
@@ -11166,7 +11273,7 @@
    ],
    "default": "dynamic",
    "type": "coEnum",
-   "line": 7108,
+   "line": 7219,
    "derived": false
   },
   "support_pillar_diameter": {
@@ -11181,7 +11288,7 @@
    "enum_labels": [],
    "default": "1.0",
    "type": "coFloat",
-   "line": 7080,
+   "line": 7191,
    "derived": false
   },
   "support_pillar_widening_factor": {
@@ -11196,7 +11303,7 @@
    "enum_labels": [],
    "default": "0.0",
    "type": "coFloat",
-   "line": 7128,
+   "line": 7239,
    "derived": false
   },
   "support_points_density_relative": {
@@ -11211,7 +11318,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coInt",
-   "line": 7204,
+   "line": 7315,
    "derived": false
   },
   "support_points_minimal_distance": {
@@ -11226,7 +11333,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 7212,
+   "line": 7323,
    "derived": false
   },
   "support_remove_small_overhang": {
@@ -11241,7 +11348,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 5407,
+   "line": 5518,
    "derived": false
   },
   "support_small_pillar_diameter_percent": {
@@ -11256,7 +11363,7 @@
    "enum_labels": [],
    "default": "50",
    "type": "coPercent",
-   "line": 7090,
+   "line": 7201,
    "derived": false
   },
   "support_speed": {
@@ -11271,7 +11378,7 @@
    "enum_labels": [],
    "default": "80",
    "type": "coFloats",
-   "line": 5644,
+   "line": 5755,
    "derived": false
   },
   "support_style": {
@@ -11294,7 +11401,7 @@
    "enum_labels": [],
    "default": "smsDefault",
    "type": "coEnum",
-   "line": 5653,
+   "line": 5764,
    "derived": false
   },
   "support_threshold_angle": {
@@ -11309,7 +11416,7 @@
    "enum_labels": [],
    "default": "30",
    "type": "coInt",
-   "line": 5689,
+   "line": 5800,
    "derived": false
   },
   "support_threshold_overlap": {
@@ -11324,7 +11431,7 @@
    "enum_labels": [],
    "default": "50%",
    "type": "coFloatOrPercent",
-   "line": 5699,
+   "line": 5810,
    "derived": false
   },
   "support_top_z_distance": {
@@ -11339,7 +11446,7 @@
    "enum_labels": [],
    "default": "0.2",
    "type": "coFloat",
-   "line": 5416,
+   "line": 5527,
    "derived": false
   },
   "support_transition_flow_ratio": {
@@ -11354,7 +11461,7 @@
    "enum_labels": [],
    "default": "1.0",
    "type": "coFloatOrPercent",
-   "line": 5759,
+   "line": 5870,
    "derived": false
   },
   "support_transition_perimeter": {
@@ -11369,7 +11476,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 5743,
+   "line": 5854,
    "derived": false
   },
   "support_transition_speed": {
@@ -11384,7 +11491,7 @@
    "enum_labels": [],
    "default": "50",
    "type": "coFloats",
-   "line": 5750,
+   "line": 5861,
    "derived": false
   },
   "support_type": {
@@ -11404,7 +11511,7 @@
    "enum_labels": [],
    "default": "stNormalAuto",
    "type": "coEnum",
-   "line": 5343,
+   "line": 5454,
    "derived": false
   },
   "supports_enable": {
@@ -11419,7 +11526,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 7045,
+   "line": 7156,
    "derived": false
   },
   "symmetric_infill_y_axis": {
@@ -11434,7 +11541,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 3441,
+   "line": 3531,
    "derived": false
   },
   "temperature_vitrification": {
@@ -11449,7 +11556,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coInts",
-   "line": 2459,
+   "line": 2536,
    "derived": false
   },
   "template_custom_gcode": {
@@ -11464,7 +11571,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 3737,
+   "line": 3839,
    "derived": false
   },
   "textured_cool_plate_temp": {
@@ -11479,7 +11586,7 @@
    "enum_labels": [],
    "default": "40",
    "type": "coInts",
-   "line": 744,
+   "line": 760,
    "derived": false
   },
   "textured_cool_plate_temp_initial_layer": {
@@ -11494,7 +11601,7 @@
    "enum_labels": [],
    "default": "40",
    "type": "coInts",
-   "line": 814,
+   "line": 830,
    "derived": false
   },
   "textured_plate_temp": {
@@ -11509,7 +11616,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coInts",
-   "line": 774,
+   "line": 790,
    "derived": false
   },
   "textured_plate_temp_initial_layer": {
@@ -11524,7 +11631,7 @@
    "enum_labels": [],
    "default": "45",
    "type": "coInts",
-   "line": 843,
+   "line": 859,
    "derived": false
   },
   "thick_bridges": {
@@ -11539,7 +11646,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 1568,
+   "line": 1645,
    "derived": false
   },
   "thick_internal_bridges": {
@@ -11554,7 +11661,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 1576,
+   "line": 1653,
    "derived": false
   },
   "thumb0": {
@@ -11569,7 +11676,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 2097,
+   "line": 2174,
    "derived": false
   },
   "thumb1": {
@@ -11584,7 +11691,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 2103,
+   "line": 2180,
    "derived": false
   },
   "thumbnail_size": {
@@ -11615,7 +11722,7 @@
    "enum_labels": [],
    "default": "48x48/PNG,300x300/PNG",
    "type": "coString",
-   "line": 6469,
+   "line": 6580,
    "derived": false
   },
   "thumbnails_format": {
@@ -11642,7 +11749,7 @@
    ],
    "default": "GCodeThumbnailsFormat::PNG",
    "type": "coEnum",
-   "line": 6476,
+   "line": 6587,
    "derived": false
   },
   "time_cost": {
@@ -11657,7 +11764,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 3241,
+   "line": 3331,
    "derived": false
   },
   "time_lapse_gcode": {
@@ -11672,7 +11779,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coString",
-   "line": 3706,
+   "line": 3808,
    "derived": false
   },
   "timelapse_type": {
@@ -11690,7 +11797,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coEnum",
-   "line": 5164,
+   "line": 5266,
    "derived": false
   },
   "timestamp": {
@@ -11705,7 +11812,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coString",
-   "line": 9177,
+   "line": 9294,
    "derived": false
   },
   "tool_change_temprature_wait": {
@@ -11720,7 +11827,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 2165,
+   "line": 2242,
    "derived": false
   },
   "toolchange_count": {
@@ -11735,7 +11842,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9280,
+   "line": 9397,
    "derived": false
   },
   "top_bottom_infill_wall_overlap": {
@@ -11750,7 +11857,7 @@
    "enum_labels": [],
    "default": "25",
    "type": "coPercent",
-   "line": 3497,
+   "line": 3587,
    "derived": false
   },
   "top_color_penetration_layers": {
@@ -11765,7 +11872,7 @@
    "enum_labels": [],
    "default": "4",
    "type": "coInt",
-   "line": 6067,
+   "line": 6178,
    "derived": false
   },
   "top_shell_layers": {
@@ -11780,7 +11887,7 @@
    "enum_labels": [],
    "default": "4",
    "type": "coInt",
-   "line": 6044,
+   "line": 6155,
    "derived": false
   },
   "top_shell_thickness": {
@@ -11795,7 +11902,7 @@
    "enum_labels": [],
    "default": "0.6",
    "type": "coFloat",
-   "line": 6055,
+   "line": 6166,
    "derived": false
   },
   "top_solid_infill_flow_ratio": {
@@ -11810,7 +11917,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 1137,
+   "line": 1175,
    "derived": false
   },
   "top_surface_acceleration": {
@@ -11825,7 +11932,7 @@
    "enum_labels": [],
    "default": "500",
    "type": "coFloats",
-   "line": 2708,
+   "line": 2798,
    "derived": false
   },
   "top_surface_density": {
@@ -11840,7 +11947,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercent",
-   "line": 6076,
+   "line": 6187,
    "derived": false
   },
   "top_surface_jerk": {
@@ -11855,7 +11962,7 @@
    "enum_labels": [],
    "default": "9",
    "type": "coFloats",
-   "line": 2815,
+   "line": 2905,
    "derived": false
   },
   "top_surface_line_width": {
@@ -11870,7 +11977,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloatOrPercent",
-   "line": 6023,
+   "line": 6134,
    "derived": false
   },
   "top_surface_pattern": {
@@ -11894,7 +12001,7 @@
    "enum_labels": [],
    "default": "ipMonotonicLine",
    "type": "coEnum",
-   "line": 1699,
+   "line": 1776,
    "derived": false
   },
   "top_surface_speed": {
@@ -11909,7 +12016,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coFloats",
-   "line": 6035,
+   "line": 6146,
    "derived": false
   },
   "total_layer_count": {
@@ -11924,7 +12031,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9047,
+   "line": 9164,
    "derived": false
   },
   "total_toolchanges": {
@@ -11939,7 +12046,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9031,
+   "line": 9148,
    "derived": false
   },
   "travel_acceleration": {
@@ -11954,7 +12061,7 @@
    "enum_labels": [],
    "default": "10000",
    "type": "coFloats",
-   "line": 2700,
+   "line": 2777,
    "derived": false
   },
   "travel_jerk": {
@@ -11969,7 +12076,7 @@
    "enum_labels": [],
    "default": "12",
    "type": "coFloats",
-   "line": 2839,
+   "line": 2929,
    "derived": false
   },
   "travel_point_1_x": {
@@ -11984,7 +12091,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9295,
+   "line": 9412,
    "derived": false
   },
   "travel_point_1_y": {
@@ -11999,7 +12106,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9296,
+   "line": 9413,
    "derived": false
   },
   "travel_point_2_x": {
@@ -12014,7 +12121,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9297,
+   "line": 9414,
    "derived": false
   },
   "travel_point_2_y": {
@@ -12029,7 +12136,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9298,
+   "line": 9415,
    "derived": false
   },
   "travel_point_3_x": {
@@ -12044,7 +12151,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9299,
+   "line": 9416,
    "derived": false
   },
   "travel_point_3_y": {
@@ -12059,7 +12166,22 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9300,
+   "line": 9417,
+   "derived": false
+  },
+  "travel_short_distance_acceleration": {
+   "sidetext": "mm/s²",
+   "min": 0,
+   "max": null,
+   "mode": "Developer",
+   "aliases": [],
+   "nocli": false,
+   "cli": null,
+   "enum_values": [],
+   "enum_labels": [],
+   "default": "250",
+   "type": "coFloats",
+   "line": 2786,
    "derived": false
   },
   "travel_slope": {
@@ -12074,7 +12196,7 @@
    "enum_labels": [],
    "default": "3",
    "type": "coFloats",
-   "line": 4721,
+   "line": 4823,
    "derived": false
   },
   "travel_speed": {
@@ -12089,7 +12211,7 @@
    "enum_labels": [],
    "default": "120",
    "type": "coFloats",
-   "line": 6100,
+   "line": 6211,
    "derived": false
   },
   "travel_speed_z": {
@@ -12104,7 +12226,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 6108,
+   "line": 6219,
    "derived": false
   },
   "tree_support_adaptive_layer_height": {
@@ -12119,7 +12241,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coBool",
-   "line": 5815,
+   "line": 5926,
    "derived": false
   },
   "tree_support_angle_slow": {
@@ -12134,7 +12256,7 @@
    "enum_labels": [],
    "default": "25",
    "type": "coFloat",
-   "line": 5769,
+   "line": 5880,
    "derived": false
   },
   "tree_support_auto_brim": {
@@ -12149,7 +12271,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coBool",
-   "line": 5821,
+   "line": 5932,
    "derived": false
   },
   "tree_support_branch_angle": {
@@ -12164,7 +12286,7 @@
    "enum_labels": [],
    "default": "40",
    "type": "coFloat",
-   "line": 5710,
+   "line": 5821,
    "derived": false
   },
   "tree_support_branch_angle_organic": {
@@ -12179,7 +12301,7 @@
    "enum_labels": [],
    "default": "40",
    "type": "coFloat",
-   "line": 5721,
+   "line": 5832,
    "derived": false
   },
   "tree_support_branch_diameter": {
@@ -12194,7 +12316,7 @@
    "enum_labels": [],
    "default": "5",
    "type": "coFloat",
-   "line": 5845,
+   "line": 5956,
    "derived": false
   },
   "tree_support_branch_diameter_angle": {
@@ -12209,7 +12331,7 @@
    "enum_labels": [],
    "default": "5",
    "type": "coFloat",
-   "line": 5855,
+   "line": 5966,
    "derived": false
   },
   "tree_support_branch_diameter_organic": {
@@ -12224,7 +12346,7 @@
    "enum_labels": [],
    "default": "2",
    "type": "coFloat",
-   "line": 5869,
+   "line": 5980,
    "derived": false
   },
   "tree_support_branch_distance": {
@@ -12239,7 +12361,7 @@
    "enum_labels": [],
    "default": "5",
    "type": "coFloat",
-   "line": 5781,
+   "line": 5892,
    "derived": false
   },
   "tree_support_branch_distance_organic": {
@@ -12254,7 +12376,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloat",
-   "line": 5791,
+   "line": 5902,
    "derived": false
   },
   "tree_support_brim_width": {
@@ -12269,7 +12391,7 @@
    "enum_labels": [],
    "default": "3",
    "type": "coFloat",
-   "line": 5827,
+   "line": 5938,
    "derived": false
   },
   "tree_support_tip_diameter": {
@@ -12284,7 +12406,7 @@
    "enum_labels": [],
    "default": "0.8",
    "type": "coFloat",
-   "line": 5834,
+   "line": 5945,
    "derived": false
   },
   "tree_support_top_rate": {
@@ -12299,7 +12421,7 @@
    "enum_labels": [],
    "default": "30",
    "type": "coPercent",
-   "line": 5801,
+   "line": 5912,
    "derived": false
   },
   "tree_support_transition_layers": {
@@ -12314,7 +12436,7 @@
    "enum_labels": [],
    "default": "2",
    "type": "coInt",
-   "line": 5733,
+   "line": 5844,
    "derived": false
   },
   "tree_support_wall_count": {
@@ -12329,7 +12451,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 5879,
+   "line": 5990,
    "derived": false
   },
   "tree_support_with_infill": {
@@ -12344,7 +12466,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5888,
+   "line": 5999,
    "derived": false
   },
   "uptodate": {
@@ -12359,7 +12481,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 8536,
+   "line": 8653,
    "derived": false
   },
   "uptodate_filaments": {
@@ -12374,7 +12496,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 8792,
+   "line": 8909,
    "derived": false
   },
   "uptodate_settings": {
@@ -12389,7 +12511,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 8786,
+   "line": 8903,
    "derived": false
   },
   "upward_compatible_machine": {
@@ -12404,7 +12526,7 @@
    "enum_labels": [],
    "default": "",
    "type": "coStrings",
-   "line": 1429,
+   "line": 1479,
    "derived": false
   },
   "use_firmware_retraction": {
@@ -12419,7 +12541,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4791,
+   "line": 4893,
    "derived": false
   },
   "use_relative_e_distances": {
@@ -12434,7 +12556,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 6493,
+   "line": 6604,
    "derived": false
   },
   "wall_direction": {
@@ -12453,7 +12575,7 @@
    "enum_labels": [],
    "default": "WallDirection::Auto",
    "type": "coEnum",
-   "line": 1813,
+   "line": 1890,
    "derived": false
   },
   "wall_distribution_count": {
@@ -12468,7 +12590,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 6555,
+   "line": 6666,
    "derived": false
   },
   "wall_filament": {
@@ -12483,7 +12605,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coInt",
-   "line": 4288,
+   "line": 4390,
    "derived": false
   },
   "wall_generator": {
@@ -12501,7 +12623,7 @@
    "enum_labels": [],
    "default": "PerimeterGeneratorType::Arachne",
    "type": "coEnum",
-   "line": 6502,
+   "line": 6613,
    "derived": false
   },
   "wall_infill_order": {
@@ -12532,7 +12654,7 @@
    "enum_labels": [],
    "default": "2",
    "type": "coInt",
-   "line": 4319,
+   "line": 4421,
    "derived": false
   },
   "wall_sequence": {
@@ -12551,7 +12673,7 @@
    "enum_labels": [],
    "default": "WallSequence::InnerOuter",
    "type": "coEnum",
-   "line": 1783,
+   "line": 1860,
    "derived": false
   },
   "wall_transition_angle": {
@@ -12566,7 +12688,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coFloat",
-   "line": 6542,
+   "line": 6653,
    "derived": false
   },
   "wall_transition_filter_deviation": {
@@ -12581,7 +12703,7 @@
    "enum_labels": [],
    "default": "25",
    "type": "coPercent",
-   "line": 6527,
+   "line": 6638,
    "derived": false
   },
   "wall_transition_length": {
@@ -12596,7 +12718,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercent",
-   "line": 6516,
+   "line": 6627,
    "derived": false
   },
   "wipe": {
@@ -12611,7 +12733,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBools",
-   "line": 6118,
+   "line": 6229,
    "derived": false
   },
   "wipe_before_external_loop": {
@@ -12626,7 +12748,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4956,
+   "line": 5058,
    "derived": false
   },
   "wipe_distance": {
@@ -12641,7 +12763,7 @@
    "enum_labels": [],
    "default": "1",
    "type": "coFloats",
-   "line": 6125,
+   "line": 6236,
    "derived": false
   },
   "wipe_on_loops": {
@@ -12656,7 +12778,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 4950,
+   "line": 5052,
    "derived": false
   },
   "wipe_speed": {
@@ -12671,7 +12793,7 @@
    "enum_labels": [],
    "default": "80%",
    "type": "coFloatOrPercent",
-   "line": 4966,
+   "line": 5068,
    "derived": false
   },
   "wipe_tower_bridging": {
@@ -12686,7 +12808,7 @@
    "enum_labels": [],
    "default": "10",
    "type": "coFloat",
-   "line": 6360,
+   "line": 6471,
    "derived": false
   },
   "wipe_tower_cone_angle": {
@@ -12701,7 +12823,7 @@
    "enum_labels": [],
    "default": "30.0",
    "type": "coFloat",
-   "line": 6247,
+   "line": 6358,
    "derived": false
   },
   "wipe_tower_extra_flow": {
@@ -12716,7 +12838,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercent",
-   "line": 6376,
+   "line": 6487,
    "derived": false
   },
   "wipe_tower_extra_rib_length": {
@@ -12731,7 +12853,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 6281,
+   "line": 6392,
    "derived": false
   },
   "wipe_tower_extra_spacing": {
@@ -12746,7 +12868,7 @@
    "enum_labels": [],
    "default": "100",
    "type": "coPercent",
-   "line": 6367,
+   "line": 6478,
    "derived": false
   },
   "wipe_tower_filament": {
@@ -12761,7 +12883,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coInt",
-   "line": 6304,
+   "line": 6415,
    "derived": false
   },
   "wipe_tower_fillet_wall": {
@@ -12776,7 +12898,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 6298,
+   "line": 6409,
    "derived": false
   },
   "wipe_tower_max_purge_speed": {
@@ -12791,7 +12913,7 @@
    "enum_labels": [],
    "default": "90",
    "type": "coFloat",
-   "line": 6257,
+   "line": 6368,
    "derived": false
   },
   "wipe_tower_no_sparse_layers": {
@@ -12806,7 +12928,7 @@
    "enum_labels": [],
    "default": "false",
    "type": "coBool",
-   "line": 5288,
+   "line": 5390,
    "derived": false
   },
   "wipe_tower_per_color_wipe": {
@@ -12837,7 +12959,7 @@
    "enum_labels": [],
    "default": "8",
    "type": "coFloat",
-   "line": 6290,
+   "line": 6401,
    "derived": false
   },
   "wipe_tower_rotation_angle": {
@@ -12852,7 +12974,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 6214,
+   "line": 6325,
    "derived": false
   },
   "wipe_tower_wall_gap": {
@@ -12867,7 +12989,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBool",
-   "line": 6314,
+   "line": 6425,
    "derived": false
   },
   "wipe_tower_wall_type": {
@@ -12890,7 +13012,7 @@
    ],
    "default": "wtwRectangle",
    "type": "coEnum",
-   "line": 6265,
+   "line": 6376,
    "derived": false
   },
   "wipe_tower_x": {
@@ -12905,7 +13027,7 @@
    "enum_labels": [],
    "default": "15",
    "type": "coFloats",
-   "line": 6190,
+   "line": 6301,
    "derived": false
   },
   "wipe_tower_y": {
@@ -12920,7 +13042,7 @@
    "enum_labels": [],
    "default": "220",
    "type": "coFloats",
-   "line": 6198,
+   "line": 6309,
    "derived": false
   },
   "wiping_volumes_extruders": {
@@ -12935,7 +13057,7 @@
    "enum_labels": [],
    "default": "70, 70, 70, 70, 70, 70, 70, 70, 70, 70",
    "type": "coFloats",
-   "line": 6328,
+   "line": 6439,
    "derived": false
   },
   "x_after_toolchange": {
@@ -12950,7 +13072,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9288,
+   "line": 9405,
    "derived": false
   },
   "xy_contour_compensation": {
@@ -12965,7 +13087,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 6430,
+   "line": 6541,
    "derived": false
   },
   "xy_hole_compensation": {
@@ -12980,7 +13102,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 6420,
+   "line": 6531,
    "derived": false
   },
   "y_after_toolchange": {
@@ -12995,7 +13117,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9289,
+   "line": 9406,
    "derived": false
   },
   "year": {
@@ -13010,7 +13132,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coInt",
-   "line": 9181,
+   "line": 9298,
    "derived": false
   },
   "z_after_toolchange": {
@@ -13025,7 +13147,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 9290,
+   "line": 9407,
    "derived": false
   },
   "z_hop": {
@@ -13040,7 +13162,7 @@
    "enum_labels": [],
    "default": "0.4",
    "type": "coFloats",
-   "line": 4674,
+   "line": 4776,
    "derived": false
   },
   "z_hop_types": {
@@ -13060,7 +13182,7 @@
    "enum_labels": [],
    "default": "ZHopType::zhtSlope",
    "type": "coEnums",
-   "line": 4701,
+   "line": 4803,
    "derived": false
   },
   "z_hop_when_prime": {
@@ -13075,7 +13197,7 @@
    "enum_labels": [],
    "default": "true",
    "type": "coBools",
-   "line": 4716,
+   "line": 4818,
    "derived": false
   },
   "z_offset": {
@@ -13090,7 +13212,7 @@
    "enum_labels": [],
    "default": "0",
    "type": "coFloat",
-   "line": 5326,
+   "line": 5437,
    "derived": false
   },
   "zhop": {
@@ -13105,7 +13227,7 @@
    "enum_labels": [],
    "default": null,
    "type": "coFloat",
-   "line": 8954,
+   "line": 9071,
    "derived": false
   }
  }

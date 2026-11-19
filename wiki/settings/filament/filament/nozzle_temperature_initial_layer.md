@@ -2,6 +2,7 @@
 
 > Location: Filament → Filament → Print temperature
 > 本小节同时涵盖：`nozzle_temperature`（各另有独立文档）。
+> gcode 嵌入名：`first_layer_temperature`（gcode 注释段写旧名，值取本键；自定义 g-code 占位符新旧两名并存）。
 
 ---
 

@@ -11,6 +11,7 @@
 - ✅ [`filament_is_support`](filament/filament_is_support.md)（Basic information）
 - ✅ [`required_nozzle_HRC`](filament/required_nozzle_hrc.md)（Basic information）
 - ✅ [`default_filament_colour`](filament/default_filament_colour.md)（Basic information）
+- 🚧 [`filament_colour`](filament/filament_colour.md)（Basic information，编辑入口在左侧面板耗材色块）
 - ✅ [`filament_diameter`](filament/filament_diameter.md)（Basic information）
 - ✅ [`filament_density`](filament/filament_density.md)（Basic information）
 - ✅ [`filament_shrink`](filament/filament_shrink.md)（Basic information）
@@ -65,8 +66,11 @@
 - ✅ [`slow_down_for_layer_cooling`](cooling/slow_down_for_layer_cooling.md)（Part cooling fan）
 - ✅ [`dont_slow_down_outer_wall`](cooling/dont_slow_down_outer_wall.md)（Part cooling fan）
 - ✅ [`slow_down_min_speed`](cooling/slow_down_min_speed.md)（Part cooling fan）
+- 🚧 [`cooling_slowdown_logic`](cooling/cooling_slowdown_logic.md)（Part cooling fan）
+- 🚧 [`cooling_perimeter_transition_distance`](cooling/cooling_perimeter_transition_distance.md)（Part cooling fan）
 - ✅ [`enable_overhang_bridge_fan`](cooling/enable_overhang_bridge_fan.md)（Part cooling fan）
 - ✅ [`overhang_fan_threshold`](cooling/overhang_fan_threshold.md)（Part cooling fan）
+- 🚧 [`overhang_threshold_participating_cooling`](cooling/overhang_threshold_participating_cooling.md)（Part cooling fan）
 - ✅ [`overhang_fan_speed`](cooling/overhang_fan_speed.md)（Part cooling fan）
 - ✅ [`internal_bridge_fan_speed`](cooling/internal_bridge_fan_speed.md)（Part cooling fan）
 - ✅ [`support_material_interface_fan_speed`](cooling/support_material_interface_fan_speed.md)（Part cooling fan）
@@ -131,4 +135,4 @@
 
 - 🚧 [`filament_notes`](notes/filament_notes.md)（Notes）
 
-共 107 键：84 拷贝 / 5 占位 / 18 交叉引用。
+共 111 键：84 拷贝 / 9 占位 / 18 交叉引用。

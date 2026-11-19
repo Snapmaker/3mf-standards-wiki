@@ -2,6 +2,7 @@
 
 > Location: Process → Quality → Layer height
 > 本小节同时涵盖：`layer_height`（各另有独立文档）。
+> gcode 嵌入名：`first_layer_height`（gcode 注释段写旧名，值取本键；占位符 `first_layer_height` 与 `initial_layer_print_height` 并存）。
 
 ---
 

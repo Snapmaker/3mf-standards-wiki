@@ -129,6 +129,7 @@
 - ✅ [`gap_fill_target`](strength/gap_fill_target.md)（Infill）
 - ✅ [`filter_out_gap_fill`](strength/filter_out_gap_fill.md)（Infill）
 - ✅ [`infill_wall_overlap`](strength/infill_wall_overlap.md)（Infill）
+- 🚧 [`external_infill_margin`](strength/external_infill_margin.md)（Infill）
 - ✅ [`align_infill_direction_to_model`](strength/align_infill_direction_to_model.md)（Advanced）
 - ✅ [`extra_solid_infills`](strength/extra_solid_infills.md)（Advanced）
 - ✅ [`bridge_angle`](strength/bridge_angle.md)（Advanced）
@@ -162,6 +163,7 @@
 - ✅ [`overhang_2_4_speed`](speed/overhang_2_4_speed.md)（Overhang speed）
 - ✅ [`overhang_3_4_speed`](speed/overhang_3_4_speed.md)（Overhang speed）
 - ✅ [`overhang_4_4_speed`](speed/overhang_4_4_speed.md)（Overhang speed）
+- 🚧 [`overhang_totally_speed`](speed/overhang_totally_speed.md)（Overhang speed）
 - 🚧 [`bridge_speed`](speed/bridge_speed.md)（Overhang speed）
 - 🚧 [`internal_bridge_speed`](speed/internal_bridge_speed.md)（Overhang speed）
 - ✅ [`travel_speed`](speed/travel_speed.md)（Travel speed）
@@ -175,6 +177,7 @@
 - ✅ [`first_layer_travel_acceleration`](speed/first_layer_travel_acceleration.md)（Acceleration）
 - ✅ [`top_surface_acceleration`](speed/top_surface_acceleration.md)（Acceleration）
 - ✅ [`travel_acceleration`](speed/travel_acceleration.md)（Acceleration）
+- 🚧 [`travel_short_distance_acceleration`](speed/travel_short_distance_acceleration.md)（Acceleration）
 - ✅ [`accel_to_decel_enable`](speed/accel_to_decel_enable.md)（Acceleration）
 - ✅ [`accel_to_decel_factor`](speed/accel_to_decel_factor.md)（Acceleration）
 - ✅ [`default_jerk`](speed/default_jerk.md)（Jerk(XY)）
@@ -306,6 +309,7 @@
 - ✅ [`brim_ears_max_angle`](others/brim_ears_max_angle.md)（Brim）
 - ✅ [`brim_ears_detection_length`](others/brim_ears_detection_length.md)（Brim）
 - ✅ [`slicing_mode`](others/slicing_mode.md)（Special mode）
+- 🚧 [`enable_overlap_area_carving`](others/enable_overlap_area_carving.md)（Special mode）
 - ✅ [`print_sequence`](others/print_sequence.md)（Special mode）
 - ✅ [`print_order`](others/print_order.md)（Special mode）
 - ✅ [`spiral_mode`](others/spiral_mode.md)（Special mode）
@@ -343,4 +347,4 @@
 
 > Frequent 页为常用参数聚合页，其键均来自上述主页面（`layer_height`、`sparse_infill_density`、`wall_loops`、`enable_support`），不重复建档。
 
-共 311 键：303 拷贝 / 8 占位 / 0 交叉引用。
+共 315 键：303 拷贝 / 12 占位 / 0 交叉引用。
