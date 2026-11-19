@@ -14,7 +14,7 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-arc-fitting=disabled`.  
 > [!IMPORTANT]
 > NEW FEATURE: **Sparse infill only arc fitting**  
-> Available in: [Nightly builds](https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/nightly-builds) or Releases greater than **2.4.2**.
+> Available in: nightly builds or releases greater than **2.4.2**.
 
 Replaces many short straight moves (G1 segments) with fewer circular arc commands using [G2 and G3](https://marlinfw.org/docs/gcode/G002-G003.html).  
 
@@ -26,7 +26,7 @@ Walls and surfaces are fitted within the [Resolution](#resolution), while sparse
 
 Arc fitting mainly changes how the toolpath is *encoded* in G-code. It can be beneficial in some workflows, but it is not a feature to improve print quality.
 
-![arc-fitting](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Precision/arc-fitting.svg?raw=true)
+![arc-fitting](../../../images/precision/arc-fitting.svg)
 
 > [!IMPORTANT]
 > Ensure that the printer supports G2/G3 commands!

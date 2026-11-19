@@ -27,6 +27,6 @@ Each option lays the interface lines out differently, and all of them are measur
 
 > [!IMPORTANT]
 > NEW FEATURE: **Spiral Inset interface pattern**  
-> Available in: [Nightly builds](https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/nightly-builds) or Releases greater than **2.4.2**.
+> Available in: nightly builds or releases greater than **2.4.2**.
 
 If [Interface spacing](#interface-spacing) is wide enough that the interface is no longer solid, `Default` and `Rectilinear` switch to the base support pattern so that the sparse lines still anchor to each other.

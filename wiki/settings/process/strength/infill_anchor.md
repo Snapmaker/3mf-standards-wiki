@@ -24,8 +24,8 @@ With the [Line](../../process/strength/sparse_infill_pattern.md) pattern both se
 
 - **Anchor Off**
 
-![InfillAnchorOff](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/InfillAnchorOff.png?raw=true)
+![InfillAnchorOff](../../../images/fill/InfillAnchorOff.png)
 
 - **Anchor On**
 
-![InfillAnchorOn](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/InfillAnchorOn.png?raw=true)
+![InfillAnchorOn](../../../images/fill/InfillAnchorOn.png)

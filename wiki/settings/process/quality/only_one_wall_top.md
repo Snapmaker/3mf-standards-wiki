@@ -15,7 +15,7 @@
 Use only one wall on flat surfaces, to give more space to the [top infill pattern](../../process/strength/bottom_surface_pattern.md).
 Especially useful in small features, like letters, where the top surface is very small and [concentric pattern](../../process/strength/sparse_infill_pattern.md) from walls would not cover it properly.
 
-![only-one-wall](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Wall-Order/only-one-wall.gif?raw=true)
+![only-one-wall](../../../images/wall-order/only-one-wall.gif)
 
 Each option needs the shell it acts on, so they are only available when the matching [Shell Layers](../../process/strength/bottom_shell_layers.md) is greater than 0: without a top shell there is no top surface for the top option to act on, and the same applies to the first layer and the bottom shell.
 

@@ -15,7 +15,7 @@
 If a top surface has to be printed and it's partially covered by another layer, it won't be considered as a top layer where its width is below this value. This can be useful to keep *Only one wall on top surfaces* from triggering on surfaces that should be covered only by walls.  
 This value can be in mm or a % of the inner wall line width.
 
-![only-one-wall-threshold](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Wall-Order/only-one-wall-threshold.png?raw=true)
+![only-one-wall-threshold](../../../images/wall-order/only-one-wall-threshold.png)
 
 > [!WARNING]
 > If enabled, artifacts can be created if you have some thin features on the next layer, like letters. Set this setting to 0 to remove these artifacts.

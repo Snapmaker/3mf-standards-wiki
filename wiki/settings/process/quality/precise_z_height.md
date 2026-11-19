@@ -19,8 +19,8 @@ By enabling this parameter, the layer height of the last five layers is adjusted
 
 - **Precise Z Height Off**
 
-  ![PreciseZOff](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Precision/PreciseZOff.png?raw=true)
+  ![PreciseZOff](../../../images/precision/PreciseZOff.png)
 
 - **Precise Z Height On**
 
-  ![PreciseZOn](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Precision/PreciseZOn.png?raw=true)
+  ![PreciseZOn](../../../images/precision/PreciseZOn.png)

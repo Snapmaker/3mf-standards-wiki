@@ -18,8 +18,8 @@ This option creates bridges for counterbore holes, allowing them to be printed w
 Available modes include:
 
 - **None:** No bridge is created.  
-  ![bridge-counterbore-none](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/bridging/bridge-counterbore-none.png?raw=true)
+  ![bridge-counterbore-none](../../../images/bridging/bridge-counterbore-none.png)
 - **Partially bridged:** Only a part of the unsupported area will be bridged, creating a supporting layer for the next layer.  
-  ![bridge-counterbore-partially](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/bridging/bridge-counterbore-partially.gif?raw=true)
+  ![bridge-counterbore-partially](../../../images/bridging/bridge-counterbore-partially.gif)
 - **Sacrificial layer:** A full sacrificial bridge layer is created. This will close the counterbore hole, allowing the next layer to be printed without sagging. The sacrificial layer must be broken through after printing.  
-  ![bridge-counterbore-sacrificial](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/bridging/bridge-counterbore-sacrificial.png?raw=true)
+  ![bridge-counterbore-sacrificial](../../../images/bridging/bridge-counterbore-sacrificial.png)

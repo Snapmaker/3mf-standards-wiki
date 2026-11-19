@@ -16,7 +16,7 @@ This setting allows the selected [infill pattern](#sparse-infill-pattern) to be 
 
 To check which patterns support multiline infill, see the Patterns Quick Reference table in the [Infill Patterns Wiki List](../../process/strength/sparse_infill_pattern.md) or each pattern's specifics in the [Patterns section](../../process/strength/sparse_infill_pattern.md).
 
-![multiline-infill](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/multiline-infill.png?raw=true)
+![multiline-infill](../../../images/fill/multiline-infill.png)
 
 > [!NOTE]
 > Orca's approach is different from other slicers that simply multiply the number of lines and material usage, generating a denser infill than expected.  

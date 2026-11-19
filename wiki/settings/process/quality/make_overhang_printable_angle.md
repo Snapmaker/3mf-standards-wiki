@@ -14,7 +14,7 @@
 Maximum angle of overhangs to allow after making steeper overhangs printable.  
 90° will not change the model at all and allow any overhang, while 0 will replace all overhangs with conical material.
 
-![overhang-printable](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/overhangs/overhang-printable.png?raw=true)
+![overhang-printable](../../../images/overhangs/overhang-printable.png)
 
 > [!TIP]
 > Usually, a value between 45° and 60° works well for most printers and models.

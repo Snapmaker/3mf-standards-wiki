@@ -11,7 +11,7 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `scarf_joint_flow_ratio`.  
 Adjusts the extrusion flow rate at seam points to create a smooth overlap between the start and end of each loop, minimizing visible defects.
 
-![scarf-joint-seam](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/seam/scarf-joint-seam.png?raw=true)
+![scarf-joint-seam](../../../images/seam/scarf-joint-seam.png)
 
 Advantages:
 

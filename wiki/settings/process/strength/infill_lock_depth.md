@@ -19,16 +19,16 @@ When using this fill, you can individually modify the density of the skeleton an
 The **Infill shift step** of [Cross Zag](#cross-zag) also applies to Locked Zag, but it only shifts the skin. The skeleton is not shifted.
 
 - **Strength**
-    - **Horizontal (X-Y):** Normal-Low ![level-to-better-3](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-better-3.svg?raw=true)
-    - **Vertical (Z):** Normal-Low ![level-to-better-3](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-better-3.svg?raw=true)
+    - **Horizontal (X-Y):** Normal-Low ![level-to-better-3](../../../images/misc/level-to-better-3.svg)
+    - **Vertical (Z):** Normal-Low ![level-to-better-3](../../../images/misc/level-to-better-3.svg)
 - **Density Calculation:** Similar to [Zig Zag](#zig-zag).
 Skeleton density * (Infill area - Skin area + Lock depth area) + (Skin density * Skin area).
-    - **Material Usage:** Ultra-High ![level-to-worse-8](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-8.svg?raw=true)
-    - **Print Time:** Extra-High ![level-to-worse-7](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-7.svg?raw=true)
-        - **Material/Time (Higher better):** Normal ![level-to-better-4](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-better-4.svg?raw=true)
+    - **Material Usage:** Ultra-High ![level-to-worse-8](../../../images/misc/level-to-worse-8.svg)
+    - **Print Time:** Extra-High ![level-to-worse-7](../../../images/misc/level-to-worse-7.svg)
+        - **Material/Time (Higher better):** Normal ![level-to-better-4](../../../images/misc/level-to-better-4.svg)
         - **Layer time Variability:** None
-    - **Slicing Time:** Normal ![level-to-worse-4](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-4.svg?raw=true)
-    - **G-code Size:** Normal-High ![level-to-worse-5](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/misc/level-to-worse-5.svg?raw=true)
+    - **Slicing Time:** Normal ![level-to-worse-4](../../../images/misc/level-to-worse-4.svg)
+    - **G-code Size:** Normal-High ![level-to-worse-5](../../../images/misc/level-to-worse-5.svg)
 - **Extra:**
     - **[Multiline](../../process/strength/fill_multiline.md):** No
     - **[Symmetric infill Y axis](../../process/strength/symmetric_infill_y_axis.md):** Yes
@@ -36,4 +36,4 @@ Skeleton density * (Infill area - Skin area + Lock depth area) + (Skin density *
 - **Applies to:**
     - **[Sparse Infill](../../process/strength/sparse_infill_density.md)**
 
-![infill-top-locked-zag](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/infill-top-locked-zag.png?raw=true)
+![infill-top-locked-zag](../../../images/fill/infill-top-locked-zag.png)

@@ -16,4 +16,4 @@ Number of skirt loops to print.
 Usually 2 loops are recommended, but more loops improve priming and give a larger buffer between the nozzle and the part, at the cost of extra filament and time.  
 Set to 0 to disable the skirt.
 
-![skirt](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/skirt/skirt.png?raw=true)
+![skirt](../../../images/skirt/skirt.png)

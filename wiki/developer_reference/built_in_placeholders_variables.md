@@ -65,7 +65,7 @@
 ## 深入阅读
 
 - [G-code 文件规范](../specification/gcode.3mf/gcode_standard.md)：G-code 自描述块与统计段和这些占位符同源
-- 上游完整清单（约 170 个变量、逐 G-code 字段对照表）：[OrcaSlicer wiki: built_in_placeholders_variables](https://github.com/OrcaSlicer/OrcaSlicer/wiki/built_in_placeholders_variables)
+- 上游完整清单（约 170 个变量、逐 G-code 字段对照表）：上游完整清单见 OrcaSlicer wiki 的 built_in_placeholders_variables 页
 
 > [!NOTE]
 > 占位符集合随版本演进，上游与 fork 存在差异（如新旧键名并存）。拿不准时直接在自定义 G-code 里实测验证。

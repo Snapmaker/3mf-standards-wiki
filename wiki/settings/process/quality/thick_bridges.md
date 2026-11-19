@@ -14,7 +14,7 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--thick-bridges=1`.  
 
 When enabled, bridge extrusion uses a line height equal to the nozzle diameter.  
-![thick-bridges](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/bridging/thick-bridges.png?raw=true)  
+![thick-bridges](../../../images/bridging/thick-bridges.png)  
 This improves the strength and reliability of bridges, allowing you to span longer distances; however, it may produce a rougher surface finish.  
 Disabling this option can improve bridge appearance, but it is recommended only for shorter spans or when using large nozzles.  
 It's recommended to enable this option for internal bridges, as it increases their reliability when printed over sparse infill.

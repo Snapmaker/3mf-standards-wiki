@@ -15,7 +15,7 @@
 Speed of the outer wall, which is the outermost, visible wall. It is usually printed slower than the [inner wall](../../process/speed/inner_wall_speed.md) to get better quality and good layer adhesion.
 This setting is also limited by [Machine / Motion ability / Resonance avoidance speed settings](../../../calibration/vfa_calib.md) and by the filament's Max external volumetric speed. [Resonance avoidance](../../printer/motion_ability/resonance_avoidance.md) never raises it above that limit or the [Max volumetric speed](../../filament/filament/filament_max_volumetric_speed.md).  
 It can be excluded from the [layer cooling slowdown](../../filament/cooling/slow_down_for_layer_cooling.md) with [Don't slow down outer walls](../../filament/cooling/dont_slow_down_outer_wall.md).  
-With [Volumetric speeds](https://github.com/OrcaSlicer/OrcaSlicer/wiki/speed_settings_other_layers_speed#volumetric-speeds) enabled, it is set as a volumetric speed instead, 50% by default.
+With volumetric speeds enabled, it is set as a volumetric speed instead, 50% by default.
 
 ## Speed limitations
 

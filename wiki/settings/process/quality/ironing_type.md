@@ -15,8 +15,8 @@
 This setting controls which layers are ironed.
 
 - **All top surfaces**: All [top surfaces](../../process/strength/top_shell_thickness.md) will be ironed. This is the most common setting and is used to smooth out the top layers of the print.  
-  ![ironing-top-surfaces](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/ironing/ironing-top-surfaces.png?raw=true)
+  ![ironing-top-surfaces](../../../images/ironing/ironing-top-surfaces.png)
 - **Topmost surface only**: Only the last [top layer](../../process/strength/top_shell_thickness.md) of each object will be ironed. This is useful for prints where only the last layer needs to be smoothed.  
-  ![ironing-topmost-surface](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/ironing/ironing-topmost-surface.png?raw=true)
+  ![ironing-topmost-surface](../../../images/ironing/ironing-topmost-surface.png)
 - **All solid layers**: All solid layers, including [internal solid infill](../../process/strength/internal_solid_infill_pattern.md) and [top layers](../../process/strength/top_shell_thickness.md), will be ironed. This can be useful for prints that require a very smooth finish on all solid surfaces but may increase print time significantly.  
-    ![ironing-all-solid-layers](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/ironing/ironing-all-solid-layers.png?raw=true)
+    ![ironing-all-solid-layers](../../../images/ironing/ironing-all-solid-layers.png)

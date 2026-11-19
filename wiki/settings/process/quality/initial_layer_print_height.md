@@ -26,7 +26,7 @@ Using smaller layer heights increases print time but results in:
 - Enhanced detail on curves
 - [Better performance on overhangs](#layer-height-overhangs-impacts)
 
-![layer-height-spheres](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Precision/layer-height-spheres.png?raw=true)
+![layer-height-spheres](../../../images/precision/layer-height-spheres.png)
 
 - [Quick Reference](#quick-reference)
 - [Layer Height Guidelines](#layer-height-guidelines)
@@ -64,6 +64,6 @@ A thicker first layer improves bed adhesion and compensates for build surface im
 
 Layer height directly affects overhang angle capability and quality.
 
-![layer-height](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Precision/layer-height.svg?raw=true)
+![layer-height](../../../images/precision/layer-height.svg)
 
 **Smaller layer heights** enable steeper overhangs by reducing the unsupported distance between layers, while **larger layer heights** increase this gap, leading to more sagging and requiring support material at shallower angles.

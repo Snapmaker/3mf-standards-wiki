@@ -15,7 +15,7 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--nozzle-temperature=1`.  
 
 > [!TIP]
-> Check [Temperature calibration](https://github.com/OrcaSlicer/OrcaSlicer/wiki/temp_calib) to find the optimal nozzle temperature for your filament.
+> Check [Temperature calibration](../../../calibration/temp_calib.md) to find the optimal nozzle temperature for your filament.
 
 One of the most critical settings for successful 3D printing is the nozzle temperature.  
 The correct nozzle temperature ensures proper melting and extrusion of the filament, leading to good layer adhesion and overall print quality.  

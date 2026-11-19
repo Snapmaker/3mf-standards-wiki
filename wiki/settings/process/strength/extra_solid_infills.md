@@ -13,6 +13,6 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--extra-solid-infills=value`.  
 Insert extra solid infills at specific layers to add strength at critical points in your print. This feature allows you to strategically reinforce your part without changing the overall sparse infill density.
 
-![extra-solid-infill](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/extra-solid-infill.gif?raw=true)
+![extra-solid-infill](../../../images/fill/extra-solid-infill.gif)
 
 The pattern supports two formats:

@@ -16,7 +16,7 @@
 
 > [!IMPORTANT]
 > NEW FEATURE: **Paint penetration layers**  
-> Available in: [Nightly builds](https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/nightly-builds) or Releases greater than **2.4.2**.
+> Available in: nightly builds or releases greater than **2.4.2**.
 
 When a top or bottom surface is painted with [Color Painting](../../../print_prepare/prepare_color_painting.md), its color is also printed in the layers under a painted top surface and over a painted bottom surface, so the filament behind the paint doesn't show through. This is the number of layers that take the color, including the surface layer.  
 Each layer further from the surface is colored about two line widths narrower than the one before, so the color tapers into the model instead of reaching its walls.

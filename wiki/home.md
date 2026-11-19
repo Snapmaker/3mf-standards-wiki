@@ -1,6 +1,6 @@
 # Wiki 首页
 
-本 wiki 讲清楚两件事：**我们的切片软件（OrcaSlicer fork）导出的 3mf 文件里有什么、为什么是这样**；后续将扩展为 fork 的完整使用文档。组织方式沿用上游 [OrcaSlicer Wiki](https://github.com/OrcaSlicer/OrcaSlicer/wiki) 的目录分类法。
+本 wiki 讲清楚两件事：**我们的切片软件（OrcaSlicer fork）导出的 3mf 文件里有什么、为什么是这样**；后续将扩展为 fork 的完整使用文档。组织方式沿用上游 OrcaSlicer Wiki 的目录分类法。
 
 ## 3MF 专题
 

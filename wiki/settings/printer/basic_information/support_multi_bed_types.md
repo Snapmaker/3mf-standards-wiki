@@ -13,11 +13,11 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-multi-bed-types=1`.  
 Once enabled, you can select the bed type in the drop-down menu, corresponding bed temperature will be set automatically.
 
-![bed_type_selector](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/bed/bed_type_selector.png?raw=true)
+![bed_type_selector](../../../images/bed/bed_type_selector.png)
 
 This also enabled you to set each bed type in the [filament settings](../../filament/filament/cool_plate_temp.md).
 
-![bed_type_material_temperature](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/bed/bed_type_material_temperature.png?raw=true)
+![bed_type_material_temperature](../../../images/bed/bed_type_material_temperature.png)
 
 Orca also support `curr_bed_type` variable in custom G-code.
 For example, the following sample G-codes can detect the selected bed type and adjust the G-code offset accordingly for Klipper:

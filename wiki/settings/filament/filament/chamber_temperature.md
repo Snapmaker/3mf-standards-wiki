@@ -14,7 +14,7 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--chamber-temperature=1`.  
 
 > [!TIP]
-> Check [Temperature calibration](https://github.com/OrcaSlicer/OrcaSlicer/wiki/temp_calib) to find the optimal nozzle temperature for your filament.
+> Check [Temperature calibration](../../../calibration/temp_calib.md) to find the optimal nozzle temperature for your filament.
 
 Chamber temperature can affect the print quality, especially for high-temperature filaments.  
 A heated chamber can help to maintain a consistent temperature throughout the print, reducing the risk of warping and improving layer adhesion. However, it is important to monitor the chamber temperature to ensure that it does not exceed the filament's deformation temperature.

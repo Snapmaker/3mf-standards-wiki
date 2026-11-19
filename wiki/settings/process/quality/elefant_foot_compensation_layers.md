@@ -20,13 +20,13 @@ This feature compensates for the "elephant foot" effect, which occurs when the f
 - Bed temperature being too high.
 - Inaccurate bed height/leveling.
 
-![elephant-foot](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Precision/elephant-foot.svg?raw=true)
+![elephant-foot](../../../images/precision/elephant-foot.svg)
 
 To mitigate this effect, OrcaSlicer allows you to specify a positive distance by which the first layer is shrunk, decreasing linearly over the specified number of layers. This adjustment effectively reduces the width of the first few layers, helping to achieve a more accurate final print size.
 
 The compensation is only applied when the object is printed directly on the build plate. It is skipped when a [raft](../../process/support/raft_layers.md) is used.
 
-![elephant-foot-compensation](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Precision/elephant-foot-compensation.png?raw=true)
+![elephant-foot-compensation](../../../images/precision/elephant-foot-compensation.png)
 
 The compensation works as follows:  
 When $\mathrm{current\_layer} \le \mathrm{input\_compensation\_layers}$

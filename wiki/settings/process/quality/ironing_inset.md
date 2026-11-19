@@ -14,6 +14,6 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--ironing-inset=1`.  
 The distance to keep from the edges, which can help prevent over-extrusion at the edges of the surface being ironed.
 
-![ironing-inset](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/ironing/ironing-inset.png?raw=true)
+![ironing-inset](../../../images/ironing/ironing-inset.png)
 
 If this value is set to 0, an inset of half the nozzle diameter is used, so the [ironing pattern](#pattern) stays slightly inside the outer boundaries of the top surface being ironed.

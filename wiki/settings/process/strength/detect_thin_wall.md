@@ -18,7 +18,7 @@ Thin walls printed this way may have reduced surface quality and strength becaus
 > It is usually recommended to use the [Arachne wall generator](../../process/quality/initial_layer_min_bead_width.md), which disables "Detect thin walls" because it uses a different approach to wall generation.
 
 - In small details, it can generate features that wouldn't be possible with traditional wall generation methods.  
-  ![walls-small-detect-thin-off](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/walls/walls-small-detect-thin-off.png?raw=true)
-  ![walls-small-detect-thin-on](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/walls/walls-small-detect-thin-on.png?raw=true)
+  ![walls-small-detect-thin-off](../../../images/walls/walls-small-detect-thin-off.png)
+  ![walls-small-detect-thin-on](../../../images/walls/walls-small-detect-thin-on.png)
 - In large prints, it can generate defects more easily due to the reduced wall thickness.
-  ![walls-big-detect-thin-off-on](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/walls/walls-big-detect-thin-off-on.png?raw=true)
+  ![walls-big-detect-thin-off-on](../../../images/walls/walls-big-detect-thin-off-on.png)

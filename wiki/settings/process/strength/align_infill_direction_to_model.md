@@ -14,4 +14,4 @@
 Aligns [infill](../../process/strength/infill_direction.md), [bridge](#bridge-infill-direction), [ironing](../../process/quality/ironing_angle.md) and [top/bottom surface fill](../../process/strength/bottom_surface_pattern.md) directions to follow the model's orientation on the build plate.  
 When enabled, these directions rotate together with the model so the printed features keep their intended orientation relative to the part, preserving optimal strength and surface characteristics regardless of how the model is placed.
 
-![fill-direction-to-model](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/fill-direction-to-model.png?raw=true)
+![fill-direction-to-model](../../../images/fill/fill-direction-to-model.png)

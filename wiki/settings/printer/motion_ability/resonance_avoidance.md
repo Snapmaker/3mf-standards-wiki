@@ -39,7 +39,7 @@ During high-speed movements, vibrations can cause a phenomenon called "ringing,"
 > [!IMPORTANT]
 > **RepRap** can only set one frequency for both X and Y axes so you will need to select a frequency that works well for both axes.
 
-![inputshaping_printer](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/InputShaping/inputshaping_printer.png?raw=true)
+![inputshaping_printer](../../../images/input-shaping/inputshaping_printer.png)
 
 #### Input Shaping Type
 

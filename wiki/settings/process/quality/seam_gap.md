@@ -19,4 +19,4 @@ Controls the gap in mm or as a percentage of the nozzle size between the two end
 
 For a well-tuned printer with [pressure advance](../../../calibration/pressure_advance_calib.md) and [filament retraction](../../../calibration/retraction_calib.md), a value of **0-15%** is typically optimal.
 
-![seam-gap](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/seam/seam-gap.gif?raw=true)
+![seam-gap](../../../images/seam/seam-gap.gif)

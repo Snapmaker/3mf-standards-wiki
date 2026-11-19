@@ -15,8 +15,8 @@ Infill area is enlarged slightly to overlap with wall for better bonding. The pe
 
 - **Infill Wall Overlap Off**
 
-![InfillWallOverlapOff](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/InfillWallOverlapOff.svg?raw=true)
+![InfillWallOverlapOff](../../../images/fill/InfillWallOverlapOff.svg)
 
 - **Infill Wall Overlap On**
 
-![InfillWallOverlapOn](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/fill/InfillWallOverlapOn.svg?raw=true)
+![InfillWallOverlapOn](../../../images/fill/InfillWallOverlapOn.svg)

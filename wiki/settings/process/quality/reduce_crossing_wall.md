@@ -17,4 +17,4 @@ Instead of traveling directly through a wall, the print head will detour around 
 While this increases print time slightly, the improvement in print quality, especially with materials prone to stringing like **PETG** or **TPU**, often justifies the trade-off.  
 Highly recommended for detailed or aesthetic prints.
 
-![avoid-crossing-walls](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/Wall-Order/avoid-crossing-walls.png?raw=true)
+![avoid-crossing-walls](../../../images/wall-order/avoid-crossing-walls.png)

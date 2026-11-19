@@ -14,4 +14,4 @@
 Detects the overhang percentage relative to the line width and uses a different speed to print.
 Walls with 100% overhang are printed with the bridge settings.
 
-![overhang](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/overhangs/overhang.png?raw=true)
+![overhang](../../../images/overhangs/overhang.png)
