@@ -7,7 +7,8 @@
 
 ## Outer Walls
 
-> [!WARNING] fork 未实现
+> [!WARNING]
+> **fork 未实现**
 > `outer_wall_filament_id` 为上游 OrcaSlicer 参数，fork 源码未收录，以下内容保留供参考。
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  

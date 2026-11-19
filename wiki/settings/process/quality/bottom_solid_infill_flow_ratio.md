@@ -7,7 +7,8 @@
 
 ## Surface flow ratio
 
-> [!WARNING] fork 未实现
+> [!WARNING]
+> **fork 未实现**
 > `set_other_flow_ratios`、`first_layer_flow_ratio`、`outer_wall_flow_ratio`、`inner_wall_flow_ratio`、`overhang_flow_ratio`、`sparse_infill_flow_ratio`、`internal_solid_infill_flow_ratio`、`gap_fill_flow_ratio`、`support_flow_ratio`、`support_interface_flow_ratio` 为上游 OrcaSlicer 参数，fork 未收录；本小节其余参数 fork 正常。
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  

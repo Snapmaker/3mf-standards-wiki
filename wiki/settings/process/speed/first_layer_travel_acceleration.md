@@ -6,7 +6,8 @@
 
 ## Initial layer travel
 
-> [!WARNING] fork 未实现
+> [!WARNING]
+> **fork 未实现**
 > `initial_layer_travel_acceleration` 为上游 OrcaSlicer 参数，fork 源码未收录，以下内容保留供参考。
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  

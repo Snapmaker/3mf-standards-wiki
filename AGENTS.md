@@ -40,13 +40,12 @@
 
 ## Callouts
 
-用 GitHub alerts 语法，不要用加粗/引用块 improvisation：
+用 GitHub alerts 语法，不要用加粗/引用块 improvisation。**标记 `[!NOTE]` 等必须独占一行**（后面接文字 GitHub 不渲染成 alert，标记会原样露出）；标题写第二行，可加粗：
 
 ```markdown
-> [!NOTE] 信息
-> [!TIP] 技巧
-> [!IMPORTANT] 关键
-> [!WARNING] 注意
+> [!NOTE]
+> **标题（可选）**
+> 内容
 ```
 
 ## 文风

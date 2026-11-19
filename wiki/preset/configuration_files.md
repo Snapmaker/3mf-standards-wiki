@@ -186,7 +186,8 @@ fdm_filament_common          4 键（纯锚点，不带参数）
       └─ Generic ABS @U1 0.2 nozzle  114 键（0.2 喷嘴实例）
 ```
 
-> [!IMPORTANT] 实测现状
+> [!IMPORTANT]
+> **实测现状**
 > 耗材的最后一层**并不是“只保存喷嘴差异”**：上面两个实例 114 键里只有 `name` 和 `compatible_printers` 两键不同，其余内容重复携带。材料共性确实上移到了 category 层，但喷嘴兄弟之间是“各自带全量”的写法，取舍原因见 §6.4。
 
 ### 6.2 machine 的层级
@@ -270,5 +271,6 @@ fdm_process_common(182) → fdm_process_idex(64) → 0.16 Optimal @Snapmaker J1 
 - `from`、`instantiation`、`version` 等元字段保持统一格式；
 - 文件名不包含非法字符，也不使用保留设备名。
 
-> [!TIP] 一个简单判断
+> [!TIP]
+> **一个简单判断**
 > 先只看文件名，应该能说出“这是什么配置、适用于什么条件”；再打开 JSON，应该能找到与这句话对应的元字段、标识字段和参数覆盖。两边对不上时，优先检查名称、`inherits` 和绑定字段。

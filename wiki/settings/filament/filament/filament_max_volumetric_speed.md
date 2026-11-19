@@ -6,7 +6,8 @@
 
 ## Max volumetric speed
 
-> [!WARNING] fork 未实现
+> [!WARNING]
+> **fork 未实现**
 > Volumetric speeds（体积速度按百分比表达）为上游特性，fork 未收录 `enable_volumetric_speeds` 等键；正文末句为上游原文保留。
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  

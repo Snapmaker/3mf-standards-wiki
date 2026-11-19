@@ -6,7 +6,8 @@
 
 #### Complete print
 
-> [!WARNING] fork 未实现
+> [!WARNING]
+> **fork 未实现**
 > `activate_air_filtration_on_completion` 为上游 OrcaSlicer 参数，fork 未收录；本小节其余参数 fork 正常。
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
