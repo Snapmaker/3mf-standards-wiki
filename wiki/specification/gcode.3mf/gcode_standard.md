@@ -47,7 +47,7 @@
 
 ## 前言
 
-本规范规定 Snapmaker Orca 面向 **Snapmaker 机型**切片导出的文本 G-code 文件的格式，基准机型 **Snapmaker U1**（Klipper 方言，预设继承链 `fdm_U1`）。技术内容基于 fork 2.4.x 源码导出路径、U1 机型预设与真实导出包实测编纂。
+本规范规定 Snapmaker Orca 面向 **Snapmaker 机型**切片导出的文本 G-code 文件的格式，基准机型 **Snapmaker U1**（Klipper 方言，预设继承链 `fdm_U1`）。
 
 本文件与 [gcode.3mf 规范](gcode_3mf_standard.md)（容器）、[3mf 工程文件规范](../3mf/3mf_standard.md)（工程文件）构成一组：工程 `.3mf` 保存"怎么切"，`.gcode.3mf` 打包"切出来的结果"，本规范描述其中执行主体——G-code 本身。
 
@@ -59,7 +59,7 @@
 - **主体**：逐层组织，层 / 特征 / 对象边界都有标记注释，G1 运动流为核心——供固件执行、查看器逐层回放、取消对象插件定位；
 - **尾部**：耗时与耗材统计、完整参数快照（CONFIG_BLOCK）——供完成提示、问题排查、参数回读。
 
-一句话：**指令行是给机器的，注释是给所有人的**；注释全部以 `;` 开头，机器天然忽略，人 / 工具各取所需。
+一句话：**指令行是给机器的，注释是给人和工具的**。
 
 ## 1 范围
 
@@ -123,7 +123,7 @@ xxx.gcode
 
 ### 4.2 字符编码与换行
 
-- 文件为文本文件：指令、参数与数值均为 ASCII；注释中的对象名等文本可为 UTF-8。不含 BOM。
+- 文件为文本文件：指令、参数与数值均为 ASCII；注释中的对象名等文本可为 UTF-8（无 BOM）。
 - 行结束符一律为 `\n`（LF）。生产者导出时强制小数点为 `.` 的区域设置，全文件不得出现其他小数分隔符。
 - 进入 `.gcode.3mf` 容器时按原始字节压入，任何换行符 / 字符集转换都会破坏容器侧 MD5 校验（见容器规范 6.5）。
 
@@ -401,6 +401,7 @@ xxx.gcode
 - 行格式 `; <键> = <值>`；起止两行本身也写成键值样式是历史兼容（老版查看器按配置行解析）。
 - 正文键集与取值形态与工程侧 `project_settings.config` 一致（全部字符串形态、数组元素亦然），形态细则见 [gcode.3mf 规范](gcode_3mf_standard.md) 7.1。
 - 尾部附加 `bed_shape`（打印区域顶点串，`x` 分隔点、逗号分隔点列）与 `first_layer_height`（三位小数）四个兼容键，供旧工具回读。
+- **键名与设置键文档保持一致**：本块键名与 `wiki/settings/` 设置键文档（每键一页）同源，同名键一一对应；嵌入名 ≠ 设置键名的（旧名或聚合名，多为上条兼容键），映射**应**在键页"gcode 嵌入名"行声明，如 [nozzle_temperature_initial_layer](../../settings/filament/filament/nozzle_temperature_initial_layer.md) → `first_layer_temperature`（值取本键）、床温族各板型初层床温键（[cool_plate_temp_initial_layer](../../settings/filament/filament/cool_plate_temp_initial_layer.md) 等）→ `first_layer_bed_temperature`（跨槽位取最大）、[initial_layer_print_height](../../settings/process/quality/initial_layer_print_height.md) → `first_layer_height`。两侧**应**同步维护：任一侧键名变更时同步更新另一侧与本规范示例，不得留无标注的偏差；发现未标注的不一致以源码（`PrintConfig.cpp`）为准修正两侧。
 - 消费者**不应**据本块重新切片或改写 G-code（同容器规范 8.2）。
 
 ### 7.6 内部占位符
