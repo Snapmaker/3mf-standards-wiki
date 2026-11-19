@@ -8,11 +8,11 @@
 ## Surface Pattern
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `top_surface_pattern`, `bottom_surface_pattern`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `bottom_surface_pattern`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
-[Defaults](../../../general_settings/option_type.md#default-value): `top_surface_pattern` (ipMonotonicLine), `bottom_surface_pattern` (ipMonotonic).  
+[Default](../../../general_settings/option_type.md#default-value): `ipMonotonic`.  
 [Options](../../../general_settings/option_type.md#choice): `monotonic, monotonicline, rectilinear, alignedrectilinear, concentric, spiralinset, hilbertcurve, archimedeanchords, octagramspiral`.  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--top-surface-pattern=monotonic` (same pattern for the other variables above).  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--bottom-surface-pattern=monotonic`.  
 This setting controls the pattern of the surfaces.  
 If [Shell Layers](#shell-layers) is greater than 1, the surface pattern will be applied to the outermost shell layer only and the rest will use [Internal Solid Infill Pattern](../../process/strength/internal_solid_infill_pattern.md).
 

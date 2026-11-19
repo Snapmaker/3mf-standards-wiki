@@ -7,9 +7,8 @@
 
 ### Scarf joint seam
 
-[Modes](../../../general_settings/option_mode.md):  
-`Advanced` [Variables](../../../developer_reference/built_in_placeholders_variables.md): `seam_slope_type`, `seam_slope_conditional`, `scarf_angle_threshold`, `scarf_overhang_threshold`, `scarf_joint_speed`, `seam_slope_start_height`, `seam_slope_entire_loop`, `seam_slope_min_length`, `seam_slope_steps`, `seam_slope_inner_walls`.  
-`Develop` [Variable](../../../developer_reference/built_in_placeholders_variables.md): `scarf_joint_flow_ratio`.  
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `scarf_joint_speed`.  
 Adjusts the extrusion flow rate at seam points to create a smooth overlap between the start and end of each loop, minimizing visible defects.
 
 ![scarf-joint-seam](https://github.com/OrcaSlicer/OrcaSlicer_WIKI/blob/main/images/seam/scarf-joint-seam.png?raw=true)

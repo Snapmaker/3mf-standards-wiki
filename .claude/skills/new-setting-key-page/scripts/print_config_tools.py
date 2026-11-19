@@ -357,23 +357,17 @@ def build_lines(keyset, meta, prefix):
             return "— 无静态默认值"
         return d if d != "" else "（空）"
 
-    if len(keyset) > 1:
-        pairs = ["`%s` (%s)" % (k, val(k)) for k in keyset]
-        lines.append("[Defaults]%s: %s." % (link_d, ", ".join(pairs)))
-        rngs = ["`%s` (%s)" % (k, range_str(meta[k])) for k in found if range_str(meta[k])]
-        if rngs:
-            lines.append("[Ranges]%s: %s." % (link_r, ", ".join(rngs)))
+    # 2026-11-19 约定：键页元数据只保留本键自己的值（单数行），不捆绑同小节其他键
+    k = keyset[0] if keyset else None
+    if k in meta:
+        v = val(k)
+        lines.append("[Default]%s: `%s`." % (link_d, v)
+                     if not v.startswith("—") else "[Default]%s: %s." % (link_d, v))
+        r = range_str(meta[k])
+        if r:
+            lines.append("[Range]%s: %s." % (link_r, r))
     else:
-        k = keyset[0] if keyset else None
-        if k in meta:
-            v = val(k)
-            lines.append("[Default]%s: `%s`." % (link_d, v)
-                         if not v.startswith("—") else "[Default]%s: %s." % (link_d, v))
-            r = range_str(meta[k])
-            if r:
-                lines.append("[Range]%s: %s." % (link_r, r))
-        else:
-            lines.append("[Default]%s: —." % link_d)
+        lines.append("[Default]%s: —." % link_d)
     als = sorted({a for k in found for a in meta[k].get("aliases", [])})
     if als:
         lines.append("[Aliases]%s: %s." % (link_a, ", ".join("`%s`" % a for a in als)))
@@ -401,15 +395,8 @@ def inject_page(path, meta, dry_run):
                 skipped += 1; break
             j += 1
         else:
-            # 回溯找本小节 [Variable(s)] 行取键；找不到用文件名主干
-            keys = None
-            for b in range(i - 1, max(i - 6, -1), -1):
-                if RE_VAR_LINE.match(lines[b]):
-                    keys = RE_KEY_TOKEN.findall(lines[b])
-                    if keys:
-                        break
-            if not keys:
-                keys = [stem]
+            # 2026-11-19 约定：恒取本页自己的键（文件名主干），不再沿用小节键列表
+            keys = [stem]
             new = build_lines(keys, meta, prefix)
             inserts.append((i + 1, [l + "  " for l in new]))
 

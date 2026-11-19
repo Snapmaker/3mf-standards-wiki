@@ -8,11 +8,11 @@
 ## Locked Zag
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `skin_infill_density`, `skeleton_infill_density`, `infill_lock_depth`, `skin_infill_depth`, `skin_infill_line_width`, `skeleton_infill_line_width`.  
-[Type](../../../general_settings/option_type.md): `skin_infill_density` (Percentage), `skeleton_infill_density` (Percentage), `infill_lock_depth` (Float), `skin_infill_depth` (Float), `skin_infill_line_width` (Float or Percentage), `skeleton_infill_line_width` (Float or Percentage).  
-[Defaults](../../../general_settings/option_type.md#default-value): `skin_infill_density` (25), `skeleton_infill_density` (25), `infill_lock_depth` (1.0), `skin_infill_depth` (2.0), `skin_infill_line_width` (100%), `skeleton_infill_line_width` (100%).  
-[Ranges](../../../general_settings/option_type.md#range): `skin_infill_density` (`0–100` %), `skeleton_infill_density` (`0–100` %), `infill_lock_depth` (`0–100` mm), `skin_infill_depth` (`0–100` mm), `skin_infill_line_width` (`≥ 0` mm), `skeleton_infill_line_width` (`≥ 0` mm).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skin-infill-density=20%` (`skin_infill_density` shown; other variables above follow their own type).  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `skin_infill_line_width`.  
+[Type](../../../general_settings/option_type.md): Float or Percentage.  
+[Default](../../../general_settings/option_type.md#default-value): `100%`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skin-infill-line-width=1`.  
 Version of [Zig Zag](#zig-zag) that adds extra skin.
 When using this fill, you can individually modify the density of the skeleton and skin, as well as the size of the skin and how much interconnection there is between the skin and the skeleton (a lock depth of 50% of the skin depth is recommended).  
 **Skin line width** and **Skeleton line width** set the line width of the skin and skeleton paths. If expressed as a %, they are computed over the nozzle diameter.  

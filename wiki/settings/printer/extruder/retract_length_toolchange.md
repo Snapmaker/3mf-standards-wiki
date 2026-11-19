@@ -7,10 +7,10 @@
 ## Retraction When Switching Materials
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `retract_length_toolchange[extruder_idx]`, `retract_restart_extra_toolchange[extruder_idx]`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `retract_length_toolchange[extruder_idx]`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `10`.  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--retract-length-toolchange=1` (same pattern for the other variables above).  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--retract-length-toolchange=1`.  
 Retraction settings specifically for material changes during tool changes in multi-material prints.
 
 ### Long retraction when cut (beta)

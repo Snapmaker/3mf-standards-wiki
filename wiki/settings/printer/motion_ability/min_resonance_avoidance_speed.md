@@ -11,11 +11,11 @@ Resonance Compensations are the methods used to reduce the vibrations of the pri
 ### Resonance Avoidance
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `resonance_avoidance`, `min_resonance_avoidance_speed`, `max_resonance_avoidance_speed`.  
-[Type](../../../general_settings/option_type.md): `resonance_avoidance` (Boolean), `min_resonance_avoidance_speed` (Float), `max_resonance_avoidance_speed` (Float).  
-[Defaults](../../../general_settings/option_type.md#default-value): `resonance_avoidance` (false), `min_resonance_avoidance_speed` (70), `max_resonance_avoidance_speed` (120).  
-[Ranges](../../../general_settings/option_type.md#range): `min_resonance_avoidance_speed` (`≥ 0` mm/s), `max_resonance_avoidance_speed` (`≥ 0` mm/s).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--resonance-avoidance=1` (`resonance_avoidance` shown; other variables above follow their own type).  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `min_resonance_avoidance_speed`.  
+[Type](../../../general_settings/option_type.md): Float.  
+[Default](../../../general_settings/option_type.md#default-value): `70`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm/s.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--min-resonance-avoidance-speed=1`.  
 By reducing the speed of the outer wall to avoid the resonance zone of the printer, ringing on the surface of the model are avoided.
 
 > [!TIP]

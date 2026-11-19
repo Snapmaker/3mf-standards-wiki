@@ -8,11 +8,11 @@
 # Raft
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `raft_layers`, `raft_contact_distance`, `raft_expansion`.  
-[Type](../../../general_settings/option_type.md): `raft_layers` (Integer), `raft_contact_distance` (Float), `raft_expansion` (Float).  
-[Defaults](../../../general_settings/option_type.md#default-value): `raft_layers` (0), `raft_contact_distance` (0.1), `raft_expansion` (1.5).  
-[Ranges](../../../general_settings/option_type.md#range): `raft_layers` (`0–100` layers), `raft_contact_distance` (`≥ 0` mm), `raft_expansion` (`≥ 0` mm).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--raft-layers=1` (`raft_layers` shown; other variables above follow their own type).  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `raft_contact_distance`.  
+[Type](../../../general_settings/option_type.md): Float.  
+[Default](../../../general_settings/option_type.md#default-value): `0.1`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--raft-contact-distance=1`.  
 A raft is a platform of support material printed under the object. The object is printed on the raft instead of on the build plate, and the raft is removed after printing.
 
 A raft helps when:

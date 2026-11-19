@@ -8,11 +8,11 @@
 ## Elephant foot compensation
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `elefant_foot_compensation`, `elefant_foot_compensation_layers`.  
-[Type](../../../general_settings/option_type.md): `elefant_foot_compensation` (Float), `elefant_foot_compensation_layers` (Integer).  
-[Defaults](../../../general_settings/option_type.md#default-value): `elefant_foot_compensation` (0), `elefant_foot_compensation_layers` (1).  
-[Ranges](../../../general_settings/option_type.md#range): `elefant_foot_compensation` (`≥ 0` mm), `elefant_foot_compensation_layers` (`≥ 1` layers).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--elefant-foot-compensation=1` (`elefant_foot_compensation` shown; other variables above follow their own type).  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `elefant_foot_compensation_layers`.  
+[Type](../../../general_settings/option_type.md): Integer.  
+[Default](../../../general_settings/option_type.md#default-value): `1`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 1` layers.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--elefant-foot-compensation-layers=1`.  
 This feature compensates for the "elephant foot" effect, which occurs when the first few layers of a print are wider than the rest due to:
 
 - Weight of the material above them.

@@ -9,11 +9,11 @@
 # Layer Height
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `layer_height`, `initial_layer_print_height`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `initial_layer_print_height`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
-[Defaults](../../../general_settings/option_type.md#default-value): `layer_height` (0.2), `initial_layer_print_height` (0.2).  
-[Ranges](../../../general_settings/option_type.md#range): `layer_height` (`≥ 0` mm), `initial_layer_print_height` (`≥ 0` mm).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--layer-height=1` (same pattern for the other variables above).  
+[Default](../../../general_settings/option_type.md#default-value): `0.2`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--initial-layer-print-height=1`.  
 Layer height defines the vertical thickness of each printed layer, playing a crucial role in both print quality and printing speed.
 
 > [!NOTE]

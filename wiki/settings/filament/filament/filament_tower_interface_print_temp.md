@@ -9,9 +9,9 @@
 ## Multimaterial Wipe Tower Parameters
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `filament_minimal_purge_on_wipe_tower`, `filament_tower_interface_pre_extrusion_dist`, `filament_tower_interface_pre_extrusion_length`, `filament_tower_ironing_area`, `filament_tower_interface_purge_volume`, `filament_tower_interface_print_temp`.  
-[Type](../../../general_settings/option_type.md): `filament_minimal_purge_on_wipe_tower` (Float list), `filament_tower_interface_pre_extrusion_dist` (Float list), `filament_tower_interface_pre_extrusion_length` (Float list), `filament_tower_ironing_area` (Float list), `filament_tower_interface_purge_volume` (Float list), `filament_tower_interface_print_temp` (Integer list).  
-[Defaults](../../../general_settings/option_type.md#default-value): `filament_minimal_purge_on_wipe_tower` (15), `filament_tower_interface_pre_extrusion_dist` (10), `filament_tower_interface_pre_extrusion_length` (0), `filament_tower_ironing_area` (4), `filament_tower_interface_purge_volume` (—), `filament_tower_interface_print_temp` (-1).  
-[Ranges](../../../general_settings/option_type.md#range): `filament_minimal_purge_on_wipe_tower` (`≥ 0` mm³), `filament_tower_interface_pre_extrusion_dist` (`≥ 0` mm), `filament_tower_interface_pre_extrusion_length` (`≥ 0` mm), `filament_tower_ironing_area` (`≥ 0` mm²), `filament_tower_interface_print_temp` (`≥ -1` °C).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-minimal-purge-on-wipe-tower=1` (`filament_minimal_purge_on_wipe_tower` shown; other variables above follow their own type).  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_tower_interface_print_temp`.  
+[Type](../../../general_settings/option_type.md): Integer list.  
+[Default](../../../general_settings/option_type.md#default-value): `-1`.  
+[Range](../../../general_settings/option_type.md#range): `≥ -1` °C.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-tower-interface-print-temp=1`.  
 Wipe towers are sacrificial structures printed alongside the main object to purge excess material from the nozzle after a tool change in multimaterial printing. This ensures that the next extrusion uses the correct filament color or type without contamination from the previous material.

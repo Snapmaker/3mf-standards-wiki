@@ -8,10 +8,10 @@
 ## Print Chamber Temperature
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `activate_chamber_temp_control`, `chamber_temperature`, `chamber_minimal_temperature`.  
-[Type](../../../general_settings/option_type.md): `activate_chamber_temp_control` (Boolean list), `chamber_temperature` (Integer list), `chamber_minimal_temperature` (Integer list).  
-[Defaults](../../../general_settings/option_type.md#default-value): `activate_chamber_temp_control` (false), `chamber_temperature` (— 无静态默认值), `chamber_minimal_temperature` (—).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--activate-chamber-temp-control=1` (`activate_chamber_temp_control` shown; other variables above follow their own type).  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `chamber_temperature`.  
+[Type](../../../general_settings/option_type.md): Integer list.  
+[Default](../../../general_settings/option_type.md#default-value): — 无静态默认值.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--chamber-temperature=1`.  
 
 > [!TIP]
 > Check [Temperature calibration](https://github.com/OrcaSlicer/OrcaSlicer/wiki/temp_calib) to find the optimal nozzle temperature for your filament.

@@ -61,7 +61,7 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 > <可选：注意事项，如与 Klipper 等固件的交互>
 ```
 
-元数据三行（Default/Range/Aliases）**由脚本生成，不要手写**：Default 必有（fork 无此键显示 `—`，有键无静态默认显示 `— 无静态默认值`）；Range 仅 min/max 存在时注入；Aliases 仅存在时注入（fork 仅 `inner_wall_speed` 一处）。多键小节页用复数 `[Defaults]: `键1` (值), `键2` (—)`，顺序跟随 [Variables] 行。格式决策与 fork 缺键清单见 docs/09。
+元数据三行（Default/Range/Aliases）**由脚本生成，不要手写**：Default 必有（fork 无此键显示 `—`，有键无静态默认显示 `— 无静态默认值`）；Range 仅 min/max 存在时注入；Aliases 仅存在时注入（fork 仅 `inner_wall_speed` 一处）。多键小节页同样**只写本键自己的单数行**（`[Variable]`/`[Default]`/`[Range]` 值均取本键），不捆绑同小节其他键，`[CLI Example]` 也只用本键的 kebab-case 旗标——兄弟键靠"本小节同时涵盖"行和各自键页交叉引用（2026-11-19 全量收敛，决议记录见 docs/09 §3）。
 
 ```markdown
 # <键名>

@@ -8,11 +8,11 @@
 ## Interface layers
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `support_interface_top_layers`, `support_interface_bottom_layers`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_interface_top_layers`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  
-[Defaults](../../../general_settings/option_type.md#default-value): `support_interface_top_layers` (3), `support_interface_bottom_layers` (0).  
-[Ranges](../../../general_settings/option_type.md#range): `support_interface_top_layers` (`≥ 0` layers), `support_interface_bottom_layers` (`≥ -1` layers).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-interface-top-layers=1` (same pattern for the other variables above).  
+[Default](../../../general_settings/option_type.md#default-value): `3`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0` layers.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-interface-top-layers=1`.  
 The number of interface layers.
 
 The number you set is the total thickness of the dense interface, counted in printed layers and including the layer that faces the model. Set `1` and you get a single dense layer; set `3` and you get three. More layers give a flatter, better supported surface but take longer to print and are harder to peel off.

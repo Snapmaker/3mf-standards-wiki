@@ -14,10 +14,10 @@ Safeguard maximum jerks for all axes.
 ### Maximum Jerk
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `machine_max_jerk_x`, `machine_max_jerk_y`, `machine_max_jerk_z`, `machine_max_jerk_e`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_max_jerk_y`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
-[Defaults](../../../general_settings/option_type.md#default-value): `machine_max_jerk_x` (— 无静态默认值), `machine_max_jerk_y` (— 无静态默认值), `machine_max_jerk_z` (— 无静态默认值), `machine_max_jerk_e` (— 无静态默认值).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--machine-max-jerk-x=1` (same pattern for the other variables above).  
+[Default](../../../general_settings/option_type.md#default-value): — 无静态默认值.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--machine-max-jerk-y=1`.  
 Maximum [jerk](../../process/speed/default_jerk.md) for each axis (M205 X, Y, Z, E, only apply if JD = 0 for Marlin 2 Firmware)
 
 ### Maximum Junction Deviation

@@ -8,10 +8,10 @@
 ## Print Chamber Temperature
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `activate_chamber_temp_control`, `chamber_temperature`, `chamber_minimal_temperature`.  
-[Type](../../../general_settings/option_type.md): `activate_chamber_temp_control` (Boolean list), `chamber_temperature` (Integer list), `chamber_minimal_temperature` (Integer list).  
-[Defaults](../../../general_settings/option_type.md#default-value): `activate_chamber_temp_control` (false), `chamber_temperature` (— 无静态默认值), `chamber_minimal_temperature` (—).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--activate-chamber-temp-control=1` (`activate_chamber_temp_control` shown; other variables above follow their own type).  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `activate_chamber_temp_control`.  
+[Type](../../../general_settings/option_type.md): Boolean list.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--activate-chamber-temp-control=1`.  
 Chamber temperature can affect the print quality, especially for high-temperature filaments.  
 A heated chamber can help to maintain a consistent temperature throughout the print, reducing the risk of warping and improving layer adhesion. However, it is important to monitor the chamber temperature to ensure that it does not exceed the filament's deformation temperature.
 

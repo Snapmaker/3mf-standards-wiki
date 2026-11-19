@@ -7,9 +7,9 @@
 #### During print
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
-[Variables](../../../developer_reference/built_in_placeholders_variables.md): `activate_air_filtration_during_print`, `during_print_exhaust_fan_speed`.  
-[Type](../../../general_settings/option_type.md): `activate_air_filtration_during_print` (Boolean list), `during_print_exhaust_fan_speed` (Integer list).  
-[Defaults](../../../general_settings/option_type.md#default-value): `activate_air_filtration_during_print` (—), `during_print_exhaust_fan_speed` (60).  
-[Ranges](../../../general_settings/option_type.md#range): `during_print_exhaust_fan_speed` (`0–100` %).  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--activate-air-filtration-during-print=1` (`activate_air_filtration_during_print` shown; other variables above follow their own type).  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `during_print_exhaust_fan_speed`.  
+[Type](../../../general_settings/option_type.md): Integer list.  
+[Default](../../../general_settings/option_type.md#default-value): `60`.  
+[Range](../../../general_settings/option_type.md#range): `0–100` %.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--during-print-exhaust-fan-speed=1`.  
 Speed of exhaust fan during printing. This speed will override the speed in filament custom G-code.
