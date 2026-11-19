@@ -281,35 +281,52 @@ config
 │   ├── metadata key="plater_id" …              ← 键表见 6.1.2
 │   └── model_instance                          ← 每实例一节
 │       └── metadata key="object_id" / "instance_id" / "identify_id"
-└── assemble                                    ← 条件出现（待裁决：Q4）
+└── assemble                                    ← 标签恒写；内含 item 条件出现（待裁决：Q4）
     └── assemble_item object_id=… instanceid=… transform=… offset=…
 ```
 
-#### 6.1.1 对象层与零件层固定键
+#### 6.1.1 对象层与零件层键（按写入行为分类）
 
-| 层 | 键 | 含义 | 约定 |
+键的写入行为以序列化代码 `src/libslic3r/Format/bbs_3mf.cpp`（`_add_model_config_file_to_archive`）为准，分恒写、条件、差异（参数覆盖）三类。
+
+**恒写键**（每次保存必落盘）：
+
+| 层 | 键 / 属性 | 含义 | 约定 |
 |---|---|---|---|
-| object | `name` | 对象名 | 显示用，可为非 ASCII |
-| object | `module` | 模块名 | 条件键，语义未定（待裁决：Q3） |
-| object / part | 参数覆盖键 | 全局参数的对象 / 零件级覆盖 | 见 6.2 |
-| part | `name` | 零件名 | 显示用 |
-| part | `matrix` | 零件局部变换（4×4） | 与 `3dmodel.model` 的 3×4 `transform` 是两种矩阵形态，**不应**混用 |
-| part | `source_file` / `source_object_id` / `source_volume_id` / `source_offset_x\|y\|z` | 导入来源追溯 | `source_file` 默认仅存文件名不含路径 |
-| part | `merged_group_id` | 合并组标识 | "Assemble"设定、"Split to objects"消费 |
-| part | `mesh_stat` | 网格修复统计（5 属性） | 诊断信息，不影响几何本体 |
+| object | `id`（属性） | 对象编号 | 与 `3dmodel.model` 一致 |
+| part | `id` / `subtype`（属性） | 零件编号 / 零件类型 | subtype 值域：`normal_part`（普通件）、`negative_part`（负体积）、`modifier_part`（参数修改器）、`support_enforcer` / `support_blocker`（支撑强制 / 禁区） |
+| part | `matrix` | 零件局部变换（4×4，16 值空格分隔） | 与 `3dmodel.model` 的 3×4 `transform` 是两种矩阵形态，**不应**混用 |
+| part | `mesh_stat` | 网格修复统计，5 属性恒写：`edges_fixed` / `degenerate_facets` / `facets_removed` / `facets_reversed` / `backwards_edges` | 诊断信息，不影响几何本体 |
+
+对象层没有任何恒写的 metadata 键——连 `name` 都是空名不写。
+
+**条件键**（满足条件才写）：
+
+| 层 | 键 | 写入条件 | 含义 |
+|---|---|---|---|
+| object | `name` | 对象名非空 | 对象名，显示用，可为非 ASCII |
+| object | `module` | 模块名非空 | 语义未定（待裁决：Q3） |
+| part | `name` | 零件名非空 | 零件名，显示用 |
+| part | `source_file` / `source_object_id` / `source_volume_id` / `source_offset_x\|y\|z` | 来源文件非空时**整组写出** | 导入来源追溯；`source_file` 默认仅存文件名不含路径 |
+| part | `source_in_inches` / `source_in_meters` | 来源件做过单位转换 | 单位转换标记，二者互斥 |
+| part | `merged_group_id` | 合并组有效 | 合并组标识："Assemble"设定、"Split to objects"消费 |
+| part | 文字部件配置键 | 零件带文字 / 浮雕配置 | 文字部件的字体与文本配置（emboss / text_configuration 序列化） |
+
+**差异键（参数覆盖键，改过才保存）**：两层 metadata 中除上述结构键外的其余键全部是参数覆盖键。序列化直接遍历该级内存配置的全部键（`ModelObject::config` / `ModelVolume::config`）原样落盘，而这两级配置在内存中即为稀疏差异（UI 修改该对象 / 零件参数时才写入该键）——因此**文件中未出现某参数键 ≠ 值为空，而是"未修改，沿用上一级"**。覆盖优先级与实测键集见 6.2。
 
 #### 6.1.2 盘节键
 
-| key | 含义 | 约定 |
-|---|---|---|
-| `plater_id` | 原始盘号 N（1 起） | 与缩略图等 `plate_N` 命名的 N 一致 |
-| `plater_name` / `locked` | 盘名 / 编辑器锁定状态 | 展示用 |
-| `curr_bed_type` / `print_sequence` / `first_layer_print_sequence` / `other_layers_print_sequence` / `other_layers_print_sequence_nums` / `spiral_mode` | 盘级打印选项 | 条件写入（触发条件逐项确认中，待裁决：Q5） |
-| `filament_maps` / `filament_map_mode` | 耗材映射 | **不应作为真实物理喷头 / 料槽映射使用**（当前恒写全 `1` 与固定 `Auto For Flush`，处置待裁决：Q12） |
-| `gcode_file` | 盘 G-code 的包内路径 | 仅嵌 G-code 的形态写出（工程直接保存 / 通用导出无此键） |
-| `thumbnail_file` / `thumbnail_no_light_file` / `top_file` / `pick_file` / `pattern_bbox_file` | 盘级资源路径 | 按实际存在性读取 |
+| key | 写入 | 含义 | 约定 |
+|---|---|---|---|
+| `plater_id` | 恒写 | 原始盘号 N（1 起，写侧 = 盘序 + 1） | 与缩略图等 `plate_N` 命名的 N 一致 |
+| `plater_name` / `locked` | 恒写 | 盘名 / 编辑器锁定状态 | 展示用 |
+| `filament_map_mode` | 恒写 | 耗材映射模式 | 当前硬编码 `Auto For Flush`（处置待裁决：Q12） |
+| `filament_maps` | 恒写 | 耗材映射 | 当前硬编码全 `1`，**不应作为真实物理喷头 / 料槽映射使用**（Q12） |
+| `curr_bed_type` / `print_sequence` / `first_layer_print_sequence` / `other_layers_print_sequence` / `other_layers_print_sequence_nums` / `spiral_mode` | 条件 | 盘级打印选项 | 盘级配置存在该 option 才写（触发条件逐项确认中，待裁决：Q5） |
+| `gcode_file` | 条件 | 盘 G-code 的包内路径 | 仅嵌 G-code 的形态写出（工程直接保存 / 通用导出无此键） |
+| `thumbnail_file` / `thumbnail_no_light_file` / `top_file` / `pick_file` / `pattern_bbox_file` | 条件 | 盘级资源路径 | 对应缩略图 / 顶视 / 拾取 / 图案包围盒文件存在才写，按实际存在性读取 |
 
-盘节内的 `<model_instance>` 登记该盘包含的实例：`object_id`（对象编号，与 5.2 一一对应）、`instance_id`（对象内实例序号）、`identify_id`（不透明实例标识，**不应**按数组下标解释，与 `slice_info.config` 的标识域不同）。`<assemble>` 节记录装配视图的实例变换（写入条件为装配模式初始化，实测 7 样本 + 2 对照样本均 0 次出现，待裁决：Q4）。
+盘节内的 `<model_instance>`（非 SkipModel 导出且盘非空时逐实例写出，三键恒写）登记该盘包含的实例：`object_id`（对象编号，与 5.2 一一对应）、`instance_id`（对象内实例序号）、`identify_id`（不透明实例标识，写侧取实例运行时对象 ID，**不应**按数组下标解释，与 `slice_info.config` 的标识域不同）。`<assemble>` 节标签恒写，内含 `<assemble_item>`（属性 `object_id` / `instanceid` / `transform` 3×4 / `offset`）仅在装配模式初始化且变换合法时写出——实测 7 样本 + 2 对照样本均 0 次出现（待裁决：Q4）。
 
 ### 6.2 三层参数覆盖
 
@@ -322,7 +339,7 @@ config
 | part（零件覆盖） | `model_settings.config` 零件节 | 仅该零件生效 |
 
 - 现状优先级为 **part > object > project**（零件 > 对象 > 全局），该规则只存在于读取代码逻辑中，文件本身无任何声明（实测同一键在对象层与零件层并存：`wall_loops` 对象层 ×47、零件层 ×10）（待裁决：Q19 显式化）。
-- 覆盖键集合 = `project_settings.config` 键的子集（实测对象层 32 种、零件层 17 种，如 `layer_height`、`wall_loops`、`extruder`、`support_*`、`ironing_*`）。
+- 覆盖键集合 = `project_settings.config` 键的子集（实测对象层 32 种、零件层 17 种，如 `layer_height`、`wall_loops`、`extruder`、`support_*`、`ironing_*`）。对象层 `extruder` 实测必现——料槽分配机制总会把它写进对象配置；它属差异键而非恒写键（代码上对象层无任何恒写 metadata 键，见 6.1.1）。
 - **键空间警示**：结构键（`name`、`matrix`、`source_*` 等）与参数覆盖键共用同一 `metadata key` 命名空间，仅靠所在位置区分语义；新增配置键**不应**与既有结构键撞名（撞名清单维护见附录 D）。
 - 本版不为局部配置时间戳留位（语义未明，待裁决：Q9）。
 
