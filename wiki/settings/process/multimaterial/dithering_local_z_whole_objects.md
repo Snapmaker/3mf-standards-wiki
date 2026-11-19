@@ -1,15 +1,15 @@
 # dithering_local_z_whole_objects
 
 > Location: Process → Multimaterial → Color Mixing (Experimental)
-> 状态：占位——fork 特有参数，待补充。
+> Status: placeholder — fork-specific parameter, to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Full domain
-- 类型：coBool
-- 默认值：false
-- 可见模式：进阶
+- Label: Full domain
+- Type: coBool
+- Default: false
+- Mode: Advanced
 
-> 工具提示原文：Experimental. Apply Local-Z thinning across whole mixed-color regions instead of limiting the effect strictly to painted mixed masks.\n\nOnly available when Subdivide Mix Layer is enabled.
+> Tooltip (original): Experimental. Apply Local-Z thinning across whole mixed-color regions instead of limiting the effect strictly to painted mixed masks.\n\nOnly available when Subdivide Mix Layer is enabled.
 
-（待补：参数作用、取值范围、与同类参数的关系、适用场景）
+(To add: purpose, value range, relation to similar parameters, applicable scenarios)

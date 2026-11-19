@@ -1,7 +1,7 @@
 # dont_slow_down_outer_wall
 
 > Location: Filament → Cooling → Part cooling fan
-> 显隐条件（初步梳理，待校对）：需先启用 slow_down_for_layer_cooling 后显示
+> Visibility (preliminary, pending review): Shown after slow_down_for_layer_cooling is enabled
 
 ---
 

@@ -1,7 +1,7 @@
 # additional_cooling_fan_speed
 
 > Location: Filament → Cooling → Auxiliary part cooling fan
-> 显隐条件（初步梳理，待校对）：需打印机启用辅助风扇后显示
+> Visibility (preliminary, pending review): Shown only when the printer has an auxiliary fan enabled
 
 ---
 

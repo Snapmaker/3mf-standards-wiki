@@ -1,7 +1,7 @@
 # xy_hole_compensation
 
 > Location: Process → Quality → Precision
-> 本小节同时涵盖：`xy_contour_compensation`（各另有独立文档）。
+> Also in this section: `xy_contour_compensation` (each documented on its own page).
 
 ---
 

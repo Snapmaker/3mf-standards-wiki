@@ -1,20 +1,20 @@
 # overhang_totally_speed
 
 > Location: Process → Speed → Overhang speed
-> 状态：占位——待补充。
-> 本键与 `overhang_1_4_speed` / `overhang_2_4_speed` / `overhang_3_4_speed` / `overhang_4_4_speed` 同属"Slow down for overhang"同一行（第 5 列，标签 100%）。
+> Status: placeholder — to be completed.
+> This key shares the "Slow down for overhang" row with `overhang_1_4_speed` / `overhang_2_4_speed` / `overhang_3_4_speed` / `overhang_4_4_speed` (5th column, labeled 100%).
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：100%（full_label 同）
-- 类型：coFloatsOrPercents，单位 mm/s or %（% 相对 [`outer_wall_speed`](outer_wall_speed.md)），min 0
-- 默认值：10
-- 可见模式：Advanced
+- Label: 100% (full_label same)
+- Type: coFloatsOrPercents, unit mm/s or % (% relative to [`outer_wall_speed`](outer_wall_speed.md)), min 0
+- Default: 10
+- Mode: Advanced
 
-> 工具提示原文：Speed of 100% overhang wall which has 0 overlap with the lower layer.
+> Tooltip (original): Speed of 100% overhang wall which has 0 overlap with the lower layer.
 
-## 说明
+## Notes
 
-完全悬空（与下层 0 重叠，100% 悬垂）外墙的打印速度——即最悬的一档。上游把这种墙按桥接处理（套用 75% 档并封顶桥速），fork 单独拆出了这一档。
+Printing speed for fully-floating outer walls (0 overlap with the layer below, 100% overhang) — the most extreme level. Upstream treats such walls as bridges (applying the 75% level and capping at bridge speed); the fork splits this into its own level.
 
-（待补：与 bridge_speed 的关系）
+(To add: relation to bridge_speed)

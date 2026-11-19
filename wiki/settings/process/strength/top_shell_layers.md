@@ -1,7 +1,7 @@
 # top_shell_layers
 
 > Location: Process → Strength → Top/bottom shells
-> 本小节同时涵盖：`bottom_shell_layers`（各另有独立文档）。
+> Also in this section: `bottom_shell_layers` (each documented on its own page).
 
 ---
 

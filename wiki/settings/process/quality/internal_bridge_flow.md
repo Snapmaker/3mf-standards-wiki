@@ -1,7 +1,7 @@
 # internal_bridge_flow
 
 > Location: Process → Quality → Bridging
-> 本小节同时涵盖：`bridge_flow`（各另有独立文档）。
+> Also in this section: `bridge_flow` (each documented on its own page).
 
 ---
 

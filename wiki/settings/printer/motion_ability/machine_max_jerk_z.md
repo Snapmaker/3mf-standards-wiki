@@ -16,7 +16,7 @@ Safeguard maximum jerks for all axes.
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_max_jerk_z`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
-[Default](../../../general_settings/option_type.md#default-value): — 无静态默认值.  
+[Default](../../../general_settings/option_type.md#default-value): — no static default.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--machine-max-jerk-z=1`.  
 Maximum [jerk](../../process/speed/default_jerk.md) for each axis (M205 X, Y, Z, E, only apply if JD = 0 for Marlin 2 Firmware)
 

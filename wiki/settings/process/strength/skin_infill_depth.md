@@ -1,7 +1,7 @@
 # skin_infill_depth
 
 > Location: Process → Strength → Infill
-> 本小节同时涵盖：`skin_infill_density`、`skeleton_infill_density`、`infill_lock_depth`、`skin_infill_line_width`、`skeleton_infill_line_width`（各另有独立文档）。
+> Also in this section: `skin_infill_density`, `skeleton_infill_density`, `infill_lock_depth`, `skin_infill_line_width`, `skeleton_infill_line_width` (each documented on its own page).
 
 ---
 

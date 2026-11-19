@@ -1,7 +1,7 @@
 # fuzzy_skin_mode
 
 > Location: Process → Others → Fuzzy Skin
-> 本小节同时涵盖：`fuzzy_skin`（各另有独立文档）。
+> Also in this section: `fuzzy_skin` (each documented on its own page).
 
 ---
 

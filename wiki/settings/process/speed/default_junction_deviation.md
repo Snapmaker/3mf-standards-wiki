@@ -1,7 +1,7 @@
 # default_junction_deviation
 
 > Location: Process → Speed → Jerk(XY)
-> 显隐条件（初步梳理，待校对）：仅 Marlin 类固件（Jerk 限制组）显示
+> Visibility (preliminary, pending review): Shown only on Marlin-class firmware (Jerk limitation group)
 
 ---
 

@@ -1,7 +1,7 @@
 # small_area_infill_flow_compensation_model
 
 > Location: Process → Quality → Walls and surfaces
-> 本小节同时涵盖：`small_area_infill_flow_compensation`（各另有独立文档）。
+> Also in this section: `small_area_infill_flow_compensation` (each documented on its own page).
 
 ---
 

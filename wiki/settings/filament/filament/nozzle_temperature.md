@@ -1,7 +1,7 @@
 # nozzle_temperature
 
 > Location: Filament → Filament → Print temperature
-> 本小节同时涵盖：`nozzle_temperature_initial_layer`（各另有独立文档）。
+> Also in this section: `nozzle_temperature_initial_layer` (each documented on its own page).
 
 ---
 

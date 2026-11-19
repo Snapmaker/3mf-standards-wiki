@@ -1,7 +1,7 @@
 # layer_height
 
 > Location: Process → Quality → Layer height
-> 本小节同时涵盖：`initial_layer_print_height`（各另有独立文档）。
+> Also in this section: `initial_layer_print_height` (each documented on its own page).
 
 ---
 
@@ -42,7 +42,7 @@ Using smaller layer heights increases print time but results in:
 | 0.8mm | 0.16mm | 0.64mm | 0.45mm |
 
 > [!NOTE]
-> 表仅列 U1 机型可用喷嘴尺寸（0.2 / 0.4 / 0.6 / 0.8 mm）。
+> The table lists only the nozzle sizes available on U1 machines (0.2 / 0.4 / 0.6 / 0.8 mm).
 
 ## Layer Height Guidelines
 

@@ -1,7 +1,7 @@
 # ooze_prevention
 
 > Location: Process → Multimaterial → Ooze prevention
-> 显隐条件（初步梳理，待校对）：仅多耗材打印时显示
+> Visibility (preliminary, pending review): Shown only in multi-material printing
 
 ---
 

@@ -1,23 +1,23 @@
 # travel_short_distance_acceleration
 
 > Location: Process → Speed → Acceleration
-> 状态：占位——fork 新增参数，待补充。
+> Status: placeholder — fork-added parameter, to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Short travel
-- 类型：coFloats，单位 mm/s²，min 0
-- 默认值：250
-- 可见模式：Developer
+- Label: Short travel
+- Type: coFloats, unit mm/s², min 0
+- Default: 250
+- Mode: Developer
 
-> 工具提示原文：Acceleration used for short travel moves near external perimeters. Short travels are moves shorter than the 'Retraction minimum travel' distance.
+> Tooltip (original): Acceleration used for short travel moves near external perimeters. Short travels are moves shorter than the 'Retraction minimum travel' distance.
 > Lower values (e.g., 250-500 mm/s²) reduce ringing artifacts on sharp corners without significantly impacting print time.
 > Set to 0 to disable (uses normal travel acceleration).
 
-## 说明
+## Notes
 
-外墙附近**短移动**的加速度。"短"的定义是小于耗材的 [Retraction minimum travel](../../filament/setting_overrides/filament_retraction_minimum_travel.md)（`filament_retraction_minimum_travel`）距离的空驶。
+Acceleration for **short travel moves** near outer walls. "Short" means a travel shorter than the filament's [Retraction minimum travel](../../filament/setting_overrides/filament_retraction_minimum_travel.md) (`filament_retraction_minimum_travel`) distance.
 
-调低（如 250–500 mm/s²）可减少尖角处的振纹（ringing）且几乎不影响打印时间；设 0 表示关闭、退回普通 [`travel_acceleration`](travel_acceleration.md)。
+Lowering it (e.g. 250–500 mm/s²) reduces ringing at sharp corners with almost no impact on print time; 0 disables it and falls back to the regular [`travel_acceleration`](travel_acceleration.md).
 
-（待补：与 input shaping 的配合）
+(To add: interplay with input shaping)

@@ -1,7 +1,7 @@
 # filament_tower_ironing_area
 
 > Location: Filament → Filament → Basic information
-> 本小节同时涵盖：`filament_tower_interface_pre_extrusion_dist`、`filament_tower_interface_pre_extrusion_length`、`filament_tower_interface_print_temp`、`filament_minimal_purge_on_wipe_tower`（各另有独立文档）。
+> Also in this section: `filament_tower_interface_pre_extrusion_dist`, `filament_tower_interface_pre_extrusion_length`, `filament_tower_interface_print_temp`, `filament_minimal_purge_on_wipe_tower` (each documented on its own page).
 
 ---
 

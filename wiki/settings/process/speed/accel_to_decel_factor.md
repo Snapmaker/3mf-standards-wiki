@@ -1,7 +1,7 @@
 # accel_to_decel_factor
 
 > Location: Process → Speed → Acceleration
-> 显隐条件（初步梳理，待校对）：仅 Klipper 固件显示
+> Visibility (preliminary, pending review): Shown only with Klipper firmware
 
 ---
 

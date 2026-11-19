@@ -1,7 +1,7 @@
 # thick_bridges
 
 > Location: Process → Quality → Bridging
-> 本小节同时涵盖：`thick_internal_bridges`（各另有独立文档）。
+> Also in this section: `thick_internal_bridges` (each documented on its own page).
 
 ---
 

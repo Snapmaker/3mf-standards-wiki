@@ -1,7 +1,7 @@
 # support_bottom_z_distance
 
 > Location: Process → Support → Advanced
-> 本小节同时涵盖：`support_top_z_distance`（各另有独立文档）。
+> Also in this section: `support_top_z_distance` (each documented on its own page).
 
 ---
 

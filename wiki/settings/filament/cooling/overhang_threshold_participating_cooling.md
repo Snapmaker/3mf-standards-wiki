@@ -1,24 +1,24 @@
 # overhang_threshold_participating_cooling
 
 > Location: Filament → Cooling → Part cooling fan
-> 状态：占位——fork 新增参数，待补充。
+> Status: placeholder — fork-added parameter, to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Overhang threshold for participating cooling
-- 类型：coEnums（六档：none / 1_4 / 2_4 / 3_4 / 4_4 / bridge，UI 显示 0% / 10% / 25% / 50% / 75% / 100%）
-- 默认值：95%（bridge 档）
-- 可见模式：Advanced
+- Label: Overhang threshold for participating cooling
+- Type: coEnums (six levels: none / 1_4 / 2_4 / 3_4 / 4_4 / bridge; the UI shows 0% / 10% / 25% / 50% / 75% / 100%)
+- Default: 95% (bridge level)
+- Mode: Advanced
 
-> 工具提示原文：Decide which overhang part join the cooling function to slow down the speed. Expressed as percentage which indicates how much width of the line is without support from the lower layer. 100% means forcing cooling for all outer wall no matter how much overhang degree.
+> Tooltip (original): Decide which overhang part join the cooling function to slow down the speed. Expressed as percentage which indicates how much width of the line is without support from the lower layer. 100% means forcing cooling for all outer wall no matter how much overhang degree.
 
-## 说明
+## Notes
 
-决定悬垂程度达到多少的**外墙**参与"降速散热"：百分比表示线条宽度上无下层支撑的比例。100% 表示无论悬垂角度多大，全部外墙都参与降速。
+Determines how much of an **outer wall** must be overhanging to join the slow-down-for-cooling behavior: the percentage is the unsupported share of the line width. 100% means all outer walls join the slowdown regardless of overhang angle.
 
-与 [`overhang_fan_threshold`](overhang_fan_threshold.md)（触发风扇提速的阈值）相邻但管的是**降速**这一侧。
+Sits next to [`overhang_fan_threshold`](overhang_fan_threshold.md) (the fan speed-up trigger threshold) but governs the **slowdown** side.
 
 > [!NOTE]
-> 枚举档位 bridge 在序列化配置中写作 95%，UI 下拉显示为 100% 档。
+> The bridge enum level is serialized as 95%; the UI dropdown shows it as the 100% level.
 
-（待补：与 slow_down_for_layer_cooling 的联动细节）
+(To add: interaction details with slow_down_for_layer_cooling)

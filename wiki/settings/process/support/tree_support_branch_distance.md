@@ -1,7 +1,7 @@
 # tree_support_branch_distance
 
 > Location: Process → Support → Tree supports
-> 本小节同时涵盖：`tree_support_branch_distance_organic`（各另有独立文档）。
+> Also in this section: `tree_support_branch_distance_organic` (each documented on its own page).
 
 ---
 

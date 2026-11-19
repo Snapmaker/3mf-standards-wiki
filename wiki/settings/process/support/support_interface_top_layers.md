@@ -1,7 +1,7 @@
 # support_interface_top_layers
 
 > Location: Process → Support → Advanced
-> 本小节同时涵盖：`support_interface_bottom_layers`（各另有独立文档）。
+> Also in this section: `support_interface_bottom_layers` (each documented on its own page).
 
 ---
 

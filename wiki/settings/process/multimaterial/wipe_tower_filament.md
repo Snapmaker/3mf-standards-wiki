@@ -1,7 +1,7 @@
 # wipe_tower_filament
 
 > Location: Process → Multimaterial → Filament for Features
-> 显隐条件（初步梳理，待校对）：仅多耗材（非单喷头多耗材）配置下显示
+> Visibility (preliminary, pending review): Shown only in multi-material (not single-extruder multi-material) configurations
 
 ---
 

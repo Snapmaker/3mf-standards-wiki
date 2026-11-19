@@ -1,8 +1,8 @@
 # filament_tower_interface_print_temp
 
 > Location: Filament → Filament → Basic information
-> 显隐条件（初步梳理，待校对）：仅 Snapmaker U1 机型显示
-> 本小节同时涵盖：`filament_tower_interface_pre_extrusion_dist`、`filament_tower_interface_pre_extrusion_length`、`filament_tower_ironing_area`、`filament_minimal_purge_on_wipe_tower`（各另有独立文档）。
+> Visibility(preliminary, pending review): Shown only on Snapmaker U1 machines
+> Also in this section: `filament_tower_interface_pre_extrusion_dist`, `filament_tower_interface_pre_extrusion_length`, `filament_tower_ironing_area`, `filament_minimal_purge_on_wipe_tower` (each documented on its own page).
 
 ---
 

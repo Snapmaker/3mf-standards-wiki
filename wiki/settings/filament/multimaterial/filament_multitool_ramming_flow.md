@@ -1,7 +1,7 @@
 # filament_multitool_ramming_flow
 
 > Location: Filament → Multimaterial → Tool change parameters with multi extruder MM printers
-> 显隐条件（初步梳理，待校对）：需先启用 filament_multitool_ramming 后显示
+> Visibility (preliminary, pending review): Shown after filament_multitool_ramming is enabled
 
 ---
 

@@ -1,7 +1,7 @@
 # support_interface_spacing
 
 > Location: Process → Support → Advanced
-> 本小节同时涵盖：`support_bottom_interface_spacing`（各另有独立文档）。
+> Also in this section: `support_bottom_interface_spacing` (each documented on its own page).
 
 ---
 

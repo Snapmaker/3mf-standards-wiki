@@ -1,16 +1,16 @@
 # long_retractions_when_cut
 
 > Location: Printer → Extruder N → Retraction when switching material
-> 状态：占位——代码注明暂不在界面显示，待补充。
+> Status: placeholder — code notes it is not yet shown in the UI; to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Long retraction when cut (beta)
-- 类型：coBools
-- 默认值：false
-- 可见模式：开发者
+- Label: Long retraction when cut (beta)
+- Type: coBools
+- Default: false
+- Mode: Developer
 
-> 工具提示原文：Experimental feature: Retracting and cutting off the filament at a longer distance during changes to minimize purge. While this reduces flush significantly, it may also raise the risk of nozzle clogs or other printing problems.
+> Tooltip (original): Experimental feature: Retracting and cutting off the filament at a longer distance during changes to minimize purge. While this reduces flush significantly, it may also raise the risk of nozzle clogs or other printing problems.
 
 
-（待补：参数作用、取值范围、与同类参数的关系、适用场景）
+(To add: purpose, value range, relation to similar parameters, applicable scenarios)

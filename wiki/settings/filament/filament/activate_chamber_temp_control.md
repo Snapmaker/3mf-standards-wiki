@@ -1,7 +1,7 @@
 # activate_chamber_temp_control
 
 > Location: Filament → Filament → Print chamber temperature
-> 本小节同时涵盖：`chamber_temperature`（各另有独立文档）。
+> Also in this section: `chamber_temperature` (each documented on its own page).
 
 ---
 

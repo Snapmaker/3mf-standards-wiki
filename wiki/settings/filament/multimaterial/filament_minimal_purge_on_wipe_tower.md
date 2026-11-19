@@ -1,7 +1,7 @@
 # filament_minimal_purge_on_wipe_tower
 
 > Location: Filament → Multimaterial → Wipe tower parameters
-> 本小节同时涵盖：`filament_tower_interface_pre_extrusion_dist`、`filament_tower_interface_pre_extrusion_length`、`filament_tower_interface_print_temp`、`filament_tower_ironing_area`（各另有独立文档）。
+> Also in this section: `filament_tower_interface_pre_extrusion_dist`, `filament_tower_interface_pre_extrusion_length`, `filament_tower_interface_print_temp`, `filament_tower_ironing_area` (each documented on its own page).
 
 ---
 

@@ -1,16 +1,16 @@
 # printer_notes
 
 > Location: Printer → Notes → Notes
-> 状态：占位——待补充。
+> Status: placeholder — to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Printer notes
-- 类型：coString
-- 默认值：（空）
-- 可见模式：进阶
+- Label: Printer notes
+- Type: coString
+- Default: (empty)
+- Mode: Advanced
 
-> 工具提示原文：You can put your notes regarding the printer here.
+> Tooltip (original): You can put your notes regarding the printer here.
 
 
-（待补：参数作用、取值范围、与同类参数的关系、适用场景）
+(To add: purpose, value range, relation to similar parameters, applicable scenarios)

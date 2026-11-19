@@ -30,7 +30,8 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 
 - 上游 OrcaSlicer wiki（https://github.com/OrcaSlicer/OrcaSlicer/wiki）对应 Tab 页收录了该键 → **完整页**：拷贝上游小节内容，保留四件套链接结构，索引标记 ✅。
 - 上游未收录（fork 特有参数）→ **占位页**：从 fork 源码 `src/libslic3r/PrintConfig.cpp` 取该键的元数据（标签/类型/默认值/可见模式/tooltip），索引标记 🚧。fork 的 checkout 位置各人不同，不确定就问用户。
-- 该键与既有页面共用同一 UI 区块（一个区块多个键）→ 在两页 Location 行下互加一行 `> 本小节同时涵盖：...`（参照 `wiki/settings/process/multimaterial/delta_temperature.md` 的写法），索引可用 🔗 交叉引用。
+- 该键与既有页面共用同一 UI 区块（一个区块多个键）→ 在两页 Location 行下互加一行 `> Also in this section: ...`（参照 `wiki/settings/process/multimaterial/delta_temperature.md` 的写法），索引可用 🔗 交叉引用。
+- **语言铁律（2026-11-19 裁决）**：`wiki/settings/` 下所有页面正文**全英文**——含标注行（`> Status:` / `> Visibility:` / `> G-code embedded name:` / `> Also in this section:`）、占位页模板、总览页；键名/代码/枚举值保持原样。
 
 ### 3. 生成页面
 
@@ -61,24 +62,26 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 > <可选：注意事项，如与 Klipper 等固件的交互>
 ```
 
-元数据三行（Default/Range/Aliases）**由脚本生成，不要手写**：Default 必有（fork 无此键显示 `—`，有键无静态默认显示 `— 无静态默认值`）；Range 仅 min/max 存在时注入；Aliases 仅存在时注入（fork 仅 `inner_wall_speed` 一处）。多键小节页同样**只写本键自己的单数行**（`[Variable]`/`[Default]`/`[Range]` 值均取本键），不捆绑同小节其他键，`[CLI Example]` 也只用本键的 kebab-case 旗标——兄弟键靠"本小节同时涵盖"行和各自键页交叉引用（2026-11-19 全量收敛，决议记录见 docs/09 §3）。
+元数据三行（Default/Range/Aliases）**由脚本生成，不要手写**：Default 必有（fork 无此键显示 `—`，有键无静态默认显示 `— no static default`，空串默认显示 `(empty)`）；Range 仅 min/max 存在时注入；Aliases 仅存在时注入（fork 仅 `inner_wall_speed` 一处）。多键小节页同样**只写本键自己的单数行**（`[Variable]`/`[Default]`/`[Range]` 值均取本键），不捆绑同小节其他键，`[CLI Example]` 也只用本键的 kebab-case 旗标——兄弟键靠 `> Also in this section:` 行和各自键页交叉引用（2026-11-19 全量收敛，决议记录见 docs/09 §3）。
+
+**模板 B —— 占位页**（全英文，2026-11-19 起）：
 
 ```markdown
 # <键名>
 
 > Location: <Tab> → <分组> → <UI 区块名>
-> 状态：占位——上游 OrcaSlicer wiki 未收录，fork 特有参数，待补充。
+> Status: placeholder — not covered by the upstream OrcaSlicer wiki; fork-specific; to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：<tooltip/label 原文>
-- 类型：<coFloat/…>
-- 默认值：<值或 —>
-- 可见模式：<简单/进阶>
+- Label: <label text>
+- Type: <coFloat/…>
+- Default: <value or —>
+- Mode: <Simple/Advanced/Developer>
 
-> 工具提示原文：<tooltip>
+> Tooltip (original): <tooltip>
 
-（待补：参数作用、取值范围、与同类参数的关系、适用场景）
+(To add: purpose, value range, relation to similar parameters, applicable scenarios)
 ```
 
 注意：`general_settings/`、`cli/`、`developer_reference/` 的四件套支撑页已建（2026-11-19：`option_mode` / `option_type` / `built_in_placeholders_variables` / `cli_mode`），链接可达；键页正文仍可能链接 `print_prepare/` 等尚未启用的预留目录，悬空属预期，校验按 WARN 处理，不要改成别的目标。
@@ -96,7 +99,7 @@ python .claude/skills/new-setting-key-page/scripts/print_config_tools.py inject 
 在对应 `*_overview.md` 的正确分组列表末尾加一行：
 
 ```markdown
-- ✅ [`<键名>`](<分组>/<键名>.md)（<UI 区块名>）
+- ✅ [`<键名>`](<分组>/<键名>.md) (<UI 区块名>)
 ```
 
 （完整页 ✅ / 占位页 🚧 / 交叉引用 🔗。）同时在总览页顶部的键数统计（如有）加一。

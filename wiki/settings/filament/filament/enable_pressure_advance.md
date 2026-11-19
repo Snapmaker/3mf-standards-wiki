@@ -1,7 +1,7 @@
 # enable_pressure_advance
 
 > Location: Filament → Filament → Flow ratio and Pressure Advance
-> 本小节同时涵盖：`pressure_advance`（各另有独立文档）。
+> Also in this section: `pressure_advance` (each documented on its own page).
 
 ---
 

@@ -1,7 +1,7 @@
 # enable_tower_interface_cooldown_during_tower
 
 > Location: Process → Multimaterial → Prime tower
-> 显隐条件（初步梳理，待校对）：仅 Snapmaker U1 机型显示
+> Visibility(preliminary, pending review): Shown only on Snapmaker U1 machines
 
 ---
 

@@ -1,7 +1,7 @@
 # only_one_wall_top
 
 > Location: Process → Quality → Walls and surfaces
-> 本小节同时涵盖：`only_one_wall_first_layer`（各另有独立文档）。
+> Also in this section: `only_one_wall_first_layer` (each documented on its own page).
 
 ---
 

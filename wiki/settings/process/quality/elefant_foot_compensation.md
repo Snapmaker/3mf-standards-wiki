@@ -1,7 +1,7 @@
 # elefant_foot_compensation
 
 > Location: Process → Quality → Precision
-> 本小节同时涵盖：`elefant_foot_compensation_layers`（各另有独立文档）。
+> Also in this section: `elefant_foot_compensation_layers` (each documented on its own page).
 
 ---
 

@@ -1,7 +1,7 @@
 # delta_temperature
 
 > Location: Process → Multimaterial → Ooze prevention
-> 本小节同时涵盖：`standby_temperature_delta`（各另有独立文档）。
+> Also in this section: `standby_temperature_delta` (each documented on its own page).
 
 ---
 

@@ -1,7 +1,7 @@
 # lateral_lattice_angle_2
 
 > Location: Process → Strength → Infill
-> 本小节同时涵盖：`lateral_lattice_angle_1`（各另有独立文档）。
+> Also in this section: `lateral_lattice_angle_1` (each documented on its own page).
 
 ---
 

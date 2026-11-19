@@ -1,7 +1,7 @@
 # chamber_temperature
 
 > Location: Filament → Filament → Print chamber temperature
-> 本小节同时涵盖：`activate_chamber_temp_control`（各另有独立文档）。
+> Also in this section: `activate_chamber_temp_control` (each documented on its own page).
 
 ---
 
@@ -10,7 +10,7 @@
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `chamber_temperature`.  
 [Type](../../../general_settings/option_type.md): Integer list.  
-[Default](../../../general_settings/option_type.md#default-value): — 无静态默认值.  
+[Default](../../../general_settings/option_type.md#default-value): — no static default.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--chamber-temperature=1`.  
 
 > [!TIP]

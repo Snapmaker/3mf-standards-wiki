@@ -1,7 +1,7 @@
 # overhang_4_4_speed
 
 > Location: Process → Speed → Overhang speed
-> 本小节同时涵盖：`overhang_1_4_speed`、`overhang_2_4_speed`、`overhang_3_4_speed`（各另有独立文档）。
+> Also in this section: `overhang_1_4_speed`, `overhang_2_4_speed`, `overhang_3_4_speed` (each documented on its own page).
 
 ---
 

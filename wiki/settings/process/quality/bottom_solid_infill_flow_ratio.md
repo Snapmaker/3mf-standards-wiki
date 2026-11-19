@@ -1,7 +1,7 @@
 # bottom_solid_infill_flow_ratio
 
 > Location: Process → Quality → Walls and surfaces
-> 本小节同时涵盖：`print_flow_ratio`、`top_solid_infill_flow_ratio`（各另有独立文档）。
+> Also in this section: `print_flow_ratio`, `top_solid_infill_flow_ratio` (each documented on its own page).
 
 ---
 

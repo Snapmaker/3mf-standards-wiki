@@ -1,7 +1,7 @@
 # bottom_surface_pattern
 
 > Location: Process → Strength → Top/bottom shells
-> 本小节同时涵盖：`top_surface_pattern`（各另有独立文档）。
+> Also in this section: `top_surface_pattern` (each documented on its own page).
 
 ---
 

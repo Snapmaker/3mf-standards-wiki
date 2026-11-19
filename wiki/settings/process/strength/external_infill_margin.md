@@ -1,21 +1,21 @@
 # external_infill_margin
 
 > Location: Process → Strength → Infill
-> 状态：占位——待补充。
+> Status: placeholder — to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Anchor solid infill by X mm
-- 类型：coFloatOrPercent，单位 mm or %（% 相对 [`line_width`](../quality/line_width.md)），min 0（max_literal 50）
-- 默认值：（空，即不外扩）
-- 可见模式：Advanced
+- Label: Anchor solid infill by X mm
+- Type: coFloatOrPercent, unit mm or % (% relative to [`line_width`](../quality/line_width.md)), min 0 (max_literal 50)
+- Default: (empty, i.e. no expansion)
+- Mode: Advanced
 
-> 工具提示原文：This parameter grows the top/bottom/solid layers by the specified mm to anchor them into the sparse infill and support the perimeters above. Can be a %% of the width of the perimeters.
+> Tooltip (original): This parameter grows the top/bottom/solid layers by the specified mm to anchor them into the sparse infill and support the perimeters above. Can be a %% of the width of the perimeters.
 
-## 说明
+## Notes
 
-把顶/底/实心填充层向外扩指定的毫米数（或线宽百分比），让实心填充锚进稀疏填充、更好支撑上方外墙。留空表示不外扩。
+Expands the top/bottom/solid infill layers outward by the given millimeters (or a percentage of line width), anchoring solid infill into the sparse infill to better support the outer walls above. Empty means no expansion.
 
-与 [`infill_anchor`](infill_anchor.md) 的区别：后者控制稀疏填充线端头往内墙上的锚接长度，本键控制实心填充的外扩量。
+Difference from [`infill_anchor`](infill_anchor.md): the latter controls how far sparse-infill line ends anchor into inner walls; this key controls how far solid infill expands outward.
 
-（待补：推荐取值、对顶面质量的影响）
+(To add: recommended values, impact on top-surface quality)

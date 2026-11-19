@@ -1,30 +1,30 @@
 # filament_colour
 
 > Location: Filament → Filament → Basic information
-> 状态：占位——待补充。
-> 注意：本键不渲染在耗材页签内，编辑入口在准备视图左侧面板的耗材列表色块（见下文）。
+> Status: placeholder — to be completed.
+> Note: this key is not rendered inside the filament tab; it is edited via the color swatch of the filament list in the left panel of the prepare view (see below).
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Color
-- 类型：coStrings（GUIType=color，每槽位一个 `#RRGGBB` 颜色串）
-- 默认值：#F2754E
-- 可见模式：Advanced
+- Label: Color
+- Type: coStrings (GUIType=color, one `#RRGGBB` color string per slot)
+- Default: #F2754E
+- Mode: Advanced
 
-> 工具提示原文：Only used as a visual help on UI.
+> Tooltip (original): Only used as a visual help on UI.
 
-## 在哪里编辑
+## Where to edit
 
-耗材设置页签（`Tab.cpp`）不构建此键。实际入口：
+The filament settings tab (`Tab.cpp`) does not build this key. The actual entry points:
 
-- **准备视图左侧面板的耗材列表**，每个耗材槽位一行，行首色块即本键。点击弹出颜色选择对话框（fork 的 `FilamentColorDialog`，支持颜色库、双拼/渐变多色；无匹配颜色库条目时回退系统 `wxColourDialog`"Please choose the filament color"）。
-- 改动写入 `project_config` 的 `filament_colour[槽位]`，即**项目级、按槽位**生效，而非耗材预设参数。
+- **The filament list in the left panel of the prepare view** — one row per filament slot; the color swatch at the start of each row is this key. Clicking it opens the color picker (the fork's `FilamentColorDialog`, with color-library and dual/gradient multi-color support; falls back to the system `wxColourDialog` "Please choose the filament color" when no color-library entry matches).
+- Changes are written to `filament_colour[slot]` in `project_config`, i.e. they take effect **per project, per slot**, not as a filament preset parameter.
 
-## 作用与关联
+## Purpose and relations
 
-- 仅作 UI 视觉辅助：3D 预览按它渲染各槽位模型颜色，不影响切片结果。
-- 随工程保存进 3mf，并逐槽位写入 gcode 注释：`; filament_colour = #F4E2C1;#00C1AE;...`（飞书《gcode 字段交互协议》表 1 收录）。
-- 与 [`default_filament_colour`](default_filament_colour.md) 的区别：后者是耗材预设的默认色（页签 Basic information），本键是当前工程各槽位实际生效色，载入预设时取后者作初值。
-- 混色体系：`filament_colour` 是槽位"物理色"，`filament_multi_colors`/`filament_colour_mode`（Snapmaker V2.3.5 扩展）描述双拼/渐变展示色。
+- Purely a UI visual aid: the 3D preview renders each slot's model color from it; it does not affect slicing.
+- Saved into the 3mf with the project and written per slot as a gcode comment: `; filament_colour = #F4E2C1;#00C1AE;...` (listed in table 1 of the Feishu "gcode field interaction protocol").
+- Difference from [`default_filament_colour`](default_filament_colour.md): the latter is the preset's default color (Basic information section); this key is the color actually in effect per slot in the current project, initialized from the preset value when loading.
+- Color-mixing system: `filament_colour` is the slot's "physical color"; `filament_multi_colors`/`filament_colour_mode` (Snapmaker V2.3.5 extension) describe the dual/gradient display colors.
 
-（待补：与 AMS 槽位同步、颜色库匹配规则）
+(To add: AMS slot syncing, color-library matching rules)

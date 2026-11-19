@@ -1,7 +1,7 @@
 # max_volumetric_extrusion_rate_slope
 
 > Location: Process → Speed → Advanced
-> 本小节同时涵盖：`max_volumetric_extrusion_rate_slope_segment_length`（各另有独立文档）。
+> Also in this section: `max_volumetric_extrusion_rate_slope_segment_length` (each documented on its own page).
 
 ---
 

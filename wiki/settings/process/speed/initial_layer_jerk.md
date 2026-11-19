@@ -1,7 +1,7 @@
 # initial_layer_jerk
 
 > Location: Process → Speed → Jerk(XY)
-> 本小节同时涵盖：`graphic_effect_plate_temp_initial_layer`（各另有独立文档）。
+> Also in this section: `graphic_effect_plate_temp_initial_layer` (each documented on its own page).
 
 ---
 

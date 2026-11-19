@@ -349,13 +349,13 @@ def build_lines(keyset, meta, prefix):
     found = [k for k in keyset if k in meta]
 
     def val(k):
-        """— 无静态默认值 = fork 有键但 def 未设默认（预设/代码提供）；— = fork 未见此键。"""
+        """— no static default = fork 有键但 def 未设默认（预设/代码提供）；— = fork 未见此键。"""
         if k not in meta:
             return "—"
         d = meta[k].get("default")
         if d is None:
-            return "— 无静态默认值"
-        return d if d != "" else "（空）"
+            return "— no static default"
+        return d if d != "" else "(empty)"
 
     # 2026-11-19 约定：键页元数据只保留本键自己的值（单数行），不捆绑同小节其他键
     k = keyset[0] if keyset else None

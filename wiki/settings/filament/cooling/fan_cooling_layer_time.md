@@ -1,7 +1,7 @@
 # fan_cooling_layer_time
 
 > Location: Filament → Cooling → Part cooling fan
-> 本小节同时涵盖：`fan_min_speed`、`fan_max_speed`、`slow_down_layer_time`（各另有独立文档）。
+> Also in this section: `fan_min_speed`, `fan_max_speed`, `slow_down_layer_time` (each documented on its own page).
 
 ---
 

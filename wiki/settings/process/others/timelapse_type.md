@@ -1,7 +1,7 @@
 # timelapse_type
 
 > Location: Process → Others → Special mode
-> 显隐条件（初步梳理，待校对）：仅 BBL 系机型显示
+> Visibility (preliminary, pending review): Shown only on BBL machines
 
 ---
 

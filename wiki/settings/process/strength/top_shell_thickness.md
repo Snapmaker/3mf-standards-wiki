@@ -1,7 +1,7 @@
 # top_shell_thickness
 
 > Location: Process → Strength → Top/bottom shells
-> 本小节同时涵盖：`bottom_shell_thickness`（各另有独立文档）。
+> Also in this section: `bottom_shell_thickness` (each documented on its own page).
 
 ---
 

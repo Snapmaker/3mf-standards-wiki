@@ -1,7 +1,7 @@
 # raft_layers
 
 > Location: Process → Support → Raft
-> 本小节同时涵盖：`raft_contact_distance`（各另有独立文档）。
+> Also in this section: `raft_contact_distance` (each documented on its own page).
 
 ---
 

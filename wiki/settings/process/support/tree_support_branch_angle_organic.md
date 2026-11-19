@@ -1,7 +1,7 @@
 # tree_support_branch_angle_organic
 
 > Location: Process → Support → Tree supports
-> 本小节同时涵盖：`tree_support_branch_angle`（各另有独立文档）。
+> Also in this section: `tree_support_branch_angle` (each documented on its own page).
 
 ---
 

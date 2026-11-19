@@ -1,7 +1,7 @@
 # hole_to_polyhole_threshold
 
 > Location: Process → Quality → Precision
-> 本小节同时涵盖：`hole_to_polyhole`、`hole_to_polyhole_twisted`（各另有独立文档）。
+> Also in this section: `hole_to_polyhole`, `hole_to_polyhole_twisted` (each documented on its own page).
 
 ---
 

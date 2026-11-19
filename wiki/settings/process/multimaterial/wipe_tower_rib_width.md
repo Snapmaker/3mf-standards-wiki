@@ -1,7 +1,7 @@
 # wipe_tower_rib_width
 
 > Location: Process → Multimaterial → Prime tower
-> 显隐条件（初步梳理，待校对）：仅非 BBL 机型显示
+> Visibility (preliminary, pending review): Shown only on non-BBL machines
 
 ---
 

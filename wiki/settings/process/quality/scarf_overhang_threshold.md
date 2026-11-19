@@ -1,7 +1,7 @@
 # scarf_overhang_threshold
 
 > Location: Process → Quality → Seam
-> 本小节同时涵盖：`seam_slope_type`、`seam_slope_conditional`、`scarf_angle_threshold`、`scarf_joint_speed`、`seam_slope_start_height`、`seam_slope_entire_loop`、`seam_slope_min_length`、`seam_slope_steps`、`scarf_joint_flow_ratio`、`seam_slope_inner_walls`（各另有独立文档）。
+> Also in this section: `seam_slope_type`, `seam_slope_conditional`, `scarf_angle_threshold`, `scarf_joint_speed`, `seam_slope_start_height`, `seam_slope_entire_loop`, `seam_slope_min_length`, `seam_slope_steps`, `scarf_joint_flow_ratio`, `seam_slope_inner_walls` (each documented on its own page).
 
 ---
 

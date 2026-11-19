@@ -1,21 +1,21 @@
 # cooling_perimeter_transition_distance
 
 > Location: Filament → Cooling → Part cooling fan
-> 状态：占位——fork 新增参数，待补充。
-> 显隐条件：[`cooling_slowdown_logic`](cooling_slowdown_logic.md) 选为 Consistent surface 时显示。
+> Status: placeholder — fork-added parameter, to be completed.
+> Visibility: [`cooling_slowdown_logic`](cooling_slowdown_logic.md) is set to Consistent surface.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Perimeter transition distance
-- 类型：coFloats，单位 mm，范围 0–50
-- 默认值：10.0
-- 可见模式：Developer
+- Label: Perimeter transition distance
+- Type: coFloats, unit mm, range 0–50
+- Default: 10.0
+- Mode: Developer
 
-> 工具提示原文：Distance in millimeters before the end of slowed perimeters where the original print speed is gradually restored. This prevents visible speed transitions at the end of perimeters.
+> Tooltip (original): Distance in millimeters before the end of slowed perimeters where the original print speed is gradually restored. This prevents visible speed transitions at the end of perimeters.
 > Only applies when 'Consistent surface' cooling logic is selected.
 
-## 说明
+## Notes
 
-降速墙结束前提前多少毫米逐渐恢复原速，避免墙末尾出现可见的速度突变痕迹。仅在 [`cooling_slowdown_logic`](cooling_slowdown_logic.md) = Consistent surface 时生效。
+How many millimeters before the end of a slowed-down perimeter the original speed is gradually restored, avoiding a visible speed-step mark at the end of the wall. Only effective when [`cooling_slowdown_logic`](cooling_slowdown_logic.md) = Consistent surface.
 
-（待补：与外墙表面质量的关系、取值经验）
+(To add: relation to outer-wall surface quality, value guidance)

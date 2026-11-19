@@ -1,8 +1,8 @@
 # pressure_advance
 
 > Location: Filament → Filament → Flow ratio and Pressure Advance
-> 显隐条件（初步梳理，待校对）：需先启用 Enable pressure advance 后显示
-> 本小节同时涵盖：`enable_pressure_advance`（各另有独立文档）。
+> Visibility (preliminary, pending review): Shown after Enable pressure advance is checked
+> Also in this section: `enable_pressure_advance` (each documented on its own page).
 
 ---
 

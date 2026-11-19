@@ -1,13 +1,13 @@
 # nozzle_temperature_range_high
 
 > Location: Filament → Filament → Basic information
-> 状态：占位——待补充。
+> Status: placeholder — to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Max
-- 类型：coInts
-- 默认值：240
-- 可见模式：-
+- Label: Max
+- Type: coInts
+- Default: 240
+- Mode: -
 
-（待补：参数作用、取值范围、与同类参数的关系、适用场景）
+(To add: purpose, value range, relation to similar parameters, applicable scenarios)

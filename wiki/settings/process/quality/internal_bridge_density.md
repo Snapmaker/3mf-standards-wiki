@@ -1,7 +1,7 @@
 # internal_bridge_density
 
 > Location: Process → Quality → Bridging
-> 本小节同时涵盖：`bridge_density`（各另有独立文档）。
+> Also in this section: `bridge_density` (each documented on its own page).
 
 ---
 

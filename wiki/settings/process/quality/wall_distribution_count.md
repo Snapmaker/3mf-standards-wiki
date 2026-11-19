@@ -1,7 +1,7 @@
 # wall_distribution_count
 
 > Location: Process → Quality → Wall generator
-> 本小节同时涵盖：`wall_transition_angle`、`wall_transition_filter_deviation`、`wall_transition_length`、`initial_layer_min_bead_width`、`min_bead_width`、`min_feature_size`、`min_length_factor`（各另有独立文档）。
+> Also in this section: `wall_transition_angle`, `wall_transition_filter_deviation`, `wall_transition_length`, `initial_layer_min_bead_width`, `min_bead_width`, `min_feature_size`, `min_length_factor` (each documented on its own page).
 
 ---
 

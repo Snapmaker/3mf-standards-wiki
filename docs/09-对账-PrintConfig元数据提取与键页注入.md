@@ -48,7 +48,7 @@
 ```
 
 - 新行链接统一指向 `general_settings/option_type.md` 预留页的约定锚点（`#default-value` / `#range` / `#aliases`），建页时按锚点写标题。
-- 显示规则三分：有值 → 值；fork 有键但 def 未设默认 → `— 无静态默认值`；fork 无此键 → `—`。
+- 显示规则三分：有值 → 值；fork 有键但 def 未设默认 → `— no static default`；fork 无此键 → `—`（空串默认 → `(empty)`）。**2026-11-19 用户裁决：`wiki/settings/` 全目录页面改全英文**，标记从中文（`— 无静态默认值`/`（空）`）换为上述英文写法，全量 220+ 页已转换（含占位页模板、Status/Visibility/G-code embedded name/Also in this section 标注行、三个总览页）；inject 脚本与 SKILL.md 模板同步。
 - 默认值字面量归一化（自查补充）：`60.0f`→`60.0`、`60.`→`60`；枚举常量经 `s_keys_map_*` 静态映射翻译为用户可见串（如 `(int)Overhang_threshold_bridge`→`95%`、`btAutoBrim`→`auto_brim`）；点类型 `Vec2d(a, b)`→`a×b`；`FloatOrPercent{50., true}`→`50%`。hpp 宏注册的枚举（`fvtStandard`、`ipMonotonic` 等）无映射表，保留常量名——它即配置文件里的存储值。
 - ~~多键小节页镜像复数惯例：`[Defaults]: `key1` (80), `key2` (—)`，顺序跟随 [Variables] 行。~~ **2026-11-19 用户裁决废止**：键页元数据行（Variable/Type/Default/Range/CLI Example）只保留本键自己的值、一律单数标签，`[CLI Example]` 只用本键 kebab-case 旗标，不再捆小节兄弟键、不再带 `(same pattern...)` 尾注；兄弟键交叉引用走"本小节同时涵盖"行与各自键页。当日起全量收敛 131 页（含 `[Modes]` 双行结构坍缩 20 页、错键名块修正 9 页；`inject` 脚本同步改为恒取文件名主干键）。页内镜像的**非本键小节**（如 resonance_avoidance 页内的 Input Shaping 块、junction_deviation 交叉块）原样保留，待团队裁决。
 - **与方案的偏差**：原方案 Range = min/max/sidetext 任一存在即注入；实施收窄为 **min/max 任一存在**（仅 sidetext 的"单位行"信息量为零）。单边界显示 `≥ x` / `≤ x`。

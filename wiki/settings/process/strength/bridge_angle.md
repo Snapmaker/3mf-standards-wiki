@@ -1,7 +1,7 @@
 # bridge_angle
 
 > Location: Process → Strength → Advanced
-> 本小节同时涵盖：`internal_bridge_angle`（各另有独立文档）。
+> Also in this section: `internal_bridge_angle` (each documented on its own page).
 
 ---
 

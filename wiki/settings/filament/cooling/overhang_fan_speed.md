@@ -1,7 +1,7 @@
 # overhang_fan_speed
 
 > Location: Filament → Cooling → Part cooling fan
-> 显隐条件（初步梳理，待校对）：需先启用 enable_overhang_bridge_fan 后显示
+> Visibility (preliminary, pending review): Shown after enable_overhang_bridge_fan is enabled
 
 ---
 

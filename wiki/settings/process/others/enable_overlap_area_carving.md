@@ -1,19 +1,19 @@
 # enable_overlap_area_carving
 
 > Location: Process → Others → Special mode
-> 状态：占位——fork 新增参数，待补充。
+> Status: placeholder — fork-added parameter, to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Carve overlaps by per-layer slice area
-- 类型：coBool
-- 默认值：false
-- 可见模式：Developer
+- Label: Carve overlaps by per-layer slice area
+- Type: coBool
+- Default: false
+- Mode: Developer
 
-> 工具提示原文：When enabled, overlaps between multi-extruder parts are carved with the new algorithm: on each layer, the part with the smaller slice area owns the overlap, keeping small details intact inside larger bodies. Developer option.
+> Tooltip (original): When enabled, overlaps between multi-extruder parts are carved with the new algorithm: on each layer, the part with the smaller slice area owns the overlap, keeping small details intact inside larger bodies. Developer option.
 
-## 说明
+## Notes
 
-多挤出机零件重叠区域的挖除算法开关。开启后改用新算法：每一层上**截面面积更小的零件**拥有重叠区，使大零件内部的小零件细节得以保留。位于 Special mode 组 [`slicing_mode`](slicing_mode.md) 之后。
+Toggles the carving algorithm for overlap regions between multi-extruder parts. When enabled, the new algorithm applies: on each layer, **the part with the smaller cross-section area** owns the overlap, so details of small parts inside large parts are preserved. Located in the Special mode group after [`slicing_mode`](slicing_mode.md).
 
-（待补：新旧算法差异示意、对装配公差的影响）
+(To add: illustrations of old vs new algorithm, impact on assembly tolerances)

@@ -1,16 +1,16 @@
 # graphic_effect_plate_temp
 
 > Location: Filament → Filament → Bed temperature
-> 状态：占位——待补充。
-> 显隐条件（初步梳理，待校对）：仅当打印机启用对应床型时显示
+> Status: placeholder — to be completed.
+> Visibility (preliminary, pending review): Shown only when the printer enables the corresponding bed type
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Other layers
-- 类型：coInts
-- 默认值：0
-- 可见模式：-
+- Label: Other layers
+- Type: coInts
+- Default: 0
+- Mode: -
 
-> 工具提示原文：Bed temperature for layers except the initial one. A value of 0 means the filament does not support printing on this plate.
+> Tooltip (original): Bed temperature for layers except the initial one. A value of 0 means the filament does not support printing on this plate.
 
-（待补：参数作用、取值范围、与同类参数的关系、适用场景）
+(To add: purpose, value range, relation to similar parameters, applicable scenarios)

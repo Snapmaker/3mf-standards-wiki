@@ -1,16 +1,16 @@
 # enable_change_pressure_when_wiping
 
 > Location: Printer → Multimaterial → Wipe tower
-> 状态：占位——fork 特有参数，待补充。
+> Status: placeholder — fork-specific parameter, to be completed.
 
-## 基本信息（来自 fork `PrintConfig.cpp`）
+## Basic information (from fork `PrintConfig.cpp`)
 
-- 标签：Enable change pressure advance when wiping
-- 类型：coBool
-- 默认值：true
-- 可见模式：进阶
+- Label: Enable change pressure advance when wiping
+- Type: coBool
+- Default: true
+- Mode: Advanced
 
-> 工具提示原文：If it's set to false, the pressure advance value will not be changed.
+> Tooltip (original): If it's set to false, the pressure advance value will not be changed.
 
 
-（待补：参数作用、取值范围、与同类参数的关系、适用场景）
+(To add: purpose, value range, relation to similar parameters, applicable scenarios)

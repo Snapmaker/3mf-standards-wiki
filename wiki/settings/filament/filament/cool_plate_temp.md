@@ -1,8 +1,8 @@
 # cool_plate_temp
 
 > Location: Filament → Filament → Bed temperature
-> 显隐条件（初步梳理，待校对）：仅当打印机启用对应床型时显示
-> 本小节同时涵盖：`supertack_plate_temp_initial_layer`、`supertack_plate_temp`、`cool_plate_temp_initial_layer`、`textured_cool_plate_temp_initial_layer`、`textured_cool_plate_temp`、`eng_plate_temp_initial_layer`、`eng_plate_temp`、`hot_plate_temp_initial_layer`、`hot_plate_temp`、`textured_plate_temp_initial_layer`、`textured_plate_temp`（各另有独立文档）。
+> Visibility (preliminary, pending review): Shown only when the printer enables the corresponding bed type
+> Also in this section: `supertack_plate_temp_initial_layer`, `supertack_plate_temp`, `cool_plate_temp_initial_layer`, `textured_cool_plate_temp_initial_layer`, `textured_cool_plate_temp`, `eng_plate_temp_initial_layer`, `eng_plate_temp`, `hot_plate_temp_initial_layer`, `hot_plate_temp`, `textured_plate_temp_initial_layer`, `textured_plate_temp` (each documented on its own page).
 
 ---
 

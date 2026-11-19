@@ -1,7 +1,7 @@
 # filament_diameter
 
 > Location: Filament → Filament → Basic information
-> 显隐条件（初步梳理，待校对）：仅非 pellet（丝料）机型显示
+> Visibility (preliminary, pending review): Shown only on non-pellet (filament) machines
 
 ---
 
