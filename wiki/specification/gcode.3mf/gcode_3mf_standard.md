@@ -57,7 +57,7 @@
 
 包内各部分的职责一句话：`Metadata/model_settings.config` 回答"有哪些盘"，`Metadata/slice_info.config` 回答"打得怎么样"，`Metadata/plate_N.gcode`（配 `.md5`）是唯一执行来源，`Metadata/project_settings.config` 是参数快照，缩略图族负责展示。
 
-本规范正文（第 1～8 章）规定格式与一致性要求；背景动机、与 3MF 联盟路线的对照、示例剖析、接入 FAQ 见附录 A～E。
+本规范正文（第 1～8 章）规定格式与一致性要求；背景动机、与 3MF 联盟路线的对照与示例剖析见附录 A～D。
 
 ## 1 范围
 
