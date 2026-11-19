@@ -48,7 +48,7 @@
 
 ## 前言
 
-本规范规定 Snapmaker Orca 切片导出的 `.gcode.3mf` 文件格式。它基于 `.3mf` 文件格式进行扩展，两者共用同一 OPC 容器家族和 `Metadata/` 约定：工程 `.3mf` 保存"怎么切"，`.gcode.3mf` 额外保存"切出来的结果"。两者的共享约定（配置取值形态、路径与关系规则）以[3mf 工程文件规范](../3mf/3mf_standard.md)第 6 章为准，冲突时以各自文件的用途为准。
+本规范规定 Snapmaker Orca 面向 **Snapmaker 机型**（基准机型 Snapmaker U1）切片导出的 `.gcode.3mf` 文件格式。它基于 `.3mf` 文件格式进行扩展，两者共用同一 OPC 容器家族和 `Metadata/` 约定：工程 `.3mf` 保存"怎么切"，`.gcode.3mf` 额外保存"切出来的结果"。两者的共享约定（配置取值形态、路径与关系规则）以[3mf 工程文件规范](../3mf/3mf_standard.md)第 6 章为准，冲突时以各自文件的用途为准。
 
 
 ## 引言
@@ -65,10 +65,10 @@
 
 本规范适用于：
 
-- **生产者**——生成 `.gcode.3mf` 的切片软件（Snapmaker Orca，向下兼容读取 Bambu Studio 同族导出）；
+- **生产者**——生成 `.gcode.3mf` 的切片软件（Snapmaker Orca，面向 Snapmaker 机型，基准机型 Snapmaker U1）；
 - **消费者**——读取或执行 `.gcode.3mf` 的打印机固件、上位机、嵌入式设备、APP 及第三方工具。
 
-本规范不规定：G-code 指令集与方言（由机型预设决定）、网格几何与坐标变换（属工程 `.3mf` 文件，本规范不涉及）、`plate_N.json` 的坐标语义（本版未冻结，见 6.6）。
+本规范不规定：G-code 指令集与方言（由机型预设决定；G-code 文件自身的布局、行语法、标记体系与统计块见 [G-code 文件规范](gcode_standard.md)）、网格几何与坐标变换（属工程 `.3mf` 文件，本规范不涉及）、`plate_N.json` 的坐标语义（本版未冻结，见 6.6）。
 
 ## 2 规范性引用文件
 
@@ -150,14 +150,14 @@ xxx.gcode.3mf                              ← ZIP 归档（OPC 包，启用 ZIP
  <Relationship Target="/3D/3dmodel.model" Id="rel-1"
    Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/>
  <Relationship Target="/Metadata/plate_1.png" Id="rel-4"
-   Type="http://schemas.bambulab.com/package/2021/cover-thumbnail-middle"/>
+   Type="http://schemas.snapmaker.com/package/2026/cover-thumbnail-middle"/>
 </Relationships>
 ```
 
 约定：
 
 - 关系的 `Id` 仅要求在所属关系文件内唯一，不应作为业务标识使用；消费者按 `Type` + `Target` 匹配。
-- `Type` 的 URI 是标识字符串，不联网解析。生产者新导出使用 `schemas.snapmaker.com/package/2026/...`，历史包使用 `schemas.bambulab.com/package/2021/...`；消费者对两种前缀应按**后缀匹配**兼容接受（如 `.../gcode`、`.../cover-thumbnail-middle`）。
+- `Type` 的 URI 是标识字符串，不联网解析。生产者写出统一使用 `schemas.snapmaker.com/package/2026/...` 命名空间；消费者按**后缀匹配**接受（如 `.../gcode`、`.../cover-thumbnail-middle`），不应比对完整前缀。
 - 包级封面缩略图只用于预览，不参与选盘（执行目标的确定见第 6 章）。
 
 ### 4.3 压缩、容量与命名约定
@@ -190,8 +190,8 @@ xxx.gcode.3mf                              ← ZIP 归档（OPC 包，启用 ZIP
 
 | 键 | 出现 | 说明 |
 |---|---|---|
-| `Application` | 必选 | 生成器标识，如 `Snapmaker_Orca-2.4.1`、`BambuStudio-2.3.5`，用于来源追溯 |
-| `Snapmaker_Orca:3mfVersion` | 必选 | 工程格式版本，当前写 `1`。消费者应同时兼容历史键 `BambuStudio:3mfVersion`、`bamboo_slicer:Version3mf`。该值是工程格式标记，**不是**固件执行协议版本 |
+| `Application` | 必选 | 生成器标识，如 `Snapmaker_Orca-2.4.1`，用于来源追溯 |
+| `Snapmaker_Orca:3mfVersion` | 必选 | 工程格式版本，当前写 `1`。该值是工程格式标记，**不是**固件执行协议版本 |
 | `Title` / `Designer` / `Description` / `License` / `Copyright` | 可选 | 模型级元数据，可为空 |
 | `Thumbnail_Middle` / `Thumbnail_Small` | 可选 | 指向 `Metadata/plate_1.png` 等的包内路径 |
 
@@ -253,8 +253,8 @@ XML，有 G-code 时必选。按 OPC 惯例，部件自身的关系统一放在�
 
 ```xml
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
- <Relationship Target="/Metadata/plate_1.gcode" Id="rel-1" Type="http://schemas.bambulab.com/package/2021/gcode"/>
- <Relationship Target="/Metadata/plate_2.gcode" Id="rel-2" Type="http://schemas.bambulab.com/package/2021/gcode"/>
+ <Relationship Target="/Metadata/plate_1.gcode" Id="rel-1" Type="http://schemas.snapmaker.com/package/2026/gcode"/>
+ <Relationship Target="/Metadata/plate_2.gcode" Id="rel-2" Type="http://schemas.snapmaker.com/package/2026/gcode"/>
 </Relationships>
 ```
 
@@ -268,8 +268,8 @@ XML，必选。根 `<config>`，含一个 `<header>` 与每个**切片有效**�
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
   <header>
-    <header_item key="X-BBL-Client-Type" value="slicer"/>
-    <header_item key="X-BBL-Client-Version" value=""/>
+    <header_item key="X-SM-Client-Type" value="slicer"/>
+    <header_item key="X-SM-Client-Version" value="2.4.1"/>
   </header>
   <plate>
     <metadata key="index" value="1"/>
@@ -297,11 +297,11 @@ XML，必选。根 `<config>`，含一个 `<header>` 与每个**切片有效**�
 | `<filament>@used_m` / `used_g` | 逐耗材用量（米 / 克） | 固定两位小数 |
 | `<warning>@level` | 0 提示 / 1 警告 / 2 错误 | `msg` 是枚举串，不是本地化文案；`level=2` 时消费者宜阻止启动 |
 
-`<header>` 键存在 `X-SM-Client-*` 与 `X-BBL-Client-*` 两代写法，版本值可为空；消费者对两种前缀均应识别。
+`<header>` 键固定为 `X-SM-Client-*` 写法（`Type` 固定 `slicer`，`Version` 写完整版本串）。
 
 ### 6.5 G-code 部件与完整性校验
 
-**`plate_N.gcode`**（纯文本，每可打印盘一份）：由源 G-code 文件以二进制方式**原样**压入 ZIP，封装阶段不应重写任何命令。文件自描述，首尾带结构化注释块（完整示例见附录 C.2）：
+**`plate_N.gcode`**（纯文本，每可打印盘一份）：由源 G-code 文件以二进制方式**原样**压入 ZIP，封装阶段不应重写任何命令。文件自描述，首尾带结构化注释块——块格式、标记行与统计行的完整规定见 [G-code 文件规范](gcode_standard.md)，示例见附录 C.2：
 
 - 头部 `HEADER_BLOCK`：生成器与时间、总层数、逐耗材密度 / 丝径、最大 Z 高度；
 - 头部 `THUMBNAIL_BLOCK`：base64 PNG 内嵌缩略图；
@@ -454,7 +454,7 @@ Auxiliaries/
 1. 按普通 ZIP 解包，先读 `[Content_Types].xml` 与 `_rels/.rels`，不因未声明扩展名拒绝已知文件；
 2. 以 `model_settings.config` 枚举盘，走 `.rels` 定位 G-code（不猜文件名）；
 3. 执行前完成 8.3 的校验；校验失败在执行任何指令前拒绝启动；
-4. 对 `Type` URI 的两代前缀（`schemas.bambulab.com/package/2021` 与 `schemas.snapmaker.com/package/2026`）按后缀兼容接受；
+4. 对 `Type` URI 按后缀匹配接受，不比对完整命名空间；
 5. 对缺失的可选资源（缩略图、预设、条件性文件）保持容忍，以关系文件与盘索引为准，不假定固定文件集；
 6. **不应**依据 `project_settings.config` 重新切片或改写 G-code；
 7. **不应**将 `filament_maps`、`<filament>@id`、`plate_N.json` 的 `id` 当作物理喷头 / 料槽编号使用；
@@ -479,11 +479,11 @@ Auxiliaries/
 
 | 情况 | 读取约定 |
 |---|---|
-| 模型版本键 | 当前写 `Snapmaker_Orca:3mfVersion`；应兼容 `BambuStudio:3mfVersion`、`bamboo_slicer:Version3mf` |
+| 模型版本键 | 写 `Snapmaker_Orca:3mfVersion` |
 | 模型版本与配置版本 | 两者分开读取：模型版本当前为 1；`project_schema_version` 当前为 `"1"` |
 | legacy 层高文件 | 无版本头的 `layer_heights_profile.txt` 按对象顺序解释，不套用 v2 对象 id |
 | `Content_Types` 不完整 | 2.4.x 未覆盖全部配置文件；已知文件按实际内容格式读取 |
-| 关系 `Type` 两代前缀 | 按后缀匹配兼容接受 |
+| 关系 `Type` 命名空间 | `schemas.snapmaker.com/package/2026`；按后缀匹配接受 |
 | 未知的必需扩展 | 影响模型解释时，读取器应报告不支持 |
 
 ## 附录 A（资料性）与 3MF Core / Toolpath 扩展的对照
@@ -526,6 +526,8 @@ Metadata/
 ```
 
 ### C.2 G-code 文件自描述结构
+
+逐字段规定见 [G-code 文件规范](gcode_standard.md)（HEADER_BLOCK / THUMBNAIL_BLOCK / EXECUTABLE_BLOCK / 尾部统计 / CONFIG_BLOCK）。
 
 ```text
 ; HEADER_BLOCK_START

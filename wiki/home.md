@@ -21,6 +21,7 @@
 | 页面 | 内容 |
 |---|---|
 | [gcode.3mf 规范 v1.0（草案）](specification/gcode.3mf/gcode_3mf_standard.md) | 标准正文：总体结构 → 盘与打印数据 → 一致性要求，GB/T 体例（技术内容 = v0.9.9） |
+| [G-code 文件规范 v1.0（草案）](specification/gcode.3mf/gcode_standard.md) | 标准正文：文件布局 → 行语法与指令 → 注释标记 → 自描述块与统计，GB/T 体例（基准机型 U1 / Klipper，基于 2.4.x 源码实测） |
 
 ## 研发内部资料（证据链）
 
