@@ -42,22 +42,22 @@ PRINT_START (other variables) CHAMBER_TEMP=[chamber_temperature]
 
 This may be useful if your printer does not support M141/M191 commands, or if you desire to handle heat soaking in the print start macro if no active chamber heater is installed.
 
-## Standard Temperature Ranges
+## Temperature Reference (U1 Presets)
 
-The following table lists the standard temperature ranges for common 3D printing materials.  
-Actual optimal temperatures may vary based on specific filament brands and printer models.  
-Always refer to the filament manufacturer's recommendations and calibrations for best results.
+The following table lists the values configured in the U1 filament presets shipped with this fork (`Generic @U1` and `Snapmaker @U1` families).  
+Numbers in parentheses are the nozzle temperature ranges defined in the presets.  
+Actual optimal temperatures still vary between filament brands — always follow the manufacturer's recommendations and run calibrations for best results.
 
 | Material | Nozzle Temp (°C) | Bed Temp (°C) | Chamber Temp (°C) |
 | --- | --- | --- | --- |
-| PLA | 180-220 | 50-60 | Ambient |
-| ABS | 230-250 | 90-100 | 50-70 |
-| ASA | 240-260 | 90-100 | 50-70 |
-| Nylon 6 | 230-260 | 90-110 | 70-100 |
-| Nylon 12 | 225-260 | 90-110 | 70-100 |
-| TPU | 220-245 | 40-60 | Ambient |
-| PC | 270-310 | 100-120 | 80-100 |
-| PC-ABS | 260-280 | 95-110 | 60-80 |
-| HIPS | 220-250 | 90-110 | 50-70 |
-| PP | 220-270 | 80-105 | 40-70 |
-| Acetal (POM) | 210-240 | 100-130 | 70-100 |
+| PLA | 220 (190-240) | 65 | 0 |
+| PETG | 245-255 (220-270) | 70-80 | 0 |
+| ABS | 265-280 (240-280) | 90-100 | 60 (Snapmaker ABS) / 0 (Generic ABS) |
+| ASA | 260-280 (240-280) | 90-100 | 0 |
+| PA (Nylon) | 260 (240-280) | 100 | 60 |
+| PC | 280 (260-290) | 100 | 0 |
+| TPU | 215-240 (200-250) | 35 | 0 |
+
+> [!NOTE]
+> **How the chamber is controlled on U1**
+> The U1 machine presets do not enable `support_chamber_temp_control`, so the M191/M141 path above is not used on U1 by default. The U1 start G-code instead manages the chamber through purifier macros (`SET_PURIFIER_MODE` with a target around 42-45 °C, then `WAIT_CHAMBER_TEMP`). The mode is chosen automatically from the filaments used in the print: a low-temperature filament with a `temperature_vitrification` of 50 °C or below triggers strong cooling, one of 70 °C or below (and above 50 °C) triggers weak cooling, and otherwise the chamber is kept warm.
