@@ -166,6 +166,9 @@ def parse_default(expr, enum_display=None):
     inner = re.sub(r'\bL\(\s*("(?:[^"\\]|\\.)*")\s*\)', r'\1', inner)
     if inner == "":
         return ""  # 显式空默认
+    # 相邻字符串字面量拼接（"A" "B" → AB）——整体剥引号会把中间的 `" "` 留进值里
+    if re.fullmatch(r'\s*(?:"(?:[^"\\]|\\.)*"\s*)+', inner):
+        return "".join(re.findall(r'"((?:[^"\\]|\\.)*)"', inner))
     if len(inner) >= 2 and inner[0] == '"' and inner[-1] == '"':
         return inner[1:-1]  # 整串字符串字面量（含逗号/换行），原样保留不拆分
     parts = [p.strip() for p in inner.split(",")]
@@ -673,6 +676,8 @@ CO_TYPE_MAP = {
     "coFloats": ("Float list", "#list-types"),
     "coFloatOrPercent": ("Float or Percentage", "#integer-float-percentage"),
     "coFloatsOrPercents": ("Float or Percentage list", "#list-types"),
+    "coPercent": ("Percentage", "#integer-float-percentage"),
+    "coPercents": ("Percentage list", "#list-types"),
     "coString": ("Text", "#text"),
     "coStrings": ("Text list", "#list-types"),
     "coEnum": ("Choice", "#choice"),
@@ -683,10 +688,114 @@ CO_TYPE_MAP = {
 MODE_MAP = {"Simple": "Simple", "Advanced": "Advanced", "Developer": "Developer"}
 
 
+# 遗留页正文/tooltip 中的代码类名 → 用户表述
+JARGON = {"RammingDialog": "the ramming dialog"}
+
+
+def _meta_lines(rec, stem, meta, prefix):
+    """完整页元数据行（Mode/Variable/Type + 脚本行 + Options + CLI），升格路径共用。"""
+    mode = MODE_MAP.get(rec.get("mode"), None) or "Simple"
+    t = rec.get("type") or ""
+    # hpp 宏键类型名为 ConfigOptionXxx 形态，归一到 coXxx 再查映射
+    tname, tanchor = CO_TYPE_MAP.get(t) or CO_TYPE_MAP.get(
+        t.replace("ConfigOption", "co"), ("—", "#list-types"))
+    md = ["[Mode](%sgeneral_settings/option_mode.md): `%s`.  " % (prefix, mode),
+          "[Variable](%sdeveloper_reference/built_in_placeholders_variables.md): `%s`.  " % (prefix, stem),
+          "[Type](%sgeneral_settings/option_type.md%s): `%s`.  " % (prefix, tanchor, tname)]
+    md.extend(l + "  " for l in build_lines([stem], meta, prefix))
+    if tname.startswith("Choice") and rec.get("enum_values"):
+        md.append("[Options](%sgeneral_settings/option_type.md#choice): `%s`.  "
+                  % (prefix, ", ".join(rec["enum_values"])))
+    if not rec.get("nocli"):
+        v = "=1" if tname.split(" ")[0] in ("Boolean", "Integer", "Float") else "=value"
+        md.append("[CLI Example](%scli/cli_mode.md#setting-overrides): `--%s%s`.  "
+                  % (prefix, stem.replace("_", "-"), v))
+    return md
+
+
+def promote_legacy(path, meta, dry_run):
+    """无元数据块的历史页（无 Status、无 [Type]）→ 完整页格式（数据全取 JSON）。"""
+    with open(path, encoding="utf-8", newline="") as f:
+        text = f.read()
+    eol = "\r\n" if "\r\n" in text else "\n"
+    lines = text.split(eol)
+    stem = os.path.splitext(os.path.basename(path))[0]
+    rel = os.path.relpath(path, REPO_ROOT)
+    rec = meta.get(stem)
+    if rec is None:
+        print("[SKIP] %s: 键不在 JSON（遗留页）" % rel)
+        return False
+    prefix = rel_prefix(path)
+    label = rec.get("label") or ""
+
+    quote = []
+    i = 1
+    while i < len(lines):
+        if lines[i].startswith(">"):
+            quote.append(lines[i]); i += 1
+        elif not lines[i].strip() and i + 1 < len(lines) and lines[i + 1].startswith(">"):
+            i += 1
+        else:
+            break
+    loc_i = next((x for x, l in enumerate(quote) if l.startswith("> Location:")), None)
+    loc = quote[loc_i] if loc_i is not None else ""
+    seg3 = loc.split("→")[2].strip() if loc.count("→") >= 2 else ""
+    if loc_i is not None and label and loc.count("→") < 3:
+        quote[loc_i] = loc + " → " + label
+
+    hr = next((x for x in range(i, len(lines)) if lines[x].strip() == "---"), None)
+    body = lines[hr + 1:] if hr is not None else lines[i:]
+    while body and not body[0].strip():
+        body.pop(0)
+
+    tooltip = (rec.get("tooltip") or "").replace("%%", "%")
+    for a, b in JARGON.items():
+        tooltip = tooltip.replace(a, b)
+    desc = None
+    m = re.match(r"^#{1,4}\s+(.+?)\s*$", body[0]) if body else None
+    if m:
+        htxt = m.group(1)
+        if htxt.lower() == label.lower() or (seg3 and htxt == seg3):
+            body = body[1:]  # 与 label/UI 区块同名 → 折叠
+            while body and not body[0].strip():
+                body.pop(0)
+            if not any(l.strip() for l in body):
+                desc = tooltip or None
+        else:
+            desc = tooltip or None  # 内容标题保留，tooltip 描述插其前
+    elif not any(l.strip() for l in body):
+        desc = tooltip or None
+    for x, l in enumerate(body):  # 正文里的类名行话同步清理
+        for a, b in JARGON.items():
+            body[x] = l.replace(a, b)
+
+    md = [lines[0], ""] + quote + ["", "---", ""]
+    md.extend(_meta_lines(rec, stem, meta, prefix))
+    md.append("")
+    if desc:
+        md.append(desc)
+        md.append("")
+    md.extend(body)
+    if dry_run:
+        print("[DRY] %s: promoted (legacy)" % rel)
+    else:
+        with open(path, "w", encoding="utf-8", newline="") as f:
+            f.write(eol.join(md))
+        print("[OK] %s: promoted (legacy)" % rel)
+    return True
+
+
 def promote_page(path, meta, dry_run):
     with open(path, encoding="utf-8", newline="") as f:
         text = f.read()
-    if "> Status:" not in text or "## Basic information" not in text:
+    has_status = "> Status:" in text
+    has_basic = "## Basic information" in text
+    has_type = any(RE_TYPE_LINE.match(l) for l in text.splitlines())
+    if has_status and has_basic:
+        pass  # 占位页路径，走下方主流程
+    elif not has_status and not has_type:
+        return promote_legacy(path, meta, dry_run)  # 无元数据块的历史页
+    else:
         return False
     eol = "\r\n" if "\r\n" in text else "\n"
     lines = text.split(eol)

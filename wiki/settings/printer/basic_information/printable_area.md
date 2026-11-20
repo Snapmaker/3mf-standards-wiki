@@ -1,8 +1,14 @@
 # printable_area
 
-> Location: Printer → Basic information → Printable space
+> Location: Printer → Basic information → Printable space → Printable area
 
 ---
+
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `printable_area`.  
+[Type](../../../general_settings/option_type.md#list-types): `Point list`.  
+[Default](../../../general_settings/option_type.md#default-value): `0×0, 200×0, 200×200, 0×200`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--printable-area=value`.  
 
 ## Printable area (Bed Shape)
 

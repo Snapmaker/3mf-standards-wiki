@@ -1,8 +1,18 @@
 # infill_shift_step
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Infill shift step
 
 ---
+
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `infill_shift_step`.  
+[Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Default](../../../general_settings/option_type.md#default-value): `0.4`.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
+[Range](../../../general_settings/option_type.md#range): `0–10`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-shift-step=1`.  
+
+This parameter adds a slight displacement to each layer of infill to create a cross texture.
 
 ## Cross Hatch
 

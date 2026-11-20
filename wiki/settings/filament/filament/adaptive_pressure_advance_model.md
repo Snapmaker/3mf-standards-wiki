@@ -1,10 +1,14 @@
 # adaptive_pressure_advance_model
 
-> Location: Filament → Filament → Flow ratio and Pressure Advance
+> Location: Filament → Filament → Flow ratio and Pressure Advance → Adaptive pressure advance measurements (beta)
 
 ---
 
-#### Adaptive pressure advance measurements (beta)
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `adaptive_pressure_advance_model`.  
+[Type](../../../general_settings/option_type.md#list-types): `Text list`.  
+[Default](../../../general_settings/option_type.md#default-value): `0,0,0\n0,0,0`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--adaptive-pressure-advance-model=value`.  
 
 Add sets of **pressure advance** (PA) values, the **volumetric flow speeds** and **accelerations** they were measured at, separated by a comma.  
 One set of values per line. For example:

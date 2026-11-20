@@ -1,8 +1,16 @@
 # symmetric_infill_y_axis
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Symmetric infill Y axis
 
 ---
+
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `symmetric_infill_y_axis`.  
+[Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--symmetric-infill-y-axis=1`.  
+
+If the model has two parts that are symmetric about the Y axis, and you want these parts to have symmetric textures, please click this option on one of the parts.
 
 ## Zig Zag
 

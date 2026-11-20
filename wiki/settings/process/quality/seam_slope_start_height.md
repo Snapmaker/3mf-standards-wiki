@@ -1,9 +1,19 @@
 # seam_slope_start_height
 
-> Location: Process → Quality → Seam
+> Location: Process → Quality → Seam → Scarf start height
 > Also in this section: `seam_slope_type`, `seam_slope_conditional`, `scarf_angle_threshold`, `scarf_overhang_threshold`, `scarf_joint_speed`, `seam_slope_entire_loop`, `seam_slope_min_length`, `seam_slope_steps`, `scarf_joint_flow_ratio`, `seam_slope_inner_walls` (each documented on its own page).
 
 ---
+
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `seam_slope_start_height`.  
+[Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
+[Default](../../../general_settings/option_type.md#default-value): `0`.  
+[Unit](../../../general_settings/option_type.md#unit): `mm or %`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--seam-slope-start-height=1`.  
+
+Start height of the scarf.\nThis amount can be specified in millimeters or as a percentage of the current layer height. The default value for this parameter is 0.
 
 ### Scarf joint seam
 

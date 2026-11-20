@@ -1,10 +1,14 @@
 # machine_max_speed_e
 
-> Location: Printer → Motion ability → Speed limitation
+> Location: Printer → Motion ability → Speed limitation → E
 
 ---
 
-## Speed limitation
+[Mode](../../../general_settings/option_mode.md): `Simple`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_max_speed_e`.  
+[Type](../../../general_settings/option_type.md#list-types): `Float list`.  
+[Default](../../../general_settings/option_type.md#default-value): — no static default.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--machine-max-speed-e=1`.  
 
 Safeguard maximum speeds for all axes.
 This will cap the speed set by the process if it exceeds these values.

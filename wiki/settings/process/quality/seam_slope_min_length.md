@@ -1,9 +1,19 @@
 # seam_slope_min_length
 
-> Location: Process → Quality → Seam
+> Location: Process → Quality → Seam → Scarf length
 > Also in this section: `seam_slope_type`, `seam_slope_conditional`, `scarf_angle_threshold`, `scarf_overhang_threshold`, `scarf_joint_speed`, `seam_slope_start_height`, `seam_slope_entire_loop`, `seam_slope_steps`, `scarf_joint_flow_ratio`, `seam_slope_inner_walls` (each documented on its own page).
 
 ---
+
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `seam_slope_min_length`.  
+[Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
+[Default](../../../general_settings/option_type.md#default-value): `20`.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--seam-slope-min-length=1`.  
+
+Length of the scarf. Setting this parameter to zero effectively disables the scarf.
 
 ### Scarf joint seam
 

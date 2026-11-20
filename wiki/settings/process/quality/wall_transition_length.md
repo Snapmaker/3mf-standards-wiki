@@ -1,9 +1,19 @@
 # wall_transition_length
 
-> Location: Process → Quality → Wall generator
+> Location: Process → Quality → Wall generator → Wall transition length
 > Also in this section: `wall_transition_angle`, `wall_transition_filter_deviation`, `wall_distribution_count`, `initial_layer_min_bead_width`, `min_bead_width`, `min_feature_size`, `min_length_factor` (each documented on its own page).
 
 ---
+
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `wall_transition_length`.  
+[Type](../../../general_settings/option_type.md#integer-float-percentage): `Percentage`.  
+[Default](../../../general_settings/option_type.md#default-value): `100`.  
+[Unit](../../../general_settings/option_type.md#unit): `%`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wall-transition-length=value`.  
+
+When transitioning between different numbers of walls as the part becomes thinner, a certain amount of space is allotted to split or join the wall segments. It's expressed as a percentage over nozzle diameter.
 
 ## Arachne
 
