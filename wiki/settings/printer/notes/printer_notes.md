@@ -1,14 +1,14 @@
 # printer_notes
 
-> Location: Printer → Notes → Notes
+> Location: Printer → Notes → Notes → Printer notes
 > Status: placeholder — to be completed.
 
-## Basic information
+---
 
-- Label: Printer notes
-- Mode: Advanced
-- Type: Text
-- Default: (empty)
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `printer_notes`.  
+[Type](../../../general_settings/option_type.md#text): `Text`.  
+[Default](../../../general_settings/option_type.md#default-value): `(empty)`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--printer-notes=value`.  
 
-> Tooltip: You can put your notes regarding the printer here.
-
+You can put your notes regarding the printer here.

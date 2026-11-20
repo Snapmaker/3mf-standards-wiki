@@ -1,14 +1,14 @@
 # tool_change_temprature_wait
 
-> Location: Printer → Multimaterial → Advanced
+> Location: Printer → Multimaterial → Advanced → Wait for the temperature when changing tools
 > Status: placeholder — to be completed.
 
-## Basic information
+---
 
-- Label: Wait for the temperature when changing tools
-- Mode: Advanced
-- Type: Boolean
-- Default: true
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `tool_change_temprature_wait`.  
+[Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `true`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--tool-change-temprature-wait=1`.  
 
-> Tooltip: It will use the M109 instead of M104 T[target] after changing tools if this is set to true
-
+It will use the M109 instead of M104 T[target] after changing tools if this is set to true

@@ -1,16 +1,21 @@
 # external_infill_margin
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Anchor solid infill by X mm
 > Status: placeholder — to be completed.
 
-## Basic information
+---
 
-- Label: Anchor solid infill by X mm
-- Mode: Advanced
-- Type: Float or Percentage, unit mm or % (% relative to [`line_width`](../quality/line_width.md)), min 0, max 50
-- Default: (empty, i.e. no expansion)
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `external_infill_margin`.  
+[Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
+[Default](../../../general_settings/option_type.md#default-value): `(empty)`.  
+[Unit](../../../general_settings/option_type.md#unit): `mm or %`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--external-infill-margin=1`.  
 
-> Tooltip: This parameter grows the top/bottom/solid layers by the specified mm to anchor them into the sparse infill and support the perimeters above. Can be a %% of the width of the perimeters.
+This parameter grows the top/bottom/solid layers by the specified mm to anchor them into the sparse infill and support the perimeters above. Can be a % of the width of the perimeters.
+
+A % value is [`line_width`](../quality/line_width.md).
 
 ## Notes
 

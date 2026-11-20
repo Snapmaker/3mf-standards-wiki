@@ -657,6 +657,157 @@ def cmd_migrate(args):
 
 
 # ---------------------------------------------------------------------------
+# promote（占位页升格完整页格式；2026-11-20 裁决：消除 bullet/行式双风格）
+# ---------------------------------------------------------------------------
+
+CO_TYPE_MAP = {
+    "coBool": ("Boolean", "#boolean"),
+    "coBools": ("Boolean list", "#list-types"),
+    "coInt": ("Integer", "#integer-float-percentage"),
+    "coInts": ("Integer list", "#list-types"),
+    "coFloat": ("Float", "#integer-float-percentage"),
+    "coFloats": ("Float list", "#list-types"),
+    "coFloatOrPercent": ("Float or Percentage", "#integer-float-percentage"),
+    "coFloatsOrPercents": ("Float or Percentage list", "#list-types"),
+    "coString": ("Text", "#text"),
+    "coStrings": ("Text list", "#list-types"),
+    "coEnum": ("Choice", "#choice"),
+    "coEnums": ("Choice list", "#list-types"),
+    "coPoint": ("Point", "#point"),
+    "coPoints": ("Point list", "#list-types"),
+}
+MODE_MAP = {"Simple": "Simple", "Advanced": "Advanced", "Developer": "Developer"}
+
+
+def promote_page(path, meta, dry_run):
+    with open(path, encoding="utf-8", newline="") as f:
+        text = f.read()
+    if "> Status:" not in text or "## Basic information" not in text:
+        return False
+    eol = "\r\n" if "\r\n" in text else "\n"
+    lines = text.split(eol)
+    stem = os.path.splitext(os.path.basename(path))[0]
+    rel = os.path.relpath(path, REPO_ROOT)
+    rec = meta.get(stem)
+    if rec is None:
+        print("[SKIP] %s: 键不在 JSON" % rel)
+        return False
+    prefix = rel_prefix(path)
+
+    # --- 头部 quote 行（Location/Status/Visibility/Note/Also…原序）---
+    quote = []
+    i = 1
+    while i < len(lines):
+        if lines[i].startswith(">"):
+            quote.append(lines[i]); i += 1
+        elif not lines[i].strip() and i + 1 < len(lines) and lines[i + 1].startswith(">"):
+            i += 1
+        else:
+            break
+
+    # --- Basic 节：bullets + Tooltip 引用块 ---
+    bi = next(x for x, l in enumerate(lines) if l.startswith("## Basic information"))
+    j = bi + 1
+    while j < len(lines) and not lines[j].strip():
+        j += 1
+    bullets = {}
+    while j < len(lines) and lines[j].startswith("- "):
+        m = RE_BULLET_NAME.match(lines[j])
+        if not m:
+            break
+        bullets[m.group(1).lower()] = lines[j][m.end():].strip()
+        j += 1
+    while j < len(lines) and not lines[j].strip():
+        j += 1
+    tooltip = []
+    while j < len(lines) and lines[j].startswith(">"):
+        t = lines[j][1:].strip()
+        if tooltip or t.startswith("Tooltip:"):
+            tooltip.append(t[len("Tooltip:"):].strip() if t.startswith("Tooltip:") else t)
+        j += 1
+
+    # --- 其后小节（## Notes 等）原样保留 ---
+    rest = lines[j:]
+    while rest and not rest[0].strip():
+        rest.pop(0)
+
+    # --- 生成完整页 ---
+    label = bullets.get("label") or rec.get("label") or ""
+    for qi, l in enumerate(quote):
+        if l.startswith("> Location:") and label and l.count("→") < 3:
+            quote[qi] = l + " → " + label
+
+    mode = MODE_MAP.get(rec.get("mode"), None)
+    mode_val = "`%s`." % mode if mode else "—."
+    tname, tanchor = CO_TYPE_MAP.get(rec.get("type"), (None, None))
+    note = ""
+    if tname is None:
+        tname = (bullets.get("type") or "—").split(",")[0].strip()
+        tanchor = "#list-types"
+    else:
+        bt = bullets.get("type") or ""
+        rem = bt[len(tname):].strip().lstrip(",").strip() if bt.startswith(tname) else ""
+        if rem.startswith("(") and rem.endswith(")"):
+            paren = rem[1:-1]
+            if "`" in paren or "](" in paren:  # 含代码段/链接 → 不进 Type 代码段，转正文说明句
+                note = paren
+            else:
+                tname = tname + " (" + paren + ")"
+        elif rem.startswith("unit"):
+            # "unit mm/s or % (% relative to [x](y)), min 0" —— unit/min/range 由 [Unit]/[Range] 行承载，
+            # 仅 "% relative to …" 语义保留为说明句
+            k = rem.find("% relative to")
+            if k != -1:
+                end = rem.rfind(")")
+                note = rem[k:end] if end > k else rem[k:]
+        elif rem:
+            tname = tname + ", " + rem
+
+    md = [lines[0], ""] + quote + ["", "---", ""]
+    md.append("[Mode](%sgeneral_settings/option_mode.md): %s  " % (prefix, mode_val))
+    md.append("[Variable](%sdeveloper_reference/built_in_placeholders_variables.md): `%s`.  " % (prefix, stem))
+    md.append("[Type](%sgeneral_settings/option_type.md%s): `%s`.  " % (prefix, tanchor, tname))
+    md.extend(l + "  " for l in build_lines([stem], meta, prefix))
+    if tname.startswith("Choice") and rec.get("enum_values"):
+        md.append("[Options](%sgeneral_settings/option_type.md#choice): `%s`.  "
+                  % (prefix, ", ".join(rec["enum_values"])))
+    if not rec.get("nocli"):
+        v = "=1" if tname.split(" ")[0] in ("Boolean", "Integer", "Float") else "=value"
+        md.append("[CLI Example](%scli/cli_mode.md#setting-overrides): `--%s%s`.  " % (prefix, stem.replace("_", "-"), v))
+    md.append("")
+    if tooltip:
+        md.extend(t.replace("%%", "%") for t in tooltip if t is not None)
+        md.append("")
+    if note:
+        if note.startswith("% relative to"):
+            md.append("A %% value is %s." % note[len("% relative to"):].strip())
+        else:
+            md.append(note[0].upper() + note[1:] + ("." if not note.endswith(".") else ""))
+        md.append("")
+    md.extend(rest)
+    out = eol.join(md)
+    if out.rstrip("\r\n") + eol == text.rstrip("\r\n") + eol:
+        return False
+    if dry_run:
+        print("[DRY] %s: promoted" % rel)
+    else:
+        with open(path, "w", encoding="utf-8", newline="") as f:
+            f.write(out)
+        print("[OK] %s: promoted" % rel)
+    return True
+
+
+def cmd_promote(args):
+    meta = json.load(open(args.json, encoding="utf-8"))["keys"]
+    n = 0
+    for p in page_files(args):
+        if promote_page(p, meta, args.dry_run):
+            n += 1
+    print("--\n%s %d 页" % ("将升格" if args.dry_run else "已升格", n))
+    return 0
+
+
+# ---------------------------------------------------------------------------
 # banner（Q5：fork 未实现小节加 WARNING 横幅）
 # ---------------------------------------------------------------------------
 
@@ -896,6 +1047,14 @@ def main():
     g.add_argument("--dry-run", action="store_true")
     g.add_argument("--json", default=DEFAULT_JSON)
     g.set_defaults(func=cmd_migrate)
+
+    pr = sub.add_parser("promote", help="占位页（## Basic information）升格为完整页格式")
+    pr.add_argument("pages", nargs="*", help="页面路径")
+    pr.add_argument("--group", help="目录")
+    pr.add_argument("--all", action="store_true", help="全部键页")
+    pr.add_argument("--dry-run", action="store_true")
+    pr.add_argument("--json", default=DEFAULT_JSON)
+    pr.set_defaults(func=cmd_promote)
 
     a = sub.add_parser("audit", help="页内元数据 vs JSON 对账")
     a.add_argument("--json", default=DEFAULT_JSON)

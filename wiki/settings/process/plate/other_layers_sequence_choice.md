@@ -1,11 +1,13 @@
 # other_layers_sequence_choice
 
-> Location: Process → Plate Settings
+> Location: Process → Plate Settings → Other layers filament sequence
 > Status: placeholder — fork-specific parameter, to be completed.
 
-## Basic information
+---
 
-- Label: Other layers filament sequence
-- Mode: Simple
-- Type: Choice
-- Default: Auto
+[Mode](../../../general_settings/option_mode.md): `Simple`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `other_layers_sequence_choice`.  
+[Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Default](../../../general_settings/option_type.md#default-value): `Auto`.  
+[Options](../../../general_settings/option_type.md#choice): `Auto, Customize`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--other-layers-sequence-choice=value`.  

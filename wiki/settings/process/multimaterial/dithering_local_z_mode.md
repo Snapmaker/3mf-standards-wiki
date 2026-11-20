@@ -1,13 +1,14 @@
 # dithering_local_z_mode
 
-> Location: Process → Multimaterial → Color Mixing (Experimental)
+> Location: Process → Multimaterial → Color Mixing (Experimental) → Subdivide Mix Layer
 > Status: placeholder — fork-specific parameter, to be completed.
 
-## Basic information
+---
 
-- Label: Subdivide Mix Layer
-- Mode: Advanced
-- Type: Boolean
-- Default: false
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `dithering_local_z_mode`.  
+[Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--dithering-local-z-mode=1`.  
 
-> Tooltip: Enable \"Subdivide Mix Layer\" for mixing areas. Layer height will be subdivided for better color mixing results.
+Enable \"Subdivide Mix Layer\" for mixing areas. Layer height will be subdivided for better color mixing results.

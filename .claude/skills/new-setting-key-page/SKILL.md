@@ -29,7 +29,7 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 ### 2. 判断页面类型
 
 - 上游 OrcaSlicer wiki（https://github.com/OrcaSlicer/OrcaSlicer/wiki）对应 Tab 页收录了该键 → **完整页**：拷贝上游小节内容，保留四件套链接结构，索引标记 ✅。
-- 上游未收录（fork 特有参数）→ **占位页**：从 fork 源码 `src/libslic3r/PrintConfig.cpp` 取该键的元数据（标签/类型/默认值/可见模式/tooltip），索引标记 🚧。fork 的 checkout 位置各人不同，不确定就问用户。
+- 上游未收录（fork 特有参数）→ **占位页**：跑 `promote` 从 repo 内 JSON 生成完整页格式骨架（见模板 B），正文以 tooltip 为起点，索引标记 🚧。fork 的 checkout 位置各人不同，不确定就问用户。
 - 该键与既有页面共用同一 UI 区块（一个区块多个键）→ 在两页 Location 行下互加一行 `> Also in this section: ...`（参照 `wiki/settings/process/multimaterial/delta_temperature.md` 的写法），索引可用 🔗 交叉引用。
 - **语言铁律（2026-11-19 裁决）**：`wiki/settings/` 下所有页面正文**全英文**——含标注行（`> Status:` / `> Visibility:` / `> G-code embedded name:` / `> Also in this section:`）、占位页模板、总览页；键名/代码/枚举值保持原样。
 
@@ -69,25 +69,29 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 - 元数据四行（Default/Unit/Range/Aliases）**由脚本生成，不要手写**：Default 必有（fork 无此键显示 `—`，有键无静态默认显示 `— no static default`，空串默认显示 `(empty)`）；Unit 仅源码 `sidetext` 存在时注入（复合单位原样，如 `mm or %`）；Range 仅 min/max 存在时注入且**不带单位**；Aliases 仅存在时注入（fork 仅 `inner_wall_speed` 一处）。
 - 多键小节页同样**只写本键自己的单数行**（`[Variable]`/`[Default]`/`[Range]` 值均取本键），不捆绑同小节其他键，`[CLI Example]` 也只用本键的 kebab-case 旗标——兄弟键靠 `> Also in this section:` 行和各自键页交叉引用（2026-11-19 全量收敛，决议记录见 docs/09 §3）。既有键页改版式用 `migrate` 子命令，不要手改。
 
-**模板 B —— 占位页**（全英文，2026-11-19 起）：
+**模板 B —— 占位页**（2026-11-20 起与完整页同格式；全英文，2026-11-19 起）：
 
 ```markdown
 # <键名>
 
-> Location: <Tab> → <分组> → <UI 区块名>
+> Location: <Tab> → <分组> → <UI 区块名> → <UI 标签>
 > Status: placeholder — not covered by the upstream OrcaSlicer wiki; fork-specific; to be completed.
 
-## Basic information
+---
 
-- Label: <label text>
-- Mode: <Simple/Advanced/Developer>
-- Type: <user-facing type: Boolean / Integer (list) / Float (list) / Float or Percentage (list) / Text (list) / Choice (list) / Point>
-- Default: <value or —>
+[Mode](../../../general_settings/option_mode.md): `<档位>`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `<键名>`.  
+[Type](../../../general_settings/option_type.md#锚点): `<类型>`.  
+[Default](../../../general_settings/option_type.md#default-value): `<默认值>`.  
+[Unit](../../../general_settings/option_type.md#unit): `<单位>`.  
+[Range](../../../general_settings/option_type.md#range): `<min–max>`.  
+[Options](../../../general_settings/option_type.md#choice): `<枚举值>`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--kebab-case-键名=<值>`.  
 
-> Tooltip: <tooltip>
+<tooltip 文本作为正文起点>
 ```
 
-占位页补全线索用 HTML 注释留在页内（读者不可见）：`<!-- TODO: <线索> -->`；模板默认套话（"purpose, value range, …"）不写——Status 行已表明待补全。
+用 `promote <页面>` 子命令从 repo 内 JSON 自动生成骨架（元数据行含 Default/Unit/Range/Options/CLI，正文取 tooltip；含链接的取值说明自动转为正文句，`%%` 还原为 `%`），手工补 Status/Visibility 等标注行与正文。补全线索用 HTML 注释留在页内（读者不可见）：`<!-- TODO: <线索> -->`。Setting Overrides 的 cross-reference 页（`Status: cross-reference` + `Parameter description` 链接）是独立格式，不用本模板。
 
 注意：`general_settings/`、`cli/`、`developer_reference/` 的四件套支撑页已建（2026-11-19：`option_mode` / `option_type` / `built_in_placeholders_variables` / `cli_mode`），链接可达；键页正文仍可能链接 `print_prepare/` 等尚未启用的预留目录，悬空属预期，校验按 WARN 处理，不要改成别的目标。
 

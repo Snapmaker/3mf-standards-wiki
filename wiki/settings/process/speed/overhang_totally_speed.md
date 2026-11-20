@@ -1,17 +1,22 @@
 # overhang_totally_speed
 
-> Location: Process → Speed → Overhang speed
+> Location: Process → Speed → Overhang speed → 100%
 > Status: placeholder — to be completed.
 > This key shares the "Slow down for overhang" row with `overhang_1_4_speed` / `overhang_2_4_speed` / `overhang_3_4_speed` / `overhang_4_4_speed` (5th column, labeled 100%).
 
-## Basic information
+---
 
-- Label: 100%
-- Mode: Advanced
-- Type: Float or Percentage list, unit mm/s or % (% relative to [`outer_wall_speed`](outer_wall_speed.md)), min 0
-- Default: 10
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `overhang_totally_speed`.  
+[Type](../../../general_settings/option_type.md#list-types): `Float or Percentage list`.  
+[Default](../../../general_settings/option_type.md#default-value): `10`.  
+[Unit](../../../general_settings/option_type.md#unit): `mm/s or %`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--overhang-totally-speed=1`.  
 
-> Tooltip: Speed of 100% overhang wall which has 0 overlap with the lower layer.
+Speed of 100% overhang wall which has 0 overlap with the lower layer.
+
+A % value is [`outer_wall_speed`](outer_wall_speed.md).
 
 ## Notes
 

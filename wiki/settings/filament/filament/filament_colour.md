@@ -1,17 +1,20 @@
 # filament_colour
 
-> Location: Filament → Filament → Basic information
+> Location: Filament → Filament → Basic information → Color
 > Status: placeholder — to be completed.
 > Note: this key is not rendered inside the filament tab; it is edited via the color swatch of the filament list in the left panel of the prepare view (see below).
 
-## Basic information
+---
 
-- Label: Color
-- Mode: Advanced
-- Type: Text list (color picker; one `#RRGGBB` color string per slot)
-- Default: #F2754E
+[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_colour`.  
+[Type](../../../general_settings/option_type.md#list-types): `Text list`.  
+[Default](../../../general_settings/option_type.md#default-value): `#F2754E`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-colour=value`.  
 
-> Tooltip: Only used as a visual help on UI.
+Only used as a visual help on UI.
+
+Color picker; one `#RRGGBB` color string per slot.
 
 ## Where to edit
 

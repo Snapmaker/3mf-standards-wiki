@@ -1,16 +1,17 @@
 # enable_overlap_area_carving
 
-> Location: Process → Others → Special mode
+> Location: Process → Others → Special mode → Carve overlaps by per-layer slice area
 > Status: placeholder — fork-added parameter, to be completed.
 
-## Basic information
+---
 
-- Label: Carve overlaps by per-layer slice area
-- Mode: Developer
-- Type: Boolean
-- Default: false
+[Mode](../../../general_settings/option_mode.md): `Developer`.  
+[Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_overlap_area_carving`.  
+[Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
+[Default](../../../general_settings/option_type.md#default-value): `false`.  
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-overlap-area-carving=1`.  
 
-> Tooltip: When enabled, overlaps between multi-extruder parts are carved with the new algorithm: on each layer, the part with the smaller slice area owns the overlap, keeping small details intact inside larger bodies. Developer option.
+When enabled, overlaps between multi-extruder parts are carved with the new algorithm: on each layer, the part with the smaller slice area owns the overlap, keeping small details intact inside larger bodies. Developer option.
 
 ## Notes
 
