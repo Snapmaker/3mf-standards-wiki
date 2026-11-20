@@ -737,8 +737,9 @@ def promote_page(path, meta, dry_run):
         if l.startswith("> Location:") and label and l.count("→") < 3:
             quote[qi] = l + " → " + label
 
-    mode = MODE_MAP.get(rec.get("mode"), None)
-    mode_val = "`%s`." % mode if mode else "—."
+    # 框架默认档位为 Simple（未显式设置的键 UI 上即 Simple 档，见 ConfigOptionDef 默认值）
+    mode = MODE_MAP.get(rec.get("mode"), None) or "Simple"
+    mode_val = "`%s`." % mode
     tname, tanchor = CO_TYPE_MAP.get(rec.get("type"), (None, None))
     note = ""
     if tname is None:

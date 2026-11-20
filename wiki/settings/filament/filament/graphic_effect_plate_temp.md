@@ -6,7 +6,7 @@
 
 ---
 
-[Mode](../../../general_settings/option_mode.md): —.  
+[Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `graphic_effect_plate_temp`.  
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  

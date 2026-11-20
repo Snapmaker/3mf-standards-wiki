@@ -6,7 +6,7 @@
 
 ---
 
-[Mode](../../../general_settings/option_mode.md): —.  
+[Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `pellet_flow_coefficient`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `0.4157`.  

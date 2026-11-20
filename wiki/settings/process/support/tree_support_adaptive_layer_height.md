@@ -5,7 +5,7 @@
 
 ---
 
-[Mode](../../../general_settings/option_mode.md): —.  
+[Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_adaptive_layer_height`.  
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `1`.  
