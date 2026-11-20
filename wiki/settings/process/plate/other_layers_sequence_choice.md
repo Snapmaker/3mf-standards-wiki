@@ -6,8 +6,8 @@
 ## Basic information
 
 - Label: Other layers filament sequence
+- Mode: Simple
 - Type: Choice
 - Default: Auto
-- Mode: Simple
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)

@@ -12,7 +12,7 @@
 [Unit](../../../general_settings/option_type.md#unit): `mm`.  
 [Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 
-The bound applies to mm entries; a % value is also accepted and is computed over the nozzle diameter (the source sidetext lists mm only).  
+The bound applies to mm entries; a % value is also accepted and is computed over the nozzle diameter.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skeleton-infill-line-width=1`.  
 
 Version of [Zig Zag](#zig-zag) that adds extra skin.

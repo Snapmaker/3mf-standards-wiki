@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Pressure advance value when ramming
+- Mode: Advanced
 - Type: Float
 - Default: 0.0
-- Mode: Advanced
 
 > Tooltip (original): Set_Pressure_advance [this value] when ramming on wipe tower
 

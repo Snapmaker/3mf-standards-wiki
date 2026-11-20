@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Minimum Support Contact Area
+- Mode: Advanced
 - Type: Float
 - Default: 0.25
-- Mode: Advanced
 
 > Tooltip (original): Lower values generate more support contact surfaces.
 

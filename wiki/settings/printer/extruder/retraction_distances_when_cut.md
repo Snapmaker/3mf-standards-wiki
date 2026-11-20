@@ -6,8 +6,8 @@
 ## Basic information
 
 - Label: —
+- Mode: -
 - Type: —
 - Default: 18
-- Mode: -
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)

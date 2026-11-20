@@ -63,7 +63,7 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 
 **版式铁律（2026-11-20 裁决，533 页已全量迁移）**：
 - **键页不出现仓库代码内容**（2026-11-20 裁决）：不写源文件名（`Tab.cpp` 等）、类名（`FilamentColorDialog` 等）、`coXxx` 原始类型名（用用户术语：Boolean/Integer/Float/…/Choice list，见 option_type.md）；"the fork" 措辞用 **Snapmaker Orca**；上游纯文字引用（如 upstream PR 12669）仍按 2026-11-19 裁决保留；证据链归 docs/。
-- **元数据行固定顺序**：`Mode → Variable → Type → Default → Unit → Range → Aliases → Options → CLI Example`，全库一致，**缺省跳过**（没有该字段的行不占位）。audit 的 `field_order` 项查行序，migrate 自动重排兜底。
+- **元数据行固定顺序**：`Mode → Variable → Type → Default → Unit → Range → Aliases → Options → CLI Example`，全库一致，**缺省跳过**（没有该字段的行不占位）；占位页 bullet 格式（`- Label:` / `- Mode:` / `- Type:` / `- Default:`）同样受辖，**Label 置顶**、其余同序。audit 的 `field_order` 项查行序（两种格式都查），migrate 自动重排兜底。
 - **不写孤立的 `## <UI 标签>` 标题**——UI 标签是 Location 第 4 段（`Tab → 分组 → UI 区块 → UI 标签`）；多小节内容页（如 line_width 的 `## Line Types`）保留自己的内容标题，标题级别从 H2 起。
 - **说明正文与元数据块之间必须空一行**——元数据行以行尾双空格硬换行连成一块，没有空行正文会粘成"第 8 个分类"。
 - 元数据四行（Default/Unit/Range/Aliases）**由脚本生成，不要手写**：Default 必有（fork 无此键显示 `—`，有键无静态默认显示 `— no static default`，空串默认显示 `(empty)`）；Unit 仅源码 `sidetext` 存在时注入（复合单位原样，如 `mm or %`）；Range 仅 min/max 存在时注入且**不带单位**；Aliases 仅存在时注入（fork 仅 `inner_wall_speed` 一处）。
@@ -80,9 +80,9 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 ## Basic information
 
 - Label: <label text>
+- Mode: <Simple/Advanced/Developer>
 - Type: <user-facing type: Boolean / Integer (list) / Float (list) / Float or Percentage (list) / Text (list) / Choice (list) / Point>
 - Default: <value or —>
-- Mode: <Simple/Advanced/Developer>
 
 > Tooltip (original): <tooltip>
 

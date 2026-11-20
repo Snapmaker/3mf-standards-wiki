@@ -6,10 +6,10 @@
 
 ## Basic information
 
-- Label: 100% (full_label same)
+- Label: 100%
+- Mode: Advanced
 - Type: Float or Percentage list, unit mm/s or % (% relative to [`outer_wall_speed`](outer_wall_speed.md)), min 0
 - Default: 10
-- Mode: Advanced
 
 > Tooltip (original): Speed of 100% overhang wall which has 0 overlap with the lower layer.
 

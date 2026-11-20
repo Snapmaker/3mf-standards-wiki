@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Bed type
+- Mode: Simple
 - Type: Choice
 - Default: Cool Plate
-- Mode: Simple
 
 > Tooltip (original): Bed types supported by the printer.
 

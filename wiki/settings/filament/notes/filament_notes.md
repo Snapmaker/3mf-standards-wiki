@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Filament notes
+- Mode: Advanced
 - Type: Text list
 - Default: (empty)
-- Mode: Advanced
 
 > Tooltip (original): You can put your notes regarding the filament here.
 

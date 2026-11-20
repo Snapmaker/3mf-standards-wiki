@@ -7,9 +7,9 @@
 ## Basic information
 
 - Label: Cooling slowdown logic
+- Mode: Developer
 - Type: Choice list (single choice: Uniform cooling / Consistent surface)
 - Default: uniform_cooling
-- Mode: Developer
 
 > Tooltip (original): Determines how the printer slows down when minimum layer time isn't reached.
 > 'Uniform cooling' slows down all print features equally (current default behavior).

@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Printer notes
+- Mode: Advanced
 - Type: Text
 - Default: (empty)
-- Mode: Advanced
 
 > Tooltip (original): You can put your notes regarding the printer here.
 

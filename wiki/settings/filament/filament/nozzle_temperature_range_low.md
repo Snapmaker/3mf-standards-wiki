@@ -6,8 +6,8 @@
 ## Basic information
 
 - Label: Min
+- Mode: -
 - Type: Integer list
 - Default: 190
-- Mode: -
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)

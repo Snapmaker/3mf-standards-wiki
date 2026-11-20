@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Enable change pressure advance when wiping
+- Mode: Advanced
 - Type: Boolean
 - Default: true
-- Mode: Advanced
 
 > Tooltip (original): If it's set to false, the pressure advance value will not be changed.
 

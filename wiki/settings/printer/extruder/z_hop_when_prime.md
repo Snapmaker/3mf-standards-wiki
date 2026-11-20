@@ -6,8 +6,8 @@
 ## Basic information
 
 - Label: Z hop when moving to tower
+- Mode: Advanced
 - Type: Boolean list
 - Default: true
-- Mode: Advanced
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)

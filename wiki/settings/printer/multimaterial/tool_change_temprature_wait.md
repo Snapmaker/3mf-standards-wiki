@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Wait for the temperature when changing tools
+- Mode: Advanced
 - Type: Boolean
 - Default: true
-- Mode: Advanced
 
 > Tooltip (original): It will use the M109 instead of M104 T[target] after changing tools if this is set to true
 

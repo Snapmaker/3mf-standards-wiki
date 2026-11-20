@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Ramming line width ratio
+- Mode: Advanced
 - Type: Float
 - Default: 2.0
-- Mode: Advanced
 
 > Tooltip (original): This is used to decide the line width of wipe tower when ramming, ramming line width = [this ratio] * extruder * 1.25
 

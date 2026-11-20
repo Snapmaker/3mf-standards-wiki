@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Carve overlaps by per-layer slice area
+- Mode: Developer
 - Type: Boolean
 - Default: false
-- Mode: Developer
 
 > Tooltip (original): When enabled, overlaps between multi-extruder parts are carved with the new algorithm: on each layer, the part with the smaller slice area owns the overlap, keeping small details intact inside larger bodies. Developer option.
 

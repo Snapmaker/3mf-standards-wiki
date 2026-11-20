@@ -6,8 +6,8 @@
 ## Basic information
 
 - Label: Max
+- Mode: -
 - Type: Integer list
 - Default: 240
-- Mode: -
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)

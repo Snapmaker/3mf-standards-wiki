@@ -7,9 +7,9 @@
 ## Basic information
 
 - Label: Pellet flow coefficient
+- Mode: -
 - Type: Float list
 - Default: 0.4157
-- Mode: -
 
 > Tooltip (original): Pellet flow coefficient is empirically derived and allows for volume calculation for pellet printers.\n\nInternally it is converted to filament_diameter. All other volume calculations remain the same.\n\nfilament_diameter = sqrt( (4 * pellet_flow_coefficient) / PI )
 

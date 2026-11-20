@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Adaptive layer height
+- Mode: -
 - Type: Boolean
 - Default: 1
-- Mode: -
 
 > Tooltip (original): Enabling this option means the height of tree support layer except the first will be automatically calculated.
 

@@ -6,9 +6,9 @@
 ## Basic information
 
 - Label: Subdivide Mix Layer
+- Mode: Advanced
 - Type: Boolean
 - Default: false
-- Mode: Advanced
 
 > Tooltip (original): Enable \"Subdivide Mix Layer\" for mixing areas. Layer height will be subdivided for better color mixing results.
 

@@ -7,9 +7,9 @@
 ## Basic information
 
 - Label: Color
+- Mode: Advanced
 - Type: Text list (color picker; one `#RRGGBB` color string per slot)
 - Default: #F2754E
-- Mode: Advanced
 
 > Tooltip (original): Only used as a visual help on UI.
 

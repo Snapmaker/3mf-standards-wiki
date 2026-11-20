@@ -331,6 +331,7 @@ RE_META_FAMILY = re.compile(r'^\[(Mode|Variable|Type|Default|Unit|Range|Options|
 FIELD_ORDER = ["mode", "variable", "type", "default", "unit", "range",
                "aliases", "options", "cli example"]
 RE_FIELD_NAME = re.compile(r'^\[([^\]]+)\]')
+RE_BULLET_NAME = re.compile(r'^- ([A-Za-z][A-Za-z ]*?):')
 
 
 def canon_field(name):
@@ -341,6 +342,13 @@ def canon_field(name):
     if n.endswith("s") and n[:-1] in FIELD_ORDER:  # Variables/Defaults 等复数镜像行
         return FIELD_ORDER.index(n[:-1])
     return None
+
+
+def canon_bullet(name):
+    """占位页 bullet 字段 → 顺序索引；Label 为占位页独有身份字段，置顶（-1）。"""
+    if name.lower() == "label":
+        return -1
+    return canon_field(name)
 
 
 def page_files(args):
@@ -549,6 +557,30 @@ def migrate_page(path, meta, dry_run, fold):
             j += 1
         if [k for k, _ in run] != sorted(k for k, _ in run):
             out.extend(l for _, l in sorted(run, key=lambda t: t[0]))  # 稳定排序
+            stats["reorders"] += 1
+        else:
+            out.extend(l for _, l in run)
+        i = j
+    lines = out
+
+    # ---- A3. 占位页 bullet 字段固定顺序（Label 置顶，其余同 9 类顺序）---------
+    out, i, n = [], 0, len(lines)
+    while i < n:
+        m4 = RE_BULLET_NAME.match(lines[i])
+        if not m4 or canon_bullet(m4.group(1)) is None:
+            out.append(lines[i])
+            i += 1
+            continue
+        j = i
+        run = []
+        while j < n:
+            m5 = RE_BULLET_NAME.match(lines[j])
+            if not m5 or canon_bullet(m5.group(1)) is None:
+                break
+            run.append((canon_bullet(m5.group(1)), lines[j]))
+            j += 1
+        if [k for k, _ in run] != sorted(k for k, _ in run) and len(run) > 1:
+            out.extend(l for _, l in sorted(run, key=lambda t: t[0]))
             stats["reorders"] += 1
         else:
             out.extend(l for _, l in run)
@@ -798,23 +830,30 @@ def cmd_audit(args):
         n_pages += 1
         if not has_default_any and any(RE_TYPE_LINE.match(l) for l in lines):
             pass
-        # 元数据行固定顺序（页面级扫描：覆盖镜像小节与 Mode/Variable 残缺块）
+        # 元数据行固定顺序（页面级扫描：覆盖镜像小节与 Mode/Variable 残缺块；
+        # 同查占位页 bullet 格式，Label 置顶）
         i2 = 0
         while i2 < len(lines):
             m2 = RE_FIELD_NAME.match(lines[i2])
-            if not m2 or canon_field(m2.group(1)) is None:
+            b2 = RE_BULLET_NAME.match(lines[i2]) if not m2 else None
+            if (not m2 or canon_field(m2.group(1)) is None) and \
+               (not b2 or canon_bullet(b2.group(1)) is None):
                 i2 += 1
                 continue
             j2 = i2
             names = []
             while j2 < len(lines):
                 m3 = RE_FIELD_NAME.match(lines[j2])
-                if not m3 or canon_field(m3.group(1)) is None:
+                b3 = RE_BULLET_NAME.match(lines[j2]) if not m3 else None
+                if m3 and canon_field(m3.group(1)) is not None:
+                    names.append((canon_field(m3.group(1)), m3.group(1)))
+                elif b3 and canon_bullet(b3.group(1)) is not None:
+                    names.append((canon_bullet(b3.group(1)), b3.group(1)))
+                else:
                     break
-                names.append((canon_field(m3.group(1)), m3.group(1)))
                 j2 += 1
             ks = [k for k, _ in names]
-            if ks != sorted(ks) or len(set(ks)) != len(ks):
+            if (ks != sorted(ks) or len(set(ks)) != len(ks)) and len(names) > 1:
                 issues["field_order"].append(
                     "%s:%d %s" % (rel, i2 + 1, " > ".join(n for _, n in names)))
             i2 = j2
