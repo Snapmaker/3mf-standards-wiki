@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""print_config_tools.py — PrintConfig.cpp 元数据提取 / 键页注入 / 对账审计
+"""print_config_tools.py — PrintConfig.cpp 元数据提取 / 键页注入 / 版式迁移 / 对账审计
 
 用法:
   print_config_tools.py extract <fork 的 PrintConfig.cpp 路径> [--out docs/data/print_config_metadata.json]
   print_config_tools.py inject <页面.md ...> | --group <目录> | --all [--dry-run] [--json <路径>]
+  print_config_tools.py migrate <页面.md ...> | --group <目录> | --all [--fold] [--dry-run] [--json <路径>]
   print_config_tools.py audit [--json <路径>]
 
 子命令:
   extract  解析 fork PrintConfig.cpp（剥注释、def=new_def 双起点、宽松字段匹配），
-           输出键→元数据 JSON（含 meta.source_commit 溯源与统计）。
+           输出键→元数据 JSON（含 meta.source_commit 溯源与统计；label/sidetext=单位）。
            运行时动态键（非字符串字面量键名）跳过并计数；
            filament_* 循环派生键按源键克隆并标 derived=true。
   inject   在 wiki/settings 键页的 [Type] 行与 [CLI Example] 行之间内插
-           [Default]/[Range]/[Aliases]（存在才注入，Default 必注入，fork 无键则 —）。
+           [Default]/[Unit]/[Range]/[Aliases]（存在才注入，Default 必注入，fork 无键则 —）。
            幂等：已有 [Default(s)] 行的小节跳过。
-  audit    对账：页内已有元数据行 vs JSON 值漂移、Choice 页缺 [Options]、
-           页键在 JSON 缺失、有 [Type] 而无 [Default] 的页。
+  migrate  既有键页版式迁移（2026-11-20 裁决）：重建脚本行（[Range] 剥内嵌单位、
+           [Unit] 行独立注入）；元数据块与正文间补空行；--fold 时把首个 UI 标签
+           标题折进 Location 第 4 段。幂等；镜像小节（Variable 键≠页主干）不动。
+  audit    对账：页内已有元数据行 vs JSON 值漂移、Unit 行缺失/漂移、[Range] 残留
+           单位、Choice 页缺 [Options]、页键在 JSON 缺失、有 [Type] 而无 [Default] 的页。
 
 退出码: 0 正常; 1 extract 校验失败 / inject 或 audit 发现问题。
 """
@@ -118,6 +122,7 @@ def parse_block(block, enum_display=None):
 
     rec = {}
     lab = field("label")
+    rec["label"] = string_values(lab) if lab else None
     rec["sidetext_raw"] = field("sidetext")
     st = string_values(rec.pop("sidetext_raw") or "")
     rec["sidetext"] = st if st else None
@@ -210,7 +215,7 @@ def cmd_extract(args):
                           re.findall(r'\(\(\s*(ConfigOption[\w<>:]*?)\s*,\s*([A-Za-z0-9_]+)', htext)]
 
     keys, dynamic_skips, stats = {}, [], {"min": 0, "max": 0, "sidetext": 0,
-                                          "aliases": 0, "enum_rows": 0, "nocli": 0}
+                                          "label": 0, "aliases": 0, "enum_rows": 0, "nocli": 0}
     # 枚举常量 → 用户可见枚举串（s_keys_map_* 静态映射，用于默认值翻译）
     enum_display = {}
     for tbl in re.findall(r's_keys_map_\w+\s*=\s*\{(.*?)\};', stripped, re.S):
@@ -227,6 +232,8 @@ def cmd_extract(args):
         for f in ("min", "max", "sidetext", "nocli"):
             if rec[f] is not None and rec[f] is not False and rec[f] != "":
                 stats[f] += 1
+        if rec.get("label"):
+            stats["label"] += 1
         if rec["aliases"]:
             stats["aliases"] += 1
         stats["enum_rows"] += len(rec["enum_values"])
@@ -242,7 +249,7 @@ def cmd_extract(args):
     for ctype, declared, key in hpp_macro_keys:
         if key in keys:
             continue
-        rec_h = {"type": ctype, "mode": None, "default": None,
+        rec_h = {"type": ctype, "mode": None, "default": None, "label": None,
                  "min": None, "max": None, "sidetext": None, "aliases": [],
                  "enum_values": [], "enum_labels": [], "nocli": False,
                  "cli": None, "line": None, "derived": False,
@@ -265,7 +272,8 @@ def cmd_extract(args):
                 print("[WARN] 派生源键未找到: %s" % base); continue
             keys["filament_" + base] = {
                 "type": b["type"], "mode": b["mode"], "default": None,
-                "min": b["min"], "max": b["max"], "sidetext": b["sidetext"],
+                "label": b.get("label"), "min": b["min"], "max": b["max"],
+                "sidetext": b["sidetext"],
                 "aliases": [], "enum_values": b["enum_values"],
                 "enum_labels": b["enum_labels"], "nocli": b["nocli"], "cli": b["cli"],
                 "line": b["line"], "derived": True}
@@ -314,6 +322,11 @@ RE_MODE_LINE = re.compile(r'^\[Modes?\]')
 RE_HAS_DEFAULT = re.compile(r'^\[Defaults?\]')
 RE_KEY_TOKEN = re.compile(r'`([a-z0-9_]+)`')
 RE_EOL = re.compile(r'(\r?\n)$')
+RE_UNIT_LINE = re.compile(r'^\[Units?\]')
+# 脚本生成行（migrate 的重建对象；[Options] 为手写行，不属于）
+RE_OWNED_LINE = re.compile(r'^\[(Default|Unit|Range|Aliases)s?\]')
+# 元数据家族行（含手写 [Mode]/[Variable]/[Type]/[Options]/[CLI Example]）
+RE_META_FAMILY = re.compile(r'^\[(Mode|Variable|Type|Default|Unit|Range|Options|Aliases|CLI Example)s?\]')
 
 
 def page_files(args):
@@ -345,17 +358,18 @@ def fmt_num(v):
 
 
 def range_str(rec):
-    lo, hi, unit = rec.get("min"), rec.get("max"), rec.get("sidetext")
+    lo, hi = rec.get("min"), rec.get("max")
     if lo is None and hi is None:
         return None
     core = ("%s–%s" % (fmt_num(lo), fmt_num(hi)) if lo is not None and hi is not None
             else ("≥ %s" % fmt_num(lo) if lo is not None else "≤ %s" % fmt_num(hi)))
-    return "`%s`%s" % (core, " %s" % unit if unit else "")
+    return "`%s`" % core  # 单位不内嵌（2026-11-20 裁决：单位独立为 [Unit] 行）
 
 
 def build_lines(keyset, meta, prefix):
-    """按小节键列表构造 [Default]/[Range]/[Aliases] 行（Markdown 源，不含换行）。"""
+    """按小节键列表构造 [Default]/[Unit]/[Range]/[Aliases] 行（Markdown 源，不含换行）。"""
     link_d = "(%sgeneral_settings/option_type.md#default-value)" % prefix
+    link_u = "(%sgeneral_settings/option_type.md#unit)" % prefix
     link_r = "(%sgeneral_settings/option_type.md#range)" % prefix
     link_a = "(%sgeneral_settings/option_type.md#aliases)" % prefix
     lines = []
@@ -376,6 +390,9 @@ def build_lines(keyset, meta, prefix):
         v = val(k)
         lines.append("[Default]%s: `%s`." % (link_d, v)
                      if not v.startswith("—") else "[Default]%s: %s." % (link_d, v))
+        u = meta[k].get("sidetext")
+        if u:
+            lines.append("[Unit]%s: `%s`." % (link_u, u))
         r = range_str(meta[k])
         if r:
             lines.append("[Range]%s: %s." % (link_r, r))
@@ -439,6 +456,132 @@ def cmd_inject(args):
         changed += 1 if did else 0
     print("--\n%s %d 页（幂等跳过小节 %d 处）" % ("将修改" if args.dry_run else "已修改",
                                               changed, total_skip))
+    return 0
+
+
+# ---------------------------------------------------------------------------
+# migrate（2026-11-20 版式裁决：Unit 行拆分 / 正文空行分隔 / --fold 标签折进 Location）
+# ---------------------------------------------------------------------------
+
+def section_var_key(lines, i):
+    """[Type] 行（下标 i）向上找 [Variable] 行的键名；无 Variable 行返回 None。"""
+    for b in range(i - 1, max(i - 7, -1), -1):
+        l0 = lines[b]
+        if RE_VAR_LINE.match(l0):
+            kt = RE_KEY_TOKEN.search(l0)
+            return kt.group(1) if kt else None
+        if l0.strip() and not RE_META_FAMILY.match(l0):
+            break
+    return None
+
+
+def migrate_page(path, meta, dry_run, fold):
+    with open(path, encoding="utf-8", newline="") as f:
+        text = f.read()
+    eol = "\r\n" if "\r\n" in text else "\n"
+    lines = text.split(eol)
+    prefix = rel_prefix(path)
+    stem = os.path.splitext(os.path.basename(path))[0]
+    rel = os.path.relpath(path, REPO_ROOT)
+    stats = {"sections": 0, "units": 0, "blanks": 0, "folds": 0}
+
+    # ---- A. 重建脚本行：[Range] 剥内嵌单位、[Unit] 独立成行 -----------------
+    out, i, n = [], 0, len(lines)
+    while i < n:
+        ln = lines[i]
+        out.append(ln)
+        i += 1
+        if not RE_TYPE_LINE.match(ln):
+            continue
+        if section_var_key(lines, i - 1) not in (None, stem):
+            continue  # 镜像小节（非本页主干键），原样保留
+        # 窗口：[Type] 之后到边界（CLI/Mode/Variable/Type/标题/引用/空行）为止
+        j = i
+        while j < n:
+            l2 = lines[j]
+            if (RE_CLI_LINE.match(l2) or RE_MODE_LINE.match(l2) or RE_VAR_LINE.match(l2)
+                    or RE_TYPE_LINE.match(l2) or not l2.strip()
+                    or l2.startswith("#") or l2.startswith(">")):
+                break
+            j += 1
+        window = [lines[k] for k in range(i, j) if not RE_OWNED_LINE.match(lines[k])]
+        new = [l + "  " for l in build_lines([stem], meta, prefix)]
+        cand = new + window
+        orig = lines[i:j]
+        if cand == orig:
+            out.extend(orig)  # 幂等：重建结果与现状一致，不计修改
+        else:
+            stats["units"] += sum(1 for l in new if RE_UNIT_LINE.match(l))
+            out.extend(cand)
+            stats["sections"] += 1
+        i = j
+    lines = out
+
+    # ---- B. 元数据块与正文之间补空行（家族行连续段落后首个非家族行前）-------
+    out, i, n = [], 0, len(lines)
+    while i < n:
+        out.append(lines[i])
+        if RE_META_FAMILY.match(lines[i]):
+            j = i
+            while j + 1 < n and RE_META_FAMILY.match(lines[j + 1]):
+                j += 1
+            out.extend(lines[i + 1:j + 1])
+            if j + 1 < n and lines[j + 1].strip():
+                out.append("")
+                stats["blanks"] += 1
+            i = j + 1
+        else:
+            i += 1
+    lines = out
+
+    # ---- C. --fold：首个 UI 标签标题折进 Location 第 4 段 --------------------
+    if fold and "> Status:" not in text and any(RE_TYPE_LINE.match(l) for l in lines):
+        hr = next((k for k, l in enumerate(lines) if l.strip() == "---"), None)
+        if hr is not None:
+            k = hr + 1
+            while k < len(lines) and not lines[k].strip():
+                k += 1
+            m = re.match(r"^#{1,4}\s+(.+?)\s*$", lines[k]) if k < len(lines) else None
+            if m:
+                label = m.group(1)
+                loc_i = next((x for x, l in enumerate(lines)
+                              if l.startswith("> Location:")), None)
+                low = label.lower()
+                if (loc_i is not None and lines[loc_i].count("→") < 3
+                        and "from fork" not in low and low != "basic information"):
+                    lines[loc_i] += " → " + label
+                    del lines[k]
+                    # --- 之后保持恰好一个空行
+                    if lines[hr + 1].strip():
+                        lines.insert(hr + 1, "")
+                    elif hr + 2 < len(lines) and not lines[hr + 2].strip():
+                        del lines[hr + 2]
+                    stats["folds"] += 1
+
+    if not any(stats.values()):
+        return stats
+    if dry_run:
+        print("[DRY] %s: %s" % (rel, stats))
+    else:
+        with open(path, "w", encoding="utf-8", newline="") as f:
+            f.write(eol.join(lines))
+        print("[OK] %s: %s" % (rel, stats))
+    return stats
+
+
+def cmd_migrate(args):
+    meta = json.load(open(args.json, encoding="utf-8"))["keys"]
+    agg = {"sections": 0, "units": 0, "blanks": 0, "folds": 0}
+    pages = 0
+    for p in page_files(args):
+        st = migrate_page(p, meta, args.dry_run, args.fold)
+        if any(st.values()):
+            pages += 1
+            for k in agg:
+                agg[k] += st[k]
+    print("--\n%s %d 页：重建小节 %d（[Unit] 行 %d）、补空行 %d、折标签 %d"
+          % ("将修改" if args.dry_run else "已修改", pages,
+             agg["sections"], agg["units"], agg["blanks"], agg["folds"]))
     return 0
 
 
@@ -521,7 +664,8 @@ def norm(v):
 def cmd_audit(args):
     meta = json.load(open(args.json, encoding="utf-8"))["keys"]
     issues = {"no_default_line": [], "default_drift": [], "key_not_in_json": [],
-              "choice_no_options": [], "mode_drift": []}
+              "choice_no_options": [], "mode_drift": [],
+              "unit_missing": [], "unit_drift": [], "range_unit_leftover": []}
     n_pages = n_sections = 0
     for p in page_files(argparse.Namespace(all=True, group=None, pages=None)):
         text = open(p, encoding="utf-8", newline="").read()
@@ -581,6 +725,28 @@ def cmd_audit(args):
             for k in keys:
                 if k not in meta:
                     issues["key_not_in_json"].append("%s (%s)" % (rel, k))
+            # Unit 行对账 + [Range] 残留单位（口径：恒取本页主干键，镜像小节只查残留）
+            uline = rline = None
+            j2 = i + 1
+            while j2 < len(lines) and lines[j2].strip() and not RE_CLI_LINE.match(lines[j2]):
+                if RE_UNIT_LINE.match(lines[j2]):
+                    uline = lines[j2]
+                if lines[j2].startswith("[Range]"):
+                    rline = lines[j2]
+                j2 += 1
+            if rline:
+                mu = re.match(r"^\[Range\]\([^)]*\):\s*`[^`]*`(.*)$", rline)
+                if mu and mu.group(1).strip().rstrip(".").strip():
+                    issues["range_unit_leftover"].append("%s:%d %s" % (rel, i + 1, rline.strip()))
+            if keys[0] == stem:
+                st = meta.get(stem, {}).get("sidetext")
+                if st and uline is None:
+                    issues["unit_missing"].append("%s:%d %s sidetext=%s" % (rel, i + 1, stem, st))
+                elif uline is not None and st:
+                    got = re.sub(r"[\s`]+", "", uline.split(":", 1)[-1].rstrip(" ."))
+                    if got != re.sub(r"\s+", "", st):
+                        issues["unit_drift"].append(
+                            "%s:%d 页 `%s` / fork `%s`" % (rel, i + 1, got, st))
             if "Choice" in ln:
                 window = "\n".join(lines[i:i + 4])
                 if "[Options]" not in window and "[Options]" not in "\n".join(lines[max(0, i - 1):i]):
@@ -611,13 +777,22 @@ def main():
     e.add_argument("--out", default=DEFAULT_JSON)
     e.set_defaults(func=cmd_extract)
 
-    j = sub.add_parser("inject", help="向键页内插 [Default]/[Range]/[Aliases]")
+    j = sub.add_parser("inject", help="向键页内插 [Default]/[Unit]/[Range]/[Aliases]")
     j.add_argument("pages", nargs="*", help="页面路径")
     j.add_argument("--group", help="目录（如 wiki/settings/filament/cooling）")
     j.add_argument("--all", action="store_true", help="全部键页")
     j.add_argument("--dry-run", action="store_true")
     j.add_argument("--json", default=DEFAULT_JSON)
     j.set_defaults(func=cmd_inject)
+
+    g = sub.add_parser("migrate", help="既有键页版式迁移（Unit 拆分/空行分隔/--fold 标签折叠）")
+    g.add_argument("pages", nargs="*", help="页面路径")
+    g.add_argument("--group", help="目录（如 wiki/settings/filament/cooling）")
+    g.add_argument("--all", action="store_true", help="全部键页")
+    g.add_argument("--fold", action="store_true", help="首个 UI 标签标题折进 Location 第 4 段")
+    g.add_argument("--dry-run", action="store_true")
+    g.add_argument("--json", default=DEFAULT_JSON)
+    g.set_defaults(func=cmd_migrate)
 
     a = sub.add_parser("audit", help="页内元数据 vs JSON 对账")
     a.add_argument("--json", default=DEFAULT_JSON)

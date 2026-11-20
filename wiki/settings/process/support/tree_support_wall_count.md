@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [Range](../../../general_settings/option_type.md#range): `0–2`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--tree-support-wall-count=1`.  
+
 This setting specifies the number of support walls, from 0 to 2. 0 means auto.

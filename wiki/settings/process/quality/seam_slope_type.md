@@ -9,6 +9,7 @@
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `seam_slope_type`.  
+
 Adjusts the extrusion flow rate at seam points to create a smooth overlap between the start and end of each loop, minimizing visible defects.
 
 ![scarf-joint-seam](../../../images/seam/scarf-joint-seam.png)

@@ -12,6 +12,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `20`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-anchor-max=20%`.  
+
 Connect an infill line to an internal perimeter with a short segment of an additional perimeter. If expressed as a percentage (example: 15%), it is calculated over the infill extrusion width.
 OrcaSlicer tries to connect two close infill lines to a short perimeter segment. If no such perimeter segment shorter than the Maximum length of the infill anchor is found, the infill line is connected to a perimeter segment at just one side and the length of the perimeter segment taken is limited to the Sparse infill anchor length, but no longer than the Maximum length of the infill anchor. If the Maximum length of the infill anchor is set to 0, the old algorithm for infill connection is used, which should create the same result as 1000 & 0.
 

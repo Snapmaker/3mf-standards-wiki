@@ -12,4 +12,5 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--ooze-prevention=1`.  
+
 This option will drop the temperature of the inactive extruders to prevent oozing.

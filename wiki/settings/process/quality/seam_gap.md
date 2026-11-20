@@ -10,8 +10,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `seam_gap`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `10%`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` mm or %.  
+[Unit](../../../general_settings/option_type.md#unit): `mm or %`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--seam-gap=20%`.  
+
 Controls the gap in mm or as a percentage of the nozzle size between the two ends of a loop starting and ending with a seam.
 
 - A larger gap will reduce the bulging seen at the seam.

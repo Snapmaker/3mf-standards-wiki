@@ -14,6 +14,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `0.02`.  
 [Range](../../../general_settings/option_type.md#range): `≤ 2`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--pressure-advance=1`.  
+
 Pressure advance [Klipper](https://www.klipper3d.org/Pressure_Advance.html) and [RepRap](https://docs.duet3d.com/User_manual/Tuning/Pressure_advance) AKA [Linear advance (Marlin)](https://marlinfw.org/docs/features/lin_advance.html) is a feature that compensates for the lag in filament pressure within the nozzle during acceleration and deceleration. It helps improve print quality by reducing issues like blobs, oozing, and inconsistent extrusion, especially at corners or during fast movements.
 
 > [!NOTE]

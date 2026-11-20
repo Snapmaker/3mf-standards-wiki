@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `4`.  
 [Range](../../../general_settings/option_type.md#range): `1–10`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--fuzzy-skin-octaves=1`.  
+
 The number of octaves of coherent noise to use. Higher values increase the detail of the noise, but also increase computation time.

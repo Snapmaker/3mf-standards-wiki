@@ -10,8 +10,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `ironing_inset`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
-[Range](../../../general_settings/option_type.md#range): `0–100` mm.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
+[Range](../../../general_settings/option_type.md#range): `0–100`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--ironing-inset=1`.  
+
 The distance to keep from the edges, which can help prevent over-extrusion at the edges of the surface being ironed.
 
 ![ironing-inset](../../../images/ironing/ironing-inset.png)

@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `spAligned`.  
 [Options](../../../general_settings/option_type.md#choice): `nearest, aligned, aligned_back, back, random`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--seam-position=nearest`.  
+
 Controlling the position of seams can help improve the appearance and strength of the final print.
 
 Typically, [Aligned Back](#aligned-back), [Aligned](#aligned), or [Back](#back) work the best, especially in combination with [seam painting](../../../print_prepare/prepare_seam_painting.md) or [Precise Seam](../../../print_prepare/prepare_precise_seam.md) modifiers.  

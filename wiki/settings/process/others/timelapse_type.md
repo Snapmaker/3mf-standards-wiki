@@ -13,6 +13,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [Options](../../../general_settings/option_type.md#choice): `0, 1`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--timelapse-type=0`.  
+
 Selects how the printer's camera takes the snapshots for a timelapse video. A snapshot is taken after each layer, and the snapshots are combined into a video when the print finishes. Recording itself is turned on with the **Timelapse** option of the print dialog when sending the job to the printer.
 
 This option is only shown for Bambu Lab printers. The moves and camera commands for each snapshot come from the printer's [Timelapse G-code](../../printer/machine_gcode/time_lapse_gcode.md), which is inserted once per layer. On other printers, add your own snapshot commands to that G-code.

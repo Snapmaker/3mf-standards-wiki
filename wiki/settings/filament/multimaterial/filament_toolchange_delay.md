@@ -10,6 +10,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_toolchange_delay`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` s.  
+[Unit](../../../general_settings/option_type.md#unit): `s`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-toolchange-delay=1`.  
+
 Time to wait after the filament is unloaded. May help to get reliable tool changes with flexible materials that may need more time to shrink to original dimensions.

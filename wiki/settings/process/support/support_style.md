@@ -12,5 +12,6 @@
 [Default](../../../general_settings/option_type.md#default-value): `smsDefault`.  
 [Options](../../../general_settings/option_type.md#choice): `default, grid, snug, organic, tree_slim, tree_strong, tree_hybrid`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-style=default`.  
+
 Style and shape of the support.  
 Grid and Snug apply to normal supports, while Organic, Tree Slim, Tree Strong and Tree Hybrid apply to tree supports. `Default (Grid/Organic)` uses Grid for normal supports and Organic for tree supports.

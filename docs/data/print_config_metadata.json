@@ -1,12 +1,13 @@
 {
  "meta": {
-  "generated_at": "2026-11-20T14:59:52",
+  "generated_at": "2026-11-20T16:02:37",
   "source_file": "src/libslic3r/PrintConfig.cpp",
   "source_commit": "c0fd44d4d9289fe9f30e177dec22d78ad782adb0",
   "stats": {
    "min": 331,
    "max": 137,
    "sidetext": 310,
+   "label": 677,
    "aliases": 1,
    "enum_rows": 270,
    "nocli": 42,
@@ -28,6 +29,7 @@
  },
  "keys": {
   "absolute_correction": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -43,6 +45,7 @@
    "derived": false
   },
   "accel_to_decel_enable": {
+   "label": "Enable accel_to_decel",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -58,6 +61,7 @@
    "derived": false
   },
   "accel_to_decel_factor": {
+   "label": "accel_to_decel",
    "sidetext": "%",
    "min": 1,
    "max": 100,
@@ -73,6 +77,7 @@
    "derived": false
   },
   "activate_air_filtration": {
+   "label": "Activate air filtration",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -88,6 +93,7 @@
    "derived": false
   },
   "activate_chamber_temp_control": {
+   "label": "Activate temperature control",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -103,6 +109,7 @@
    "derived": false
   },
   "adaptive_bed_mesh_margin": {
+   "label": "Mesh margin",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -118,6 +125,7 @@
    "derived": false
   },
   "adaptive_pressure_advance": {
+   "label": "Enable adaptive pressure advance (beta)",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -133,6 +141,7 @@
    "derived": false
   },
   "adaptive_pressure_advance_bridges": {
+   "label": "Pressure advance for bridges",
    "sidetext": null,
    "min": null,
    "max": 2,
@@ -148,6 +157,7 @@
    "derived": false
   },
   "adaptive_pressure_advance_model": {
+   "label": "Adaptive pressure advance measurements (beta)",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -163,6 +173,7 @@
    "derived": false
   },
   "adaptive_pressure_advance_overhangs": {
+   "label": "Enable adaptive pressure advance for overhangs (beta)",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -178,6 +189,7 @@
    "derived": false
   },
   "additional_cooling_fan_speed": {
+   "label": "Fan speed",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -193,6 +205,7 @@
    "derived": false
   },
   "align_infill_direction_to_model": {
+   "label": "Align infill direction to model",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -208,6 +221,7 @@
    "derived": false
   },
   "allow_multicolor_oneplate": {
+   "label": "Allow multiple colors on one plate",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -223,6 +237,7 @@
    "derived": false
   },
   "allow_newer_file": {
+   "label": "Allow 3mf with newer version to be sliced",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -238,6 +253,7 @@
    "derived": false
   },
   "allow_rotations": {
+   "label": "Allow rotation when arranging",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -253,6 +269,7 @@
    "derived": false
   },
   "alternate_extra_wall": {
+   "label": "Alternate extra wall",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -268,6 +285,7 @@
    "derived": false
   },
   "area_fill": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -283,6 +301,7 @@
    "derived": false
   },
   "arrange": {
+   "label": "Arrange Options",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -298,6 +317,7 @@
    "derived": false
   },
   "assemble": {
+   "label": "Assemble",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -313,6 +333,7 @@
    "derived": false
   },
   "auxiliary_fan": {
+   "label": "Auxiliary part cooling fan",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -328,6 +349,7 @@
    "derived": false
   },
   "avoid_extrusion_cali_region": {
+   "label": "Avoid extrusion calibrate region when arranging",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -346,6 +368,7 @@
    "type": "ConfigOptionBool",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -359,6 +382,7 @@
    "source": "hpp_macro"
   },
   "bbl_calib_mark_logo": {
+   "label": "Show auto-calibration marks",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -374,6 +398,7 @@
    "derived": false
   },
   "bbl_use_printhost": {
+   "label": "Use 3rd-party print host",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -389,6 +414,7 @@
    "derived": false
   },
   "bed_custom_model": {
+   "label": "Bed custom model",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -404,6 +430,7 @@
    "derived": false
   },
   "bed_custom_texture": {
+   "label": "Bed custom texture",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -419,6 +446,7 @@
    "derived": false
   },
   "bed_exclude_area": {
+   "label": "Bed exclude area",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -434,6 +462,7 @@
    "derived": false
   },
   "bed_mesh_max": {
+   "label": "Bed mesh max",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -449,6 +478,7 @@
    "derived": false
   },
   "bed_mesh_min": {
+   "label": "Bed mesh min",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -464,6 +494,7 @@
    "derived": false
   },
   "bed_mesh_probe_distance": {
+   "label": "Probe point distance",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -479,6 +510,7 @@
    "derived": false
   },
   "bed_temperature": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -494,6 +526,7 @@
    "derived": false
   },
   "bed_temperature_initial_layer": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -509,6 +542,7 @@
    "derived": false
   },
   "bed_temperature_initial_layer_single": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -524,6 +558,7 @@
    "derived": false
   },
   "before_layer_change_gcode": {
+   "label": "Before layer change G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -539,6 +574,7 @@
    "derived": false
   },
   "best_object_pos": {
+   "label": "Best object position",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -554,6 +590,7 @@
    "derived": false
   },
   "bottle_cost": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -569,6 +606,7 @@
    "derived": false
   },
   "bottle_volume": {
+   "label": null,
    "sidetext": null,
    "min": 50,
    "max": null,
@@ -584,6 +622,7 @@
    "derived": false
   },
   "bottle_weight": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -599,6 +638,7 @@
    "derived": false
   },
   "bottom_color_penetration_layers": {
+   "label": "Bottom paint penetration layers",
    "sidetext": "layers",
    "min": 0,
    "max": null,
@@ -614,6 +654,7 @@
    "derived": false
   },
   "bottom_shell_layers": {
+   "label": "Bottom shell layers",
    "sidetext": "layers",
    "min": 0,
    "max": null,
@@ -629,6 +670,7 @@
    "derived": false
   },
   "bottom_shell_thickness": {
+   "label": "Bottom shell thickness",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -644,6 +686,7 @@
    "derived": false
   },
   "bottom_solid_infill_flow_ratio": {
+   "label": "Bottom surface flow ratio",
    "sidetext": null,
    "min": 0,
    "max": 2,
@@ -659,6 +702,7 @@
    "derived": false
   },
   "bottom_surface_density": {
+   "label": "Bottom surface density",
    "sidetext": "%",
    "min": 10,
    "max": 100,
@@ -674,6 +718,7 @@
    "derived": false
   },
   "bottom_surface_pattern": {
+   "label": "Bottom surface pattern",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -689,6 +734,7 @@
    "derived": false
   },
   "bridge_acceleration": {
+   "label": "Bridge",
    "sidetext": "mm/s² or %",
    "min": 0,
    "max": null,
@@ -704,6 +750,7 @@
    "derived": false
   },
   "bridge_angle": {
+   "label": "External bridge infill direction",
    "sidetext": "°",
    "min": 0,
    "max": null,
@@ -719,6 +766,7 @@
    "derived": false
   },
   "bridge_density": {
+   "label": "External bridge density",
    "sidetext": "%",
    "min": 10,
    "max": 120,
@@ -734,6 +782,7 @@
    "derived": false
   },
   "bridge_flow": {
+   "label": "Bridge flow ratio",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -749,6 +798,7 @@
    "derived": false
   },
   "bridge_no_support": {
+   "label": "Don't support bridges",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -764,6 +814,7 @@
    "derived": false
   },
   "bridge_speed": {
+   "label": "External",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -779,6 +830,7 @@
    "derived": false
   },
   "brim_ears": {
+   "label": "Brim ears",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -794,6 +846,7 @@
    "derived": false
   },
   "brim_ears_detection_length": {
+   "label": "Brim ear detection radius",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -809,6 +862,7 @@
    "derived": false
   },
   "brim_ears_max_angle": {
+   "label": "Brim ear max angle",
    "sidetext": "°",
    "min": 0,
    "max": 180,
@@ -824,6 +878,7 @@
    "derived": false
   },
   "brim_object_gap": {
+   "label": "Brim-object gap",
    "sidetext": "mm",
    "min": 0,
    "max": 2,
@@ -839,6 +894,7 @@
    "derived": false
   },
   "brim_type": {
+   "label": "Brim type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -862,6 +918,7 @@
    "derived": false
   },
   "brim_width": {
+   "label": "Brim width",
    "sidetext": "mm",
    "min": 0,
    "max": 100,
@@ -877,6 +934,7 @@
    "derived": false
   },
   "calib_flowrate_topinfill_special_order": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -892,6 +950,7 @@
    "derived": false
   },
   "chamber_temperature": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -907,6 +966,7 @@
    "derived": false
   },
   "change_extrusion_role_gcode": {
+   "label": "Change extrusion role G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -922,6 +982,7 @@
    "derived": false
   },
   "change_filament_gcode": {
+   "label": "Change filament G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -937,6 +998,7 @@
    "derived": false
   },
   "clone_objects": {
+   "label": "Clone Objects",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -952,6 +1014,7 @@
    "derived": false
   },
   "close_fan_the_first_x_layers": {
+   "label": "No cooling for the first",
    "sidetext": "layers",
    "min": 0,
    "max": 1000,
@@ -967,6 +1030,7 @@
    "derived": false
   },
   "compatible_machine_expression_group": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -982,6 +1046,7 @@
    "derived": false
   },
   "compatible_printers": {
+   "label": "Select printers",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -997,6 +1062,7 @@
    "derived": false
   },
   "compatible_printers_condition": {
+   "label": "Condition",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1012,6 +1078,7 @@
    "derived": false
   },
   "compatible_prints": {
+   "label": "Select profiles",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1027,6 +1094,7 @@
    "derived": false
   },
   "compatible_prints_condition": {
+   "label": "Condition",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1042,6 +1110,7 @@
    "derived": false
   },
   "compatible_process_expression_group": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1057,6 +1126,7 @@
    "derived": false
   },
   "complete_print_exhaust_fan_speed": {
+   "label": "Fan speed",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -1072,6 +1142,7 @@
    "derived": false
   },
   "convert_unit": {
+   "label": "Convert Unit",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1087,6 +1158,7 @@
    "derived": false
   },
   "cool_plate_temp": {
+   "label": "Other layers",
    "sidetext": "℃",
    "min": 0,
    "max": 300,
@@ -1102,6 +1174,7 @@
    "derived": false
   },
   "cool_plate_temp_initial_layer": {
+   "label": "Initial layer",
    "sidetext": "℃",
    "min": 0,
    "max": 120,
@@ -1117,6 +1190,7 @@
    "derived": false
   },
   "cooling_perimeter_transition_distance": {
+   "label": "Perimeter transition distance",
    "sidetext": "mm",
    "min": 0,
    "max": 50,
@@ -1132,6 +1206,7 @@
    "derived": false
   },
   "cooling_slowdown_logic": {
+   "label": "Cooling slowdown logic",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1150,6 +1225,7 @@
    "derived": false
   },
   "cooling_tube_length": {
+   "label": "Cooling tube length",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -1165,6 +1241,7 @@
    "derived": false
   },
   "cooling_tube_retraction": {
+   "label": "Cooling tube position",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -1180,6 +1257,7 @@
    "derived": false
   },
   "counterbore_hole_bridging": {
+   "label": "Bridge counterbore holes",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1199,6 +1277,7 @@
    "derived": false
   },
   "curr_bed_type": {
+   "label": "Bed type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1221,6 +1300,7 @@
    "derived": false
   },
   "current_extruder": {
+   "label": "Current extruder",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1236,6 +1316,7 @@
    "derived": false
   },
   "current_object_idx": {
+   "label": "Current object index",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1251,6 +1332,7 @@
    "derived": false
   },
   "datadir": {
+   "label": "Data directory",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1266,6 +1348,7 @@
    "derived": false
   },
   "day": {
+   "label": "Day",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1281,6 +1364,7 @@
    "derived": false
   },
   "debug": {
+   "label": "Debug level",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -1296,6 +1380,7 @@
    "derived": false
   },
   "default_acceleration": {
+   "label": "Normal printing",
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -1311,6 +1396,7 @@
    "derived": false
   },
   "default_bed_type": {
+   "label": "Default bed type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1326,6 +1412,7 @@
    "derived": false
   },
   "default_filament_colour": {
+   "label": "Default color",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1341,6 +1428,7 @@
    "derived": false
   },
   "default_filament_profile": {
+   "label": "Default filament profile",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1356,6 +1444,7 @@
    "derived": false
   },
   "default_jerk": {
+   "label": "Default",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -1371,6 +1460,7 @@
    "derived": false
   },
   "default_junction_deviation": {
+   "label": "Junction Deviation",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -1386,6 +1476,7 @@
    "derived": false
   },
   "default_print_profile": {
+   "label": "Default process profile",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1401,6 +1492,7 @@
    "derived": false
   },
   "default_sla_material_profile": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1416,6 +1508,7 @@
    "derived": false
   },
   "default_sla_print_profile": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1431,6 +1524,7 @@
    "derived": false
   },
   "delta_temperature": {
+   "label": "Preheat delta temperature",
    "sidetext": "∆°C",
    "min": -50,
    "max": 50,
@@ -1446,6 +1540,7 @@
    "derived": false
   },
   "deretraction_speed": {
+   "label": "De-retraction Speed",
    "sidetext": "mm/s",
    "min": null,
    "max": null,
@@ -1461,6 +1556,7 @@
    "derived": false
   },
   "detect_narrow_internal_solid_infill": {
+   "label": "Detect narrow internal solid infill",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1476,6 +1572,7 @@
    "derived": false
   },
   "detect_overhang_wall": {
+   "label": "Detect overhang wall",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1491,6 +1588,7 @@
    "derived": false
   },
   "detect_thin_wall": {
+   "label": "Detect thin wall",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1506,6 +1604,7 @@
    "derived": false
   },
   "different_settings_to_system": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1521,6 +1620,7 @@
    "derived": false
   },
   "disable_m73": {
+   "label": "Disable set remaining print time",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1536,6 +1636,7 @@
    "derived": false
   },
   "display_height": {
+   "label": null,
    "sidetext": null,
    "min": 1,
    "max": null,
@@ -1551,6 +1652,7 @@
    "derived": false
   },
   "display_mirror_x": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1566,6 +1668,7 @@
    "derived": false
   },
   "display_mirror_y": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1581,6 +1684,7 @@
    "derived": false
   },
   "display_orientation": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1602,6 +1706,7 @@
    "derived": false
   },
   "display_pixels_x": {
+   "label": "X",
    "sidetext": null,
    "min": 100,
    "max": null,
@@ -1617,6 +1722,7 @@
    "derived": false
   },
   "display_pixels_y": {
+   "label": "Y",
    "sidetext": null,
    "min": 100,
    "max": null,
@@ -1632,6 +1738,7 @@
    "derived": false
   },
   "display_width": {
+   "label": null,
    "sidetext": null,
    "min": 1,
    "max": null,
@@ -1647,6 +1754,7 @@
    "derived": false
   },
   "dithering_local_z_direct_multicolor": {
+   "label": "Use direct multicolor Local-Z solver",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1662,6 +1770,7 @@
    "derived": false
   },
   "dithering_local_z_infill": {
+   "label": "Apply subdivision to infill",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1677,6 +1786,7 @@
    "derived": false
   },
   "dithering_local_z_mode": {
+   "label": "Subdivide Mix Layer",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1692,6 +1802,7 @@
    "derived": false
   },
   "dithering_local_z_whole_objects": {
+   "label": "Full domain",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1707,6 +1818,7 @@
    "derived": false
   },
   "dithering_step_painted_zones_only": {
+   "label": "Use step size in painted zones only",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1722,6 +1834,7 @@
    "derived": false
   },
   "dithering_z_step_size": {
+   "label": "Dithering Z step size",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -1737,6 +1850,7 @@
    "derived": false
   },
   "dont_filter_internal_bridges": {
+   "label": "Filter out small internal bridges",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1756,6 +1870,7 @@
    "derived": false
   },
   "dont_slow_down_outer_wall": {
+   "label": "Don't slow down outer walls",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1771,6 +1886,7 @@
    "derived": false
   },
   "downward_check": {
+   "label": "Downward machines check",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1786,6 +1902,7 @@
    "derived": false
   },
   "downward_settings": {
+   "label": "downward machines settings",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1801,6 +1918,7 @@
    "derived": false
   },
   "draft_shield": {
+   "label": "Draft shield",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1819,6 +1937,7 @@
    "derived": false
   },
   "during_print_exhaust_fan_speed": {
+   "label": "Fan speed",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -1834,6 +1953,7 @@
    "derived": false
   },
   "e_position": {
+   "label": "Absolute E position",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1849,6 +1969,7 @@
    "derived": false
   },
   "e_restart_extra": {
+   "label": "Extra de-retraction",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1864,6 +1985,7 @@
    "derived": false
   },
   "e_retracted": {
+   "label": "Retraction",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1879,6 +2001,7 @@
    "derived": false
   },
   "elefant_foot_compensation": {
+   "label": "Elephant foot compensation",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -1894,6 +2017,7 @@
    "derived": false
   },
   "elefant_foot_compensation_layers": {
+   "label": "Elephant foot compensation layers",
    "sidetext": "layers",
    "min": 1,
    "max": null,
@@ -1909,6 +2033,7 @@
    "derived": false
   },
   "elefant_foot_min_width": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -1924,6 +2049,7 @@
    "derived": false
   },
   "emit_machine_limits_to_gcode": {
+   "label": "Emit limits to G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1939,6 +2065,7 @@
    "derived": false
   },
   "enable_arc_fitting": {
+   "label": "Arc fitting",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1954,6 +2081,7 @@
    "derived": false
   },
   "enable_change_pressure_when_wiping": {
+   "label": "Enable change pressure advance when wiping",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1969,6 +2097,7 @@
    "derived": false
   },
   "enable_extra_bridge_layer": {
+   "label": "Extra bridge layers (beta)",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -1989,6 +2118,7 @@
    "derived": false
   },
   "enable_filament_ramming": {
+   "label": "Enable filament ramming",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2004,6 +2134,7 @@
    "derived": false
   },
   "enable_long_retraction_when_cut": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2019,6 +2150,7 @@
    "derived": false
   },
   "enable_overhang_bridge_fan": {
+   "label": "Force cooling for overhangs and bridges",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2034,6 +2166,7 @@
    "derived": false
   },
   "enable_overhang_speed": {
+   "label": "Slow down for overhang",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2049,6 +2182,7 @@
    "derived": false
   },
   "enable_overlap_area_carving": {
+   "label": "Carve overlaps by per-layer slice area",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2064,6 +2198,7 @@
    "derived": false
   },
   "enable_pressure_advance": {
+   "label": "Enable pressure advance",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2079,6 +2214,7 @@
    "derived": false
   },
   "enable_prime_tower": {
+   "label": "Enable",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2094,6 +2230,7 @@
    "derived": false
   },
   "enable_support": {
+   "label": "Enable support",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2109,6 +2246,7 @@
    "derived": false
   },
   "enable_timelapse": {
+   "label": "Enable timelapse for print",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2124,6 +2262,7 @@
    "derived": false
   },
   "enable_tower_interface_cooldown_during_tower": {
+   "label": "Cool down from interface boost during prime tower",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2139,6 +2278,7 @@
    "derived": false
   },
   "enable_tower_interface_features": {
+   "label": "Enable tower interface features",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2154,6 +2294,7 @@
    "derived": false
   },
   "enforce_support_layers": {
+   "label": null,
    "sidetext": "layers",
    "min": 0,
    "max": 5000,
@@ -2169,6 +2310,7 @@
    "derived": false
   },
   "eng_plate_temp": {
+   "label": "Other layers",
    "sidetext": "℃",
    "min": 0,
    "max": 300,
@@ -2184,6 +2326,7 @@
    "derived": false
   },
   "eng_plate_temp_initial_layer": {
+   "label": "Initial layer",
    "sidetext": "℃",
    "min": 0,
    "max": 300,
@@ -2199,6 +2342,7 @@
    "derived": false
   },
   "ensure_on_bed": {
+   "label": "Ensure on bed",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2214,6 +2358,7 @@
    "derived": false
   },
   "ensure_vertical_shell_thickness": {
+   "label": "Ensure vertical shell thickness",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2234,6 +2379,7 @@
    "derived": false
   },
   "exclude_object": {
+   "label": "Exclude objects",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2249,6 +2395,7 @@
    "derived": false
   },
   "export_3mf": {
+   "label": "Export 3MF",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2264,6 +2411,7 @@
    "derived": false
   },
   "export_settings": {
+   "label": "Export Settings",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2279,6 +2427,7 @@
    "derived": false
   },
   "export_slicedata": {
+   "label": "Export slicing data",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2294,6 +2443,7 @@
    "derived": false
   },
   "export_stl": {
+   "label": "Export STL",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2309,6 +2459,7 @@
    "derived": false
   },
   "export_stls": {
+   "label": "Export multiple STLs",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2324,6 +2475,7 @@
    "derived": false
   },
   "exposure_time": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -2339,6 +2491,7 @@
    "derived": false
   },
   "external_infill_margin": {
+   "label": "Anchor solid infill by X mm",
    "sidetext": "mm or %",
    "min": 0,
    "max": null,
@@ -2354,6 +2507,7 @@
    "derived": false
   },
   "extra_loading_move": {
+   "label": "Extra loading distance",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -2369,6 +2523,7 @@
    "derived": false
   },
   "extra_perimeters_on_overhangs": {
+   "label": "Extra perimeters on overhangs",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2384,6 +2539,7 @@
    "derived": false
   },
   "extra_solid_infills": {
+   "label": "Insert solid layers",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2399,6 +2555,7 @@
    "derived": false
   },
   "extruded_volume": {
+   "label": "Volume per extruder",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2414,6 +2571,7 @@
    "derived": false
   },
   "extruded_volume_total": {
+   "label": "Total volume",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2429,6 +2587,7 @@
    "derived": false
   },
   "extruded_weight": {
+   "label": "Weight per extruder",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2444,6 +2603,7 @@
    "derived": false
   },
   "extruded_weight_total": {
+   "label": "Total weight",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2459,6 +2619,7 @@
    "derived": false
   },
   "extruder": {
+   "label": "Extruder",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -2480,6 +2641,7 @@
    "derived": false
   },
   "extruder_clearance_height_to_lid": {
+   "label": "Height to lid",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -2495,6 +2657,7 @@
    "derived": false
   },
   "extruder_clearance_height_to_rod": {
+   "label": "Height to rod",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -2510,6 +2673,7 @@
    "derived": false
   },
   "extruder_clearance_radius": {
+   "label": "Radius",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -2525,6 +2689,7 @@
    "derived": false
   },
   "extruder_colour": {
+   "label": "Extruder Color",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2540,6 +2705,7 @@
    "derived": false
   },
   "extruder_offset": {
+   "label": "Extruder offset",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -2555,6 +2721,7 @@
    "derived": false
   },
   "extrusion_rate_smoothing_external_perimeter_only": {
+   "label": "Apply only on external features",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2570,6 +2737,7 @@
    "derived": false
   },
   "extrusion_role": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2585,6 +2753,7 @@
    "derived": false
   },
   "faded_layers": {
+   "label": null,
    "sidetext": null,
    "min": 3,
    "max": 20,
@@ -2600,6 +2769,7 @@
    "derived": false
   },
   "fan_cooling_layer_time": {
+   "label": "Layer time",
    "sidetext": "s",
    "min": 0,
    "max": 1000,
@@ -2615,6 +2785,7 @@
    "derived": false
   },
   "fan_kickstart": {
+   "label": "Fan kick-start time",
    "sidetext": "s",
    "min": 0,
    "max": null,
@@ -2630,6 +2801,7 @@
    "derived": false
   },
   "fan_max_speed": {
+   "label": "Fan speed",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -2645,6 +2817,7 @@
    "derived": false
   },
   "fan_min_speed": {
+   "label": "Fan speed",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -2660,6 +2833,7 @@
    "derived": false
   },
   "fan_speed": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2675,6 +2849,7 @@
    "derived": false
   },
   "fan_speedup_overhangs": {
+   "label": "Only overhangs",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2690,6 +2865,7 @@
    "derived": false
   },
   "fan_speedup_time": {
+   "label": null,
    "sidetext": "s",
    "min": null,
    "max": null,
@@ -2705,6 +2881,7 @@
    "derived": false
   },
   "fast_tilt_time": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -2720,6 +2897,7 @@
    "derived": false
   },
   "filament_adhesiveness_category": {
+   "label": "Adhesiveness Category",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -2735,6 +2913,7 @@
    "derived": false
   },
   "filament_colour": {
+   "label": "Color",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2750,6 +2929,7 @@
    "derived": false
   },
   "filament_colour_mode": {
+   "label": "Filament color display mode",
    "sidetext": null,
    "min": 0,
    "max": 1,
@@ -2768,6 +2948,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -2781,6 +2962,7 @@
    "source": "hpp_macro"
   },
   "filament_cooling_final_speed": {
+   "label": "Speed of the last cooling move",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -2796,6 +2978,7 @@
    "derived": false
   },
   "filament_cooling_initial_speed": {
+   "label": "Speed of the first cooling move",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -2811,6 +2994,7 @@
    "derived": false
   },
   "filament_cooling_moves": {
+   "label": "Number of cooling moves",
    "sidetext": null,
    "min": null,
    "max": 20,
@@ -2826,6 +3010,7 @@
    "derived": false
   },
   "filament_cost": {
+   "label": "Price",
    "sidetext": "money/kg",
    "min": 0,
    "max": null,
@@ -2841,6 +3026,7 @@
    "derived": false
   },
   "filament_density": {
+   "label": "Density",
    "sidetext": "g/cm³",
    "min": 0,
    "max": null,
@@ -2859,6 +3045,7 @@
    "type": "coFloats",
    "mode": "Advanced",
    "default": null,
+   "label": "De-retraction Speed",
    "min": null,
    "max": null,
    "sidetext": "mm/s",
@@ -2871,6 +3058,7 @@
    "derived": true
   },
   "filament_diameter": {
+   "label": "Diameter",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -2886,6 +3074,7 @@
    "derived": false
   },
   "filament_end_gcode": {
+   "label": "End G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2901,6 +3090,7 @@
    "derived": false
   },
   "filament_extruder_id": {
+   "label": "Filament extruder ID",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2916,6 +3106,7 @@
    "derived": false
   },
   "filament_flow_ratio": {
+   "label": "Flow ratio",
    "sidetext": null,
    "min": 0,
    "max": 2,
@@ -2931,6 +3122,7 @@
    "derived": false
   },
   "filament_flow_step_size": {
+   "label": "Filament flow step size",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2946,6 +3138,7 @@
    "derived": false
   },
   "filament_flow_support": {
+   "label": "Filament flow support",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2961,6 +3154,7 @@
    "derived": false
   },
   "filament_grouping_mode": {
+   "label": "Filament grouping mode",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2976,6 +3170,7 @@
    "derived": false
   },
   "filament_ids": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -2991,6 +3186,7 @@
    "derived": false
   },
   "filament_is_high_temperature": {
+   "label": "Is high-temperature filament",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3006,6 +3202,7 @@
    "derived": false
   },
   "filament_is_support": {
+   "label": "Support material",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3021,6 +3218,7 @@
    "derived": false
   },
   "filament_loading_speed": {
+   "label": "Loading speed",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -3036,6 +3234,7 @@
    "derived": false
   },
   "filament_loading_speed_start": {
+   "label": "Loading speed at the start",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -3054,6 +3253,7 @@
    "type": "coBools",
    "mode": "Developer",
    "default": null,
+   "label": "Long retraction when cut (beta)",
    "min": null,
    "max": null,
    "sidetext": null,
@@ -3066,6 +3266,7 @@
    "derived": true
   },
   "filament_max_volumetric_speed": {
+   "label": "Max volumetric speed",
    "sidetext": "mm³/s",
    "min": 0,
    "max": null,
@@ -3081,6 +3282,7 @@
    "derived": false
   },
   "filament_minimal_purge_on_wipe_tower": {
+   "label": "Minimal purge on wipe tower",
    "sidetext": "mm³",
    "min": 0,
    "max": null,
@@ -3096,6 +3298,7 @@
    "derived": false
   },
   "filament_multi_colors": {
+   "label": "Filament multi colors",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3111,6 +3314,7 @@
    "derived": false
   },
   "filament_multitool_ramming": {
+   "label": "Enable ramming for multi-tool setups",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3126,6 +3330,7 @@
    "derived": false
   },
   "filament_multitool_ramming_flow": {
+   "label": "Multi-tool ramming flow",
    "sidetext": "mm³/s",
    "min": 0,
    "max": null,
@@ -3141,6 +3346,7 @@
    "derived": false
   },
   "filament_multitool_ramming_volume": {
+   "label": "Multi-tool ramming volume",
    "sidetext": "mm³",
    "min": 0,
    "max": null,
@@ -3156,6 +3362,7 @@
    "derived": false
   },
   "filament_notes": {
+   "label": "Filament notes",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3171,6 +3378,7 @@
    "derived": false
   },
   "filament_preset": {
+   "label": "Filament preset name",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3186,6 +3394,7 @@
    "derived": false
   },
   "filament_ramming_parameters": {
+   "label": "Ramming parameters",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3204,6 +3413,7 @@
    "type": "coPercents",
    "mode": "Advanced",
    "default": null,
+   "label": "Retract amount before wipe",
    "min": null,
    "max": null,
    "sidetext": "%",
@@ -3219,6 +3429,7 @@
    "type": "coFloats",
    "mode": "Advanced",
    "default": null,
+   "label": "Retraction Length (Toolchange)",
    "min": null,
    "max": null,
    "sidetext": "mm",
@@ -3234,6 +3445,7 @@
    "type": "coFloats",
    "mode": "Advanced",
    "default": null,
+   "label": "Only lift Z above",
    "min": null,
    "max": null,
    "sidetext": "mm",
@@ -3249,6 +3461,7 @@
    "type": "coFloats",
    "mode": "Advanced",
    "default": null,
+   "label": "Only lift Z below",
    "min": null,
    "max": null,
    "sidetext": "mm",
@@ -3264,6 +3477,7 @@
    "type": "coEnums",
    "mode": "Advanced",
    "default": null,
+   "label": "On surfaces",
    "min": null,
    "max": null,
    "sidetext": null,
@@ -3284,6 +3498,7 @@
    "type": "coFloats",
    "mode": "Advanced",
    "default": null,
+   "label": "Extra length on restart",
    "min": null,
    "max": null,
    "sidetext": "mm",
@@ -3299,6 +3514,7 @@
    "type": "coFloats",
    "mode": "Advanced",
    "default": null,
+   "label": "Extra length on restart",
    "min": null,
    "max": null,
    "sidetext": "mm",
@@ -3314,6 +3530,7 @@
    "type": "coBools",
    "mode": "Advanced",
    "default": null,
+   "label": "Retract when change layer",
    "min": null,
    "max": null,
    "sidetext": null,
@@ -3329,6 +3546,7 @@
    "type": "coFloats",
    "mode": "Developer",
    "default": null,
+   "label": "Retraction distance when cut",
    "min": 10,
    "max": 18,
    "sidetext": null,
@@ -3344,6 +3562,7 @@
    "type": "coFloats",
    "mode": "Simple",
    "default": null,
+   "label": "Length",
    "min": null,
    "max": null,
    "sidetext": "mm",
@@ -3359,6 +3578,7 @@
    "type": "coFloats",
    "mode": "Advanced",
    "default": null,
+   "label": "Travel distance threshold",
    "min": null,
    "max": null,
    "sidetext": "mm",
@@ -3374,6 +3594,7 @@
    "type": "coFloats",
    "mode": "Advanced",
    "default": null,
+   "label": "Retraction Speed",
    "min": null,
    "max": null,
    "sidetext": "mm/s",
@@ -3386,6 +3607,7 @@
    "derived": true
   },
   "filament_settings_id": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3401,6 +3623,7 @@
    "derived": false
   },
   "filament_shrink": {
+   "label": "Shrinkage (XY)",
    "sidetext": "%",
    "min": 10,
    "max": null,
@@ -3416,6 +3639,7 @@
    "derived": false
   },
   "filament_shrinkage_compensation_z": {
+   "label": "Shrinkage (Z)",
    "sidetext": "%",
    "min": 10,
    "max": null,
@@ -3431,6 +3655,7 @@
    "derived": false
   },
   "filament_soluble": {
+   "label": "Soluble material",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3446,6 +3671,7 @@
    "derived": false
   },
   "filament_stamping_distance": {
+   "label": "Stamping distance measured from the center of the cooling tube",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -3461,6 +3687,7 @@
    "derived": false
   },
   "filament_stamping_loading_speed": {
+   "label": "Stamping loading speed",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -3476,6 +3703,7 @@
    "derived": false
   },
   "filament_start_gcode": {
+   "label": "Start G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3491,6 +3719,7 @@
    "derived": false
   },
   "filament_toolchange_delay": {
+   "label": "Delay after unloading",
    "sidetext": "s",
    "min": 0,
    "max": null,
@@ -3506,6 +3735,7 @@
    "derived": false
   },
   "filament_tower_interface_pre_extrusion_dist": {
+   "label": "Interface layer pre-extrusion distance",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -3521,6 +3751,7 @@
    "derived": false
   },
   "filament_tower_interface_pre_extrusion_length": {
+   "label": "Interface layer pre-extrusion length",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -3536,6 +3767,7 @@
    "derived": false
   },
   "filament_tower_interface_print_temp": {
+   "label": "Interface layer print temperature",
    "sidetext": "°C",
    "min": -1,
    "max": null,
@@ -3551,6 +3783,7 @@
    "derived": false
   },
   "filament_tower_ironing_area": {
+   "label": "Tower ironing area",
    "sidetext": "mm²",
    "min": 0,
    "max": null,
@@ -3566,6 +3799,7 @@
    "derived": false
   },
   "filament_type": {
+   "label": "Type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3621,6 +3855,7 @@
    "derived": false
   },
   "filament_unloading_speed": {
+   "label": "Unloading speed",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -3636,6 +3871,7 @@
    "derived": false
   },
   "filament_unloading_speed_start": {
+   "label": "Unloading speed at the start",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -3651,6 +3887,7 @@
    "derived": false
   },
   "filament_vendor": {
+   "label": "Vendor",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3666,6 +3903,7 @@
    "derived": false
   },
   "filament_volume_type": {
+   "label": "Filament volume type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3687,6 +3925,7 @@
    "type": "coBools",
    "mode": "Advanced",
    "default": null,
+   "label": "Wipe while retracting",
    "min": null,
    "max": null,
    "sidetext": null,
@@ -3702,6 +3941,7 @@
    "type": "coFloats",
    "mode": "Advanced",
    "default": null,
+   "label": "Wipe Distance",
    "min": 0,
    "max": null,
    "sidetext": "mm",
@@ -3717,6 +3957,7 @@
    "type": "coFloats",
    "mode": "Simple",
    "default": null,
+   "label": "Z-hop height",
    "min": 0,
    "max": 5,
    "sidetext": "mm",
@@ -3732,6 +3973,7 @@
    "type": "coEnums",
    "mode": "Advanced",
    "default": null,
+   "label": "Z-hop type",
    "min": null,
    "max": null,
    "sidetext": null,
@@ -3749,6 +3991,7 @@
    "derived": true
   },
   "filename_format": {
+   "label": "Filename format",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3764,6 +4007,7 @@
    "derived": false
   },
   "fill_multiline": {
+   "label": "Fill Multiline",
    "sidetext": null,
    "min": 1,
    "max": 5,
@@ -3779,6 +4023,7 @@
    "derived": false
   },
   "filter_out_gap_fill": {
+   "label": "Filter out tiny gaps",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -3794,6 +4039,7 @@
    "derived": false
   },
   "first_flush_volume": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3809,6 +4055,7 @@
    "derived": false
   },
   "first_layer_bed_temperature": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3824,6 +4071,7 @@
    "derived": false
   },
   "first_layer_center_no_wipe_tower": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3839,6 +4087,7 @@
    "derived": false
   },
   "first_layer_height": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3854,6 +4103,7 @@
    "derived": false
   },
   "first_layer_print_convex_hull": {
+   "label": "First layer convex hull",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3869,6 +4119,7 @@
    "derived": false
   },
   "first_layer_print_max": {
+   "label": "Top-right corner of first layer bounding box",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3884,6 +4135,7 @@
    "derived": false
   },
   "first_layer_print_min": {
+   "label": "Bottom-left corner of first layer bounding box",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3899,6 +4151,7 @@
    "derived": false
   },
   "first_layer_print_sequence": {
+   "label": "First layer print sequence",
    "sidetext": null,
    "min": 0,
    "max": 16,
@@ -3914,6 +4167,7 @@
    "derived": false
   },
   "first_layer_print_size": {
+   "label": "Size of the first layer bounding box",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3929,6 +4183,7 @@
    "derived": false
   },
   "first_layer_sequence_choice": {
+   "label": "First layer filament sequence",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3947,6 +4202,7 @@
    "derived": false
   },
   "first_layer_temperature": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -3962,6 +4218,7 @@
    "derived": false
   },
   "first_layer_travel_acceleration": {
+   "label": "First layer travel",
    "sidetext": "mm/s² or %",
    "min": 0,
    "max": null,
@@ -3977,6 +4234,7 @@
    "derived": false
   },
   "first_layer_travel_jerk": {
+   "label": "First layer travel",
    "sidetext": "mm/s or %",
    "min": 0,
    "max": null,
@@ -3992,6 +4250,7 @@
    "derived": false
   },
   "flush_into_infill": {
+   "label": "Flush into objects' infill",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4007,6 +4266,7 @@
    "derived": false
   },
   "flush_into_objects": {
+   "label": "Flush into this object",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4022,6 +4282,7 @@
    "derived": false
   },
   "flush_into_support": {
+   "label": "Flush into objects' support",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4037,6 +4298,7 @@
    "derived": false
   },
   "flush_length_1": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4052,6 +4314,7 @@
    "derived": false
   },
   "flush_length_2": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4067,6 +4330,7 @@
    "derived": false
   },
   "flush_length_3": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4082,6 +4346,7 @@
    "derived": false
   },
   "flush_length_4": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4097,6 +4362,7 @@
    "derived": false
   },
   "flush_multiplier": {
+   "label": "Flush multiplier",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4112,6 +4378,7 @@
    "derived": false
   },
   "flush_volumes_matrix": {
+   "label": "Purging volumes",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4127,6 +4394,7 @@
    "derived": false
   },
   "flush_volumes_vector": {
+   "label": "Purging volumes - load/unload volumes",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4142,6 +4410,7 @@
    "derived": false
   },
   "full_fan_speed_layer": {
+   "label": "Full fan speed at layer",
    "sidetext": "layer",
    "min": 0,
    "max": 1000,
@@ -4157,6 +4426,7 @@
    "derived": false
   },
   "fuzzy_skin": {
+   "label": "Fuzzy Skin",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4177,6 +4447,7 @@
    "derived": false
   },
   "fuzzy_skin_first_layer": {
+   "label": "Apply fuzzy skin to first layer",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4192,6 +4463,7 @@
    "derived": false
   },
   "fuzzy_skin_mode": {
+   "label": "Fuzzy skin generator mode",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4211,6 +4483,7 @@
    "derived": false
   },
   "fuzzy_skin_noise_type": {
+   "label": "Fuzzy skin noise type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4232,6 +4505,7 @@
    "derived": false
   },
   "fuzzy_skin_octaves": {
+   "label": "Fuzzy Skin Noise Octaves",
    "sidetext": null,
    "min": 1,
    "max": 10,
@@ -4247,6 +4521,7 @@
    "derived": false
   },
   "fuzzy_skin_persistence": {
+   "label": "Fuzzy skin noise persistence",
    "sidetext": null,
    "min": null,
    "max": 1,
@@ -4262,6 +4537,7 @@
    "derived": false
   },
   "fuzzy_skin_point_distance": {
+   "label": "Fuzzy skin point distance",
    "sidetext": "mm",
    "min": 0,
    "max": 5,
@@ -4277,6 +4553,7 @@
    "derived": false
   },
   "fuzzy_skin_scale": {
+   "label": "Fuzzy skin feature size",
    "sidetext": "mm",
    "min": null,
    "max": 500,
@@ -4292,6 +4569,7 @@
    "derived": false
   },
   "fuzzy_skin_thickness": {
+   "label": "Fuzzy skin thickness",
    "sidetext": "mm",
    "min": 0,
    "max": 1,
@@ -4307,6 +4585,7 @@
    "derived": false
   },
   "gamma_correction": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 1,
@@ -4322,6 +4601,7 @@
    "derived": false
   },
   "gap_fill_target": {
+   "label": "Apply gap fill",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4341,6 +4621,7 @@
    "derived": false
   },
   "gap_infill_speed": {
+   "label": "Gap infill",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -4356,6 +4637,7 @@
    "derived": false
   },
   "gcode_add_line_number": {
+   "label": "Add line number",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4371,6 +4653,7 @@
    "derived": false
   },
   "gcode_comments": {
+   "label": "Verbose G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4386,6 +4669,7 @@
    "derived": false
   },
   "gcode_flavor": {
+   "label": "G-code flavor",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4410,6 +4694,7 @@
    "derived": false
   },
   "gcode_label_objects": {
+   "label": "Label objects",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4425,6 +4710,7 @@
    "derived": false
   },
   "graphic_effect_plate_temp": {
+   "label": "Other layers",
    "sidetext": "℃",
    "min": 0,
    "max": 300,
@@ -4440,6 +4726,7 @@
    "derived": false
   },
   "graphic_effect_plate_temp_initial_layer": {
+   "label": "Initial layer",
    "sidetext": "℃",
    "min": 0,
    "max": 300,
@@ -4455,6 +4742,7 @@
    "derived": false
   },
   "has_scarf_joint_seam": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4470,6 +4758,7 @@
    "derived": false
   },
   "has_single_extruder_multi_material_priming": {
+   "label": "Has single extruder MM priming",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4485,6 +4774,7 @@
    "derived": false
   },
   "has_wipe_tower": {
+   "label": "Has wipe tower",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4500,6 +4790,7 @@
    "derived": false
   },
   "head_wrap_detect_zone": {
+   "label": "Head wrap detect zone",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4515,6 +4806,7 @@
    "derived": false
   },
   "help": {
+   "label": "Help",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4530,6 +4822,7 @@
    "derived": false
   },
   "high_current_on_filament_swap": {
+   "label": "High extruder current on filament swap",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4545,6 +4838,7 @@
    "derived": false
   },
   "hole_to_polyhole": {
+   "label": "Convert holes to polyholes",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4560,6 +4854,7 @@
    "derived": false
   },
   "hole_to_polyhole_threshold": {
+   "label": "Polyhole detection margin",
    "sidetext": "mm or %",
    "min": null,
    "max": null,
@@ -4575,6 +4870,7 @@
    "derived": false
   },
   "hole_to_polyhole_twisted": {
+   "label": "Polyhole twist",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4590,6 +4886,7 @@
    "derived": false
   },
   "hollowing_closing_distance": {
+   "label": null,
    "sidetext": "mm",
    "min": 0,
    "max": 10,
@@ -4605,6 +4902,7 @@
    "derived": false
   },
   "hollowing_enable": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4620,6 +4918,7 @@
    "derived": false
   },
   "hollowing_min_thickness": {
+   "label": null,
    "sidetext": null,
    "min": 1,
    "max": 10,
@@ -4635,6 +4934,7 @@
    "derived": false
   },
   "hollowing_quality": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 1,
@@ -4650,6 +4950,7 @@
    "derived": false
   },
   "host_type": {
+   "label": "Host Type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4695,6 +4996,7 @@
    "derived": false
   },
   "hot_plate_temp": {
+   "label": "Other layers",
    "sidetext": "℃",
    "min": 0,
    "max": 300,
@@ -4710,6 +5012,7 @@
    "derived": false
   },
   "hot_plate_temp_initial_layer": {
+   "label": "Initial layer",
    "sidetext": "℃",
    "min": null,
    "max": 300,
@@ -4725,6 +5028,7 @@
    "derived": false
   },
   "hour": {
+   "label": "Hour",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4740,6 +5044,7 @@
    "derived": false
   },
   "idle_temperature": {
+   "label": "Idle temperature",
    "sidetext": "℃",
    "min": 0,
    "max": null,
@@ -4755,6 +5060,7 @@
    "derived": false
   },
   "in_head_wrap_detect_zone": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4770,6 +5076,7 @@
    "derived": false
   },
   "independent_support_layer_height": {
+   "label": "Independent support layer height",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4785,6 +5092,7 @@
    "derived": false
   },
   "infill_anchor": {
+   "label": "Sparse infill anchor length",
    "sidetext": "mm or %",
    "min": null,
    "max": null,
@@ -4812,6 +5120,7 @@
    "derived": false
   },
   "infill_anchor_max": {
+   "label": "Maximum length of the infill anchor",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4832,6 +5141,7 @@
    "derived": false
   },
   "infill_combination": {
+   "label": "Infill combination",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4847,6 +5157,7 @@
    "derived": false
   },
   "infill_combination_max_layer_height": {
+   "label": "Infill combination - Max layer height",
    "sidetext": "mm or %",
    "min": 0,
    "max": null,
@@ -4862,6 +5173,7 @@
    "derived": false
   },
   "infill_direction": {
+   "label": "Sparse infill direction",
    "sidetext": "°",
    "min": 0,
    "max": 360,
@@ -4877,6 +5189,7 @@
    "derived": false
   },
   "infill_jerk": {
+   "label": "Infill",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -4892,6 +5205,7 @@
    "derived": false
   },
   "infill_lock_depth": {
+   "label": "Infill lock depth",
    "sidetext": "mm",
    "min": 0,
    "max": 100,
@@ -4907,6 +5221,7 @@
    "derived": false
   },
   "infill_overhang_angle": {
+   "label": "Infill overhang angle",
    "sidetext": "°",
    "min": 15,
    "max": 75,
@@ -4922,6 +5237,7 @@
    "derived": false
   },
   "infill_shift_step": {
+   "label": "Infill shift step",
    "sidetext": "mm",
    "min": 0,
    "max": 10,
@@ -4937,6 +5253,7 @@
    "derived": false
   },
   "infill_wall_overlap": {
+   "label": "Infill/Wall overlap",
    "sidetext": "%",
    "min": null,
    "max": null,
@@ -4952,6 +5269,7 @@
    "derived": false
   },
   "info": {
+   "label": "Output Model Info",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4967,6 +5285,7 @@
    "derived": false
   },
   "inherits": {
+   "label": "Inherits profile",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4982,6 +5301,7 @@
    "derived": false
   },
   "inherits_group": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -4997,6 +5317,7 @@
    "derived": false
   },
   "initial_exposure_time": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -5012,6 +5333,7 @@
    "derived": false
   },
   "initial_extruder": {
+   "label": "Initial extruder",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5027,6 +5349,7 @@
    "derived": false
   },
   "initial_layer_acceleration": {
+   "label": "Initial layer",
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -5042,6 +5365,7 @@
    "derived": false
   },
   "initial_layer_height": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -5057,6 +5381,7 @@
    "derived": false
   },
   "initial_layer_infill_speed": {
+   "label": "Initial layer infill",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -5072,6 +5397,7 @@
    "derived": false
   },
   "initial_layer_jerk": {
+   "label": "Initial layer",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -5087,6 +5413,7 @@
    "derived": false
   },
   "initial_layer_line_width": {
+   "label": "Initial layer",
    "sidetext": "mm or %",
    "min": 0,
    "max": 1000,
@@ -5102,6 +5429,7 @@
    "derived": false
   },
   "initial_layer_min_bead_width": {
+   "label": "First layer minimum wall width",
    "sidetext": "%",
    "min": 0,
    "max": null,
@@ -5117,6 +5445,7 @@
    "derived": false
   },
   "initial_layer_print_height": {
+   "label": "Initial layer height",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -5132,6 +5461,7 @@
    "derived": false
   },
   "initial_layer_speed": {
+   "label": "Initial layer",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -5147,6 +5477,7 @@
    "derived": false
   },
   "initial_layer_travel_speed": {
+   "label": "Initial layer travel speed",
    "sidetext": "mm/s or %",
    "min": 1,
    "max": null,
@@ -5162,6 +5493,7 @@
    "derived": false
   },
   "initial_no_support_extruder": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5177,6 +5509,7 @@
    "derived": false
   },
   "initial_tool": {
+   "label": "Initial tool",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5192,6 +5525,7 @@
    "derived": false
   },
   "inner_wall_acceleration": {
+   "label": "Inner wall",
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -5207,6 +5541,7 @@
    "derived": false
   },
   "inner_wall_jerk": {
+   "label": "Inner wall",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -5222,6 +5557,7 @@
    "derived": false
   },
   "inner_wall_line_width": {
+   "label": "Inner wall",
    "sidetext": "mm or %",
    "min": 0,
    "max": 1000,
@@ -5237,6 +5573,7 @@
    "derived": false
   },
   "inner_wall_speed": {
+   "label": "Inner wall",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -5254,6 +5591,7 @@
    "derived": false
   },
   "input_filename": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5269,6 +5607,7 @@
    "derived": false
   },
   "input_filename_base": {
+   "label": "Input filename without extension",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5284,6 +5623,7 @@
    "derived": false
   },
   "interface_shells": {
+   "label": "Interface shells",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5299,6 +5639,7 @@
    "derived": false
   },
   "interlocking_beam": {
+   "label": "Use beam interlocking",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5314,6 +5655,7 @@
    "derived": false
   },
   "interlocking_beam_layer_count": {
+   "label": "Interlocking beam layers",
    "sidetext": null,
    "min": 1,
    "max": null,
@@ -5329,6 +5671,7 @@
    "derived": false
   },
   "interlocking_beam_width": {
+   "label": "Interlocking beam width",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -5344,6 +5687,7 @@
    "derived": false
   },
   "interlocking_boundary_avoidance": {
+   "label": "Interlocking boundary avoidance",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -5359,6 +5703,7 @@
    "derived": false
   },
   "interlocking_depth": {
+   "label": "Interlocking depth",
    "sidetext": null,
    "min": 1,
    "max": null,
@@ -5374,6 +5719,7 @@
    "derived": false
   },
   "interlocking_orientation": {
+   "label": "Interlocking direction",
    "sidetext": "°",
    "min": 0,
    "max": 360,
@@ -5389,6 +5735,7 @@
    "derived": false
   },
   "internal_bridge_angle": {
+   "label": "Internal bridge infill direction",
    "sidetext": "°",
    "min": 0,
    "max": null,
@@ -5404,6 +5751,7 @@
    "derived": false
   },
   "internal_bridge_density": {
+   "label": "Internal bridge density",
    "sidetext": "%",
    "min": 10,
    "max": 100,
@@ -5419,6 +5767,7 @@
    "derived": false
   },
   "internal_bridge_fan_speed": {
+   "label": "Internal bridges fan speed",
    "sidetext": "%",
    "min": -1,
    "max": 100,
@@ -5434,6 +5783,7 @@
    "derived": false
   },
   "internal_bridge_flow": {
+   "label": "Internal bridge flow ratio",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -5449,6 +5799,7 @@
    "derived": false
   },
   "internal_bridge_speed": {
+   "label": "Internal",
    "sidetext": "mm/s or %",
    "min": 1,
    "max": null,
@@ -5464,6 +5815,7 @@
    "derived": false
   },
   "internal_solid_infill_acceleration": {
+   "label": "Internal solid infill",
    "sidetext": "mm/s² or %",
    "min": 0,
    "max": null,
@@ -5479,6 +5831,7 @@
    "derived": false
   },
   "internal_solid_infill_line_width": {
+   "label": "Internal solid infill",
    "sidetext": "mm or %",
    "min": 0,
    "max": 1000,
@@ -5494,6 +5847,7 @@
    "derived": false
   },
   "internal_solid_infill_pattern": {
+   "label": "Internal solid infill pattern",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5509,6 +5863,7 @@
    "derived": false
   },
   "internal_solid_infill_speed": {
+   "label": "Internal solid infill",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -5524,6 +5879,7 @@
    "derived": false
   },
   "ironing_angle": {
+   "label": "Ironing angle",
    "sidetext": "°",
    "min": -1,
    "max": 359,
@@ -5542,6 +5898,7 @@
    "type": "ConfigOptionFloat",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -5555,6 +5912,7 @@
    "source": "hpp_macro"
   },
   "ironing_fan_speed": {
+   "label": "Ironing fan speed",
    "sidetext": "%",
    "min": -1,
    "max": 100,
@@ -5570,6 +5928,7 @@
    "derived": false
   },
   "ironing_flow": {
+   "label": "Ironing flow",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -5585,6 +5944,7 @@
    "derived": false
   },
   "ironing_inset": {
+   "label": "Ironing inset",
    "sidetext": "mm",
    "min": 0,
    "max": 100,
@@ -5600,6 +5960,7 @@
    "derived": false
   },
   "ironing_pattern": {
+   "label": "Ironing Pattern",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5618,6 +5979,7 @@
    "derived": false
   },
   "ironing_spacing": {
+   "label": "Ironing line spacing",
    "sidetext": "mm",
    "min": 0,
    "max": 1,
@@ -5633,6 +5995,7 @@
    "derived": false
   },
   "ironing_speed": {
+   "label": "Ironing speed",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -5648,6 +6011,7 @@
    "derived": false
   },
   "ironing_type": {
+   "label": "Ironing Type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5668,6 +6032,7 @@
    "derived": false
   },
   "is_extruder_used": {
+   "label": "Is extruder used?",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5683,6 +6048,7 @@
    "derived": false
   },
   "is_infill_first": {
+   "label": "Print infill first",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5698,6 +6064,7 @@
    "derived": false
   },
   "last_extrusion_role": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5713,6 +6080,7 @@
    "derived": false
   },
   "lateral_lattice_angle_1": {
+   "label": "Lateral lattice angle 1",
    "sidetext": "°",
    "min": -75,
    "max": 75,
@@ -5728,6 +6096,7 @@
    "derived": false
   },
   "lateral_lattice_angle_2": {
+   "label": "Lateral lattice angle 2",
    "sidetext": "°",
    "min": -75,
    "max": 75,
@@ -5743,6 +6112,7 @@
    "derived": false
   },
   "layer_change_gcode": {
+   "label": "Layer change G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5758,6 +6128,7 @@
    "derived": false
   },
   "layer_height": {
+   "label": "Layer height",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -5773,6 +6144,7 @@
    "derived": false
   },
   "layer_num": {
+   "label": "Layer number",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5788,6 +6160,7 @@
    "derived": false
   },
   "layer_z": {
+   "label": "Layer Z",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5803,6 +6176,7 @@
    "derived": false
   },
   "line_width": {
+   "label": "Default",
    "sidetext": "mm or %",
    "min": 0,
    "max": 1000,
@@ -5818,6 +6192,7 @@
    "derived": false
   },
   "load_assemble_list": {
+   "label": "Load assemble list",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5833,6 +6208,7 @@
    "derived": false
   },
   "load_custom_gcodes": {
+   "label": "Load custom G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5848,6 +6224,7 @@
    "derived": false
   },
   "load_defaultfila": {
+   "label": "Load default filaments",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5863,6 +6240,7 @@
    "derived": false
   },
   "load_filament_ids": {
+   "label": "Load filament IDs",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5878,6 +6256,7 @@
    "derived": false
   },
   "load_filaments": {
+   "label": "Load Filament Settings",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5893,6 +6272,7 @@
    "derived": false
   },
   "load_settings": {
+   "label": "Load General Settings",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5908,6 +6288,7 @@
    "derived": false
   },
   "load_slicedata": {
+   "label": "Load slicing data",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5923,6 +6304,7 @@
    "derived": false
   },
   "local_z_wipe_tower_purge_lines": {
+   "label": "Local-Z mini wipe lines",
    "sidetext": "lines",
    "min": null,
    "max": null,
@@ -5938,6 +6320,7 @@
    "derived": false
   },
   "long_retractions_when_cut": {
+   "label": "Long retraction when cut (beta)",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5953,6 +6336,7 @@
    "derived": false
   },
   "machine_end_gcode": {
+   "label": "End G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -5968,6 +6352,7 @@
    "derived": false
   },
   "machine_load_filament_time": {
+   "label": "Filament load time",
    "sidetext": "s",
    "min": 0,
    "max": null,
@@ -5986,6 +6371,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -5999,6 +6385,7 @@
    "source": "hpp_macro"
   },
   "machine_max_acceleration_extruding": {
+   "label": null,
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -6014,6 +6401,7 @@
    "derived": false
   },
   "machine_max_acceleration_retracting": {
+   "label": null,
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -6029,6 +6417,7 @@
    "derived": false
   },
   "machine_max_acceleration_travel": {
+   "label": null,
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -6047,6 +6436,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6063,6 +6453,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6079,6 +6470,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6095,6 +6487,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6111,6 +6504,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6127,6 +6521,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6143,6 +6538,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6156,6 +6552,7 @@
    "source": "hpp_macro"
   },
   "machine_max_junction_deviation": {
+   "label": null,
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -6174,6 +6571,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6190,6 +6588,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6206,6 +6605,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6222,6 +6622,7 @@
    "type": "ConfigOptionFloats",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -6235,6 +6636,7 @@
    "source": "hpp_macro"
   },
   "machine_min_extruding_rate": {
+   "label": null,
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -6250,6 +6652,7 @@
    "derived": false
   },
   "machine_min_travel_rate": {
+   "label": null,
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -6265,6 +6668,7 @@
    "derived": false
   },
   "machine_pause_gcode": {
+   "label": "Pause G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6280,6 +6684,7 @@
    "derived": false
   },
   "machine_start_gcode": {
+   "label": "Start G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6295,6 +6700,7 @@
    "derived": false
   },
   "machine_tool_change_time": {
+   "label": "Tool change time",
    "sidetext": "s",
    "min": 0,
    "max": null,
@@ -6310,6 +6716,7 @@
    "derived": false
   },
   "machine_unload_filament_time": {
+   "label": "Filament unload time",
    "sidetext": "s",
    "min": 0,
    "max": null,
@@ -6325,6 +6732,7 @@
    "derived": false
   },
   "make_overhang_printable": {
+   "label": "Make overhangs printable",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6340,6 +6748,7 @@
    "derived": false
   },
   "make_overhang_printable_angle": {
+   "label": "Make overhangs printable - Maximum angle",
    "sidetext": "°",
    "min": null,
    "max": null,
@@ -6355,6 +6764,7 @@
    "derived": false
   },
   "make_overhang_printable_hole_size": {
+   "label": "Make overhangs printable - Hole area",
    "sidetext": "mm²",
    "min": null,
    "max": null,
@@ -6370,6 +6780,7 @@
    "derived": false
   },
   "makerlab_name": {
+   "label": "MakerLab name",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6385,6 +6796,7 @@
    "derived": false
   },
   "makerlab_version": {
+   "label": "MakerLab version",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6400,6 +6812,7 @@
    "derived": false
   },
   "manual_filament_change": {
+   "label": "Manual Filament Change",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6415,6 +6828,7 @@
    "derived": false
   },
   "material_colour": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6430,6 +6844,7 @@
    "derived": false
   },
   "material_correction": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -6445,6 +6860,7 @@
    "derived": false
   },
   "material_correction_x": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -6460,6 +6876,7 @@
    "derived": false
   },
   "material_correction_y": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -6475,6 +6892,7 @@
    "derived": false
   },
   "material_correction_z": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -6490,6 +6908,7 @@
    "derived": false
   },
   "material_density": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -6505,6 +6924,7 @@
    "derived": false
   },
   "material_print_speed": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6526,6 +6946,7 @@
    "derived": false
   },
   "material_type": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6547,6 +6968,7 @@
    "derived": false
   },
   "material_vendor": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6562,6 +6984,7 @@
    "derived": false
   },
   "max_bridge_length": {
+   "label": "Max bridge length",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -6577,6 +7000,7 @@
    "derived": false
   },
   "max_exposure_time": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -6592,6 +7016,7 @@
    "derived": false
   },
   "max_initial_exposure_time": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -6607,6 +7032,7 @@
    "derived": false
   },
   "max_layer_height": {
+   "label": "Max",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -6622,6 +7048,7 @@
    "derived": false
   },
   "max_layer_z": {
+   "label": "Maximal layer Z",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6637,6 +7064,7 @@
    "derived": false
   },
   "max_resonance_avoidance_speed": {
+   "label": "Max",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -6652,6 +7080,7 @@
    "derived": false
   },
   "max_travel_detour_distance": {
+   "label": "Avoid crossing walls - Max detour length",
    "sidetext": "mm or %",
    "min": 0,
    "max": null,
@@ -6667,6 +7096,7 @@
    "derived": false
   },
   "max_volumetric_extrusion_rate_slope": {
+   "label": "Extrusion rate smoothing",
    "sidetext": "mm³/s²",
    "min": 0,
    "max": null,
@@ -6682,6 +7112,7 @@
    "derived": false
   },
   "max_volumetric_extrusion_rate_slope_segment_length": {
+   "label": "Smoothing segment length",
    "sidetext": "mm",
    "min": null,
    "max": 5,
@@ -6697,6 +7128,7 @@
    "derived": false
   },
   "metadata_name": {
+   "label": "metadata name list",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6712,6 +7144,7 @@
    "derived": false
   },
   "metadata_value": {
+   "label": "metadata value list",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6727,6 +7160,7 @@
    "derived": false
   },
   "min_bead_width": {
+   "label": "Minimum wall width",
    "sidetext": "%",
    "min": 0,
    "max": null,
@@ -6742,6 +7176,7 @@
    "derived": false
   },
   "min_exposure_time": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -6757,6 +7192,7 @@
    "derived": false
   },
   "min_feature_size": {
+   "label": "Minimum feature size",
    "sidetext": "%",
    "min": 0,
    "max": null,
@@ -6772,6 +7208,7 @@
    "derived": false
   },
   "min_initial_exposure_time": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -6787,6 +7224,7 @@
    "derived": false
   },
   "min_layer_height": {
+   "label": "Min",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -6802,6 +7240,7 @@
    "derived": false
   },
   "min_length_factor": {
+   "label": "Minimum wall length",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -6817,6 +7256,7 @@
    "derived": false
   },
   "min_resonance_avoidance_speed": {
+   "label": "Min",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -6832,6 +7272,7 @@
    "derived": false
   },
   "min_save": {
+   "label": "Minimum save",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6847,6 +7288,7 @@
    "derived": false
   },
   "min_skirt_length": {
+   "label": "Skirt minimum extrusion length",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -6862,6 +7304,7 @@
    "derived": false
   },
   "min_width_top_surface": {
+   "label": "One wall threshold",
    "sidetext": "mm or %",
    "min": 0,
    "max": null,
@@ -6877,6 +7320,7 @@
    "derived": false
   },
   "minimum_sparse_infill_area": {
+   "label": "Minimum sparse infill threshold",
    "sidetext": "mm²",
    "min": 0,
    "max": null,
@@ -6892,6 +7336,7 @@
    "derived": false
   },
   "minute": {
+   "label": "Minute",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6907,6 +7352,7 @@
    "derived": false
   },
   "mixed_color_layer_height_a": {
+   "label": "Dithering cadence height A",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -6922,6 +7368,7 @@
    "derived": false
   },
   "mixed_color_layer_height_b": {
+   "label": "Dithering cadence height B",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -6937,6 +7384,7 @@
    "derived": false
   },
   "mixed_filament_advanced_dithering": {
+   "label": "Advanced dithering",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6952,6 +7400,7 @@
    "derived": false
   },
   "mixed_filament_component_bias_enabled": {
+   "label": "Enable mixed filament bias",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6967,6 +7416,7 @@
    "derived": false
   },
   "mixed_filament_definitions": {
+   "label": "Mixed filament custom definitions",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6982,6 +7432,7 @@
    "derived": false
   },
   "mixed_filament_gradient_mode": {
+   "label": "Height-weighted cadence",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -6997,6 +7448,7 @@
    "derived": false
   },
   "mixed_filament_height_lower_bound": {
+   "label": "Local-Z lower height bound",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -7012,6 +7464,7 @@
    "derived": false
   },
   "mixed_filament_height_upper_bound": {
+   "label": "Local-Z upper height bound",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -7027,6 +7480,7 @@
    "derived": false
   },
   "mixed_filament_pointillism_line_gap": {
+   "label": "Pointillisme line gap",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -7042,6 +7496,7 @@
    "derived": false
   },
   "mixed_filament_pointillism_pixel_size": {
+   "label": "Pointillisme pixel size",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -7057,6 +7512,7 @@
    "derived": false
   },
   "mixed_filament_region_collapse": {
+   "label": "Collapse same-color mixed regions",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7072,6 +7528,7 @@
    "derived": false
   },
   "mixed_filament_surface_indentation": {
+   "label": "Selective Expansion contraction",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -7087,6 +7544,7 @@
    "derived": false
   },
   "mmu_segmented_region_interlocking_depth": {
+   "label": "Interlocking depth of a segmented region",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -7102,6 +7560,7 @@
    "derived": false
   },
   "mmu_segmented_region_max_width": {
+   "label": "Maximum width of a segmented region",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -7117,6 +7576,7 @@
    "derived": false
   },
   "month": {
+   "label": "Month",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7132,6 +7592,7 @@
    "derived": false
   },
   "mstpp": {
+   "label": "mstpp",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7147,6 +7608,7 @@
    "derived": false
   },
   "mtcpp": {
+   "label": "mtcpp",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7162,6 +7624,7 @@
    "derived": false
   },
   "new_filament_e_feedrate": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7177,6 +7640,7 @@
    "derived": false
   },
   "new_filament_temp": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7192,6 +7656,7 @@
    "derived": false
   },
   "new_retract_length": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7207,6 +7672,7 @@
    "derived": false
   },
   "new_retract_length_toolchange": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7222,6 +7688,7 @@
    "derived": false
   },
   "next_extruder": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7237,6 +7704,7 @@
    "derived": false
   },
   "next_wipe_x": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7252,6 +7720,7 @@
    "derived": false
   },
   "next_wipe_y": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7267,6 +7736,7 @@
    "derived": false
   },
   "no_check": {
+   "label": "No check",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7282,6 +7752,7 @@
    "derived": false
   },
   "normative_check": {
+   "label": "Normative check",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7297,6 +7768,7 @@
    "derived": false
   },
   "notes": {
+   "label": "Configuration notes",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7312,6 +7784,7 @@
    "derived": false
   },
   "nozzle_diameter": {
+   "label": "Nozzle diameter",
    "sidetext": "mm",
    "min": null,
    "max": 100,
@@ -7327,6 +7800,7 @@
    "derived": false
   },
   "nozzle_height": {
+   "label": "Nozzle height",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -7342,6 +7816,7 @@
    "derived": false
   },
   "nozzle_hrc": {
+   "label": "Nozzle HRC",
    "sidetext": "HRC",
    "min": 0,
    "max": 500,
@@ -7357,6 +7832,7 @@
    "derived": false
   },
   "nozzle_temperature": {
+   "label": "Other layers",
    "sidetext": "℃",
    "min": 0,
    "max": null,
@@ -7372,6 +7848,7 @@
    "derived": false
   },
   "nozzle_temperature_initial_layer": {
+   "label": "Initial layer",
    "sidetext": "℃",
    "min": 0,
    "max": null,
@@ -7387,6 +7864,7 @@
    "derived": false
   },
   "nozzle_temperature_range_high": {
+   "label": "Max",
    "sidetext": "℃",
    "min": 0,
    "max": null,
@@ -7402,6 +7880,7 @@
    "derived": false
   },
   "nozzle_temperature_range_low": {
+   "label": "Min",
    "sidetext": "℃",
    "min": 0,
    "max": null,
@@ -7417,6 +7896,7 @@
    "derived": false
   },
   "nozzle_type": {
+   "label": "Nozzle type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7437,6 +7917,7 @@
    "derived": false
   },
   "nozzle_volume": {
+   "label": "Nozzle volume",
    "sidetext": "mm³",
    "min": null,
    "max": null,
@@ -7452,6 +7933,7 @@
    "derived": false
   },
   "nozzle_volume_type": {
+   "label": "Nozzle volume type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7470,6 +7952,7 @@
    "derived": false
   },
   "num_extruders": {
+   "label": "Number of extruders",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7485,6 +7968,7 @@
    "derived": false
   },
   "num_instances": {
+   "label": "Number of instances",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7500,6 +7984,7 @@
    "derived": false
   },
   "num_objects": {
+   "label": "Number of objects",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7515,6 +8000,7 @@
    "derived": false
   },
   "old_filament_e_feedrate": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7530,6 +8016,7 @@
    "derived": false
   },
   "old_filament_temp": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7545,6 +8032,7 @@
    "derived": false
   },
   "old_retract_length": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7560,6 +8048,7 @@
    "derived": false
   },
   "old_retract_length_toolchange": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7575,6 +8064,7 @@
    "derived": false
   },
   "only_one_wall_first_layer": {
+   "label": "Only one wall on first layer",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7590,6 +8080,7 @@
    "derived": false
   },
   "only_one_wall_top": {
+   "label": "Only one wall on top surfaces",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7605,6 +8096,7 @@
    "derived": false
   },
   "ooze_prevention": {
+   "label": "Enable",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7620,6 +8112,7 @@
    "derived": false
   },
   "orient": {
+   "label": "Orient Options",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7635,6 +8128,7 @@
    "derived": false
   },
   "other_layers_print_sequence": {
+   "label": "Other layers print sequence",
    "sidetext": null,
    "min": 0,
    "max": 16,
@@ -7650,6 +8144,7 @@
    "derived": false
   },
   "other_layers_print_sequence_nums": {
+   "label": "The number of other layers print sequence",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7665,6 +8160,7 @@
    "derived": false
   },
   "other_layers_sequence_choice": {
+   "label": "Other layers filament sequence",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7683,6 +8179,7 @@
    "derived": false
   },
   "outer_wall_acceleration": {
+   "label": "Outer wall",
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -7698,6 +8195,7 @@
    "derived": false
   },
   "outer_wall_jerk": {
+   "label": "Outer wall",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -7713,6 +8211,7 @@
    "derived": false
   },
   "outer_wall_line_width": {
+   "label": "Outer wall",
    "sidetext": "mm or %",
    "min": 0,
    "max": 1000,
@@ -7728,6 +8227,7 @@
    "derived": false
   },
   "outer_wall_speed": {
+   "label": "Outer wall",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -7743,6 +8243,7 @@
    "derived": false
   },
   "outputdir": {
+   "label": "Output directory",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7758,6 +8259,7 @@
    "derived": false
   },
   "overall_chamber_temperature": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7773,6 +8275,7 @@
    "derived": false
   },
   "overhang_1_4_speed": {
+   "label": "10%",
    "sidetext": "mm/s or %",
    "min": 0,
    "max": null,
@@ -7788,6 +8291,7 @@
    "derived": false
   },
   "overhang_2_4_speed": {
+   "label": "25%",
    "sidetext": "mm/s or %",
    "min": 0,
    "max": null,
@@ -7803,6 +8307,7 @@
    "derived": false
   },
   "overhang_3_4_speed": {
+   "label": "50%",
    "sidetext": "mm/s or %",
    "min": 0,
    "max": null,
@@ -7818,6 +8323,7 @@
    "derived": false
   },
   "overhang_4_4_speed": {
+   "label": "75%",
    "sidetext": "mm/s or %",
    "min": 0,
    "max": null,
@@ -7833,6 +8339,7 @@
    "derived": false
   },
   "overhang_fan_speed": {
+   "label": "Overhangs and external bridges fan speed",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -7848,6 +8355,7 @@
    "derived": false
   },
   "overhang_fan_threshold": {
+   "label": "Overhang cooling activation threshold",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7877,6 +8385,7 @@
    "derived": false
   },
   "overhang_reverse": {
+   "label": "Reverse on even",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7892,6 +8401,7 @@
    "derived": false
   },
   "overhang_reverse_internal_only": {
+   "label": "Reverse only internal perimeters",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7907,6 +8417,7 @@
    "derived": false
   },
   "overhang_reverse_threshold": {
+   "label": "Reverse threshold",
    "sidetext": "mm or %",
    "min": 0,
    "max": null,
@@ -7922,6 +8433,7 @@
    "derived": false
   },
   "overhang_threshold_participating_cooling": {
+   "label": "Overhang threshold for participating cooling",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7951,6 +8463,7 @@
    "derived": false
   },
   "overhang_totally_speed": {
+   "label": "100%",
    "sidetext": "mm/s or %",
    "min": 0,
    "max": null,
@@ -7966,6 +8479,7 @@
    "derived": false
   },
   "pad_around_object": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7981,6 +8495,7 @@
    "derived": false
   },
   "pad_around_object_everywhere": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -7996,6 +8511,7 @@
    "derived": false
   },
   "pad_brim_size": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 30,
@@ -8011,6 +8527,7 @@
    "derived": false
   },
   "pad_enable": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8026,6 +8543,7 @@
    "derived": false
   },
   "pad_max_merge_distance": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -8041,6 +8559,7 @@
    "derived": false
   },
   "pad_object_connector_penetration": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -8056,6 +8575,7 @@
    "derived": false
   },
   "pad_object_connector_stride": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -8071,6 +8591,7 @@
    "derived": false
   },
   "pad_object_connector_width": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -8086,6 +8607,7 @@
    "derived": false
   },
   "pad_object_gap": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 10,
@@ -8101,6 +8623,7 @@
    "derived": false
   },
   "pad_wall_height": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 30,
@@ -8116,6 +8639,7 @@
    "derived": false
   },
   "pad_wall_slope": {
+   "label": null,
    "sidetext": null,
    "min": 45,
    "max": 90,
@@ -8131,6 +8655,7 @@
    "derived": false
   },
   "pad_wall_thickness": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 30,
@@ -8146,6 +8671,7 @@
    "derived": false
   },
   "parking_pos_retraction": {
+   "label": "Filament parking position",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -8161,6 +8687,7 @@
    "derived": false
   },
   "pellet_flow_coefficient": {
+   "label": "Pellet flow coefficient",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -8176,6 +8703,7 @@
    "derived": false
   },
   "pellet_modded_printer": {
+   "label": "Pellet Modded Printer",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8191,6 +8719,7 @@
    "derived": false
   },
   "physical_printer_preset": {
+   "label": "Physical printer name",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8206,6 +8735,7 @@
    "derived": false
   },
   "pipe": {
+   "label": "Send progress to pipe",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8221,6 +8751,7 @@
    "derived": false
   },
   "plate_name": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8236,6 +8767,7 @@
    "derived": false
   },
   "position": {
+   "label": "Position",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8251,6 +8783,7 @@
    "derived": false
   },
   "post_process": {
+   "label": "Post-processing Scripts",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8266,6 +8799,7 @@
    "derived": false
   },
   "precise_outer_wall": {
+   "label": "Precise wall",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8281,6 +8815,7 @@
    "derived": false
   },
   "precise_z_height": {
+   "label": "Precise Z height",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8296,6 +8831,7 @@
    "derived": false
   },
   "preferred_orientation": {
+   "label": "Preferred orientation",
    "sidetext": "°",
    "min": -360,
    "max": 360,
@@ -8311,6 +8847,7 @@
    "derived": false
   },
   "preheat_steps": {
+   "label": "Preheat steps",
    "sidetext": null,
    "min": 1,
    "max": 10,
@@ -8326,6 +8863,7 @@
    "derived": false
   },
   "preheat_time": {
+   "label": "Preheat time",
    "sidetext": "s",
    "min": 0,
    "max": 120,
@@ -8341,6 +8879,7 @@
    "derived": false
   },
   "preset_name": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8356,6 +8895,7 @@
    "derived": false
   },
   "preset_names": {
+   "label": "Printer preset names",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8371,6 +8911,7 @@
    "derived": false
   },
   "pressure_advance": {
+   "label": "Pressure advance",
    "sidetext": null,
    "min": null,
    "max": 2,
@@ -8386,6 +8927,7 @@
    "derived": false
   },
   "previous_extruder": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8401,6 +8943,7 @@
    "derived": false
   },
   "prime_tower_brim_chamfer": {
+   "label": "Brim chamfer",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8416,6 +8959,7 @@
    "derived": false
   },
   "prime_tower_brim_chamfer_max_width": {
+   "label": "Max chamfer width",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -8431,6 +8975,7 @@
    "derived": false
   },
   "prime_tower_brim_width": {
+   "label": "Brim width",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -8446,6 +8991,7 @@
    "derived": false
   },
   "prime_tower_enable_framework": {
+   "label": "Internal ribs",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8461,6 +9007,7 @@
    "derived": false
   },
   "prime_tower_width": {
+   "label": "Width",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -8476,6 +9023,7 @@
    "derived": false
   },
   "prime_volume": {
+   "label": "Prime volume",
    "sidetext": "mm³",
    "min": null,
    "max": null,
@@ -8491,6 +9039,7 @@
    "derived": false
   },
   "print_bed_max": {
+   "label": "Top-right corner of print bed bounding box",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8506,6 +9055,7 @@
    "derived": false
   },
   "print_bed_min": {
+   "label": "Bottom-left corner of print bed bounding box",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8521,6 +9071,7 @@
    "derived": false
   },
   "print_bed_size": {
+   "label": "Size of the print bed bounding box",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8536,6 +9087,7 @@
    "derived": false
   },
   "print_compatible_printers": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8551,6 +9103,7 @@
    "derived": false
   },
   "print_flow_ratio": {
+   "label": "Flow ratio",
    "sidetext": null,
    "min": null,
    "max": 2,
@@ -8566,6 +9119,7 @@
    "derived": false
   },
   "print_host": {
+   "label": "Hostname, IP or URL",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8581,6 +9135,7 @@
    "derived": false
   },
   "print_host_webui": {
+   "label": "Device UI",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8596,6 +9151,7 @@
    "derived": false
   },
   "print_order": {
+   "label": "Intra-layer order",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8614,6 +9170,7 @@
    "derived": false
   },
   "print_preset": {
+   "label": "Print preset name",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8629,6 +9186,7 @@
    "derived": false
   },
   "print_sequence": {
+   "label": "Print sequence",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8647,6 +9205,7 @@
    "derived": false
   },
   "print_settings_id": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8662,6 +9221,7 @@
    "derived": false
   },
   "printable_area": {
+   "label": "Printable area",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8677,6 +9237,7 @@
    "derived": false
   },
   "printable_height": {
+   "label": "Printable height",
    "sidetext": "mm",
    "min": 0,
    "max": 214700,
@@ -8692,6 +9253,7 @@
    "derived": false
   },
   "printer_flow_support": {
+   "label": "Printer flow support",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8707,6 +9269,7 @@
    "derived": false
   },
   "printer_model": {
+   "label": "Printer type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8722,6 +9285,7 @@
    "derived": false
   },
   "printer_notes": {
+   "label": "Printer notes",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8737,6 +9301,7 @@
    "derived": false
   },
   "printer_preset": {
+   "label": "Printer preset name",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8752,6 +9317,7 @@
    "derived": false
   },
   "printer_settings_id": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8767,6 +9333,7 @@
    "derived": false
   },
   "printer_structure": {
+   "label": "Printer structure",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8788,6 +9355,7 @@
    "derived": false
   },
   "printer_technology": {
+   "label": "Printer technology",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8806,6 +9374,7 @@
    "derived": false
   },
   "printer_variant": {
+   "label": "Printer variant",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8821,6 +9390,7 @@
    "derived": false
   },
   "printhost_apikey": {
+   "label": "API Key / Password",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8836,6 +9406,7 @@
    "derived": false
   },
   "printhost_authorization_type": {
+   "label": "Authorization Type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8854,6 +9425,7 @@
    "derived": false
   },
   "printhost_cafile": {
+   "label": "HTTPS CA File",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8869,6 +9441,7 @@
    "derived": false
   },
   "printhost_password": {
+   "label": "Password",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8884,6 +9457,7 @@
    "derived": false
   },
   "printhost_port": {
+   "label": "Printer",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8899,6 +9473,7 @@
    "derived": false
   },
   "printhost_ssl_ignore_revoke": {
+   "label": "Ignore HTTPS certificate revocation checks",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8914,6 +9489,7 @@
    "derived": false
   },
   "printhost_user": {
+   "label": "User",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8929,6 +9505,7 @@
    "derived": false
   },
   "printing_by_object_gcode": {
+   "label": "Between Object G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8944,6 +9521,7 @@
    "derived": false
   },
   "process_flow_support": {
+   "label": "Process flow support",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8962,6 +9540,7 @@
    "type": "ConfigOptionInt",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -8975,6 +9554,7 @@
    "source": "hpp_macro"
   },
   "purge_in_prime_tower": {
+   "label": "Purge in prime tower",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -8990,6 +9570,7 @@
    "derived": false
   },
   "raft_contact_distance": {
+   "label": "Raft contact Z distance",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -9005,6 +9586,7 @@
    "derived": false
   },
   "raft_expansion": {
+   "label": "Raft expansion",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -9020,6 +9602,7 @@
    "derived": false
   },
   "raft_first_layer_density": {
+   "label": "Initial layer density",
    "sidetext": "%",
    "min": 10,
    "max": 100,
@@ -9035,6 +9618,7 @@
    "derived": false
   },
   "raft_first_layer_expansion": {
+   "label": "Initial layer expansion",
    "sidetext": "mm",
    "min": -1,
    "max": null,
@@ -9050,6 +9634,7 @@
    "derived": false
   },
   "raft_layers": {
+   "label": "Raft layers",
    "sidetext": "layers",
    "min": 0,
    "max": 100,
@@ -9065,6 +9650,7 @@
    "derived": false
   },
   "ramming_line_width_ratio": {
+   "label": "Ramming line width ratio",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9080,6 +9666,7 @@
    "derived": false
   },
   "ramming_pressure_advance_value": {
+   "label": "Pressure advance value when ramming",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9095,6 +9682,7 @@
    "derived": false
   },
   "reduce_crossing_wall": {
+   "label": "Avoid crossing walls",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9110,6 +9698,7 @@
    "derived": false
   },
   "reduce_fan_stop_start_freq": {
+   "label": "Keep fan always on",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9125,6 +9714,7 @@
    "derived": false
   },
   "reduce_infill_retraction": {
+   "label": "Reduce infill retraction",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9140,6 +9730,7 @@
    "derived": false
   },
   "relative_correction": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -9155,6 +9746,7 @@
    "derived": false
   },
   "relative_correction_x": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -9170,6 +9762,7 @@
    "derived": false
   },
   "relative_correction_y": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -9185,6 +9778,7 @@
    "derived": false
   },
   "relative_correction_z": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -9200,6 +9794,7 @@
    "derived": false
   },
   "relative_e_axis": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9215,6 +9810,7 @@
    "derived": false
   },
   "repetitions": {
+   "label": "Repetition count",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9233,6 +9829,7 @@
    "type": "ConfigOptionInts",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -9247,6 +9844,7 @@
    "declared_as": "required_nozzle_HRC"
   },
   "resolution": {
+   "label": "Resolution",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -9262,6 +9860,7 @@
    "derived": false
   },
   "resonance_avoidance": {
+   "label": "Resonance avoidance",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9277,6 +9876,7 @@
    "derived": false
   },
   "retract_before_wipe": {
+   "label": "Retract amount before wipe",
    "sidetext": "%",
    "min": null,
    "max": null,
@@ -9292,6 +9892,7 @@
    "derived": false
   },
   "retract_length_toolchange": {
+   "label": "Retraction Length (Toolchange)",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -9307,6 +9908,7 @@
    "derived": false
   },
   "retract_lift_above": {
+   "label": "Only lift Z above",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -9322,6 +9924,7 @@
    "derived": false
   },
   "retract_lift_below": {
+   "label": "Only lift Z below",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -9337,6 +9940,7 @@
    "derived": false
   },
   "retract_lift_enforce": {
+   "label": "On surfaces",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9357,6 +9961,7 @@
    "derived": false
   },
   "retract_restart_extra": {
+   "label": "Extra length on restart",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -9372,6 +9977,7 @@
    "derived": false
   },
   "retract_restart_extra_toolchange": {
+   "label": "Extra length on restart",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -9387,6 +9993,7 @@
    "derived": false
   },
   "retract_when_changing_layer": {
+   "label": "Retract when change layer",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9402,6 +10009,7 @@
    "derived": false
   },
   "retraction_distances_when_cut": {
+   "label": "Retraction distance when cut",
    "sidetext": null,
    "min": 10,
    "max": 18,
@@ -9417,6 +10025,7 @@
    "derived": false
   },
   "retraction_length": {
+   "label": "Length",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -9432,6 +10041,7 @@
    "derived": false
   },
   "retraction_minimum_travel": {
+   "label": "Travel distance threshold",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -9447,6 +10057,7 @@
    "derived": false
   },
   "retraction_speed": {
+   "label": "Retraction Speed",
    "sidetext": "mm/s",
    "min": null,
    "max": null,
@@ -9462,6 +10073,7 @@
    "derived": false
   },
   "role_based_wipe_speed": {
+   "label": "Role base wipe speed",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9477,6 +10089,7 @@
    "derived": false
   },
   "rotate": {
+   "label": "Rotate",
    "sidetext": "°",
    "min": null,
    "max": null,
@@ -9492,6 +10105,7 @@
    "derived": false
   },
   "rotate_x": {
+   "label": "Rotate around X",
    "sidetext": "°",
    "min": null,
    "max": null,
@@ -9507,6 +10121,7 @@
    "derived": false
   },
   "rotate_y": {
+   "label": "Rotate around Y",
    "sidetext": "°",
    "min": null,
    "max": null,
@@ -9522,6 +10137,7 @@
    "derived": false
   },
   "scale": {
+   "label": "Scale per object",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9537,6 +10153,7 @@
    "derived": false
   },
   "scan_first_layer": {
+   "label": "Scan first layer",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9552,6 +10169,7 @@
    "derived": false
   },
   "scarf_angle_threshold": {
+   "label": "Conditional angle threshold",
    "sidetext": "°",
    "min": 0,
    "max": 180,
@@ -9567,6 +10185,7 @@
    "derived": false
   },
   "scarf_joint_flow_ratio": {
+   "label": "Scarf joint flow ratio",
    "sidetext": null,
    "min": null,
    "max": 2,
@@ -9582,6 +10201,7 @@
    "derived": false
   },
   "scarf_joint_speed": {
+   "label": "Scarf joint speed",
    "sidetext": "mm/s or %",
    "min": 1,
    "max": null,
@@ -9597,6 +10217,7 @@
    "derived": false
   },
   "scarf_overhang_threshold": {
+   "label": "Conditional overhang threshold",
    "sidetext": "%",
    "min": 0,
    "max": null,
@@ -9612,6 +10233,7 @@
    "derived": false
   },
   "seam_gap": {
+   "label": "Seam gap",
    "sidetext": "mm or %",
    "min": 0,
    "max": null,
@@ -9627,6 +10249,7 @@
    "derived": false
   },
   "seam_position": {
+   "label": "Seam position",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9648,6 +10271,7 @@
    "derived": false
   },
   "seam_slope_conditional": {
+   "label": "Conditional scarf joint",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9663,6 +10287,7 @@
    "derived": false
   },
   "seam_slope_entire_loop": {
+   "label": "Scarf around entire wall",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9678,6 +10303,7 @@
    "derived": false
   },
   "seam_slope_inner_walls": {
+   "label": "Scarf joint for inner walls",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9693,6 +10319,7 @@
    "derived": false
   },
   "seam_slope_min_length": {
+   "label": "Scarf length",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -9708,6 +10335,7 @@
    "derived": false
   },
   "seam_slope_start_height": {
+   "label": "Scarf start height",
    "sidetext": "mm or %",
    "min": 0,
    "max": null,
@@ -9723,6 +10351,7 @@
    "derived": false
   },
   "seam_slope_steps": {
+   "label": "Scarf steps",
    "sidetext": null,
    "min": 1,
    "max": null,
@@ -9738,6 +10367,7 @@
    "derived": false
   },
   "seam_slope_type": {
+   "label": "Scarf joint seam (beta)",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9757,6 +10387,7 @@
    "derived": false
   },
   "second": {
+   "label": "Second",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9772,6 +10403,7 @@
    "derived": false
   },
   "second_flush_volume": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9787,6 +10419,7 @@
    "derived": false
   },
   "silent_mode": {
+   "label": "Supports silent mode",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9802,6 +10435,7 @@
    "derived": false
   },
   "single_extruder_multi_material": {
+   "label": "Single Extruder Multi Material",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9817,6 +10451,7 @@
    "derived": false
   },
   "single_extruder_multi_material_priming": {
+   "label": "Prime all printing extruders",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9832,6 +10467,7 @@
    "derived": false
   },
   "single_loop_draft_shield": {
+   "label": "Single loop after first layer",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9847,6 +10483,7 @@
    "derived": false
   },
   "skeleton_infill_density": {
+   "label": "Skeleton infill density",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -9862,6 +10499,7 @@
    "derived": false
   },
   "skeleton_infill_line_width": {
+   "label": "Skeleton line width",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -9877,6 +10515,7 @@
    "derived": false
   },
   "skin_infill_density": {
+   "label": "Skin infill density",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -9892,6 +10531,7 @@
    "derived": false
   },
   "skin_infill_depth": {
+   "label": "Skin infill depth",
    "sidetext": "mm",
    "min": 0,
    "max": 100,
@@ -9907,6 +10547,7 @@
    "derived": false
   },
   "skin_infill_line_width": {
+   "label": "Skin line width",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -9922,6 +10563,7 @@
    "derived": false
   },
   "skip_modified_gcodes": {
+   "label": "Skip modified G-code in 3mf",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9937,6 +10579,7 @@
    "derived": false
   },
   "skip_objects": {
+   "label": "Skip Objects",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -9952,6 +10595,7 @@
    "derived": false
   },
   "skirt_distance": {
+   "label": "Skirt distance",
    "sidetext": "mm",
    "min": 0,
    "max": 60,
@@ -9967,6 +10611,7 @@
    "derived": false
   },
   "skirt_height": {
+   "label": "Skirt height",
    "sidetext": "layers",
    "min": null,
    "max": 10000,
@@ -9982,6 +10627,7 @@
    "derived": false
   },
   "skirt_loops": {
+   "label": "Skirt loops",
    "sidetext": null,
    "min": 0,
    "max": 10,
@@ -9997,6 +10643,7 @@
    "derived": false
   },
   "skirt_speed": {
+   "label": "Skirt speed",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -10012,6 +10659,7 @@
    "derived": false
   },
   "skirt_start_angle": {
+   "label": "Skirt start point",
    "sidetext": "°",
    "min": -180,
    "max": 180,
@@ -10027,6 +10675,7 @@
    "derived": false
   },
   "skirt_type": {
+   "label": "Skirt type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10045,6 +10694,7 @@
    "derived": false
   },
   "sla_material_settings_id": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10060,6 +10710,7 @@
    "derived": false
   },
   "sla_print_settings_id": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10075,6 +10726,7 @@
    "derived": false
   },
   "slice": {
+   "label": "Slice",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10090,6 +10742,7 @@
    "derived": false
   },
   "slice_closing_radius": {
+   "label": "Slice gap closing radius",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -10105,6 +10758,7 @@
    "derived": false
   },
   "slicing_mode": {
+   "label": "Slicing Mode",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10124,6 +10778,7 @@
    "derived": false
   },
   "slow_down_for_layer_cooling": {
+   "label": "Slow printing down for better layer cooling",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10139,6 +10794,7 @@
    "derived": false
   },
   "slow_down_layer_time": {
+   "label": "Layer time",
    "sidetext": "s",
    "min": 0,
    "max": 1000,
@@ -10154,6 +10810,7 @@
    "derived": false
   },
   "slow_down_layers": {
+   "label": "Number of slow layers",
    "sidetext": "layers",
    "min": 0,
    "max": null,
@@ -10169,6 +10826,7 @@
    "derived": false
   },
   "slow_down_min_speed": {
+   "label": "Min print speed",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -10184,6 +10842,7 @@
    "derived": false
   },
   "slow_tilt_time": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -10199,6 +10858,7 @@
    "derived": false
   },
   "slowdown_for_curled_perimeters": {
+   "label": "Slow down for curled perimeters",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10214,6 +10874,7 @@
    "derived": false
   },
   "small_area_infill_flow_compensation": {
+   "label": "Small area flow compensation (beta)",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10229,6 +10890,7 @@
    "derived": false
   },
   "small_area_infill_flow_compensation_model": {
+   "label": "Flow Compensation Model",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10244,6 +10906,7 @@
    "derived": false
   },
   "small_perimeter_speed": {
+   "label": "Small perimeters",
    "sidetext": "mm/s or %",
    "min": 1,
    "max": null,
@@ -10259,6 +10922,7 @@
    "derived": false
   },
   "small_perimeter_threshold": {
+   "label": "Small perimeters threshold",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -10274,6 +10938,7 @@
    "derived": false
   },
   "solid_infill_direction": {
+   "label": "Solid infill direction",
    "sidetext": "°",
    "min": 0,
    "max": 360,
@@ -10289,6 +10954,7 @@
    "derived": false
   },
   "solid_infill_filament": {
+   "label": "Solid infill",
    "sidetext": null,
    "min": 1,
    "max": null,
@@ -10304,6 +10970,7 @@
    "derived": false
   },
   "solid_infill_rotate_template": {
+   "label": "Solid infill rotation template",
    "sidetext": "°",
    "min": null,
    "max": null,
@@ -10319,6 +10986,7 @@
    "derived": false
   },
   "sparse_infill_acceleration": {
+   "label": "Sparse infill",
    "sidetext": "mm/s² or %",
    "min": 0,
    "max": null,
@@ -10334,6 +11002,7 @@
    "derived": false
   },
   "sparse_infill_density": {
+   "label": "Sparse infill density",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -10349,6 +11018,7 @@
    "derived": false
   },
   "sparse_infill_filament": {
+   "label": "Infill",
    "sidetext": null,
    "min": 1,
    "max": null,
@@ -10364,6 +11034,7 @@
    "derived": false
   },
   "sparse_infill_line_width": {
+   "label": "Sparse infill",
    "sidetext": "mm or %",
    "min": 0,
    "max": 1000,
@@ -10379,6 +11050,7 @@
    "derived": false
   },
   "sparse_infill_pattern": {
+   "label": "Sparse infill pattern",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10421,6 +11093,7 @@
    "derived": false
   },
   "sparse_infill_rotate_template": {
+   "label": "Sparse infill rotation template",
    "sidetext": "°",
    "min": null,
    "max": null,
@@ -10436,6 +11109,7 @@
    "derived": false
   },
   "sparse_infill_speed": {
+   "label": "Sparse infill",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -10451,6 +11125,7 @@
    "derived": false
   },
   "spiral_finishing_flow_ratio": {
+   "label": "Spiral finishing flow ratio",
    "sidetext": null,
    "min": 0,
    "max": 1,
@@ -10466,6 +11141,7 @@
    "derived": false
   },
   "spiral_mode": {
+   "label": "Spiral vase",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10481,6 +11157,7 @@
    "derived": false
   },
   "spiral_mode_max_xy_smoothing": {
+   "label": "Max XY Smoothing",
    "sidetext": "mm or %",
    "min": 0,
    "max": 1000,
@@ -10496,6 +11173,7 @@
    "derived": false
   },
   "spiral_mode_smooth": {
+   "label": "Smooth Spiral",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10511,6 +11189,7 @@
    "derived": false
   },
   "spiral_starting_flow_ratio": {
+   "label": "Spiral starting flow ratio",
    "sidetext": null,
    "min": 0,
    "max": 1,
@@ -10526,6 +11205,7 @@
    "derived": false
   },
   "staggered_inner_seams": {
+   "label": "Staggered inner seams",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10541,6 +11221,7 @@
    "derived": false
   },
   "standby_temperature_delta": {
+   "label": "Temperature variation",
    "sidetext": "∆℃",
    "min": null,
    "max": null,
@@ -10556,6 +11237,7 @@
    "derived": false
   },
   "start_end_points": {
+   "label": "Start end points",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10571,6 +11253,7 @@
    "derived": false
   },
   "supertack_plate_temp": {
+   "label": "Other layers",
    "sidetext": "℃",
    "min": 0,
    "max": 120,
@@ -10586,6 +11269,7 @@
    "derived": false
   },
   "supertack_plate_temp_initial_layer": {
+   "label": "Initial layer",
    "sidetext": "℃",
    "min": 0,
    "max": 120,
@@ -10601,6 +11285,7 @@
    "derived": false
   },
   "support_air_filtration": {
+   "label": "Support air filtration",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10616,6 +11301,7 @@
    "derived": false
   },
   "support_angle": {
+   "label": "Pattern angle",
    "sidetext": "°",
    "min": 0,
    "max": 359,
@@ -10631,6 +11317,7 @@
    "derived": false
   },
   "support_base_diameter": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 30,
@@ -10646,6 +11333,7 @@
    "derived": false
   },
   "support_base_height": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -10661,6 +11349,7 @@
    "derived": false
   },
   "support_base_pattern": {
+   "label": "Base pattern",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10683,6 +11372,7 @@
    "derived": false
   },
   "support_base_pattern_spacing": {
+   "label": "Base pattern spacing",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -10698,6 +11388,7 @@
    "derived": false
   },
   "support_base_safety_distance": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 10,
@@ -10713,6 +11404,7 @@
    "derived": false
   },
   "support_bottom_interface_spacing": {
+   "label": "Bottom interface spacing",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -10728,6 +11420,7 @@
    "derived": false
   },
   "support_bottom_z_distance": {
+   "label": "Bottom Z distance",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -10743,6 +11436,7 @@
    "derived": false
   },
   "support_buildplate_only": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10758,6 +11452,7 @@
    "derived": false
   },
   "support_chamber_temp_control": {
+   "label": "Support control chamber temperature",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10773,6 +11468,7 @@
    "derived": false
   },
   "support_critical_angle": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 90,
@@ -10788,6 +11484,7 @@
    "derived": false
   },
   "support_critical_regions_only": {
+   "label": "Support critical regions only",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10803,6 +11500,7 @@
    "derived": false
   },
   "support_expansion": {
+   "label": "Normal Support expansion",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -10818,6 +11516,7 @@
    "derived": false
   },
   "support_filament": {
+   "label": "Support/raft base",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -10833,6 +11532,7 @@
    "derived": false
   },
   "support_head_front_diameter": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -10848,6 +11548,7 @@
    "derived": false
   },
   "support_head_penetration": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -10863,6 +11564,7 @@
    "derived": false
   },
   "support_head_width": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 20,
@@ -10878,6 +11580,7 @@
    "derived": false
   },
   "support_interface_bottom_layers": {
+   "label": "Bottom interface layers",
    "sidetext": "layers",
    "min": -1,
    "max": null,
@@ -10895,6 +11598,7 @@
    "derived": false
   },
   "support_interface_filament": {
+   "label": "Support/raft interface",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -10910,6 +11614,7 @@
    "derived": false
   },
   "support_interface_loop_pattern": {
+   "label": "Interface use loop pattern",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10925,6 +11630,7 @@
    "derived": false
   },
   "support_interface_min_area": {
+   "label": "Minimum Support Contact Area",
    "sidetext": "mm²",
    "min": 0,
    "max": null,
@@ -10950,6 +11656,7 @@
    "derived": false
   },
   "support_interface_not_for_body": {
+   "label": "Avoid interface filament for base",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10965,6 +11672,7 @@
    "derived": false
   },
   "support_interface_pattern": {
+   "label": "Interface pattern",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -10986,6 +11694,7 @@
    "derived": false
   },
   "support_interface_spacing": {
+   "label": "Top interface spacing",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -11001,6 +11710,7 @@
    "derived": false
   },
   "support_interface_speed": {
+   "label": "Support interface",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -11016,6 +11726,7 @@
    "derived": false
   },
   "support_interface_top_layers": {
+   "label": "Top interface layers",
    "sidetext": "layers",
    "min": 0,
    "max": null,
@@ -11041,6 +11752,7 @@
    "derived": false
   },
   "support_ironing": {
+   "label": "Ironing Support Interface",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11056,6 +11768,7 @@
    "derived": false
   },
   "support_ironing_flow": {
+   "label": "Support Ironing flow",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -11071,6 +11784,7 @@
    "derived": false
   },
   "support_ironing_pattern": {
+   "label": "Support Ironing Pattern",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11089,6 +11803,7 @@
    "derived": false
   },
   "support_ironing_spacing": {
+   "label": "Support Ironing line spacing",
    "sidetext": "mm",
    "min": 0,
    "max": 1,
@@ -11104,6 +11819,7 @@
    "derived": false
   },
   "support_line_width": {
+   "label": "Support",
    "sidetext": "mm or %",
    "min": 0,
    "max": 1000,
@@ -11119,6 +11835,7 @@
    "derived": false
   },
   "support_material_interface_fan_speed": {
+   "label": "Support interface fan speed",
    "sidetext": "%",
    "min": -1,
    "max": 100,
@@ -11134,6 +11851,7 @@
    "derived": false
   },
   "support_max_bridge_length": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -11149,6 +11867,7 @@
    "derived": false
   },
   "support_max_bridges_on_pillar": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 50,
@@ -11164,6 +11883,7 @@
    "derived": false
   },
   "support_max_pillar_link_distance": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -11179,6 +11899,7 @@
    "derived": false
   },
   "support_multi_bed_types": {
+   "label": "Support multi bed types",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11194,6 +11915,7 @@
    "derived": false
   },
   "support_object_elevation": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 150,
@@ -11209,6 +11931,7 @@
    "derived": false
   },
   "support_object_first_layer_gap": {
+   "label": "Support/object first layer gap",
    "sidetext": "mm",
    "min": 0,
    "max": 10,
@@ -11224,6 +11947,7 @@
    "derived": false
   },
   "support_object_xy_distance": {
+   "label": "Support/object xy distance",
    "sidetext": "mm",
    "min": 0,
    "max": 10,
@@ -11239,6 +11963,7 @@
    "derived": false
   },
   "support_on_build_plate_only": {
+   "label": "On build plate only",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11254,6 +11979,7 @@
    "derived": false
   },
   "support_pillar_connection_mode": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11277,6 +12003,7 @@
    "derived": false
   },
   "support_pillar_diameter": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 15,
@@ -11292,6 +12019,7 @@
    "derived": false
   },
   "support_pillar_widening_factor": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": 1,
@@ -11307,6 +12035,7 @@
    "derived": false
   },
   "support_points_density_relative": {
+   "label": null,
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -11322,6 +12051,7 @@
    "derived": false
   },
   "support_points_minimal_distance": {
+   "label": null,
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -11337,6 +12067,7 @@
    "derived": false
   },
   "support_remove_small_overhang": {
+   "label": "Remove small overhangs",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11352,6 +12083,7 @@
    "derived": false
   },
   "support_small_pillar_diameter_percent": {
+   "label": null,
    "sidetext": null,
    "min": 1,
    "max": 100,
@@ -11367,6 +12099,7 @@
    "derived": false
   },
   "support_speed": {
+   "label": "Support",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -11382,6 +12115,7 @@
    "derived": false
   },
   "support_style": {
+   "label": "Style",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11405,6 +12139,7 @@
    "derived": false
   },
   "support_threshold_angle": {
+   "label": "Threshold angle",
    "sidetext": "°",
    "min": 1,
    "max": 90,
@@ -11420,6 +12155,7 @@
    "derived": false
   },
   "support_threshold_overlap": {
+   "label": "Threshold overlap",
    "sidetext": "mm or %",
    "min": 0,
    "max": 100,
@@ -11435,6 +12171,7 @@
    "derived": false
   },
   "support_top_z_distance": {
+   "label": "Top Z distance",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -11450,6 +12187,7 @@
    "derived": false
   },
   "support_transition_flow_ratio": {
+   "label": "Support transition flow ratio",
    "sidetext": "%",
    "min": null,
    "max": null,
@@ -11465,6 +12203,7 @@
    "derived": false
   },
   "support_transition_perimeter": {
+   "label": "Support transition perimeter",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11480,6 +12219,7 @@
    "derived": false
   },
   "support_transition_speed": {
+   "label": "Support transition speed",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -11495,6 +12235,7 @@
    "derived": false
   },
   "support_type": {
+   "label": "Type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11515,6 +12256,7 @@
    "derived": false
   },
   "supports_enable": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11530,6 +12272,7 @@
    "derived": false
   },
   "symmetric_infill_y_axis": {
+   "label": "Symmetric infill Y axis",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11545,6 +12288,7 @@
    "derived": false
   },
   "temperature_vitrification": {
+   "label": "Softening temperature",
    "sidetext": "℃",
    "min": null,
    "max": null,
@@ -11560,6 +12304,7 @@
    "derived": false
   },
   "template_custom_gcode": {
+   "label": "Custom G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11575,6 +12320,7 @@
    "derived": false
   },
   "textured_cool_plate_temp": {
+   "label": "Other layers",
    "sidetext": "℃",
    "min": 0,
    "max": 300,
@@ -11590,6 +12336,7 @@
    "derived": false
   },
   "textured_cool_plate_temp_initial_layer": {
+   "label": "Initial layer",
    "sidetext": "℃",
    "min": 0,
    "max": 120,
@@ -11605,6 +12352,7 @@
    "derived": false
   },
   "textured_plate_temp": {
+   "label": "Other layers",
    "sidetext": "℃",
    "min": 0,
    "max": 300,
@@ -11620,6 +12368,7 @@
    "derived": false
   },
   "textured_plate_temp_initial_layer": {
+   "label": "Initial layer",
    "sidetext": "℃",
    "min": 0,
    "max": 300,
@@ -11635,6 +12384,7 @@
    "derived": false
   },
   "thick_bridges": {
+   "label": "Thick external bridges",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11650,6 +12400,7 @@
    "derived": false
   },
   "thick_internal_bridges": {
+   "label": "Thick internal bridges",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11665,6 +12416,7 @@
    "derived": false
   },
   "thumb0": {
+   "label": "small thumb",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11680,6 +12432,7 @@
    "derived": false
   },
   "thumb1": {
+   "label": "big thumb",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11698,6 +12451,7 @@
    "type": "ConfigOptionPoints",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -11711,6 +12465,7 @@
    "source": "hpp_macro"
   },
   "thumbnails": {
+   "label": "G-code thumbnails",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11726,6 +12481,7 @@
    "derived": false
   },
   "thumbnails_format": {
+   "label": "Format of G-code thumbnails",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11753,6 +12509,7 @@
    "derived": false
   },
   "time_cost": {
+   "label": "Time cost",
    "sidetext": "money/h",
    "min": 0,
    "max": null,
@@ -11768,6 +12525,7 @@
    "derived": false
   },
   "time_lapse_gcode": {
+   "label": "Timelapse G-code",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11783,6 +12541,7 @@
    "derived": false
   },
   "timelapse_type": {
+   "label": "Timelapse",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11801,6 +12560,7 @@
    "derived": false
   },
   "timestamp": {
+   "label": "Timestamp",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11816,6 +12576,7 @@
    "derived": false
   },
   "tool_change_temprature_wait": {
+   "label": "Wait for the temperature when changing tools",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11831,6 +12592,7 @@
    "derived": false
   },
   "toolchange_count": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -11846,6 +12608,7 @@
    "derived": false
   },
   "top_bottom_infill_wall_overlap": {
+   "label": "Top/Bottom solid infill/wall overlap",
    "sidetext": "%",
    "min": null,
    "max": null,
@@ -11861,6 +12624,7 @@
    "derived": false
   },
   "top_color_penetration_layers": {
+   "label": "Top paint penetration layers",
    "sidetext": "layers",
    "min": 0,
    "max": null,
@@ -11876,6 +12640,7 @@
    "derived": false
   },
   "top_shell_layers": {
+   "label": "Top shell layers",
    "sidetext": "layers",
    "min": 0,
    "max": null,
@@ -11891,6 +12656,7 @@
    "derived": false
   },
   "top_shell_thickness": {
+   "label": "Top shell thickness",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -11906,6 +12672,7 @@
    "derived": false
   },
   "top_solid_infill_flow_ratio": {
+   "label": "Top surface flow ratio",
    "sidetext": null,
    "min": 0,
    "max": 2,
@@ -11921,6 +12688,7 @@
    "derived": false
   },
   "top_surface_acceleration": {
+   "label": "Top surface",
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -11936,6 +12704,7 @@
    "derived": false
   },
   "top_surface_density": {
+   "label": "Top surface density",
    "sidetext": "%",
    "min": 0,
    "max": 100,
@@ -11951,6 +12720,7 @@
    "derived": false
   },
   "top_surface_jerk": {
+   "label": "Top surface",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -11966,6 +12736,7 @@
    "derived": false
   },
   "top_surface_line_width": {
+   "label": "Top surface",
    "sidetext": "mm or %",
    "min": 0,
    "max": 1000,
@@ -11981,6 +12752,7 @@
    "derived": false
   },
   "top_surface_pattern": {
+   "label": "Top surface pattern",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12005,6 +12777,7 @@
    "derived": false
   },
   "top_surface_speed": {
+   "label": "Top surface",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -12020,6 +12793,7 @@
    "derived": false
   },
   "total_layer_count": {
+   "label": "Total layer count",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12035,6 +12809,7 @@
    "derived": false
   },
   "total_toolchanges": {
+   "label": "Total tool changes",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12050,6 +12825,7 @@
    "derived": false
   },
   "travel_acceleration": {
+   "label": "Travel",
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -12065,6 +12841,7 @@
    "derived": false
   },
   "travel_jerk": {
+   "label": "Travel",
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -12080,6 +12857,7 @@
    "derived": false
   },
   "travel_point_1_x": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12095,6 +12873,7 @@
    "derived": false
   },
   "travel_point_1_y": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12110,6 +12889,7 @@
    "derived": false
   },
   "travel_point_2_x": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12125,6 +12905,7 @@
    "derived": false
   },
   "travel_point_2_y": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12140,6 +12921,7 @@
    "derived": false
   },
   "travel_point_3_x": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12155,6 +12937,7 @@
    "derived": false
   },
   "travel_point_3_y": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12170,6 +12953,7 @@
    "derived": false
   },
   "travel_short_distance_acceleration": {
+   "label": "Short travel",
    "sidetext": "mm/s²",
    "min": 0,
    "max": null,
@@ -12185,6 +12969,7 @@
    "derived": false
   },
   "travel_slope": {
+   "label": "Traveling angle",
    "sidetext": "°",
    "min": 1,
    "max": 90,
@@ -12200,6 +12985,7 @@
    "derived": false
   },
   "travel_speed": {
+   "label": "Travel",
    "sidetext": "mm/s",
    "min": 1,
    "max": null,
@@ -12215,6 +13001,7 @@
    "derived": false
   },
   "travel_speed_z": {
+   "label": null,
    "sidetext": "mm/s",
    "min": 0,
    "max": null,
@@ -12230,6 +13017,7 @@
    "derived": false
   },
   "tree_support_adaptive_layer_height": {
+   "label": "Adaptive layer height",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12245,6 +13033,7 @@
    "derived": false
   },
   "tree_support_angle_slow": {
+   "label": "Preferred Branch Angle",
    "sidetext": "°",
    "min": 10,
    "max": 85,
@@ -12260,6 +13049,7 @@
    "derived": false
   },
   "tree_support_auto_brim": {
+   "label": "Auto brim width",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12275,6 +13065,7 @@
    "derived": false
   },
   "tree_support_branch_angle": {
+   "label": "Tree support branch angle",
    "sidetext": "°",
    "min": 0,
    "max": 60,
@@ -12290,6 +13081,7 @@
    "derived": false
   },
   "tree_support_branch_angle_organic": {
+   "label": "Tree support branch angle",
    "sidetext": "°",
    "min": 0,
    "max": 60,
@@ -12305,6 +13097,7 @@
    "derived": false
   },
   "tree_support_branch_diameter": {
+   "label": "Tree support branch diameter",
    "sidetext": "mm",
    "min": null,
    "max": 10,
@@ -12320,6 +13113,7 @@
    "derived": false
   },
   "tree_support_branch_diameter_angle": {
+   "label": "Branch Diameter Angle",
    "sidetext": "°",
    "min": 0,
    "max": 15,
@@ -12335,6 +13129,7 @@
    "derived": false
   },
   "tree_support_branch_diameter_organic": {
+   "label": "Tree support branch diameter",
    "sidetext": "mm",
    "min": null,
    "max": 10,
@@ -12350,6 +13145,7 @@
    "derived": false
   },
   "tree_support_branch_distance": {
+   "label": "Tree support branch distance",
    "sidetext": "mm",
    "min": null,
    "max": 10,
@@ -12365,6 +13161,7 @@
    "derived": false
   },
   "tree_support_branch_distance_organic": {
+   "label": "Tree support branch distance",
    "sidetext": "mm",
    "min": null,
    "max": 10,
@@ -12380,6 +13177,7 @@
    "derived": false
   },
   "tree_support_brim_width": {
+   "label": "Tree support brim width",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12395,6 +13193,7 @@
    "derived": false
   },
   "tree_support_tip_diameter": {
+   "label": "Tip Diameter",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -12410,6 +13209,7 @@
    "derived": false
   },
   "tree_support_top_rate": {
+   "label": "Branch Density",
    "sidetext": "%",
    "min": 5,
    "max": null,
@@ -12425,6 +13225,7 @@
    "derived": false
   },
   "tree_support_transition_layers": {
+   "label": "Tree support transition layers",
    "sidetext": "layers",
    "min": 0,
    "max": 3,
@@ -12440,6 +13241,7 @@
    "derived": false
   },
   "tree_support_wall_count": {
+   "label": "Support wall loops",
    "sidetext": null,
    "min": 0,
    "max": 2,
@@ -12455,6 +13257,7 @@
    "derived": false
   },
   "tree_support_with_infill": {
+   "label": "Tree support with infill",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12470,6 +13273,7 @@
    "derived": false
   },
   "uptodate": {
+   "label": "UpToDate",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12485,6 +13289,7 @@
    "derived": false
   },
   "uptodate_filaments": {
+   "label": "Load uptodate filament settings when using uptodate",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12500,6 +13305,7 @@
    "derived": false
   },
   "uptodate_settings": {
+   "label": "Load uptodate process/machine settings when using uptodate",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12515,6 +13321,7 @@
    "derived": false
   },
   "upward_compatible_machine": {
+   "label": "upward compatible machine",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12530,6 +13337,7 @@
    "derived": false
   },
   "use_firmware_retraction": {
+   "label": "Use firmware retraction",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12545,6 +13353,7 @@
    "derived": false
   },
   "use_relative_e_distances": {
+   "label": "Use relative E distances",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12560,6 +13369,7 @@
    "derived": false
   },
   "wall_direction": {
+   "label": "Wall loop direction",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12579,6 +13389,7 @@
    "derived": false
   },
   "wall_distribution_count": {
+   "label": "Wall distribution count",
    "sidetext": null,
    "min": 1,
    "max": null,
@@ -12594,6 +13405,7 @@
    "derived": false
   },
   "wall_filament": {
+   "label": "Walls",
    "sidetext": null,
    "min": 1,
    "max": null,
@@ -12609,6 +13421,7 @@
    "derived": false
   },
   "wall_generator": {
+   "label": "Wall generator",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12630,6 +13443,7 @@
    "type": "ConfigOptionEnum<WallInfillOrder>",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -12643,6 +13457,7 @@
    "source": "hpp_macro"
   },
   "wall_loops": {
+   "label": "Wall loops",
    "sidetext": null,
    "min": 0,
    "max": 1000,
@@ -12658,6 +13473,7 @@
    "derived": false
   },
   "wall_sequence": {
+   "label": "Walls printing order",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12677,6 +13493,7 @@
    "derived": false
   },
   "wall_transition_angle": {
+   "label": "Wall transitioning threshold angle",
    "sidetext": "°",
    "min": null,
    "max": null,
@@ -12692,6 +13509,7 @@
    "derived": false
   },
   "wall_transition_filter_deviation": {
+   "label": "Wall transitioning filter margin",
    "sidetext": "%",
    "min": 0,
    "max": null,
@@ -12707,6 +13525,7 @@
    "derived": false
   },
   "wall_transition_length": {
+   "label": "Wall transition length",
    "sidetext": "%",
    "min": 0,
    "max": null,
@@ -12722,6 +13541,7 @@
    "derived": false
   },
   "wipe": {
+   "label": "Wipe while retracting",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12737,6 +13557,7 @@
    "derived": false
   },
   "wipe_before_external_loop": {
+   "label": "Wipe before external loop",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12752,6 +13573,7 @@
    "derived": false
   },
   "wipe_distance": {
+   "label": "Wipe Distance",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -12767,6 +13589,7 @@
    "derived": false
   },
   "wipe_on_loops": {
+   "label": "Wipe on loops",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12782,6 +13605,7 @@
    "derived": false
   },
   "wipe_speed": {
+   "label": "Wipe speed",
    "sidetext": "mm/s or %",
    "min": 0,
    "max": null,
@@ -12797,6 +13621,7 @@
    "derived": false
   },
   "wipe_tower_bridging": {
+   "label": "Maximal bridging distance",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -12812,6 +13637,7 @@
    "derived": false
   },
   "wipe_tower_cone_angle": {
+   "label": "Stabilization cone apex angle",
    "sidetext": "°",
    "min": null,
    "max": null,
@@ -12827,6 +13653,7 @@
    "derived": false
   },
   "wipe_tower_extra_flow": {
+   "label": "Extra flow for purging",
    "sidetext": "%",
    "min": null,
    "max": null,
@@ -12842,6 +13669,7 @@
    "derived": false
   },
   "wipe_tower_extra_rib_length": {
+   "label": "Extra rib length",
    "sidetext": "mm",
    "min": null,
    "max": 300,
@@ -12857,6 +13685,7 @@
    "derived": false
   },
   "wipe_tower_extra_spacing": {
+   "label": "Wipe tower purge lines spacing",
    "sidetext": "%",
    "min": null,
    "max": null,
@@ -12872,6 +13701,7 @@
    "derived": false
   },
   "wipe_tower_filament": {
+   "label": "Wipe tower",
    "sidetext": null,
    "min": 0,
    "max": null,
@@ -12887,6 +13717,7 @@
    "derived": false
   },
   "wipe_tower_fillet_wall": {
+   "label": "Fillet wall",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12902,6 +13733,7 @@
    "derived": false
   },
   "wipe_tower_max_purge_speed": {
+   "label": "Max speed",
    "sidetext": "mm/s",
    "min": 10,
    "max": null,
@@ -12917,6 +13749,7 @@
    "derived": false
   },
   "wipe_tower_no_sparse_layers": {
+   "label": "No sparse layers (beta)",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12935,6 +13768,7 @@
    "type": "ConfigOptionFloat",
    "mode": null,
    "default": null,
+   "label": null,
    "min": null,
    "max": null,
    "sidetext": null,
@@ -12948,6 +13782,7 @@
    "source": "hpp_macro"
   },
   "wipe_tower_rib_width": {
+   "label": "Rib width",
    "sidetext": "mm",
    "min": 0,
    "max": null,
@@ -12963,6 +13798,7 @@
    "derived": false
   },
   "wipe_tower_rotation_angle": {
+   "label": "Wipe tower rotation angle",
    "sidetext": "°",
    "min": null,
    "max": null,
@@ -12978,6 +13814,7 @@
    "derived": false
   },
   "wipe_tower_wall_gap": {
+   "label": "Wall gap",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -12993,6 +13830,7 @@
    "derived": false
   },
   "wipe_tower_wall_type": {
+   "label": "Wall type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13016,6 +13854,7 @@
    "derived": false
   },
   "wipe_tower_x": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13031,6 +13870,7 @@
    "derived": false
   },
   "wipe_tower_y": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13046,6 +13886,7 @@
    "derived": false
   },
   "wiping_volumes_extruders": {
+   "label": "Purging volumes - load/unload volumes",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13061,6 +13902,7 @@
    "derived": false
   },
   "x_after_toolchange": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13076,6 +13918,7 @@
    "derived": false
   },
   "xy_contour_compensation": {
+   "label": "X-Y contour compensation",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -13091,6 +13934,7 @@
    "derived": false
   },
   "xy_hole_compensation": {
+   "label": "X-Y hole compensation",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -13106,6 +13950,7 @@
    "derived": false
   },
   "y_after_toolchange": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13121,6 +13966,7 @@
    "derived": false
   },
   "year": {
+   "label": "Year",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13136,6 +13982,7 @@
    "derived": false
   },
   "z_after_toolchange": {
+   "label": null,
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13151,6 +13998,7 @@
    "derived": false
   },
   "z_hop": {
+   "label": "Z-hop height",
    "sidetext": "mm",
    "min": 0,
    "max": 5,
@@ -13166,6 +14014,7 @@
    "derived": false
   },
   "z_hop_types": {
+   "label": "Z-hop type",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13186,6 +14035,7 @@
    "derived": false
   },
   "z_hop_when_prime": {
+   "label": "Z hop when moving to tower",
    "sidetext": null,
    "min": null,
    "max": null,
@@ -13201,6 +14051,7 @@
    "derived": false
   },
   "z_offset": {
+   "label": "Z offset",
    "sidetext": "mm",
    "min": null,
    "max": null,
@@ -13216,6 +14067,7 @@
    "derived": false
   },
   "zhop": {
+   "label": "Current Z-hop",
    "sidetext": null,
    "min": null,
    "max": null,

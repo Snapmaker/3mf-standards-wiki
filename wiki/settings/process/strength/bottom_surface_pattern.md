@@ -13,6 +13,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `ipMonotonic`.  
 [Options](../../../general_settings/option_type.md#choice): `monotonic, monotonicline, rectilinear, alignedrectilinear, concentric, spiralinset, hilbertcurve, archimedeanchords, octagramspiral`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--bottom-surface-pattern=monotonic`.  
+
 This setting controls the pattern of the surfaces.  
 If [Shell Layers](#shell-layers) is greater than 1, the surface pattern will be applied to the outermost shell layer only and the rest will use [Internal Solid Infill Pattern](../../process/strength/internal_solid_infill_pattern.md).
 

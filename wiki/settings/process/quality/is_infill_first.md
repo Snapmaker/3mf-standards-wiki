@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--is-infill-first=1`.  
+
 When this option is enabled, the [infill](../../process/strength/sparse_infill_density.md) and [top/bottom shells](../../process/strength/top_shell_thickness.md) are printed first, followed by the walls. The first layer always prints the walls first, for better bed adhesion. This can be useful for some overhangs where the infill can support the walls.
 
 ![infill-first](../../../images/wall-order/infill-first.gif)

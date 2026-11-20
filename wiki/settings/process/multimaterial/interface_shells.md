@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--interface-shells=1`.  
+
 Forces the generation of solid shells between adjacent materials/volumes. Useful for multi-extruder prints with translucent materials or manual soluble support material.

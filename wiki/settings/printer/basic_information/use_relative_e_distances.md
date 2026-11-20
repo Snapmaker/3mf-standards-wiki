@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `true`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--use-relative-e-distances=1`.  
+
 Relative extrusion is recommended when using "label_objects" option. Some extruders work better with this option unchecked (absolute extrusion mode). Wipe tower is only compatible with relative mode. It is recommended on most printers. Default is checked.

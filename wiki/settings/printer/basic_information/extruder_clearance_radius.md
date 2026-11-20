@@ -10,6 +10,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `extruder_clearance_radius`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `40`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--extruder-clearance-radius=1`.  
+
 Clearance radius around extruder: used for collision avoidance in by-object printing.

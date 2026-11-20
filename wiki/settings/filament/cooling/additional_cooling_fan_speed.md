@@ -11,8 +11,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `additional_cooling_fan_speed`.  
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
-[Range](../../../general_settings/option_type.md#range): `0–100` %.  
+[Unit](../../../general_settings/option_type.md#unit): `%`.  
+[Range](../../../general_settings/option_type.md#range): `0–100`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--additional-cooling-fan-speed=1`.  
+
 Set the speed for the auxiliary part-cooling fan if your printer provides one (see [auxiliary part-cooling fan](../../printer/basic_information/auxiliary_fan.md)). The auxiliary fan runs during printing but is disabled for the initial layers defined by [No cooling for the first](#no-cooling-for-the-first).
 
 G-code command: `M106 P2 S(0-255)`

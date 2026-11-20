@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `true`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-filament-ramming=1`.  
+
 Enable filament ramming

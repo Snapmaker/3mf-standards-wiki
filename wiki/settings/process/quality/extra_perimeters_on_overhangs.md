@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--extra-perimeters-on-overhangs=1`.  
+
 Create additional perimeter (overhang wall) paths over steep overhangs and areas where bridges cannot be anchored.
 
 This option only works when [Detect overhang walls](#detect-overhang-wall) is enabled, even though it stays visible and editable when that option is off.

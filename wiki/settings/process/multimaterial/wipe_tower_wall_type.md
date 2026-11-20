@@ -13,4 +13,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `wtwRectangle`.  
 [Options](../../../general_settings/option_type.md#choice): `rectangle, cone, rib`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wipe-tower-wall-type=rectangle`.  
+
 Wipe tower outer wall type.

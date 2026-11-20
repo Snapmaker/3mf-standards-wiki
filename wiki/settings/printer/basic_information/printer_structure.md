@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `psUndefine`.  
 [Options](../../../general_settings/option_type.md#choice): `undefine, corexy, i3, hbot, delta`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--printer-structure=undefine`.  
+
 The physical arrangement and components of a printing device.

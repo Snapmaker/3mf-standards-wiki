@@ -11,5 +11,6 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--spiral-mode=1`.  
+
 Spiral vase mode transforms a solid model into a single-walled print with solid bottom layers, eliminating seams by continuously spiraling the outer contour.  
 This creates a smooth, vase-like appearance.

@@ -11,8 +11,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_bottom_z_distance`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0.2`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-bottom-z-distance=1`.  
+
 The Z gap between the support and the object: **Top Z distance** is the gap between the top of the support and the overhang above it, and **Bottom Z distance** the gap between the object and a support standing on it. Both are rounded to a multiple of the layer height unless [Independent support layer height](#independent-support-layer-height) is enabled.
 
 A Top Z distance of `0` is meant for soluble supports. In that case, Bottom Z distance is also ignored when there are bottom interface layers, and the support is printed in direct contact with the object.

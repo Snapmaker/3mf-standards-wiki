@@ -11,9 +11,12 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `skeleton_infill_line_width`.  
 [Type](../../../general_settings/option_type.md): Float or Percentage.  
 [Default](../../../general_settings/option_type.md#default-value): `100%`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
+
 The bound applies to mm entries; a % value is also accepted and is computed over the nozzle diameter (the source sidetext lists mm only).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skeleton-infill-line-width=1`.  
+
 Version of [Zig Zag](#zig-zag) that adds extra skin.
 When using this fill, you can individually modify the density of the skeleton and skin, as well as the size of the skin and how much interconnection there is between the skin and the skeleton (a lock depth of 50% of the skin depth is recommended).  
 **Skin line width** and **Skeleton line width** set the line width of the skin and skeleton paths. If expressed as a %, they are computed over the nozzle diameter.  

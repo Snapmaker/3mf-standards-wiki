@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--use-firmware-retraction=1`.  
+
 This experimental setting uses G10 and G11 commands to have the firmware handle the retraction. This is only supported in recent Marlin.

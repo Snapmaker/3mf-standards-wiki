@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `ntUndefine`.  
 [Options](../../../general_settings/option_type.md#choice): `undefine, hardened_steel, stainless_steel, tungsten_carbide, brass`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--nozzle-type=undefine`.  
+
 The metallic material of the nozzle: This determines the abrasive resistance of the nozzle and what kind of filament can be printed.

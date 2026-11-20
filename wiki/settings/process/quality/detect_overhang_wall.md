@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `true`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--detect-overhang-wall=1`.  
+
 Detects the overhang percentage relative to the line width and uses a different speed to print.
 Walls with 100% overhang are printed with the bridge settings.
 

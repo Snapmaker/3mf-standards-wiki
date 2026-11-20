@@ -11,5 +11,6 @@
 [Type](../../../general_settings/option_type.md#list-types): `Text list`.  
 [Default](../../../general_settings/option_type.md#default-value): `(empty)`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--default-filament-colour=value`.  
+
 Default filament color.  
 Right click to reset value to system default.

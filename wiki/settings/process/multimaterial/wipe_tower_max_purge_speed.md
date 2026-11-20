@@ -11,8 +11,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_tower_max_purge_speed`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `90`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 10` mm/s.  
+[Unit](../../../general_settings/option_type.md#unit): `mm/s`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 10`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wipe-tower-max-purge-speed=1`.  
+
 The maximum print speed when purging in the wipe tower and printing the wipe tower sparse layers. When purging, if the sparse infill speed or calculated speed from the filament max volumetric speed is lower, the lowest will be used instead.  
 When printing the sparse layers, if the sparse infill speed or calculated speed from the filament max volumetric speed is lower, the lowest will be used instead.  
 Increasing this speed may affect the tower's stability as well as increase the force with which the nozzle collides with any blobs that may have formed on the wipe tower.  

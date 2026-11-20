@@ -13,6 +13,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `1`.  
 [Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--internal-bridge-flow=1`.  
+
 This value governs the thickness of the bridge layer.
 
 For external bridges, when material tends to sag, reducing the flow ratio can help improve appearance.  

@@ -36,12 +36,15 @@ X,Y 坐标对，两个逗号分隔的数字：`--align-xy=100,100`。
 
 键页 `[Default]` 行：你不做任何修改时该参数使用的值，取自 `PrintConfig.cpp` 的静态默认定义。
 
-- 多键小节的页面用复数 `[Defaults]`，按键名列出：`` `layer_height` (0.2), `initial_layer_print_height` (0.2) ``
 - fork 源码没有该键、或该键无静态默认值时显示 `—`（注入约定见 [docs/09 §3](../../docs/09-对账-PrintConfig元数据提取与键页注入.md)）。
+
+## Unit
+
+键页 `[Unit]` 行：该参数数值的单位，取自 fork `PrintConfig.cpp` 中该键的 `sidetext` 定义（即设置界面输入框旁的标注文字）。仅源码定义了单位时才显示此行；复合单位原样显示（如 `mm or %`、`mm/s²`）。`[Default]` 与 `[Range]` 行不再内嵌单位，统一看本行（2026-11-20 裁决，见 [docs/09 §3](../../docs/09-对账-PrintConfig元数据提取与键页注入.md)）。
 
 ## Range
 
-键页 `[Range]` 行：源码为该键定义的取值上下限（如 `0–1 mm`、`≥ 0`）。仅当 min/max 在 `PrintConfig.cpp` 里有明确定义时才注入此行；没有约束的参数不显示。
+键页 `[Range]` 行：源码为该键定义的取值上下限（如 `0–1`、`≥ 0`，单位见 `[Unit]` 行）。仅当 min/max 在 `PrintConfig.cpp` 里有明确定义时才注入此行；没有约束的参数不显示。
 
 ## Aliases
 

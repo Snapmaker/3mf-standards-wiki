@@ -13,6 +13,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `1`.  
 [Range](../../../general_settings/option_type.md#range): `≤ 2`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--print-flow-ratio=1`.  
+
 The Flow ratio (`print_flow_ratio`) scales all extrusion flow of the object proportionally.
 
 The top and bottom surface flow ratios affect the amount of material for [top or bottom solid infill](../../process/strength/top_shell_thickness.md). You can decrease them slightly to get a smoother surface finish.  

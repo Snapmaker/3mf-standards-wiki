@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-ironing=1`.  
+
 Ironing uses a small flow to print over the top support interface again at the same height to make it smoother. This setting controls whether the support interface is ironed. When enabled, the top support interface and the raft interface are also printed solid.
 
 This option is available only when the support has [top interface layers](../../process/support/support_interface_bottom_layers.md) or a [raft](../../process/support/raft_layers.md) is used.

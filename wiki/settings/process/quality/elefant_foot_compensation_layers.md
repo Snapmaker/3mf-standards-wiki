@@ -11,8 +11,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `elefant_foot_compensation_layers`.  
 [Type](../../../general_settings/option_type.md): Integer.  
 [Default](../../../general_settings/option_type.md#default-value): `1`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 1` layers.  
+[Unit](../../../general_settings/option_type.md#unit): `layers`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 1`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--elefant-foot-compensation-layers=1`.  
+
 This feature compensates for the "elephant foot" effect, which occurs when the first few layers of a print are wider than the rest due to:
 
 - Weight of the material above them.

@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `WallSequence::InnerOuter`.  
 [Options](../../../general_settings/option_type.md#choice): `inner wall/outer wall, outer wall/inner wall, inner-outer-inner wall`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wall-sequence="inner wall/outer wall"`.  
+
 Print sequence of the internal (inner) and external (outer) walls.  
 The order applies to each side of a wall on its own: the walls around a hole follow it just like the walls around the contour.
 

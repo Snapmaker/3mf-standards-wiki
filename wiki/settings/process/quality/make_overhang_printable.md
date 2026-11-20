@@ -11,5 +11,6 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--make-overhang-printable=1`.  
+
 This setting will modify the geometry to print overhangs without support material.  
 Every overhang exceeding the [maximum angle](#maximum-angle) will be modified to be printable.

@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md): Boolean.  
 [Default](../../../general_settings/option_type.md#default-value): `true`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--fan-speedup-overhangs=1`.  
+
 Start the fan this number of seconds earlier than its target start time (you can use fractional seconds). It assumes infinite acceleration for this time estimation, and will only take into account G1 and G0 moves (arc fitting is unsupported).
 It won't move fan commands from custom G-code (they act as a sort of 'barrier').
 It won't move fan commands into the start G-code if the 'only custom start G-code' is activated.

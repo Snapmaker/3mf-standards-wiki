@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#list-types): `Boolean list`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--adaptive-pressure-advance-overhangs=1`.  
+
 Enable adaptive PA for overhangs as well as when flow changes within the same feature. This is an experimental option, as if the PA profile is not set accurately, it will cause uniformity issues on the external surfaces before and after overhangs.

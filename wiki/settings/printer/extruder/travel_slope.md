@@ -10,6 +10,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `travel_slope[extruder_idx]`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `3`.  
-[Range](../../../general_settings/option_type.md#range): `1–90` °.  
+[Unit](../../../general_settings/option_type.md#unit): `°`.  
+[Range](../../../general_settings/option_type.md#range): `1–90`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--travel-slope=1`.  
+
 Traveling angle for Slope and Spiral Z-hop type. Setting it to 90° results in Normal Lift.

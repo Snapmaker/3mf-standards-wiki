@@ -12,6 +12,7 @@
 [Type](../../../general_settings/option_type.md): Boolean.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--small-area-infill-flow-compensation=1`.  
+
 Enables adaptive flow control for small infill areas.
 This feature helps address extrusion problems that often occur in small regions of solid infill, such as the tops of narrow letters or fine features.  
 In these cases, standard extrusion flow may be too much for the available space, leading to over-extrusion or poor surface quality.

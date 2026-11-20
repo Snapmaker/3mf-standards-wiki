@@ -15,6 +15,7 @@ Resonance Compensations are the methods used to reduce the vibrations of the pri
 [Type](../../../general_settings/option_type.md): Boolean.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--resonance-avoidance=1`.  
+
 By reducing the speed of the outer wall to avoid the resonance zone of the printer, ringing on the surface of the model are avoided.
 
 > [!TIP]
@@ -27,6 +28,7 @@ By reducing the speed of the outer wall to avoid the resonance zone of the print
 [Type](../../../general_settings/option_type.md): `input_shaping_emit` (Boolean), `input_shaping_freq_x` (Float), `input_shaping_freq_y` (Float), `input_shaping_damp_x` (Float), `input_shaping_damp_y` (Float).  
 [Defaults](../../../general_settings/option_type.md#default-value): `input_shaping_emit` (—), `input_shaping_freq_x` (—), `input_shaping_freq_y` (—), `input_shaping_damp_x` (—), `input_shaping_damp_y` (—).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--input-shaping-emit=1` (`input_shaping_emit` shown; other variables above follow their own type).  
+
 During high-speed movements, vibrations can cause a phenomenon called "ringing," where periodic ripples appear on the print surface. Input Shaping provides an effective solution by counteracting these vibrations, improving print quality and reducing wear on components without needing to significantly lower print speeds.
 
 > [!NOTE]
@@ -49,6 +51,7 @@ During high-speed movements, vibrations can cause a phenomenon called "ringing,"
 [Default](../../../general_settings/option_type.md#default-value): —.  
 [Options](../../../general_settings/option_type.md#choice): `Default, MZV, ZV, ZVD, ZVDD, ZVDDD, EI, EI2, 2HUMP_EI, EI3, 3HUMP_EI, DAA, Disable`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--input-shaping-type=Default`.  
+
 The Input Shaping type determines the algorithm used to counteract the vibrations.  
 It is usually recommended to use MZV, EI (specially for Delta printers) or ZV as a simple and effective solution.  
 Not all Input Shaping types are available in all firmware and their performance may vary depending on the firmware implementation and the printer's mechanics.

@@ -10,6 +10,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_object_xy_distance`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0.35`.  
-[Range](../../../general_settings/option_type.md#range): `0–10` mm.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
+[Range](../../../general_settings/option_type.md#range): `0–10`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-object-xy-distance=1`.  
+
 XY separation between an object and its support.

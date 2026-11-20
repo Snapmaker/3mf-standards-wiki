@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `ipRectilinear`.  
 [Options](../../../general_settings/option_type.md#choice): `rectilinear, concentric`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-ironing-pattern=rectilinear`.  
+
 Select the ironing pattern to use.

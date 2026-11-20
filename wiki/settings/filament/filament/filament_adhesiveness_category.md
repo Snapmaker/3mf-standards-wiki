@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `100`.  
 [Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-adhesiveness-category=1`.  
+
 Filament category.

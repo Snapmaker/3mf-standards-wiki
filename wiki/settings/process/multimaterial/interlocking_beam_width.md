@@ -10,5 +10,7 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `interlocking_beam_width`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0.8`.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--interlocking-beam-width=1`.  
+
 The width of the interlocking structure beams.

@@ -11,5 +11,6 @@
 [Type](../../../general_settings/option_type.md#list-types): `Text list`.  
 [Default](../../../general_settings/option_type.md#default-value): `PLA`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-type=value`.  
+
 Material base type (e.g., PLA, ABS, PETG, etc.).  
 This setting affects coefficients used in various calculations, such as brim width or temperature warnings.

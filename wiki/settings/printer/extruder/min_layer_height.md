@@ -10,6 +10,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `min_layer_height[extruder_idx]`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `0.07`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--min-layer-height=1`.  
+
 Min and max layer height limits for the extruder. These settings are used when adaptive layer height is enabled.

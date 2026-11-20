@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `gftNowhere`.  
 [Options](../../../general_settings/option_type.md#choice): `everywhere, topbottom, nowhere`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--gap-fill-target=everywhere`.  
+
 Enables gap fill for the selected solid surfaces.  
 The minimum gap length that will be filled can be controlled with the [Filter out tiny gaps](#filter-out-tiny-gaps) option.
 

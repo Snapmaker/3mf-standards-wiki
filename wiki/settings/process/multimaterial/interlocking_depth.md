@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `2`.  
 [Range](../../../general_settings/option_type.md#range): `≥ 1`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--interlocking-depth=1`.  
+
 The distance from the boundary between filaments to generate interlocking structure, measured in cells. Too few cells will result in poor adhesion.

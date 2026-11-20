@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `4`.  
 [Range](../../../general_settings/option_type.md#range): `≤ 20`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-cooling-moves=1`.  
+
 Filament is cooled by being moved back and forth in the cooling tubes. Specify desired number of these moves.

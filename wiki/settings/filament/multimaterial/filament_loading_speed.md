@@ -10,6 +10,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_loading_speed`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `28`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` mm/s.  
+[Unit](../../../general_settings/option_type.md#unit): `mm/s`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-loading-speed=1`.  
+
 Speed used for loading the filament on the wipe tower.

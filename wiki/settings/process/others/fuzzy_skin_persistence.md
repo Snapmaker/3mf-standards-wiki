@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `0.5`.  
 [Range](../../../general_settings/option_type.md#range): `≤ 1`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--fuzzy-skin-persistence=1`.  
+
 Controls how amplitude decays across octaves. Lower persistence results in smoother noise; higher persistence keeps finer-scale detail stronger.

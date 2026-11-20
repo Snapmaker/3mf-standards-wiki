@@ -11,5 +11,6 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--gcode-comments=1`.  
+
 Include descriptive comments for G-code lines and blocks to make the file human-readable and easier to debug.  
 Verbose mode produces much larger files and may slow down SD-card printing on some printers.

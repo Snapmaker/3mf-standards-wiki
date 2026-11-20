@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#list-types): `Boolean list`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-is-support=1`.  
+
 Support material is commonly used to print supports and support interfaces.

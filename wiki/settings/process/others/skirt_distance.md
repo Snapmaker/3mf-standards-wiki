@@ -10,7 +10,9 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `skirt_distance`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `2`.  
-[Range](../../../general_settings/option_type.md#range): `0–60` mm.  
+[Unit](../../../general_settings/option_type.md#unit): `mm`.  
+[Range](../../../general_settings/option_type.md#range): `0–60`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skirt-distance=1`.  
+
 Distance from skirt to brim or object.  
 Increasing this distance can help avoid collisions with brims or supports, but will increase the footprint of the skirt and filament usage.

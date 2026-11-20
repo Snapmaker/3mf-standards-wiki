@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#text): `Text`.  
 [Default](../../../general_settings/option_type.md#default-value): `(empty)`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--template-custom-gcode=value`.  
+
 This section allows users to define custom G-code templates that can be reused across different print jobs. Users can create and manage their own G-code snippets for various purposes.

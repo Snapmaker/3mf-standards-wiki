@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `auto_brim`.  
 [Options](../../../general_settings/option_type.md#choice): `auto_brim, brim_ears, painted, outer_only, inner_only, outer_and_inner, no_brim, leading_edge_only`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--brim-type=auto_brim`.  
+
 Controls how the brim is generated on a model's outer and/or inner sides.

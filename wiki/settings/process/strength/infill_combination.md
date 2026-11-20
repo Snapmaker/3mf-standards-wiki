@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-combination=1`.  
+
 Automatically combine [sparse infill](../../process/strength/sparse_infill_density.md) of several layers so they print together, reducing print time. Walls are still printed with the original [layer height](../../process/quality/layer_height.md).
 
 ![fill-combination](../../../images/fill/fill-combination.png)

@@ -10,6 +10,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `outer_wall_jerk`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `9`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` mm/s.  
+[Unit](../../../general_settings/option_type.md#unit): `mm/s`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--outer-wall-jerk=1`.  
+
 Jerk for outer wall printing. This is usually set to a lower value than normal printing to ensure better quality.

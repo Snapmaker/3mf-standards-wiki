@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `2`.  
 [Range](../../../general_settings/option_type.md#range): `≥ 1`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--interlocking-beam-layer-count=1`.  
+
 The height of the beams of the interlocking structure, measured in number of layers. Fewer layers are stronger, but more prone to defects.

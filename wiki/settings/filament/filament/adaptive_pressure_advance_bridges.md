@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `0.0`.  
 [Range](../../../general_settings/option_type.md#range): `≤ 2`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--adaptive-pressure-advance-bridges=1`.  
+
 Pressure advance value for bridges. Set to 0 to disable.  
 A lower PA value when printing bridges helps reduce the appearance of slight under extrusion immediately after bridges.  
 This is caused by the pressure drop in the nozzle when printing in the air and a lower PA helps counteract this.

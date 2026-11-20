@@ -11,5 +11,6 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `true`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--emit-machine-limits-to-gcode=1`.  
+
 If enabled, the machine limits will be emitted to G-code file.
 This option will be ignored if the G-code flavor is set to Klipper.

@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#list-types): `Boolean list`.  
 [Default](../../../general_settings/option_type.md#default-value): `true`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-overhang-bridge-fan=1`.  
+
 Enable this option to allow adjustment of the part cooling fan speed for specifically for overhangs, internal and external bridges. Setting the fan speed specifically for these features can improve overall print quality and reduce warping.

@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#text): `Text`.  
 [Default](../../../general_settings/option_type.md#default-value): `(empty)`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--printing-by-object-gcode=value`.  
+
 This G-code is executed at the start of printing each individual object in a multi-object print job. It can be used to set specific parameters or perform actions for each object.

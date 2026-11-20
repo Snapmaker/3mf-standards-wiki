@@ -10,7 +10,9 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `make_overhang_printable_angle`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `55`.  
+[Unit](../../../general_settings/option_type.md#unit): `°`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--make-overhang-printable-angle=1`.  
+
 Maximum angle of overhangs to allow after making steeper overhangs printable.  
 90° will not change the model at all and allow any overhang, while 0 will replace all overhangs with conical material.
 

@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `WallDirection::Auto`.  
 [Options](../../../general_settings/option_type.md#choice): `ccw, cw`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wall-direction=ccw`.  
+
 The direction in which the **contour** wall loops are extruded when looking down from the top.  
 Holes are printed in the opposite direction to the contour to maintain alignment with layers whose contour polygons are incomplete and change direction, also partially forming the contour of a hole.
 A hole whose outer wall touches the contour's with nothing between them, like a [narrow wall](#narrow-walls) 2 lines wide, runs with the contour instead, so both walls are laid side by side in the same direction.

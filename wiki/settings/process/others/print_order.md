@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `PrintOrder::Default`.  
 [Options](../../../general_settings/option_type.md#choice): `default, as_obj_list, best_of, snake`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--print-order=default`.  
+
 Determines the order in which object instances are visited within a single layer, which controls how much travel is spent moving between them.
 
 Shorter, more cyclic paths reduce oozing and avoid dragging the nozzle over parts that have already been printed, which can make [Z Hop](../../filament/setting_overrides/filament_z_hop.md) and [Avoid crossing walls](../../process/quality/reduce_crossing_wall.md) unnecessary in many plates.

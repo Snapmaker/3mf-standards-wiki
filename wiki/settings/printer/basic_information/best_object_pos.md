@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#point): `Point`.  
 [Default](../../../general_settings/option_type.md#default-value): `0.5×0.5`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--best-object-pos=100,100`.  
+
 Best auto arranging position in range [0,1] w.r.t. bed shape.

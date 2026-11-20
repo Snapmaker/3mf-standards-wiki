@@ -11,7 +11,9 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `hole_to_polyhole_threshold`.  
 [Type](../../../general_settings/option_type.md#boolean): `Float or Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `0.01`.  
+[Unit](../../../general_settings/option_type.md#unit): `mm or %`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--hole-to-polyhole-threshold=1`.  
+
 A polyhole is a technique used in FFF 3D printing to improve the accuracy of circular holes. Instead of modeling a perfect circle, the hole is represented as a polygon with a reduced number of flat sides. This simplification forces the slicer to treat each segment as a straight line, which prints more reliably. By carefully choosing the number of sides and ensuring the polygon sits on the outer boundary of the hole, you can produce openings that more closely match the intended diameter.
 
 ![PolyHoles](../../../images/precision/PolyHoles.png)

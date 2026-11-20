@@ -11,7 +11,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `bottom_color_penetration_layers`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  
 [Default](../../../general_settings/option_type.md#default-value): `3`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` layers.  
+[Unit](../../../general_settings/option_type.md#unit): `layers`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--bottom-color-penetration-layers=1`.  
 
 > [!IMPORTANT]

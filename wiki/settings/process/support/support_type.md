@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `stNormalAuto`.  
 [Options](../../../general_settings/option_type.md#choice): `normal(auto), tree(auto), normal(manual), tree(manual)`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-type=normal(auto)`.  
+
 There are several support types, each suited for different printing needs:

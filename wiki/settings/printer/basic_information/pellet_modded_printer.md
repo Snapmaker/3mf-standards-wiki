@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md): Boolean.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--pellet-modded-printer=1`.  
+
 Enable this option if your printer uses pellets instead of filaments.
 Large format printers with print volumes in the order of 1m^3 generally use pellets for printing.
 The overall tech is very similar to FDM printing.

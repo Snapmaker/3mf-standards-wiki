@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `1`.  
 [Range](../../../general_settings/option_type.md#range): `0–10`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skirt-loops=1`.  
+
 Number of skirt loops to print.  
 Usually 2 loops are recommended, but more loops improve priming and give a larger buffer between the nozzle and the part, at the cost of extra filament and time.  
 Set to 0 to disable the skirt.

@@ -11,8 +11,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `internal_bridge_angle`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` °.  
+[Unit](../../../general_settings/option_type.md#unit): `°`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--internal-bridge-angle=1`.  
+
 If left to zero, the bridging angle will be calculated automatically for each specific bridge.  
 Otherwise the provided angle will be used according to:
 

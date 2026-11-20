@@ -10,6 +10,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_angle`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
-[Range](../../../general_settings/option_type.md#range): `0–359` °.  
+[Unit](../../../general_settings/option_type.md#unit): `°`.  
+[Range](../../../general_settings/option_type.md#range): `0–359`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-angle=1`.  
+
 Use this setting to rotate the support pattern on the horizontal plane.

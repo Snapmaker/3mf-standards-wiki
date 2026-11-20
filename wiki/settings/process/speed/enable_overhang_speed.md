@@ -11,5 +11,6 @@
 [Type](../../../general_settings/option_type.md#list-types): `Boolean list`.  
 [Default](../../../general_settings/option_type.md#default-value): `true`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-overhang-speed=1`.  
+
 Enable this option to slow printing down for different overhang degrees.
 This can help improve print quality and reduce issues like sagging.

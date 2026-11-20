@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#text): `Text`.  
 [Default](../../../general_settings/option_type.md#default-value): `(empty)`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--before-layer-change-gcode=value`.  
+
 This G-code is inserted at every layer change before the Z lift.

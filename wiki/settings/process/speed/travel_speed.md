@@ -10,8 +10,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `travel_speed`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `120`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 1` mm/s.  
+[Unit](../../../general_settings/option_type.md#unit): `mm/s`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 1`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--travel-speed=1`.  
+
 ![travel-lines](../../../images/speed/travel-lines.png)
 
 Travel speed is the speed at which the print head moves when not extruding filament.  

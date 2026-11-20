@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `PerimeterGeneratorType::Arachne`.  
 [Options](../../../general_settings/option_type.md#choice): `classic, arachne`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wall-generator=classic`.  
+
 The Wall Generator defines how the outer and inner walls (perimeters) of the model are printed.
 
 - [Classic](#classic)

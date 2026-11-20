@@ -10,8 +10,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `overhang_reverse_threshold`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `50%`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` mm or %.  
+[Unit](../../../general_settings/option_type.md#unit): `mm or %`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--overhang-reverse-threshold=20%`.  
+
 You can set a threshold for the overhang reversal to be considered useful.
 Can be set as:
 

@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `eblDisabled`.  
 [Options](../../../general_settings/option_type.md#choice): `disabled, external_bridge_only, internal_bridge_only, apply_to_all`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-extra-bridge-layer=disabled`.  
+
 This option enables the generation of an extra bridge layer over bridges.
 
 Extra bridge layers help improve bridge appearance and reliability, as the solid infill is better supported. This is especially useful in fast printers, where the bridge and solid infill speeds vary greatly. The extra bridge layer results in reduced pillowing on top surfaces, as well as reduced separation of the external bridge layer from its surrounding perimeters.

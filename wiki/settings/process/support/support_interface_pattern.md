@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `smipAuto`.  
 [Options](../../../general_settings/option_type.md#choice): `auto, rectilinear, concentric, spiralinset, rectilinear_interlaced, grid`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-interface-pattern=auto`.  
+
 The pattern used for the support interface.
 
 Each option lays the interface lines out differently, and all of them are measured from [Pattern angle](#pattern-angle), so rotating that rotates the interface with it. The same rules apply to normal and tree supports.

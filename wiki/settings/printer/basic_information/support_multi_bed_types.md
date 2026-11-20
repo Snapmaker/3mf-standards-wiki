@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-multi-bed-types=1`.  
+
 Once enabled, you can select the bed type in the drop-down menu, corresponding bed temperature will be set automatically.
 
 ![bed_type_selector](../../../images/bed/bed_type_selector.png)

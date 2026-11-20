@@ -10,7 +10,9 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `fan_speedup_time`.  
 [Type](../../../general_settings/option_type.md): Float.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
+[Unit](../../../general_settings/option_type.md#unit): `s`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--fan-speedup-time=1`.  
+
 Start the fan this number of seconds earlier than its target start time (you can use fractional seconds). It assumes infinite acceleration for this time estimation, and will only take into account G1 and G0 moves (arc fitting is unsupported).
 It won't move fan commands from custom G-code (they act as a sort of 'barrier').
 It won't move fan commands into the start G-code if the 'only custom start G-code' is activated.

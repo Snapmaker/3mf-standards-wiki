@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--gcode-add-line-number=1`.  
+
 Prefix each G-code line with a sequential line number (N1, N2, ...). Useful for debugging or tools that expect numbered G-code.

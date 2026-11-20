@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-critical-regions-only=1`.  
+
 Only creates support for critical regions, such as sharp tails and cantilevers. Available only with `Tree (auto)`.

@@ -12,4 +12,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `NoiseType::Classic`.  
 [Options](../../../general_settings/option_type.md#choice): `classic, perlin, billow, ridgedmulti, voronoi, ripple`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--fuzzy-skin-noise-type=classic`.  
+
 Select the noise algorithm used to generate the random offsets. Different noise types produce distinct visual textures.

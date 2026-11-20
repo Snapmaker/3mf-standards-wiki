@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md#text): `Text`.  
 [Default](../../../general_settings/option_type.md#default-value): `G28 ; home all axes\nG1 Z5 F5000 ; lift nozzle\n`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--machine-start-gcode=value`.  
+
 This G-code is executed at the beginning of a print job, before any printing starts. It is typically used to prepare the printer for printing, such as homing axes, heating the bed and nozzle, and performing any necessary pre-print checks.
 
 You can also use it for setting up custom notifications with M300 (play beep sound) or use a custom purge sequence:

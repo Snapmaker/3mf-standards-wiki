@@ -11,4 +11,5 @@
 [Type](../../../general_settings/option_type.md#text): `Text`.  
 [Default](../../../general_settings/option_type.md#default-value): `(empty)`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--machine-pause-gcode=value`.  
+
 This G-code will be used as a code for the pause print. Users can insert pause G-code in the G-code viewer.

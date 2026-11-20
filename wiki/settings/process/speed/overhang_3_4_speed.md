@@ -11,8 +11,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `overhang_3_4_speed`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float or Percentage list`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` mm/s or %.  
+[Unit](../../../general_settings/option_type.md#unit): `mm/s or %`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--overhang-3-4-speed=1`.  
+
 This is the speed for various overhang degrees. Overhang degrees are expressed as a percentage of [line width](../../process/quality/line_width.md).  
 If expressed as a percentage, the speed is calculated from the [outer wall speed](../../process/speed/outer_wall_acceleration.md) for outer walls and from the [inner wall speed](../../process/speed/inner_wall_acceleration.md) for inner walls.
 

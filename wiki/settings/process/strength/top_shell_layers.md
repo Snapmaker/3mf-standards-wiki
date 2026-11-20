@@ -11,8 +11,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `top_shell_layers`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  
 [Default](../../../general_settings/option_type.md#default-value): `4`.  
-[Range](../../../general_settings/option_type.md#range): `≥ 0` layers.  
+[Unit](../../../general_settings/option_type.md#unit): `layers`.  
+[Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--top-shell-layers=1`.  
+
 This is the number of solid shell layers, including the surface layer.  
 When the thickness calculated from this value is less than [shell thickness](#shell-thickness), the shell layers will be increased.
 

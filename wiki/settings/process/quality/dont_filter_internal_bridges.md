@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `ibfDisabled`.  
 [Options](../../../general_settings/option_type.md#choice): `disabled, limited, nofilter`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--dont-filter-internal-bridges=disabled`.  
+
 This option can help reduce pillowing on top surfaces in heavily slanted or curved models.
 
 By default, small internal bridges are filtered out and the internal solid infill is printed directly over the sparse infill. This works well in most cases, speeding up printing without too much compromise on top surface quality.

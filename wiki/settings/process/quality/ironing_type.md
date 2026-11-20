@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `IroningType::NoIroning`.  
 [Options](../../../general_settings/option_type.md#choice): `no ironing, top, topmost, solid`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--ironing-type="no ironing"`.  
+
 This setting controls which layers are ironed.
 
 - **All top surfaces**: All [top surfaces](../../process/strength/top_shell_thickness.md) will be ironed. This is the most common setting and is used to smooth out the top layers of the print.  

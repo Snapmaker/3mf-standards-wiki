@@ -10,6 +10,8 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `make_overhang_printable_hole_size`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
+[Unit](../../../general_settings/option_type.md#unit): `mm²`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--make-overhang-printable-hole-size=1`.  
+
 Maximum area of a hole in the base of the model before it's filled by conical material.  
 A value of 0 will fill all the holes in the model base.

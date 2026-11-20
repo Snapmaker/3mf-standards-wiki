@@ -13,4 +13,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `FuzzySkinMode::Displacement`.  
 [Options](../../../general_settings/option_type.md#choice): `displacement, extrusion, combined`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--fuzzy-skin-mode=displacement`.  
+
 Choose which parts of the model receive the fuzzy-skin effect.

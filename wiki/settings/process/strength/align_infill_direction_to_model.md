@@ -11,6 +11,7 @@
 [Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `false`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--align-infill-direction-to-model=1`.  
+
 Aligns [infill](../../process/strength/infill_direction.md), [bridge](#bridge-infill-direction), [ironing](../../process/quality/ironing_angle.md) and [top/bottom surface fill](../../process/strength/bottom_surface_pattern.md) directions to follow the model's orientation on the build plate.  
 When enabled, these directions rotate together with the model so the printed features keep their intended orientation relative to the part, preserving optimal strength and surface characteristics regardless of how the model is placed.
 

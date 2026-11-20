@@ -11,5 +11,6 @@
 [Type](../../../general_settings/option_type.md#list-types): `Point list`.  
 [Default](../../../general_settings/option_type.md#default-value): `0×0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--bed-exclude-area=100,100`.  
+
 Unprintable area in XY plane. For example, X1 Series printers use the front left corner to cut filament during filament change. The area is expressed as polygon by points in following format: "XxY, XxY, ..."  
 It keeps models and printed material out of the area, but the toolhead can still travel through it, as the X1 does to cut the filament. To also keep the toolhead's moves out, set [Toolhead collision volumes](#toolhead-collision-volumes).

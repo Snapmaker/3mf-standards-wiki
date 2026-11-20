@@ -13,8 +13,10 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `supertack_plate_temp_initial_layer`.  
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
 [Default](../../../general_settings/option_type.md#default-value): `35`.  
-[Range](../../../general_settings/option_type.md#range): `0–120` ℃.  
+[Unit](../../../general_settings/option_type.md#unit): `℃`.  
+[Range](../../../general_settings/option_type.md#range): `0–120`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--supertack-plate-temp-initial-layer=1`.  
+
 Set the bed temperature for the selected material for First Layer and Other Layers for each Bed type if [Support multi bed types](../../printer/basic_information/support_multi_bed_types.md) is enabled in printer settings.  
 Using a higher temperature for the first layer can help improve adhesion to the build surface but be cautious of potential deformations like [elephant foot](../../process/quality/elefant_foot_compensation.md).
 

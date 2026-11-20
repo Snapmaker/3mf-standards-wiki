@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [Options](../../../general_settings/option_type.md#choice): `disabled, enabled, sparse_infill`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-arc-fitting=disabled`.  
+
 > [!IMPORTANT]
 > NEW FEATURE: **Sparse infill only arc fitting**  
 > Available in: nightly builds or releases greater than **2.4.2**.

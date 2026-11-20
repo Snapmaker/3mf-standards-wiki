@@ -12,6 +12,7 @@
 [Default](../../../general_settings/option_type.md#default-value): `chbNone`.  
 [Options](../../../general_settings/option_type.md#choice): `none, partiallybridge, sacrificiallayer`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--counterbore-hole-bridging=none`.  
+
 When printing counterbore holes, the unsupported area can lead to sagging or poor surface quality. Also, the perimeters of the counterbore hole may not be printed correctly, leading to gaps or weak points in the structure.
 
 This option creates bridges for counterbore holes, allowing them to be printed without support.  
