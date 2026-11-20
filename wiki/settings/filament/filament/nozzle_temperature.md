@@ -22,7 +22,7 @@ You can set a higher temperature for the first layer to improve bed adhesion but
 
 ## Temperature Reference (U1 Presets)
 
-The following table lists the values configured in the U1 filament presets shipped with this fork (`Generic @U1` and `Snapmaker @U1` families).  
+The following table lists the values configured in the U1 filament presets shipped with Snapmaker Orca (`Generic @U1` and `Snapmaker @U1` families).  
 Numbers in parentheses are the nozzle temperature ranges defined in the presets.  
 Actual optimal temperatures still vary between filament brands — always follow the manufacturer's recommendations and run calibrations for best results.
 

@@ -3,10 +3,10 @@
 > Location: Printer → Multimaterial → Wipe tower
 > Status: placeholder — fork-specific parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Enable change pressure advance when wiping
-- Type: coBool
+- Type: Boolean
 - Default: true
 - Mode: Advanced
 

@@ -3,10 +3,10 @@
 > Location: Process → Strength → Infill
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Anchor solid infill by X mm
-- Type: coFloatOrPercent, unit mm or % (% relative to [`line_width`](../quality/line_width.md)), min 0 (max_literal 50)
+- Type: Float or Percentage, unit mm or % (% relative to [`line_width`](../quality/line_width.md)), min 0, max 50
 - Default: (empty, i.e. no expansion)
 - Mode: Advanced
 

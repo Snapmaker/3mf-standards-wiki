@@ -3,10 +3,10 @@
 > Location: Process → Speed → Overhang speed
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Internal
-- Type: coFloatsOrPercents
+- Type: Float or Percentage list
 - Default: 150%
 - Mode: Advanced
 

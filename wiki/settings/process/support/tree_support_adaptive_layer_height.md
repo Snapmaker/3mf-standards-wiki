@@ -3,10 +3,10 @@
 > Location: Process → Support → Tree supports
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Adaptive layer height
-- Type: coBool
+- Type: Boolean
 - Default: 1
 - Mode: -
 

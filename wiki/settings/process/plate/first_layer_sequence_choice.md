@@ -3,10 +3,10 @@
 > Location: Process → Plate Settings
 > Status: placeholder — fork-specific parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: First layer filament sequence
-- Type: coEnum
+- Type: Choice
 - Default: Auto
 - Mode: Simple
 

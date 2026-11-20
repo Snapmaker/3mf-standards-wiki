@@ -4,10 +4,10 @@
 > Status: placeholder — fork-added parameter, to be completed.
 > Visibility: [`cooling_slowdown_logic`](cooling_slowdown_logic.md) is set to Consistent surface.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Perimeter transition distance
-- Type: coFloats, unit mm, range 0–50
+- Type: Float list, unit mm, range 0–50
 - Default: 10.0
 - Mode: Developer
 

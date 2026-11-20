@@ -4,10 +4,10 @@
 > Status: placeholder — to be completed.
 > Visibility (preliminary, pending review): Shown only on pellet machines
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Pellet flow coefficient
-- Type: coFloats
+- Type: Float list
 - Default: 0.4157
 - Mode: -
 

@@ -3,10 +3,10 @@
 > Location: Printer → Multimaterial → Advanced
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Wait for the temperature when changing tools
-- Type: coBool
+- Type: Boolean
 - Default: true
 - Mode: Advanced
 

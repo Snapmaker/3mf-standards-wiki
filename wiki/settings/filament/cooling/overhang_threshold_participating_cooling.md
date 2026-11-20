@@ -3,10 +3,10 @@
 > Location: Filament → Cooling → Part cooling fan
 > Status: placeholder — fork-added parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Overhang threshold for participating cooling
-- Type: coEnums (six levels: none / 1_4 / 2_4 / 3_4 / 4_4 / bridge; the UI shows 0% / 10% / 25% / 50% / 75% / 100%)
+- Type: Choice list (six levels: none / 1_4 / 2_4 / 3_4 / 4_4 / bridge; the UI shows 0% / 10% / 25% / 50% / 75% / 100%)
 - Default: 95% (bridge level)
 - Mode: Advanced
 

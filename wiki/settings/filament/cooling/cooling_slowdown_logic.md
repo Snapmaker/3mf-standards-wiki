@@ -2,12 +2,12 @@
 
 > Location: Filament → Cooling → Part cooling fan
 > Status: placeholder — fork-added parameter, to be completed.
-> Visibility: shown after [`slow_down_for_layer_cooling`](slow_down_for_layer_cooling.md) is checked (Tab.cpp `toggle_option`).
+> Visibility: shown after [`slow_down_for_layer_cooling`](slow_down_for_layer_cooling.md) is checked.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Cooling slowdown logic
-- Type: coEnums (single choice: Uniform cooling / Consistent surface)
+- Type: Choice list (single choice: Uniform cooling / Consistent surface)
 - Default: uniform_cooling
 - Mode: Developer
 

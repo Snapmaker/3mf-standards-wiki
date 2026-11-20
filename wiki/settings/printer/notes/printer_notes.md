@@ -3,10 +3,10 @@
 > Location: Printer → Notes → Notes
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Printer notes
-- Type: coString
+- Type: Text
 - Default: (empty)
 - Mode: Advanced
 

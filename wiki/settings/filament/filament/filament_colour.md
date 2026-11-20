@@ -4,10 +4,10 @@
 > Status: placeholder — to be completed.
 > Note: this key is not rendered inside the filament tab; it is edited via the color swatch of the filament list in the left panel of the prepare view (see below).
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Color
-- Type: coStrings (GUIType=color, one `#RRGGBB` color string per slot)
+- Type: Text list (color picker; one `#RRGGBB` color string per slot)
 - Default: #F2754E
 - Mode: Advanced
 
@@ -15,9 +15,9 @@
 
 ## Where to edit
 
-The filament settings tab (`Tab.cpp`) does not build this key. The actual entry points:
+The actual entry points:
 
-- **The filament list in the left panel of the prepare view** — one row per filament slot; the color swatch at the start of each row is this key. Clicking it opens the color picker (the fork's `FilamentColorDialog`, with color-library and dual/gradient multi-color support; falls back to the system `wxColourDialog` "Please choose the filament color" when no color-library entry matches).
+- **The filament list in the left panel of the prepare view** — one row per filament slot; the color swatch at the start of each row is this key. Clicking it opens the color picker (with color-library and dual/gradient multi-color support; falls back to the system color picker when no color-library entry matches).
 - Changes are written to `filament_colour[slot]` in `project_config`, i.e. they take effect **per project, per slot**, not as a filament preset parameter.
 
 ## Purpose and relations

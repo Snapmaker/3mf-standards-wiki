@@ -3,10 +3,10 @@
 > Location: Printer → Extruder N → Retraction when switching material
 > Status: placeholder — code notes it is not yet shown in the UI; to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Long retraction when cut (beta)
-- Type: coBools
+- Type: Boolean list
 - Default: false
 - Mode: Developer
 

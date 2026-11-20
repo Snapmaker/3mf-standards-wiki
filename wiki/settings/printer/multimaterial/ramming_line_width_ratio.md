@@ -3,10 +3,10 @@
 > Location: Printer → Multimaterial → Wipe tower
 > Status: placeholder — fork-specific parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Ramming line width ratio
-- Type: coFloat
+- Type: Float
 - Default: 2.0
 - Mode: Advanced
 

@@ -3,10 +3,10 @@
 > Location: Process → Speed → Acceleration
 > Status: placeholder — fork-added parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Short travel
-- Type: coFloats, unit mm/s², min 0
+- Type: Float list, unit mm/s², min 0
 - Default: 250
 - Mode: Developer
 

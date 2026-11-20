@@ -3,10 +3,10 @@
 > Location: Printer → Extruder N → Z-Hop
 > Status: placeholder — fork-specific parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Z hop when moving to tower
-- Type: coBools
+- Type: Boolean list
 - Default: true
 - Mode: Advanced
 

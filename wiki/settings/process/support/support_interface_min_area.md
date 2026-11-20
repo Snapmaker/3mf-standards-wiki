@@ -3,10 +3,10 @@
 > Location: Process → Support → Advanced
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Minimum Support Contact Area
-- Type: coFloat
+- Type: Float
 - Default: 0.25
 - Mode: Advanced
 

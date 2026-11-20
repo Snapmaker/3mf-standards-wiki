@@ -3,10 +3,10 @@
 > Location: Filament → Notes → Notes
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Filament notes
-- Type: coStrings
+- Type: Text list
 - Default: (empty)
 - Mode: Advanced
 

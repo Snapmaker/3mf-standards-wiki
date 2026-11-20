@@ -3,10 +3,10 @@
 > Location: Process → Multimaterial → Prime tower
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Wall gap
-- Type: coBool
+- Type: Boolean
 - Default: true
 - Mode: Advanced
 

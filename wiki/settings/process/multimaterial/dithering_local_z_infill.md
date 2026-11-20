@@ -3,10 +3,10 @@
 > Location: Process → Multimaterial → Color Mixing (Experimental)
 > Status: placeholder — fork-specific parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Apply subdivision to infill
-- Type: coBool
+- Type: Boolean
 - Default: false
 - Mode: Advanced
 

@@ -3,10 +3,10 @@
 > Location: Process → Plate Settings
 > Status: placeholder — fork-specific parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Bed type
-- Type: coEnum
+- Type: Choice
 - Default: Cool Plate
 - Mode: Simple
 

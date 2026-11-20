@@ -3,10 +3,10 @@
 > Location: Process → Speed → Overhang speed
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: External
-- Type: coFloats
+- Type: Float list
 - Default: 25
 - Mode: Advanced
 

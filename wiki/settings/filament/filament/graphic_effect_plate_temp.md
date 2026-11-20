@@ -4,10 +4,10 @@
 > Status: placeholder — to be completed.
 > Visibility (preliminary, pending review): Shown only when the printer enables the corresponding bed type
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Other layers
-- Type: coInts
+- Type: Integer list
 - Default: 0
 - Mode: -
 

@@ -652,15 +652,19 @@ def banner_page(path, meta, dry_run):
                 at = b; break
             if lines[b].strip() and not RE_VAR_LINE.match(lines[b]) and b < i - 1:
                 break
-        # 幂等：上方 5 行内已有 fork 未实现横幅
-        if any("fork 未实现" in lines[x] for x in range(max(0, at - 5), at)):
+        # 幂等：上方 5 行内已有"软件未收录"横幅（旧中文版文案亦认）
+        if any(("Not available in this software version" in lines[x]
+                or "fork 未实现" in lines[x])
+               for x in range(max(0, at - 5), at)):
             skipped += 1; continue
         mk = "、".join("`%s`" % k for k in missing)
         if len(missing) == len(keys):
-            body = "%s 为上游 OrcaSlicer 参数，fork 源码未收录，以下内容保留供参考。" % mk
+            body = ("%s is an upstream OrcaSlicer parameter not available in the current "
+                    "software version; the content below is kept for reference." % mk)
         else:
-            body = "%s 为上游 OrcaSlicer 参数，fork 未收录；本小节其余参数 fork 正常。" % mk
-        blk = ["> [!WARNING] fork 未实现", "> " + body, ""]
+            body = ("%s is an upstream OrcaSlicer parameter not available in the current "
+                    "software version; the other parameters in this section work normally." % mk)
+        blk = ["> [!WARNING] Not available in this software version", "> " + body, ""]
         # 确保横幅上方空行分隔
         if at > 0 and lines[at - 1].strip():
             blk.insert(0, "")

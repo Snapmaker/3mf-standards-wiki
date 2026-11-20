@@ -3,10 +3,10 @@
 > Location: Filament → Filament → Basic information
 > Status: placeholder — to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Min
-- Type: coInts
+- Type: Integer list
 - Default: 190
 - Mode: -
 

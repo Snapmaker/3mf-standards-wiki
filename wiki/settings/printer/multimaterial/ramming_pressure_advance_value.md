@@ -3,10 +3,10 @@
 > Location: Printer → Multimaterial → Wipe tower
 > Status: placeholder — fork-specific parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Pressure advance value when ramming
-- Type: coFloat
+- Type: Float
 - Default: 0.0
 - Mode: Advanced
 

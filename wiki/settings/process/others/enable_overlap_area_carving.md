@@ -3,10 +3,10 @@
 > Location: Process → Others → Special mode
 > Status: placeholder — fork-added parameter, to be completed.
 
-## Basic information (from fork `PrintConfig.cpp`)
+## Basic information
 
 - Label: Carve overlaps by per-layer slice area
-- Type: coBool
+- Type: Boolean
 - Default: false
 - Mode: Developer
 
