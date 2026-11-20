@@ -12,3 +12,5 @@
 [Unit](../../../general_settings/option_type.md#unit): `℃`.  
 [Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--nozzle-temperature-range-high=1`.  
+
+Maximum nozzle temperature allowed for this filament. Together with [nozzle_temperature_range_low](nozzle_temperature_range_low.md) it defines the allowed nozzle temperature range for the filament preset.

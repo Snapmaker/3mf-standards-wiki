@@ -10,3 +10,5 @@
 [Type](../../../general_settings/option_type.md#list-types): `Boolean list`.  
 [Default](../../../general_settings/option_type.md#default-value): `true`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--z-hop-when-prime=1`.  
+
+Whether the nozzle performs a Z hop while traveling to the filament tower (multi-material printing).

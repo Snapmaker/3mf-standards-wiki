@@ -11,3 +11,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `Auto`.  
 [Options](../../../general_settings/option_type.md#choice): `Auto, Customize`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--first-layer-sequence-choice=value`.  
+
+Whether the filament sequence of the first layer is optimized automatically (Auto) or follows the customized sequence (Customize).

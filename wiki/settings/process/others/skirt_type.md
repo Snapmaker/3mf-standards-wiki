@@ -10,3 +10,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `combined`.  
 [Options](../../../general_settings/option_type.md#choice): `combined, perobject`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skirt-type=combined`.
+
+Combined - single skirt for all objects, Per object - individual object skirt.

@@ -123,6 +123,8 @@ def parse_block(block, enum_display=None):
     rec = {}
     lab = field("label")
     rec["label"] = string_values(lab) if lab else None
+    tt = field("tooltip")
+    rec["tooltip"] = string_values(tt) if tt else None
     rec["sidetext_raw"] = field("sidetext")
     st = string_values(rec.pop("sidetext_raw") or "")
     rec["sidetext"] = st if st else None
@@ -250,7 +252,8 @@ def cmd_extract(args):
         if key in keys:
             continue
         rec_h = {"type": ctype, "mode": None, "default": None, "label": None,
-                 "min": None, "max": None, "sidetext": None, "aliases": [],
+                 "tooltip": None, "min": None, "max": None, "sidetext": None,
+                 "aliases": [],
                  "enum_values": [], "enum_labels": [], "nocli": False,
                  "cli": None, "line": None, "derived": False,
                  "source": "hpp_macro"}
@@ -272,7 +275,8 @@ def cmd_extract(args):
                 print("[WARN] 派生源键未找到: %s" % base); continue
             keys["filament_" + base] = {
                 "type": b["type"], "mode": b["mode"], "default": None,
-                "label": b.get("label"), "min": b["min"], "max": b["max"],
+                "label": b.get("label"), "tooltip": b.get("tooltip"),
+                "min": b["min"], "max": b["max"],
                 "sidetext": b["sidetext"],
                 "aliases": [], "enum_values": b["enum_values"],
                 "enum_labels": b["enum_labels"], "nocli": b["nocli"], "cli": b["cli"],
@@ -776,6 +780,8 @@ def promote_page(path, meta, dry_run):
         v = "=1" if tname.split(" ")[0] in ("Boolean", "Integer", "Float") else "=value"
         md.append("[CLI Example](%scli/cli_mode.md#setting-overrides): `--%s%s`.  " % (prefix, stem.replace("_", "-"), v))
     md.append("")
+    if not tooltip and rec.get("tooltip"):  # 页面漏抄 tooltip 时回退 JSON
+        tooltip = [rec["tooltip"]]
     if tooltip:
         md.extend(t.replace("%%", "%") for t in tooltip if t is not None)
         md.append("")

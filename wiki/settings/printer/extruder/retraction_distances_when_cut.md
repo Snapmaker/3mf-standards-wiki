@@ -11,3 +11,5 @@
 [Default](../../../general_settings/option_type.md#default-value): `18`.  
 [Range](../../../general_settings/option_type.md#range): `10–18`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--retraction-distances-when-cut=1`.  
+
+Experimental feature: Retraction length before cutting off during filament change.
