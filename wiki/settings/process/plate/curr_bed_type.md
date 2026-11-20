@@ -10,6 +10,6 @@
 - Type: Choice
 - Default: Cool Plate
 
-> Tooltip (original): Bed types supported by the printer.
+> Tooltip: Bed types supported by the printer.
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)

@@ -84,7 +84,7 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 - Type: <user-facing type: Boolean / Integer (list) / Float (list) / Float or Percentage (list) / Text (list) / Choice (list) / Point>
 - Default: <value or —>
 
-> Tooltip (original): <tooltip>
+> Tooltip: <tooltip>
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)
 ```

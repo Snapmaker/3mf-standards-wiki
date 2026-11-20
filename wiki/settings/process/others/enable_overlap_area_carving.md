@@ -10,7 +10,7 @@
 - Type: Boolean
 - Default: false
 
-> Tooltip (original): When enabled, overlaps between multi-extruder parts are carved with the new algorithm: on each layer, the part with the smaller slice area owns the overlap, keeping small details intact inside larger bodies. Developer option.
+> Tooltip: When enabled, overlaps between multi-extruder parts are carved with the new algorithm: on each layer, the part with the smaller slice area owns the overlap, keeping small details intact inside larger bodies. Developer option.
 
 ## Notes
 

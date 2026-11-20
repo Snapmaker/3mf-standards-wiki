@@ -10,7 +10,7 @@
 - Type: Float list, unit mm/s², min 0
 - Default: 250
 
-> Tooltip (original): Acceleration used for short travel moves near external perimeters. Short travels are moves shorter than the 'Retraction minimum travel' distance.
+> Tooltip: Acceleration used for short travel moves near external perimeters. Short travels are moves shorter than the 'Retraction minimum travel' distance.
 > Lower values (e.g., 250-500 mm/s²) reduce ringing artifacts on sharp corners without significantly impacting print time.
 > Set to 0 to disable (uses normal travel acceleration).
 

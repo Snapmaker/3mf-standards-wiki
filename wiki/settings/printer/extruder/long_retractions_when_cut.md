@@ -10,7 +10,7 @@
 - Type: Boolean list
 - Default: false
 
-> Tooltip (original): Experimental feature: Retracting and cutting off the filament at a longer distance during changes to minimize purge. While this reduces flush significantly, it may also raise the risk of nozzle clogs or other printing problems.
+> Tooltip: Experimental feature: Retracting and cutting off the filament at a longer distance during changes to minimize purge. While this reduces flush significantly, it may also raise the risk of nozzle clogs or other printing problems.
 
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)

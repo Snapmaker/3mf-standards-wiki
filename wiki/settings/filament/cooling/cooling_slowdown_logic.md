@@ -11,7 +11,7 @@
 - Type: Choice list (single choice: Uniform cooling / Consistent surface)
 - Default: uniform_cooling
 
-> Tooltip (original): Determines how the printer slows down when minimum layer time isn't reached.
+> Tooltip: Determines how the printer slows down when minimum layer time isn't reached.
 > 'Uniform cooling' slows down all print features equally (current default behavior).
 > 'Consistent surface' prioritizes slowing infill and internal perimeters first, preserving external perimeter speed for better surface finish on glossy filaments. This helps reduce VFA (Vertical Fine Artifacts) and maintains consistent surface shine.
 

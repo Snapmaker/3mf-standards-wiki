@@ -10,6 +10,6 @@
 - Type: Text list
 - Default: (empty)
 
-> Tooltip (original): You can put your notes regarding the filament here.
+> Tooltip: You can put your notes regarding the filament here.
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)

@@ -11,7 +11,7 @@
 - Type: Text list (color picker; one `#RRGGBB` color string per slot)
 - Default: #F2754E
 
-> Tooltip (original): Only used as a visual help on UI.
+> Tooltip: Only used as a visual help on UI.
 
 ## Where to edit
 

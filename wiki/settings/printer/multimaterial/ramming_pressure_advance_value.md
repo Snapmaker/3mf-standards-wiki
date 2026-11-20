@@ -10,7 +10,7 @@
 - Type: Float
 - Default: 0.0
 
-> Tooltip (original): Set_Pressure_advance [this value] when ramming on wipe tower
+> Tooltip: Set_Pressure_advance [this value] when ramming on wipe tower
 
 
 (To add: purpose, value range, relation to similar parameters, applicable scenarios)

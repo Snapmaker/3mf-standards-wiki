@@ -10,7 +10,7 @@
 - Type: Float or Percentage, unit mm or % (% relative to [`line_width`](../quality/line_width.md)), min 0, max 50
 - Default: (empty, i.e. no expansion)
 
-> Tooltip (original): This parameter grows the top/bottom/solid layers by the specified mm to anchor them into the sparse infill and support the perimeters above. Can be a %% of the width of the perimeters.
+> Tooltip: This parameter grows the top/bottom/solid layers by the specified mm to anchor them into the sparse infill and support the perimeters above. Can be a %% of the width of the perimeters.
 
 ## Notes
 
