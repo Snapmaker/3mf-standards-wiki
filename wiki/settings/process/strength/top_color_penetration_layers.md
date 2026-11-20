@@ -1,11 +1,9 @@
 # top_color_penetration_layers
 
-> Location: Process → Strength → Top/bottom shells
+> Location: Process → Strength → Top/bottom shells → Paint Penetration Layers
 > Also in this section: `bottom_color_penetration_layers` (each documented on its own page).
 
 ---
-
-## Paint Penetration Layers
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `top_color_penetration_layers`.  

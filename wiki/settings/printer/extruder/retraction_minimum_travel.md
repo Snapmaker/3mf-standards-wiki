@@ -1,10 +1,8 @@
 # retraction_minimum_travel
 
-> Location: Printer → Extruder N → Retraction
+> Location: Printer → Extruder N → Retraction → Travel distance threshold
 
 ---
-
-## Travel distance threshold
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `retraction_minimum_travel[extruder_idx]`.  

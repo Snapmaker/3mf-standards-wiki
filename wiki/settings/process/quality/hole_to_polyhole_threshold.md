@@ -1,11 +1,9 @@
 # hole_to_polyhole_threshold
 
-> Location: Process → Quality → Precision
+> Location: Process → Quality → Precision → Polyholes
 > Also in this section: `hole_to_polyhole`, `hole_to_polyhole_twisted` (each documented on its own page).
 
 ---
-
-## Polyholes
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `hole_to_polyhole_threshold`.  

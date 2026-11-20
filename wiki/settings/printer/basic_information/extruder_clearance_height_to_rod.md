@@ -1,10 +1,8 @@
 # extruder_clearance_height_to_rod
 
-> Location: Printer → Basic information → Extruder Clearance
+> Location: Printer → Basic information → Extruder Clearance → Height to rod
 
 ---
-
-## Height to rod
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `extruder_clearance_height_to_rod`.  

@@ -1,10 +1,8 @@
 # full_fan_speed_layer
 
-> Location: Filament → Cooling → Cooling for specific layer
+> Location: Filament → Cooling → Cooling for specific layer → Full fan speed at layer
 
 ---
-
-### Full fan speed at layer
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `full_fan_speed_layer`.  

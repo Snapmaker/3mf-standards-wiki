@@ -1,10 +1,8 @@
 # support_material_interface_fan_speed
 
-> Location: Filament → Cooling → Part cooling fan
+> Location: Filament → Cooling → Part cooling fan → Support interface fan speed
 
 ---
-
-### Support interface fan speed
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_material_interface_fan_speed`.  

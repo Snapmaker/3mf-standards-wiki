@@ -1,10 +1,8 @@
 # print_order
 
-> Location: Process → Others → Special mode
+> Location: Process → Others → Special mode → Intra-layer order
 
 ---
-
-## Intra-layer order
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `print_order`.  

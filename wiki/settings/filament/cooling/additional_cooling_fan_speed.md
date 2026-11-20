@@ -1,11 +1,9 @@
 # additional_cooling_fan_speed
 
-> Location: Filament → Cooling → Auxiliary part cooling fan
+> Location: Filament → Cooling → Auxiliary part cooling fan → Auxiliary part cooling fan
 > Visibility (preliminary, pending review): Shown only when the printer has an auxiliary fan enabled
 
 ---
-
-### Auxiliary part cooling fan
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `additional_cooling_fan_speed`.  

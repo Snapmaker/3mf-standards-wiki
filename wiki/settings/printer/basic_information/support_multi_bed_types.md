@@ -1,10 +1,8 @@
 # support_multi_bed_types
 
-> Location: Printer → Basic information → Printable space
+> Location: Printer → Basic information → Printable space → Support multi bed types
 
 ---
-
-## Support multi bed types
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_multi_bed_types`.  

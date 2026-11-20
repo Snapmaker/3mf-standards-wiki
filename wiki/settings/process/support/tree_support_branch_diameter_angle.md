@@ -1,10 +1,8 @@
 # tree_support_branch_diameter_angle
 
-> Location: Process → Support → Tree supports
+> Location: Process → Support → Tree supports → Branch Diameter Angle
 
 ---
-
-## Branch Diameter Angle
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_branch_diameter_angle`.  

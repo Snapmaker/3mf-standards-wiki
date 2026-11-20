@@ -1,10 +1,8 @@
 # flush_into_objects
 
-> Location: Process → Multimaterial → Flush options
+> Location: Process → Multimaterial → Flush options → Flush into this object
 
 ---
-
-## Flush into this object
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `flush_into_objects`.  

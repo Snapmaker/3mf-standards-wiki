@@ -1,10 +1,8 @@
 # disable_m73
 
-> Location: Printer → Basic information → Advanced
+> Location: Printer → Basic information → Advanced → Disable set remaining print time
 
 ---
-
-## Disable set remaining print time
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `disable_m73`.  

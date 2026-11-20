@@ -1,10 +1,8 @@
 # interlocking_depth
 
-> Location: Process → Multimaterial → Advanced
+> Location: Process → Multimaterial → Advanced → Interlocking Depth
 
 ---
-
-## Interlocking Depth
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `interlocking_depth`.  

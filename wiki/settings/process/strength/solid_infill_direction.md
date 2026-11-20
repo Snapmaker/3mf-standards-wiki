@@ -1,11 +1,9 @@
 # solid_infill_direction
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Direction
 > Also in this section: `infill_direction` (each documented on its own page).
 
 ---
-
-### Direction
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `solid_infill_direction`.  

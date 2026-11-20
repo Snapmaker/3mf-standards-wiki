@@ -1,10 +1,8 @@
 # filament_shrinkage_compensation_z
 
-> Location: Filament → Filament → Basic information
+> Location: Filament → Filament → Basic information → Shrinkage (Z)
 
 ---
-
-## Shrinkage (Z)
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_shrinkage_compensation_z`.  

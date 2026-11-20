@@ -1,10 +1,8 @@
 # alternate_extra_wall
 
-> Location: Process → Strength → Walls
+> Location: Process → Strength → Walls → Alternate extra wall
 
 ---
-
-## Alternate extra wall
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `alternate_extra_wall`.  

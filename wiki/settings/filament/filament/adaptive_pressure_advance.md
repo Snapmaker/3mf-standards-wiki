@@ -1,10 +1,8 @@
 # adaptive_pressure_advance
 
-> Location: Filament → Filament → Flow ratio and Pressure Advance
+> Location: Filament → Filament → Flow ratio and Pressure Advance → Enable adaptive Pressure Advance (beta)
 
 ---
-
-### Enable adaptive Pressure Advance (beta)
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `adaptive_pressure_advance`.  

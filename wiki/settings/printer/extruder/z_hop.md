@@ -1,10 +1,8 @@
 # z_hop
 
-> Location: Printer → Extruder N → Z-Hop
+> Location: Printer → Extruder N → Z-Hop → Z-hop height
 
 ---
-
-## Z-hop height
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `z_hop[extruder_idx]`.  

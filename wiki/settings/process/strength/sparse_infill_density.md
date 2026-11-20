@@ -1,10 +1,8 @@
 # sparse_infill_density
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Sparse infill density
 
 ---
-
-## Sparse infill density
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `sparse_infill_density`.  

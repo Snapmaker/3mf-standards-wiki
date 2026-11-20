@@ -1,10 +1,8 @@
 # retraction_length
 
-> Location: Printer → Extruder N → Retraction
+> Location: Printer → Extruder N → Retraction → Length
 
 ---
-
-## Length
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `retraction_length[extruder_idx]`.  

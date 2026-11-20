@@ -1,10 +1,8 @@
 # initial_layer_acceleration
 
-> Location: Process → Speed → Acceleration
+> Location: Process → Speed → Acceleration → Initial layer
 
 ---
-
-## Initial layer
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `initial_layer_acceleration`.  

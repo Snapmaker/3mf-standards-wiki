@@ -1,11 +1,9 @@
 # support_interface_bottom_layers
 
-> Location: Process → Support → Advanced
+> Location: Process → Support → Advanced → Interface layers
 > Also in this section: `support_interface_top_layers` (each documented on its own page).
 
 ---
-
-## Interface layers
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_interface_bottom_layers`.  

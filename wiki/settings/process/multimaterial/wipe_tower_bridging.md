@@ -1,11 +1,9 @@
 # wipe_tower_bridging
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Maximal bridging distance
 > Visibility (preliminary, pending review): Shown only on non-BBL machines
 
 ---
-
-## Maximal bridging distance
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_tower_bridging`.  

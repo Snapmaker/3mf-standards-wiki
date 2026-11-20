@@ -1,10 +1,8 @@
 # support_threshold_overlap
 
-> Location: Process → Support → Support
+> Location: Process → Support → Support → Threshold overlap
 
 ---
-
-## Threshold overlap
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_threshold_overlap`.  

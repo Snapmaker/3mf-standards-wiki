@@ -1,10 +1,8 @@
 # detect_thin_wall
 
-> Location: Process → Strength → Walls
+> Location: Process → Strength → Walls → Detect thin wall
 
 ---
-
-## Detect thin wall
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `detect_thin_wall`.  

@@ -1,10 +1,8 @@
 # ensure_vertical_shell_thickness
 
-> Location: Process → Strength → Advanced
+> Location: Process → Strength → Advanced → Ensure vertical shell thickness
 
 ---
-
-## Ensure vertical shell thickness
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `ensure_vertical_shell_thickness`.  

@@ -1,10 +1,8 @@
 # minimum_sparse_infill_area
 
-> Location: Process → Strength → Advanced
+> Location: Process → Strength → Advanced → Minimum sparse infill threshold
 
 ---
-
-## Minimum sparse infill threshold
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `minimum_sparse_infill_area`.  

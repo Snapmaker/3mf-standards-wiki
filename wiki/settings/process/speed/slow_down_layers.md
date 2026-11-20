@@ -1,10 +1,8 @@
 # slow_down_layers
 
-> Location: Process → Speed → Initial layer speed
+> Location: Process → Speed → Initial layer speed → Number of slow layers
 
 ---
-
-## Number of slow layers
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `slow_down_layers`.  

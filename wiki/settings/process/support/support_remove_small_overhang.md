@@ -1,10 +1,8 @@
 # support_remove_small_overhang
 
-> Location: Process → Support → Support
+> Location: Process → Support → Support → Ignore small overhangs
 
 ---
-
-## Ignore small overhangs
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_remove_small_overhang`.  

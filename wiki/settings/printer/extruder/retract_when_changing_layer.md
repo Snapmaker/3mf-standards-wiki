@@ -1,10 +1,8 @@
 # retract_when_changing_layer
 
-> Location: Printer → Extruder N → Retraction
+> Location: Printer → Extruder N → Retraction → Retract on layer change
 
 ---
-
-## Retract on layer change
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `retract_when_changing_layer[extruder_idx]`.  

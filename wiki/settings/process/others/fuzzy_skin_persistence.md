@@ -1,10 +1,8 @@
 # fuzzy_skin_persistence
 
-> Location: Process → Others → Fuzzy Skin
+> Location: Process → Others → Fuzzy Skin → Skin Noise Persistence
 
 ---
-
-## Skin Noise Persistence
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `fuzzy_skin_persistence`.  

@@ -1,10 +1,8 @@
 # sparse_infill_acceleration
 
-> Location: Process → Speed → Acceleration
+> Location: Process → Speed → Acceleration → Sparse infill
 
 ---
-
-## Sparse infill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `sparse_infill_acceleration`.  

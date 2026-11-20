@@ -1,10 +1,8 @@
 # enable_extra_bridge_layer
 
-> Location: Process → Quality → Bridging
+> Location: Process → Quality → Bridging → Extra bridge layers
 
 ---
-
-## Extra bridge layers
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_extra_bridge_layer`.  

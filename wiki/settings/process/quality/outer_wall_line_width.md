@@ -1,10 +1,8 @@
 # outer_wall_line_width
 
-> Location: Process → Quality → Line width
+> Location: Process → Quality → Line width → Outer Wall
 
 ---
-
-### Outer Wall
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `outer_wall_line_width`.  

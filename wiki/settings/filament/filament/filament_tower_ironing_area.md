@@ -1,11 +1,9 @@
 # filament_tower_ironing_area
 
-> Location: Filament → Filament → Basic information
+> Location: Filament → Filament → Basic information → Multimaterial Wipe Tower Parameters
 > Also in this section: `filament_tower_interface_pre_extrusion_dist`, `filament_tower_interface_pre_extrusion_length`, `filament_tower_interface_print_temp`, `filament_minimal_purge_on_wipe_tower` (each documented on its own page).
 
 ---
-
-## Multimaterial Wipe Tower Parameters
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_tower_ironing_area`.  

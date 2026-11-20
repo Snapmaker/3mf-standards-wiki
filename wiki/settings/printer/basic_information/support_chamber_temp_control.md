@@ -1,10 +1,8 @@
 # support_chamber_temp_control
 
-> Location: Printer → Basic information → Accessory
+> Location: Printer → Basic information → Accessory → Support controlling chamber temperature
 
 ---
-
-## Support controlling chamber temperature
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_chamber_temp_control`.  

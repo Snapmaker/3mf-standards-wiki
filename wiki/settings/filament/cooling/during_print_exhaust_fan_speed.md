@@ -1,10 +1,8 @@
 # during_print_exhaust_fan_speed
 
-> Location: Filament → Cooling → Exhaust fan
+> Location: Filament → Cooling → Exhaust fan → During print
 
 ---
-
-#### During print
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `during_print_exhaust_fan_speed`.  

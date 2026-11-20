@@ -1,10 +1,8 @@
 # top_surface_jerk
 
-> Location: Process → Speed → Jerk(XY)
+> Location: Process → Speed → Jerk(XY) → Top surface
 
 ---
-
-### Top surface
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `top_surface_jerk`.  

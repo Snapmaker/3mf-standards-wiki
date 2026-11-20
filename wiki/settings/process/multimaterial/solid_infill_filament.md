@@ -1,11 +1,9 @@
 # solid_infill_filament
 
-> Location: Process → Multimaterial → Filament for Features
+> Location: Process → Multimaterial → Filament for Features → Internal Solid Infill
 > Visibility (preliminary, pending review): Shown only in multi-material (not single-extruder multi-material) configurations
 
 ---
-
-## Internal Solid Infill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `solid_infill_filament`.  

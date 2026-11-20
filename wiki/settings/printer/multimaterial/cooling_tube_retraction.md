@@ -1,10 +1,8 @@
 # cooling_tube_retraction
 
-> Location: Printer → Multimaterial → Single extruder multi-material parameters
+> Location: Printer → Multimaterial → Single extruder multi-material parameters → Cooling tube position
 
 ---
-
-## Cooling tube position
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `cooling_tube_retraction`.  

@@ -1,11 +1,9 @@
 # only_one_wall_top
 
-> Location: Process → Quality → Walls and surfaces
+> Location: Process → Quality → Walls and surfaces → Only one wall
 > Also in this section: `only_one_wall_first_layer` (each documented on its own page).
 
 ---
-
-## Only one wall
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `only_one_wall_top`.  

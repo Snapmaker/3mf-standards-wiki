@@ -1,10 +1,8 @@
 # filament_type
 
-> Location: Filament → Filament → Basic information
+> Location: Filament → Filament → Basic information → Type
 
 ---
-
-## Type
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_type`.  

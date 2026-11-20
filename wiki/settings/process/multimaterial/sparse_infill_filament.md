@@ -1,11 +1,9 @@
 # sparse_infill_filament
 
-> Location: Process → Multimaterial → Filament for Features
+> Location: Process → Multimaterial → Filament for Features → Sparse Infill
 > Visibility (preliminary, pending review): Shown only in multi-material (not single-extruder multi-material) configurations
 
 ---
-
-## Sparse Infill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `sparse_infill_filament`.  

@@ -1,10 +1,8 @@
 # enable_overhang_speed
 
-> Location: Process → Speed → Overhang speed
+> Location: Process → Speed → Overhang speed → Slow down for overhang
 
 ---
-
-## Slow down for overhang
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_overhang_speed`.  

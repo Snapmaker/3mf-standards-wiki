@@ -1,10 +1,8 @@
 # brim_object_gap
 
-> Location: Process → Others → Brim
+> Location: Process → Others → Brim → Brim-Object Gap
 
 ---
-
-## Brim-Object Gap
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `brim_object_gap`.  

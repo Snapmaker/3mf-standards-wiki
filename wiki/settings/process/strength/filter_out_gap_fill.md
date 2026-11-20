@@ -1,10 +1,8 @@
 # filter_out_gap_fill
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Filter out tiny gaps
 
 ---
-
-## Filter out tiny gaps
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filter_out_gap_fill`.  

@@ -1,10 +1,8 @@
 # make_overhang_printable
 
-> Location: Process → Quality → Overhangs
+> Location: Process → Quality → Overhangs → Make overhang printable
 
 ---
-
-## Make overhang printable
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `make_overhang_printable`.  

@@ -1,10 +1,8 @@
 # gap_infill_speed
 
-> Location: Process → Speed → Other layers speed
+> Location: Process → Speed → Other layers speed → Gap infill
 
 ---
-
-## Gap infill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `gap_infill_speed`.  

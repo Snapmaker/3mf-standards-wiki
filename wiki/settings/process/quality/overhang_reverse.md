@@ -1,10 +1,8 @@
 # overhang_reverse
 
-> Location: Process → Quality → Overhangs
+> Location: Process → Quality → Overhangs → Reverse on even
 
 ---
-
-## Reverse on even
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `overhang_reverse`.  

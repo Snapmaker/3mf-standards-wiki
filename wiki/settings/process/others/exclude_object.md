@@ -1,10 +1,8 @@
 # exclude_object
 
-> Location: Process → Others → G-code output
+> Location: Process → Others → G-code output → Exclude Objects
 
 ---
-
-## Exclude Objects
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `exclude_object`.  

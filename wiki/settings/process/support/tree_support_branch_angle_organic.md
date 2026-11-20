@@ -1,11 +1,9 @@
 # tree_support_branch_angle_organic
 
-> Location: Process → Support → Tree supports
+> Location: Process → Support → Tree supports → Branch Angle
 > Also in this section: `tree_support_branch_angle` (each documented on its own page).
 
 ---
-
-## Branch Angle
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_branch_angle_organic`.  

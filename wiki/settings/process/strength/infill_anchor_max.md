@@ -1,11 +1,9 @@
 # infill_anchor_max
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Anchor
 > Also in this section: `infill_anchor` (each documented on its own page).
 
 ---
-
-## Anchor
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `infill_anchor_max`.  

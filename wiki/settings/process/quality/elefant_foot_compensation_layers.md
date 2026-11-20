@@ -1,11 +1,9 @@
 # elefant_foot_compensation_layers
 
-> Location: Process → Quality → Precision
+> Location: Process → Quality → Precision → Elephant foot compensation
 > Also in this section: `elefant_foot_compensation` (each documented on its own page).
 
 ---
-
-## Elephant foot compensation
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `elefant_foot_compensation_layers`.  

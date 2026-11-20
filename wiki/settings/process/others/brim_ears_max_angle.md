@@ -1,10 +1,8 @@
 # brim_ears_max_angle
 
-> Location: Process → Others → Brim
+> Location: Process → Others → Brim → Ear max angle
 
 ---
-
-#### Ear max angle
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `brim_ears_max_angle`.  

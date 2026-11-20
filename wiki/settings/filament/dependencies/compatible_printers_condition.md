@@ -1,10 +1,8 @@
 # compatible_printers_condition
 
-> Location: Filament → Dependencies → Compatible printers
+> Location: Filament → Dependencies → Compatible printers → Printer Condition
 
 ---
-
-### Printer Condition
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `compatible_printers_condition`.  

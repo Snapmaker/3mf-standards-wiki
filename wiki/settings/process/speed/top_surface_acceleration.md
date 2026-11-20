@@ -1,10 +1,8 @@
 # top_surface_acceleration
 
-> Location: Process → Speed → Acceleration
+> Location: Process → Speed → Acceleration → Top surface
 
 ---
-
-## Top surface
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `top_surface_acceleration`.  

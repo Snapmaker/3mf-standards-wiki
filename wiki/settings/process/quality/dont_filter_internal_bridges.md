@@ -1,10 +1,8 @@
 # dont_filter_internal_bridges
 
-> Location: Process → Quality → Bridging
+> Location: Process → Quality → Bridging → Filter out small internal bridges
 
 ---
-
-## Filter out small internal bridges
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `dont_filter_internal_bridges`.  

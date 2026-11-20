@@ -1,11 +1,9 @@
 # fuzzy_skin
 
-> Location: Process → Others → Fuzzy Skin
+> Location: Process → Others → Fuzzy Skin → Fuzzy Skin Mode
 > Also in this section: `fuzzy_skin_mode` (each documented on its own page).
 
 ---
-
-## Fuzzy Skin Mode
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `fuzzy_skin`.  

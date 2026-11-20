@@ -1,10 +1,8 @@
 # retract_before_wipe
 
-> Location: Printer → Extruder N → Retraction
+> Location: Printer → Extruder N → Retraction → Retract amount before wipe
 
 ---
-
-## Retract amount before wipe
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `retract_before_wipe[extruder_idx]`.  

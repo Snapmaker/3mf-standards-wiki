@@ -1,10 +1,8 @@
 # staggered_inner_seams
 
-> Location: Process → Quality → Seam
+> Location: Process → Quality → Seam → Staggered inner seams
 
 ---
-
-### Staggered inner seams
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `staggered_inner_seams`.  

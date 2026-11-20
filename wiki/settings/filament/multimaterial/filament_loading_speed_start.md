@@ -1,10 +1,8 @@
 # filament_loading_speed_start
 
-> Location: Filament → Multimaterial → Tool change parameters with single extruder MM printers
+> Location: Filament → Multimaterial → Tool change parameters with single extruder MM printers → Loading speed at the start
 
 ---
-
-### Loading speed at the start
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_loading_speed_start`.  

@@ -1,10 +1,8 @@
 # wipe_on_loops
 
-> Location: Process → Quality → Seam
+> Location: Process → Quality → Seam → Wipe on loop (inward movement)
 
 ---
-
-### Wipe on loop (inward movement)
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_on_loops`.  

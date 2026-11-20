@@ -1,10 +1,8 @@
 # retract_lift_enforce
 
-> Location: Printer → Extruder N → Z-Hop
+> Location: Printer → Extruder N → Z-Hop → On surfaces
 
 ---
-
-## On surfaces
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `retract_lift_enforce[extruder_idx]`.  

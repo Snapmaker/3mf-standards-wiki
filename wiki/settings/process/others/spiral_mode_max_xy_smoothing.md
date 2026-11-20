@@ -1,10 +1,8 @@
 # spiral_mode_max_xy_smoothing
 
-> Location: Process → Others → Special mode
+> Location: Process → Others → Special mode → Max XY Smoothing
 
 ---
-
-#### Max XY Smoothing
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `spiral_mode_max_xy_smoothing`.  

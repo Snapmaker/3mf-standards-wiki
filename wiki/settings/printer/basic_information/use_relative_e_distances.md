@@ -1,10 +1,8 @@
 # use_relative_e_distances
 
-> Location: Printer → Basic information → Advanced
+> Location: Printer → Basic information → Advanced → Use relative E distances
 
 ---
-
-## Use relative E distances
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `use_relative_e_distances`.  

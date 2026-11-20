@@ -1,11 +1,9 @@
 # wipe_tower_no_sparse_layers
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → No sparse layers
 > Visibility (preliminary, pending review): Shown only on non-BBL machines
 
 ---
-
-## No sparse layers
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_tower_no_sparse_layers`.  

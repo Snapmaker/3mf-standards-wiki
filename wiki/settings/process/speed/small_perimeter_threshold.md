@@ -1,10 +1,8 @@
 # small_perimeter_threshold
 
-> Location: Process → Speed → Other layers speed
+> Location: Process → Speed → Other layers speed → Small perimeters threshold
 
 ---
-
-### Small perimeters threshold
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `small_perimeter_threshold`.  

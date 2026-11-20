@@ -1,10 +1,8 @@
 # machine_max_acceleration_e
 
-> Location: Printer → Motion ability → Acceleration limitation
+> Location: Printer → Motion ability → Acceleration limitation → Acceleration limitation
 
 ---
-
-## Acceleration limitation
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_max_acceleration_e`.  

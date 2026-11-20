@@ -1,10 +1,8 @@
 # support_critical_regions_only
 
-> Location: Process → Support → Support
+> Location: Process → Support → Support → Support critical regions only
 
 ---
-
-#### Support critical regions only
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_critical_regions_only`.  

@@ -1,10 +1,8 @@
 # infill_wall_overlap
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Infill Wall Overlap
 
 ---
-
-## Infill Wall Overlap
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `infill_wall_overlap`.  

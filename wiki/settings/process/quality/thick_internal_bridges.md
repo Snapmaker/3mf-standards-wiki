@@ -1,11 +1,9 @@
 # thick_internal_bridges
 
-> Location: Process → Quality → Bridging
+> Location: Process → Quality → Bridging → Thick bridges
 > Also in this section: `thick_bridges` (each documented on its own page).
 
 ---
-
-## Thick bridges
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `thick_internal_bridges`.  

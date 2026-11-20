@@ -1,10 +1,8 @@
 # z_hop_types
 
-> Location: Printer → Extruder N → Z-Hop
+> Location: Printer → Extruder N → Z-Hop → Z-hop type
 
 ---
-
-## Z-hop type
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `z_hop_types[extruder_idx]`.  

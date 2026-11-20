@@ -1,10 +1,8 @@
 # printable_height
 
-> Location: Printer → Basic information → Printable space
+> Location: Printer → Basic information → Printable space → Printable height
 
 ---
-
-## Printable height
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `printable_height`.  

@@ -1,10 +1,8 @@
 # support_filament
 
-> Location: Process → Support → Support filament
+> Location: Process → Support → Support filament → Base
 
 ---
-
-## Base
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_filament`.  

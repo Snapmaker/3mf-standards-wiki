@@ -1,10 +1,8 @@
 # brim_ears_detection_length
 
-> Location: Process → Others → Brim
+> Location: Process → Others → Brim → Ear detection radius
 
 ---
-
-#### Ear detection radius
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `brim_ears_detection_length`.  

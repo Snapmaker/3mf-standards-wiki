@@ -1,10 +1,8 @@
 # ironing_spacing
 
-> Location: Process → Quality → Ironing
+> Location: Process → Quality → Ironing → Line spacing
 
 ---
-
-## Line spacing
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `ironing_spacing`.  

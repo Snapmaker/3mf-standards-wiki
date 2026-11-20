@@ -1,10 +1,8 @@
 # support_ironing_spacing
 
-> Location: Process → Support → Support ironing
+> Location: Process → Support → Support ironing → Line Spacing
 
 ---
-
-## Line Spacing
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_ironing_spacing`.  

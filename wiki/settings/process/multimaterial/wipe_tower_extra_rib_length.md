@@ -1,11 +1,9 @@
 # wipe_tower_extra_rib_length
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Extra rib length
 > Visibility (preliminary, pending review): Shown only on non-BBL machines
 
 ---
-
-#### Extra rib length
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_tower_extra_rib_length`.  

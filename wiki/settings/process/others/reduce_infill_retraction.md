@@ -1,10 +1,8 @@
 # reduce_infill_retraction
 
-> Location: Process → Others → G-code output
+> Location: Process → Others → G-code output → Reduce Infill Retraction
 
 ---
-
-## Reduce Infill Retraction
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `reduce_infill_retraction`.  

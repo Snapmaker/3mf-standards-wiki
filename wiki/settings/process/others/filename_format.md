@@ -1,10 +1,8 @@
 # filename_format
 
-> Location: Process → Others → G-code output
+> Location: Process → Others → G-code output → Filename Format
 
 ---
-
-## Filename Format
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filename_format`.  

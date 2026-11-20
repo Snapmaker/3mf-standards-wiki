@@ -1,10 +1,8 @@
 # enable_arc_fitting
 
-> Location: Process → Quality → Precision
+> Location: Process → Quality → Precision → Arc fitting
 
 ---
-
-## Arc fitting
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_arc_fitting`.  

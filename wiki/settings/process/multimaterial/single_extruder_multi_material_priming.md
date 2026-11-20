@@ -1,10 +1,8 @@
 # single_extruder_multi_material_priming
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Prime all printing extruders
 
 ---
-
-## Prime all printing extruders
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `single_extruder_multi_material_priming`.  

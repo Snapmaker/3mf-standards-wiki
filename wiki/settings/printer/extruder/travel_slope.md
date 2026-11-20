@@ -1,10 +1,8 @@
 # travel_slope
 
-> Location: Printer → Extruder N → Z-Hop
+> Location: Printer → Extruder N → Z-Hop → Traveling angle
 
 ---
-
-## Traveling angle
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `travel_slope[extruder_idx]`.  

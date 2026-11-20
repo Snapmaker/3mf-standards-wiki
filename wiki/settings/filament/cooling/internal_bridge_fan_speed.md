@@ -1,11 +1,9 @@
 # internal_bridge_fan_speed
 
-> Location: Filament → Cooling → Part cooling fan
+> Location: Filament → Cooling → Part cooling fan → Internal bridges fan speed
 > Visibility (preliminary, pending review): Shown after enable_overhang_bridge_fan is enabled
 
 ---
-
-### Internal bridges fan speed
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `internal_bridge_fan_speed`.  

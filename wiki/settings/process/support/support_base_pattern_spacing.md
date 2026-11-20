@@ -1,10 +1,8 @@
 # support_base_pattern_spacing
 
-> Location: Process → Support → Advanced
+> Location: Process → Support → Advanced → Base pattern spacing
 
 ---
-
-### Base pattern spacing
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_base_pattern_spacing`.  

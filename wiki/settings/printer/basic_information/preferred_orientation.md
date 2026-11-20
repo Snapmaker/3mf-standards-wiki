@@ -1,10 +1,8 @@
 # preferred_orientation
 
-> Location: Printer → Basic information → Printable space
+> Location: Printer → Basic information → Printable space → Preferred orientation
 
 ---
-
-## Preferred orientation
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `preferred_orientation`.  

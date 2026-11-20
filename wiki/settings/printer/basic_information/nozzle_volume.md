@@ -1,10 +1,8 @@
 # nozzle_volume
 
-> Location: Printer → Basic information → Printable space
+> Location: Printer → Basic information → Printable space → Nozzle volume
 
 ---
-
-## Nozzle volume
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `nozzle_volume[extruder_idx]`.  

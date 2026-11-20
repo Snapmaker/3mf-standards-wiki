@@ -1,10 +1,8 @@
 # wipe_speed
 
-> Location: Process → Quality → Seam
+> Location: Process → Quality → Seam → Wipe speed
 
 ---
-
-### Wipe speed
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_speed`.  

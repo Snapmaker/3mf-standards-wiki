@@ -1,11 +1,9 @@
 # standby_temperature_delta
 
-> Location: Process → Multimaterial → Ooze prevention
+> Location: Process → Multimaterial → Ooze prevention → Temperature variation
 > Also in this section: `delta_temperature` (each documented on its own page).
 
 ---
-
-## Temperature variation
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `standby_temperature_delta`.  

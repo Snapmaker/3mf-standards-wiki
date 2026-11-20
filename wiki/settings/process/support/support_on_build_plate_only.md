@@ -1,10 +1,8 @@
 # support_on_build_plate_only
 
-> Location: Process → Support → Support
+> Location: Process → Support → Support → On build plate only
 
 ---
-
-## On build plate only
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_on_build_plate_only`.  

@@ -1,10 +1,8 @@
 # seam_position
 
-> Location: Process → Quality → Seam
+> Location: Process → Quality → Seam → Seam Position
 
 ---
-
-## Seam Position
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `seam_position`.  

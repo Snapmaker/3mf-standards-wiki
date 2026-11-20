@@ -1,10 +1,8 @@
 # emit_machine_limits_to_gcode
 
-> Location: Printer → Motion ability → Advanced
+> Location: Printer → Motion ability → Advanced → Emit limits to G-code
 
 ---
-
-## Emit limits to G-code
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `emit_machine_limits_to_gcode`.  

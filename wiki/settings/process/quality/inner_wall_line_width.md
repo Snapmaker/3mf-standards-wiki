@@ -1,10 +1,8 @@
 # inner_wall_line_width
 
-> Location: Process → Quality → Line width
+> Location: Process → Quality → Line width → Inner Wall
 
 ---
-
-### Inner Wall
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `inner_wall_line_width`.  

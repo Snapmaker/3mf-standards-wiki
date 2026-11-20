@@ -1,10 +1,8 @@
 # flush_into_support
 
-> Location: Process → Multimaterial → Flush options
+> Location: Process → Multimaterial → Flush options → Flush into objects' support
 
 ---
-
-## Flush into objects' support
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `flush_into_support`.  

@@ -1,10 +1,8 @@
 # detect_narrow_internal_solid_infill
 
-> Location: Process → Strength → Advanced
+> Location: Process → Strength → Advanced → Detect narrow internal solid infill
 
 ---
-
-## Detect narrow internal solid infill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `detect_narrow_internal_solid_infill`.  

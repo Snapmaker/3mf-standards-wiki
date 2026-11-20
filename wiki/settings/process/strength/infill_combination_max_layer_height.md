@@ -1,10 +1,8 @@
 # infill_combination_max_layer_height
 
-> Location: Process → Strength → Advanced
+> Location: Process → Strength → Advanced → Max layer height
 
 ---
-
-### Max layer height
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `infill_combination_max_layer_height`.  

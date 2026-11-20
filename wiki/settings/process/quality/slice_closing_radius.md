@@ -1,10 +1,8 @@
 # slice_closing_radius
 
-> Location: Process → Quality → Precision
+> Location: Process → Quality → Precision → Slice gap closing radius
 
 ---
-
-## Slice gap closing radius
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `slice_closing_radius`.  

@@ -1,10 +1,8 @@
 # default_filament_colour
 
-> Location: Filament → Filament → Basic information
+> Location: Filament → Filament → Basic information → Default color
 
 ---
-
-## Default color
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `default_filament_colour`.  

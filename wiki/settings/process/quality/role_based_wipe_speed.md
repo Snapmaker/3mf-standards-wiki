@@ -1,10 +1,8 @@
 # role_based_wipe_speed
 
-> Location: Process → Quality → Seam
+> Location: Process → Quality → Seam → Role based wipe speed
 
 ---
-
-### Role based wipe speed
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `role_based_wipe_speed`.  

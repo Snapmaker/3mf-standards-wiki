@@ -1,10 +1,8 @@
 # skirt_speed
 
-> Location: Process → Others → Skirt
+> Location: Process → Others → Skirt → Speed
 
 ---
-
-## Speed
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `skirt_speed`.  

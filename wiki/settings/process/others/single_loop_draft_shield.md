@@ -1,10 +1,8 @@
 # single_loop_draft_shield
 
-> Location: Process → Others → Skirt
+> Location: Process → Others → Skirt → Single loop after first layer
 
 ---
-
-## Single loop after first layer
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `single_loop_draft_shield`.  

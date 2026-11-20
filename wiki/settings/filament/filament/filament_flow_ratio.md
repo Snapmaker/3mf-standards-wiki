@@ -1,10 +1,8 @@
 # filament_flow_ratio
 
-> Location: Filament → Filament → Flow ratio and Pressure Advance
+> Location: Filament → Filament → Flow ratio and Pressure Advance → Flow Ratio
 
 ---
-
-## Flow Ratio
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_flow_ratio`.  

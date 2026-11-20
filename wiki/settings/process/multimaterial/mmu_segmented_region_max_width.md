@@ -1,10 +1,8 @@
 # mmu_segmented_region_max_width
 
-> Location: Process → Multimaterial → Advanced
+> Location: Process → Multimaterial → Advanced → Maximum Width of Segmented Region
 
 ---
-
-## Maximum Width of Segmented Region
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `mmu_segmented_region_max_width`.  

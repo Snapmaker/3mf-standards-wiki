@@ -1,10 +1,8 @@
 # resolution
 
-> Location: Process → Quality → Precision
+> Location: Process → Quality → Precision → Resolution
 
 ---
-
-## Resolution
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `resolution`.  

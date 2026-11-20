@@ -1,10 +1,8 @@
 # spiral_mode_smooth
 
-> Location: Process → Others → Special mode
+> Location: Process → Others → Special mode → Smooth Spiral
 
 ---
-
-### Smooth Spiral
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `spiral_mode_smooth`.  

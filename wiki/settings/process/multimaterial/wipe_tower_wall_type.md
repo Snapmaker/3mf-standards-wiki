@@ -1,11 +1,9 @@
 # wipe_tower_wall_type
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Wall type
 > Visibility (preliminary, pending review): Shown only on non-BBL machines
 
 ---
-
-## Wall type
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_tower_wall_type`.  

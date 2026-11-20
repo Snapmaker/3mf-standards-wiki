@@ -1,10 +1,8 @@
 # fuzzy_skin_thickness
 
-> Location: Process → Others → Fuzzy Skin
+> Location: Process → Others → Fuzzy Skin → Skin thickness
 
 ---
-
-## Skin thickness
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `fuzzy_skin_thickness`.  

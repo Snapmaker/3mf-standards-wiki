@@ -1,11 +1,9 @@
 # top_surface_pattern
 
-> Location: Process → Strength → Top/bottom shells
+> Location: Process → Strength → Top/bottom shells → Surface Pattern
 > Also in this section: `bottom_surface_pattern` (each documented on its own page).
 
 ---
-
-## Surface Pattern
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `top_surface_pattern`.  

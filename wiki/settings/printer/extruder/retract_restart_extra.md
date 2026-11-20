@@ -1,10 +1,8 @@
 # retract_restart_extra
 
-> Location: Printer → Extruder N → Retraction
+> Location: Printer → Extruder N → Retraction → Extra length on restart
 
 ---
-
-## Extra length on restart
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `retract_restart_extra[extruder_idx]`.  

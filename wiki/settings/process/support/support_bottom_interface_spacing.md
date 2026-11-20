@@ -1,11 +1,9 @@
 # support_bottom_interface_spacing
 
-> Location: Process → Support → Advanced
+> Location: Process → Support → Advanced → Interface spacing
 > Also in this section: `support_interface_spacing` (each documented on its own page).
 
 ---
-
-## Interface spacing
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_bottom_interface_spacing`.  

@@ -1,12 +1,10 @@
 # filament_tower_interface_pre_extrusion_length
 
-> Location: Filament → Filament → Basic information
+> Location: Filament → Filament → Basic information → Multimaterial Wipe Tower Parameters
 > Visibility(preliminary, pending review): Shown only on Snapmaker U1 machines
 > Also in this section: `filament_tower_interface_pre_extrusion_dist`, `filament_tower_interface_print_temp`, `filament_tower_ironing_area`, `filament_minimal_purge_on_wipe_tower` (each documented on its own page).
 
 ---
-
-## Multimaterial Wipe Tower Parameters
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_tower_interface_pre_extrusion_length`.  

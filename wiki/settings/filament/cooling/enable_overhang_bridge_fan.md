@@ -1,10 +1,8 @@
 # enable_overhang_bridge_fan
 
-> Location: Filament → Cooling → Part cooling fan
+> Location: Filament → Cooling → Part cooling fan → Force cooling for overhangs and bridges
 
 ---
-
-### Force cooling for overhangs and bridges
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_overhang_bridge_fan`.  

@@ -1,10 +1,8 @@
 # auxiliary_fan
 
-> Location: Printer → Basic information → Accessory
+> Location: Printer → Basic information → Accessory → Auxiliary Part Cooling Fan
 
 ---
-
-## Auxiliary Part Cooling Fan
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `auxiliary_fan`.  

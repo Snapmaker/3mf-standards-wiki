@@ -1,10 +1,8 @@
 # internal_solid_infill_acceleration
 
-> Location: Process → Speed → Acceleration
+> Location: Process → Speed → Acceleration → Internal solid infill
 
 ---
-
-## Internal solid infill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `internal_solid_infill_acceleration`.  

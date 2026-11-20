@@ -1,11 +1,9 @@
 # wipe_tower_extra_spacing
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Wipe tower purge lines spacing
 > Visibility (preliminary, pending review): Shown only on non-BBL machines
 
 ---
-
-## Wipe tower purge lines spacing
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_tower_extra_spacing`.  

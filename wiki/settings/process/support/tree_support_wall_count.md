@@ -1,10 +1,8 @@
 # tree_support_wall_count
 
-> Location: Process → Support → Advanced
+> Location: Process → Support → Advanced → Support wall loops
 
 ---
-
-## Support wall loops
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_wall_count`.  

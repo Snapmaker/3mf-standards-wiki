@@ -1,10 +1,8 @@
 # compatible_prints_condition
 
-> Location: Filament → Dependencies → Compatible process profiles
+> Location: Filament → Dependencies → Compatible process profiles → Process Condition
 
 ---
-
-### Process Condition
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `compatible_prints_condition`.  

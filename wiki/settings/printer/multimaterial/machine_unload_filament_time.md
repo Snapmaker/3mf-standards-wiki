@@ -1,10 +1,8 @@
 # machine_unload_filament_time
 
-> Location: Printer → Multimaterial → Advanced
+> Location: Printer → Multimaterial → Advanced → Filament unload time
 
 ---
-
-## Filament unload time
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_unload_filament_time`.  

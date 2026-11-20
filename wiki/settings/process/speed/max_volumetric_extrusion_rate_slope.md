@@ -1,11 +1,9 @@
 # max_volumetric_extrusion_rate_slope
 
-> Location: Process → Speed → Advanced
+> Location: Process → Speed → Advanced → Speed Advanced - Extrusion Rate Smoothing
 > Also in this section: `max_volumetric_extrusion_rate_slope_segment_length` (each documented on its own page).
 
 ---
-
-# Speed Advanced - Extrusion Rate Smoothing
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `max_volumetric_extrusion_rate_slope`.  

@@ -1,10 +1,8 @@
 # inner_wall_acceleration
 
-> Location: Process → Speed → Acceleration
+> Location: Process → Speed → Acceleration → Inner wall
 
 ---
-
-## Inner wall
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `inner_wall_acceleration`.  

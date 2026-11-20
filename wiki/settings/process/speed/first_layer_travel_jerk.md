@@ -1,10 +1,8 @@
 # first_layer_travel_jerk
 
-> Location: Process → Speed → Jerk(XY)
+> Location: Process → Speed → Jerk(XY) → Initial layer travel
 
 ---
-
-### Initial layer travel
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `first_layer_travel_jerk`.  

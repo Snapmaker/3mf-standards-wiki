@@ -1,10 +1,8 @@
 # wipe_distance
 
-> Location: Printer → Extruder N → Retraction
+> Location: Printer → Extruder N → Retraction → Wipe distance
 
 ---
-
-## Wipe distance
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_distance[extruder_idx]`.  

@@ -1,10 +1,8 @@
 # required_nozzle_hrc
 
-> Location: Filament → Filament → Basic information
+> Location: Filament → Filament → Basic information → Required nozzle HRC
 
 ---
-
-## Required nozzle HRC
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `required_nozzle_HRC`.  

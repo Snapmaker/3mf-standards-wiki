@@ -1,10 +1,8 @@
 # retract_restart_extra_toolchange
 
-> Location: Printer → Extruder N → Retraction when switching material
+> Location: Printer → Extruder N → Retraction when switching material → Retraction When Switching Materials
 
 ---
-
-## Retraction When Switching Materials
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `retract_restart_extra_toolchange[extruder_idx]`.  

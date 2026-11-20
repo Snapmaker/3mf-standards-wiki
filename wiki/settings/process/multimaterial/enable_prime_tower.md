@@ -1,10 +1,8 @@
 # enable_prime_tower
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Prime Tower
 
 ---
-
-# Prime Tower
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_prime_tower`.  

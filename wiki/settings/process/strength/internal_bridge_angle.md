@@ -1,11 +1,9 @@
 # internal_bridge_angle
 
-> Location: Process → Strength → Advanced
+> Location: Process → Strength → Advanced → Bridge infill direction
 > Also in this section: `bridge_angle` (each documented on its own page).
 
 ---
-
-## Bridge infill direction
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `internal_bridge_angle`.  

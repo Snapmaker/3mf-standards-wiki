@@ -1,10 +1,8 @@
 # raft_first_layer_density
 
-> Location: Process → Support → Support
+> Location: Process → Support → Support → Initial layer density
 
 ---
-
-## Initial layer density
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `raft_first_layer_density`.  

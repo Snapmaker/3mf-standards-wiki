@@ -1,11 +1,9 @@
 # enable_tower_interface_features
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Enable tower interface features
 > Visibility(preliminary, pending review): Shown only on Snapmaker U1 machines
 
 ---
-
-## Enable tower interface features
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_tower_interface_features`.  

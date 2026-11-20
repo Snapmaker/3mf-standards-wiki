@@ -1,10 +1,8 @@
 # precise_outer_wall
 
-> Location: Process → Quality → Precision
+> Location: Process → Quality → Precision → Precise wall
 
 ---
-
-## Precise wall
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `precise_outer_wall`.  

@@ -1,10 +1,8 @@
 # retract_lift_above
 
-> Location: Printer → Extruder N → Z-Hop
+> Location: Printer → Extruder N → Z-Hop → Only lift Z above
 
 ---
-
-## Only lift Z above
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `retract_lift_above[extruder_idx]`.  

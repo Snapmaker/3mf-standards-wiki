@@ -1,10 +1,8 @@
 # bridge_no_support
 
-> Location: Process → Support → Advanced
+> Location: Process → Support → Advanced → Don't support bridges
 
 ---
-
-## Don't support bridges
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `bridge_no_support`.  

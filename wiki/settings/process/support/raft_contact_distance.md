@@ -1,11 +1,9 @@
 # raft_contact_distance
 
-> Location: Process → Support → Raft
+> Location: Process → Support → Raft → Raft
 > Also in this section: `raft_layers` (each documented on its own page).
 
 ---
-
-# Raft
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `raft_contact_distance`.  

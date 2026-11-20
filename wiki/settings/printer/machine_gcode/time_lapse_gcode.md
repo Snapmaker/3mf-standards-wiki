@@ -1,10 +1,8 @@
 # time_lapse_gcode
 
-> Location: Printer → Machine G-code → Timelapse G-code
+> Location: Printer → Machine G-code → Timelapse G-code → Timelapse G-code
 
 ---
-
-## Timelapse G-code
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `time_lapse_gcode`.  

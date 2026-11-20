@@ -1,10 +1,8 @@
 # enable_support
 
-> Location: Process → Support → Support
+> Location: Process → Support → Support → Support
 
 ---
-
-# Support
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_support`.  

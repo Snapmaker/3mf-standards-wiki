@@ -1,10 +1,8 @@
 # filament_adhesiveness_category
 
-> Location: Filament → Filament → Basic information
+> Location: Filament → Filament → Basic information → Adhesiveness Category
 
 ---
-
-## Adhesiveness Category
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_adhesiveness_category`.  

@@ -1,10 +1,8 @@
 # wipe
 
-> Location: Printer → Extruder N → Retraction
+> Location: Printer → Extruder N → Retraction → Wipe while retracting
 
 ---
-
-## Wipe while retracting
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe[extruder_idx]`.  

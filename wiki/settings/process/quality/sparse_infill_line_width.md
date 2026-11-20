@@ -1,10 +1,8 @@
 # sparse_infill_line_width
 
-> Location: Process → Quality → Line width
+> Location: Process → Quality → Line width → Sparse Infill
 
 ---
-
-### Sparse Infill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `sparse_infill_line_width`.  

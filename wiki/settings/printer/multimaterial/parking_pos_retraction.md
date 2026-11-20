@@ -1,10 +1,8 @@
 # parking_pos_retraction
 
-> Location: Printer → Multimaterial → Single extruder multi-material parameters
+> Location: Printer → Multimaterial → Single extruder multi-material parameters → Filament parking position
 
 ---
-
-## Filament parking position
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `parking_pos_retraction`.  

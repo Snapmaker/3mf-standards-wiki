@@ -1,11 +1,9 @@
 # tree_support_branch_distance_organic
 
-> Location: Process → Support → Tree supports
+> Location: Process → Support → Tree supports → Branch Distance
 > Also in this section: `tree_support_branch_distance` (each documented on its own page).
 
 ---
-
-## Branch Distance
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_branch_distance_organic`.  

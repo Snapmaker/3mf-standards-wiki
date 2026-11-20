@@ -1,10 +1,8 @@
 # wipe_before_external_loop
 
-> Location: Process → Quality → Seam
+> Location: Process → Quality → Seam → Wipe Before External
 
 ---
-
-### Wipe Before External
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_before_external_loop`.  

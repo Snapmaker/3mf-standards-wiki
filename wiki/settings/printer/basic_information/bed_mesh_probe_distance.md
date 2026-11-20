@@ -1,10 +1,8 @@
 # bed_mesh_probe_distance
 
-> Location: Printer → Basic information → Adaptive bed mesh
+> Location: Printer → Basic information → Adaptive bed mesh → Probe point distance
 
 ---
-
-## Probe point distance
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `bed_mesh_probe_distance`.  

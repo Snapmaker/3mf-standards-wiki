@@ -55,8 +55,14 @@
 - 显示规则三分：有值 → 值；fork 有键但 def 未设默认 → `— no static default`；fork 无此键 → `—`（空串默认 → `(empty)`）。**2026-11-19 用户裁决：`wiki/settings/` 全目录页面改全英文**，标记从中文（`— 无静态默认值`/`（空）`）换为上述英文写法，全量 220+ 页已转换（含占位页模板、Status/Visibility/G-code embedded name/Also in this section 标注行、三个总览页）；inject 脚本与 SKILL.md 模板同步。
 - 默认值字面量归一化（自查补充）：`60.0f`→`60.0`、`60.`→`60`；枚举常量经 `s_keys_map_*` 静态映射翻译为用户可见串（如 `(int)Overhang_threshold_bridge`→`95%`、`btAutoBrim`→`auto_brim`）；点类型 `Vec2d(a, b)`→`a×b`；`FloatOrPercent{50., true}`→`50%`。hpp 宏注册的枚举（`fvtStandard`、`ipMonotonic` 等）无映射表，保留常量名——它即配置文件里的存储值。
 - ~~多键小节页镜像复数惯例：`[Defaults]: `key1` (80), `key2` (—)`，顺序跟随 [Variables] 行。~~ **2026-11-19 用户裁决废止**：键页元数据行（Variable/Type/Default/Range/CLI Example）只保留本键自己的值、一律单数标签，`[CLI Example]` 只用本键 kebab-case 旗标，不再捆小节兄弟键、不再带 `(same pattern...)` 尾注；兄弟键交叉引用走"本小节同时涵盖"行与各自键页。当日起全量收敛 131 页（含 `[Modes]` 双行结构坍缩 20 页、错键名块修正 9 页；`inject` 脚本同步改为恒取文件名主干键）。页内镜像的**非本键小节**（如 resonance_avoidance 页内的 Input Shaping 块、junction_deviation 交叉块）原样保留，待团队裁决。
-- **与方案的偏差**：原方案 Range = min/max/sidetext 任一存在即注入；实施收窄为 **min/max 任一存在**（仅 sidetext 的"单位行"信息量为零）。单边界显示 `≥ x` / `≤ x`。
+- **与方案的偏差**：原方案 Range = min/max/sidetext 任一存在即注入；实施收窄为 **min/max 任一存在**（仅 sidetext 的"单位行"信息量为零）。单边界显示 `≥ x` / `≤ x`。~~此收窄已废止，见下方 2026-11-20 裁决①~~
 - 校验：`check_page.sh` 新增 E7（有 [Type] 行的完整页须配 [Default(s)] 行，WARN；`--all` 聚合计数）。
+- **2026-11-20 版式裁决**（用户审核通过，`migrate --all [--fold]` 全量执行 461+450 页）：
+  1. **新增 `[Unit]` 行**（取 `sidetext`，仅存在时注入），`[Range]` 不再内嵌单位——废止上文"仅 sidetext 信息量为零"的收窄：单位同时限定 `[Default]`，且覆盖无 min/max 的键（实测新注入 258 行）；
+  2. **元数据块与说明正文之间强制空行**：此前所有行以行尾双空格硬换行连成同一段落，正文说明粘成"第 8 个分类"，无法区分（本次修复 463+ 处）；
+  3. **孤立 `## <UI 标签>` 标题废止**，UI 标签折进 Location 第 4 段（`Tab → 分组 → UI 区块 → UI 标签`）：450 完整页折叠，占位页维持三段；多小节内容页（如 line_width 的 `## Line Types`）保留内容标题；
+  4. **元数据 8 类定案**：Mode / Variable / Type / Default / Unit / Range / Aliases / CLI Example，不精简（Variable 虽与 H1 键名同值，保留其"可用于自定义 G-code 占位符"的链接语义）。
+  - 配套：`extract` 增捕 `label` 字段（851 键中 677 有，供后续 Location 第 4 段对账）；`audit` 增 unit_missing / unit_drift / range_unit_leftover 三项（迁移后全部归零）；`check_page.sh` 增 E8（完整页 Location 须 4 段 FAIL，占位/说明页 ≥3 段 WARN——现存 3 处 WARN 为 plate 目录占位页既有段数缺失，待补全时修）；镜像小节（Variable 键≠页主干，如 resonance_avoidance 页内 Input Shaping 块）迁移时原样保留，仅手工剥除 4 处 machine_max_jerk_* 镜像块的 Range 残留单位。
 
 ## 4. fork 缺键清单（25 个，页面显示 `—` 的全部来源）
 
@@ -98,7 +104,10 @@ python .claude/skills/new-setting-key-page/scripts/print_config_tools.py extract
 # 注入（单页 / 整组 / 全量；--dry-run 预览；幂等）
 python .claude/skills/new-setting-key-page/scripts/print_config_tools.py inject --group wiki/settings/filament/cooling
 
-# 对账（值漂移 / Choice 缺 Options / 页键在 JSON 缺失 / 缺 [Default] 行）
+# 版式迁移（既有键页：Unit 拆分 / 正文空行分隔；--fold 折 UI 标签进 Location 第 4 段；幂等）
+python .claude/skills/new-setting-key-page/scripts/print_config_tools.py migrate --all [--fold] [--dry-run]
+
+# 对账（值漂移 / Unit 缺失与漂移 / Range 残留单位 / Choice 缺 Options / 页键在 JSON 缺失 / 缺 [Default] 行）
 python .claude/skills/new-setting-key-page/scripts/print_config_tools.py audit
 ```
 

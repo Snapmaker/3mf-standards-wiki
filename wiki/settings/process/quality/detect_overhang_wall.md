@@ -1,10 +1,8 @@
 # detect_overhang_wall
 
-> Location: Process → Quality → Overhangs
+> Location: Process → Quality → Overhangs → Detect overhang wall
 
 ---
-
-## Detect overhang wall
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `detect_overhang_wall`.  

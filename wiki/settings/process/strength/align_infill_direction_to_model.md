@@ -1,10 +1,8 @@
 # align_infill_direction_to_model
 
-> Location: Process → Strength → Advanced
+> Location: Process → Strength → Advanced → Align directions to model
 
 ---
-
-## Align directions to model
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `align_infill_direction_to_model`.  

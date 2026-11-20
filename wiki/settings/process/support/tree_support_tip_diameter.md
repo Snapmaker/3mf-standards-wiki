@@ -1,10 +1,8 @@
 # tree_support_tip_diameter
 
-> Location: Process → Support → Tree supports
+> Location: Process → Support → Tree supports → Tip Diameter
 
 ---
-
-## Tip Diameter
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_tip_diameter`.  

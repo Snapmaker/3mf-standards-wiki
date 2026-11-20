@@ -1,10 +1,8 @@
 # machine_end_gcode
 
-> Location: Printer → Machine G-code → Machine end G-code
+> Location: Printer → Machine G-code → Machine end G-code → Machine end G-code
 
 ---
-
-## Machine end G-code
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_end_gcode`.  

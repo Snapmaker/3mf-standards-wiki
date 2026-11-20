@@ -1,10 +1,8 @@
 # precise_z_height
 
-> Location: Process → Quality → Precision
+> Location: Process → Quality → Precision → Precise Z Height
 
 ---
-
-## Precise Z Height
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `precise_z_height`.  

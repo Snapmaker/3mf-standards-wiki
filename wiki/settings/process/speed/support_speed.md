@@ -1,10 +1,8 @@
 # support_speed
 
-> Location: Process → Speed → Other layers speed
+> Location: Process → Speed → Other layers speed → Support
 
 ---
-
-## Support
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_speed`.  

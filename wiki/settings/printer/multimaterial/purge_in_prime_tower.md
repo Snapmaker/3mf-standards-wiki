@@ -1,10 +1,8 @@
 # purge_in_prime_tower
 
-> Location: Printer → Multimaterial → Wipe tower
+> Location: Printer → Multimaterial → Wipe tower → Purge in prime tower
 
 ---
-
-## Purge in prime tower
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `purge_in_prime_tower`.  

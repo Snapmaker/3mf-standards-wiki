@@ -1,11 +1,9 @@
 # internal_bridge_flow
 
-> Location: Process → Quality → Bridging
+> Location: Process → Quality → Bridging → Flow ratio
 > Also in this section: `bridge_flow` (each documented on its own page).
 
 ---
-
-## Flow ratio
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `internal_bridge_flow`.  

@@ -1,10 +1,8 @@
 # travel_acceleration
 
-> Location: Process → Speed → Acceleration
+> Location: Process → Speed → Acceleration → Travel
 
 ---
-
-## Travel
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `travel_acceleration`.  

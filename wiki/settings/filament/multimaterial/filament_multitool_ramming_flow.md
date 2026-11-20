@@ -1,11 +1,9 @@
 # filament_multitool_ramming_flow
 
-> Location: Filament → Multimaterial → Tool change parameters with multi extruder MM printers
+> Location: Filament → Multimaterial → Tool change parameters with multi extruder MM printers → Multi-tool ramming flow
 > Visibility (preliminary, pending review): Shown after filament_multitool_ramming is enabled
 
 ---
-
-#### Multi-tool ramming flow
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_multitool_ramming_flow`.  

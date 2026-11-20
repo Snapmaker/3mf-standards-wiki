@@ -1,10 +1,8 @@
 # skirt_start_angle
 
-> Location: Process → Others → Skirt
+> Location: Process → Others → Skirt → Start point
 
 ---
-
-## Start point
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `skirt_start_angle`.  

@@ -1,11 +1,9 @@
 # chamber_temperature
 
-> Location: Filament → Filament → Print chamber temperature
+> Location: Filament → Filament → Print chamber temperature → Print Chamber Temperature
 > Also in this section: `activate_chamber_temp_control` (each documented on its own page).
 
 ---
-
-## Print Chamber Temperature
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `chamber_temperature`.  

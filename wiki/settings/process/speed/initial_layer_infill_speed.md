@@ -1,10 +1,8 @@
 # initial_layer_infill_speed
 
-> Location: Process → Speed → Initial layer speed
+> Location: Process → Speed → Initial layer speed → Initial layer infill
 
 ---
-
-## Initial layer infill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `initial_layer_infill_speed`.  

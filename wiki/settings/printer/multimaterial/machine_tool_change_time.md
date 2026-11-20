@@ -1,10 +1,8 @@
 # machine_tool_change_time
 
-> Location: Printer → Multimaterial → Advanced
+> Location: Printer → Multimaterial → Advanced → Tool change time
 
 ---
-
-## Tool change time
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_tool_change_time`.  

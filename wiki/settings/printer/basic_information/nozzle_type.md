@@ -1,10 +1,8 @@
 # nozzle_type
 
-> Location: Printer → Basic information → Accessory
+> Location: Printer → Basic information → Accessory → Nozzle type
 
 ---
-
-## Nozzle type
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `nozzle_type[extruder_idx]`.  

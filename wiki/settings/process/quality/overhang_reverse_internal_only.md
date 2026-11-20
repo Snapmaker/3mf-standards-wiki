@@ -1,10 +1,8 @@
 # overhang_reverse_internal_only
 
-> Location: Process → Quality → Overhangs
+> Location: Process → Quality → Overhangs → Reverse internal only
 
 ---
-
-### Reverse internal only
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `overhang_reverse_internal_only`.  

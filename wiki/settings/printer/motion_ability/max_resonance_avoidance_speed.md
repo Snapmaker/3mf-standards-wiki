@@ -1,10 +1,8 @@
 # max_resonance_avoidance_speed
 
-> Location: Printer → Motion ability → Resonance Avoidance
+> Location: Printer → Motion ability → Resonance Avoidance → Resonance Compensation
 
 ---
-
-## Resonance Compensation
 
 Resonance Compensations are the methods used to reduce the vibrations of the printer during high-speed movements, which can cause ringing on the surface of the model.
 

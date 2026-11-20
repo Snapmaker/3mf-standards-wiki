@@ -1,10 +1,8 @@
 # skirt_height
 
-> Location: Process → Others → Skirt
+> Location: Process → Others → Skirt → Height
 
 ---
-
-## Height
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `skirt_height`.  

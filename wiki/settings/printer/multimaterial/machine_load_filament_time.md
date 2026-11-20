@@ -1,10 +1,8 @@
 # machine_load_filament_time
 
-> Location: Printer → Multimaterial → Advanced
+> Location: Printer → Multimaterial → Advanced → Filament load time
 
 ---
-
-## Filament load time
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `machine_load_filament_time`.  

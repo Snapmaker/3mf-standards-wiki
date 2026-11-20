@@ -1,10 +1,8 @@
 # tree_support_angle_slow
 
-> Location: Process → Support → Tree supports
+> Location: Process → Support → Tree supports → Preferred Branch Angle
 
 ---
-
-### Preferred Branch Angle
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_angle_slow`.  

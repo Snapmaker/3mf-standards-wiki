@@ -1,10 +1,8 @@
 # prime_tower_enable_framework
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Internal ribs
 
 ---
-
-## Internal ribs
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `prime_tower_enable_framework`.  

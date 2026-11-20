@@ -1,10 +1,8 @@
 # extra_perimeters_on_overhangs
 
-> Location: Process → Quality → Overhangs
+> Location: Process → Quality → Overhangs → Extra perimeters on overhangs
 
 ---
-
-## Extra perimeters on overhangs
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `extra_perimeters_on_overhangs`.  

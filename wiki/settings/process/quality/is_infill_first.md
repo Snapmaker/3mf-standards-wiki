@@ -1,10 +1,8 @@
 # is_infill_first
 
-> Location: Process → Quality → Walls and surfaces
+> Location: Process → Quality → Walls and surfaces → Print infill first
 
 ---
-
-### Print infill first
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `is_infill_first`.  

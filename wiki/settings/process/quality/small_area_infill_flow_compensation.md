@@ -1,11 +1,9 @@
 # small_area_infill_flow_compensation
 
-> Location: Process → Quality → Walls and surfaces
+> Location: Process → Quality → Walls and surfaces → Small area flow compensation
 > Also in this section: `small_area_infill_flow_compensation_model` (each documented on its own page).
 
 ---
-
-## Small area flow compensation
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `small_area_infill_flow_compensation`.  

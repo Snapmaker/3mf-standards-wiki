@@ -1,10 +1,8 @@
 # high_current_on_filament_swap
 
-> Location: Printer → Multimaterial → Single extruder multi-material parameters
+> Location: Printer → Multimaterial → Single extruder multi-material parameters → High extruder current on filament swap
 
 ---
-
-## High extruder current on filament swap
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `high_current_on_filament_swap`.  

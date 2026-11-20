@@ -1,10 +1,8 @@
 # extruder_offset
 
-> Location: Printer → Extruder N → Position
+> Location: Printer → Extruder N → Position → Extruder offset Position
 
 ---
-
-## Extruder offset Position
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `extruder_offset[extruder_idx]`.  

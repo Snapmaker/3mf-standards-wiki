@@ -1,11 +1,9 @@
 # wipe_tower_cone_angle
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Stabilization cone apex angle
 > Visibility (preliminary, pending review): Shown only on non-BBL machines
 
 ---
-
-#### Stabilization cone apex angle
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wipe_tower_cone_angle`.  

@@ -1,10 +1,8 @@
 # ironing_speed
 
-> Location: Process → Speed → Other layers speed
+> Location: Process → Speed → Other layers speed → Ironing speed
 
 ---
-
-## Ironing speed
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `ironing_speed`.  

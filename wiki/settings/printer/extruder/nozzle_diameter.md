@@ -1,10 +1,8 @@
 # nozzle_diameter
 
-> Location: Printer → Extruder N → Size
+> Location: Printer → Extruder N → Size → Nozzle diameter
 
 ---
-
-## Nozzle diameter
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `nozzle_diameter[extruder_idx]`.  

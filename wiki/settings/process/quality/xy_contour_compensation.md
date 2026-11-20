@@ -1,11 +1,9 @@
 # xy_contour_compensation
 
-> Location: Process → Quality → Precision
+> Location: Process → Quality → Precision → X-Y Compensation
 > Also in this section: `xy_hole_compensation` (each documented on its own page).
 
 ---
-
-## X-Y Compensation
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `xy_contour_compensation`.  

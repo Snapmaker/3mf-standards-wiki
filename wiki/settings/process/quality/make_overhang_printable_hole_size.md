@@ -1,10 +1,8 @@
 # make_overhang_printable_hole_size
 
-> Location: Process → Quality → Overhangs
+> Location: Process → Quality → Overhangs → Hole area
 
 ---
-
-### Hole area
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `make_overhang_printable_hole_size`.  

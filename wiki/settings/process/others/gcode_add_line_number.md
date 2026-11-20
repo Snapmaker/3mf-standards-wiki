@@ -1,10 +1,8 @@
 # gcode_add_line_number
 
-> Location: Process → Others → G-code output
+> Location: Process → Others → G-code output → Add line number
 
 ---
-
-## Add line number
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `gcode_add_line_number`.  

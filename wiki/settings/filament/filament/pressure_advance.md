@@ -1,12 +1,10 @@
 # pressure_advance
 
-> Location: Filament → Filament → Flow ratio and Pressure Advance
+> Location: Filament → Filament → Flow ratio and Pressure Advance → Pressure Advance
 > Visibility (preliminary, pending review): Shown after Enable pressure advance is checked
 > Also in this section: `enable_pressure_advance` (each documented on its own page).
 
 ---
-
-## Pressure Advance
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `pressure_advance`.  

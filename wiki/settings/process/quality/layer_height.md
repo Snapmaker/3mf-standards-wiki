@@ -1,11 +1,9 @@
 # layer_height
 
-> Location: Process → Quality → Layer height
+> Location: Process → Quality → Layer height → Layer Height
 > Also in this section: `initial_layer_print_height` (each documented on its own page).
 
 ---
-
-# Layer Height
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `layer_height`.  

@@ -1,10 +1,8 @@
 # close_fan_the_first_x_layers
 
-> Location: Filament → Cooling → Cooling for specific layer
+> Location: Filament → Cooling → Cooling for specific layer → No cooling for the first
 
 ---
-
-### No cooling for the first
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `close_fan_the_first_x_layers`.  

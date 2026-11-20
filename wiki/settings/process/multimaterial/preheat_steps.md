@@ -1,10 +1,8 @@
 # preheat_steps
 
-> Location: Process → Multimaterial → Ooze prevention
+> Location: Process → Multimaterial → Ooze prevention → Preheat steps
 
 ---
-
-## Preheat steps
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `preheat_steps`.  

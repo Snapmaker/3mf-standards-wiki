@@ -1,10 +1,8 @@
 # extruder_clearance_height_to_lid
 
-> Location: Printer → Basic information → Extruder Clearance
+> Location: Printer → Basic information → Extruder Clearance → Height to lid
 
 ---
-
-## Height to lid
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `extruder_clearance_height_to_lid`.  

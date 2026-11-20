@@ -1,10 +1,8 @@
 # counterbore_hole_bridging
 
-> Location: Process → Quality → Bridging
+> Location: Process → Quality → Bridging → Bridge Counterbore hole
 
 ---
-
-## Bridge Counterbore hole
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `counterbore_hole_bridging`.  

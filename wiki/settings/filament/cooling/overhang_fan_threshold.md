@@ -1,11 +1,9 @@
 # overhang_fan_threshold
 
-> Location: Filament → Cooling → Part cooling fan
+> Location: Filament → Cooling → Part cooling fan → Overhang cooling activation threshold
 > Visibility (preliminary, pending review): Shown after enable_overhang_bridge_fan is enabled
 
 ---
-
-### Overhang cooling activation threshold
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `overhang_fan_threshold`.  

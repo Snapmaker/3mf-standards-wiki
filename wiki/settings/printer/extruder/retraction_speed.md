@@ -1,10 +1,8 @@
 # retraction_speed
 
-> Location: Printer → Extruder N → Retraction
+> Location: Printer → Extruder N → Retraction → Retraction speed
 
 ---
-
-## Retraction speed
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `retraction_speed[extruder_idx]`.  

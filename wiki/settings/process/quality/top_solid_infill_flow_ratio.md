@@ -1,11 +1,9 @@
 # top_solid_infill_flow_ratio
 
-> Location: Process → Quality → Walls and surfaces
+> Location: Process → Quality → Walls and surfaces → Surface flow ratio
 > Also in this section: `print_flow_ratio`, `bottom_solid_infill_flow_ratio` (each documented on its own page).
 
 ---
-
-## Surface flow ratio
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `top_solid_infill_flow_ratio`.  

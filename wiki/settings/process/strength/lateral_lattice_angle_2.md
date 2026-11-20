@@ -1,11 +1,9 @@
 # lateral_lattice_angle_2
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Lateral Lattice
 > Also in this section: `lateral_lattice_angle_1` (each documented on its own page).
 
 ---
-
-## Lateral Lattice
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `lateral_lattice_angle_2`.  

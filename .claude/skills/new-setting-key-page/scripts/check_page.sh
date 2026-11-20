@@ -15,6 +15,8 @@
 #   E5 一级标题 = 文件名主干（仅对 wiki/settings 页面强制）
 #   E6 页内相对 .md 链接目标存在（AGENTS.md 预留目录降级为 WARN）
 #   E7 有 [Type] 行的完整页须配 [Default(s)] 行（元数据注入；FAIL；--all 模式聚合计数）
+#   E8 Location 段数（2026-11-20 版式）：完整页须 4 段 Tab→分组→UI区块→UI标签（FAIL）；
+#      占位页/说明页 ≥3 段（不足 WARN，待补全时修）
 
 set -u
 
@@ -100,10 +102,10 @@ check_page() {
   else say_pass; fi
 
   # E3 Location 行 / E5 标题（读前 5 行，兼容 CRLF）
-  local l1= l= found_loc=0
+  local l1= l= found_loc=0 locline=
   { read -r l1 || true; l1=${l1%$'\r'}
     for _ in 2 3 4 5; do read -r l || true; l=${l%$'\r'}
-      [[ $l == '>'\ Location:* ]] && found_loc=1
+      [[ $l == '>'\ Location:* ]] && { found_loc=1; locline=$l; }
     done
   } < "$p"
   if (( in_setting )); then
@@ -135,6 +137,19 @@ check_page() {
     if (( AGG )); then E7_PAGES=$((E7_PAGES+1)); FAIL_PAGES=$((FAIL_PAGES+1))
     else say_fail "$p" "E7 有 [Type] 行但缺 [Default(s)] 行（可用 print_config_tools.py inject 补）"; fi
   else say_pass; fi
+
+  # E8 Location 段数（完整页 4 段：Tab→分组→UI区块→UI标签；占位/说明页 ≥3 段）
+  if (( in_setting && found_loc )); then
+    local na
+    na=$(awk -F'→' '{print NF-1}' <<<"$locline")
+    if grep -q '^\[Type\]' "$p" 2>/dev/null && ! grep -q '^> Status:' "$p" 2>/dev/null; then
+      if (( na < 3 )); then say_fail "$p" "E8 完整页 Location 缺第 4 段(UI 标签)，期望 4 段: $locline"
+      else say_pass; fi
+    else
+      if (( na < 2 )); then say_warn "$p" "E8 Location 段数不足(期望 ≥3 段): $locline"
+      else say_pass; fi
+    fi
+  fi
 }
 
 # ---- 入口 -------------------------------------------------------------

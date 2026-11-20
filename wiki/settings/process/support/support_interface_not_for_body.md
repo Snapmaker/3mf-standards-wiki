@@ -1,10 +1,8 @@
 # support_interface_not_for_body
 
-> Location: Process → Support → Support filament
+> Location: Process → Support → Support filament → Avoid interface filament for base
 
 ---
-
-### Avoid interface filament for base
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_interface_not_for_body`.  

@@ -1,10 +1,8 @@
 # adaptive_bed_mesh_margin
 
-> Location: Printer → Basic information → Adaptive bed mesh
+> Location: Printer → Basic information → Adaptive bed mesh → Mesh margin
 
 ---
-
-## Mesh margin
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `adaptive_bed_mesh_margin`.  

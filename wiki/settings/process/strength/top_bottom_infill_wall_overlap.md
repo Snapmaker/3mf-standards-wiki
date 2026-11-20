@@ -1,10 +1,8 @@
 # top_bottom_infill_wall_overlap
 
-> Location: Process → Strength → Top/bottom shells
+> Location: Process → Strength → Top/bottom shells → Infill/Wall Overlap
 
 ---
-
-## Infill/Wall Overlap
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `top_bottom_infill_wall_overlap`.  

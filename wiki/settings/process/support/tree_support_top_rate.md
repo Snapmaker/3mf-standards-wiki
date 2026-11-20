@@ -1,10 +1,8 @@
 # tree_support_top_rate
 
-> Location: Process → Support → Tree supports
+> Location: Process → Support → Tree supports → Branch Density
 
 ---
-
-## Branch Density
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_top_rate`.  

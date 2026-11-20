@@ -1,10 +1,8 @@
 # support_threshold_angle
 
-> Location: Process → Support → Support
+> Location: Process → Support → Support → Threshold angle
 
 ---
-
-## Threshold angle
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_threshold_angle`.  

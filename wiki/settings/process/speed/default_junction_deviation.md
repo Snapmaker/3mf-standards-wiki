@@ -1,11 +1,9 @@
 # default_junction_deviation
 
-> Location: Process → Speed → Jerk(XY)
+> Location: Process → Speed → Jerk(XY) → Junction Deviation
 > Visibility (preliminary, pending review): Shown only on Marlin-class firmware (Jerk limitation group)
 
 ---
-
-### Junction Deviation
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `default_junction_deviation`.  

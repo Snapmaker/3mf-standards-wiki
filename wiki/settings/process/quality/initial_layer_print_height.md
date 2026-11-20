@@ -1,12 +1,10 @@
 # initial_layer_print_height
 
-> Location: Process → Quality → Layer height
+> Location: Process → Quality → Layer height → Layer Height
 > Also in this section: `layer_height` (each documented on its own page).
 > G-code embedded name: `first_layer_height` (the gcode comment section writes the old name while the value comes from this key; the placeholders `first_layer_height` and `initial_layer_print_height` coexist).
 
 ---
-
-# Layer Height
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `initial_layer_print_height`.  

@@ -1,10 +1,8 @@
 # adaptive_pressure_advance_overhangs
 
-> Location: Filament → Filament → Flow ratio and Pressure Advance
+> Location: Filament → Filament → Flow ratio and Pressure Advance → Enable adaptive pressure advance for overhangs (beta)
 
 ---
-
-#### Enable adaptive pressure advance for overhangs (beta)
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `adaptive_pressure_advance_overhangs`.  

@@ -42,17 +42,16 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 ```markdown
 # <键名>
 
-> Location: <Tab> → <分组> → <UI 区块名>
+> Location: <Tab> → <分组> → <UI 区块名> → <UI 标签>
 
 ---
 
-## <UI 标签>
-
-[Mode](../../../general_settings/option_mode.md): `<Simple|Advanced|Hidden>`.  
+[Mode](../../../general_settings/option_mode.md): `<Simple|Advanced|Develop>`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `<键名>`.  
 [Type](../../../general_settings/option_type.md#锚点): `<类型>`.  
 [Default](../../../general_settings/option_type.md#default-value): `<默认值>`.  
-[Range](../../../general_settings/option_type.md#range): `<min–max> <单位>`.  
+[Unit](../../../general_settings/option_type.md#unit): `<单位>`.  
+[Range](../../../general_settings/option_type.md#range): `<min–max>`.  
 [Aliases](../../../general_settings/option_type.md#aliases): `<历史键名>`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--kebab-case-键名=<示例值>`.  
 
@@ -62,7 +61,11 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 > <可选：注意事项，如与 Klipper 等固件的交互>
 ```
 
-元数据三行（Default/Range/Aliases）**由脚本生成，不要手写**：Default 必有（fork 无此键显示 `—`，有键无静态默认显示 `— no static default`，空串默认显示 `(empty)`）；Range 仅 min/max 存在时注入；Aliases 仅存在时注入（fork 仅 `inner_wall_speed` 一处）。多键小节页同样**只写本键自己的单数行**（`[Variable]`/`[Default]`/`[Range]` 值均取本键），不捆绑同小节其他键，`[CLI Example]` 也只用本键的 kebab-case 旗标——兄弟键靠 `> Also in this section:` 行和各自键页交叉引用（2026-11-19 全量收敛，决议记录见 docs/09 §3）。
+**版式铁律（2026-11-20 裁决，533 页已全量迁移）**：
+- **不写孤立的 `## <UI 标签>` 标题**——UI 标签是 Location 第 4 段（`Tab → 分组 → UI 区块 → UI 标签`）；多小节内容页（如 line_width 的 `## Line Types`）保留自己的内容标题，标题级别从 H2 起。
+- **说明正文与元数据块之间必须空一行**——元数据行以行尾双空格硬换行连成一块，没有空行正文会粘成"第 8 个分类"。
+- 元数据四行（Default/Unit/Range/Aliases）**由脚本生成，不要手写**：Default 必有（fork 无此键显示 `—`，有键无静态默认显示 `— no static default`，空串默认显示 `(empty)`）；Unit 仅源码 `sidetext` 存在时注入（复合单位原样，如 `mm or %`）；Range 仅 min/max 存在时注入且**不带单位**；Aliases 仅存在时注入（fork 仅 `inner_wall_speed` 一处）。
+- 多键小节页同样**只写本键自己的单数行**（`[Variable]`/`[Default]`/`[Range]` 值均取本键），不捆绑同小节其他键，`[CLI Example]` 也只用本键的 kebab-case 旗标——兄弟键靠 `> Also in this section:` 行和各自键页交叉引用（2026-11-19 全量收敛，决议记录见 docs/09 §3）。既有键页改版式用 `migrate` 子命令，不要手改。
 
 **模板 B —— 占位页**（全英文，2026-11-19 起）：
 
@@ -110,7 +113,7 @@ python .claude/skills/new-setting-key-page/scripts/print_config_tools.py inject 
 bash .claude/skills/new-setting-key-page/scripts/check_page.sh wiki/settings/<tab>/<分组>/<键名>.md
 ```
 
-检查项：E1 文件名 snake_case（英文小写）｜E2 文件名 wiki 内全局唯一｜E3 Location 行存在｜E4 非孤儿页（已被总览或其他页面链接）｜E5 标题 = 文件名主干｜E6 页内相对链接可达（预留目录降级 WARN）｜E7 有 [Type] 行的完整页须配 [Default(s)] 行（FAIL）。
+检查项：E1 文件名 snake_case（英文小写）｜E2 文件名 wiki 内全局唯一｜E3 Location 行存在｜E4 非孤儿页（已被总览或其他页面链接）｜E5 标题 = 文件名主干｜E6 页内相对链接可达（预留目录降级 WARN）｜E7 有 [Type] 行的完整页须配 [Default(s)] 行（FAIL）｜E8 Location 段数：完整页 4 段（含 UI 标签，FAIL）、占位/说明页 ≥3 段（WARN）。
 
 批量修订后跑 `--all` 审计全部键页。
 

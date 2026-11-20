@@ -1,12 +1,10 @@
 # textured_plate_temp
 
-> Location: Filament → Filament → Bed temperature
+> Location: Filament → Filament → Bed temperature → Bed
 > Visibility (preliminary, pending review): Shown only when the printer enables the corresponding bed type
 > Also in this section: `supertack_plate_temp_initial_layer`, `supertack_plate_temp`, `cool_plate_temp_initial_layer`, `cool_plate_temp`, `textured_cool_plate_temp_initial_layer`, `textured_cool_plate_temp`, `eng_plate_temp_initial_layer`, `eng_plate_temp`, `hot_plate_temp_initial_layer`, `hot_plate_temp`, `textured_plate_temp_initial_layer` (each documented on its own page).
 
 ---
-
-## Bed
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `textured_plate_temp`.  

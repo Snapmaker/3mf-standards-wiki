@@ -1,10 +1,8 @@
 # brim_width
 
-> Location: Process → Others → Brim
+> Location: Process → Others → Brim → Width
 
 ---
-
-## Width
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `brim_width`.  

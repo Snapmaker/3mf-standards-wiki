@@ -1,10 +1,8 @@
 # slicing_mode
 
-> Location: Process → Others → Special mode
+> Location: Process → Others → Special mode → Slicing Mode
 
 ---
-
-## Slicing Mode
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `slicing_mode`.  

@@ -1,11 +1,9 @@
 # support_bottom_z_distance
 
-> Location: Process → Support → Advanced
+> Location: Process → Support → Advanced → Z distance
 > Also in this section: `support_top_z_distance` (each documented on its own page).
 
 ---
-
-## Z distance
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_bottom_z_distance`.  

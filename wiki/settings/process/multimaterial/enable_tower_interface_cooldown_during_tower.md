@@ -1,11 +1,9 @@
 # enable_tower_interface_cooldown_during_tower
 
-> Location: Process → Multimaterial → Prime tower
+> Location: Process → Multimaterial → Prime tower → Cool down from interface boost during prime tower
 > Visibility(preliminary, pending review): Shown only on Snapmaker U1 machines
 
 ---
-
-### Cool down from interface boost during prime tower
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_tower_interface_cooldown_during_tower`.  

@@ -1,10 +1,8 @@
 # reduce_fan_stop_start_freq
 
-> Location: Filament → Cooling → Part cooling fan
+> Location: Filament → Cooling → Part cooling fan → Keep fan always on
 
 ---
-
-### Keep fan always on
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `reduce_fan_stop_start_freq`.  

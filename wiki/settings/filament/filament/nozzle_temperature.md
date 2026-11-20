@@ -1,11 +1,9 @@
 # nozzle_temperature
 
-> Location: Filament → Filament → Print temperature
+> Location: Filament → Filament → Print temperature → Nozzle
 > Also in this section: `nozzle_temperature_initial_layer` (each documented on its own page).
 
 ---
-
-## Nozzle
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `nozzle_temperature`.  

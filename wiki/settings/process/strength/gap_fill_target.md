@@ -1,10 +1,8 @@
 # gap_fill_target
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Apply gap fill
 
 ---
-
-## Apply gap fill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `gap_fill_target`.  

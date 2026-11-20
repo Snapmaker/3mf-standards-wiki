@@ -1,10 +1,8 @@
 # activate_air_filtration
 
-> Location: Filament → Cooling → Exhaust fan
+> Location: Filament → Cooling → Exhaust fan → Activate air filtration
 
 ---
-
-#### Activate air filtration
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `activate_air_filtration`.  

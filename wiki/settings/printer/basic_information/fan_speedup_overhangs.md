@@ -1,10 +1,8 @@
 # fan_speedup_overhangs
 
-> Location: Printer → Basic information → Cooling Fan
+> Location: Printer → Basic information → Cooling Fan → Fan speed-up time
 
 ---
-
-## Fan speed-up time
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `fan_speedup_overhangs`.  

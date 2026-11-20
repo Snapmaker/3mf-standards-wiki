@@ -1,10 +1,8 @@
 # gcode_comments
 
-> Location: Process → Others → G-code output
+> Location: Process → Others → G-code output → Verbose G-code
 
 ---
-
-## Verbose G-code
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `gcode_comments`.  

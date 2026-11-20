@@ -1,10 +1,8 @@
 # support_object_first_layer_gap
 
-> Location: Process → Support → Advanced
+> Location: Process → Support → Advanced → Support/object first layer gap
 
 ---
-
-## Support/object first layer gap
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_object_first_layer_gap`.  

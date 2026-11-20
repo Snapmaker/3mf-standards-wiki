@@ -1,10 +1,8 @@
 # printer_structure
 
-> Location: Printer → Basic information → Advanced
+> Location: Printer → Basic information → Advanced → Printer structure
 
 ---
-
-## Printer structure
 
 [Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `printer_structure`.  

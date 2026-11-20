@@ -1,11 +1,9 @@
 # timelapse_type
 
-> Location: Process → Others → Special mode
+> Location: Process → Others → Special mode → Timelapse
 > Visibility (preliminary, pending review): Shown only on BBL machines
 
 ---
-
-## Timelapse
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `timelapse_type`.  

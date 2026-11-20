@@ -1,10 +1,8 @@
 # machine_max_jerk_y
 
-> Location: Printer → Motion ability → Jerk limitation
+> Location: Printer → Motion ability → Jerk limitation → Jerk limitation
 
 ---
-
-## Jerk limitation
 
 Safeguard maximum jerks for all axes.
 

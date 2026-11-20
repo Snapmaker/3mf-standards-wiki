@@ -1,10 +1,8 @@
 # change_extrusion_role_gcode
 
-> Location: Printer → Machine G-code → Change extrusion role G-code
+> Location: Printer → Machine G-code → Change extrusion role G-code → Change extrusion role G-code
 
 ---
-
-## Change extrusion role G-code
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `change_extrusion_role_gcode`.  

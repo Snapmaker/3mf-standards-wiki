@@ -1,10 +1,8 @@
 # infill_jerk
 
-> Location: Process → Speed → Jerk(XY)
+> Location: Process → Speed → Jerk(XY) → Infill
 
 ---
-
-### Infill
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `infill_jerk`.  

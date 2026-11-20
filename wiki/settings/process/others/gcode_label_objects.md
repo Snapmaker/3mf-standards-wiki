@@ -1,10 +1,8 @@
 # gcode_label_objects
 
-> Location: Process → Others → G-code output
+> Location: Process → Others → G-code output → Label Objects
 
 ---
-
-## Label Objects
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `gcode_label_objects`.  

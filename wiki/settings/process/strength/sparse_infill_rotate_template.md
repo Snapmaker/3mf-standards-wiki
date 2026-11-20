@@ -1,11 +1,9 @@
 # sparse_infill_rotate_template
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Infill rotation template metalanguage
 > Also in this section: `solid_infill_rotate_template` (each documented on its own page).
 
 ---
-
-# Infill rotation template metalanguage
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `sparse_infill_rotate_template`.  

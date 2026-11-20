@@ -1,10 +1,8 @@
 # post_process
 
-> Location: Process → Others → Post-processing Scripts
+> Location: Process → Others → Post-processing Scripts → Post-Processing Scripts
 
 ---
-
-# Post-Processing Scripts
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `post_process`.  

@@ -1,10 +1,8 @@
 # best_object_pos
 
-> Location: Printer → Basic information → Printable space
+> Location: Printer → Basic information → Printable space → Best object position
 
 ---
-
-## Best object position
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `best_object_pos`.  

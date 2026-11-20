@@ -1,10 +1,8 @@
 # tree_support_auto_brim
 
-> Location: Process → Support → Tree supports
+> Location: Process → Support → Tree supports → Auto brim width
 
 ---
-
-## Auto brim width
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_auto_brim`.  

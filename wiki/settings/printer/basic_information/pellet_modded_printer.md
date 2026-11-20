@@ -1,10 +1,8 @@
 # pellet_modded_printer
 
-> Location: Printer → Basic information → Advanced
+> Location: Printer → Basic information → Advanced → Pellet Modded Printer
 
 ---
-
-## Pellet Modded Printer
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `pellet_modded_printer`.  

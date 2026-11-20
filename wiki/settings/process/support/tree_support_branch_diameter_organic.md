@@ -1,11 +1,9 @@
 # tree_support_branch_diameter_organic
 
-> Location: Process → Support → Tree supports
+> Location: Process → Support → Tree supports → Branch Diameter
 > Also in this section: `tree_support_branch_diameter` (each documented on its own page).
 
 ---
-
-## Branch Diameter
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `tree_support_branch_diameter_organic`.  

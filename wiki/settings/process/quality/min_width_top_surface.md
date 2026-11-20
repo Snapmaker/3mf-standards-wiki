@@ -1,10 +1,8 @@
 # min_width_top_surface
 
-> Location: Process → Quality → Walls and surfaces
+> Location: Process → Quality → Walls and surfaces → Threshold
 
 ---
-
-### Threshold
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `min_width_top_surface`.  

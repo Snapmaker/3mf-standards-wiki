@@ -1,10 +1,8 @@
 # skirt_loops
 
-> Location: Process → Others → Skirt
+> Location: Process → Others → Skirt → Loops
 
 ---
-
-## Loops
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `skirt_loops`.  

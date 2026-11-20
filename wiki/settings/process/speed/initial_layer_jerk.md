@@ -1,11 +1,9 @@
 # initial_layer_jerk
 
-> Location: Process → Speed → Jerk(XY)
+> Location: Process → Speed → Jerk(XY) → Initial layer
 > Also in this section: `graphic_effect_plate_temp_initial_layer` (each documented on its own page).
 
 ---
-
-### Initial layer
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `initial_layer_jerk`.  

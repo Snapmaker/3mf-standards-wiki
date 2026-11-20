@@ -1,10 +1,8 @@
 # max_layer_height
 
-> Location: Printer → Extruder N → Layer height limits
+> Location: Printer → Extruder N → Layer height limits → Extruder Layer Height Limits
 
 ---
-
-## Extruder Layer Height Limits
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `max_layer_height[extruder_idx]`.  

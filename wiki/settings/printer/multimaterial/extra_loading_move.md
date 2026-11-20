@@ -1,10 +1,8 @@
 # extra_loading_move
 
-> Location: Printer → Multimaterial → Single extruder multi-material parameters
+> Location: Printer → Multimaterial → Single extruder multi-material parameters → Extra loading distance
 
 ---
-
-## Extra loading distance
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `extra_loading_move`.  

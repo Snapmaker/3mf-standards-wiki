@@ -1,10 +1,8 @@
 # spiral_starting_flow_ratio
 
-> Location: Process → Others → Special mode
+> Location: Process → Others → Special mode → Spiral starting flow ratio
 
 ---
-
-### Spiral starting flow ratio
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `spiral_starting_flow_ratio`.  

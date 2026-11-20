@@ -1,11 +1,9 @@
 # overhang_2_4_speed
 
-> Location: Process → Speed → Overhang speed
+> Location: Process → Speed → Overhang speed → Speed
 > Also in this section: `overhang_1_4_speed`, `overhang_3_4_speed`, `overhang_4_4_speed` (each documented on its own page).
 
 ---
-
-### Speed
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `overhang_2_4_speed`.  

@@ -1,11 +1,9 @@
 # fan_min_speed
 
-> Location: Filament → Cooling → Part cooling fan
+> Location: Filament → Cooling → Part cooling fan → Material Part Cooling Fan
 > Also in this section: `fan_cooling_layer_time`, `fan_max_speed`, `slow_down_layer_time` (each documented on its own page).
 
 ---
-
-## Material Part Cooling Fan
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `fan_min_speed`.  

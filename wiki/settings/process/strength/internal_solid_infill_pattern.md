@@ -1,10 +1,8 @@
 # internal_solid_infill_pattern
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Internal Solid Infill
 
 ---
-
-## Internal Solid Infill
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `internal_solid_infill_pattern`.  

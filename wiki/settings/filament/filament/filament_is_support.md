@@ -1,10 +1,8 @@
 # filament_is_support
 
-> Location: Filament → Filament → Basic information
+> Location: Filament → Filament → Basic information → Support material
 
 ---
-
-## Support material
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_is_support`.  

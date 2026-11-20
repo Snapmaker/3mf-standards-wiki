@@ -1,11 +1,9 @@
 # bridge_density
 
-> Location: Process → Quality → Bridging
+> Location: Process → Quality → Bridging → Bridge density
 > Also in this section: `internal_bridge_density` (each documented on its own page).
 
 ---
-
-## Bridge density
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `bridge_density`.  

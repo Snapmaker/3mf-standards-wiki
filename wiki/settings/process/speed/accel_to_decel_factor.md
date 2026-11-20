@@ -1,11 +1,9 @@
 # accel_to_decel_factor
 
-> Location: Process → Speed → Acceleration
+> Location: Process → Speed → Acceleration → Accel to decel
 > Visibility (preliminary, pending review): Shown only with Klipper firmware
 
 ---
-
-### Accel to decel
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `accel_to_decel_factor`.  

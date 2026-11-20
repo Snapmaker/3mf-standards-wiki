@@ -1,10 +1,8 @@
 # wall_loops
 
-> Location: Process → Strength → Walls
+> Location: Process → Strength → Walls → Wall loops
 
 ---
-
-## Wall loops
 
 [Mode](../../../general_settings/option_mode.md): `Simple`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wall_loops`.  

@@ -1,11 +1,9 @@
 # skin_infill_depth
 
-> Location: Process → Strength → Infill
+> Location: Process → Strength → Infill → Locked Zag
 > Also in this section: `skin_infill_density`, `skeleton_infill_density`, `infill_lock_depth`, `skin_infill_line_width`, `skeleton_infill_line_width` (each documented on its own page).
 
 ---
-
-## Locked Zag
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `skin_infill_depth`.  

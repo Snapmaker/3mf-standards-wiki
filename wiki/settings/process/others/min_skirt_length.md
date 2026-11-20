@@ -1,10 +1,8 @@
 # min_skirt_length
 
-> Location: Process → Others → Skirt
+> Location: Process → Others → Skirt → Minimum extrusion Length
 
 ---
-
-## Minimum extrusion Length
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `min_skirt_length`.  

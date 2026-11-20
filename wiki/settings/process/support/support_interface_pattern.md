@@ -1,10 +1,8 @@
 # support_interface_pattern
 
-> Location: Process → Support → Advanced
+> Location: Process → Support → Advanced → Interface pattern
 
 ---
-
-## Interface pattern
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `support_interface_pattern`.  

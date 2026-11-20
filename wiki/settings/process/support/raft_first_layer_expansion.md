@@ -1,10 +1,8 @@
 # raft_first_layer_expansion
 
-> Location: Process → Support → Support
+> Location: Process → Support → Support → Initial layer expansion
 
 ---
-
-## Initial layer expansion
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `raft_first_layer_expansion`.  

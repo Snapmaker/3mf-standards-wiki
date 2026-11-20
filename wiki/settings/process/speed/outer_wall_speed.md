@@ -1,10 +1,8 @@
 # outer_wall_speed
 
-> Location: Process → Speed → Other layers speed
+> Location: Process → Speed → Other layers speed → Outer wall
 
 ---
-
-## Outer wall
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `outer_wall_speed`.  

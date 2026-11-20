@@ -1,10 +1,8 @@
 # single_extruder_multi_material
 
-> Location: Printer → Multimaterial → Single extruder multi-material setup
+> Location: Printer → Multimaterial → Single extruder multi-material setup → Single Extruder Multi Material
 
 ---
-
-## Single Extruder Multi Material
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `single_extruder_multi_material`.  

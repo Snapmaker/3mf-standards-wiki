@@ -1,10 +1,8 @@
 # fan_kickstart
 
-> Location: Printer → Basic information → Cooling Fan
+> Location: Printer → Basic information → Cooling Fan → Fan kick-start time
 
 ---
-
-## Fan kick-start time
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `fan_kickstart`.  

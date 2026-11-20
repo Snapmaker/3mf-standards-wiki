@@ -1,10 +1,8 @@
 # extrusion_rate_smoothing_external_perimeter_only
 
-> Location: Process → Speed → Advanced
+> Location: Process → Speed → Advanced → Apply only on external features
 
 ---
-
-## Apply only on external features
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `extrusion_rate_smoothing_external_perimeter_only`.  

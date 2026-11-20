@@ -1,10 +1,8 @@
 # slow_down_min_speed
 
-> Location: Filament → Cooling → Part cooling fan
+> Location: Filament → Cooling → Part cooling fan → Min print speed
 
 ---
-
-### Min print speed
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `slow_down_min_speed`.  

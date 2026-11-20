@@ -1,10 +1,8 @@
 # ironing_inset
 
-> Location: Process → Quality → Ironing
+> Location: Process → Quality → Ironing → Inset
 
 ---
-
-## Inset
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `ironing_inset`.  
