@@ -16,6 +16,10 @@
 
 解析处理：剥块/行注释（39 处注释键、22 处注释 max）；`def = this->add("key", …)` 与 `new_def(...)` 宏两种定义起点；宽松正则容忍无空格/tab/对齐写法；剥 `L()` 壳并合并多行字符串；`set_default_value(...)` 方法调用式取值（`60.0f`→`60.0`、`60.`→`60`）。
 
+**2026-11-20 口径修正（同字段取值与块截断）**：① 同字段重复赋值由"取首值"改为"取末值"，对齐 C++ 赋值语义——修复 `filament_cooling_moves`（源码 `max = 0` 死代码行后紧跟 `max = 20`，首值把笔误当真值，页面 Range 曾错显 `≤ 0`，实际 `≤ 20`）；② 块先在下一个 `def = this->add(`（含动态键，锚定 add 而非任意 `def =`，避免 `auto 别名 = def = add` 形式被拦腰截断）处截断再取值——顺带清掉三处存量漏入垃圾：`filament_notes`（min 0/max 500 实为 `required_nozzle_HRC` 的，其大写键名不构成字面量边界）、`has_scarf_joint_seam`（sidetext mm/s、min 0 实为 `machine_max_speed_*` 动态键的）、`nozzle_volume_type`（min 1 实为 `project_schema` 动态键的）。重提取后全量 diff 仅上述 4 键变化；`filament_cooling_moves` 页已重注入，audit `default_drift` 0。
+
+**2026-11-20 修复（`L()` 宏壳漏入默认值 + audit 漏报）**：`parse_default` 此前未剥默认值里的 `L()` 本地化宏壳（§2 口径文字早有承诺、代码未兑现），全源码唯一受害键 `filament_vendor`（`set_default_value(new ConfigOptionStrings{L("(Undefined)")})`）——宏壳原样漏进 JSON 与键页。修复后重提取，diff 除该键默认值 `L("(Undefined)")` → `(Undefined)` 外无变化。同时修 audit `default_drift` 的漏报根因：原比对为"整行拍平后子串包含"，`L(Undefined)` 含子串 `Undefined` 导致宏壳类漂移必然漏网，改为取值部分（首个冒号后、剥行尾句点）拍平等值比较——修前对旧页恰好报出这 1 条真阳性、误报 0。顺带修正 audit 新揪出的 4 页存量 `mode_drift`（`filament_tower_interface_pre_extrusion_dist` / `_length` / `filament_tower_interface_print_temp` / `filament_tower_ironing_area`，页标 Advanced、fork 源码均 `comDevelop`），全量 audit 五类问题归零（`key_not_in_json` 18 条为 §3 已记录待裁决的 resonance 镜像块，不计）。
+
 | 项 | 本次提取 | Explore 手工统计 | 差异说明 |
 |---|---|---|---|
 | 键总数 | 844 | 818 静态 + 18 动态 | 844 = 806（cpp 字面+宏）+ 20（hpp 宏补位）+ 18（filament_* 派生）；手工数 818 含计数口径差（重复定义按一次计） |

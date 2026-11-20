@@ -99,12 +99,22 @@ SKIP_INTS = {"INT_MIN", "INT_MAX"}
 
 def parse_block(block, enum_display=None):
     """从单个键定义块提取元数据字段（宽松匹配，容忍无空格/tab/对齐写法）。"""
+    # 块截断：块边界只认字面量键名 add，动态键（def = this->add(非字面量)）不算边界，
+    # 其后 def->xxx 赋值属于其它键，须先截掉。切点锚定下一个 def = this->add
+    # （含 auto 别名 = def = add 形式，不能锚任意 def = 否则别名形式会被拦腰截断）（2026-11-20）
+    cuts = [m.start() for m in re.finditer(
+        r'(?:\bauto\s+\w+\s*=\s*)?\bdef\s*=\s*this\s*->\s*add', block)]
+    if len(cuts) > 1:
+        block = block[:cuts[1]]
+
     def field(name, call=False):
         # call=True: 方法调用形式 def->name(...)，如 set_default_value
         pat = (r'def\s*->\s*%s\s*\(\s*(.*?)\)\s*;' if call
                else r'def\s*->\s*%s\s*=\s*(.*?);') % name
-        m = re.search(pat, block, re.S)
-        return m.group(1).strip() if m else None
+        # C++ 语义：同字段重复赋值取末次生效值（源码存在 max=0 后紧跟 max=20 的笔误写法，
+        # 取首值会把死代码行当真值，2026-11-20 修复）
+        hits = re.findall(pat, block, re.S)
+        return hits[-1].strip() if hits else None
 
     rec = {}
     lab = field("label")
@@ -144,6 +154,9 @@ def parse_default(expr, enum_display=None):
     m = re.search(r'new\s+[\w:]+\s*(?:<[^>]*>)?\s*(?:\{(.*)\}|\((.*)\))\s*$', expr, re.S)
     inner = (m.group(1) if m and m.group(1) is not None else m.group(2)) if m else expr.strip()
     inner = (inner or "").strip()
+    # 剥本地化宏壳 L("...") → "..."（全文件唯一处：filament_vendor 默认 "(Undefined)"，
+    # 2026-11-20 修复——此前宏壳漏进 JSON 与键页）
+    inner = re.sub(r'\bL\(\s*("(?:[^"\\]|\\.)*")\s*\)', r'\1', inner)
     if inner == "":
         return ""  # 显式空默认
     if len(inner) >= 2 and inner[0] == '"' and inner[-1] == '"':
@@ -553,14 +566,16 @@ def cmd_audit(args):
                 issues["no_default_line"].append("%s:%d" % (rel, i + 1))
             else:
                 has_default_any = True
-                flat_line = re.sub(r"[\s,`'\"]+", "", dline)
+                # 取值部分（首个冒号后）拍平后等值比较——不能用整行子串匹配，
+                # 否则 L(Undefined) 含子串 Undefined 会漏报宏壳类漂移（2026-11-20 修复）
+                flat_line = re.sub(r"[\s,`'\"]+", "", dline.split(":", 1)[-1].strip().rstrip("."))
                 for k in keys:
                     if k not in meta:
                         continue
                     exp = meta[k].get("default")
                     if exp in (None, ""):
                         continue
-                    if re.sub(r"[\s,`'\"]+", "", str(exp)) not in flat_line:
+                    if re.sub(r"[\s,`'\"]+", "", str(exp)) != flat_line:
                         issues["default_drift"].append(
                             "%s:%d %s 期望 %s 实际 %s" % (rel, i + 1, k, exp, dline.strip()))
             for k in keys:

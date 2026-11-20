@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generated_at": "2026-11-17T12:16:10",
+  "generated_at": "2026-11-20T14:59:52",
   "source_file": "src/libslic3r/PrintConfig.cpp",
   "source_commit": "c0fd44d4d9289fe9f30e177dec22d78ad782adb0",
   "stats": {
-   "min": 334,
-   "max": 138,
-   "sidetext": 311,
+   "min": 331,
+   "max": 137,
+   "sidetext": 310,
    "aliases": 1,
    "enum_rows": 270,
    "nocli": 42,
@@ -2813,7 +2813,7 @@
   "filament_cooling_moves": {
    "sidetext": null,
    "min": null,
-   "max": 0,
+   "max": 20,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -3157,8 +3157,8 @@
   },
   "filament_notes": {
    "sidetext": null,
-   "min": 0,
-   "max": 500,
+   "min": null,
+   "max": null,
    "mode": "Advanced",
    "aliases": [],
    "nocli": false,
@@ -3660,7 +3660,7 @@
    "cli": null,
    "enum_values": [],
    "enum_labels": [],
-   "default": "L(\"(Undefined)\")",
+   "default": "(Undefined)",
    "type": "coStrings",
    "line": 2561,
    "derived": false
@@ -4455,8 +4455,8 @@
    "derived": false
   },
   "has_scarf_joint_seam": {
-   "sidetext": "mm/s",
-   "min": 0,
+   "sidetext": null,
+   "min": null,
    "max": null,
    "mode": "Advanced",
    "aliases": [],
@@ -7453,7 +7453,7 @@
   },
   "nozzle_volume_type": {
    "sidetext": null,
-   "min": 1,
+   "min": null,
    "max": null,
    "mode": "Developer",
    "aliases": [],

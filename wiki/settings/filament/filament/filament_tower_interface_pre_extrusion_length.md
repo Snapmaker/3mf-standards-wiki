@@ -8,7 +8,7 @@
 
 ## Multimaterial Wipe Tower Parameters
 
-[Mode](../../../general_settings/option_mode.md): `Advanced`.  
+[Mode](../../../general_settings/option_mode.md): `Developer`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_tower_interface_pre_extrusion_length`.  
 [Type](../../../general_settings/option_type.md): Float list.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
