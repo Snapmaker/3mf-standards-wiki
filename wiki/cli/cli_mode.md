@@ -2,7 +2,7 @@
 
 ← [Wiki 首页](../home.md)
 
-不开图形界面，直接在命令行加载模型/工程、施加变换、切片并导出，适合批处理与自动化流水线。fork 的命令行入口在 `src/Snapmaker_Orca.cpp`（上游对应 OrcaSlicer.cpp），项目名为 `Snapmaker_Orca`（fork 仓库 iesteem/OrcaSlicer），可执行文件名以发布包为准。
+不开图形界面，直接在命令行加载模型/工程、施加变换、切片并导出，适合批处理与自动化流水线。命令行工具随软件发布包提供，可执行文件名以发布包为准。
 
 ## Invocation
 
@@ -37,7 +37,7 @@ orca-slicer [输入文件...] [选项...]
 除 CLI 专用选项外，几乎所有界面设置页参数都能用 `--键名=值` 覆盖（键名下划线转连字符）。每个键的键名见其键页的 `[Variable]`/`[Variables]` 行。
 
 > [!NOTE]
-> 上游 wiki 列出不开放命令行覆盖的键共三类：预设身份与继承（`preset_name`、`inherits` 等）、打印主机凭据（`print_host`、`printhost_apikey` 等）、内部索引（`filament_self_index` 等），并记为 43 个。fork 的实际开放范围以实测为准：覆盖被拒提示 "Invalid option" 时，先查该键是否属于这三类。
+> 上游 wiki 列出不开放命令行覆盖的键共三类：预设身份与继承（`preset_name`、`inherits` 等）、打印主机凭据（`print_host`、`printhost_apikey` 等）、内部索引（`filament_self_index` 等），并记为 43 个。实际开放范围以实测为准：覆盖被拒提示 "Invalid option" 时，先查该键是否属于这三类。
 
 ## Example
 

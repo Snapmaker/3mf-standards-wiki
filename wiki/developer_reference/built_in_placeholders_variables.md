@@ -7,7 +7,7 @@
 两个基本事实：
 
 1. **每个设置键本身就是占位符**，变量名 = 配置键名：`{layer_height}`；列表键用 `[索引]` 取值（索引从 0 起），如 `{first_layer_temperature[0]}`。
-2. fork 的占位符在生成 G-code 时由切片器注入，代码位于 `src/libslic3r/GCode.cpp`（fork 仓库 iesteem/OrcaSlicer）。完整清单持续扩充中，本文先收录最常用的一批。
+2. 占位符在生成 G-code 时由切片器注入。完整清单持续扩充中，本文先收录最常用的一批。
 
 ## 语法
 
@@ -68,4 +68,4 @@
 - 上游完整清单（约 170 个变量、逐 G-code 字段对照表）：上游完整清单见 OrcaSlicer wiki 的 built_in_placeholders_variables 页
 
 > [!NOTE]
-> 占位符集合随版本演进，上游与 fork 存在差异（如新旧键名并存）。拿不准时直接在自定义 G-code 里实测验证。
+> 占位符集合随版本演进，不同软件版本间存在差异（如新旧键名并存）。拿不准时直接在自定义 G-code 里实测验证。

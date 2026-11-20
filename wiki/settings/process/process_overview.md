@@ -1,6 +1,6 @@
 # Process settings overview
 
-> Page structure follows the actual fork UI (Tab.cpp `TabPrint::build` / `TabPrintPlate::build`, verified 2026-10-28).
+> Page structure follows the actual software UI (verified 2026-10-28).
 > One document per key; ✅ = content copied from the upstream OrcaSlicer wiki, 🚧 = placeholder to be completed, 🔗 = cross-reference.
 
 ## Quality (`quality/`)

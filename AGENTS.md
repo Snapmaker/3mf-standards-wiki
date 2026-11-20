@@ -57,6 +57,7 @@
 
 - wiki 面向新人：简洁、说人话，一页讲清一件事；长页顶部放目录
 - 证据链（样本清单、逐项对账、代码行号）不放 wiki 正文，放 `docs/`，wiki 里用"深入阅读"链接过去
+- **不暴露仓库代码内容**（2026-11-20 裁决）：`wiki/settings/` 键页与总览页、`wiki/general_settings/` `wiki/cli/` `wiki/developer_reference/` 支撑页不写源文件名/类名/原始类型名（`coXxx`）/仓库路径，"fork" 措辞改用"软件 / 当前软件版本 / Snapmaker Orca"；规范正文（`specification/`）引用源码仍按下文"源码引用"规则执行
 - 涉及"待团队裁决"的结论，注明来源问题编号（如 docs/04 的 Q6），不要写成已定论
 - **例外（2026-11-19 裁决）**：`wiki/settings/` 目录页面正文**全英文**（含占位页模板与总览页），标注行用英文（`> Status:` / `> Visibility:` / `> G-code embedded name:` / `> Also in this section:`）
 

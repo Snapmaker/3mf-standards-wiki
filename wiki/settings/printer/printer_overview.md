@@ -1,6 +1,6 @@
 # Printer settings overview
 
-> Page structure follows the actual fork UI (Tab.cpp `TabPrinter::build_fff` / `build_unregular_pages`, verified 2026-10-28).
+> Page structure follows the actual software UI (verified 2026-10-28).
 > One document per key; ✅ = content copied from the upstream OrcaSlicer wiki, 🚧 = placeholder to be completed.
 
 ## Basic information (`basic_information/`)
