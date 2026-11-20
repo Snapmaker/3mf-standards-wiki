@@ -12,5 +12,3 @@
 
 > Tooltip: If it's set to false, the pressure advance value will not be changed.
 
-
-(To add: purpose, value range, relation to similar parameters, applicable scenarios)

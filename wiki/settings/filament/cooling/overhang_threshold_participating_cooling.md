@@ -21,4 +21,4 @@ Sits next to [`overhang_fan_threshold`](overhang_fan_threshold.md) (the fan spee
 > [!NOTE]
 > The bridge enum level is serialized as 95%; the UI dropdown shows it as the 100% level.
 
-(To add: interaction details with slow_down_for_layer_cooling)
+<!-- TODO: interaction details with slow_down_for_layer_cooling -->

@@ -18,4 +18,4 @@
 
 How many millimeters before the end of a slowed-down perimeter the original speed is gradually restored, avoiding a visible speed-step mark at the end of the wall. Only effective when [`cooling_slowdown_logic`](cooling_slowdown_logic.md) = Consistent surface.
 
-(To add: relation to outer-wall surface quality, value guidance)
+<!-- TODO: relation to outer-wall surface quality, value guidance -->

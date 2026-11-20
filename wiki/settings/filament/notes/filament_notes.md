@@ -11,5 +11,3 @@
 - Default: (empty)
 
 > Tooltip: You can put your notes regarding the filament here.
-
-(To add: purpose, value range, relation to similar parameters, applicable scenarios)

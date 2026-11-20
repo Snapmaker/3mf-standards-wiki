@@ -22,4 +22,4 @@ Determines the slowdown strategy when the minimum layer time is not met (ported 
 - **Uniform cooling** (default): all features slow down proportionally, i.e. the original behavior;
 - **Consistent surface**: slows down infill and inner walls first, preserving outer-wall speed for a consistent surface finish; selecting it activates the companion parameter [`cooling_perimeter_transition_distance`](cooling_perimeter_transition_distance.md).
 
-(To add: effect comparison of the two modes, suitable filaments)
+<!-- TODO: effect comparison of the two modes, suitable filaments -->

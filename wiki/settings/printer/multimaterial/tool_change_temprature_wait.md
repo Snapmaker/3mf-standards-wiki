@@ -12,5 +12,3 @@
 
 > Tooltip: It will use the M109 instead of M104 T[target] after changing tools if this is set to true
 
-
-(To add: purpose, value range, relation to similar parameters, applicable scenarios)

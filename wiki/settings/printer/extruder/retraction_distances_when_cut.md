@@ -9,5 +9,3 @@
 - Mode: -
 - Type: —
 - Default: 18
-
-(To add: purpose, value range, relation to similar parameters, applicable scenarios)

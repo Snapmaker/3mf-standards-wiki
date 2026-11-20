@@ -12,5 +12,3 @@
 
 > Tooltip: This is used to decide the line width of wipe tower when ramming, ramming line width = [this ratio] * extruder * 1.25
 
-
-(To add: purpose, value range, relation to similar parameters, applicable scenarios)

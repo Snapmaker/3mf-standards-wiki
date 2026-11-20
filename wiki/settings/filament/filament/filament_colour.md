@@ -27,4 +27,4 @@ The actual entry points:
 - Difference from [`default_filament_colour`](default_filament_colour.md): the latter is the preset's default color (Basic information section); this key is the color actually in effect per slot in the current project, initialized from the preset value when loading.
 - Color-mixing system: `filament_colour` is the slot's "physical color"; `filament_multi_colors`/`filament_colour_mode` (Snapmaker V2.3.5 extension) describe the dual/gradient display colors.
 
-(To add: AMS slot syncing, color-library matching rules)
+<!-- TODO: AMS slot syncing, color-library matching rules -->

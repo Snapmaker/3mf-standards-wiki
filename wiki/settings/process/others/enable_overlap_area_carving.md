@@ -16,4 +16,4 @@
 
 Toggles the carving algorithm for overlap regions between multi-extruder parts. When enabled, the new algorithm applies: on each layer, **the part with the smaller cross-section area** owns the overlap, so details of small parts inside large parts are preserved. Located in the Special mode group after [`slicing_mode`](slicing_mode.md).
 
-(To add: illustrations of old vs new algorithm, impact on assembly tolerances)
+<!-- TODO: illustrations of old vs new algorithm, impact on assembly tolerances -->

@@ -9,5 +9,3 @@
 - Mode: -
 - Type: Integer list
 - Default: 240
-
-(To add: purpose, value range, relation to similar parameters, applicable scenarios)

@@ -9,5 +9,3 @@
 - Mode: Advanced
 - Type: Boolean list
 - Default: true
-
-(To add: purpose, value range, relation to similar parameters, applicable scenarios)

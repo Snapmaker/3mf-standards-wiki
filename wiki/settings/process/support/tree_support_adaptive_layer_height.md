@@ -11,5 +11,3 @@
 - Default: 1
 
 > Tooltip: Enabling this option means the height of tree support layer except the first will be automatically calculated.
-
-(To add: purpose, value range, relation to similar parameters, applicable scenarios)

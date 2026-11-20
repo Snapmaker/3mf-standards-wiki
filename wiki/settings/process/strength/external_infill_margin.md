@@ -18,4 +18,4 @@ Expands the top/bottom/solid infill layers outward by the given millimeters (or 
 
 Difference from [`infill_anchor`](infill_anchor.md): the latter controls how far sparse-infill line ends anchor into inner walls; this key controls how far solid infill expands outward.
 
-(To add: recommended values, impact on top-surface quality)
+<!-- TODO: recommended values, impact on top-surface quality -->

@@ -20,4 +20,4 @@ Acceleration for **short travel moves** near outer walls. "Short" means a travel
 
 Lowering it (e.g. 250–500 mm/s²) reduces ringing at sharp corners with almost no impact on print time; 0 disables it and falls back to the regular [`travel_acceleration`](travel_acceleration.md).
 
-(To add: interplay with input shaping)
+<!-- TODO: interplay with input shaping -->

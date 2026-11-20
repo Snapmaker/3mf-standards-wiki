@@ -85,9 +85,9 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 - Default: <value or —>
 
 > Tooltip: <tooltip>
-
-(To add: purpose, value range, relation to similar parameters, applicable scenarios)
 ```
+
+占位页补全线索用 HTML 注释留在页内（读者不可见）：`<!-- TODO: <线索> -->`；模板默认套话（"purpose, value range, …"）不写——Status 行已表明待补全。
 
 注意：`general_settings/`、`cli/`、`developer_reference/` 的四件套支撑页已建（2026-11-19：`option_mode` / `option_type` / `built_in_placeholders_variables` / `cli_mode`），链接可达；键页正文仍可能链接 `print_prepare/` 等尚未启用的预留目录，悬空属预期，校验按 WARN 处理，不要改成别的目标。
 

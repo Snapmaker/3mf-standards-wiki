@@ -17,4 +17,4 @@
 
 Printing speed for fully-floating outer walls (0 overlap with the layer below, 100% overhang) — the most extreme level. Stock OrcaSlicer treats such walls as bridges (applying the 75% level and capping at bridge speed); Snapmaker Orca splits this into its own level.
 
-(To add: relation to bridge_speed)
+<!-- TODO: relation to bridge_speed -->
