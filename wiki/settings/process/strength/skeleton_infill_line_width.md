@@ -12,6 +12,7 @@
 [Type](../../../general_settings/option_type.md): Float or Percentage.  
 [Default](../../../general_settings/option_type.md#default-value): `100%`.  
 [Range](../../../general_settings/option_type.md#range): `≥ 0` mm.  
+The bound applies to mm entries; a % value is also accepted and is computed over the nozzle diameter (the source sidetext lists mm only).  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skeleton-infill-line-width=1`.  
 Version of [Zig Zag](#zig-zag) that adds extra skin.
 When using this fill, you can individually modify the density of the skeleton and skin, as well as the size of the skin and how much interconnection there is between the skin and the skeleton (a lock depth of 50% of the skin depth is recommended).  
