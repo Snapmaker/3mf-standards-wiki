@@ -55,8 +55,11 @@ Actual optimal temperatures still vary between filament brands — always follow
 | ABS | 265-280 (240-280) | 90-100 | 60 (Snapmaker ABS) / 0 (Generic ABS) |
 | ASA | 260-280 (240-280) | 90-100 | 0 |
 | PA (Nylon) | 260 (240-280) | 100 | 60 |
+| PA-CF | 290 (260-300) | 100 | 0 |
 | PC | 280 (260-290) | 100 | 0 |
+| PCTG | 255 (240-270) | 100 | 0 |
 | TPU | 215-240 (200-250) | 35 | 0 |
+| PVA / BVOH (support) | 240 (190-250) | 65-70 | 0 |
 
 > [!NOTE]
 > **How the chamber is controlled on U1**

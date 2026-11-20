@@ -21,22 +21,23 @@ One of the most critical settings for successful 3D printing is the nozzle tempe
 The correct nozzle temperature ensures proper melting and extrusion of the filament, leading to good layer adhesion and overall print quality.  
 You can set a higher temperature for the first layer to improve bed adhesion but be cautious with deformations as [elephant foot](../../process/quality/elefant_foot_compensation.md).
 
-## Standard Temperature Ranges
+## Temperature Reference (U1 Presets)
 
-The following table lists the standard temperature ranges for common 3D printing materials.  
-Actual optimal temperatures may vary based on specific filament brands and printer models.  
-Always refer to the filament manufacturer's recommendations and calibrations for best results.
+The following table lists the values configured in the U1 filament presets shipped with this fork (`Generic @U1` and `Snapmaker @U1` families).  
+Numbers in parentheses are the nozzle temperature ranges defined in the presets.  
+Actual optimal temperatures still vary between filament brands — always follow the manufacturer's recommendations and run calibrations for best results.
 
 | Material | Nozzle Temp (°C) | Bed Temp (°C) | Chamber Temp (°C) |
 | --- | --- | --- | --- |
-| PLA | 180-220 | 50-60 | Ambient |
-| ABS | 230-250 | 90-100 | 50-70 |
-| ASA | 240-260 | 90-100 | 50-70 |
-| Nylon 6 | 230-260 | 90-110 | 70-100 |
-| Nylon 12 | 225-260 | 90-110 | 70-100 |
-| TPU | 220-245 | 40-60 | Ambient |
-| PC | 270-310 | 100-120 | 80-100 |
-| PC-ABS | 260-280 | 95-110 | 60-80 |
-| HIPS | 220-250 | 90-110 | 50-70 |
-| PP | 220-270 | 80-105 | 40-70 |
-| Acetal (POM) | 210-240 | 100-130 | 70-100 |
+| PLA | 220 (190-240) | 65 | 0 |
+| PETG | 245-255 (220-270) | 70-80 | 0 |
+| ABS | 265-280 (240-280) | 90-100 | 60 (Snapmaker ABS) / 0 (Generic ABS) |
+| ASA | 260-280 (240-280) | 90-100 | 0 |
+| PA (Nylon) | 260 (240-280) | 100 | 60 |
+| PA-CF | 290 (260-300) | 100 | 0 |
+| PC | 280 (260-290) | 100 | 0 |
+| PCTG | 255 (240-270) | 100 | 0 |
+| TPU | 215-240 (200-250) | 35 | 0 |
+| PVA / BVOH (support) | 240 (190-250) | 65-70 | 0 |
+
+Where a preset sets a different first-layer temperature, the span covers both values — e.g. Snapmaker ABS prints the first layer at 280 °C and the remaining layers at 265 °C (see [nozzle_temperature_initial_layer](nozzle_temperature_initial_layer.md)).
