@@ -62,6 +62,7 @@
   2. **元数据块与说明正文之间强制空行**：此前所有行以行尾双空格硬换行连成同一段落，正文说明粘成"第 8 个分类"，无法区分（本次修复 463+ 处）；
   3. **孤立 `## <UI 标签>` 标题废止**，UI 标签折进 Location 第 4 段（`Tab → 分组 → UI 区块 → UI 标签`）：450 完整页折叠，占位页维持三段；多小节内容页（如 line_width 的 `## Line Types`）保留内容标题；
   4. **元数据 8 类定案**：Mode / Variable / Type / Default / Unit / Range / Aliases / CLI Example，不精简（Variable 虽与 H1 键名同值，保留其"可用于自定义 G-code 占位符"的链接语义）。
+  5. **元数据行固定顺序**（同日追加裁决）：`Mode → Variable → Type → Default → Unit → Range → Aliases → Options → CLI Example`，全库一致，缺省跳过。全量核查 476 个元数据块相对顺序零违规（观感差异均为字段缺席所致）；audit 增 `field_order` 项、migrate 增自动重排兜底（负向测试验证可抓乱序与重复）。
   - 配套：`extract` 增捕 `label` 字段（851 键中 677 有，供后续 Location 第 4 段对账）；`audit` 增 unit_missing / unit_drift / range_unit_leftover 三项（迁移后全部归零）；`check_page.sh` 增 E8（完整页 Location 须 4 段 FAIL，占位/说明页 ≥3 段 WARN——现存 3 处 WARN 为 plate 目录占位页既有段数缺失，待补全时修）；镜像小节（Variable 键≠页主干，如 resonance_avoidance 页内 Input Shaping 块）迁移时原样保留，仅手工剥除 4 处 machine_max_jerk_* 镜像块的 Range 残留单位。
 
 ## 4. fork 缺键清单（25 个，页面显示 `—` 的全部来源）
@@ -107,7 +108,7 @@ python .claude/skills/new-setting-key-page/scripts/print_config_tools.py inject 
 # 版式迁移（既有键页：Unit 拆分 / 正文空行分隔；--fold 折 UI 标签进 Location 第 4 段；幂等）
 python .claude/skills/new-setting-key-page/scripts/print_config_tools.py migrate --all [--fold] [--dry-run]
 
-# 对账（值漂移 / Unit 缺失与漂移 / Range 残留单位 / Choice 缺 Options / 页键在 JSON 缺失 / 缺 [Default] 行）
+# 对账（值漂移 / Unit 缺失与漂移 / Range 残留单位 / 元数据行序 / Choice 缺 Options / 页键在 JSON 缺失 / 缺 [Default] 行）
 python .claude/skills/new-setting-key-page/scripts/print_config_tools.py audit
 ```
 

@@ -327,6 +327,20 @@ RE_UNIT_LINE = re.compile(r'^\[Units?\]')
 RE_OWNED_LINE = re.compile(r'^\[(Default|Unit|Range|Aliases)s?\]')
 # 元数据家族行（含手写 [Mode]/[Variable]/[Type]/[Options]/[CLI Example]）
 RE_META_FAMILY = re.compile(r'^\[(Mode|Variable|Type|Default|Unit|Range|Options|Aliases|CLI Example)s?\]')
+# 元数据行固定顺序（2026-11-20 裁决：全库一致，缺省跳过）
+FIELD_ORDER = ["mode", "variable", "type", "default", "unit", "range",
+               "aliases", "options", "cli example"]
+RE_FIELD_NAME = re.compile(r'^\[([^\]]+)\]')
+
+
+def canon_field(name):
+    """元数据行名 → 固定顺序索引；非元数据行（如正文里的 [gcode_macro M106]）返回 None。"""
+    n = name.lower()
+    if n in FIELD_ORDER:
+        return FIELD_ORDER.index(n)
+    if n.endswith("s") and n[:-1] in FIELD_ORDER:  # Variables/Defaults 等复数镜像行
+        return FIELD_ORDER.index(n[:-1])
+    return None
 
 
 def page_files(args):
@@ -483,7 +497,7 @@ def migrate_page(path, meta, dry_run, fold):
     prefix = rel_prefix(path)
     stem = os.path.splitext(os.path.basename(path))[0]
     rel = os.path.relpath(path, REPO_ROOT)
-    stats = {"sections": 0, "units": 0, "blanks": 0, "folds": 0}
+    stats = {"sections": 0, "units": 0, "blanks": 0, "folds": 0, "reorders": 0}
 
     # ---- A. 重建脚本行：[Range] 剥内嵌单位、[Unit] 独立成行 -----------------
     out, i, n = [], 0, len(lines)
@@ -514,6 +528,30 @@ def migrate_page(path, meta, dry_run, fold):
             stats["units"] += sum(1 for l in new if RE_UNIT_LINE.match(l))
             out.extend(cand)
             stats["sections"] += 1
+        i = j
+    lines = out
+
+    # ---- A2. 元数据行固定顺序重排（缺省跳过；正文里的 [gcode_macro …] 不动）--
+    out, i, n = [], 0, len(lines)
+    while i < n:
+        m2 = RE_FIELD_NAME.match(lines[i])
+        if not m2 or canon_field(m2.group(1)) is None:
+            out.append(lines[i])
+            i += 1
+            continue
+        j = i
+        run = []
+        while j < n:
+            m3 = RE_FIELD_NAME.match(lines[j])
+            if not m3 or canon_field(m3.group(1)) is None:
+                break
+            run.append((canon_field(m3.group(1)), lines[j]))
+            j += 1
+        if [k for k, _ in run] != sorted(k for k, _ in run):
+            out.extend(l for _, l in sorted(run, key=lambda t: t[0]))  # 稳定排序
+            stats["reorders"] += 1
+        else:
+            out.extend(l for _, l in run)
         i = j
     lines = out
 
@@ -571,7 +609,7 @@ def migrate_page(path, meta, dry_run, fold):
 
 def cmd_migrate(args):
     meta = json.load(open(args.json, encoding="utf-8"))["keys"]
-    agg = {"sections": 0, "units": 0, "blanks": 0, "folds": 0}
+    agg = {"sections": 0, "units": 0, "blanks": 0, "folds": 0, "reorders": 0}
     pages = 0
     for p in page_files(args):
         st = migrate_page(p, meta, args.dry_run, args.fold)
@@ -579,9 +617,10 @@ def cmd_migrate(args):
             pages += 1
             for k in agg:
                 agg[k] += st[k]
-    print("--\n%s %d 页：重建小节 %d（[Unit] 行 %d）、补空行 %d、折标签 %d"
+    print("--\n%s %d 页：重建小节 %d（[Unit] 行 %d）、补空行 %d、折标签 %d、行序重排 %d"
           % ("将修改" if args.dry_run else "已修改", pages,
-             agg["sections"], agg["units"], agg["blanks"], agg["folds"]))
+             agg["sections"], agg["units"], agg["blanks"], agg["folds"],
+             agg["reorders"]))
     return 0
 
 
@@ -665,7 +704,8 @@ def cmd_audit(args):
     meta = json.load(open(args.json, encoding="utf-8"))["keys"]
     issues = {"no_default_line": [], "default_drift": [], "key_not_in_json": [],
               "choice_no_options": [], "mode_drift": [],
-              "unit_missing": [], "unit_drift": [], "range_unit_leftover": []}
+              "unit_missing": [], "unit_drift": [], "range_unit_leftover": [],
+              "field_order": []}
     n_pages = n_sections = 0
     for p in page_files(argparse.Namespace(all=True, group=None, pages=None)):
         text = open(p, encoding="utf-8", newline="").read()
@@ -754,6 +794,26 @@ def cmd_audit(args):
         n_pages += 1
         if not has_default_any and any(RE_TYPE_LINE.match(l) for l in lines):
             pass
+        # 元数据行固定顺序（页面级扫描：覆盖镜像小节与 Mode/Variable 残缺块）
+        i2 = 0
+        while i2 < len(lines):
+            m2 = RE_FIELD_NAME.match(lines[i2])
+            if not m2 or canon_field(m2.group(1)) is None:
+                i2 += 1
+                continue
+            j2 = i2
+            names = []
+            while j2 < len(lines):
+                m3 = RE_FIELD_NAME.match(lines[j2])
+                if not m3 or canon_field(m3.group(1)) is None:
+                    break
+                names.append((canon_field(m3.group(1)), m3.group(1)))
+                j2 += 1
+            ks = [k for k, _ in names]
+            if ks != sorted(ks) or len(set(ks)) != len(ks):
+                issues["field_order"].append(
+                    "%s:%d %s" % (rel, i2 + 1, " > ".join(n for _, n in names)))
+            i2 = j2
     print("审计 %d 页 / %d 个 [Type] 小节" % (n_pages, n_sections))
     for k, v in issues.items():
         print("\n[%s] %d" % (k, len(v)))
