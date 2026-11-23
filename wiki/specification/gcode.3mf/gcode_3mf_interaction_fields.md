@@ -2,9 +2,7 @@
 
 ← [Wiki 首页](../../home.md)
 
-> 基准机型：Snapmaker U1 ｜ 快照日期：2026-11-19 ｜ 协作源：交互协议文档（内嵌全量表）
->
-> 本页收录**切片端写出、打印机固件解析**的交互字段（全量表 30 项 + 变更记录中的 `nozzle_volume_type`）。设置类字段只做索引，逐键讲解见 [设置参数文档](../../home.md#设置参数文档)；无 UI 控件的协议字段在本页 [§3](#3-协议字段详解) 展开。字段所在文件的形态细则（注释行怎么写、装进包哪里）见 [G-code 文件规范](gcode_standard.md) 与 [gcode.3mf 规范](gcode_3mf_standard.md)。
+本页列出**切片端写出、打印机固件解析**的交互字段（基准机型 Snapmaker U1）。设置类字段只做索引，逐键讲解见 [设置参数文档](../../home.md#设置参数文档)；无 UI 控件的协议字段在本页 [§3](#3-协议字段详解) 展开。字段所在文件的形态细则（注释行怎么写、装进包哪里）见 [G-code 文件规范](gcode_standard.md) 与 [gcode.3mf 规范](gcode_3mf_standard.md)。
 
 ## 目录
 
@@ -13,11 +11,10 @@
 - [3 协议字段详解](#3-协议字段详解)
 - [4 统计与标记注释](#4-统计与标记注释)
 - [5 变更记录](#5-变更记录)
-- [6 维护规则](#6-维护规则)
 
 ## 1 字段总表
 
-按全量表的「参数分类」排列；「类型」为固件解析类型；「版本」为软件开始支持版本。逐键讲解的设置键在「详见」列链接到键页。
+按字段分类排列；「类型」为固件解析类型；「版本」为软件开始支持版本。逐键讲解的设置键在「详见」列链接到键页。
 
 | # | 字段 | 分类 | 类型 | 语义 | 版本 | 详见 |
 |---|---|---|---|---|---|---|
@@ -70,13 +67,13 @@ v2.3.6 为高流量（high flow）耗材引入的基础设施：速度类参数�
 |---|---|---|---|
 | `process_flow_support` | 工艺 | 工艺速度参数支持的流量类型，描述第 k 个值的流量类型；默认第 1 个 `standard`、第 2 个 `high_flow` | `; process_flow_support = standard,high_flow` |
 | `filament_volume_type` | 项目 | 耗材槽位与流量类型的映射，与耗材个数一致 | `; filament_volume_type = standard,high_flow,standard` |
-| `nozzle_volume_type` | 机型 | 喷嘴流量类型（枚举 `standard` / `high_flow`，默认 `standard`） | 全量表暂无行，待补录 |
+| `nozzle_volume_type` | 机型 | 喷嘴流量类型（枚举 `standard` / `high_flow`，默认 `standard`） | v2.3.6 新增 |
 
 受影响键：`outer_wall_speed`、`outer_wall_acceleration` 自 v2.3.6 起为 `floats`，第 k 个值对应 `process_flow_support` 声明的第 k 种流量类型。
 
 > [!NOTE]
 > **预设层声明**
-> 三份预设格式文档中的 `filament_flow_support` / `process_flow_support` / `printer_flow_support` 是同一机制的预设层声明：字符串数组，首项 `standard`，其后 `high_flow`；多值参数按该顺序排列。本表只列固件侧用到的 `process_flow_support`。文件中的存储类型是字符串数组（见 [3mf 项目设置 §5.7](../3mf/3mf%20documents/3mf_project_settings.md#57-流量变体系统键无条件)），表中的 `enums` 是固件按枚举值解析的类型标签。
+> 三份预设格式文档中的 `filament_flow_support` / `process_flow_support` / `printer_flow_support` 是同一机制的预设层声明：字符串数组，首项 `standard`，其后 `high_flow`；多值参数按该顺序排列。本页只列固件侧用到的 `process_flow_support`。文件中的存储类型是字符串数组（见 [3mf 项目设置 §5.7](../3mf/3mf%20documents/3mf_project_settings.md#57-流量变体系统键无条件)），表中的 `enums` 是固件按枚举值解析的类型标签。
 
 ### 3.2 多色耗材
 
@@ -128,22 +125,16 @@ gcode 注释行沿用历史旧名，值取对应设置键（映射规则见 [G-c
 
 ## 5 变更记录
 
-转录自交互协议文档「字段变更记录」，原文的修订划除以注记保留。
+按版本记录字段变化。
 
 ### Snapmaker V2.3.6
 
 - 新增 `nozzle_volume_type` 喷嘴流量类型
 - 新增 `filament_volume_type` 耗材流量类型
 - 新增 `process_flow_support` 工艺流量类型，默认第 1 个是 `standard`，第 2 个是 `high_flow`
-- 工艺中的速度参数由 `float` 更改为 `floats`（原文划除「+ 耗材中的流量相关参数 + 机型中的移动能力参数」为旧表述，未采纳）
+- 工艺中的速度参数由 `float` 更改为 `floats`
 
 ### Snapmaker V2.3.5（2026/8/28 补充）
 
 - 新增 `filament_colour_mode` 耗材颜色类型，按槽位对应解析，`,` 分隔，0 表示单色或双拼色，1 表示渐变色
 - 新增 `filament_multi_colors` 多色耗材的颜色值，按槽位对应解析，`;` 分隔槽位，槽内多色 `|` 分隔（两形态示例见 [§3.2](#32-多色耗材)）
-
-## 6 维护规则
-
-- **协作源为内部多维表格**：全量表增改先动协作源表，本页随之更新，保持快照一致；对账时以协作源表「字段 / 类型 / 解释 / 备注 / example / 软件开始支持版本」列为准逐行核对。
-- **协议字段不进 `wiki/settings/`**：settings 目录只收录有 UI 控件的设置键；无 UI 控件的交互字段（如本页 §3 各键）收录在本页，不建键页。
-- 语义冲突时以源码为准：切片侧 `PrintConfig.cpp`、固件侧解析代码；修正后两侧（协作源表与本页）同步。
