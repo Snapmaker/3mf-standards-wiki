@@ -70,9 +70,13 @@ v2.3.6 为高流量（high flow）耗材引入的基础设施：速度类参数�
 |---|---|---|---|
 | `process_flow_support` | 工艺 | 工艺速度参数支持的流量类型，描述第 k 个值的流量类型；默认第 1 个 `standard`、第 2 个 `high_flow` | `; process_flow_support = standard,high_flow` |
 | `filament_volume_type` | 项目 | 耗材槽位与流量类型的映射，与耗材个数一致 | `; filament_volume_type = standard,high_flow,standard` |
-| `nozzle_volume_type` | 机型 | 喷嘴流量类型（枚举 `FLOW_MODE_STANDARD` / `FLOW_MODE_HIGH_FLOW`，默认 `fvtStandard`） | 全量表暂无行，待补录 |
+| `nozzle_volume_type` | 机型 | 喷嘴流量类型（枚举 `standard` / `high_flow`，默认 `standard`） | 全量表暂无行，待补录 |
 
 受影响键：`outer_wall_speed`、`outer_wall_acceleration` 自 v2.3.6 起为 `floats`，第 k 个值对应 `process_flow_support` 声明的第 k 种流量类型。
+
+> [!NOTE]
+> **预设层声明**
+> 三份预设格式文档中的 `filament_flow_support` / `process_flow_support` / `printer_flow_support` 是同一机制的预设层声明：字符串数组，首项 `standard`，其后 `high_flow`；多值参数按该顺序排列。本表按飞书全量表只列固件侧用到的 `process_flow_support`。文件中的存储类型是字符串数组（见 [3mf 项目设置 §5.7](../3mf/3mf%20documents/3mf_project_settings.md#57-流量变体系统键无条件)），表中的 `enums` 是固件按枚举值解析的类型标签。
 
 深入阅读：飞书「[耗材级-喷嘴级参数获取规则](https://snapmaker.feishu.cn/wiki/WfZ9wiurxiPC9YkwCFdcnVFentQ)」。
 
