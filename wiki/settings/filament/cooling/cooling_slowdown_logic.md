@@ -1,7 +1,7 @@
 # cooling_slowdown_logic
 
 > Location: Filament → Cooling → Part cooling fan → Cooling slowdown logic
-> Status: placeholder — fork-added parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-added parameter, to be completed.
 > Visibility: shown after [`slow_down_for_layer_cooling`](slow_down_for_layer_cooling.md) is checked.
 
 ---

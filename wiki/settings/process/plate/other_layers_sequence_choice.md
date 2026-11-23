@@ -1,7 +1,7 @@
 # other_layers_sequence_choice
 
 > Location: Process → Plate Settings → Other layers filament sequence
-> Status: placeholder — fork-specific parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-specific parameter, to be completed.
 
 ---
 

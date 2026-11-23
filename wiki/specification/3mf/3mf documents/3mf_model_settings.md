@@ -2,7 +2,7 @@
 
 ← [Wiki 首页](../../../home.md)
 
-> 工程文件必选的 XML 部件：记录对象、零件、打印板与实例的业务属性。实测证据见 [研发内部资料](../../../../docs/)。
+> 工程文件必选的 XML 部件：记录对象、零件、打印板与实例的业务属性。
 
 ## 目录
 
@@ -146,7 +146,7 @@
   <plate>
     <metadata key="plater_id" value="1"/>        ← 盘号，与 plate_1.png 的 1 对应
     <metadata key="plater_name" value="第一板"/>
-    <metadata key="filament_maps" value="1;1"/>  ← 现状恒写全 1，不应作为真实映射使用（Q12）
+    <metadata key="filament_maps" value="1;1"/>  ← 现状恒写全 1，不应作为真实映射使用
     <metadata key="thumbnail_file" value="Metadata/plate_1.png"/>
 
     <!-- ── 实例节：登记该板包含的对象实例 ── -->
@@ -212,13 +212,11 @@ project_settings.config     全局默认（约 580 键，全量）
 
 1. **几何侧 `<object>` 个数 ≠ 属性侧 `<object>` 个数**——每个零件网格在 3dmodel.model 中也是一个 object（如上例 id=2/3），但属性侧仅为"可整体操作的对象"开设 object 节，零件信息均记录于 part 节。
 2. `<plate>` 元素本身没有 id 属性，盘号记录于 `plater_id` 元数据。
-3. `identify_id` 是不透明标识，不应按数组下标解释；`filament_maps` 现状恒写全 `1`（Q12）。
+3. `identify_id` 是不透明标识，不应按数组下标解释；`filament_maps` 现状恒写全 `1`。
 4. 同一对象跨盘 = 实例分属不同 plate 节，并非几何复制。
-5. `<assemble>` 节（装配视图）条件写入，实测 9 个样本 0 次出现（Q4），常规文件中不会出现。
+5. `<assemble>` 节（装配视图）条件写入，实测 9 个样本 0 次出现，常规文件中不会出现。
 6. **代码的 volume = 文件的 part**：读源码按 `ModelVolume` 查找、读文件按 `<part>` 查找，二者为同一实体；`source_volume_id` 等键名沿用代码侧命名。
 
 ## 附录（资料性）深入阅读
 
-- 三层字段实测盘点：[03-现状盘点-model_settings与嵌入预设](../../../../docs/03-现状盘点-model_settings与嵌入预设.md)
-- 待团队裁决问题（含 `module` key、`assemble` 节、plate 条件 key）：[04-问题清单-切片软件团队对齐](../../../../docs/04-问题清单-切片软件团队对齐.md)
 - 规范级定义：[3mf 工程文件规范](../3mf_standard.md) [§5.2 对象、组件与实例](../3mf_standard.md#52-对象组件与实例)、[§6.1 对象与盘索引](../3mf_standard.md#61-对象与盘索引metadatamodel_settingsconfig)

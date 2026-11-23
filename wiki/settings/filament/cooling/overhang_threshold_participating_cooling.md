@@ -1,7 +1,7 @@
 # overhang_threshold_participating_cooling
 
 > Location: Filament → Cooling → Part cooling fan → Overhang threshold for participating cooling
-> Status: placeholder — fork-added parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-added parameter, to be completed.
 
 ---
 

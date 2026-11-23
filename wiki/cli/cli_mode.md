@@ -45,4 +45,4 @@ orca-slicer [输入文件...] [选项...]
 orca-slicer model.3mf --load-settings "process.json;printer.json" --load-filaments filament.json --arrange 1 --slice 0 --export-3mf output.3mf
 ```
 
-加载工程 → 应用工艺/打印机/耗材设置 → 自动排版 → 全部盘切片 → 导出 3mf。（示例沿用上游文档，fork 未逐项实测，用前先验证。）
+加载工程 → 应用工艺/打印机/耗材设置 → 自动排版 → 全部盘切片 → 导出 3mf。（示例沿用上游文档，当前软件版本未逐项实测，用前先验证。）

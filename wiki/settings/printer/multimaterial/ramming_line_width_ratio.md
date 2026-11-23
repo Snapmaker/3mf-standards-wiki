@@ -1,7 +1,7 @@
 # ramming_line_width_ratio
 
 > Location: Printer → Multimaterial → Wipe tower → Ramming line width ratio
-> Status: placeholder — fork-specific parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-specific parameter, to be completed.
 
 ---
 

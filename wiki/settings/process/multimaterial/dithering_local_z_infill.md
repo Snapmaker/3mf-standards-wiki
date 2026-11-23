@@ -1,7 +1,7 @@
 # dithering_local_z_infill
 
 > Location: Process → Multimaterial → Color Mixing (Experimental) → Apply subdivision to infill
-> Status: placeholder — fork-specific parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-specific parameter, to be completed.
 
 ---
 

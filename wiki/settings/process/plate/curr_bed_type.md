@@ -1,7 +1,7 @@
 # curr_bed_type
 
 > Location: Process → Plate Settings → Bed type
-> Status: placeholder — fork-specific parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-specific parameter, to be completed.
 
 ---
 

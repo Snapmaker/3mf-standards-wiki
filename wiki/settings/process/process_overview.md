@@ -338,12 +338,12 @@
 
 ## Plate Settings (`plate/`)
 
-- 🚧 [`curr_bed_type`](plate/curr_bed_type.md) (plate-level fork parameters)
+- 🚧 [`curr_bed_type`](plate/curr_bed_type.md) (plate-level Snapmaker Orca parameters)
 - 🔗 [`skirt_start_angle`](others/skirt_start_angle.md) (same as the Others page, cross-reference)
 - 🔗 [`print_sequence`](others/print_sequence.md) (same as the Others page, cross-reference)
 - 🔗 [`spiral_mode`](others/spiral_mode.md) (same as the Others page, cross-reference)
-- 🚧 [`first_layer_sequence_choice`](plate/first_layer_sequence_choice.md) (plate-level fork parameters)
-- 🚧 [`other_layers_sequence_choice`](plate/other_layers_sequence_choice.md) (plate-level fork parameters)
+- 🚧 [`first_layer_sequence_choice`](plate/first_layer_sequence_choice.md) (plate-level Snapmaker Orca parameters)
+- 🚧 [`other_layers_sequence_choice`](plate/other_layers_sequence_choice.md) (plate-level Snapmaker Orca parameters)
 
 > The Frequent page aggregates frequently used parameters; its keys all come from the main pages above (`layer_height`, `sparse_infill_density`, `wall_loops`, `enable_support`) and are not documented twice.
 

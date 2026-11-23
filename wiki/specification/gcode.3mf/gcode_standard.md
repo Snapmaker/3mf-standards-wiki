@@ -528,7 +528,7 @@ TIMELAPSE_STOP
 
 ## 附录 C（资料性）源码索引
 
-本规范条款与 fork 源码（仓库 iesteem/OrcaSlicer）的对应关系：
+本规范条款与 Snapmaker Orca 源码的对应关系：
 
 | 条款 | 源码定位 |
 |---|---|

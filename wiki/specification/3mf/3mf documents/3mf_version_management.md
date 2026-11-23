@@ -13,7 +13,7 @@
 | 管线 | 文件 | 职责 |
 |---|---|---|
 | **BBS 管线(主)** | `bbs_3mf.cpp` | 本产品 3mf 的**全部读写**;兼容读取 Bambu Studio 原生 3mf |
-| **Prusa 管线(嗅探+只读)** | `3mf.cpp` | 仅识别并读取 PrusaSlicer 3mf(只读几何,不加载配置);本 fork 从不用它写文件 |
+| **Prusa 管线(嗅探+只读)** | `3mf.cpp` | 仅识别并读取 PrusaSlicer 3mf(只读几何,不加载配置);本软件从不用它写文件 |
 
 导入分发在 `Model.cpp:361-390`:
 `.3mf` → `PrusaFileParser::check_3mf_from_prusa` 命中则走 `load_3mf` + `From_Prusa`;否则 `load_bbs_3mf`,按 `is_bbl_3mf` 出参细分 `From_BBS` / `From_Other`。
@@ -88,7 +88,7 @@ Prusa 判据(`3mf.cpp:288-341`):
 | 内嵌预设 `version` | `preset->version.to_string()` | `7560` |
 | slice_info 调试头 | `X-SM-Client-Version` = AA.BB.CC.DD | `7921-7922` |
 
-### 3.2 去 Bambu 化策略(Snapmaker fork 刻意行为,来源 4a9bc310d)
+### 3.2 去 Bambu 化策略(Snapmaker Orca 刻意行为,来源 4a9bc310d)
 
 1. **版本键改写自家命名空间**:保存只写 `Snapmaker_Orca:3mfVersion`;`BambuStudio:3mfVersion` / `bamboo_slicer:Version3mf` 降为**只读兼容别名**(读取三键等价,`bbs_3mf.cpp:3818-3820`)。
 2. **Application 不再伪装 BambuStudio**:写 `Snapmaker_Orca-…`,注释明言"避免其他切片器把该 3mf 当成 Bambu 工程"(`6645-6646`)。

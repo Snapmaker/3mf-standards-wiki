@@ -1,6 +1,6 @@
 # AGENTS.md — 本仓库 wiki 约定
 
-本仓库是团队 wiki（3MF 专题先行，后续扩展为 OrcaSlicer fork 完整文档）。目录组织沿用上游 [OrcaSlicer Wiki](https://github.com/OrcaSlicer/OrcaSlicer_WIKI) 的分类法，按本仓库形态（仓库内纯 markdown，无构建工具）做了适配。人类贡献者和 AI 都遵守本文件。
+本仓库是团队 wiki（3MF 专题先行，后续扩展为软件完整文档）。目录组织沿用上游 [OrcaSlicer Wiki](https://github.com/OrcaSlicer/OrcaSlicer_WIKI) 的分类法，按本仓库形态（仓库内纯 markdown，无构建工具）做了适配。人类贡献者和 AI 都遵守本文件。
 
 ## 目录结构
 
@@ -11,11 +11,10 @@
 | `wiki/specification/3mf/` | 现有 | 3MF 文件格式专题：`3mf_standard.md` 为工程文件规范正文，`3mf documents/` 子目录放现状盘点类文档（文件结构、配置文件解析、版本管理细则） |
 | `wiki/specification/gcode.3mf/` | 现有 | gcode.3mf 嵌入式格式专题：`gcode_3mf_standard.md` 容器规范、`gcode_standard.md` G-code 文件规范、`gcode_3mf_interaction_fields.md` 两端交互字段对照 |
 | `wiki/images/` | 按需建 | wiki 图片集中存放，按主题建子目录 |
-| `wiki/settings/printer/` `wiki/settings/filament/` `wiki/settings/process/` | 现有 | 设置参数每键一文档。子目录名按 fork UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
-| `wiki/preset/` | 现有 | 预设体系文档：配置文件命名、继承与版本入门，耗材/工艺/打印机预设文件格式标准 |
-| `wiki/general_settings/` `wiki/cli/` `wiki/developer_reference/` | 现有（支撑页） | 键页元数据支撑页（`option_mode` / `option_type` / `built_in_placeholders_variables` / `cli_mode`，2026-11-19 自上游移植并按 fork 修订）；其余内容随 fork 完整文档阶段扩充，**目录名与上游 OrcaSlicer wiki 一致** |
-| `wiki/print_prepare/` `wiki/calibration/` `wiki/guides/` `wiki/releases/` | 预留 | fork 完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
-| `docs/` | 现有（内部） | 研发证据链：盘点、对账、问题清单。不是 wiki 正文的层级，不放新人向内容 |
+| `wiki/settings/printer/` `wiki/settings/filament/` `wiki/settings/process/` | 现有 | 设置参数每键一文档。子目录名按软件 UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
+| `wiki/preset/` | 现有 | 预设体系文档：命名与继承规范，耗材/工艺/打印机预设文件格式标准 |
+| `wiki/general_settings/` `wiki/cli/` `wiki/developer_reference/` | 现有（支撑页） | 键页元数据支撑页（`option_mode` / `option_type` / `built_in_placeholders_variables` / `cli_mode`，2026-11-19 自上游移植并修订）；其余内容随软件完整文档阶段扩充，**目录名与上游 OrcaSlicer wiki 一致** |
+| `wiki/print_prepare/` `wiki/calibration/` `wiki/guides/` `wiki/releases/` | 预留 | 软件完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
 
 ## 命名
 
@@ -26,22 +25,22 @@
 
 ## 内链
 
-- 用相对路径带 `.md` 扩展名：`[参数覆盖](3mf_model_settings.md)`、指向 docs/ 用 `../../docs/` 前缀
+- 用相对路径带 `.md` 扩展名：`[参数覆盖](3mf_model_settings.md)`
 - 锚点用 kebab-case 指向真实标题（标题里的编号和空格都算）：`[x](3mf_file_structure.md#3-每个文件的作用)`
 - 独立页面（专题、规范正文、总览页）标题下第二行放面包屑：`← [Wiki 首页](../home.md)`（层级更深时相应加 `../`）
-- 设置键页面（`wiki/settings/`）用 `> Location: Tab → 分组 → UI 区块` 行替代面包屑，模板见 `new-setting-key-page` skill
+- 设置键页面（`wiki/settings/`）用 `> Location: Tab → 分组 → UI 区块` 行替代面包屑
 - **孤儿页规则**：新页面必须被 `wiki/home.md`（或其他页面）链接，否则不许合入——没有入口的页面等于不存在
 
 ## 图片
 
 - wiki 图片放 `wiki/images/<主题>/`，不要散在页面旁边
 - 用相对路径引用，alt 文本必填且描述内容：`![打印板预览示例](images/3mf/plate_preview.png)`
-- **图片一律本地化（2026-11-19 裁决）：不得直链上游仓库**（OrcaSlicer_WIKI 等外链图床），先下载进 `wiki/images/` 再引用
+- **图片一律本地化：不得直链上游仓库**（OrcaSlicer_WIKI 等外链图床），先下载进 `wiki/images/` 再引用
 - 纯文字能说清的（表格、公式、代码）不用图片
 
 ## 链接
 
-- **正文不得链接到 OrcaSlicer 上游原始路径**（wiki 页 / PR / issue / release，2026-11-19 裁决）：有本地对应页的改链本地页，没有的写纯文字（如"upstream PR 12669"）；上游资料作"深入阅读"引用时同样只留文字描述不放超链
+- **正文不得链接到 OrcaSlicer 上游原始路径**（wiki 页 / PR / issue / release）：有本地对应页的改链本地页，没有的写纯文字（如"upstream PR 12669"）；上游资料作"深入阅读"引用时同样只留文字描述不放超链
 
 ## Callouts
 
@@ -56,23 +55,15 @@
 ## 文风
 
 - wiki 面向新人：简洁、说人话，一页讲清一件事；长页顶部放目录
-- 证据链（样本清单、逐项对账、代码行号）不放 wiki 正文，放 `docs/`，wiki 里用"深入阅读"链接过去
-- **不暴露仓库代码内容**（2026-11-20 裁决）：`wiki/settings/` 键页与总览页、`wiki/general_settings/` `wiki/cli/` `wiki/developer_reference/` 支撑页不写源文件名/类名/原始类型名（`coXxx`）/仓库路径，"fork" 措辞改用"软件 / 当前软件版本 / Snapmaker Orca"；规范正文（`specification/`）引用源码仍按下文"源码引用"规则执行
-- 涉及"待团队裁决"的结论，注明来源问题编号（如 docs/04 的 Q6），不要写成已定论
-- **例外（2026-11-19 裁决）**：`wiki/settings/` 目录页面正文**全英文**（含占位页模板与总览页），标注行用英文（`> Status:` / `> Visibility:` / `> G-code embedded name:` / `> Also in this section:`）
+- 证据链（样本清单、逐项对账、代码行号）不放 wiki 正文，留在内部工作记录
+- **不暴露实现细节**：`wiki/settings/` 键页与总览页、`wiki/general_settings/` `wiki/cli/` `wiki/developer_reference/` 支撑页不写源文件名/类名/原始类型名（`coXxx`）/仓库路径，指称软件时用"软件 / 当前软件版本 / Snapmaker Orca"；规范正文（`specification/`）引用源码仍按下文"源码引用"规则执行
+- 涉及未定论的结论，标注"待定"，不要写成已定论
+- **例外**：`wiki/settings/` 目录页面正文**全英文**（含占位页模板与总览页），标注行用英文（`> Status:` / `> Visibility:` / `> G-code embedded name:` / `> Also in this section:`）
 
 ## 源码引用
 
-引用 fork 源码时写相对路径 + 文件定位，不写绝对路径（各人 checkout 位置不同）：
+引用源码时写相对路径 + 文件定位，不写绝对路径（各人 checkout 位置不同）：
 
 ```markdown
-序列化代码位于 `src/libslic3r/Format/bbs_3mf.cpp`（fork 仓库 iesteem/OrcaSlicer）
+序列化代码位于 `src/libslic3r/Format/bbs_3mf.cpp`（Snapmaker Orca 源码）
 ```
-
-## Claude Code Skills
-
-仓库级 skill 存放于 `.claude/skills/<skill-name>/`（`SKILL.md` + 按需 `scripts/`），随仓库对全组生效。新建 skill 在本表登记。
-
-| Skill | 用途 |
-|---|---|
-| `new-setting-key-page` | 新增/更新 `wiki/settings/` 设置键文档的操作流程；其 `scripts/check_page.sh` 是本文件命名/全局唯一/孤儿页规则的机器校验（单页校验，`--all` 全量审计，E7 查 [Default] 行、E8 查 Location 段数）；其 `scripts/print_config_tools.py` 从 fork `PrintConfig.cpp` 提取键元数据落档 `docs/data/` 并向键页注入 Default/Unit/Range/Aliases 行（extract/inject/migrate/audit 四子命令，格式与缺键清单见 docs/09） |

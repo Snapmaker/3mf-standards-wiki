@@ -1,7 +1,7 @@
 # travel_short_distance_acceleration
 
 > Location: Process → Speed → Acceleration → Short travel
-> Status: placeholder — fork-added parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-added parameter, to be completed.
 
 ---
 

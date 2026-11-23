@@ -1,7 +1,7 @@
 # enable_change_pressure_when_wiping
 
 > Location: Printer → Multimaterial → Wipe tower → Enable change pressure advance when wiping
-> Status: placeholder — fork-specific parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-specific parameter, to be completed.
 
 ---
 

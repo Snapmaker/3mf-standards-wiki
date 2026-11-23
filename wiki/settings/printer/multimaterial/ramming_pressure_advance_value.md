@@ -1,7 +1,7 @@
 # ramming_pressure_advance_value
 
 > Location: Printer → Multimaterial → Wipe tower → Pressure advance value when ramming
-> Status: placeholder — fork-specific parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-specific parameter, to be completed.
 
 ---
 

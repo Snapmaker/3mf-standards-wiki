@@ -1,7 +1,7 @@
 # cooling_perimeter_transition_distance
 
 > Location: Filament → Cooling → Part cooling fan → Perimeter transition distance
-> Status: placeholder — fork-added parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-added parameter, to be completed.
 > Visibility: [`cooling_slowdown_logic`](cooling_slowdown_logic.md) is set to Consistent surface.
 
 ---

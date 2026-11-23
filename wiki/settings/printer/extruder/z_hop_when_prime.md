@@ -1,7 +1,7 @@
 # z_hop_when_prime
 
 > Location: Printer → Extruder N → Z-Hop → Z hop when moving to tower
-> Status: placeholder — fork-specific parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-specific parameter, to be completed.
 
 ---
 

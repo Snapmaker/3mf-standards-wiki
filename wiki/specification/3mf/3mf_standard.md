@@ -73,7 +73,7 @@
 - **生产者**——生成工程 `.3mf` 的软件（Snapmaker Orca 的直接保存、通用导出与自动备份三种路径，见附录 B）；
 - **消费者**——回读工程 `.3mf` 的软件（Snapmaker Orca 后续版本、按 3MF Core 读取几何的第三方工具）。
 
-本规范不规定：切片算法与参数语义（见[设置参数文档](../../settings/printer/printer_overview.md)）、`.gcode.3mf` 执行产物（由 [gcode.3mf 规范](../gcode.3mf/gcode_3mf_standard.md) 规定）、PrusaSlicer 管线专有配置文件（`Slic3r_PE.config` 等，支持范围待裁决：Q20）、`plate_N.json` 的坐标语义（本版未冻结，见 6.5）。
+本规范不规定：切片算法与参数语义（见[设置参数文档](../../settings/printer/printer_overview.md)）、`.gcode.3mf` 执行产物（由 [gcode.3mf 规范](../gcode.3mf/gcode_3mf_standard.md) 规定）、PrusaSlicer 管线专有配置文件（`Slic3r_PE.config` 等，支持范围待定）、`plate_N.json` 的坐标语义（本版未冻结，见 6.5）。
 
 ## 2 规范性引用文件
 
@@ -142,7 +142,7 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 └── Metadata/                              ← 配置层（必选）
     ├── project_settings.config            ← 全量配置快照，JSON（必选）
     ├── model_settings.config              ← 对象/零件/盘索引，XML（必选）
-    ├── slice_info.config                  ← 摘要位，当前空壳（必选，去留待裁决：Q16）
+    ├── slice_info.config                  ← 摘要位，当前空壳（必选，去留待定）
     ├── plate_N.png 等缩略图族              ← 按盘出现
     ├── plate_N.json                       ← 盘面布局摘要（2.4.0 起，条件出现）
     ├── *_settings_N.config                ← 内嵌预设（条件出现）
@@ -172,7 +172,7 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 ### 4.3 压缩、容量与命名约定
 
 - 归档为标准 ZIP 并默认启用 ZIP64：文本 / XML / JSON 条目使用 DEFLATE 压缩；PNG 等已压缩内容以 STORE 方式写入。
-- 外拆网格文件名模板为 `<对象名>_<obj_id>.model`，其中 `<对象名>` 直接取用户输入的对象名拼接，**写入前未做字符清洗**——对象名含 `/`、`\`、Windows 保留字符或超长时行为未定义。规范拟将外拆文件名与对象名解耦（固定模式如 `object_<obj_id>.model`，对象名只存 `model_settings.config`）（待裁决：Q22）。
+- 外拆网格文件名模板为 `<对象名>_<obj_id>.model`，其中 `<对象名>` 直接取用户输入的对象名拼接，**写入前未做字符清洗**——对象名含 `/`、`\`、Windows 保留字符或超长时行为未定义。规范拟将外拆文件名与对象名解耦（固定模式如 `object_<obj_id>.model`，对象名只存 `model_settings.config`）（待定）。
 - `plate_N` 系列命名中的 `N` 一律为**盘号**（从 1 起、可稀疏，不应重新编号）；`*_settings_N.config` 中的 `N` 为同类内嵌预设编号（从 1 起、按类型各自递增），**不是盘号**。
 - 条件性文件（6.4、6.5）仅在对应功能被使用且数据非空时写出。
 
@@ -241,7 +241,7 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 | `Title` / `Origin` / `Designer` / `DesignerCover` / `Description` / `Copyright` / `License` | 可选 | 模型级信息，可为空 |
 | `DesignerUserId` / `CreationDate` / `ModificationDate` | 可选 | **隐私键，恒写空串**（生产者刻意不落盘用户身份与时间信息） |
 | `model_id` / `Region` | 条件 | 平台分发元数据（如 MakerWorld 导入件），按存在性读取 |
-| `MakerLab` / `MakerLabVersion` | 条件 | 上游遗留键（归入废弃候选，待裁决：Q2） |
+| `MakerLab` / `MakerLabVersion` | 条件 | 上游遗留键（归入废弃候选，待定） |
 
 **历史品牌键剥除**：重新保存时，生产者剥除所有 `BambuStudio:` / `bamboo_slicer:` 前缀的元数据键（源码 `src/libslic3r/Format/bbs_3mf.cpp`，行号锚点见 [3mf_version_management](3mf%20documents/3mf_version_management.md) §3.2）。消费者对残留的历史键按存在性读取、未知则忽略。
 
@@ -249,7 +249,7 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 
 直接保存形态下，网格本体外拆至 `3D/Objects/`：
 
-- **文件名**：`<对象名>_<obj_id>.model`，每对象一个文件（命名安全性见 4.3，待裁决：Q22）。
+- **文件名**：`<对象名>_<obj_id>.model`，每对象一个文件（命名安全性见 4.3，待定）。
 - **内容**：独立的 `<model>` 根（核心命名空间），内含该对象网格的顶点与三角形；同样写 `Snapmaker_Orca:3mfVersion` 元数据键（子模型格式识别钩子）。顶点坐标以定点十进制写出，精度按 `float` 最大有效数字（保证回读无损）。
 - **登记**：每个外拆部件在 `3D/_rels/3dmodel.model.rels` 中登记一条关系；主模型以 `p:path` 引用（5.2）。
 - **引用定位**：消费者**应**通过关系文件 + `p:path` 定位网格，**不应**按 `Objects/` 目录文件名猜测。
@@ -268,7 +268,7 @@ XML，必选。对象/零件/盘/实例的概念图解与对照示例见 [model_
 config
 ├── object id="对象编号"                        ← 每对象一节
 │   ├── metadata key="name"                     ← 对象名（用户可见）
-│   ├── metadata key="module"                   ← 条件出现（源码支持，实测 0 次，待裁决：Q3）
+│   ├── metadata key="module"                   ← 条件出现（源码支持，实测 0 次，待定）
 │   ├── metadata key=<对象级参数覆盖>            ← project_settings 键子集，按需
 │   └── part id="部件编号" subtype="零件类型"
 │       ├── metadata key="name"
@@ -281,7 +281,7 @@ config
 │   ├── metadata key="plater_id" …              ← 键表见 6.1.2
 │   └── model_instance                          ← 每实例一节
 │       └── metadata key="object_id" / "instance_id" / "identify_id"
-└── assemble                                    ← 标签恒写；内含 item 条件出现（待裁决：Q4）
+└── assemble                                    ← 标签恒写；内含 item 条件出现（待定）
     └── assemble_item object_id=… instanceid=… transform=… offset=…
 ```
 
@@ -305,7 +305,7 @@ config
 | 层 | 键 | 写入条件 | 含义 |
 |---|---|---|---|
 | object | `name` | 对象名非空 | 对象名，显示用，可为非 ASCII |
-| object | `module` | 模块名非空 | 语义未定（待裁决：Q3） |
+| object | `module` | 模块名非空 | 语义待定 |
 | part | `name` | 零件名非空 | 零件名，显示用 |
 | part | `source_file` / `source_object_id` / `source_volume_id` / `source_offset_x\|y\|z` | 来源文件非空时**整组写出** | 导入来源追溯；`source_file` 默认仅存文件名不含路径 |
 | part | `source_in_inches` / `source_in_meters` | 来源件做过单位转换 | 单位转换标记，二者互斥 |
@@ -320,13 +320,13 @@ config
 |---|---|---|---|
 | `plater_id` | 恒写 | 原始盘号 N（1 起，写侧 = 盘序 + 1） | 与缩略图等 `plate_N` 命名的 N 一致 |
 | `plater_name` / `locked` | 恒写 | 盘名 / 编辑器锁定状态 | 展示用 |
-| `filament_map_mode` | 恒写 | 耗材映射模式 | 当前硬编码 `Auto For Flush`（处置待裁决：Q12） |
-| `filament_maps` | 恒写 | 耗材映射 | 当前硬编码全 `1`，**不应作为真实物理喷头 / 料槽映射使用**（Q12） |
-| `curr_bed_type` / `print_sequence` / `first_layer_print_sequence` / `other_layers_print_sequence` / `other_layers_print_sequence_nums` / `spiral_mode` | 条件 | 盘级打印选项 | 盘级配置存在该 option 才写（触发条件逐项确认中，待裁决：Q5） |
+| `filament_map_mode` | 恒写 | 耗材映射模式 | 当前硬编码 `Auto For Flush`（处置待定） |
+| `filament_maps` | 恒写 | 耗材映射 | 当前硬编码全 `1`，**不应作为真实物理喷头 / 料槽映射使用** |
+| `curr_bed_type` / `print_sequence` / `first_layer_print_sequence` / `other_layers_print_sequence` / `other_layers_print_sequence_nums` / `spiral_mode` | 条件 | 盘级打印选项 | 盘级配置存在该 option 才写（触发条件逐项确认中，待定） |
 | `gcode_file` | 条件 | 盘 G-code 的包内路径 | 仅嵌 G-code 的形态写出（工程直接保存 / 通用导出无此键） |
 | `thumbnail_file` / `thumbnail_no_light_file` / `top_file` / `pick_file` / `pattern_bbox_file` | 条件 | 盘级资源路径 | 对应缩略图 / 顶视 / 拾取 / 图案包围盒文件存在才写，按实际存在性读取 |
 
-盘节内的 `<model_instance>`（非 SkipModel 导出且盘非空时逐实例写出，三键恒写）登记该盘包含的实例：`object_id`（对象编号，与 5.2 一一对应）、`instance_id`（对象内实例序号）、`identify_id`（不透明实例标识，写侧取实例运行时对象 ID，**不应**按数组下标解释，与 `slice_info.config` 的标识域不同）。`<assemble>` 节标签恒写，内含 `<assemble_item>`（属性 `object_id` / `instanceid` / `transform` 3×4 / `offset`）仅在装配模式初始化且变换合法时写出——实测 7 样本 + 2 对照样本均 0 次出现（待裁决：Q4）。
+盘节内的 `<model_instance>`（非 SkipModel 导出且盘非空时逐实例写出，三键恒写）登记该盘包含的实例：`object_id`（对象编号，与 5.2 一一对应）、`instance_id`（对象内实例序号）、`identify_id`（不透明实例标识，写侧取实例运行时对象 ID，**不应**按数组下标解释，与 `slice_info.config` 的标识域不同）。`<assemble>` 节标签恒写，内含 `<assemble_item>`（属性 `object_id` / `instanceid` / `transform` 3×4 / `offset`）仅在装配模式初始化且变换合法时写出——实测 7 样本 + 2 对照样本均 0 次出现（待定）。
 
 ### 6.2 三层参数覆盖
 
@@ -338,10 +338,10 @@ config
 | object（对象覆盖） | `model_settings.config` 对象节 | 该对象全部实例生效 |
 | part（零件覆盖） | `model_settings.config` 零件节 | 仅该零件生效 |
 
-- 现状优先级为 **part > object > project**（零件 > 对象 > 全局），该规则只存在于读取代码逻辑中，文件本身无任何声明（实测同一键在对象层与零件层并存：`wall_loops` 对象层 ×47、零件层 ×10）（待裁决：Q19 显式化）。
+- 现状优先级为 **part > object > project**（零件 > 对象 > 全局），该规则只存在于读取代码逻辑中，文件本身无任何声明（实测同一键在对象层与零件层并存：`wall_loops` 对象层 ×47、零件层 ×10）（待定）。
 - 覆盖键集合 = `project_settings.config` 键的子集（实测对象层 32 种、零件层 17 种，如 `layer_height`、`wall_loops`、`extruder`、`support_*`、`ironing_*`）。对象层 `extruder` 实测必现——料槽分配机制总会把它写进对象配置；它属差异键而非恒写键（代码上对象层无任何恒写 metadata 键，见 6.1.1）。
 - **键空间警示**：结构键（`name`、`matrix`、`source_*` 等）与参数覆盖键共用同一 `metadata key` 命名空间，仅靠所在位置区分语义；新增配置键**不应**与既有结构键撞名（撞名清单维护见附录 D）。
-- 本版不为局部配置时间戳留位（语义未明，待裁决：Q9）。
+- 本版不为局部配置时间戳留位（语义未明，待定）。
 
 ### 6.3 全量配置快照：`Metadata/project_settings.config`
 
@@ -352,7 +352,7 @@ JSON，必选。头部元字段：
 | `version` | 软件版本（如 `"2.4.0"`） | 生成器版本，非格式版本 |
 | `name` | `"project_settings"` | 固定 |
 | `from` | `"project"` | 固定 |
-| `project_schema_version` | `"1"` | 配置 schema 版本；2.4.0 起落盘，缺失视为 legacy（维护规则待裁决：Q6） |
+| `project_schema_version` | `"1"` | 配置 schema 版本；2.4.0 起落盘，缺失视为 legacy（维护规则待定） |
 
 其后为切片时全部生效参数的扁平键值（实测 500～600 键，按字典序）。**取值形态**（所有标量与数组元素均为字符串，无原生 JSON number / bool / null）：
 
@@ -367,9 +367,9 @@ JSON，必选。头部元字段：
 | 空字符串 / 空数组 | `""`、`[]` | 与 `"nil"` 是两种"空" |
 | 元素内嵌换行 | `["0,0", "\n0.2,0.4444"]` | 解析前先 trim |
 
-**写入范围**：现状为全量 `FullPrintConfig` 键集落盘、无准入控制（序列化点见 `src/libslic3r/Format/bbs_3mf.cpp`），新增软件参数自动进包。本规范将允许写入的键集定义为**字段白名单**（初始集合 584 键 = 源码定义且落盘 553 + 落盘无静态定义 31，含 18 个序列化别名如 `filament_retract_*` ↔ `retract_*`），六类字段一律禁入（SLA 树脂 / CLI 动作参数 / 运行时派生状态 / GUI 废弃候选 / 预设系统内部 / 打印主机连接），新增配置键须先登记字段字典再落盘——准入流程待团队确认（待裁决：Q18，集合与分类见附录 D）。
+**写入范围**：现状为全量 `FullPrintConfig` 键集落盘、无准入控制（序列化点见 `src/libslic3r/Format/bbs_3mf.cpp`），新增软件参数自动进包。本规范将允许写入的键集定义为**字段白名单**（初始集合 584 键 = 源码定义且落盘 553 + 落盘无静态定义 31，含 18 个序列化别名如 `filament_retract_*` ↔ `retract_*`），六类字段一律禁入（SLA 树脂 / CLI 动作参数 / 运行时派生状态 / GUI 废弃候选 / 预设系统内部 / 打印主机连接），新增配置键须先登记字段字典再落盘——准入流程待定（集合与分类见附录 D）。
 
-**强制禁入项（安全）**：凭据类字段（`print_host`、`printhost_apikey`、`printhost_password`、`printhost_user`、`printhost_port`、`printhost_cafile`）**不应**随包分发——现状 `machine_settings_N.config` 结构性写入这些键（当前样本值为空，用户一旦配置即泄漏），序列化前**应**剔除（待裁决：Q11）。
+**强制禁入项（安全）**：凭据类字段（`print_host`、`printhost_apikey`、`printhost_password`、`printhost_user`、`printhost_port`、`printhost_cafile`）**不应**随包分发——现状 `machine_settings_N.config` 结构性写入这些键（当前样本值为空，用户一旦配置即泄漏），序列化前**应**剔除（待定）。
 
 预设状态字段（`different_settings_to_system`、`inherits_group`）为条件触发写入的固定系统字段：前者在至少一个所选预设存在相对父系统预设的修改键时写出，后者在至少一个所选预设为带继承父的副本时写出，未触发时整键不出现。回读时 `inherits_group` 逐槽指定覆盖基准预设，`different_settings_to_system` 承担用户修改的标脏保全（清单外键接受预设值覆盖，清单内键保留工程值并标脏，详解见 [project_settings.config](3mf%20documents/3mf_project_settings.md) 5.3）。
 
@@ -394,9 +394,9 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 约定：
 
-- 内嵌预设与 `project_settings.config` 数据约 95% 重复（双写），不一致时谁生效现状未定义（待裁决：Q15）。恢复工程时按各自用途读取，**不应**把包内最后一个配置文件当作最终配置。
-- 预设 `version`（如 2.5.0.66）与软件 `version`、`project_schema_version` 是**三套互不相干的版本号**（语义待裁决：Q7，见 7.1）。
-- 以官方预设解析继承链可完整解释嵌入字段（实测 embedded-only = 0），"嵌入预设 − 官方链 = 用户真实修改量"；该对账方法论与实证见 [docs/03](../../../docs/03-现状盘点-model_settings与嵌入预设.md)。
+- 内嵌预设与 `project_settings.config` 数据约 95% 重复（双写），不一致时谁生效现状未定义（待定）。恢复工程时按各自用途读取，**不应**把包内最后一个配置文件当作最终配置。
+- 预设 `version`（如 2.5.0.66）与软件 `version`、`project_schema_version` 是**三套互不相干的版本号**（语义待定，见 7.1）。
+- 以官方预设解析继承链可完整解释嵌入字段（实测 embedded-only = 0），“嵌入预设 − 官方链 = 用户真实修改量”。
 
 ### 6.5 条件性工程数据文件
 
@@ -409,7 +409,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 | `brim_ear_points.txt` | 文本 | 使用鼠耳裙边时。首行 `brim_points_format_version=0`；每对象一行 `object_id=N\|x y z radius ...`（对象顺序号） |
 | `custom_gcode_per_layer.xml` | XML | 定义逐层事件（0 换色 / 1 暂停 / 2 换工具 / 3 模板 / 4 自定义）时；按**原盘号**记录 `top_z/type/extruder/color/extra/gcode` |
 | `cut_information.xml` | XML | 执行过切割操作时；切割 ID、校验值、连接件数与体积索引 |
-| `plate_N.json` | JSON | 2.4.0 起按盘出现。盘面布局摘要（bbox、床型、喷嘴等，自带 `version:2`）；与 `slice_info.config` / plate 节职责重叠（生成代码与字段全集待定位，待裁决：Q1 与 Q16）。字段约定同 [gcode.3mf 规范](../gcode.3mf/gcode_3mf_standard.md) 6.6 |
+| `plate_N.json` | JSON | 2.4.0 起按盘出现。盘面布局摘要（bbox、床型、喷嘴等，自带 `version:2`）；与 `slice_info.config` / plate 节职责重叠（生成代码与字段全集待定位，待定）。字段约定同 [gcode.3mf 规范](../gcode.3mf/gcode_3mf_standard.md) 6.6 |
 
 各文件 `object_id` 的含义不相同（真实对象编号 vs 对象顺序号），读取时以各文件自身的格式头为准。
 
@@ -417,13 +417,13 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 盘级缩略图族（`plate_N.png` / `plate_N_small.png` / `plate_no_light_N.png` / `top_N.png` / `pick_N.png`）与包级封面（`Auxiliaries/.thumbnails/thumbnail_3mf.png` 等）的约定与 [gcode.3mf 规范](../gcode.3mf/gcode_3mf_standard.md) 6.7、7.4 一致：实际尺寸以 PNG IHDR 为准；缺失降级为默认图，不影响工程恢复。
 
-`Auxiliaries/` 目录（可选）承载包级封面、模型展示图、作者图片与用户附加资源。现状对用户图片**无数量与大小上限**（实测单包 12 张用户照片、单缩略图 >600KB；约束方向待裁决：Q17）。消费者对未知内容应"允许存在、按需取用、未知则忽略"。
+`Auxiliaries/` 目录（可选）承载包级封面、模型展示图、作者图片与用户附加资源。现状对用户图片**无数量与大小上限**（实测单包 12 张用户照片、单缩略图 >600KB；约束方向待定）。消费者对未知内容应"允许存在、按需取用、未知则忽略"。
 
 ### 6.7 通用导出的配置层
 
-通用导出的菜单语义是"去掉 3mf 私有扩展、便于第三方软件读取"，但现状清洗只发生在 3D 几何层（去生产扩展 / UUID / 外拆网格）；`Metadata/` 全套配置（`project_settings.config` 数百字段、`model_settings.config`、盘缩略图）**字节级原样带出**（对照实测见附录 C）。第三方拿到"通用"文件即拿到完整切片工程配置，包括 6.3 所列泄漏面（凭据键、预设痕迹、预设元数据污染——后者待裁决：Q14）。
+通用导出的菜单语义是"去掉 3mf 私有扩展、便于第三方软件读取"，但现状清洗只发生在 3D 几何层（去生产扩展 / UUID / 外拆网格）；`Metadata/` 全套配置（`project_settings.config` 数百字段、`model_settings.config`、盘缩略图）**字节级原样带出**（对照实测见附录 C）。第三方拿到"通用"文件即拿到完整切片工程配置，包括 6.3 所列泄漏面（凭据键、预设痕迹、预设元数据污染——后者待定）。
 
-本规范立场：通用导出**宜**剥离 `Metadata/` 配置层，或仅保留几何引用必需项；剥离范围待裁决（Q21）。
+本规范立场：通用导出**宜**剥离 `Metadata/` 配置层，或仅保留几何引用必需项；剥离范围待定。
 
 ## 7 版本与兼容
 
@@ -435,9 +435,9 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 |---|---|---|---|---|
 | 1 | 文件格式版本 | `3dmodel.model` 内 `<metadata name="Snapmaker_Orca:3mfVersion">` | 1（兼容上限 2） | 子模型格式识别；超限检查已禁用 |
 | 2 | 生成器（应用）版本 | `<metadata name="Application">Snapmaker_Orca-x.y.z` | 随构建 | 同族判别；旧版热床迁移门槛（<1.5.9） |
-| 3 | 配置 schema 版本 | `project_settings.config` 内 `project_schema_version` | 1 | 新版文件升级提示（提示不拦截；递增规则待裁决：Q6） |
+| 3 | 配置 schema 版本 | `project_settings.config` 内 `project_schema_version` | 1 | 新版文件升级提示（提示不拦截；递增规则待定） |
 | 4 | 子格式版本头 | 各内嵌文件首行 / 字段（`layer_heights_profile_format_version=2`、`brim_points_format_version=0`、`plate_N.json` 的 `version:2` 等） | 2 / 0 / 2 不等 | 对应解析器分支 |
-| 5 | 预设版本 | 内嵌预设 JSON `version`；vendor profile `version` | Semver | 预设系统门控（语义待裁决：Q7） |
+| 5 | 预设版本 | 内嵌预设 JSON `version`；vendor profile `version` | Semver | 预设系统门控（语义待定） |
 
 另有 `slice_info.config` 的调试头 `X-SM-Client-*`（全宽版本格式），仅诊断用。
 
@@ -455,7 +455,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 ### 7.3 读取端行为
 
-**双管线**：主管线（`bbs_3mf.cpp`）承担本产品 3mf 的全部读写并兼容读取同族文件；Prusa 管线（`3mf.cpp`）仅嗅探并只读 PrusaSlicer 3mf（只读几何、不加载配置）。判据：包内存在 `3D/_rels/3dmodel.model.rels` → 不是 Prusa；`Application` 含 `PrusaSlicer` → 是 Prusa。Prusa 兼容路径的支持范围待裁决（Q20）。
+**双管线**：主管线（`bbs_3mf.cpp`）承担本产品 3mf 的全部读写并兼容读取同族文件；Prusa 管线（`3mf.cpp`）仅嗅探并只读 PrusaSlicer 3mf（只读几何、不加载配置）。判据：包内存在 `3D/_rels/3dmodel.model.rels` → 不是 Prusa；`Application` 含 `PrusaSlicer` → 是 Prusa。Prusa 兼容路径的支持范围待定。
 
 **同族判别只看 `Application` 前缀**（`Snapmaker_Orca-` / `BambuStudio-`）；版本键命中不再置该标志。判别结果决定后续行为：同族文件全量加载；通用 Core 文件（`From_Other`）仅加载几何并触发多实例拆分。
 
@@ -515,7 +515,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 1. 按普通 ZIP 解包，先读 `[Content_Types].xml` 与 `_rels/.rels`，不因未声明扩展名拒绝已知文件；
 2. 通过关系文件 + `p:path` 定位外拆网格，通过包级关系定位主模型，**不应**按目录文件名猜测部件；
 3. 按 `unit` 换算坐标，不假定毫米；
-4. 按 part > object > project 合成三层覆盖（6.2；现状为隐式规则，待裁决：Q19）；
+4. 按 part > object > project 合成三层覆盖（6.2；现状为隐式规则，待定）；
 5. 对缺失的可选资源（缩略图、预设、条件性文件、Auxiliaries 内容）保持容忍，未知则忽略；
 6. **不应**凭 `.config` 扩展名假定统一格式（6.3 JSON / 6.1 XML）；
 7. **不应**将 `filament_maps`、`identify_id`、`plate_N.json` 的 `id` 当作物理喷头 / 料槽编号使用；
@@ -576,7 +576,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 ### C.1 对照样本：同一工程两种导出
 
-同一工程（Snapmaker_Orca-2.4.0）分别直接保存与通用导出，逐一 MD5 对比（[docs/04](../../../docs/04-问题清单-切片软件团队对齐.md) E 节）：
+同一工程（Snapmaker_Orca-2.4.0）分别直接保存与通用导出，逐一 MD5 对比：
 
 | 维度 | 直接保存 | 通用导出 |
 |---|---|---|
@@ -586,7 +586,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 | 生产扩展 + UUID | 有（`requiredextensions="p"`，对象/组件/实例全带） | 无（`xmlns:p` 未声明） |
 | `Metadata/` 8 个公共文件 | **字节级完全相同** | 同左 |
 
-结论：两种形态的差异全部集中在 3D 几何层；"通用导出未清洗配置层"由此实证（6.7，待裁决：Q21）。
+结论：两种形态的差异全部集中在 3D 几何层；"通用导出未清洗配置层"由此实证（6.7，待定）。
 
 ### C.2 样本统计（7 个实测导出样本）
 
@@ -596,13 +596,13 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 - `slice_info.config`：仅 HTTP 风格 header，无实质内容；
 - 条件性文件覆盖：`custom_gcode_per_layer.xml`×2、`layer_heights_profile.txt`×1、`brim_ear_points.txt`×1、`Auxiliaries/` 用户图片×2、`plate_N.json`（2.4.0 样本）。
 
-样本清单与逐文件证据见 [docs/01](../../../docs/01-现状盘点-切片软件3mf配置文件.md)、[docs/03](../../../docs/03-现状盘点-model_settings与嵌入预设.md)；入门级文件作用总览见 [3mf 内部文件组成与作用](3mf%20documents/3mf_file_structure.md)。
+入门级文件作用总览见 [3mf 内部文件组成与作用](3mf%20documents/3mf_file_structure.md)。
 
 ## 附录 D（规范性）字段字典与写入白名单
 
-`project_settings.config` 及内嵌预设的完整键值以配置字段字典为准（源码静态定义 786 项 × 实测落盘 584 项对账，含类型、默认值、落盘观测与六类归属），随本规范同源维护：[字段字典 CSV](../../../docs/data/field-dictionary-project-settings-v0.csv)；对账方法与结论见 [docs/02](../../../docs/02-字段字典对账-project_settings.md)。切片参数的逐键讲解见[设置参数文档](../../settings/printer/printer_overview.md)（printer / filament / process 三目录）。
+`project_settings.config` 及内嵌预设的完整键值以配置字段字典为准（源码静态定义 786 项 × 实测落盘 584 项对账，含类型、默认值、落盘观测与六类归属），随本规范同源维护。切片参数的逐键讲解见[设置参数文档](../../settings/printer/printer_overview.md)（printer / filament / process 三目录）。
 
-**白名单初始集合**：553 项"源码定义且样本落盘" + 31 项"落盘但无静态定义"（其中 18 项为序列化别名，本规范正式登记：`filament_retract_*` 族 ↔ 源码 `retract_*` 族、`machine_max_{acceleration,jerk,speed}_*` 12 项；别名映射的维护机制与新增参数的统一别名规则待确认，待裁决：Q8）。
+**白名单初始集合**：553 项"源码定义且样本落盘" + 31 项"落盘但无静态定义"（其中 18 项为序列化别名，本规范正式登记：`filament_retract_*` 族 ↔ 源码 `retract_*` 族、`machine_max_{acceleration,jerk,speed}_*` 12 项；别名映射的维护机制与新增参数的统一别名规则待定）。
 
 **六类禁入**（源码定义但不允许进项目文件）：
 
@@ -611,11 +611,11 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 | SLA 树脂流程专用 | 77 | `pad_*`、`hollowing_*`、曝光 / 校正类 |
 | CLI 动作参数 | 52 | `load_*`、`export_*`、`cut_*`、`rotate/scale/split` |
 | 运行时派生状态 | 52 | `print_time`、`total_*`、`extruded_*`（结果非设置） |
-| GUI 内部 / 废弃候选 | 25 | `zhop`、`brim_ears`、`adaptive_layer_height`（待逐项定论，Q2） |
+| GUI 内部 / 废弃候选 | 25 | `zhop`、`brim_ears`、`adaptive_layer_height`（待逐项定论） |
 | 预设系统内部 | 19 | `compatible_*`、`inherits`、`uptodate_*` |
-| 打印主机连接（凭据） | 7 | `printhost_*`、`print_host`（安全禁入，Q11） |
+| 打印主机连接（凭据） | 7 | `printhost_*`、`print_host`（安全禁入） |
 
-**准入流程**（待团队确认，Q18）：新增工艺参数**应**先登记字段字典（含类型、默认值、覆盖层允许性、与结构键撞名检查），登记后方可进入落盘白名单；与切片团队"新增一个工艺配置需要做哪些事"检查单合并维护。字典未收录的键按 6.3 的形态约定处理；字典自身待补录 2.4.0 新增字段的定义位置（待裁决：Q10）。
+**准入流程**（待确认）：新增工艺参数**应**先登记字段字典（含类型、默认值、覆盖层允许性、与结构键撞名检查），登记后方可进入落盘白名单；与切片团队"新增一个工艺配置需要做哪些事"检查单合并维护。字典未收录的键按 6.3 的形态约定处理；字典自身待补录 2.4.0 新增字段的定义位置（待定）。
 
 ## 附录 E（资料性）与 gcode.3mf 规范的分工
 
@@ -640,5 +640,4 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 - 3MF Consortium, *3MF Production Extension*
 - 3MF Consortium, *3MF Toolpath Extension — Specification & Reference Guide* 1.0.0 RC（2026-09-03）（路线对照）
 - GB/T 1.1—2020《标准化工作导则 第 1 部分：标准化文件的结构和起草规则》（体例参考）
-- 证据链：[docs/01 现状盘点](../../../docs/01-现状盘点-切片软件3mf配置文件.md)、[docs/02 字段字典对账](../../../docs/02-字段字典对账-project_settings.md)、[docs/03 model_settings 与嵌入预设](../../../docs/03-现状盘点-model_settings与嵌入预设.md)、[docs/04 问题清单](../../../docs/04-问题清单-切片软件团队对齐.md)
 - 深度调研：[3MF 版本管理细则](3mf%20documents/3mf_version_management.md)、[3mf 内部文件组成与作用](3mf%20documents/3mf_file_structure.md)

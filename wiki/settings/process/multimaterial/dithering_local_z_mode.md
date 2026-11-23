@@ -1,7 +1,7 @@
 # dithering_local_z_mode
 
 > Location: Process → Multimaterial → Color Mixing (Experimental) → Subdivide Mix Layer
-> Status: placeholder — fork-specific parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-specific parameter, to be completed.
 
 ---
 

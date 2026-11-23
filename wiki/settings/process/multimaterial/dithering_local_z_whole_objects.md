@@ -1,7 +1,7 @@
 # dithering_local_z_whole_objects
 
 > Location: Process → Multimaterial → Color Mixing (Experimental) → Full domain
-> Status: placeholder — fork-specific parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-specific parameter, to be completed.
 
 ---
 

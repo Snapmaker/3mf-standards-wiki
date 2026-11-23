@@ -1,7 +1,7 @@
 # enable_overlap_area_carving
 
 > Location: Process → Others → Special mode → Carve overlaps by per-layer slice area
-> Status: placeholder — fork-added parameter, to be completed.
+> Status: placeholder — Snapmaker Orca-added parameter, to be completed.
 
 ---
 
