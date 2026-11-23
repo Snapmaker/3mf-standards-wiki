@@ -117,7 +117,7 @@ gcode 注释行沿用历史旧名，值取对应设置键（映射规则见 [G-c
 
 | 字段 | 语义 | 说明 |
 |---|---|---|
-| `printer_model` | 当前切片选择的机器 | 机型预设字段，非设置键；见[配置文件命名与继承](../../preset/configuration_files.md) |
+| `printer_model` | 当前切片选择的机器 | 机型预设字段，非设置键；见[打印配置文件命名与继承规范](../../preset/configuration_files.md) |
 | `filament_settings_id` | 耗材预设名 | 含引号与 `@` 后缀，如 `"Snapmaker PLA Matte @U1"` |
 | `max_z_height` | 最高打印 Z | 切片端已写入头部（[规范 7.1](gcode_standard.md#71-头部摘要header_block)）；固件侧「后续可能兼容识别」，当前最大打印高度取各 `;BEFORE_LAYER_CHANGE` 下一行的高度值 |
 

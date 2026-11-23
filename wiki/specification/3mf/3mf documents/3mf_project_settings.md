@@ -179,7 +179,7 @@
 
 - `filament_settings_id` 与 `filament_ids` 为逐槽数组，长度随耗材槽数变化，解析不应写死长度（第 6 章数组约定）。
 - 实测 `filament_settings_id` 的预设名可内嵌来源工程的文件名（上例括号内的 `…_MOSS 3D.3mf`），系导入外来工程后复制预设继承所致，属预设元数据污染面（待裁决：Q14）。
-- `filament_ids` 实测值呈两种形态：材料短码（如 `GFU99`）与云端数字标识（如 `119531393501`），与预设文件的身份键 `setting_id`（如 `GFSB99`）属同一标识体系；预设侧讲解见 [打印配置文件：命名与继承](../../../preset/configuration_files.md)。
+- `filament_ids` 实测值呈两种形态：材料短码（如 `GFU99`）与云端数字标识（如 `119531393501`），与预设文件的身份键 `setting_id`（如 `GFSB99`）属同一标识体系；预设侧讲解见 [打印配置文件命名与继承规范](../../../preset/configuration_files.md)。
 - SLA 流程存在同族键 `sla_material_settings_id` / `sla_print_settings_id`，属 SLA 专用字段，FDM 工程不落盘。
 
 ### 5.3 预设状态与兼容性键（条件触发）
