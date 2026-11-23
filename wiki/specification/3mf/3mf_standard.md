@@ -371,7 +371,7 @@ JSON，必选。头部元字段：
 
 **强制禁入项（安全）**：凭据类字段（`print_host`、`printhost_apikey`、`printhost_password`、`printhost_user`、`printhost_port`、`printhost_cafile`）**不应**随包分发——现状 `machine_settings_N.config` 结构性写入这些键（当前样本值为空，用户一旦配置即泄漏），序列化前**应**剔除（待裁决：Q11）。
 
-预设系统痕迹字段（`different_settings_to_system`、`inherits_group`）实测偶发混入本文件，属预设系统内部字段，**不应**写入（待裁决：Q13）。
+预设状态字段（`different_settings_to_system`、`inherits_group`）为条件触发写入的固定系统字段：前者在至少一个所选预设存在相对父系统预设的修改键时写出，后者在至少一个所选预设为带继承父的副本时写出，未触发时整键不出现。回读时 `inherits_group` 逐槽指定覆盖基准预设，`different_settings_to_system` 承担用户修改的标脏保全（清单外键接受预设值覆盖，清单内键保留工程值并标脏，详解见 [project_settings.config](3mf%20documents/3mf_project_settings.md) 5.3）。
 
 用途：参数回读、复切、问题排查。约 30 个序列化别名使落盘名 ≠ 源码定义名，解析工具按落盘名理解（别名登记见附录 D）。
 
