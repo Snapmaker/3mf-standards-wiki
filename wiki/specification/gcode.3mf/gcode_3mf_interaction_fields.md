@@ -73,7 +73,7 @@ v2.3.6 为高流量（high flow）耗材引入的基础设施：速度类参数�
 
 > [!NOTE]
 > **预设层声明**
-> 三份预设格式文档中的 `filament_flow_support` / `process_flow_support` / `printer_flow_support` 是同一机制的预设层声明：字符串数组，首项 `standard`，其后 `high_flow`；多值参数按该顺序排列。本页只列固件侧用到的 `process_flow_support`。文件中的存储类型是字符串数组（见 [3mf 项目设置 §5.7](../3mf/3mf_project_settings.md#57-流量变体系统键无条件)），表中的 `enums` 是固件按枚举值解析的类型标签。
+> 三份预设格式文档中的 `filament_flow_support` / `process_flow_support` / `printer_flow_support` 是同一机制的预设层声明：字符串数组，首项 `standard`，其后 `high_flow`；多值参数按该顺序排列。本页只列固件侧用到的 `process_flow_support`。文件中的存储类型是字符串数组（见 [3mf 项目设置 §5.7](../3mf/project_settings_config.md#57-流量变体系统键无条件)），表中的 `enums` 是固件按枚举值解析的类型标签。
 
 ### 3.2 多色耗材
 

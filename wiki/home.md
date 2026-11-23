@@ -9,8 +9,8 @@
 | 页面 | 内容 |
 |---|---|
 | [3mf 工程文件规范 v1.0（草案）](specification/3mf/3mf_standard.md) | 标准正文：包结构 → 模型部件 → 配置与三层覆盖 → 版本兼容，GB/T 体例；未闭环项按现状描述并标注待定项 |
-| [project_settings.config](specification/3mf/3mf_project_settings.md) | 全局打印设置：文件作用与读取流程、键类型总览、系统级固定键与三层覆盖基准 |
-| [model_settings.config](specification/3mf/3mf_model_settings.md) | 对象/零件/盘/实例图解、与 3dmodel.model 两侧对照、参数覆盖优先级 |
+| [project_settings.config](specification/3mf/project_settings_config.md) | 全局打印设置：文件作用与读取流程、键类型总览、系统级固定键与三层覆盖基准 |
+| [model_settings.config](specification/3mf/model_settings_config.md) | 对象/零件/盘/实例图解、与 3dmodel.model 两侧对照、参数覆盖优先级 |
 | [3MF 版本管理细则](specification/3mf/3mf_version_management.md) | 进阶：五层版本标识、兼容性矩阵、变更检查清单 |
 
 ## gcode.3mf 专题

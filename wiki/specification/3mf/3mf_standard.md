@@ -243,7 +243,7 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 | `model_id` / `Region` | 条件 | 平台分发元数据（如 MakerWorld 导入件），按存在性读取 |
 | `MakerLab` / `MakerLabVersion` | 条件 | 上游遗留键（归入废弃候选，待定） |
 
-**历史品牌键剥除**：重新保存时，生产者剥除所有 `BambuStudio:` / `bamboo_slicer:` 前缀的元数据键（见 [3mf_version_management](3mf_version_management.md) §3）。消费者对残留的历史键按存在性读取、未知则忽略。
+**历史品牌键剥除**：重新保存时，生产者剥除所有 `BambuStudio:` / `bamboo_slicer:` 前缀的元数据键（见 [3mf_version_management](3mf_version_management.md) §5）。消费者对残留的历史键按存在性读取、未知则忽略。
 
 ### 5.5 外拆对象文件与部件关系
 
@@ -262,7 +262,7 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 
 ### 6.1 对象与盘索引：`Metadata/model_settings.config`
 
-XML，必选。对象/零件/盘/实例的概念图解与对照示例见 [model_settings.config：对象与打印板信息](3mf_model_settings.md)。根节点 `<config>`，按 object → plate → assemble 顺序组织（工程文件中各节正常出现；`.gcode.3mf` 以 SkipModel 策略导出时仅剩 plate 节）：
+XML，必选。对象/零件/盘/实例的概念图解与对照示例见 [model_settings.config：对象与打印板信息](model_settings_config.md)。根节点 `<config>`，按 object → plate → assemble 顺序组织（工程文件中各节正常出现；`.gcode.3mf` 以 SkipModel 策略导出时仅剩 plate 节）：
 
 ```text
 config
@@ -371,7 +371,7 @@ JSON，必选。头部元字段：
 
 **强制禁入项（安全）**：凭据类字段（`print_host`、`printhost_apikey`、`printhost_password`、`printhost_user`、`printhost_port`、`printhost_cafile`）**不应**随包分发——现状 `machine_settings_N.config` 结构性写入这些键（当前样本值为空，用户一旦配置即泄漏），序列化前**应**剔除（待定）。
 
-预设状态字段（`different_settings_to_system`、`inherits_group`）为条件触发写入的固定系统字段：前者在至少一个所选预设存在相对父系统预设的修改键时写出，后者在至少一个所选预设为带继承父的副本时写出，未触发时整键不出现。回读时 `inherits_group` 逐槽指定覆盖基准预设，`different_settings_to_system` 承担用户修改的标脏保全（清单外键接受预设值覆盖，清单内键保留工程值并标脏，详解见 [project_settings.config](3mf_project_settings.md) 5.3）。
+预设状态字段（`different_settings_to_system`、`inherits_group`）为条件触发写入的固定系统字段：前者在至少一个所选预设存在相对父系统预设的修改键时写出，后者在至少一个所选预设为带继承父的副本时写出，未触发时整键不出现。回读时 `inherits_group` 逐槽指定覆盖基准预设，`different_settings_to_system` 承担用户修改的标脏保全（清单外键接受预设值覆盖，清单内键保留工程值并标脏，详解见 [project_settings.config](project_settings_config.md) 5.3）。
 
 用途：参数回读、复切、问题排查。约 30 个序列化别名使落盘名 ≠ 源码定义名，解析工具按落盘名理解（别名登记见附录 D）。
 
@@ -459,9 +459,9 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 **同族判别只看 `Application` 前缀**（`Snapmaker_Orca-` / `BambuStudio-`）；版本键命中不再置该标志。判别结果决定后续行为：同族文件全量加载；通用 Core 文件（`From_Other`）仅加载几何并触发多实例拆分。
 
-**版本门现状（审计结论）**：当前**没有任何一道"版本过新即拒载"的硬门槛**——格式版本超限检查、生成器主版本门、未识别键弹窗等均已注释或禁用（见 [3mf_version_management](3mf_version_management.md) §4）。仍在岗的版本行为仅三处：Prusa 判别只读几何、`<1.5.9` 热床尺寸迁移、`project_schema_version` 升级提示（提示，不拦截）。
+**版本门现状（审计结论）**：当前**没有任何一道"版本过新即拒载"的硬门槛**——格式版本超限检查、生成器主版本门、未识别键弹窗等均已注释或禁用（见 [3mf_version_management](3mf_version_management.md) §6）。仍在岗的版本行为仅三处：Prusa 判别只读几何、`<1.5.9` 热床尺寸迁移、`project_schema_version` 升级提示（提示，不拦截）。
 
-**配置加载失败语义（关键风险）**：`load_from_json` 遇未知键抛异常后整体中止（后续键不再处理）。落点分三种：主配置 `project_settings.config` 失败时包仍能打开，但该文件已解析键之后的内容（含预设标识 / 状态键）丢失，预设挂载回退默认，且无用户可见提示；内嵌预设失败时静默跳过该预设；对象 / 零件级覆盖（`model_settings.config` 内的裸键值）的 `set_deserialize` 异常无捕获穿透，中止整个导入。即"新增配置键 = 旧版主配置静默丢配置，或对象 / 零件级直接打不开新文件"，这是发布窗口必须冻结新键的原因（改进方向：逐键容忍，见 [3mf_version_management](3mf_version_management.md) §5、§8）。
+**配置加载失败语义（关键风险）**：`load_from_json` 遇未知键抛异常后整体中止（后续键不再处理）。落点分三种：主配置 `project_settings.config` 失败时包仍能打开，但该文件已解析键之后的内容（含预设标识 / 状态键）丢失，预设挂载回退默认，且无用户可见提示；内嵌预设失败时静默跳过该预设；对象 / 零件级覆盖（`model_settings.config` 内的裸键值）的 `set_deserialize` 异常无捕获穿透，中止整个导入。即"新增配置键 = 旧版主配置静默丢配置，或对象 / 零件级直接打不开新文件"，这是发布窗口必须冻结新键的原因（改进方向：逐键容忍，见 [3mf_version_management](3mf_version_management.md) §7、§10）。
 
 ### 7.4 兼容性矩阵
 
@@ -482,7 +482,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 ### 7.5 变更检查清单
 
-改动 3mf 相关代码 / 格式时逐项核对（细则见 [3mf_version_management](3mf_version_management.md) §7）：
+改动 3mf 相关代码 / 格式时逐项核对（细则见 [3mf_version_management](3mf_version_management.md) §9）：
 
 | 项 | 要点 |
 |---|---|

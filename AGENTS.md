@@ -8,7 +8,7 @@
 
 | 目录 | 状态 | 放什么 |
 |---|---|---|
-| `wiki/specification/3mf/` | 现有 | 3MF 文件格式专题：`3mf_standard.md` 为工程文件规范正文；`3mf_project_settings.md`、`3mf_model_settings.md`、`3mf_version_management.md` 为配套文档 |
+| `wiki/specification/3mf/` | 现有 | 3MF 文件格式专题：`3mf_standard.md` 为工程文件规范正文；`project_settings_config.md`、`model_settings_config.md`、`3mf_version_management.md` 为配套文档 |
 | `wiki/specification/gcode.3mf/` | 现有 | gcode.3mf 嵌入式格式专题：`gcode_3mf_standard.md` 容器规范、`gcode_standard.md` G-code 文件规范、`gcode_3mf_interaction_fields.md` 两端交互字段对照 |
 | `wiki/images/` | 按需建 | wiki 图片集中存放，按主题建子目录 |
 | `wiki/settings/printer/` `wiki/settings/filament/` `wiki/settings/process/` | 现有 | 设置参数每键一文档。子目录名按软件 UI 三个设置标签页（Printer/Filament/Process）命名，对应上游 wiki 的 `printer_settings`/`material_settings`/`print_settings` |
@@ -18,15 +18,15 @@
 
 ## 命名
 
-- 文件名全小写 `snake_case`：`[a-z0-9]` 单词以 `_` 连接（如 `3mf_project_settings.md`）
-- 同一专题的页面带组前缀（3MF 专题统一 `3mf_` 前缀；校准类可用 `_calib` 后缀，参照上游）
+- 文件名全小写 `snake_case`：`[a-z0-9]` 单词以 `_` 连接（如 `project_settings_config.md`）
+- 同一专题的页面带组前缀（3MF 专题统一 `3mf_` 前缀；配置文件专题页按文件名命名，如 `project_settings_config.md`；校准类可用 `_calib` 后缀，参照上游）
 - 文件名保持全局唯一（不只在同目录内唯一），为将来迁 GitHub Wiki / mkdocs 扁平 URL 留余地
 - 文件名用英文，正文用中文
 
 ## 内链
 
-- 用相对路径带 `.md` 扩展名：`[参数覆盖](3mf_model_settings.md)`
-- 锚点用 kebab-case 指向真实标题（标题里的编号和空格都算）：`[x](3mf_version_management.md#1-五层版本标识)`
+- 用相对路径带 `.md` 扩展名：`[参数覆盖](model_settings_config.md)`
+- 锚点用 kebab-case 指向真实标题（标题里的编号和空格都算）：`[x](3mf_version_management.md#3-五层版本标识)`
 - 独立页面（专题、规范正文、总览页）标题下第二行放面包屑：`← [Wiki 首页](../home.md)`（层级更深时相应加 `../`）
 - 设置键页面（`wiki/settings/`）用 `> Location: Tab → 分组 → UI 区块` 行替代面包屑
 - **孤儿页规则**：新页面必须被 `wiki/home.md`（或其他页面）链接，否则不许合入——没有入口的页面等于不存在

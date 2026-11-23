@@ -42,7 +42,7 @@
 
 本文适用于初次接触 3mf 内部结构、需要读取或解析该文件的读者。
 
-本文不涉及：几何侧模型部件的格式细节（见 [3mf 工程文件规范](3mf_standard.md) 第 5 章）、全局参数文件的字段级说明（见 [project_settings.config：全局打印设置](3mf_project_settings.md)）、逐键规范表与一致性要求（见规范 6.1 与第 8 章）。
+本文不涉及：几何侧模型部件的格式细节（见 [3mf 工程文件规范](3mf_standard.md) 第 5 章）、全局参数文件的字段级说明（见 [project_settings.config：全局打印设置](project_settings_config.md)）、逐键规范表与一致性要求（见规范 6.1 与第 8 章）。
 
 ## 2 术语和定义
 
@@ -190,13 +190,13 @@
 
 ## 6 参数覆盖优先级
 
-对象可覆盖 [project_settings.config](3mf_project_settings.md) 中的参数，零件可进一步覆盖对象。实测同一参数（如 `wall_loops`）可同时出现在对象层与零件层，**优先级为 零件 > 对象 > 全局**——该规则仅存在于读取代码的逻辑中，文件本身没有任何声明。编写解析工具时必须按此隐含规则处理。
+对象可覆盖 [project_settings.config](project_settings_config.md) 中的参数，零件可进一步覆盖对象。实测同一参数（如 `wall_loops`）可同时出现在对象层与零件层，**优先级为 零件 > 对象 > 全局**——该规则仅存在于读取代码的逻辑中，文件本身没有任何声明。编写解析工具时必须按此隐含规则处理。
 
 覆盖是**稀疏**的，仅写差异键：参数仅在该层被修改后才写入 model_settings.config 的对应节点；某层未出现该 key ≠ 值为空，而是"未修改，沿用上一级"。参数生效值的取值过程：
 
 1. 零件层存在该 key → 取零件的值（例：嘴的 `extruder=1`）；
 2. 零件层不存在 → 查对象层，对象层存在 → 取对象的值（例：身体未写 `extruder`，沿用对象的 `2`）；
-3. 两层均未写 → 取 [project_settings.config](3mf_project_settings.md) 的全局值（例：均未修改 `layer_height`，取全局值）。
+3. 两层均未写 → 取 [project_settings.config](project_settings_config.md) 的全局值（例：均未修改 `layer_height`，取全局值）。
 
 ```text
 project_settings.config     全局默认（约 580 键，全量）

@@ -38,7 +38,7 @@
 
 ## 引言
 
-恢复一个切片工程，配置信息由三部分承载：全局参数基准（本文件）、对象与零件级参数覆盖（[model_settings.config](3mf_model_settings.md)）与预设来源差异（内嵌预设 `*_settings_N.config`）。本文件是其中唯一的全量层：以扁平键值形式记录保存时刻切片全部生效参数，实测约 500～600 键（584 项）。
+恢复一个切片工程，配置信息由三部分承载：全局参数基准（本文件）、对象与零件级参数覆盖（[model_settings.config](model_settings_config.md)）与预设来源差异（内嵌预设 `*_settings_N.config`）。本文件是其中唯一的全量层：以扁平键值形式记录保存时刻切片全部生效参数，实测约 500～600 键（584 项）。
 
 本文件的键集由两类构成：用户在界面修改的工艺、耗材、打印机参数键（4.1，逐键语义见设置参数文档，本文不展开），与不由用户作为参数修改的系统级固定键（4.2 与第 5 章，本文重点）。
 
@@ -50,7 +50,7 @@
 
 本文适用于需要读取、解析该文件，或排查其键集构成的读者。
 
-本文不涉及：逐键的切片参数语义（分别见[工艺参数文档](../../settings/process/process_overview.md)、[耗材参数文档](../../settings/filament/filament_overview.md)、[打印机参数文档](../../settings/printer/printer_overview.md)）、对象与零件级覆盖的文件结构（见 [model_settings.config：对象与打印板信息](3mf_model_settings.md)）、内嵌预设的写出形态（见 [3mf 工程文件规范](3mf_standard.md) 6.4）、版本与兼容行为（见 [3MF 版本管理细则](3mf_version_management.md)）。
+本文不涉及：逐键的切片参数语义（分别见[工艺参数文档](../../settings/process/process_overview.md)、[耗材参数文档](../../settings/filament/filament_overview.md)、[打印机参数文档](../../settings/printer/printer_overview.md)）、对象与零件级覆盖的文件结构（见 [model_settings.config：对象与打印板信息](model_settings_config.md)）、内嵌预设的写出形态（见 [3mf 工程文件规范](3mf_standard.md) 6.4）、版本与兼容行为（见 [3MF 版本管理细则](3mf_version_management.md)）。
 
 ## 2 术语和定义
 
@@ -106,7 +106,7 @@
 
 **主管线回读（打开工程）** 按以下时序执行：
 
-1. 解包并解析本文件，逐键反序列化进配置对象。解析遇未知的字符串键即中止本文件后续键的处理，已解析键保留；错误仅记录日志，工程其余部件（几何、盘信息等）照常加载（加载失败语义详见 [3MF 版本管理细则](3mf_version_management.md) §5）。头部 `project_schema_version` 高于当前程序支持版本时，仅提示升级、不拦截（5.1）。
+1. 解包并解析本文件，逐键反序列化进配置对象。解析遇未知的字符串键即中止本文件后续键的处理，已解析键保留；错误仅记录日志，工程其余部件（几何、盘信息等）照常加载（加载失败语义详见 [3MF 版本管理细则](3mf_version_management.md) §7）。头部 `project_schema_version` 高于当前程序支持版本时，仅提示升级、不拦截（5.1）。
 2. 按预设标识键（5.2）把工程挂载到所选的打印机 / 工艺 / 耗材预设，作为基线。
 3. 按预设状态键（5.3）回放用户修改：清单外的键接受预设值覆盖，清单内的键保留工程值并标脏。
 4. 重建参数界面，显示各预设的选中与已修改状态。
@@ -303,8 +303,8 @@
 | 层 | 载体 | 语义 |
 |---|---|---|
 | project（全局） | `project_settings.config`（本文件） | 工程级基准值 |
-| object（对象覆盖） | [model_settings.config](3mf_model_settings.md) 对象节 | 该对象全部实例生效 |
-| part（零件覆盖） | [model_settings.config](3mf_model_settings.md) 零件节 | 仅该零件生效 |
+| object（对象覆盖） | [model_settings.config](model_settings_config.md) 对象节 | 该对象全部实例生效 |
+| part（零件覆盖） | [model_settings.config](model_settings_config.md) 零件节 | 仅该零件生效 |
 
 - 生效值按 **part > object > project**（零件 > 对象 > 全局）合成；该规则仅存在于读取代码逻辑中，文件本身无任何声明（待定）。
 - 本文件为全量快照，覆盖层为稀疏差异：覆盖层未出现某键 ≠ 值为空，而是未修改、沿用本文件的全局值。
