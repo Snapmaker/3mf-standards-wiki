@@ -277,4 +277,4 @@ fdm_process_common(182) → fdm_process_idex(64) → 0.16 Optimal @Snapmaker J1 
 
 > [!TIP]
 > **想看字段级要求**
-> 文件怎么写、哪些键必须带、值和类型怎么序列化，见 [耗材预设文件格式要求](preset_filament_format.md) · [工艺预设文件格式要求](preset_process_format.md) · [打印机预设文件格式要求](preset_machine_format.md)。
+> 文件怎么写、哪些键必须带、值和类型怎么序列化，见 [耗材预设文件格式](preset_filament_format.md) · [工艺预设文件格式](preset_process_format.md) · [打印机预设文件格式](preset_machine_format.md)。
