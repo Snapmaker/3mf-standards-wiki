@@ -1,6 +1,6 @@
 # model_settings.config：对象与打印板信息
 
-← [Wiki 首页](../../../home.md)
+← [Wiki 首页](../../home.md)
 
 > 工程文件必选的 XML 部件：记录对象、零件、打印板与实例的业务属性。
 
@@ -26,7 +26,7 @@
 
 本文讲解工程 `.3mf` 的必选部件 `Metadata/model_settings.config`。对象与零件的命名及参数覆盖、实例的打印板归属、打印板的布局信息，均记录于该文件。
 
-逐键定义与一致性要求见 [3mf 工程文件规范](../3mf_standard.md) 6.1～6.2；本文为该规范的图解配套文档，两者不一致时以规范为准。
+逐键定义与一致性要求见 [3mf 工程文件规范](3mf_standard.md) 6.1～6.2；本文为该规范的图解配套文档，两者不一致时以规范为准。
 
 ## 引言
 
@@ -42,7 +42,7 @@
 
 本文适用于初次接触 3mf 内部结构、需要读取或解析该文件的读者。
 
-本文不涉及：几何侧模型部件的格式细节（见 [3mf 工程文件规范](../3mf_standard.md) 第 5 章）、全局参数文件的字段级说明（见 [project_settings.config：全局打印设置](3mf_project_settings.md)）、逐键规范表与一致性要求（见规范 6.1 与第 8 章）。
+本文不涉及：几何侧模型部件的格式细节（见 [3mf 工程文件规范](3mf_standard.md) 第 5 章）、全局参数文件的字段级说明（见 [project_settings.config：全局打印设置](3mf_project_settings.md)）、逐键规范表与一致性要求（见规范 6.1 与第 8 章）。
 
 ## 2 术语和定义
 
@@ -175,7 +175,7 @@
 
 ## 5 键清单：按写入行为分类
 
-各层的键按写入行为分为三类（以序列化代码 `src/libslic3r/Format/bbs_3mf.cpp` 为准，逐键表见规范 [§6.1](../3mf_standard.md#611-对象层与零件层键按写入行为分类)）：
+各层的键按写入行为分为三类（以序列化代码 `src/libslic3r/Format/bbs_3mf.cpp` 为准，逐键表见规范 [§6.1](3mf_standard.md#611-对象层与零件层键按写入行为分类)）：
 
 | 类 | 含义 | 各层包含的键 |
 |---|---|---|
@@ -219,4 +219,4 @@ project_settings.config     全局默认（约 580 键，全量）
 
 ## 附录（资料性）深入阅读
 
-- 规范级定义：[3mf 工程文件规范](../3mf_standard.md) [§5.2 对象、组件与实例](../3mf_standard.md#52-对象组件与实例)、[§6.1 对象与盘索引](../3mf_standard.md#61-对象与盘索引metadatamodel_settingsconfig)
+- 规范级定义：[3mf 工程文件规范](3mf_standard.md) [§5.2 对象、组件与实例](3mf_standard.md#52-对象组件与实例)、[§6.1 对象与盘索引](3mf_standard.md#61-对象与盘索引metadatamodel_settingsconfig)

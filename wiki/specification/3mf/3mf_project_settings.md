@@ -1,6 +1,6 @@
 # project_settings.config：全局打印设置
 
-← [Wiki 首页](../../../home.md)
+← [Wiki 首页](../../home.md)
 
 > 工程文件必选的 JSON 部件：切片时全部生效参数的全量快照。
 
@@ -34,7 +34,7 @@
 
 本文讲解工程 `.3mf` 的必选部件 `Metadata/project_settings.config`。层高、速度、耗材、机器设置等工程级参数在保存时刻的全部生效取值，均记录于该文件。
 
-本文说明该文件的作用（是什么、何时保存、怎么读取）、键类型构成（用户参数键三类与系统级固定键），并重点讲解系统级固定键的写入行为与触发条件。文件结构与取值形态的规范级定义见 [3mf 工程文件规范](../3mf_standard.md) 6.3 与附录 D；本文为该规范的配套讲解文档，两者不一致时以规范为准。
+本文说明该文件的作用（是什么、何时保存、怎么读取）、键类型构成（用户参数键三类与系统级固定键），并重点讲解系统级固定键的写入行为与触发条件。文件结构与取值形态的规范级定义见 [3mf 工程文件规范](3mf_standard.md) 6.3 与附录 D；本文为该规范的配套讲解文档，两者不一致时以规范为准。
 
 ## 引言
 
@@ -50,7 +50,7 @@
 
 本文适用于需要读取、解析该文件，或排查其键集构成的读者。
 
-本文不涉及：逐键的切片参数语义（分别见[工艺参数文档](../../../settings/process/process_overview.md)、[耗材参数文档](../../../settings/filament/filament_overview.md)、[打印机参数文档](../../../settings/printer/printer_overview.md)）、对象与零件级覆盖的文件结构（见 [model_settings.config：对象与打印板信息](3mf_model_settings.md)）、内嵌预设的写出形态（见 [3mf 工程文件规范](../3mf_standard.md) 6.4）、版本与兼容行为（见 [3MF 版本管理细则](3mf_version_management.md)）。
+本文不涉及：逐键的切片参数语义（分别见[工艺参数文档](../../settings/process/process_overview.md)、[耗材参数文档](../../settings/filament/filament_overview.md)、[打印机参数文档](../../settings/printer/printer_overview.md)）、对象与零件级覆盖的文件结构（见 [model_settings.config：对象与打印板信息](3mf_model_settings.md)）、内嵌预设的写出形态（见 [3mf 工程文件规范](3mf_standard.md) 6.4）、版本与兼容行为（见 [3MF 版本管理细则](3mf_version_management.md)）。
 
 ## 2 术语和定义
 
@@ -106,7 +106,7 @@
 
 **主管线回读（打开工程）** 按以下时序执行：
 
-1. 解包并解析本文件，逐键反序列化进配置对象。解析遇未知的字符串键即中止本文件后续键的处理，已解析键保留；错误仅记录日志，工程其余部件（几何、盘信息等）照常加载（加载失败语义详见 [3MF 版本管理细则](3mf_version_management.md) §5.2）。头部 `project_schema_version` 高于当前程序支持版本时，仅提示升级、不拦截（5.1）。
+1. 解包并解析本文件，逐键反序列化进配置对象。解析遇未知的字符串键即中止本文件后续键的处理，已解析键保留；错误仅记录日志，工程其余部件（几何、盘信息等）照常加载（加载失败语义详见 [3MF 版本管理细则](3mf_version_management.md) §5）。头部 `project_schema_version` 高于当前程序支持版本时，仅提示升级、不拦截（5.1）。
 2. 按预设标识键（5.2）把工程挂载到所选的打印机 / 工艺 / 耗材预设，作为基线。
 3. 按预设状态键（5.3）回放用户修改：清单外的键接受预设值覆盖，清单内的键保留工程值并标脏。
 4. 重建参数界面，显示各预设的选中与已修改状态。
@@ -125,7 +125,7 @@
 | 耗材配置键 | 耗材预设 | 多为逐槽数组（长度 = 耗材槽数）：`filament_diameter`、`nozzle_temperature_initial_layer`、`filament_flow_ratio` 等 |
 | 打印机配置键 | 打印机预设 | 机器行为与限制：`machine_start_gcode`、`z_offset`、回抽族、`machine_max_*` 机器限制族等 |
 
-三类键的逐键语义不在本文讲解，分别见[工艺参数文档](../../../settings/process/process_overview.md)、[耗材参数文档](../../../settings/filament/filament_overview.md)与[打印机参数文档](../../../settings/printer/printer_overview.md)。
+三类键的逐键语义不在本文讲解，分别见[工艺参数文档](../../settings/process/process_overview.md)、[耗材参数文档](../../settings/filament/filament_overview.md)与[打印机参数文档](../../settings/printer/printer_overview.md)。
 
 读取注意：18 个键的落盘名与源码定义名不一致（`filament_retract_*` 族在源码中定义为 `retract_*`；`machine_max_acceleration_*` / `machine_max_jerk_*` / `machine_max_speed_*` 共 12 项另行定义），读取时应按落盘名理解、不应按源码定义名查找。别名已由规范附录 D 正式登记；别名映射的维护机制与新增参数的统一别名规则待定。
 
@@ -179,7 +179,7 @@
 
 - `filament_settings_id` 与 `filament_ids` 为逐槽数组，长度随耗材槽数变化，解析不应写死长度（第 6 章数组约定）。
 - 实测 `filament_settings_id` 的预设名可内嵌来源工程的文件名（上例括号内的 `…_MOSS 3D.3mf`），系导入外来工程后复制预设继承所致，属预设元数据污染面（待定）。
-- `filament_ids` 实测值呈两种形态：材料短码（如 `GFU99`）与云端数字标识（如 `119531393501`），与预设文件的身份键 `setting_id`（如 `GFSB99`）属同一标识体系；预设侧讲解见 [打印配置文件命名与继承规范](../../../preset/configuration_files.md)。
+- `filament_ids` 实测值呈两种形态：材料短码（如 `GFU99`）与云端数字标识（如 `119531393501`），与预设文件的身份键 `setting_id`（如 `GFSB99`）属同一标识体系；预设侧讲解见 [打印配置文件命名与继承规范](../../preset/configuration_files.md)。
 - SLA 流程存在同族键 `sla_material_settings_id` / `sla_print_settings_id`，属 SLA 专用字段，FDM 工程不落盘。
 
 ### 5.3 预设状态与兼容性键（条件触发）
@@ -283,7 +283,7 @@
 
 ## 6 取值形态与解析约定
 
-本文件所有标量与数组元素均为字符串，不存在原生 JSON number / bool / null——解析器不应以 JSON 类型推断键语义。取值形态与规范 [§6.3](../3mf_standard.md#63-全量配置快照metadataproject_settingsconfig) 一致，以规范为准：
+本文件所有标量与数组元素均为字符串，不存在原生 JSON number / bool / null——解析器不应以 JSON 类型推断键语义。取值形态与规范 [§6.3](3mf_standard.md#63-全量配置快照metadataproject_settingsconfig) 一致，以规范为准：
 
 | 形态 | 写法示例 | 约定 |
 |---|---|---|
@@ -327,4 +327,4 @@
 
 ## 附录（资料性）深入阅读
 
-- 规范级定义：[3mf 工程文件规范](../3mf_standard.md) [§6.3 全量配置快照](../3mf_standard.md#63-全量配置快照metadataproject_settingsconfig)、[附录 D 字段字典与写入白名单](../3mf_standard.md#附录-d规范性字段字典与写入白名单)；逐键切片参数语义见[设置参数文档](../../../settings/printer/printer_overview.md)
+- 规范级定义：[3mf 工程文件规范](3mf_standard.md) [§6.3 全量配置快照](3mf_standard.md#63-全量配置快照metadataproject_settingsconfig)、[附录 D 字段字典与写入白名单](3mf_standard.md#附录-d规范性字段字典与写入白名单)；逐键切片参数语义见[设置参数文档](../../settings/printer/printer_overview.md)

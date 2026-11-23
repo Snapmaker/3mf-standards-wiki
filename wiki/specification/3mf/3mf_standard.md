@@ -243,7 +243,7 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 | `model_id` / `Region` | 条件 | 平台分发元数据（如 MakerWorld 导入件），按存在性读取 |
 | `MakerLab` / `MakerLabVersion` | 条件 | 上游遗留键（归入废弃候选，待定） |
 
-**历史品牌键剥除**：重新保存时，生产者剥除所有 `BambuStudio:` / `bamboo_slicer:` 前缀的元数据键（源码 `src/libslic3r/Format/bbs_3mf.cpp`，行号锚点见 [3mf_version_management](3mf%20documents/3mf_version_management.md) §3.2）。消费者对残留的历史键按存在性读取、未知则忽略。
+**历史品牌键剥除**：重新保存时，生产者剥除所有 `BambuStudio:` / `bamboo_slicer:` 前缀的元数据键（见 [3mf_version_management](3mf_version_management.md) §3）。消费者对残留的历史键按存在性读取、未知则忽略。
 
 ### 5.5 外拆对象文件与部件关系
 
@@ -262,7 +262,7 @@ xxx.3mf                                    ← ZIP 归档（OPC 包，启用 ZIP
 
 ### 6.1 对象与盘索引：`Metadata/model_settings.config`
 
-XML，必选。对象/零件/盘/实例的概念图解与对照示例见 [model_settings.config：对象与打印板信息](3mf%20documents/3mf_model_settings.md)。根节点 `<config>`，按 object → plate → assemble 顺序组织（工程文件中各节正常出现；`.gcode.3mf` 以 SkipModel 策略导出时仅剩 plate 节）：
+XML，必选。对象/零件/盘/实例的概念图解与对照示例见 [model_settings.config：对象与打印板信息](3mf_model_settings.md)。根节点 `<config>`，按 object → plate → assemble 顺序组织（工程文件中各节正常出现；`.gcode.3mf` 以 SkipModel 策略导出时仅剩 plate 节）：
 
 ```text
 config
@@ -371,7 +371,7 @@ JSON，必选。头部元字段：
 
 **强制禁入项（安全）**：凭据类字段（`print_host`、`printhost_apikey`、`printhost_password`、`printhost_user`、`printhost_port`、`printhost_cafile`）**不应**随包分发——现状 `machine_settings_N.config` 结构性写入这些键（当前样本值为空，用户一旦配置即泄漏），序列化前**应**剔除（待定）。
 
-预设状态字段（`different_settings_to_system`、`inherits_group`）为条件触发写入的固定系统字段：前者在至少一个所选预设存在相对父系统预设的修改键时写出，后者在至少一个所选预设为带继承父的副本时写出，未触发时整键不出现。回读时 `inherits_group` 逐槽指定覆盖基准预设，`different_settings_to_system` 承担用户修改的标脏保全（清单外键接受预设值覆盖，清单内键保留工程值并标脏，详解见 [project_settings.config](3mf%20documents/3mf_project_settings.md) 5.3）。
+预设状态字段（`different_settings_to_system`、`inherits_group`）为条件触发写入的固定系统字段：前者在至少一个所选预设存在相对父系统预设的修改键时写出，后者在至少一个所选预设为带继承父的副本时写出，未触发时整键不出现。回读时 `inherits_group` 逐槽指定覆盖基准预设，`different_settings_to_system` 承担用户修改的标脏保全（清单外键接受预设值覆盖，清单内键保留工程值并标脏，详解见 [project_settings.config](3mf_project_settings.md) 5.3）。
 
 用途：参数回读、复切、问题排查。约 30 个序列化别名使落盘名 ≠ 源码定义名，解析工具按落盘名理解（别名登记见附录 D）。
 
@@ -459,9 +459,9 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 **同族判别只看 `Application` 前缀**（`Snapmaker_Orca-` / `BambuStudio-`）；版本键命中不再置该标志。判别结果决定后续行为：同族文件全量加载；通用 Core 文件（`From_Other`）仅加载几何并触发多实例拆分。
 
-**版本门现状（审计结论）**：当前**没有任何一道"版本过新即拒载"的硬门槛**——格式版本超限检查、生成器主版本门、未识别键弹窗等均已注释或禁用（清单见 [3mf_version_management](3mf%20documents/3mf_version_management.md) §4.2）。仍在岗的版本行为仅三处：Prusa 判别只读几何、`<1.5.9` 热床尺寸迁移、`project_schema_version` 升级提示（提示，不拦截）。
+**版本门现状（审计结论）**：当前**没有任何一道"版本过新即拒载"的硬门槛**——格式版本超限检查、生成器主版本门、未识别键弹窗等均已注释或禁用（见 [3mf_version_management](3mf_version_management.md) §4）。仍在岗的版本行为仅三处：Prusa 判别只读几何、`<1.5.9` 热床尺寸迁移、`project_schema_version` 升级提示（提示，不拦截）。
 
-**配置加载失败语义（关键风险）**：`load_from_json` 遇未知键抛异常后整体中止（后续键不再处理）——主配置失败即整包拒载、无提示无降级；对象 / 零件级覆盖的 `set_deserialize` 异常无捕获穿透，同样中止整个导入。即"新增配置键 = 所有已发布旧版打不开新文件"，这是发布窗口必须冻结新键的原因（改进方向：逐键容忍，见 [3mf_version_management](3mf%20documents/3mf_version_management.md) §5、§9）。
+**配置加载失败语义（关键风险）**：`load_from_json` 遇未知键抛异常后整体中止（后续键不再处理）。落点分三种：主配置 `project_settings.config` 失败时包仍能打开，但该文件已解析键之后的内容（含预设标识 / 状态键）丢失，预设挂载回退默认，且无用户可见提示；内嵌预设失败时静默跳过该预设；对象 / 零件级覆盖（`model_settings.config` 内的裸键值）的 `set_deserialize` 异常无捕获穿透，中止整个导入。即"新增配置键 = 旧版主配置静默丢配置，或对象 / 零件级直接打不开新文件"，这是发布窗口必须冻结新键的原因（改进方向：逐键容忍，见 [3mf_version_management](3mf_version_management.md) §5、§8）。
 
 ### 7.4 兼容性矩阵
 
@@ -470,7 +470,8 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 | 场景 | 行为 | 机制 |
 |---|---|---|
 | 旧版文件 → 新程序 | ✅ 尽力迁移 | 无版本视为 0；legacy 改名表；数组折叠 |
-| 新版文件 → 旧程序（未知新键） | ❌ **打不开** | `load_from_json` 未知键中止；无提示、无降级 |
+| 新版文件 → 旧程序（未知新键，主配置） | ⚠️ **配置静默丢失** | `load_from_json` 中止；包仍可打开，几何 / 盘信息正常，后续键丢失、无提示 |
+| 新版文件 → 旧程序（未知新键，对象 / 零件级） | ❌ **打不开** | 反序列化异常穿透，导入中止 |
 | 新版文件 → 旧程序（已知键值变化） | ⚠️ 取决于反序列化 | 标量读双值取前缀（静默丢尾）；向量遇 `nil`（≤2.3.6）抛异常 |
 | schema 升版文件 → 旧程序（≥2.4.0） | ⚠️ 弹提示继续加载 | `handle_newer_3mf_schema`；≤2.3.x 无此代码，无感知 |
 | 同族软件 3mf → 本程序 | ✅ 完整加载 | `Application` 前缀判别；`nil` 已容忍（2026-09 修复） |
@@ -481,11 +482,11 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 ### 7.5 变更检查清单
 
-改动 3mf 相关代码 / 格式时逐项核对（细则与源码落点见 [3mf_version_management](3mf%20documents/3mf_version_management.md) §8）：
+改动 3mf 相关代码 / 格式时逐项核对（细则见 [3mf_version_management](3mf_version_management.md) §7）：
 
 | 项 | 要点 |
 |---|---|
-| A 新增配置键 | 先登记字段字典（附录 D 准入）；评估前向破坏（旧版拒载）；读取路径不假设键存在 |
+| A 新增配置键 | 先登记字段字典（附录 D 准入）；评估前向破坏（旧版静默丢配置或对象 / 零件级打不开）；读取路径不假设键存在 |
 | B 修改键类型 | 标量↔向量双向检查；对象 / 零件级覆盖是暴露面；枚举只增不删，改名走 legacy 改名表 |
 | C 改内嵌文件结构 | 新增文件安全（登记 Content_Types 与读取路由）；删改既有文件名 / 元素名禁止；平面文本演进加首行版本头 |
 | D 动 schema | 仅"旧程序无法正确理解新文件"的不兼容变更才递增；提示不拦截，正确性靠读端迁移 |
@@ -541,7 +542,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 |---|---|
 | 模型版本键 | 当前写 `Snapmaker_Orca:3mfVersion`；应兼容 `BambuStudio:3mfVersion`、`bamboo_slicer:Version3mf`（三键等价） |
 | 版本五层分开读取 | 格式版本 / 生成器版本 / schema 版本 / 子格式版本头 / 预设版本互不相干（7.1），**不应**用其一推断其余 |
-| 未知配置键 | 目标态：逐键容忍并记录；现状：整体中止（已知缺陷，见 7.3） |
+| 未知配置键 | 目标态：逐键容忍并记录；现状：主配置丢配置、对象 / 零件级中止（已知缺陷，见 7.3） |
 | legacy 层高文件 | 无版本头的 `layer_heights_profile.txt` 按对象顺序解释，不套用 v2 对象编号 |
 | `Content_Types` 不完整 | 已知配置文件未全覆盖；按实际内容格式读取 |
 | 通用 Core 文件（无版本键） | 仅加载几何，多实例对象拆分；**不应**期待配置层存在 |
@@ -562,7 +563,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 ## 附录 B（资料性）保存形态与策略位
 
-三种保存路径与策略位掩码（源码 `src/libslic3r/Format/bbs_3mf.hpp` 的 `SaveStrategy`，行号锚点见 [3mf_version_management](3mf%20documents/3mf_version_management.md) §3.3）：
+三种保存路径与策略位掩码（源码 `src/libslic3r/Format/bbs_3mf.hpp` 的 `SaveStrategy`）：
 
 | 形态 | 入口 | 策略组合 | 产物特征 |
 |---|---|---|---|
@@ -595,8 +596,6 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 - `project_settings.config`：584 键（553 定义且落盘 + 31 落盘无静态定义），同版本样本间差异仅 2 个偶发痕迹字段；
 - `slice_info.config`：仅 HTTP 风格 header，无实质内容；
 - 条件性文件覆盖：`custom_gcode_per_layer.xml`×2、`layer_heights_profile.txt`×1、`brim_ear_points.txt`×1、`Auxiliaries/` 用户图片×2、`plate_N.json`（2.4.0 样本）。
-
-入门级文件作用总览见 [3mf 内部文件组成与作用](3mf%20documents/3mf_file_structure.md)。
 
 ## 附录 D（规范性）字段字典与写入白名单
 
@@ -640,4 +639,4 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 - 3MF Consortium, *3MF Production Extension*
 - 3MF Consortium, *3MF Toolpath Extension — Specification & Reference Guide* 1.0.0 RC（2026-09-03）（路线对照）
 - GB/T 1.1—2020《标准化工作导则 第 1 部分：标准化文件的结构和起草规则》（体例参考）
-- 深度调研：[3MF 版本管理细则](3mf%20documents/3mf_version_management.md)、[3mf 内部文件组成与作用](3mf%20documents/3mf_file_structure.md)
+- 深度调研：[3MF 版本管理细则](3mf_version_management.md)
