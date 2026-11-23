@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `-135`.  
 [Unit](../../../general_settings/option_type.md#unit): `°`.  
-[Range](../../../general_settings/option_type.md#range): `-180–180`.  
+[Range](../../../general_settings/option_type.md#range): `[-180, 180]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skirt-start-angle=1`.  
 
 Start angle for the skirt relative to the object center. 0° is the right-most position (along the +X axis), angles increase counter-clockwise.  

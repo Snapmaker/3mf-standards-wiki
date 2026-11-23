@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0.4`.  
 [Unit](../../../general_settings/option_type.md#unit): `mm`.  
-[Range](../../../general_settings/option_type.md#range): `0–10`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 10]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-shift-step=1`.  
 
 This parameter adds a slight displacement to each layer of infill to create a cross texture.

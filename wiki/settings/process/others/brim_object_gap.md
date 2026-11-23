@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [Unit](../../../general_settings/option_type.md#unit): `mm`.  
-[Range](../../../general_settings/option_type.md#range): `0–2`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 2]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--brim-object-gap=1`.  
 
 Gap between the innermost brim line and the object.  

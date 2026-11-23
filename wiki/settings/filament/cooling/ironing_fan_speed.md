@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
 [Default](../../../general_settings/option_type.md#default-value): `-1`.  
 [Unit](../../../general_settings/option_type.md#unit): `%`.  
-[Range](../../../general_settings/option_type.md#range): `-1–100`.  
+[Range](../../../general_settings/option_type.md#range): `[-1, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--ironing-fan-speed=1`.  
 
 This part cooling fan speed is applied when ironing. Setting this parameter to a lower than regular speed reduces possible nozzle clogging due to the low volumetric flow rate, making the interface smoother.  

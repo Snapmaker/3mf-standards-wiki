@@ -10,7 +10,7 @@
 [Type](../../../general_settings/option_type.md): Percentage.  
 [Default](../../../general_settings/option_type.md#default-value): `25`.  
 [Unit](../../../general_settings/option_type.md#unit): `%`.  
-[Range](../../../general_settings/option_type.md#range): `0–100`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skin-infill-density=20%`.  
 
 Version of [Zig Zag](#zig-zag) that adds extra skin.

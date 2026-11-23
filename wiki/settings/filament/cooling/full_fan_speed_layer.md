@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [Unit](../../../general_settings/option_type.md#unit): `layer`.  
-[Range](../../../general_settings/option_type.md#range): `0–1000`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 1000]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--full-fan-speed-layer=1`.  
 
 Fan speed is increased linearly from 0% starting at the layer specified by [close_fan_the_first_x_layers](#no-cooling-for-the-first) up to the maximum part-cooling speed at this specified layer.  

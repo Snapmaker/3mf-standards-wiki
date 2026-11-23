@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  
 [Default](../../../general_settings/option_type.md#default-value): `30`.  
 [Unit](../../../general_settings/option_type.md#unit): `°`.  
-[Range](../../../general_settings/option_type.md#range): `1–90`.  
+[Range](../../../general_settings/option_type.md#range): `[1, 90]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-threshold-angle=1`.  
 
 Support will be generated for overhangs whose slope angle is below the threshold. The smaller this value is, the steeper the overhang that can be printed without support.  

@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `2`.  
 [Unit](../../../general_settings/option_type.md#unit): `mm`.  
-[Range](../../../general_settings/option_type.md#range): `0–60`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 60]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skirt-distance=1`.  
 
 Distance from skirt to brim or object.  

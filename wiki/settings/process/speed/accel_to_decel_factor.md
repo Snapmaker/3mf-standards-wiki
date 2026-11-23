@@ -10,7 +10,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `50`.  
 [Unit](../../../general_settings/option_type.md#unit): `%`.  
-[Range](../../../general_settings/option_type.md#range): `1–100`.  
+[Range](../../../general_settings/option_type.md#range): `[1, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--accel-to-decel-factor=20%`.  
 
 Percentage of the acceleration that Klipper's `max_accel_to_decel` is set to, from 1% to 100% (default 50%).  

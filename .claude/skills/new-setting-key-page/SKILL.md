@@ -51,7 +51,7 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 [Type](../../../general_settings/option_type.md#锚点): `<类型>`.  
 [Default](../../../general_settings/option_type.md#default-value): `<默认值>`.  
 [Unit](../../../general_settings/option_type.md#unit): `<单位>`.  
-[Range](../../../general_settings/option_type.md#range): `<min–max>`.  
+[Range](../../../general_settings/option_type.md#range): `[<min>, <max>]`（单侧 `≥ <min>` / `≤ <max>`）.  
 [Aliases](../../../general_settings/option_type.md#aliases): `<历史键名>`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--kebab-case-键名=<示例值>`.  
 
@@ -84,7 +84,7 @@ description: 新增或更新 wiki/settings/ 下的设置参数键文档（printe
 [Type](../../../general_settings/option_type.md#锚点): `<类型>`.  
 [Default](../../../general_settings/option_type.md#default-value): `<默认值>`.  
 [Unit](../../../general_settings/option_type.md#unit): `<单位>`.  
-[Range](../../../general_settings/option_type.md#range): `<min–max>`.  
+[Range](../../../general_settings/option_type.md#range): `[<min>, <max>]`（单侧 `≥ <min>` / `≤ <max>`）.  
 [Options](../../../general_settings/option_type.md#choice): `<枚举值>`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--kebab-case-键名=<值>`.  
 

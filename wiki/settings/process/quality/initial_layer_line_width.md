@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [Unit](../../../general_settings/option_type.md#unit): `mm or %`.  
-[Range](../../../general_settings/option_type.md#range): `0–1000`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 1000]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--initial-layer-line-width=20%`.  
 
 A wider first layer (with a higher [first layer height](../../process/quality/initial_layer_print_height.md)) improves bed adhesion and compensates for uneven build surfaces.  

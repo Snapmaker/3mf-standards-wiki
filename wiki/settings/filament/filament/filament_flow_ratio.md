@@ -8,7 +8,7 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `filament_flow_ratio`.  
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `1`.  
-[Range](../../../general_settings/option_type.md#range): `0–2`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 2]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--filament-flow-ratio=1`.  
 
 The material may have volumetric change after switching between molten and crystalline states. This setting changes all extrusion flow of this filament in G-code proportionally.  

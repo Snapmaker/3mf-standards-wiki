@@ -11,7 +11,7 @@
 [Type](../../../general_settings/option_type.md#list-types): `Float list`.  
 [Default](../../../general_settings/option_type.md#default-value): `10.0`.  
 [Unit](../../../general_settings/option_type.md#unit): `mm`.  
-[Range](../../../general_settings/option_type.md#range): `0–50`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 50]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--cooling-perimeter-transition-distance=1`.  
 
 Distance in millimeters before the end of slowed perimeters where the original print speed is gradually restored. This prevents visible speed transitions at the end of perimeters.

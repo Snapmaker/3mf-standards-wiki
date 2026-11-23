@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `50%`.  
 [Unit](../../../general_settings/option_type.md#unit): `mm or %`.  
-[Range](../../../general_settings/option_type.md#range): `0–100`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-threshold-overlap=20%`.  
 
 If [Threshold angle](#threshold-angle) is zero, support will be generated for overhangs whose overlap with the layer below is below the threshold. A percentage is relative to the outer wall line width.

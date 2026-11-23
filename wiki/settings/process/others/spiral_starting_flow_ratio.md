@@ -8,7 +8,7 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `spiral_starting_flow_ratio`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
-[Range](../../../general_settings/option_type.md#range): `0–1`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 1]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--spiral-starting-flow-ratio=1`.  
 
 Sets the starting flow ratio when transitioning from the last bottom layer to the spiral.  

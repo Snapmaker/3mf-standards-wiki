@@ -10,7 +10,7 @@
 [Type](../../../general_settings/option_type.md): Integer.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [Unit](../../../general_settings/option_type.md#unit): `layers`.  
-[Range](../../../general_settings/option_type.md#range): `0–100`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--raft-layers=1`.  
 
 A raft is a platform of support material printed under the object. The object is printed on the raft instead of on the build plate, and the raft is removed after printing.

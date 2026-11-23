@@ -10,7 +10,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `45`.  
 [Unit](../../../general_settings/option_type.md#unit): `°`.  
-[Range](../../../general_settings/option_type.md#range): `0–360`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 360]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-direction=1`.  
 
 Controls the direction of the infill lines to optimize or strengthen the print.

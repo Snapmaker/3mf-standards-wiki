@@ -10,7 +10,7 @@
 [Type](../../../general_settings/option_type.md): Float.  
 [Default](../../../general_settings/option_type.md#default-value): `1.0`.  
 [Unit](../../../general_settings/option_type.md#unit): `mm`.  
-[Range](../../../general_settings/option_type.md#range): `0–100`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-lock-depth=1`.  
 
 Version of [Zig Zag](#zig-zag) that adds extra skin.

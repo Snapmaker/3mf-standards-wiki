@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `90`.  
 [Unit](../../../general_settings/option_type.md#unit): `%`.  
-[Range](../../../general_settings/option_type.md#range): `10–100`.  
+[Range](../../../general_settings/option_type.md#range): `[10, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--raft-first-layer-density=20%`.  
 
 Density of the first raft or support layer.

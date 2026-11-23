@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `125`.  
 [Unit](../../../general_settings/option_type.md#unit): `°`.  
-[Range](../../../general_settings/option_type.md#range): `0–180`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 180]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--brim-ears-max-angle=1`.  
 
 Angle threshold (degrees) used to decide where mouse ears may be placed:

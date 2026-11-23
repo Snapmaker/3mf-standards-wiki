@@ -10,7 +10,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  
 [Default](../../../general_settings/option_type.md#default-value): `155`.  
 [Unit](../../../general_settings/option_type.md#unit): `°`.  
-[Range](../../../general_settings/option_type.md#range): `0–180`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 180]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--scarf-angle-threshold=1`.  
 
 This option sets the threshold angle for applying a conditional scarf joint seam.\nIf the maximum angle within the perimeter loop exceeds this value (indicating the absence of sharp corners), a scarf joint seam will be used. The default value is 155°.

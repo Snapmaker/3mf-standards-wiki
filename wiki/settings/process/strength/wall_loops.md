@@ -8,7 +8,7 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `wall_loops`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Integer`.  
 [Default](../../../general_settings/option_type.md#default-value): `2`.  
-[Range](../../../general_settings/option_type.md#range): `0–1000`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 1000]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wall-loops=1`.  
 
 "Wall loops" is the number of walls printed on each layer.  

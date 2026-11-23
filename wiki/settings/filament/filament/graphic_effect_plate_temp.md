@@ -11,7 +11,7 @@
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [Unit](../../../general_settings/option_type.md#unit): `℃`.  
-[Range](../../../general_settings/option_type.md#range): `0–300`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 300]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--graphic-effect-plate-temp=1`.  
 
 Bed temperature for layers except the initial one. A value of 0 means the filament does not support printing on this plate.

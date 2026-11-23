@@ -10,7 +10,7 @@
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
 [Default](../../../general_settings/option_type.md#default-value): `-1`.  
 [Unit](../../../general_settings/option_type.md#unit): `%`.  
-[Range](../../../general_settings/option_type.md#range): `-1–100`.  
+[Range](../../../general_settings/option_type.md#range): `[-1, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--internal-bridge-fan-speed=1`.  
 
 The part cooling fan speed used for all internal bridges. Set to -1 to use the overhang fan speed settings instead.

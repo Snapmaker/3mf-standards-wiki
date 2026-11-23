@@ -9,7 +9,7 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `bottom_solid_infill_flow_ratio`.  
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float` — every variable above except `set_other_flow_ratios`, which is a [Boolean](../../../general_settings/option_type.md#boolean) enable toggle for all the others (`--set-other-flow-ratios=1`).  
 [Default](../../../general_settings/option_type.md#default-value): `1`.  
-[Range](../../../general_settings/option_type.md#range): `0–2`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 2]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--bottom-solid-infill-flow-ratio=1`.  
 
 The Flow ratio (`print_flow_ratio`) scales all extrusion flow of the object proportionally.

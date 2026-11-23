@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float or Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
 [Unit](../../../general_settings/option_type.md#unit): `mm or %`.  
-[Range](../../../general_settings/option_type.md#range): `0–1000`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 1000]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--sparse-infill-line-width=20%`.  
 
 Recommended to use a conservative value, typically around 115% to improve layer adhesion without getting near volumetric flow limitations.  

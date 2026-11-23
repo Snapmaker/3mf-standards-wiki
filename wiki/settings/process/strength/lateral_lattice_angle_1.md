@@ -10,7 +10,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `-45`.  
 [Unit](../../../general_settings/option_type.md#unit): `°`.  
-[Range](../../../general_settings/option_type.md#range): `-75–75`.  
+[Range](../../../general_settings/option_type.md#range): `[-75, 75]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--lateral-lattice-angle-1=1`.  
 
 Low-strength pattern with good flexibility. You can adjust **Angle 1** and **Angle 2** to optimize the infill for your specific model. Each angle sets the tilt in the Z direction of one of the two sets of lattice elements. 0° is vertical.

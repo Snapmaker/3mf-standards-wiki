@@ -390,9 +390,10 @@ def range_str(rec):
     lo, hi = rec.get("min"), rec.get("max")
     if lo is None and hi is None:
         return None
-    core = ("%s–%s" % (fmt_num(lo), fmt_num(hi)) if lo is not None and hi is not None
+    # 双侧用闭区间写法（负下界 + 连接线有歧义，如 -1–100）；单侧 ≥/≤ 无歧义保持（2026-11-23 裁决）
+    core = ("[%s, %s]" % (fmt_num(lo), fmt_num(hi)) if lo is not None and hi is not None
             else ("≥ %s" % fmt_num(lo) if lo is not None else "≤ %s" % fmt_num(hi)))
-    return "`%s`" % core  # 单位不内嵌（2026-11-20 裁决：单位独立为 [Unit] 行）
+    return "`%s`" % core
 
 
 def build_lines(keyset, meta, prefix):
@@ -1008,7 +1009,7 @@ def cmd_audit(args):
     issues = {"no_default_line": [], "default_drift": [], "key_not_in_json": [],
               "choice_no_options": [], "mode_drift": [],
               "unit_missing": [], "unit_drift": [], "range_unit_leftover": [],
-              "field_order": []}
+              "range_notation": [], "field_order": []}
     n_pages = n_sections = 0
     for p in page_files(argparse.Namespace(all=True, group=None, pages=None)):
         text = open(p, encoding="utf-8", newline="").read()
@@ -1081,6 +1082,9 @@ def cmd_audit(args):
                 mu = re.match(r"^\[Range\]\([^)]*\):\s*`[^`]*`(.*)$", rline)
                 if mu and mu.group(1).strip().rstrip(".").strip():
                     issues["range_unit_leftover"].append("%s:%d %s" % (rel, i + 1, rline.strip()))
+                mv = re.match(r"^\[Range\]\([^)]*\):\s*`(-?\d+)–(-?\d+)`", rline)
+                if mv:  # 旧连字符写法（负下界歧义），双侧应闭区间 [a, b]
+                    issues["range_notation"].append("%s:%d %s" % (rel, i + 1, rline.strip()))
             if keys[0] == stem:
                 st = meta.get(stem, {}).get("sidetext")
                 if st and uline is None:

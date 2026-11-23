@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#list-types): `Integer list`.  
 [Default](../../../general_settings/option_type.md#default-value): `1`.  
 [Unit](../../../general_settings/option_type.md#unit): `layers`.  
-[Range](../../../general_settings/option_type.md#range): `0–1000`.  
+[Range](../../../general_settings/option_type.md#range): `[0, 1000]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--close-fan-the-first-x-layers=1`.  
 
 Number of initial layers during which part-cooling fans are disabled.

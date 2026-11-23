@@ -9,7 +9,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Float`.  
 [Default](../../../general_settings/option_type.md#default-value): `-1`.  
 [Unit](../../../general_settings/option_type.md#unit): `°`.  
-[Range](../../../general_settings/option_type.md#range): `-1–359`.  
+[Range](../../../general_settings/option_type.md#range): `[-1, 359]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--ironing-angle=1`.  
 
 The angle of ironing lines offset relative to the top surface solid infill direction.  

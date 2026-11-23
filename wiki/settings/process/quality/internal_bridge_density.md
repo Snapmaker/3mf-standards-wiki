@@ -10,7 +10,7 @@
 [Type](../../../general_settings/option_type.md#integer-float-percentage): `Percentage`.  
 [Default](../../../general_settings/option_type.md#default-value): `100`.  
 [Unit](../../../general_settings/option_type.md#unit): `%`.  
-[Range](../../../general_settings/option_type.md#range): `10–100`.  
+[Range](../../../general_settings/option_type.md#range): `[10, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--internal-bridge-density=1`.  
 
 Controls the density (spacing) of external and internal bridge lines. Default is 100%.  
