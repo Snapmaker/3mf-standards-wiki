@@ -1,6 +1,6 @@
 # Process settings overview
 
-> Page structure follows the actual software UI (verified 2026-10-28).
+> Page structure follows the actual software UI (structure verified 2026-10-28; entry counts checked 2026-11-23).
 > One document per key; ✅ = content copied from the upstream OrcaSlicer wiki, 🚧 = placeholder to be completed, 🔗 = cross-reference.
 
 ## Quality (`quality/`)
