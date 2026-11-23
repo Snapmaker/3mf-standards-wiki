@@ -274,3 +274,7 @@ fdm_process_common(182) → fdm_process_idex(64) → 0.16 Optimal @Snapmaker J1 
 > [!TIP]
 > **一个简单判断**
 > 先只看文件名，应该能说出“这是什么配置、适用于什么条件”；再打开 JSON，应该能找到与这句话对应的元字段、标识字段和参数覆盖。两边对不上时，优先检查名称、`inherits` 和绑定字段。
+
+> [!TIP]
+> **想看字段级要求**
+> 文件怎么写、哪些键必须带、值和类型怎么序列化，见 [耗材预设文件格式要求](preset_filament_format.md) · [工艺预设文件格式要求](preset_process_format.md) · [打印机预设文件格式要求](preset_machine_format.md)。

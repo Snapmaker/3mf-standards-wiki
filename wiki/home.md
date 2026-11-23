@@ -24,6 +24,17 @@
 | [G-code 文件规范 v1.0（草案）](specification/gcode.3mf/gcode_standard.md) | 标准正文：文件布局 → 行语法与指令 → 注释标记 → 自描述块与统计，GB/T 体例（基准机型 U1 / Klipper，基于 2.4.x 源码实测） |
 | [两端交互字段对照](specification/gcode.3mf/gcode_3mf_interaction_fields.md) | 切片端写出、固件解析的字段清单（快照自飞书交互协议表）：设置键索引 + 协议字段详解 + 变更记录 |
 
+## 预设专题
+
+打印配置文件（filament / machine / process）的命名、格式与一致性要求：
+
+| 页面 | 内容 |
+|---|---|
+| [打印配置文件：命名与继承](preset/configuration_files.md) | 入门：配置文件叫什么、元信息、参数如何复用 |
+| [耗材预设文件格式要求 v1.0（草案）](preset/preset_filament_format.md) | 标准正文：文件结构 → 元数据 → 参数字典（耗材/冷却/参数覆盖/高级/材料/依赖）→ 一致性要求 |
+| [工艺预设文件格式要求 v1.0（草案）](preset/preset_process_format.md) | 标准正文：文件结构 → 元数据 → 参数字典（质量/强度/速度/支撑/材料/其他）→ 一致性要求 |
+| [打印机预设文件格式要求 v1.0（草案）](preset/preset_machine_format.md) | 标准正文：文件结构 → 元数据 → 参数字典（基础信息/打印机G-code/移动能力/挤出机/材料/注释）→ 一致性要求 |
+
 ## 研发内部资料（证据链）
 
 [docs/](../docs/) 目录是阶段一盘点与对齐的原始工作文档，wiki 页面的结论都能在这里找到证据：
@@ -37,6 +48,8 @@
 | [06-对账-gcode.3mf与3MF-Toolpath扩展](../docs/06-对账-gcode.3mf与3MF-Toolpath扩展.md) | gcode.3mf 与 3MF 联盟 Toolpath RC 逐机制对账（2026-11-04） |
 | [07-对账-设置键UI覆盖度](../docs/07-对账-设置键UI覆盖度.md) | UI 设置键 × wiki 键页面对账：FDM 挂行键 100% 覆盖，缺口 0（2026-11-06） |
 | [08-盘点-预设文件组织与继承实测](../docs/08-盘点-预设文件组织与继承实测.md) | Snapmaker 预设 547 个 JSON 实测：三树层级、键数、三种组织风格与勘误（2026-11-06） |
+| [09-对账-PrintConfig元数据提取与键页注入](../docs/09-对账-PrintConfig元数据提取与键页注入.md) | 键页默认值/范围/单位/别名元数据的脚本化提取与注入，含缺键清单与复跑方法（2026-11-06） |
+| [10-对账-预设格式文档与参数页面](../docs/10-对账-预设格式文档与参数页面.md) | 三份预设格式文档 × 参数页面 × 系统预设字段三方对账；补入 18 个在用键并标注页面待修项（2026-11-23） |
 
 ## 设置参数文档
 
@@ -47,7 +60,6 @@
 | [打印机设置参数总览](settings/printer/printer_overview.md) | 6 页面 104 键 |
 | [耗材设置参数总览](settings/filament/filament_overview.md) | 7 页面 107 键（含 18 个回抽覆盖交叉引用） |
 | [工艺设置参数总览](settings/process/process_overview.md) | 6 页面 311 键 + Plate Settings 板级键 |
-| [打印配置文件：命名与继承](preset/configuration_files.md) | 入门：配置文件叫什么、元信息、参数如何复用 |
 
 键页元数据行（Mode / Variables / Type / Defaults / Ranges / Aliases / CLI Example）的含义见支撑页：[Mode 显示模式](general_settings/option_mode.md) · [Type 取值类型](general_settings/option_type.md) · [内置占位符变量](developer_reference/built_in_placeholders_variables.md) · [CLI 命令行](cli/cli_mode.md)
 
