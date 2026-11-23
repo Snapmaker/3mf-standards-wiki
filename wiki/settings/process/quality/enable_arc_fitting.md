@@ -6,22 +6,16 @@
 
 [Mode](../../../general_settings/option_mode.md): `Advanced`.  
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `enable_arc_fitting`.  
-[Type](../../../general_settings/option_type.md#choice): `Choice`.  
+[Type](../../../general_settings/option_type.md#boolean): `Boolean`.  
 [Default](../../../general_settings/option_type.md#default-value): `0`.  
-[Options](../../../general_settings/option_type.md#choice): `disabled, enabled, sparse_infill`.  
-[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-arc-fitting=disabled`.  
-
-> [!IMPORTANT]
-> NEW FEATURE: **Sparse infill only arc fitting**  
-> Available in: nightly builds or releases greater than **2.4.2**.
+[CLI Example](../../../cli/cli_mode.md#setting-overrides): `--enable-arc-fitting=1`.  
 
 Replaces many short straight moves (G1 segments) with fewer circular arc commands using [G2 and G3](https://marlinfw.org/docs/gcode/G002-G003.html).  
 
 - **Disabled**: only straight G1 moves are written.
 - **Enabled**: arcs are fitted to all toolpaths.
-- **Sparse infill only**: arcs are fitted to the sparse infill only, so curved patterns such as Gyroid, TPMS or a [smoothed sparse infill](../../process/strength/sparse_infill_pattern.md) get smaller while walls, surfaces and supports stay as G1 moves.
 
-Walls and surfaces are fitted within the [Resolution](#resolution), while sparse infill, supports and the wipe tower use fixed tolerances.
+Arc fitting uses the [Resolution](resolution.md) setting as its fitting tolerance.
 
 Arc fitting mainly changes how the toolpath is *encoded* in G-code. It can be beneficial in some workflows, but it is not a feature to improve print quality.
 
@@ -44,7 +38,7 @@ Arc fitting is not available on [belt printers](../../../guides/belt_printing.md
 - Smoother curves when using a low poly model.
 
 > [!NOTE]
-> A `.gcode.3mf` (**Use 3MF instead of G-code** in Printer settings → Basic information → Advanced) already compresses the G-code to a quarter or a third of its size, usually more than arcs save: on 3DBenchy and the Stanford bunny, Sparse infill only saved about 5% with Grid infill and 13% to 35% with Gyroid.
+> A `.gcode.3mf` (**Use 3MF instead of G-code** in Printer settings → Basic information → Advanced) already compresses the G-code to a quarter or a third of its size, usually more than arc fitting saves.
 
 **Disadvantages / risks**
 

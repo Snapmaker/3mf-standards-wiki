@@ -9,7 +9,7 @@
 [Variable](../../../developer_reference/built_in_placeholders_variables.md): `top_surface_pattern`.  
 [Type](../../../general_settings/option_type.md#choice): `Choice`.  
 [Default](../../../general_settings/option_type.md#default-value): `ipMonotonicLine`.  
-[Options](../../../general_settings/option_type.md#choice): `monotonic, monotonicline, rectilinear, alignedrectilinear, concentric, spiralinset, hilbertcurve, archimedeanchords, octagramspiral`.  
+[Options](../../../general_settings/option_type.md#choice): `monotonic, monotonicline, rectilinear, alignedrectilinear, concentric, hilbertcurve, archimedeanchords, octagramspiral`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--top-surface-pattern=monotonic`.  
 
 This setting controls the pattern of the surfaces.  
@@ -25,7 +25,6 @@ The surface patterns are:
 - **[Monotonic](../../process/strength/sparse_infill_pattern.md)**
 - **[Monotonic line](../../process/strength/sparse_infill_pattern.md)**: usually recommended for top surfaces.
 - **[Aligned Rectilinear](../../process/strength/sparse_infill_pattern.md)**
-- **[Spiral Inset](../../process/strength/sparse_infill_pattern.md)**
 - **[Hilbert Curve](../../process/strength/sparse_infill_pattern.md)**
 - **[Archimedean Chords](../../process/strength/sparse_infill_pattern.md)**
 - **[Octagram Spiral](../../process/strength/sparse_infill_pattern.md)**
