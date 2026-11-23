@@ -1,10 +1,9 @@
-# 耗材预设文件格式要求 v1.0（草案）
+# 耗材预设文件格式 v1.0（草案）
 
 ← [Wiki 首页](../home.md)
 
 相关：[耗材预设](preset_filament_format.md) · [工艺预设](preset_process_format.md) · [打印机预设](preset_machine_format.md)
 
-> 版本 v1.0（草案） · 基准 `feature_V1` · 最后核验 2026-11-23
 >
 > 规范性用语：**应 / 不应**表示要求，**宜 / 不宜**表示推荐，**可**表示允许。
 
