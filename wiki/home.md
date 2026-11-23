@@ -1,6 +1,6 @@
 # Wiki 首页
 
-本 wiki 讲清楚 **Snapmaker Orca 导出的 3mf 文件里有什么、为什么是这样**，并逐步扩展为软件的完整使用文档。组织方式沿用上游 OrcaSlicer Wiki 的目录分类法。
+本 wiki 讲清楚 **Snapmaker Orca 导出的 3mf 文件里有什么、为什么是这样**，并逐步扩展为软件的完整使用文档。
 
 ## 3MF 专题
 

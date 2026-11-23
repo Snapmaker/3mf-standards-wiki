@@ -1,6 +1,6 @@
 # AGENTS.md — 本仓库 wiki 约定
 
-本仓库是团队 wiki（3MF 专题先行，后续扩展为软件完整文档）。目录组织沿用上游 [OrcaSlicer Wiki](https://github.com/OrcaSlicer/OrcaSlicer_WIKI) 的分类法，按本仓库形态（仓库内纯 markdown，无构建工具）做了适配。人类贡献者和 AI 都遵守本文件。
+本仓库是团队 wiki（3MF 专题先行，后续扩展为软件完整文档）。人类贡献者和 AI 都遵守本文件。
 
 ## 目录结构
 
