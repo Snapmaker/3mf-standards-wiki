@@ -16,6 +16,8 @@
 | `wiki/general_settings/` `wiki/cli/` `wiki/developer_reference/` | 现有（支撑页） | 键页元数据支撑页（`option_mode` / `option_type` / `built_in_placeholders_variables` / `cli_mode`，2026-11-19 自上游移植并修订）；其余内容随软件完整文档阶段扩充，**目录名与上游 OrcaSlicer wiki 一致** |
 | `wiki/print_prepare/` `wiki/calibration/` `wiki/guides/` `wiki/releases/` | 预留 | 软件完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
 
+仓库级目录：`tools/kb_index/` 放 Agent 索引生成器与维护者元数据（`search_terms.json`、`spec_meta.json`）；`index/` 放生成产物 `kb_index.json`。两者不进 wiki 正文，发布约定与 wiki 相同。
+
 ## 命名
 
 - 文件名全小写 `snake_case`：`[a-z0-9]` 单词以 `_` 连接（如 `project_settings_config.md`）
@@ -67,3 +69,18 @@
 ```markdown
 序列化代码位于 `src/libslic3r/Format/bbs_3mf.cpp`（Snapmaker Orca 源码）
 ```
+
+## Agent 读取协议
+
+本节供把仓库根目录作为只读知识库的 Agent 使用。
+
+- **读取顺序**：`README.md` → `AGENTS.md` → `wiki/home.md`；按需打开相关章节，不要通读全库。
+- **检索路径**：
+  - 格式问题 → `wiki/specification/3mf/`、`wiki/specification/gcode.3mf/`；先定位条款号，再读正文。
+  - 预设问题 → `wiki/preset/`。
+  - 参数问题 → `wiki/settings/<tab>/<group>/<key>.md`；不确定键名时先查对应 `*_overview.md`，跨端字段查 `gcode_3mf_interaction_fields.md`。
+  - `index/kb_index.json` 是试点索引（11 篇规范 + 12 个键），不是全量索引；未命中时按上述路径直接查文件。
+- **引用格式**：给出「提交号 · 相对路径 · 原文标题或条款号」；规范条款用锚点定位，键页引用键名与标题。
+- **状态区分**：明确区分「产品现状」「草案要求」「待定」；`> Status: placeholder` 的页面只使用已有信息，不补写结论；`> Status: cross-reference` 的页面指向主参数页。
+- **冲突处理**：跨页冲突时引用双方并指出差异；找不到依据时说明本快照的缺口，不编造。
+- **索引维护**：新增或修改索引覆盖的页面后，运行 `python tools/kb_index/build_index.py` 重建；提交前运行 `--check` 校验产物与页面一致。中文检索词在 `tools/kb_index/search_terms.json` 维护，规范状态与范围在 `tools/kb_index/spec_meta.json` 维护。

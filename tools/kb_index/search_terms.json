@@ -1,0 +1,14 @@
+{
+  "initial_layer_print_height": ["首层层高", "首层高度", "第一层高度"],
+  "layer_height": ["层高", "分层高度"],
+  "curr_bed_type": ["当前打印板类型", "打印板类型", "板型"],
+  "required_nozzle_hrc": ["喷嘴硬度", "喷嘴 HRC", "硬度要求"],
+  "close_fan_the_first_x_layers": ["前 N 层关风扇", "首层关风扇", "风扇起始层"],
+  "filament_colour": ["耗材颜色", "线材颜色", "颜色"],
+  "outer_wall_speed": ["外墙速度", "外壁速度"],
+  "print_sequence": ["打印顺序", "逐层打印", "逐件打印"],
+  "sparse_infill_pattern": ["稀疏填充图案", "填充图案", "填充模式"],
+  "enable_support": ["支撑", "启用支撑", "支撑结构"],
+  "seam_position": ["接缝位置", "缝合位置", "接缝"],
+  "filament_retraction_length": ["耗材回抽长度", "回抽长度", "回抽"]
+}

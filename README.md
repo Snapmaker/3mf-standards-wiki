@@ -15,6 +15,11 @@ Snapmaker Orca 的文件格式规范与设置参数文档：讲清楚 3mf 文件
 
 各规范正文均为 v1.0 草案，未定论的内容按现状描述并标注「待定」。设置参数页为英文，其余页面为中文。
 
+## 人读 / Agent 读
+
+- **人读**：从 [Wiki 首页](wiki/home.md) 进入，按各专题的阅读顺序查阅。
+- **Agent 读**：把仓库根目录作为只读知识库，先读 `README.md`、`AGENTS.md`、`wiki/home.md`，再按 [AGENTS.md 的 Agent 读取协议](AGENTS.md#agent-读取协议)检索。检索索引见 [index/kb_index.json](index/kb_index.json)，当前为试点：11 篇格式规范 + 12 个代表设置键，含中文检索词、G-code 嵌入名与条款定位。索引随快照分发，不写入时间戳或提交号；重建与校验：`python tools/kb_index/build_index.py`、`python tools/kb_index/build_index.py --check`。
+
 ## 仓库结构
 
 ```
@@ -27,6 +32,8 @@ wiki/
 ├── cli/                  ← 支撑页：命令行切片
 ├── developer_reference/  ← 支撑页：内置占位符变量
 └── images/               ← 图片
+tools/kb_index/           ← Agent 索引生成器与维护者元数据
+index/                    ← 生成的索引 kb_index.json
 AGENTS.md                 ← 写作约定：目录、命名、链接、文风
 ```
 

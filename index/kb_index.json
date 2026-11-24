@@ -1,0 +1,1793 @@
+{
+  "format_version": "0.1",
+  "generated_by": "tools/kb_index/build_index.py",
+  "language": "zh-CN",
+  "entrypoint": "wiki/home.md",
+  "read_order": [
+    "README.md",
+    "AGENTS.md",
+    "wiki/home.md"
+  ],
+  "known_gaps": [
+    "584 键逐项字段字典不在仓库；工程规范附录 D 仅有统计、六类禁入与示例",
+    "guides/、calibration/、print_prepare/ 页面尚未移植，相关链接已改为纯文字",
+    "32 个占位页仅含内置元数据与 tooltip，正文内容待补",
+    "本索引为试点：11 篇格式规范 + 12 个设置键，未覆盖全部 552 个 wiki 页"
+  ],
+  "entries": [
+    {
+      "id": "setting.filament.cooling.close_fan_the_first_x_layers",
+      "kind": "setting",
+      "path": "wiki/settings/filament/cooling/close_fan_the_first_x_layers.md",
+      "lang": "en",
+      "key": "close_fan_the_first_x_layers",
+      "tab": "Filament",
+      "group": "Cooling",
+      "ui_block": "Cooling for specific layer",
+      "ui_label": "No cooling for the first",
+      "mode": "Simple",
+      "variable": "close_fan_the_first_x_layers",
+      "type": "Integer list",
+      "default": "1",
+      "unit": "layers",
+      "range": "[0, 1000]",
+      "cli_example": "--close-fan-the-first-x-layers=1",
+      "overview_group": "Cooling for specific layer",
+      "status": "complete",
+      "search_terms": [
+        "前 N 层关风扇",
+        "首层关风扇",
+        "风扇起始层"
+      ]
+    },
+    {
+      "id": "setting.filament.filament.filament_colour",
+      "kind": "setting",
+      "path": "wiki/settings/filament/filament/filament_colour.md",
+      "lang": "en",
+      "key": "filament_colour",
+      "tab": "Filament",
+      "group": "Filament",
+      "ui_block": "Basic information",
+      "ui_label": "Color",
+      "mode": "Advanced",
+      "variable": "filament_colour",
+      "type": "Text list",
+      "default": "#F2754E",
+      "cli_example": "--filament-colour=value",
+      "overview_group": "Basic information; edited via the filament color swatch in the left panel",
+      "status": "placeholder",
+      "search_terms": [
+        "耗材颜色",
+        "线材颜色",
+        "颜色"
+      ]
+    },
+    {
+      "id": "setting.filament.filament.required_nozzle_hrc",
+      "kind": "setting",
+      "path": "wiki/settings/filament/filament/required_nozzle_hrc.md",
+      "lang": "en",
+      "key": "required_nozzle_hrc",
+      "tab": "Filament",
+      "group": "Filament",
+      "ui_block": "Basic information",
+      "ui_label": "Required nozzle HRC",
+      "mode": "Developer",
+      "variable": "required_nozzle_HRC",
+      "type": "Integer list",
+      "default": "— no static default",
+      "cli_example": "--required-nozzle-HRC=1",
+      "overview_group": "Basic information",
+      "status": "complete",
+      "search_terms": [
+        "喷嘴硬度",
+        "喷嘴 HRC",
+        "硬度要求"
+      ]
+    },
+    {
+      "id": "setting.filament.setting_overrides.filament_retraction_length",
+      "kind": "setting",
+      "path": "wiki/settings/filament/setting_overrides/filament_retraction_length.md",
+      "lang": "en",
+      "key": "filament_retraction_length",
+      "tab": "Filament",
+      "group": "Setting Overrides",
+      "ui_label": "Retraction",
+      "overview_group": "Retraction",
+      "status": "cross_reference",
+      "search_terms": [
+        "耗材回抽长度",
+        "回抽长度",
+        "回抽"
+      ]
+    },
+    {
+      "id": "setting.process.others.print_sequence",
+      "kind": "setting",
+      "path": "wiki/settings/process/others/print_sequence.md",
+      "lang": "en",
+      "key": "print_sequence",
+      "tab": "Process",
+      "group": "Others",
+      "ui_block": "Special mode",
+      "ui_label": "Print Sequence",
+      "mode": "Simple",
+      "variable": "print_sequence",
+      "type": "Choice",
+      "default": "PrintSequence::ByLayer",
+      "options": "by layer, by object",
+      "cli_example": "--print-sequence=\"by layer\"",
+      "overview_group": "Special mode",
+      "status": "complete",
+      "search_terms": [
+        "打印顺序",
+        "逐层打印",
+        "逐件打印"
+      ]
+    },
+    {
+      "id": "setting.process.plate.curr_bed_type",
+      "kind": "setting",
+      "path": "wiki/settings/process/plate/curr_bed_type.md",
+      "lang": "en",
+      "key": "curr_bed_type",
+      "tab": "Process",
+      "group": "Plate Settings",
+      "ui_label": "Bed type",
+      "mode": "Simple",
+      "variable": "curr_bed_type",
+      "type": "Choice",
+      "default": "Cool Plate",
+      "options": "Cool Plate, Engineering Plate, High Temp Plate, Textured PEI Plate, Textured Cool Plate, Supertack Plate",
+      "cli_example": "--curr-bed-type=value",
+      "overview_group": "plate-level Snapmaker Orca parameters",
+      "status": "placeholder",
+      "search_terms": [
+        "当前打印板类型",
+        "打印板类型",
+        "板型"
+      ]
+    },
+    {
+      "id": "setting.process.quality.initial_layer_print_height",
+      "kind": "setting",
+      "path": "wiki/settings/process/quality/initial_layer_print_height.md",
+      "lang": "en",
+      "key": "initial_layer_print_height",
+      "tab": "Process",
+      "group": "Quality",
+      "ui_block": "Layer height",
+      "ui_label": "Layer Height",
+      "mode": "Simple",
+      "variable": "initial_layer_print_height",
+      "type": "Float",
+      "default": "0.2",
+      "unit": "mm",
+      "range": "≥ 0",
+      "cli_example": "--initial-layer-print-height=1",
+      "overview_group": "Layer height",
+      "status": "complete",
+      "search_terms": [
+        "首层层高",
+        "首层高度",
+        "第一层高度"
+      ],
+      "gcode_name": "first_layer_height",
+      "mapping_ref": "wiki/specification/gcode.3mf/gcode_3mf_interaction_fields.md#33-嵌入名字段"
+    },
+    {
+      "id": "setting.process.quality.layer_height",
+      "kind": "setting",
+      "path": "wiki/settings/process/quality/layer_height.md",
+      "lang": "en",
+      "key": "layer_height",
+      "tab": "Process",
+      "group": "Quality",
+      "ui_block": "Layer height",
+      "ui_label": "Layer Height",
+      "mode": "Simple",
+      "variable": "layer_height",
+      "type": "Float",
+      "default": "0.2",
+      "unit": "mm",
+      "range": "≥ 0",
+      "cli_example": "--layer-height=1",
+      "overview_group": "Layer height",
+      "status": "complete",
+      "search_terms": [
+        "层高",
+        "分层高度"
+      ]
+    },
+    {
+      "id": "setting.process.quality.seam_position",
+      "kind": "setting",
+      "path": "wiki/settings/process/quality/seam_position.md",
+      "lang": "en",
+      "key": "seam_position",
+      "tab": "Process",
+      "group": "Quality",
+      "ui_block": "Seam",
+      "ui_label": "Seam Position",
+      "mode": "Simple",
+      "variable": "seam_position",
+      "type": "Choice",
+      "default": "spAligned",
+      "options": "nearest, aligned, aligned_back, back, random",
+      "cli_example": "--seam-position=nearest",
+      "overview_group": "Seam",
+      "status": "complete",
+      "search_terms": [
+        "接缝位置",
+        "缝合位置",
+        "接缝"
+      ]
+    },
+    {
+      "id": "setting.process.speed.outer_wall_speed",
+      "kind": "setting",
+      "path": "wiki/settings/process/speed/outer_wall_speed.md",
+      "lang": "en",
+      "key": "outer_wall_speed",
+      "tab": "Process",
+      "group": "Speed",
+      "ui_block": "Other layers speed",
+      "ui_label": "Outer wall",
+      "mode": "Advanced",
+      "variable": "outer_wall_speed",
+      "type": "Float list",
+      "default": "60",
+      "unit": "mm/s",
+      "range": "≥ 1",
+      "cli_example": "--outer-wall-speed=1",
+      "overview_group": "Other layers speed",
+      "status": "complete",
+      "search_terms": [
+        "外墙速度",
+        "外壁速度"
+      ]
+    },
+    {
+      "id": "setting.process.strength.sparse_infill_pattern",
+      "kind": "setting",
+      "path": "wiki/settings/process/strength/sparse_infill_pattern.md",
+      "lang": "en",
+      "key": "sparse_infill_pattern",
+      "tab": "Process",
+      "group": "Strength",
+      "ui_block": "Infill",
+      "ui_label": "Sparse Infill Pattern",
+      "mode": "Simple",
+      "variable": "sparse_infill_pattern",
+      "type": "Choice",
+      "default": "ipCrossHatch",
+      "options": "rectilinear, alignedrectilinear, zigzag, crosszag, lockedzag, line, grid, triangles, tri-hexagon, cubic, adaptivecubic, quartercubic, supportcubic, lightning, honeycomb, 3dhoneycomb, lateral-honeycomb, lateral-lattice, crosshatch, tpmsd, tpmsfk, gyroid, concentric, hilbertcurve, archimedeanchords, octagramspiral",
+      "cli_example": "--sparse-infill-pattern=rectilinear",
+      "overview_group": "Infill",
+      "status": "complete",
+      "search_terms": [
+        "稀疏填充图案",
+        "填充图案",
+        "填充模式"
+      ]
+    },
+    {
+      "id": "setting.process.support.enable_support",
+      "kind": "setting",
+      "path": "wiki/settings/process/support/enable_support.md",
+      "lang": "en",
+      "key": "enable_support",
+      "tab": "Process",
+      "group": "Support",
+      "ui_block": "Support",
+      "ui_label": "Support",
+      "mode": "Simple",
+      "variable": "enable_support",
+      "type": "Boolean",
+      "default": "false",
+      "cli_example": "--enable-support=1",
+      "overview_group": "Support",
+      "status": "complete",
+      "search_terms": [
+        "支撑",
+        "启用支撑",
+        "支撑结构"
+      ]
+    },
+    {
+      "id": "spec.3mf.3mf_standard",
+      "kind": "specification",
+      "path": "wiki/specification/3mf/3mf_standard.md",
+      "lang": "zh",
+      "title": "3mf 工程文件规范 v1.0（草案）",
+      "family": "3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "工程 .3mf：包结构、模型部件、配置层与三层覆盖、版本兼容",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 规范性引用文件",
+          "anchor": "2-规范性引用文件"
+        },
+        {
+          "level": 2,
+          "title": "3 术语和定义",
+          "anchor": "3-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "4 总体结构",
+          "anchor": "4-总体结构"
+        },
+        {
+          "level": 3,
+          "title": "4.1 保存形态与目录层次",
+          "anchor": "41-保存形态与目录层次"
+        },
+        {
+          "level": 3,
+          "title": "4.2 OPC 基础部件",
+          "anchor": "42-opc-基础部件"
+        },
+        {
+          "level": 3,
+          "title": "4.3 压缩、容量与命名约定",
+          "anchor": "43-压缩容量与命名约定"
+        },
+        {
+          "level": 2,
+          "title": "5 模型部件",
+          "anchor": "5-模型部件"
+        },
+        {
+          "level": 3,
+          "title": "5.1 Core 基础约束（摘录）",
+          "anchor": "51-core-基础约束摘录"
+        },
+        {
+          "level": 3,
+          "title": "5.2 对象、组件与实例",
+          "anchor": "52-对象组件与实例"
+        },
+        {
+          "level": 3,
+          "title": "5.3 生产扩展（p:）",
+          "anchor": "53-生产扩展p"
+        },
+        {
+          "level": 3,
+          "title": "5.4 模型级元数据",
+          "anchor": "54-模型级元数据"
+        },
+        {
+          "level": 3,
+          "title": "5.5 外拆对象文件与部件关系",
+          "anchor": "55-外拆对象文件与部件关系"
+        },
+        {
+          "level": 2,
+          "title": "6 工程配置与参数覆盖",
+          "anchor": "6-工程配置与参数覆盖"
+        },
+        {
+          "level": 3,
+          "title": "6.1 对象与盘索引：Metadata/model_settings.config",
+          "anchor": "61-对象与盘索引metadatamodel_settingsconfig"
+        },
+        {
+          "level": 3,
+          "title": "6.2 三层参数覆盖",
+          "anchor": "62-三层参数覆盖"
+        },
+        {
+          "level": 3,
+          "title": "6.3 全量配置快照：Metadata/project_settings.config",
+          "anchor": "63-全量配置快照metadataproject_settingsconfig"
+        },
+        {
+          "level": 3,
+          "title": "6.4 内嵌预设：Metadata/*_settings_N.config",
+          "anchor": "64-内嵌预设metadata_settings_nconfig"
+        },
+        {
+          "level": 3,
+          "title": "6.5 条件性工程数据文件",
+          "anchor": "65-条件性工程数据文件"
+        },
+        {
+          "level": 3,
+          "title": "6.6 盘缩略图族与嵌入资源",
+          "anchor": "66-盘缩略图族与嵌入资源"
+        },
+        {
+          "level": 3,
+          "title": "6.7 通用导出的配置层",
+          "anchor": "67-通用导出的配置层"
+        },
+        {
+          "level": 2,
+          "title": "7 版本与兼容",
+          "anchor": "7-版本与兼容"
+        },
+        {
+          "level": 3,
+          "title": "7.1 五层版本标识",
+          "anchor": "71-五层版本标识"
+        },
+        {
+          "level": 3,
+          "title": "7.2 写入端约定",
+          "anchor": "72-写入端约定"
+        },
+        {
+          "level": 3,
+          "title": "7.3 读取端行为",
+          "anchor": "73-读取端行为"
+        },
+        {
+          "level": 3,
+          "title": "7.4 兼容性矩阵",
+          "anchor": "74-兼容性矩阵"
+        },
+        {
+          "level": 3,
+          "title": "7.5 变更检查清单",
+          "anchor": "75-变更检查清单"
+        },
+        {
+          "level": 2,
+          "title": "8 一致性要求",
+          "anchor": "8-一致性要求"
+        },
+        {
+          "level": 3,
+          "title": "8.1 生产者要求",
+          "anchor": "81-生产者要求"
+        },
+        {
+          "level": 3,
+          "title": "8.2 消费者要求",
+          "anchor": "82-消费者要求"
+        },
+        {
+          "level": 3,
+          "title": "8.3 校验模型",
+          "anchor": "83-校验模型"
+        },
+        {
+          "level": 3,
+          "title": "8.4 版本与兼容",
+          "anchor": "84-版本与兼容"
+        },
+        {
+          "level": 2,
+          "title": "附录 A（资料性）与 3MF Core / Production Extension 的对照",
+          "anchor": "附录-a资料性与-3mf-core--production-extension-的对照"
+        },
+        {
+          "level": 2,
+          "title": "附录 B（资料性）保存形态与策略位",
+          "anchor": "附录-b资料性保存形态与策略位"
+        },
+        {
+          "level": 2,
+          "title": "附录 C（资料性）示例文件剖析",
+          "anchor": "附录-c资料性示例文件剖析"
+        },
+        {
+          "level": 3,
+          "title": "C.1 对照样本：同一工程两种导出",
+          "anchor": "c1-对照样本同一工程两种导出"
+        },
+        {
+          "level": 3,
+          "title": "C.2 样本统计（7 个实测导出样本）",
+          "anchor": "c2-样本统计7-个实测导出样本"
+        },
+        {
+          "level": 2,
+          "title": "附录 D（规范性）字段字典与写入白名单",
+          "anchor": "附录-d规范性字段字典与写入白名单"
+        },
+        {
+          "level": 2,
+          "title": "附录 E（资料性）与 gcode.3mf 规范的分工",
+          "anchor": "附录-e资料性与-gcode3mf-规范的分工"
+        },
+        {
+          "level": 2,
+          "title": "参考文献",
+          "anchor": "参考文献"
+        }
+      ]
+    },
+    {
+      "id": "spec.3mf.3mf_version_management",
+      "kind": "specification",
+      "path": "wiki/specification/3mf/3mf_version_management.md",
+      "lang": "zh",
+      "title": "3MF 版本管理细则",
+      "family": "3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "五层版本标识、兼容性矩阵、变更检查清单",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 术语和定义",
+          "anchor": "2-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "3 五层版本标识",
+          "anchor": "3-五层版本标识"
+        },
+        {
+          "level": 2,
+          "title": "4 包内版本载体",
+          "anchor": "4-包内版本载体"
+        },
+        {
+          "level": 2,
+          "title": "5 写入端约定",
+          "anchor": "5-写入端约定"
+        },
+        {
+          "level": 2,
+          "title": "6 读取端行为",
+          "anchor": "6-读取端行为"
+        },
+        {
+          "level": 3,
+          "title": "6.1 双管线与同族判别",
+          "anchor": "61-双管线与同族判别"
+        },
+        {
+          "level": 3,
+          "title": "6.2 版本门现状",
+          "anchor": "62-版本门现状"
+        },
+        {
+          "level": 2,
+          "title": "7 配置键兼容与失败语义",
+          "anchor": "7-配置键兼容与失败语义"
+        },
+        {
+          "level": 3,
+          "title": "7.1 反序列化链",
+          "anchor": "71-反序列化链"
+        },
+        {
+          "level": 3,
+          "title": "7.2 失败落点",
+          "anchor": "72-失败落点"
+        },
+        {
+          "level": 2,
+          "title": "8 兼容性矩阵",
+          "anchor": "8-兼容性矩阵"
+        },
+        {
+          "level": 2,
+          "title": "9 变更检查清单",
+          "anchor": "9-变更检查清单"
+        },
+        {
+          "level": 2,
+          "title": "10 历史教训与已知问题",
+          "anchor": "10-历史教训与已知问题"
+        },
+        {
+          "level": 3,
+          "title": "10.1 历史教训",
+          "anchor": "101-历史教训"
+        },
+        {
+          "level": 3,
+          "title": "10.2 已知问题",
+          "anchor": "102-已知问题"
+        },
+        {
+          "level": 2,
+          "title": "附录（资料性）深入阅读",
+          "anchor": "附录资料性深入阅读"
+        }
+      ]
+    },
+    {
+      "id": "spec.3mf.model_settings_config",
+      "kind": "specification",
+      "path": "wiki/specification/3mf/model_settings_config.md",
+      "lang": "zh",
+      "title": "model_settings.config：对象与打印板信息",
+      "family": "3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "对象 / 零件 / 盘 / 实例结构与参数覆盖优先级",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 术语和定义",
+          "anchor": "2-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "3 概念关系图解",
+          "anchor": "3-概念关系图解"
+        },
+        {
+          "level": 3,
+          "title": "3.1 实例布局与对象构成",
+          "anchor": "31-实例布局与对象构成"
+        },
+        {
+          "level": 3,
+          "title": "3.2 基数关系",
+          "anchor": "32-基数关系"
+        },
+        {
+          "level": 2,
+          "title": "4 两侧对照：几何侧与属性侧",
+          "anchor": "4-两侧对照几何侧与属性侧"
+        },
+        {
+          "level": 3,
+          "title": "4.1 几何侧",
+          "anchor": "41-几何侧"
+        },
+        {
+          "level": 3,
+          "title": "4.2 属性侧",
+          "anchor": "42-属性侧"
+        },
+        {
+          "level": 3,
+          "title": "4.3 编号对应关系",
+          "anchor": "43-编号对应关系"
+        },
+        {
+          "level": 2,
+          "title": "5 键清单：按写入行为分类",
+          "anchor": "5-键清单按写入行为分类"
+        },
+        {
+          "level": 2,
+          "title": "6 参数覆盖优先级",
+          "anchor": "6-参数覆盖优先级"
+        },
+        {
+          "level": 2,
+          "title": "7 易混淆要点速查",
+          "anchor": "7-易混淆要点速查"
+        },
+        {
+          "level": 2,
+          "title": "附录（资料性）深入阅读",
+          "anchor": "附录资料性深入阅读"
+        }
+      ]
+    },
+    {
+      "id": "spec.3mf.project_settings_config",
+      "kind": "specification",
+      "path": "wiki/specification/3mf/project_settings_config.md",
+      "lang": "zh",
+      "title": "project_settings.config：全局打印设置",
+      "family": "3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "全局打印设置 project_settings.config：读取流程、键类型、固定键",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 术语和定义",
+          "anchor": "2-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "3 文件的作用",
+          "anchor": "3-文件的作用"
+        },
+        {
+          "level": 3,
+          "title": "3.1 是什么：全局参数基准的全量快照",
+          "anchor": "31-是什么全局参数基准的全量快照"
+        },
+        {
+          "level": 3,
+          "title": "3.2 何时保存：写入时机与内容来源",
+          "anchor": "32-何时保存写入时机与内容来源"
+        },
+        {
+          "level": 3,
+          "title": "3.3 怎么读取：主管线回读与直接解析",
+          "anchor": "33-怎么读取主管线回读与直接解析"
+        },
+        {
+          "level": 2,
+          "title": "4 键类型总览",
+          "anchor": "4-键类型总览"
+        },
+        {
+          "level": 3,
+          "title": "4.1 用户参数键：工艺、耗材、打印机三类",
+          "anchor": "41-用户参数键工艺耗材打印机三类"
+        },
+        {
+          "level": 3,
+          "title": "4.2 系统级固定键：分组一览",
+          "anchor": "42-系统级固定键分组一览"
+        },
+        {
+          "level": 2,
+          "title": "5 系统级固定键详解",
+          "anchor": "5-系统级固定键详解"
+        },
+        {
+          "level": 3,
+          "title": "5.1 头部元字段与 schema 版本（无条件）",
+          "anchor": "51-头部元字段与-schema-版本无条件"
+        },
+        {
+          "level": 3,
+          "title": "5.2 预设标识键（无条件）",
+          "anchor": "52-预设标识键无条件"
+        },
+        {
+          "level": 3,
+          "title": "5.3 预设状态与兼容性键（条件触发）",
+          "anchor": "53-预设状态与兼容性键条件触发"
+        },
+        {
+          "level": 3,
+          "title": "5.4 机器绑定键（无条件，值由机型决定）",
+          "anchor": "54-机器绑定键无条件值由机型决定"
+        },
+        {
+          "level": 3,
+          "title": "5.5 机器派生几何与硬件键（无条件，值由机型决定）",
+          "anchor": "55-机器派生几何与硬件键无条件值由机型决定"
+        },
+        {
+          "level": 3,
+          "title": "5.6 板级与项目状态键（无条件）",
+          "anchor": "56-板级与项目状态键无条件"
+        },
+        {
+          "level": 3,
+          "title": "5.7 流量变体系统键（无条件）",
+          "anchor": "57-流量变体系统键无条件"
+        },
+        {
+          "level": 2,
+          "title": "6 取值形态与解析约定",
+          "anchor": "6-取值形态与解析约定"
+        },
+        {
+          "level": 2,
+          "title": "7 在三层覆盖与内嵌预设中的位置",
+          "anchor": "7-在三层覆盖与内嵌预设中的位置"
+        },
+        {
+          "level": 2,
+          "title": "8 易混淆要点速查",
+          "anchor": "8-易混淆要点速查"
+        },
+        {
+          "level": 2,
+          "title": "附录（资料性）深入阅读",
+          "anchor": "附录资料性深入阅读"
+        }
+      ]
+    },
+    {
+      "id": "spec.gcode.3mf.gcode_3mf_interaction_fields",
+      "kind": "specification",
+      "path": "wiki/specification/gcode.3mf/gcode_3mf_interaction_fields.md",
+      "lang": "zh",
+      "title": "两端交互字段对照",
+      "family": "gcode.3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "切片端写出、固件解析的字段清单与版本变更",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "1 字段总表",
+          "anchor": "1-字段总表"
+        },
+        {
+          "level": 2,
+          "title": "2 类型与槽位约定",
+          "anchor": "2-类型与槽位约定"
+        },
+        {
+          "level": 2,
+          "title": "3 协议字段详解",
+          "anchor": "3-协议字段详解"
+        },
+        {
+          "level": 3,
+          "title": "3.1 流量类型族",
+          "anchor": "31-流量类型族"
+        },
+        {
+          "level": 3,
+          "title": "3.2 多色耗材",
+          "anchor": "32-多色耗材"
+        },
+        {
+          "level": 3,
+          "title": "3.3 嵌入名字段",
+          "anchor": "33-嵌入名字段"
+        },
+        {
+          "level": 3,
+          "title": "3.4 元数据字段",
+          "anchor": "34-元数据字段"
+        },
+        {
+          "level": 2,
+          "title": "4 统计与标记注释",
+          "anchor": "4-统计与标记注释"
+        },
+        {
+          "level": 2,
+          "title": "5 变更记录",
+          "anchor": "5-变更记录"
+        },
+        {
+          "level": 3,
+          "title": "Snapmaker V2.3.6",
+          "anchor": "snapmaker-v236"
+        },
+        {
+          "level": 3,
+          "title": "Snapmaker V2.3.5（2026/8/28 补充）",
+          "anchor": "snapmaker-v2352026828-补充"
+        }
+      ]
+    },
+    {
+      "id": "spec.gcode.3mf.gcode_3mf_standard",
+      "kind": "specification",
+      "path": "wiki/specification/gcode.3mf/gcode_3mf_standard.md",
+      "lang": "zh",
+      "title": "gcode.3mf 规范 v1.0（草案）",
+      "family": "gcode.3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "gcode.3mf：盘与打印数据、切片结果摘要、一致性与校验",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 规范性引用文件",
+          "anchor": "2-规范性引用文件"
+        },
+        {
+          "level": 2,
+          "title": "3 术语和定义",
+          "anchor": "3-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "4 总体结构",
+          "anchor": "4-总体结构"
+        },
+        {
+          "level": 3,
+          "title": "4.1 包与目录层次",
+          "anchor": "41-包与目录层次"
+        },
+        {
+          "level": 3,
+          "title": "4.2 OPC 基础部件",
+          "anchor": "42-opc-基础部件"
+        },
+        {
+          "level": 3,
+          "title": "4.3 压缩、容量与命名约定",
+          "anchor": "43-压缩容量与命名约定"
+        },
+        {
+          "level": 2,
+          "title": "5 模型部件",
+          "anchor": "5-模型部件"
+        },
+        {
+          "level": 3,
+          "title": "5.1 定位",
+          "anchor": "51-定位"
+        },
+        {
+          "level": 3,
+          "title": "5.2 元数据键",
+          "anchor": "52-元数据键"
+        },
+        {
+          "level": 2,
+          "title": "6 盘与打印数据",
+          "anchor": "6-盘与打印数据"
+        },
+        {
+          "level": 3,
+          "title": "6.1 盘的标识与盘号分配",
+          "anchor": "61-盘的标识与盘号分配"
+        },
+        {
+          "level": 3,
+          "title": "6.2 盘索引：Metadata/model_settings.config",
+          "anchor": "62-盘索引metadatamodel_settingsconfig"
+        },
+        {
+          "level": 3,
+          "title": "6.3 G-code 关系声明：Metadata/_rels/model_settings.config.rels",
+          "anchor": "63-g-code-关系声明metadata_relsmodel_settingsconfigrels"
+        },
+        {
+          "level": 3,
+          "title": "6.4 切片结果摘要：Metadata/slice_info.config",
+          "anchor": "64-切片结果摘要metadataslice_infoconfig"
+        },
+        {
+          "level": 3,
+          "title": "6.5 G-code 部件与完整性校验",
+          "anchor": "65-g-code-部件与完整性校验"
+        },
+        {
+          "level": 3,
+          "title": "6.6 首层信息：Metadata/plate_N.json",
+          "anchor": "66-首层信息metadataplate_njson"
+        },
+        {
+          "level": 3,
+          "title": "6.7 盘级缩略图族",
+          "anchor": "67-盘级缩略图族"
+        },
+        {
+          "level": 2,
+          "title": "7 工程配置与预设",
+          "anchor": "7-工程配置与预设"
+        },
+        {
+          "level": 3,
+          "title": "7.1 全量配置快照：Metadata/project_settings.config",
+          "anchor": "71-全量配置快照metadataproject_settingsconfig"
+        },
+        {
+          "level": 3,
+          "title": "7.2 内嵌预设：Metadata/*_settings_N.config",
+          "anchor": "72-内嵌预设metadata_settings_nconfig"
+        },
+        {
+          "level": 3,
+          "title": "7.3 条件性工程数据文件",
+          "anchor": "73-条件性工程数据文件"
+        },
+        {
+          "level": 3,
+          "title": "7.4 嵌入资源目录：Auxiliaries/",
+          "anchor": "74-嵌入资源目录auxiliaries"
+        },
+        {
+          "level": 2,
+          "title": "8 一致性要求",
+          "anchor": "8-一致性要求"
+        },
+        {
+          "level": 3,
+          "title": "8.1 生产者要求",
+          "anchor": "81-生产者要求"
+        },
+        {
+          "level": 3,
+          "title": "8.2 消费者要求",
+          "anchor": "82-消费者要求"
+        },
+        {
+          "level": 3,
+          "title": "8.3 校验模型",
+          "anchor": "83-校验模型"
+        },
+        {
+          "level": 3,
+          "title": "8.4 版本与兼容",
+          "anchor": "84-版本与兼容"
+        },
+        {
+          "level": 2,
+          "title": "附录 A（资料性）与 3MF Core / Toolpath 扩展的对照",
+          "anchor": "附录-a资料性与-3mf-core--toolpath-扩展的对照"
+        },
+        {
+          "level": 2,
+          "title": "附录 B（资料性）背景：为什么是 .gcode.3mf",
+          "anchor": "附录-b资料性背景为什么是-gcode3mf"
+        },
+        {
+          "level": 2,
+          "title": "附录 C（资料性）示例文件剖析",
+          "anchor": "附录-c资料性示例文件剖析"
+        },
+        {
+          "level": 3,
+          "title": "C.1 单盘包（导出当前盘）",
+          "anchor": "c1-单盘包导出当前盘"
+        },
+        {
+          "level": 3,
+          "title": "C.2 G-code 文件自描述结构",
+          "anchor": "c2-g-code-文件自描述结构"
+        },
+        {
+          "level": 3,
+          "title": "C.3 实测备注（2.4.x 真实导出包）",
+          "anchor": "c3-实测备注24x-真实导出包"
+        },
+        {
+          "level": 2,
+          "title": "附录 D（规范性）字段字典",
+          "anchor": "附录-d规范性字段字典"
+        },
+        {
+          "level": 2,
+          "title": "参考文献",
+          "anchor": "参考文献"
+        }
+      ]
+    },
+    {
+      "id": "spec.gcode.3mf.gcode_standard",
+      "kind": "specification",
+      "path": "wiki/specification/gcode.3mf/gcode_standard.md",
+      "lang": "zh",
+      "title": "G-code 文件规范 v1.0（草案）",
+      "family": "gcode.3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "G-code 文件布局、行语法、注释标记、自描述块与统计",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 规范性引用文件",
+          "anchor": "2-规范性引用文件"
+        },
+        {
+          "level": 2,
+          "title": "3 术语和定义",
+          "anchor": "3-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "4 文件总体结构",
+          "anchor": "4-文件总体结构"
+        },
+        {
+          "level": 3,
+          "title": "4.1 布局总览",
+          "anchor": "41-布局总览"
+        },
+        {
+          "level": 3,
+          "title": "4.2 字符编码与换行",
+          "anchor": "42-字符编码与换行"
+        },
+        {
+          "level": 3,
+          "title": "4.3 数值与精度",
+          "anchor": "43-数值与精度"
+        },
+        {
+          "level": 2,
+          "title": "5 行语法与指令集",
+          "anchor": "5-行语法与指令集"
+        },
+        {
+          "level": 3,
+          "title": "5.1 行的构成",
+          "anchor": "51-行的构成"
+        },
+        {
+          "level": 3,
+          "title": "5.2 指令核心子集",
+          "anchor": "52-指令核心子集"
+        },
+        {
+          "level": 3,
+          "title": "5.3 坐标系、单位与模态约定",
+          "anchor": "53-坐标系单位与模态约定"
+        },
+        {
+          "level": 2,
+          "title": "6 注释标记体系",
+          "anchor": "6-注释标记体系"
+        },
+        {
+          "level": 3,
+          "title": "6.1 标记行与普通注释",
+          "anchor": "61-标记行与普通注释"
+        },
+        {
+          "level": 3,
+          "title": "6.2 层标记",
+          "anchor": "62-层标记"
+        },
+        {
+          "level": 3,
+          "title": "6.3 特征标记：TYPE / WIDTH / HEIGHT",
+          "anchor": "63-特征标记type--width--height"
+        },
+        {
+          "level": 3,
+          "title": "6.4 对象标记与对象取消",
+          "anchor": "64-对象标记与对象取消"
+        },
+        {
+          "level": 3,
+          "title": "6.5 事件标记",
+          "anchor": "65-事件标记"
+        },
+        {
+          "level": 3,
+          "title": "6.6 保留标记字",
+          "anchor": "66-保留标记字"
+        },
+        {
+          "level": 2,
+          "title": "7 自描述块与统计",
+          "anchor": "7-自描述块与统计"
+        },
+        {
+          "level": 3,
+          "title": "7.1 头部摘要：HEADER_BLOCK",
+          "anchor": "71-头部摘要header_block"
+        },
+        {
+          "level": 3,
+          "title": "7.2 缩略图：THUMBNAIL_BLOCK",
+          "anchor": "72-缩略图thumbnail_block"
+        },
+        {
+          "level": 3,
+          "title": "7.3 流量摘要行",
+          "anchor": "73-流量摘要行"
+        },
+        {
+          "level": 3,
+          "title": "7.4 尾部统计",
+          "anchor": "74-尾部统计"
+        },
+        {
+          "level": 3,
+          "title": "7.5 参数快照：CONFIG_BLOCK",
+          "anchor": "75-参数快照config_block"
+        },
+        {
+          "level": 3,
+          "title": "7.6 内部占位符",
+          "anchor": "76-内部占位符"
+        },
+        {
+          "level": 2,
+          "title": "8 一致性要求",
+          "anchor": "8-一致性要求"
+        },
+        {
+          "level": 3,
+          "title": "8.1 生产者要求",
+          "anchor": "81-生产者要求"
+        },
+        {
+          "level": 3,
+          "title": "8.2 消费者要求",
+          "anchor": "82-消费者要求"
+        },
+        {
+          "level": 3,
+          "title": "8.3 校验与解析容错",
+          "anchor": "83-校验与解析容错"
+        },
+        {
+          "level": 2,
+          "title": "附录 A（资料性）示例文件剖析",
+          "anchor": "附录-a资料性示例文件剖析"
+        },
+        {
+          "level": 2,
+          "title": "附录 B（资料性）与固件方言的关系",
+          "anchor": "附录-b资料性与固件方言的关系"
+        },
+        {
+          "level": 2,
+          "title": "附录 C（资料性）源码索引",
+          "anchor": "附录-c资料性源码索引"
+        },
+        {
+          "level": 2,
+          "title": "参考文献",
+          "anchor": "参考文献"
+        }
+      ]
+    },
+    {
+      "id": "spec.preset.configuration_files",
+      "kind": "preset",
+      "path": "wiki/preset/configuration_files.md",
+      "lang": "zh",
+      "title": "打印配置文件命名与继承规范 v1.0（草案）",
+      "family": "preset",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "预设文件命名、继承与一致性要求",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 术语和定义",
+          "anchor": "2-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "3 总体结构",
+          "anchor": "3-总体结构"
+        },
+        {
+          "level": 2,
+          "title": "4 命名规则",
+          "anchor": "4-命名规则"
+        },
+        {
+          "level": 3,
+          "title": "4.1 耗材预设",
+          "anchor": "41-耗材预设"
+        },
+        {
+          "level": 3,
+          "title": "4.2 打印机预设",
+          "anchor": "42-打印机预设"
+        },
+        {
+          "level": 3,
+          "title": "4.3 工艺预设",
+          "anchor": "43-工艺预设"
+        },
+        {
+          "level": 3,
+          "title": "4.4 大小写与写法",
+          "anchor": "44-大小写与写法"
+        },
+        {
+          "level": 3,
+          "title": "4.5 文件名限制",
+          "anchor": "45-文件名限制"
+        },
+        {
+          "level": 2,
+          "title": "5 元数据与标识字段",
+          "anchor": "5-元数据与标识字段"
+        },
+        {
+          "level": 3,
+          "title": "5.1 元数据",
+          "anchor": "51-元数据"
+        },
+        {
+          "level": 3,
+          "title": "5.2 标识字段",
+          "anchor": "52-标识字段"
+        },
+        {
+          "level": 2,
+          "title": "6 继承与覆盖",
+          "anchor": "6-继承与覆盖"
+        },
+        {
+          "level": 3,
+          "title": "6.1 覆盖规则",
+          "anchor": "61-覆盖规则"
+        },
+        {
+          "level": 3,
+          "title": "6.2 继承层级",
+          "anchor": "62-继承层级"
+        },
+        {
+          "level": 3,
+          "title": "6.3 组织风格",
+          "anchor": "63-组织风格"
+        },
+        {
+          "level": 3,
+          "title": "6.4 子配置必备键",
+          "anchor": "64-子配置必备键"
+        },
+        {
+          "level": 2,
+          "title": "7 一致性要求",
+          "anchor": "7-一致性要求"
+        },
+        {
+          "level": 2,
+          "title": "深入阅读",
+          "anchor": "深入阅读"
+        }
+      ]
+    },
+    {
+      "id": "spec.preset.preset_filament_format",
+      "kind": "preset",
+      "path": "wiki/preset/preset_filament_format.md",
+      "lang": "zh",
+      "title": "耗材预设文件格式 v1.0（草案）",
+      "family": "preset",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "耗材预设文件结构与参数字典",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 术语和定义",
+          "anchor": "2-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "3 总体结构",
+          "anchor": "3-总体结构"
+        },
+        {
+          "level": 2,
+          "title": "4 文件格式与元数据",
+          "anchor": "4-文件格式与元数据"
+        },
+        {
+          "level": 3,
+          "title": "4.1 JSON 与元数据",
+          "anchor": "41-json-与元数据"
+        },
+        {
+          "level": 3,
+          "title": "4.2 预设示例",
+          "anchor": "42-预设示例"
+        },
+        {
+          "level": 3,
+          "title": "4.3 参数值的序列化",
+          "anchor": "43-参数值的序列化"
+        },
+        {
+          "level": 2,
+          "title": "5 参数字典",
+          "anchor": "5-参数字典"
+        },
+        {
+          "level": 3,
+          "title": "5.1 耗材丝",
+          "anchor": "51-耗材丝"
+        },
+        {
+          "level": 3,
+          "title": "5.2 冷却",
+          "anchor": "52-冷却"
+        },
+        {
+          "level": 3,
+          "title": "5.3 参数覆盖",
+          "anchor": "53-参数覆盖"
+        },
+        {
+          "level": 3,
+          "title": "5.4 高级",
+          "anchor": "54-高级"
+        },
+        {
+          "level": 3,
+          "title": "5.5 材料",
+          "anchor": "55-材料"
+        },
+        {
+          "level": 3,
+          "title": "5.6 依赖",
+          "anchor": "56-依赖"
+        },
+        {
+          "level": 3,
+          "title": "5.7 注释",
+          "anchor": "57-注释"
+        },
+        {
+          "level": 2,
+          "title": "6 一致性要求",
+          "anchor": "6-一致性要求"
+        },
+        {
+          "level": 2,
+          "title": "深入阅读",
+          "anchor": "深入阅读"
+        }
+      ]
+    },
+    {
+      "id": "spec.preset.preset_machine_format",
+      "kind": "preset",
+      "path": "wiki/preset/preset_machine_format.md",
+      "lang": "zh",
+      "title": "打印机预设文件格式 v1.0（草案）",
+      "family": "preset",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "打印机预设文件结构与参数字典",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 术语和定义",
+          "anchor": "2-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "3 总体结构",
+          "anchor": "3-总体结构"
+        },
+        {
+          "level": 2,
+          "title": "4 文件格式与元数据",
+          "anchor": "4-文件格式与元数据"
+        },
+        {
+          "level": 3,
+          "title": "4.1 JSON 与元数据",
+          "anchor": "41-json-与元数据"
+        },
+        {
+          "level": 3,
+          "title": "4.2 预设示例",
+          "anchor": "42-预设示例"
+        },
+        {
+          "level": 3,
+          "title": "4.3 参数值的序列化",
+          "anchor": "43-参数值的序列化"
+        },
+        {
+          "level": 2,
+          "title": "5 参数字典",
+          "anchor": "5-参数字典"
+        },
+        {
+          "level": 3,
+          "title": "5.1 基础信息",
+          "anchor": "51-基础信息"
+        },
+        {
+          "level": 3,
+          "title": "5.2 打印机G-code",
+          "anchor": "52-打印机g-code"
+        },
+        {
+          "level": 3,
+          "title": "5.3 移动能力",
+          "anchor": "53-移动能力"
+        },
+        {
+          "level": 3,
+          "title": "5.4 挤出机 %d",
+          "anchor": "54-挤出机-d"
+        },
+        {
+          "level": 3,
+          "title": "5.5 材料",
+          "anchor": "55-材料"
+        },
+        {
+          "level": 3,
+          "title": "5.6 注释",
+          "anchor": "56-注释"
+        },
+        {
+          "level": 2,
+          "title": "6 一致性要求",
+          "anchor": "6-一致性要求"
+        },
+        {
+          "level": 2,
+          "title": "深入阅读",
+          "anchor": "深入阅读"
+        }
+      ]
+    },
+    {
+      "id": "spec.preset.preset_process_format",
+      "kind": "preset",
+      "path": "wiki/preset/preset_process_format.md",
+      "lang": "zh",
+      "title": "工艺预设文件格式 v1.0（草案）",
+      "family": "preset",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "工艺预设文件结构与参数字典",
+      "outline": [
+        {
+          "level": 2,
+          "title": "目录",
+          "anchor": "目录"
+        },
+        {
+          "level": 2,
+          "title": "前言",
+          "anchor": "前言"
+        },
+        {
+          "level": 2,
+          "title": "引言",
+          "anchor": "引言"
+        },
+        {
+          "level": 2,
+          "title": "1 范围",
+          "anchor": "1-范围"
+        },
+        {
+          "level": 2,
+          "title": "2 术语和定义",
+          "anchor": "2-术语和定义"
+        },
+        {
+          "level": 2,
+          "title": "3 总体结构",
+          "anchor": "3-总体结构"
+        },
+        {
+          "level": 2,
+          "title": "4 文件格式与元数据",
+          "anchor": "4-文件格式与元数据"
+        },
+        {
+          "level": 3,
+          "title": "4.1 JSON 与元数据",
+          "anchor": "41-json-与元数据"
+        },
+        {
+          "level": 3,
+          "title": "4.2 预设示例",
+          "anchor": "42-预设示例"
+        },
+        {
+          "level": 3,
+          "title": "4.3 参数值的序列化",
+          "anchor": "43-参数值的序列化"
+        },
+        {
+          "level": 2,
+          "title": "5 参数字典",
+          "anchor": "5-参数字典"
+        },
+        {
+          "level": 3,
+          "title": "5.1 质量",
+          "anchor": "51-质量"
+        },
+        {
+          "level": 3,
+          "title": "5.2 强度",
+          "anchor": "52-强度"
+        },
+        {
+          "level": 3,
+          "title": "5.3 速度",
+          "anchor": "53-速度"
+        },
+        {
+          "level": 3,
+          "title": "5.4 支撑",
+          "anchor": "54-支撑"
+        },
+        {
+          "level": 3,
+          "title": "5.5 材料",
+          "anchor": "55-材料"
+        },
+        {
+          "level": 3,
+          "title": "5.6 其他",
+          "anchor": "56-其他"
+        },
+        {
+          "level": 2,
+          "title": "6 一致性要求",
+          "anchor": "6-一致性要求"
+        },
+        {
+          "level": 2,
+          "title": "深入阅读",
+          "anchor": "深入阅读"
+        }
+      ]
+    }
+  ]
+}

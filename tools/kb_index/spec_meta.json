@@ -1,0 +1,76 @@
+{
+  "known_gaps": [
+    "584 键逐项字段字典不在仓库；工程规范附录 D 仅有统计、六类禁入与示例",
+    "guides/、calibration/、print_prepare/ 页面尚未移植，相关链接已改为纯文字",
+    "32 个占位页仅含内置元数据与 tooltip，正文内容待补",
+    "本索引为试点：11 篇格式规范 + 12 个设置键，未覆盖全部 552 个 wiki 页"
+  ],
+  "specs": {
+    "wiki/specification/3mf/3mf_standard.md": {
+      "family": "3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "工程 .3mf：包结构、模型部件、配置层与三层覆盖、版本兼容"
+    },
+    "wiki/specification/3mf/project_settings_config.md": {
+      "family": "3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "全局打印设置 project_settings.config：读取流程、键类型、固定键"
+    },
+    "wiki/specification/3mf/model_settings_config.md": {
+      "family": "3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "对象 / 零件 / 盘 / 实例结构与参数覆盖优先级"
+    },
+    "wiki/specification/3mf/3mf_version_management.md": {
+      "family": "3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "五层版本标识、兼容性矩阵、变更检查清单"
+    },
+    "wiki/specification/gcode.3mf/gcode_3mf_standard.md": {
+      "family": "gcode.3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "gcode.3mf：盘与打印数据、切片结果摘要、一致性与校验"
+    },
+    "wiki/specification/gcode.3mf/gcode_standard.md": {
+      "family": "gcode.3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "G-code 文件布局、行语法、注释标记、自描述块与统计"
+    },
+    "wiki/specification/gcode.3mf/gcode_3mf_interaction_fields.md": {
+      "family": "gcode.3mf",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "切片端写出、固件解析的字段清单与版本变更"
+    },
+    "wiki/preset/configuration_files.md": {
+      "family": "preset",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "预设文件命名、继承与一致性要求"
+    },
+    "wiki/preset/preset_filament_format.md": {
+      "family": "preset",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "耗材预设文件结构与参数字典"
+    },
+    "wiki/preset/preset_process_format.md": {
+      "family": "preset",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "工艺预设文件结构与参数字典"
+    },
+    "wiki/preset/preset_machine_format.md": {
+      "family": "preset",
+      "version": "1.0",
+      "status": "draft",
+      "scope": "打印机预设文件结构与参数字典"
+    }
+  }
+}
