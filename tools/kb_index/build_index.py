@@ -6,9 +6,13 @@ The index is a small, deterministic JSON file derived from Markdown only:
   * the 11 format-specification pages (3MF / gcode.3mf / preset), and
   * 12 representative setting key pages (pilot set).
 
+It also points at the machine-readable field dictionary
+(index/field_dictionary.json), built separately by
+build_field_dictionary.py.
+
 Curated metadata lives in two maintainer-edited files next to this script:
 search_terms.json (Chinese search terms) and spec_meta.json (spec status,
-version, scope and known gaps).
+version, scope, field-dictionary path and known gaps).
 
 Usage:
   python tools/kb_index/build_index.py
@@ -266,6 +270,9 @@ def build_spec_entry(path, meta):
 def build_index():
     search_terms = json.loads(read(ROOT / 'tools' / 'kb_index' / 'search_terms.json'))
     spec_meta = json.loads(read(ROOT / 'tools' / 'kb_index' / 'spec_meta.json'))
+    field_dictionary = spec_meta.get('field_dictionary')
+    if field_dictionary and not (ROOT / field_dictionary).is_file():
+        raise SystemExit('missing field dictionary: ' + field_dictionary)
     status_by_path, group_by_path = parse_overviews()
     gcode_map = parse_gcode_mappings()
 
@@ -287,6 +294,7 @@ def build_index():
         'language': 'zh-CN',
         'entrypoint': 'wiki/home.md',
         'read_order': ['README.md', 'AGENTS.md', 'wiki/home.md'],
+        'field_dictionary': field_dictionary,
         'known_gaps': spec_meta['known_gaps'],
         'entries': entries,
     }

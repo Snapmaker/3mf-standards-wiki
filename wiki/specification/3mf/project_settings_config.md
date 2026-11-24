@@ -100,7 +100,7 @@
 - 工程板级状态（当前床型、擦拭塔位置、冲刷体积等，见 5.6）；
 - 预设标识与状态键（保存前生成注入，见 5.2、5.3）。
 
-序列化时不设内容过滤：合成结果按键名字典序全量写出。唯一的剔除发生在取值阶段——打印主机凭据类字段（`print_host`、`printhost_*` 共 7 项）在配置合成时即被移除，不进入本文件（实测样本均未见；规范另将其列为禁入，待定）。
+序列化时不设内容过滤：合成结果按键名字典序全量写出。唯一的剔除发生在取值阶段——打印主机凭据类字段（`print_host`、`print_host_webui`、`printhost_apikey`、`printhost_user`、`printhost_password`、`printhost_port`、`printhost_cafile` 共 7 项）在配置合成时即被移除，不进入本文件（实测样本均未见；规范另将其列为禁入，待定）。`printhost_authorization_type`、`printhost_ssl_ignore_revoke` 不属于凭据类，样本中出现且仍按白名单候选处理。
 
 ### 3.3 怎么读取：主管线回读与直接解析
 

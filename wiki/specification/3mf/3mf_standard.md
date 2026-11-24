@@ -367,13 +367,13 @@ JSON，必选。头部元字段：
 | 空字符串 / 空数组 | `""`、`[]` | 与 `"nil"` 是两种"空" |
 | 元素内嵌换行 | `["0,0", "\n0.2,0.4444"]` | 解析前先 trim |
 
-**写入范围**：现状为全量 `FullPrintConfig` 键集落盘、无准入控制（序列化点见 `src/libslic3r/Format/bbs_3mf.cpp`），新增软件参数自动进包。本规范将允许写入的键集定义为**字段白名单**（初始集合 584 键 = 源码定义且落盘 553 + 落盘无静态定义 31，含 18 个序列化别名如 `filament_retract_*` ↔ `retract_*`），六类字段一律禁入（SLA 树脂 / CLI 动作参数 / 运行时派生状态 / GUI 废弃候选 / 预设系统内部 / 打印主机连接），新增配置键须先登记字段字典再落盘——准入流程待定（集合与分类见附录 D）。
+**写入范围**：现状为全量 `FullPrintConfig` 键集落盘、无准入控制（序列化点见 `src/libslic3r/Format/bbs_3mf.cpp`），新增软件参数自动进包。本规范将允许写入的键集定义为**字段白名单**（初始集合 584 键 = 源码定义且落盘 553 + 落盘但 PrintConfig.cpp 未静态定义 31；后者含 18 个遗留前缀别名、12 个头文件宏声明键与 1 个 schema 版本字段，逐项见附录 D），六类字段一律禁入（SLA 树脂 / CLI 动作参数 / 运行时派生状态 / GUI 废弃候选 / 预设系统内部 / 打印主机连接），新增配置键须先登记字段字典再落盘——准入流程待定（集合与分类见附录 D）。
 
-**强制禁入项（安全）**：凭据类字段（`print_host`、`printhost_apikey`、`printhost_password`、`printhost_user`、`printhost_port`、`printhost_cafile`）**不应**随包分发——现状 `machine_settings_N.config` 结构性写入这些键（当前样本值为空，用户一旦配置即泄漏），序列化前**应**剔除（待定）。
+**强制禁入项（安全）**：凭据类字段（`print_host`、`print_host_webui`、`printhost_apikey`、`printhost_password`、`printhost_user`、`printhost_port`、`printhost_cafile` 共 7 项）**不应**随包分发——现状 `machine_settings_N.config` 结构性写入这些键（当前样本值为空，用户一旦配置即泄漏），序列化前**应**剔除（待定）。
 
 预设状态字段（`different_settings_to_system`、`inherits_group`）为条件触发写入的固定系统字段：前者在至少一个所选预设存在相对父系统预设的修改键时写出，后者在至少一个所选预设为带继承父的副本时写出，未触发时整键不出现。回读时 `inherits_group` 逐槽指定覆盖基准预设，`different_settings_to_system` 承担用户修改的标脏保全（清单外键接受预设值覆盖，清单内键保留工程值并标脏，详解见 [project_settings.config](project_settings_config.md) 5.3）。
 
-用途：参数回读、复切、问题排查。约 30 个序列化别名使落盘名 ≠ 源码定义名，解析工具按落盘名理解（别名登记见附录 D）。
+用途：参数回读、复切、问题排查。18 个遗留前缀别名使落盘名 ≠ 源码定义名；另有 12 个宏声明键与 1 个 schema 版本字段。解析工具按落盘名理解（登记见附录 D）。
 
 ### 6.4 内嵌预设：`Metadata/*_settings_N.config`
 
@@ -505,7 +505,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 4. 写出 `Application` 与 `Snapmaker_Orca:3mfVersion` 元数据（7.2 全部约定）；
 5. 保持编号一一对应：`3dmodel.model` 对象编号 ↔ `model_settings.config` 对象编号 ↔ 外拆文件 `<obj_id>`；按**原始盘号**命名 `plate_N` 系列资源；
 6. 三层覆盖仅写差异键（覆盖层为稀疏差异，不重复全局值）；
-7. `project_settings.config` 仅写白名单内键（附录 D），凭据类字段序列化前剔除（6.3 禁入项）；
+7. `project_settings.config` 仅写白名单内键（附录 D）；字典 `approval` 非 `approved` 的键只作候选，不得作为规范已批准依据；凭据类字段序列化前剔除（6.3 禁入项）；
 8. 条件性文件带各自的版本头（6.5）；内嵌预设按 6.4 两形态之一写出；
 9. 隐私键置空、历史品牌键剥除（7.2）。
 
@@ -532,7 +532,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 |---|---|---|---|
 | ZIP 传输层 | 每条目自带 CRC32，解压时自动校验 | 传输 / 存储损坏 | 重打包即可通过 |
 | 结构层 | 编号交叉验证：`3dmodel.model` 对象编号 ↔ `model_settings.config` 对象节 ↔ 外拆文件 `<obj_id>` ↔ 关系文件 Target + ZIP 条目实际存在 | 编号错配、部件缺失、外拆登记错乱 | 须显式核对，不应按 XML 节点顺序配对 |
-| 配置层（可选） | 键字典校验：键 ∈ 白名单、取值形态合法、覆盖键允许集合 | 白名单外键、形态错误、撞名 | 语义正确性不在此层（依赖字段字典维护） |
+| 配置层（可选） | 键字典校验（`index/field_dictionary.json`）：键 ∈ 白名单、取值形态合法、覆盖键允许集合 | 白名单外键、形态错误、撞名 | 语义正确性不在此层（依赖字段字典维护） |
 
 另可参考 `<mesh_stat>` 网格修复统计做几何健康诊断（诊断信息，非校验）。
 
@@ -599,22 +599,27 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 ## 附录 D（规范性）字段字典与写入白名单
 
-`project_settings.config` 及内嵌预设的完整键值以配置字段字典为准（源码静态定义 786 项 × 实测落盘 584 项对账，含类型、默认值、落盘观测与六类归属），随本规范同源维护。切片参数的逐键讲解见[设置参数文档](../../settings/printer/printer_overview.md)（printer / filament / process 三目录）。
+`project_settings.config` 的完整键值以配置字段字典为准（源码静态定义 786 项 × 实测落盘 584 项对账，含类型、默认值状态、落盘观测、别名与六类归属）。逐项清单见仓库根 [index/field_dictionary.json](../../../index/field_dictionary.json)（源数据 [field_dictionary.csv](../../../tools/kb_index/field_dictionary.csv)，生成脚本 `tools/kb_index/build_field_dictionary.py`）。内嵌预设 `*_settings_N.config` 的预设系统内部字段另见[打印配置文件命名与继承规范](../../preset/configuration_files.md)。切片参数的逐键讲解见[设置参数文档](../../settings/printer/printer_overview.md)（printer / filament / process 三目录）。
 
-**白名单初始集合**：553 项"源码定义且样本落盘" + 31 项"落盘但无静态定义"（其中 18 项为序列化别名，本规范正式登记：`filament_retract_*` 族 ↔ 源码 `retract_*` 族、`machine_max_{acceleration,jerk,speed}_*` 12 项；别名映射的维护机制与新增参数的统一别名规则待定）。
+**字典状态**：`sample_observed` 只表示样本中出现，不等于批准写入。当前 584 项白名单候选的 `approval` 均为 `pending`（待维护者确认批准写入与适用版本）；25 项 GUI / 废弃候选为 `pending_review`；其余五类（208 项）为 `banned_draft`。只有 `approved` 项可作为写入白名单依据。
+
+**白名单初始集合**：553 项"源码定义且样本落盘" + 31 项"落盘但 PrintConfig.cpp 未静态定义" = 18 项遗留前缀别名（`filament_*` 落盘名 ↔ 无前缀源码定义，如 `filament_retraction_length` ↔ `retraction_length`）+ 12 项头文件宏声明键（`machine_max_{acceleration,jerk,speed}_{x,y,z,e}`）+ 1 项 schema 版本字段（`project_schema_version`）。别名映射的维护机制与新增参数的统一别名规则待定。
 
 **六类禁入**（源码定义但不允许进项目文件）：
 
 | 类别 | 数量 | 例 |
 |---|---|---|
-| SLA 树脂流程专用 | 77 | `pad_*`、`hollowing_*`、曝光 / 校正类 |
+| SLA 树脂流程专用 | 78 | `pad_*`、`hollowing_*`、曝光 / 校正类 |
 | CLI 动作参数 | 52 | `load_*`、`export_*`、`cut_*`、`rotate/scale/split` |
 | 运行时派生状态 | 52 | `print_time`、`total_*`、`extruded_*`（结果非设置） |
 | GUI 内部 / 废弃候选 | 25 | `zhop`、`brim_ears`、`adaptive_layer_height`（待逐项定论） |
 | 预设系统内部 | 19 | `compatible_*`、`inherits`、`uptodate_*` |
-| 打印主机连接（凭据） | 7 | `printhost_*`、`print_host`（安全禁入） |
+| 打印主机连接（凭据） | 7 | `print_host`、`print_host_webui`、`printhost_apikey` 等 7 项（安全禁入） |
+| **合计** | **233** | 源码定义但样本未落盘 |
 
-**准入流程**（待确认）：新增工艺参数**应**先登记字段字典（含类型、默认值、覆盖层允许性、与结构键撞名检查），登记后方可进入落盘白名单；与切片团队"新增一个工艺配置需要做哪些事"检查单合并维护。字典未收录的键按 6.3 的形态约定处理；字典自身待补录 2.4.0 新增字段的定义位置（待定）。
+计数以 [index/field_dictionary.json](../../../index/field_dictionary.json) 的 `stats.by_category` 为准（2026-11-24：78 / 52 / 52 / 25 / 19 / 7 = 233）。
+
+**准入流程**（待确认）：新增工艺参数**应**先登记字段字典（含类型、默认值、覆盖层允许性、与结构键撞名检查），登记后方可进入落盘白名单；与切片团队"新增一个工艺配置需要做哪些事"检查单合并维护。字典未收录的键按 6.3 的形态约定处理；2.4.0 新增的 8 个字段已在字典中登记（`observed_versions: 2.4.0`），其定义位置与适用版本仍待确认（待定）。
 
 ## 附录 E（资料性）与 gcode.3mf 规范的分工
 

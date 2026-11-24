@@ -1,6 +1,7 @@
 {
+  "field_dictionary": "index/field_dictionary.json",
   "known_gaps": [
-    "584 键逐项字段字典不在仓库；工程规范附录 D 仅有统计、六类禁入与示例",
+    "584 键逐项字典已提供（index/field_dictionary.json）；批准写入与适用版本待维护者确认",
     "guides/、calibration/、print_prepare/ 页面尚未移植，相关链接已改为纯文字",
     "32 个占位页仅含内置元数据与 tooltip，正文内容待补",
     "本索引为试点：11 篇格式规范 + 12 个设置键，未覆盖全部 552 个 wiki 页"

@@ -16,7 +16,7 @@
 | `wiki/general_settings/` `wiki/cli/` `wiki/developer_reference/` | 现有（支撑页） | 键页元数据支撑页（`option_mode` / `option_type` / `built_in_placeholders_variables` / `cli_mode`，2026-11-19 自上游移植并修订）；其余内容随软件完整文档阶段扩充，**目录名与上游 OrcaSlicer wiki 一致** |
 | `wiki/print_prepare/` `wiki/calibration/` `wiki/guides/` `wiki/releases/` | 预留 | 软件完整文档阶段启用，**目录名与上游 OrcaSlicer wiki 一致**，便于对照迁移 |
 
-仓库级目录：`tools/kb_index/` 放 Agent 索引生成器与维护者元数据（`search_terms.json`、`spec_meta.json`）；`index/` 放生成产物 `kb_index.json`。两者不进 wiki 正文，发布约定与 wiki 相同。
+仓库级目录：`tools/kb_index/` 放 Agent 索引生成器、字段字典源数据与维护者元数据（`search_terms.json`、`spec_meta.json`、`field_dictionary.csv`）；`index/` 放生成产物 `kb_index.json`、`field_dictionary.json`。两者不进 wiki 正文，发布约定与 wiki 相同。
 
 ## 命名
 
@@ -80,7 +80,8 @@
   - 预设问题 → `wiki/preset/`。
   - 参数问题 → `wiki/settings/<tab>/<group>/<key>.md`；不确定键名时先查对应 `*_overview.md`，跨端字段查 `gcode_3mf_interaction_fields.md`。
   - `index/kb_index.json` 是试点索引（11 篇规范 + 12 个键），不是全量索引；未命中时按上述路径直接查文件。
-- **引用格式**：给出「提交号 · 相对路径 · 原文标题或条款号」；规范条款用锚点定位，键页引用键名与标题。
-- **状态区分**：明确区分「产品现状」「草案要求」「待定」；`> Status: placeholder` 的页面只使用已有信息，不补写结论；`> Status: cross-reference` 的页面指向主参数页。
+  - 写入白名单 / 字段字典 → `index/field_dictionary.json`；先看 `stats` 与 `whitelist_candidate_keys`，再按 `key` 查逐项记录（`type`、`alias_of`、`default_status`、`approval`、`page`）。
+- **引用格式**：给出「提交号 · 相对路径 · 原文标题或条款号」；规范条款用锚点定位，键页引用键名与标题；字段字典引用键名、`category` 与 `approval` 状态。
+- **状态区分**：明确区分「产品现状」「草案要求」「待定」；`> Status: placeholder` 的页面只使用已有信息，不补写结论；`> Status: cross-reference` 的页面指向主参数页。字段字典的 `approval` 状态：`pending`（样本出现，待确认）、`pending_review`（废弃候选待逐项定论）、`banned_draft`（草案禁入）、`approved`、`rejected`；只有 `approved` 可作为批准写入依据，不要把 `pending` 表述为已批准。
 - **冲突处理**：跨页冲突时引用双方并指出差异；找不到依据时说明本快照的缺口，不编造。
-- **索引维护**：新增或修改索引覆盖的页面后，运行 `python tools/kb_index/build_index.py` 重建；提交前运行 `--check` 校验产物与页面一致。中文检索词在 `tools/kb_index/search_terms.json` 维护，规范状态与范围在 `tools/kb_index/spec_meta.json` 维护。
+- **索引维护**：新增或修改索引覆盖的页面后，运行 `python tools/kb_index/build_index.py` 重建；提交前运行 `--check` 校验产物与页面一致。中文检索词在 `tools/kb_index/search_terms.json` 维护，规范状态与范围在 `tools/kb_index/spec_meta.json` 维护。新增或修改字段字典后，运行 `python tools/kb_index/build_field_dictionary.py` 重建 `index/field_dictionary.json`，提交前运行 `--check`。
