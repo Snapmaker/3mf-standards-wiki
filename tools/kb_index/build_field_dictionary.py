@@ -766,6 +766,9 @@ def main() -> int:
     except DictionaryError as exc:
         print(f'[FAIL] {exc}')
         return 1
+    except OSError as exc:
+        print(f'[FAIL] I/O error: {exc}')
+        return 1
 
 
 if __name__ == '__main__':
