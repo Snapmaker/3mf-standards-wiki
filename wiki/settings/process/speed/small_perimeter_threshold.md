@@ -12,7 +12,7 @@
 [Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--small-perimeter-threshold=1`.  
 
-**Radius** in millimeters below which the speed of perimeters will be reduced to the [small perimeters speed](#small-perimeters).  
+**Radius** in millimeters below which the speed of perimeters will be reduced to the [small perimeters speed](small_perimeter_speed.md).  
 A perimeter is considered small when:
 
 $$
@@ -26,4 +26,4 @@ For example, if the threshold is set to 5 mm, then the perimeter length must be 
 - A Cube of 5mm x 5mm will have a perimeter length of 20 mm, which is less than the threshold, so it will be considered a small perimeter.
 
 > [!NOTE]
-> Zero will disable [small perimeters speed](#small-perimeters), and walls will use their regular speed, such as the [outer wall speed](#outer-wall).
+> Zero will disable [small perimeters speed](small_perimeter_speed.md), and walls will use their regular speed, such as the [outer wall speed](outer_wall_speed.md).

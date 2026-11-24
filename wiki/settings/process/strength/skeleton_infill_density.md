@@ -13,15 +13,15 @@
 [Range](../../../general_settings/option_type.md#range): `[0, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--skeleton-infill-density=1`.  
 
-Version of [Zig Zag](#zig-zag) that adds extra skin.
+Version of Zig Zag that adds extra skin.
 When using this fill, you can individually modify the density of the skeleton and skin, as well as the size of the skin and how much interconnection there is between the skin and the skeleton (a lock depth of 50% of the skin depth is recommended).  
 **Skin line width** and **Skeleton line width** set the line width of the skin and skeleton paths. If expressed as a %, they are computed over the nozzle diameter.  
-The **Infill shift step** of [Cross Zag](#cross-zag) also applies to Locked Zag, but it only shifts the skin. The skeleton is not shifted.
+The **Infill shift step** of Cross Zag also applies to Locked Zag, but it only shifts the skin. The skeleton is not shifted.
 
 - **Strength**
     - **Horizontal (X-Y):** Normal-Low ![level-to-better-3](../../../images/misc/level-to-better-3.svg)
     - **Vertical (Z):** Normal-Low ![level-to-better-3](../../../images/misc/level-to-better-3.svg)
-- **Density Calculation:** Similar to [Zig Zag](#zig-zag).
+- **Density Calculation:** Similar to Zig Zag.
 Skeleton density * (Infill area - Skin area + Lock depth area) + (Skin density * Skin area).
     - **Material Usage:** Ultra-High ![level-to-worse-8](../../../images/misc/level-to-worse-8.svg)
     - **Print Time:** Extra-High ![level-to-worse-7](../../../images/misc/level-to-worse-7.svg)

@@ -34,18 +34,15 @@ With Klipper you can create macros that translate both the OrcaSlicer numeric fa
 > [!WARNING]
 > Adjust pin names and parameters (power, cycle_time, etc.) to match your hardware.
 
-- [Nozzle type](#nozzle-type)
-- [Nozzle HRC](#nozzle-hrc)
-- [Auxiliary Part Cooling Fan](#auxiliary-part-cooling-fan)
-    - [Auxiliary Fan](#auxiliary-fan)
-        - [Simple option (indexes only → fan0, fan2, fan3)](#simple-option-indexes-only--fan0-fan2-fan3)
-        - [Advanced option (Index ⇄ Name mapping)](#advanced-option-index--name-mapping)
-            - [Quick customization](#quick-customization)
-            - [Usage](#usage)
-- [Support controlling chamber temperature](#support-controlling-chamber-temperature)
-    - [Using Chamber Temperature Variables in Machine G-code](#using-chamber-temperature-variables-in-machine-g-code)
-    - [Klipper Chamber Temperature](#klipper-chamber-temperature)
-- [Support air filtration](#support-air-filtration)
+- [Nozzle type](nozzle_type.md)
+- [Nozzle HRC](nozzle_hrc.md)
+- [Support controlling chamber temperature](support_chamber_temp_control.md)
+- [Support air filtration](support_air_filtration.md)
+- [Auxiliary Fan](#auxiliary-fan)
+    - [Simple option (indexes only → fan0, fan2, fan3)](#simple-option-indexes-only--fan0-fan2-fan3)
+    - [Advanced option (Index ⇄ Name mapping)](#advanced-option-index--name-mapping)
+        - [Quick customization](#quick-customization)
+        - [Usage](#usage)
 
 #### Simple option (indexes only → fan0, fan2, fan3)
 

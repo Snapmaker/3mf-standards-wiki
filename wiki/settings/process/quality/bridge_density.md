@@ -23,4 +23,4 @@ Theoretically, 100% means a solid bridge, but due to the tendency of bridge extr
     - Pros: Can create a string-like first layer. Faster and with better cooling, as there is more space for air to circulate around the extruded bridge.
     - Cons: May lead to sagging and poor surface finish.
 
-The density changes the spacing between bridge lines, not the [flow ratio](#flow-ratio) of each line.
+The density changes the spacing between bridge lines, not the [flow ratio](bridge_flow.md) of each line.

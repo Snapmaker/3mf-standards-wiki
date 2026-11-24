@@ -13,4 +13,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--slow-down-min-speed=1`.  
 
 The minimum print speed to which the printer slows down to maintain the minimum layer time defined above when the slowdown for better layer cooling is enabled.  
-See [How the slowdown is calculated](#how-the-slowdown-is-calculated).
+See [How the slowdown is calculated](slow_down_for_layer_cooling.md).

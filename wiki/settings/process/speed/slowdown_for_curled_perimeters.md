@@ -28,4 +28,4 @@ Root cause of these artifacts is most likely PA tuning being slightly off, espec
 
 > [!NOTE]
 > When this option is enabled, overhang perimeters are treated like overhangs, meaning the overhang speed is applied even if the overhanging perimeter is part of a bridge.  
-> For example, when the perimeters are 100% overhanging, with no wall supporting them from underneath, the 75% [overhang speed](#speed) will be applied, capped at the external [bridge speed](#bridge-speed).
+> For example, when the perimeters are 100% overhanging, with no wall supporting them from underneath, the 75% overhang speed will be applied, capped at the external [bridge speed](bridge_speed.md).

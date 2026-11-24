@@ -15,7 +15,7 @@ When enabled, the skirt is printed as a draft shield: a taller wall surrounding 
 This is most useful for open-frame printers without an enclosure.
 
 - Enabled: the shield is as tall as the tallest printed model on the bed.
-- Disabled: the skirt uses the [Height](#height) value.
+- Disabled: the skirt uses the [Height](skirt_height.md) value.
 
 > [!NOTE]
-> The skirt is printed at the [skirt distance](#distance) from the brim, or from the object if it has no brim, so the draft shield does not intersect brims.
+> The skirt is printed at the [skirt distance](skirt_distance.md) from the brim, or from the object if it has no brim, so the draft shield does not intersect brims.

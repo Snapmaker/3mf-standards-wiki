@@ -14,4 +14,4 @@
 
 Filament to print outer walls.  
 You can also print the outer walls with a translucent filament to achieve a frosted glass effect.  
-When using a [mixed nozzle size setup](../../../guides/mixed_nozzle_sizes.md), it's recommended to use the smaller nozzle for outer walls to achieve better surface quality and detail.
+When using a mixed nozzle size setup, it's recommended to use the smaller nozzle for outer walls to achieve better surface quality and detail.

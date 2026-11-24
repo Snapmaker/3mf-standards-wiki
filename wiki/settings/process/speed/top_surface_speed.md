@@ -12,4 +12,4 @@
 [Range](../../../general_settings/option_type.md#range): `≥ 1`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--top-surface-speed=1`.  
 
-Speed of the [topmost solid layers](../../process/strength/top_shell_thickness.md) of the print. This is usually set similar to the [outer wall speed](#outer-wall) to achieve a smoother and higher-quality finish on visible surfaces. Lower speeds help minimize surface defects and improve the appearance of the final printed object.
+Speed of the [topmost solid layers](../../process/strength/top_shell_thickness.md) of the print. This is usually set similar to the [outer wall speed](outer_wall_speed.md) to achieve a smoother and higher-quality finish on visible surfaces. Lower speeds help minimize surface defects and improve the appearance of the final printed object.

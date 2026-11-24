@@ -15,7 +15,7 @@
 
 Controls the direction of the infill lines to optimize or strengthen the print.
 
-[Adaptive Cubic](../../process/strength/sparse_infill_pattern.md) and [Support Cubic](../../process/strength/sparse_infill_pattern.md) do not support rotation, so the sparse infill direction and the sparse infill [rotation template](#rotation) are disabled for them. The solid infill direction and rotation template are not affected.
+[Adaptive Cubic](../../process/strength/sparse_infill_pattern.md) and [Support Cubic](../../process/strength/sparse_infill_pattern.md) do not support rotation, so the sparse infill direction and the sparse infill [rotation template](sparse_infill_rotate_template.md) are disabled for them. The solid infill direction and rotation template are not affected.
 
 ![fill-direction](../../../images/fill/fill-direction.png)
 

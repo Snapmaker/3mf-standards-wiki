@@ -19,10 +19,10 @@ The number you set is the total thickness of the dense interface, counted in pri
 
 The top and bottom interfaces are set separately:
 
-- **Top interface layers** (`support_interface_top_layers`) are the layers printed under an overhang, below the [Z distance](#z-distance) gap. These are the ones that determine the finish of the supported surface.
+- **Top interface layers** (`support_interface_top_layers`) are the layers printed under an overhang, below the [Z distance](support_top_z_distance.md) gap. These are the ones that determine the finish of the supported surface.
 - **Bottom interface layers** (`support_interface_bottom_layers`) are the layers printed where a support lands on top of the model, protecting that surface from the support body. `Same as top` reuses the top value. You can use bottom interfaces on their own, with top interface layers set to `0`.
 
-With both set to `0` there is no interface at all: the support prints all the way through with the [Base Pattern](#base-pattern), which is fastest and easiest to remove but leaves the roughest overhangs.
+With both set to `0` there is no interface at all: the support prints all the way through with the [Base Pattern](support_base_pattern.md), which is fastest and easiest to remove but leaves the roughest overhangs.
 
 > [!TIP]
 > When the interface has its own filament assigned, this number also decides how the layers are shared between the two materials. See [Interface filament transitions](../../process/support/support_interface_filament.md).

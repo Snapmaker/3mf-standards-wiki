@@ -16,4 +16,4 @@ Used to compensate the XY dimensions of the model.
 With these options you can compensate material expansion or shrinkage, which can occur due to various factors such as the type of filament used, temperature fluctuations, or printer calibration issues.
 
 > [!TIP]
-> Follow the [Calibration Guide](../../../guides/calibration_guide.md) and [Filament Tolerance Calibration](../../../calibration/tolerance_calib.md) to determine the correct value for your printer and filament combination.
+> Follow the Calibration Guide and Filament Tolerance Calibration to determine the correct value for your printer and filament combination.

@@ -12,7 +12,7 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--gap-fill-target=everywhere`.  
 
 Enables gap fill for the selected solid surfaces.  
-The minimum gap length that will be filled can be controlled with the [Filter out tiny gaps](#filter-out-tiny-gaps) option.
+The minimum gap length that will be filled can be controlled with the [Filter out tiny gaps](filter_out_gap_fill.md) option.
 
 1. **Everywhere:** Applies gap fill to top, bottom and internal solid surfaces for maximum strength.
 2. **Top and bottom surfaces:** Applies gap fill to top and bottom surfaces only, balancing print speed, reducing potential over-extrusion in the solid infill and making sure the top and bottom surfaces have no pinhole gaps.

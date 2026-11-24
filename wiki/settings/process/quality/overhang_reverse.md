@@ -15,7 +15,7 @@ Extrude perimeters that have a part over an overhang in the reverse direction on
 This setting can also help reduce part warping due to the reduction of stresses as they are now distributed in alternating directions. Useful for warp-prone materials, like ABS/ASA, and also for elastic filaments, like TPU and Silk PLA.  
 It can also help reduce warping on floating regions over supports.
 
-For this setting to be the most effective, it is recommended to set the [Reverse Threshold](#reverse-threshold) to 0 so that all walls print in alternating directions on even layers irrespective of their overhang degree.
+For this setting to be the most effective, it is recommended to set the [Reverse Threshold](overhang_reverse_threshold.md) to 0 so that all walls print in alternating directions on even layers irrespective of their overhang degree.
 A disadvantage of this setting is that the outer wall may show a texture due to the alternating extrusion direction.
 
 ![reverse-odd-texture](../../../images/precision/reverse-odd-texture.png)

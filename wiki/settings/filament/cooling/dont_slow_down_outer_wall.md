@@ -22,10 +22,10 @@ When enabled, the outer walls are left out of the slowdown: they always print at
 The whole missing time is then taken from the rest of the extrusions, so:
 
 - Inner walls, infill and other features are slowed down more than they would be otherwise, and can end up slower than the outer wall.
-- [Min print speed](#min-print-speed) is reached sooner, so small layers are more likely to finish faster than the Layer time.
+- [Min print speed](slow_down_min_speed.md) is reached sooner, so small layers are more likely to finish faster than the Layer time.
 - Overhang walls are still slowed down, as they are a different feature from the outer wall.
 
-Using the [previous example](#how-the-slowdown-is-calculated) with a Layer time of 22 s (12 s missing):
+Using a Layer time of 22 s (12 s missing):
 
 | Feature | Without the option | With the option |
 | --- | --- | --- |

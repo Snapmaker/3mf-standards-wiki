@@ -12,4 +12,4 @@
 [Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--mmu-segmented-region-max-width=1`.  
 
-Maximum width of a segmented region. Zero disables this feature. Ignored when [Interlocking Beam](#interlocking-beam) is enabled.
+Maximum width of a segmented region. Zero disables this feature. Ignored when [Interlocking Beam](interlocking_beam.md) is enabled.

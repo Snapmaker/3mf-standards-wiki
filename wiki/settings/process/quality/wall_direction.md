@@ -13,7 +13,7 @@
 
 The direction in which the **contour** wall loops are extruded when looking down from the top.  
 Holes are printed in the opposite direction to the contour to maintain alignment with layers whose contour polygons are incomplete and change direction, also partially forming the contour of a hole.
-A hole whose outer wall touches the contour's with nothing between them, like a [narrow wall](#narrow-walls) 2 lines wide, runs with the contour instead, so both walls are laid side by side in the same direction.
+A hole whose outer wall touches the contour's with nothing between them, like a narrow wall 2 lines wide, runs with the contour instead, so both walls are laid side by side in the same direction.
 Check upstream PR 12669 for more details about reversing hole direction.
 
 The usage of [Reverse on even](../../process/quality/overhang_reverse.md) will reverse wall direction based on this setting. `Auto` keeps the default behavior: walls run counter-clockwise unless Reverse on even is enabled; `ccw` or `cw` forces the direction regardless of that setting.

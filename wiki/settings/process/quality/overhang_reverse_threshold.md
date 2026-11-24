@@ -25,8 +25,8 @@ This could result in uneven texture, sometimes considered worse than the full re
 > [!NOTE]
 > Only available when:
 >
-> - [Detect overhang wall](#detect-overhang-wall) is enabled
-> - [Reverse on even](#reverse-on-even) is enabled
-> - [Reverse internal only](#reverse-internal-only) is disabled
+> - [Detect overhang wall](detect_overhang_wall.md) is enabled
+> - Reverse on even is enabled
+> - [Reverse internal only](overhang_reverse_internal_only.md) is disabled
 >
 > If those conditions are not met, this setting will be hidden.

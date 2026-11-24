@@ -12,4 +12,4 @@
 
 Support layers use a layer height independent of the object layers. This allows a custom Z gap and saves print time. This option is ignored when a prime tower is printed, and it is not available with the Organic tree support style.
 
-Turning this on changes the height of the support layers, not their number: you still get exactly the [Interface layers](#interface-layers) you asked for, including with the `Tree Slim`, `Tree Strong` and `Tree Hybrid` styles.
+Turning this on changes the height of the support layers, not their number: you still get exactly the Interface layers you asked for, including with the `Tree Slim`, `Tree Strong` and `Tree Hybrid` styles.

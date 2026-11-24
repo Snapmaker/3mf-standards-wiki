@@ -11,4 +11,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--make-overhang-printable=1`.  
 
 This setting will modify the geometry to print overhangs without support material.  
-Every overhang exceeding the [maximum angle](#maximum-angle) will be modified to be printable.
+Every overhang exceeding the [maximum angle](make_overhang_printable_angle.md) will be modified to be printable.

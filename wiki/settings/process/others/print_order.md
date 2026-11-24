@@ -16,7 +16,7 @@ Determines the order in which object instances are visited within a single layer
 Shorter, more cyclic paths reduce oozing and avoid dragging the nozzle over parts that have already been printed, which can make [Z Hop](../../filament/setting_overrides/filament_z_hop.md) and [Avoid crossing walls](../../process/quality/reduce_crossing_wall.md) unnecessary in many plates.
 
 - **Default**: Up to ten instances or islands are visited along the shortest possible closed path. Larger sets use nearest-neighbor chaining, refined by reversing sections of the path (2-opt), moving short runs of stops elsewhere (or-opt) and removing crossings. A good general choice and the recommended option for most plates.
-- **As object list**: Instances are printed in the same order as the object list, without any path optimization. Use it when you need a predictable, manually controlled order, for custom sequencing or debugging. [By Object](#by-object) also prints in this order.
+- **As object list**: Instances are printed in the same order as the object list, without any path optimization. Use it when you need a predictable, manually controlled order, for custom sequencing or debugging. [By Object](print_sequence.md) also prints in this order.
 
     > [!IMPORTANT]
     > NEW FEATURE: **Order By in the plate menu**  
@@ -31,8 +31,8 @@ Shorter, more cyclic paths reduce oozing and avoid dragging the nozzle over part
 
     > [!TIP]
     >
-    > - **Order By** > **Height** prints the tallest object last. With [By Object](#by-object), only the last object can use the full [Printable height](../../printer/basic_information/printable_height.md). The objects before it must stay below the extruder clearance [Height to lid](../../printer/basic_information/extruder_clearance_height_to_lid.md) or [Height to rod](../../printer/basic_information/extruder_clearance_height_to_rod.md). An object reported as too tall may slice once it prints last.
-    > - **Order By** > **Filament** prints the objects of each filament one after another, which saves filament changes with [By Object](#by-object).
+    > - **Order By** > **Height** prints the tallest object last. With [By Object](print_sequence.md), only the last object can use the full [Printable height](../../printer/basic_information/printable_height.md). The objects before it must stay below the extruder clearance [Height to lid](../../printer/basic_information/extruder_clearance_height_to_lid.md) or [Height to rod](../../printer/basic_information/extruder_clearance_height_to_rod.md). An object reported as too tall may slice once it prints last.
+    > - **Order By** > **Filament** prints the objects of each filament one after another, which saves filament changes with [By Object](print_sequence.md).
 
 
 > [!NOTE]

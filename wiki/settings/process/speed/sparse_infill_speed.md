@@ -13,4 +13,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--sparse-infill-speed=1`.  
 
 Speed of [sparse infill](../../process/strength/sparse_infill_density.md) which is printed faster than solid infill to reduce print time.  
-If you are using your [Infill Pattern](../../process/strength/sparse_infill_density.md) as an aesthetic feature, you may want to set it closer to the [outer wall speed](#outer-wall) to get better quality.
+If you are using your [Infill Pattern](../../process/strength/sparse_infill_density.md) as an aesthetic feature, you may want to set it closer to the [outer wall speed](outer_wall_speed.md) to get better quality.

@@ -14,4 +14,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--top-shell-thickness=1`.  
 
 The number of solid layers is increased during slicing if the thickness calculated from shell layers is thinner than this value. This avoids having too thin a shell when layer height is small.  
-0 means this setting is disabled and shell thickness is determined entirely by [shell layers](#shell-layers).
+0 means this setting is disabled and shell thickness is determined entirely by [shell layers](top_shell_layers.md).

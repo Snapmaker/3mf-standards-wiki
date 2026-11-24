@@ -13,4 +13,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--top-surface-acceleration=1`.  
 
 Acceleration of [top surface infill](../../process/speed/top_surface_acceleration.md). Using a lower value may improve top surface quality.  
-A value similar to the [outer wall acceleration](#outer-wall) is recommended.
+A value similar to the [outer wall acceleration](outer_wall_acceleration.md) is recommended.

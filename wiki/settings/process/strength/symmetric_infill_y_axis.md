@@ -14,7 +14,7 @@ If the model has two parts that are symmetric about the Y axis, and you want the
 
 ## Zig Zag
 
-Similar to [rectilinear](#rectilinear), with a consistent pattern between layers.
+Similar to rectilinear, with a consistent pattern between layers.
 
 - **Strength**
     - **Horizontal (X-Y):** Normal-Low ![level-to-better-3](../../../images/misc/level-to-better-3.svg)

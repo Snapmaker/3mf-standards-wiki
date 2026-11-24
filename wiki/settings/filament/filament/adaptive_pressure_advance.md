@@ -17,4 +17,4 @@ This feature aims to address this limitation by modeling the response of your pr
 When enabled, the pressure advance value above is overridden. However, a reasonable default value above is strongly recommended to act as a fallback and for when tool changing.
 
 > [!TIP]
-> Check the [Adaptive Pressure Advance Calibration guide](../../../calibration/adaptive_pressure_advance_calib.md).
+> Check the Adaptive Pressure Advance Calibration guide.

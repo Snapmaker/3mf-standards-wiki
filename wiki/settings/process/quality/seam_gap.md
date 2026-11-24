@@ -17,6 +17,6 @@ Controls the gap in mm or as a percentage of the nozzle size between the two end
 - A larger gap will reduce the bulging seen at the seam.
 - A smaller gap reduces the visual appearance of a seam.
 
-For a well-tuned printer with [pressure advance](../../../calibration/pressure_advance_calib.md) and [filament retraction](../../../calibration/retraction_calib.md), a value of **0-15%** is typically optimal.
+For a well-tuned printer with [pressure advance](../../filament/filament/pressure_advance.md) and [filament retraction](../../printer/extruder/retraction_length.md), a value of **0-15%** is typically optimal.
 
 ![seam-gap](../../../images/seam/seam-gap.gif)

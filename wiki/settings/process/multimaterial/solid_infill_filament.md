@@ -13,4 +13,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--solid-infill-filament=1`.  
 
 Filament to print internal solid infill.  
-When using a [mixed nozzle size setup](../../../guides/mixed_nozzle_sizes.md), you can use a larger nozzle for internal solid infill to speed up printing while maintaining good layer adhesion.
+When using a mixed nozzle size setup, you can use a larger nozzle for internal solid infill to speed up printing while maintaining good layer adhesion.

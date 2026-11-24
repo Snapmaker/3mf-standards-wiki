@@ -21,4 +21,4 @@ For example:
 This can be used to generate filenames like `OrcaCube_PLA_1h15m.gcode`.
 
 > [!TIP]
-> Check [File Name Template](../../../developer_reference/built_in_placeholders_variables.md#file-name-template) for available tokens and their meanings.
+> Check File Name Template for available tokens and their meanings.

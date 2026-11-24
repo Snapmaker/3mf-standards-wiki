@@ -16,4 +16,4 @@ The distance to keep from the edges, which can help prevent over-extrusion at th
 
 ![ironing-inset](../../../images/ironing/ironing-inset.png)
 
-If this value is set to 0, an inset of half the nozzle diameter is used, so the [ironing pattern](#pattern) stays slightly inside the outer boundaries of the top surface being ironed.
+If this value is set to 0, an inset of half the nozzle diameter is used, so the [ironing pattern](ironing_pattern.md) stays slightly inside the outer boundaries of the top surface being ironed.

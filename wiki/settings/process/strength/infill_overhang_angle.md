@@ -12,7 +12,7 @@
 [Range](../../../general_settings/option_type.md#range): `[15, 75]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--infill-overhang-angle=1`.  
 
-Vertical honeycomb pattern with acceptable torsional stiffness, developed for low-density structures like wings. An improvement over [Lateral Lattice](#lateral-lattice), it offers the same performance at lower densities. This infill includes an **Infill overhang angle** parameter to improve the contact between layers and reduce the risk of delamination.
+Vertical honeycomb pattern with acceptable torsional stiffness, developed for low-density structures like wings. An improvement over Lateral Lattice, it offers the same performance at lower densities. This infill includes an **Infill overhang angle** parameter to improve the contact between layers and reduce the risk of delamination.
 
 - **Strength**
     - **Horizontal (X-Y):** Normal-Low ![level-to-better-3](../../../images/misc/level-to-better-3.svg)

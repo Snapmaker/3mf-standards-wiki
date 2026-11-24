@@ -12,4 +12,4 @@
 
 Allow using a single extruder to print with multiple filaments.  
 If your printer has an MultiMaterialUnit, this will run the [Change filament G-code](../../printer/machine_gcode/change_filament_gcode.md) when changing filament is needed.
-If your printer does not have an MultiMaterialUnit, you will need to enable [Manual Filament Change](#manual-filament-change).
+If your printer does not have an MultiMaterialUnit, you will need to enable [Manual Filament Change](manual_filament_change.md).

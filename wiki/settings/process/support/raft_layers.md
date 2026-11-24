@@ -26,8 +26,6 @@ In exchange, the bottom of the object is rougher, the print takes more time and 
 > [!TIP]
 > If the problem is only adhesion or warping, try a [brim](../../process/others/brim_type.md) first. It is faster, uses less material and keeps the bottom surface clean.
 
-- [How a raft is built](#how-a-raft-is-built)
-- [Layers](#layers)
-- [Contact Z distance](#contact-z-distance)
-- [Expansion](#expansion)
-- [Interaction with other settings](#interaction-with-other-settings)
+- [Contact Z distance](raft_contact_distance.md)
+- [Expansion](raft_first_layer_expansion.md)
+

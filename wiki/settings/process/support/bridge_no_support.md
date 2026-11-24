@@ -12,4 +12,4 @@
 
 Don't support bridge areas, which would otherwise make the support very large. Bridges can usually be printed directly without support if they are not very long.
 
-This option is only shown for normal supports. Tree supports use [Max bridge length](#max-bridge-length) instead.
+This option is only shown for normal supports. Tree supports use [Max bridge length](max_bridge_length.md) instead.

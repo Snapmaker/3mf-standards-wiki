@@ -24,7 +24,7 @@ Arc fitting mainly changes how the toolpath is *encoded* in G-code. It can be be
 > [!IMPORTANT]
 > Ensure that the printer supports G2/G3 commands!
 
-Arc fitting is not available on [belt printers](../../../guides/belt_printing.md#features-that-are-not-available) or while [Extrusion rate smoothing](../../process/speed/max_volumetric_extrusion_rate_slope.md) is enabled. Enabling Extrusion rate smoothing also turns arc fitting off.
+Arc fitting is not available on belt printers or while [Extrusion rate smoothing](../../process/speed/max_volumetric_extrusion_rate_slope.md) is enabled. Enabling Extrusion rate smoothing also turns arc fitting off.
 
 **Advantages**
 

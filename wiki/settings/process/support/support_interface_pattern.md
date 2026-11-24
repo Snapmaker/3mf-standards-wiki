@@ -13,7 +13,7 @@
 
 The pattern used for the support interface.
 
-Each option lays the interface lines out differently, and all of them are measured from [Pattern angle](#pattern-angle), so rotating that rotates the interface with it. The same rules apply to normal and tree supports.
+Each option lays the interface lines out differently, and all of them are measured from [Pattern angle](support_angle.md), so rotating that rotates the interface with it. The same rules apply to normal and tree supports.
 
 | Option | What you get |
 | --- | --- |
@@ -21,6 +21,6 @@ Each option lays the interface lines out differently, and all of them are measur
 | `Rectilinear` | Straight lines at 90° to Pattern angle. With the [Snug](../../process/support/support_style.md) style they are rotated a further 45°. |
 | `Concentric` | Loops following the outline of the interface, which peel off in one piece and leave no line ends on the surface. |
 | `Rectilinear Interlaced` | Straight lines that swing 45° one way then the other on each successive layer, so the layers cross instead of stacking. This ties the interface together and makes it stiffer under the overhang. |
-| `Grid` | Straight lines crossing in a grid on every layer: one set runs along Pattern angle, in line with the [Base Pattern](#base-pattern) below, and the other at 90° to it. |
+| `Grid` | Straight lines crossing in a grid on every layer: one set runs along Pattern angle, in line with the [Base Pattern](support_base_pattern.md) below, and the other at 90° to it. |
 
-If [Interface spacing](#interface-spacing) is wide enough that the interface is no longer solid, `Default` and `Rectilinear` switch to the base support pattern so that the sparse lines still anchor to each other.
+If [Interface spacing](support_interface_spacing.md) is wide enough that the interface is no longer solid, `Default` and `Rectilinear` switch to the base support pattern so that the sparse lines still anchor to each other.

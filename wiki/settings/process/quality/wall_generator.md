@@ -13,15 +13,11 @@
 
 The Wall Generator defines how the outer and inner walls (perimeters) of the model are printed.
 
-- [Classic](#classic)
-- [Arachne](#arachne)
-    - [Wall transitioning threshold angle](#wall-transitioning-threshold-angle)
-    - [Wall transitioning filter margin](#wall-transitioning-filter-margin)
-    - [Wall transitioning length](#wall-transitioning-length)
-    - [Wall distribution count](#wall-distribution-count)
-    - [Minimum wall width](#minimum-wall-width)
-        - [First layer minimum wall width](#first-layer-minimum-wall-width)
-    - [Minimum feature size](#minimum-feature-size)
-    - [Minimum wall length](#minimum-wall-length)
-    - [Maximum wall resolution](#maximum-wall-resolution)
-    - [Maximum wall deviation](#maximum-wall-deviation)
+- [Wall transitioning threshold angle](wall_transition_angle.md)
+- [Wall transitioning filter margin](wall_transition_filter_deviation.md)
+- [Wall transitioning length](wall_transition_length.md)
+- [Wall distribution count](wall_distribution_count.md)
+- [Minimum wall width](min_bead_width.md)
+    - [First layer minimum wall width](initial_layer_min_bead_width.md)
+- [Minimum feature size](min_feature_size.md)
+- [Minimum wall length](min_length_factor.md)

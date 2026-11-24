@@ -24,6 +24,6 @@ This option is only shown for Bambu Lab printers. The moves and camera commands 
 >
 > - Selecting Smooth while the prime tower is disabled offers to enable it, and disabling the prime tower while Smooth is selected asks for confirmation.
 > - Selecting Smooth turns off [No sparse layers](../../process/multimaterial/wipe_tower_no_sparse_layers.md), and enabling No sparse layers switches timelapse back to Traditional.
-> - Smooth is not supported with the [By Object](#by-object) print sequence when the plate has more than one object.
+> - Smooth is not supported with the [By Object](print_sequence.md) print sequence when the plate has more than one object.
 
-[Spiral vase](#spiral-vase) mode requires Traditional. On printers with an i3 structure, such as the Bambu Lab A1 and A1 mini, no timelapse video is generated in spiral vase mode, and Traditional timelapse is not supported with the By Object print sequence.
+[Spiral vase](spiral_mode.md) mode requires Traditional. On printers with an i3 structure, such as the Bambu Lab A1 and A1 mini, no timelapse video is generated in spiral vase mode, and Traditional timelapse is not supported with the By Object print sequence.

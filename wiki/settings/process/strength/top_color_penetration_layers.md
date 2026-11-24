@@ -17,12 +17,12 @@
 > NEW FEATURE: **Paint penetration layers**  
 > Available in: nightly builds or releases greater than **2.4.2**.
 
-When a top or bottom surface is painted with [Color Painting](../../../print_prepare/prepare_color_painting.md), its color is also printed in the layers under a painted top surface and over a painted bottom surface, so the filament behind the paint doesn't show through. This is the number of layers that take the color, including the surface layer.  
+When a top or bottom surface is painted with Color Painting, its color is also printed in the layers under a painted top surface and over a painted bottom surface, so the filament behind the paint doesn't show through. This is the number of layers that take the color, including the surface layer.  
 Each layer further from the surface is colored about two line widths narrower than the one before, so the color tapers into the model instead of reaching its walls.
 
-- **0:** uses the [Shell Layers](#shell-layers) count. This is the default, and how painted surfaces were always printed before this setting existed.
+- **0:** uses the [Shell Layers](top_shell_layers.md) count. This is the default, and how painted surfaces were always printed before this setting existed.
 - **Lower values:** keep a thick shell for strength while printing fewer layers in the painted color, saving a filament change and its purge on each layer left out.
 - **Higher values:** give a deeper, more saturated color, which helps with translucent or light filaments that let the layers behind them show through.
 
 > [!WARNING]
-> Keep the value within the shell, which is the larger of [Shell Layers](#shell-layers) and the layers needed to reach [Shell Thickness](#shell-thickness). A larger value also colors the [sparse infill](../../process/strength/sparse_infill_density.md) under or over the painted area, adding filament changes where they can't be seen.
+> Keep the value within the shell, which is the larger of [Shell Layers](top_shell_layers.md) and the layers needed to reach [Shell Thickness](top_shell_thickness.md). A larger value also colors the [sparse infill](../../process/strength/sparse_infill_density.md) under or over the painted area, adding filament changes where they can't be seen.

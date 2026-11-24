@@ -17,8 +17,8 @@ If left to zero, the bridging angle will be calculated automatically for each sp
 Otherwise the provided angle will be used according to:
 
 - The absolute coordinates
-- The absolute coordinates + Model rotation: If [Align directions to model](#align-directions-to-model) is enabled
-- The optimal automatic angle + this value: If [Relative Bridge Angle](#relative-bridge-angle) is enabled
+- The absolute coordinates + Model rotation: If [Align directions to model](align_infill_direction_to_model.md) is enabled
+- The optimal automatic angle + this value: If Relative Bridge Angle is enabled
 
 > [!NOTE]
 > Use 180° for zero absolute angle.

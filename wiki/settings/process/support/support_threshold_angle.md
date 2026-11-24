@@ -13,4 +13,4 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-threshold-angle=1`.  
 
 Support will be generated for overhangs whose slope angle is below the threshold. The smaller this value is, the steeper the overhang that can be printed without support.  
-If set to `0`, normal supports use the [Threshold overlap](#threshold-overlap) instead, while tree supports use 30°.
+If set to `0`, normal supports use the [Threshold overlap](support_threshold_overlap.md) instead, while tree supports use 30°.

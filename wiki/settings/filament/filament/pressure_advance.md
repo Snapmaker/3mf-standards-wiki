@@ -19,4 +19,4 @@ Pressure advance [Klipper](https://www.klipper3d.org/Pressure_Advance.html) and 
 > Auto calibration result will be overwritten once enabled
 
 > [!TIP]
-> Check the [Pressure Advance Calibration guide](../../../calibration/pressure_advance_calib.md).
+> Check the Pressure Advance Calibration guide.

@@ -12,6 +12,6 @@
 [Range](../../../general_settings/option_type.md#range): `[0, 1000]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--full-fan-speed-layer=1`.  
 
-Fan speed is increased linearly from 0% starting at the layer specified by [close_fan_the_first_x_layers](#no-cooling-for-the-first) up to the maximum part-cooling speed at this specified layer.  
-If this layer is less than or equal to [close_fan_the_first_x_layers](#no-cooling-for-the-first), it is ignored and the fan will reach the maximum allowed speed on the layer immediately after [close_fan_the_first_x_layers](#no-cooling-for-the-first) (i.e. at layer [close_fan_the_first_x_layers](#no-cooling-for-the-first) + 1).  
+Fan speed is increased linearly from 0% starting at the layer specified by [close_fan_the_first_x_layers](close_fan_the_first_x_layers.md) up to the maximum part-cooling speed at this specified layer.  
+If this layer is less than or equal to [close_fan_the_first_x_layers](close_fan_the_first_x_layers.md), it is ignored and the fan will reach the maximum allowed speed on the layer immediately after [close_fan_the_first_x_layers](close_fan_the_first_x_layers.md) (i.e. at layer [close_fan_the_first_x_layers](close_fan_the_first_x_layers.md) + 1).  
 Set this option to `0` to disable the automatic ramp.

@@ -7,7 +7,7 @@
 Safeguard maximum jerks for all axes.
 
 > [!TIP]
-> Check the [Cornering Calibration](../../../calibration/cornering_calib.md).
+> Check the Cornering Calibration.
 
 ### Maximum Jerk
 

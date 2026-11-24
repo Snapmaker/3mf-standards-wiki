@@ -20,7 +20,7 @@ If enabled, the prime tower is not printed on layers with no tool changes. The t
 Because the tower ends up below the model, the toolhead has to reach down to it past everything already printed. Orca checks the plate for that before slicing and rejects layouts where the nozzle, the toolhead body or the gantry rod would hit an object, highlighting the collision area and the height limit it would exceed. Move the model further from the tower, lower its height, or turn this option off.
 
 > [!TIP]
-> If the plate layout can't avoid a collision, [Combine sparse layers](#combine-sparse-layers) also cuts the time spent on sparse tower layers while keeping the tower level with the model.
+> If the plate layout can't avoid a collision, Combine sparse layers also cuts the time spent on sparse tower layers while keeping the tower level with the model.
 
 > [!NOTE]
 > This option has no effect when [smooth timelapse](../../process/others/timelapse_type.md) or [clumping detection](../../process/others/timelapse_type.md) is enabled, because both keep every sparse layer of the tower. Enabling it while smooth timelapse is selected switches timelapse to traditional, and selecting smooth timelapse turns this option off.

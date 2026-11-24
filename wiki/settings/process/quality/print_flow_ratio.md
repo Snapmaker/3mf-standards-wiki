@@ -20,4 +20,4 @@ The actual top or bottom surface flow used is calculated by multiplying this val
 Other flow ratios, such as ratios for the first layer (does not affect brims and skirts), outer and inner walls, overhang perimeters, sparse infill, internal solid infill, gap fill, support, and support interfaces, can also be adjusted after enabling the "Set other flow ratios" option.
 
 > [!TIP]
-> Before using a value other than 1, it is recommended to [calibrate the flow ratio](../../../calibration/flow_ratio_calib.md) to ensure that the flow ratio is set correctly for your printer and filament.
+> Before using a value other than 1, it is recommended to calibrate the flow ratio to ensure that the flow ratio is set correctly for your printer and filament.

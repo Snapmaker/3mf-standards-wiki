@@ -19,7 +19,7 @@ Resonance Compensations are the methods used to reduce the vibrations of the pri
 By reducing the speed of the outer wall to avoid the resonance zone of the printer, ringing on the surface of the model are avoided.
 
 > [!TIP]
-> Check the [VFA Calibration](../../../calibration/vfa_calib.md).
+> Check the VFA Calibration.
 
 ### Input Shaping
 
@@ -36,7 +36,7 @@ During high-speed movements, vibrations can cause a phenomenon called "ringing,"
 > If your printer has one, consider using it as it can provide more accurate results in less time and usually is autosaved into the printer firmware.
 
 > [!TIP]
-> It's usually recommended to perform [Input Shaping calibration](../../../calibration/input_shaping_calib.md) once a year or after any mechanical or structural changes such as relocation, changing the support surface, new belts, motors, frame, etc.
+> It's usually recommended to perform Input Shaping calibration once a year or after any mechanical or structural changes such as relocation, changing the support surface, new belts, motors, frame, etc.
 
 > [!IMPORTANT]
 > **RepRap** can only set one frequency for both X and Y axes so you will need to select a frequency that works well for both axes.

@@ -16,4 +16,4 @@ The diameter of the nozzle for each extruder.
 
 > [!TIP]
 > You can use different nozzle diameters for each extruder to achieve different print qualities and speeds.  
-> Follow the [Mixed Nozzle Sizes](../../../guides/mixed_nozzle_sizes.md) guide for more information on how to use this feature.
+> Follow the Mixed Nozzle Sizes guide for more information on how to use this feature.

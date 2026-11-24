@@ -18,4 +18,4 @@ When this option is enabled, the [infill](../../process/strength/sparse_infill_d
 
 ![infill-ghosting](../../../images/wall-order/infill-ghosting.png)
 
-When using this option, it is recommended to use the [Precise Wall](../../process/quality/precise_outer_wall.md), [Inner/Outer/Inner](#innerouterinner) wall printing order or reduce [Infill/Wall Overlap](../../process/strength/infill_wall_overlap.md) to avoid the infill pushing out the external wall.
+When using this option, it is recommended to use the [Precise Wall](../../process/quality/precise_outer_wall.md), [Inner/Outer/Inner](wall_sequence.md) wall printing order or reduce [Infill/Wall Overlap](../../process/strength/infill_wall_overlap.md) to avoid the infill pushing out the external wall.

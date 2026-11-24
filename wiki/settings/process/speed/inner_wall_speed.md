@@ -13,4 +13,4 @@
 [Aliases](../../../general_settings/option_type.md#aliases): `perimeter_feed_rate`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--inner-wall-speed=1`.  
 
-Speed of the inner walls, which are printed faster than the outer wall to reduce print time. Their flow is still recommended to stay well below the [maximum volumetric speed](../../../calibration/volumetric_speed_calib.md) to ensure good layer adhesion and reduce internal stresses in the material.
+Speed of the inner walls, which are printed faster than the outer wall to reduce print time. Their flow is still recommended to stay well below the [maximum volumetric speed](../../filament/filament/filament_max_volumetric_speed.md) to ensure good layer adhesion and reduce internal stresses in the material.

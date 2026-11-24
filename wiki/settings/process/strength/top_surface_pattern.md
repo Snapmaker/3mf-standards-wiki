@@ -13,7 +13,7 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--top-surface-pattern=monotonic`.  
 
 This setting controls the pattern of the surfaces.  
-If [Shell Layers](#shell-layers) is greater than 1, the surface pattern will be applied to the outermost shell layer only and the rest will use [Internal Solid Infill Pattern](../../process/strength/internal_solid_infill_pattern.md).
+If [Shell Layers](top_shell_layers.md) is greater than 1, the surface pattern will be applied to the outermost shell layer only and the rest will use [Internal Solid Infill Pattern](../../process/strength/internal_solid_infill_pattern.md).
 
 > [!TIP]
 > See [Infill Patterns Wiki List](../../process/strength/sparse_infill_pattern.md) with **detailed specifications**, including their strengths and weaknesses.

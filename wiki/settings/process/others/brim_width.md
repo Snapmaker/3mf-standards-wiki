@@ -15,6 +15,6 @@
 Distance between the model and the outermost brim line.  
 Increasing this value widens the brim, which can improve adhesion but increases material usage.
 
-On a [belt printer](#brim-on-belt-printers), the width is measured on the belt surface and applies to every brim type.
+On a belt printer, the width is measured on the belt surface and applies to every brim type.
 
-When **Brim type** is set to **Mouse ear**, this setting is labeled **Brim ear radius** *(Nightly builds and releases greater than 2.4.2)*. Its value sets the radius of each automatically generated ear. When **Brim type** is set to **Painted**, the size of brim ears is controlled in the [Brim ears Painting tool](../../../print_prepare/prepare_brim_ears_painting.md).
+When **Brim type** is set to **Mouse ear**, this setting is labeled **Brim ear radius** *(Nightly builds and releases greater than 2.4.2)*. Its value sets the radius of each automatically generated ear. When **Brim type** is set to **Painted**, the size of brim ears is controlled in the Brim ears Painting tool.

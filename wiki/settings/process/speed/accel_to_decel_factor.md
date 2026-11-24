@@ -15,4 +15,4 @@
 
 Percentage of the acceleration that Klipper's `max_accel_to_decel` is set to, from 1% to 100% (default 50%).  
 For example, at 5000 mm/s² and 50%, Orca sends `SET_VELOCITY_LIMIT ACCEL=5000 ACCEL_TO_DECEL=2500`.  
-It can only be edited when [Enable accel to decel](#enable-accel-to-decel) is checked.
+It can only be edited when [Enable accel to decel](accel_to_decel_enable.md) is checked.

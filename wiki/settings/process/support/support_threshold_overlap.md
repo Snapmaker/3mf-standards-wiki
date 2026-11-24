@@ -12,6 +12,6 @@
 [Range](../../../general_settings/option_type.md#range): `[0, 100]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-threshold-overlap=20%`.  
 
-If [Threshold angle](#threshold-angle) is zero, support will be generated for overhangs whose overlap with the layer below is below the threshold. A percentage is relative to the outer wall line width.
+If [Threshold angle](support_threshold_angle.md) is zero, support will be generated for overhangs whose overlap with the layer below is below the threshold. A percentage is relative to the outer wall line width.
 The smaller this value is, the steeper the overhang that can be printed without support.  
 Tree supports don't use this setting, so it is hidden for them.

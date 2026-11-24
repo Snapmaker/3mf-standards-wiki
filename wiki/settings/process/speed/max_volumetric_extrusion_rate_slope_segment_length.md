@@ -25,12 +25,5 @@ This feature is especially helpful when printing at high accelerations and large
 
 ![ers-intro](../../../images/ers/ers-intro.png)
 
-- [Theory](#theory)
-    - [Acceleration vs. Extrusion rate smoothing](#acceleration-vs-extrusion-rate-smoothing)
-    - [Pressure advance vs extrusion rate smoothing](#pressure-advance-vs-extrusion-rate-smoothing)
-- [Finding the ideal Extrusion Rate smoothing value](#finding-the-ideal-extrusion-rate-smoothing-value)
-- [A note for Bowden printers using Marlin without pressure advance](#a-note-for-bowden-printers-using-marlin-without-pressure-advance)
-- [A note on ERS Segment length](#a-note-on-ers-segment-length)
-- [Apply only on external features](#apply-only-on-external-features)
-- [Limitations](#limitations)
-- [Credits](#credits)
+- [Apply only on external features](extrusion_rate_smoothing_external_perimeter_only.md)
+

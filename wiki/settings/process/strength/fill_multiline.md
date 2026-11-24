@@ -11,7 +11,7 @@
 [Range](../../../general_settings/option_type.md#range): `[1, 5]`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--fill-multiline=1`.  
 
-This setting allows the selected [infill pattern](#sparse-infill-pattern) to be generated using up to 10 parallel extrusion lines per path, while preserving both the defined [infill density](#sparse-infill-density) and the overall material usage.
+This setting allows the selected [infill pattern](sparse_infill_pattern.md) to be generated using up to 10 parallel extrusion lines per path, while preserving both the defined [infill density](sparse_infill_density.md) and the overall material usage.
 
 To check which patterns support multiline infill, see the Patterns Quick Reference table in the [Infill Patterns Wiki List](../../process/strength/sparse_infill_pattern.md) or each pattern's specifics in the [Patterns section](../../process/strength/sparse_infill_pattern.md).
 

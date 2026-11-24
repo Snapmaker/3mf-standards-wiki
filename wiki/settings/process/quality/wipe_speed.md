@@ -12,4 +12,4 @@
 [Range](../../../general_settings/option_type.md#range): `≥ 0`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--wipe-speed=20%`.  
 
-If [Role based wipe speed](#role-based-wipe-speed) is disabled, this sets the wipe speed, either as an absolute value or as a percentage of the travel speed.
+If [Role based wipe speed](role_based_wipe_speed.md) is disabled, this sets the wipe speed, either as an absolute value or as a percentage of the travel speed.

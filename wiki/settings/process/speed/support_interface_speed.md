@@ -12,4 +12,4 @@
 [Range](../../../general_settings/option_type.md#range): `≥ 1`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--support-interface-speed=1`.  
 
-Speed for the support interface layers, which are the layers directly contacting the model. This is usually set even slower than the main [support speed](#support) to maximize surface quality where the support meets the model and to make support removal easier.
+Speed for the support interface layers, which are the layers directly contacting the model. This is usually set even slower than the main [support speed](support_speed.md) to maximize surface quality where the support meets the model and to make support removal easier.

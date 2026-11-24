@@ -16,8 +16,8 @@ This parameter adds a slight displacement to each layer of infill to create a cr
 
 ## Cross Hatch
 
-Similar to [Gyroid](#gyroid) but with linear patterns, creating weak points at internal corners.
-Easier to slice but consider using [TPMS-D](#tpms-d) or [Gyroid](#gyroid) for better strength and flexibility.
+Similar to Gyroid but with linear patterns, creating weak points at internal corners.
+Easier to slice but consider using TPMS-D or Gyroid for better strength and flexibility.
 
 - **Strength**
     - **Horizontal (X-Y):** Normal-High ![level-to-better-5](../../../images/misc/level-to-better-5.svg)

@@ -12,10 +12,10 @@
 [Range](../../../general_settings/option_type.md#range): `≥ 1`.  
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--small-perimeter-speed=20%`.  
 
-Speed of walls with a theoretical radius <= [small perimeters threshold](#small-perimeters-threshold).
+Speed of walls with a theoretical radius <= [small perimeters threshold](small_perimeter_threshold.md).
 Any shape (not only circles) will be considered as a small perimeter.
 
-If expressed as a percentage (for example: 80%), it will be calculated on the [outer wall speed](#outer-wall).
+If expressed as a percentage (for example: 80%), it will be calculated on the [outer wall speed](outer_wall_speed.md).
 
 > [!NOTE]
-> The default is 50% of the [outer wall speed](#outer-wall).
+> The default is 50% of the [outer wall speed](outer_wall_speed.md).

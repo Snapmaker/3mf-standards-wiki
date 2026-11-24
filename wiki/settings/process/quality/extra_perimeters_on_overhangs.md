@@ -12,6 +12,6 @@
 
 Create additional perimeter (overhang wall) paths over steep overhangs and areas where bridges cannot be anchored.
 
-This option only works when [Detect overhang walls](#detect-overhang-wall) is enabled, even though it stays visible and editable when that option is off.
+This option only works when [Detect overhang walls](detect_overhang_wall.md) is enabled, even though it stays visible and editable when that option is off.
 
 ![extra-perimeters-on-overhangs](../../../images/overhangs/extra-perimeters-on-overhangs.png)

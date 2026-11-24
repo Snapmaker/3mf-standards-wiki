@@ -19,7 +19,7 @@ Using a higher temperature for the first layer can help improve adhesion to the 
 
 Bed temperature plays a crucial role in ensuring proper filament adhesion to the build surface, which directly impacts both print success and quality.  
 Most materials have a relatively broad optimal range for bed temperature (typically +/-5°C).  
-In general, following the manufacturer’s recommendations, maintaining a clean bed (free from oils or fingerprints), ensuring a stable [chamber temperature](#print-chamber-temperature), and having a properly leveled bed will produce reliable results.
+In general, following the manufacturer’s recommendations, maintaining a clean bed (free from oils or fingerprints), ensuring a stable [chamber temperature](chamber_temperature.md), and having a properly leveled bed will produce reliable results.
 
 - If the bed temperature is too low, the filament may fail to adhere properly, leading to warping, weak layer bonding, or complete detachment. In severe cases, the printed part may dislodge entirely and stick to the nozzle or other printer components, potentially causing mechanical damage.
 - If the bed temperature is too high, the lower layers can overheat and soften excessively, resulting in deformation such as [elephant foot](../../process/quality/elefant_foot_compensation.md).
@@ -30,4 +30,4 @@ In general, following the manufacturer’s recommendations, maintaining a clean 
 
 > [!NOTE]
 > For challenging prints involving materials with **high shrinkage** (e.g., nylons or polycarbonate) or geometries prone to warping, dialed-in settings are critical.  
-> In these cases, [chamber temperature](#print-chamber-temperature) becomes a **major factor** in preventing detachment and ensuring print success.
+> In these cases, [chamber temperature](chamber_temperature.md) becomes a **major factor** in preventing detachment and ensuring print success.

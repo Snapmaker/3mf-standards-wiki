@@ -17,7 +17,7 @@
 Layer height defines the vertical thickness of each printed layer, playing a crucial role in both print quality and printing speed.
 
 > [!NOTE]
-> You can use a variable layer height with the [Variable Layer Height](../../../print_prepare/prepare_variable_layer_height.md) feature.
+> You can use a variable layer height with the Variable Layer Height feature.
 
 Using smaller layer heights increases print time but results in:
 

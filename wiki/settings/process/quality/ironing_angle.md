@@ -13,7 +13,7 @@
 [CLI Example](../../../cli/cli_mode.md#setting-overrides): `--ironing-angle=1`.  
 
 The angle of ironing lines offset relative to the top surface solid infill direction.  
-This option can only be edited when the ironing [Pattern](#pattern) is Rectilinear.
+This option can only be edited when the ironing [Pattern](ironing_pattern.md) is Rectilinear.
 
 Commonly used ironing angle offsets are 0°, 45°, and 90°, each producing a different surface finish which will depend on your printer nozzle.
 
