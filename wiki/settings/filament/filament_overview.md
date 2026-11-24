@@ -1,7 +1,7 @@
 # Filament settings overview
 
-> Page structure follows the actual software UI (structure verified 2026-10-28; entry counts checked 2026-11-23).
-> One document per key; ✅ = content copied from the upstream OrcaSlicer wiki, 🚧 = placeholder to be completed, 🔗 = cross-reference (retraction override parameters: see printer/).
+> Page structure follows the actual software UI (structure verified 2026-10-28; entry counts checked 2026-11-24).
+> One document per key; ✅ = content copied from the upstream OrcaSlicer wiki, 🚧 = placeholder to be completed, 🔗 = cross-reference.
 
 ## Filament (`filament/`)
 
@@ -82,24 +82,24 @@
 
 ## Setting Overrides (`setting_overrides/`)
 
-- 🔗 [`filament_retraction_length`](setting_overrides/filament_retraction_length.md) (Retraction)
-- 🔗 [`filament_z_hop`](setting_overrides/filament_z_hop.md) (Retraction)
-- 🔗 [`filament_z_hop_types`](setting_overrides/filament_z_hop_types.md) (Retraction)
-- 🔗 [`filament_retract_lift_above`](setting_overrides/filament_retract_lift_above.md) (Retraction)
-- 🔗 [`filament_retract_lift_below`](setting_overrides/filament_retract_lift_below.md) (Retraction)
-- 🔗 [`filament_retract_lift_enforce`](setting_overrides/filament_retract_lift_enforce.md) (Retraction)
-- 🔗 [`filament_retraction_speed`](setting_overrides/filament_retraction_speed.md) (Retraction)
-- 🔗 [`filament_deretraction_speed`](setting_overrides/filament_deretraction_speed.md) (Retraction)
-- 🔗 [`filament_retract_restart_extra`](setting_overrides/filament_retract_restart_extra.md) (Retraction)
-- 🔗 [`filament_retraction_minimum_travel`](setting_overrides/filament_retraction_minimum_travel.md) (Retraction)
-- 🔗 [`filament_retract_when_changing_layer`](setting_overrides/filament_retract_when_changing_layer.md) (Retraction)
-- 🔗 [`filament_wipe`](setting_overrides/filament_wipe.md) (Retraction)
-- 🔗 [`filament_wipe_distance`](setting_overrides/filament_wipe_distance.md) (Retraction)
-- 🔗 [`filament_retract_before_wipe`](setting_overrides/filament_retract_before_wipe.md) (Retraction)
-- 🔗 [`filament_long_retractions_when_cut`](setting_overrides/filament_long_retractions_when_cut.md) (Retraction)
-- 🔗 [`filament_retraction_distances_when_cut`](setting_overrides/filament_retraction_distances_when_cut.md) (Retraction)
-- 🔗 [`filament_retract_length_toolchange`](setting_overrides/filament_retract_length_toolchange.md) (Retraction)
-- 🔗 [`filament_retract_restart_extra_toolchange`](setting_overrides/filament_retract_restart_extra_toolchange.md) (Retraction)
+- ✅ [`filament_retraction_length`](setting_overrides/filament_retraction_length.md) (Retraction)
+- ✅ [`filament_z_hop`](setting_overrides/filament_z_hop.md) (Retraction)
+- ✅ [`filament_z_hop_types`](setting_overrides/filament_z_hop_types.md) (Retraction)
+- ✅ [`filament_retract_lift_above`](setting_overrides/filament_retract_lift_above.md) (Retraction)
+- ✅ [`filament_retract_lift_below`](setting_overrides/filament_retract_lift_below.md) (Retraction)
+- ✅ [`filament_retract_lift_enforce`](setting_overrides/filament_retract_lift_enforce.md) (Retraction)
+- ✅ [`filament_retraction_speed`](setting_overrides/filament_retraction_speed.md) (Retraction)
+- ✅ [`filament_deretraction_speed`](setting_overrides/filament_deretraction_speed.md) (Retraction)
+- ✅ [`filament_retract_restart_extra`](setting_overrides/filament_retract_restart_extra.md) (Retraction)
+- ✅ [`filament_retraction_minimum_travel`](setting_overrides/filament_retraction_minimum_travel.md) (Retraction)
+- ✅ [`filament_retract_when_changing_layer`](setting_overrides/filament_retract_when_changing_layer.md) (Retraction)
+- ✅ [`filament_wipe`](setting_overrides/filament_wipe.md) (Retraction)
+- ✅ [`filament_wipe_distance`](setting_overrides/filament_wipe_distance.md) (Retraction)
+- ✅ [`filament_retract_before_wipe`](setting_overrides/filament_retract_before_wipe.md) (Retraction)
+- ✅ [`filament_long_retractions_when_cut`](setting_overrides/filament_long_retractions_when_cut.md) (Retraction)
+- ✅ [`filament_retraction_distances_when_cut`](setting_overrides/filament_retraction_distances_when_cut.md) (Retraction)
+- ✅ [`filament_retract_length_toolchange`](setting_overrides/filament_retract_length_toolchange.md) (Retraction)
+- ✅ [`filament_retract_restart_extra_toolchange`](setting_overrides/filament_retract_restart_extra_toolchange.md) (Retraction)
 
 ## Advanced (`advanced/`)
 
@@ -135,4 +135,4 @@
 
 - 🚧 [`filament_notes`](notes/filament_notes.md) (Notes)
 
-111 keys total: 84 copied / 9 placeholders / 18 cross-references.
+111 keys total: 102 copied / 9 placeholders / 0 cross-references.

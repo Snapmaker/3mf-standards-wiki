@@ -41,7 +41,7 @@
 | 总览页 | 覆盖范围 |
 |---|---|
 | [打印机设置参数总览](settings/printer/printer_overview.md) | 6 页面 104 键 |
-| [耗材设置参数总览](settings/filament/filament_overview.md) | 7 页面 111 键（含 18 个回抽覆盖交叉引用） |
+| [耗材设置参数总览](settings/filament/filament_overview.md) | 7 页面 111 键 |
 | [工艺设置参数总览](settings/process/process_overview.md) | 6 页面 315 键 + Plate Settings 板级键 3 个 |
 
 键页元数据行（Mode / Variable / Type / Default / Unit / Range / Aliases / Options / CLI Example）的含义见支撑页：[Mode 显示模式](general_settings/option_mode.md) · [Type 取值类型](general_settings/option_type.md) · [内置占位符变量](developer_reference/built_in_placeholders_variables.md) · [CLI 命令行](cli/cli_mode.md)
