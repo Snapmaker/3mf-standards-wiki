@@ -24,6 +24,7 @@
 - 同一专题的页面带组前缀（3MF 专题统一 `3mf_` 前缀；配置文件专题页按文件名命名，如 `project_settings_config.md`；校准类可用 `_calib` 后缀，参照上游）
 - 文件名保持全局唯一（不只在同目录内唯一），为将来迁 GitHub Wiki / mkdocs 扁平 URL 留余地
 - 文件名用英文，正文用中文
+- 正文引用变量、CLI 参数、预设字段时保留原始拼写（如 `required_nozzle_HRC`、`--required-nozzle-HRC`）；文件名、URL、索引键保持全小写，检索不区分大小写
 
 ## 内链
 

@@ -338,7 +338,7 @@ config
 | object（对象覆盖） | `model_settings.config` 对象节 | 该对象全部实例生效 |
 | part（零件覆盖） | `model_settings.config` 零件节 | 仅该零件生效 |
 
-- 现状优先级为 **part > object > project**（零件 > 对象 > 全局），该规则只存在于读取代码逻辑中，文件本身无任何声明（实测同一键在对象层与零件层并存：`wall_loops` 对象层 ×47、零件层 ×10）（待定）。
+- 读取端现状为 **part > object > project**（零件 > 对象 > 全局）；该规则只存在于读取代码逻辑中，文件本身无任何声明（实测同一键在对象层与零件层并存：`wall_loops` 对象层 ×47、零件层 ×10）。**规范性状态待定**：在团队确认例外场景前，本规范不将其写成“应”要求。
 - 覆盖键集合 = `project_settings.config` 键的子集（实测对象层 32 种、零件层 17 种，如 `layer_height`、`wall_loops`、`extruder`、`support_*`、`ironing_*`）。对象层 `extruder` 实测必现——料槽分配机制总会把它写进对象配置；它属差异键而非恒写键（代码上对象层无任何恒写 metadata 键，见 6.1.1）。
 - **键空间警示**：结构键（`name`、`matrix`、`source_*` 等）与参数覆盖键共用同一 `metadata key` 命名空间，仅靠所在位置区分语义；新增配置键**不应**与既有结构键撞名（撞名清单维护见附录 D）。
 - 本版不为局部配置时间戳留位（语义未明，待定）。
@@ -367,7 +367,7 @@ JSON，必选。头部元字段：
 | 空字符串 / 空数组 | `""`、`[]` | 与 `"nil"` 是两种"空" |
 | 元素内嵌换行 | `["0,0", "\n0.2,0.4444"]` | 解析前先 trim |
 
-**写入范围**：现状为全量 `FullPrintConfig` 键集落盘、无准入控制（序列化点见 `src/libslic3r/Format/bbs_3mf.cpp`），新增软件参数自动进包。本规范将允许写入的键集定义为**字段白名单**（初始集合 584 键 = 源码定义且落盘 553 + 落盘但 PrintConfig.cpp 未静态定义 31；后者含 18 个遗留前缀别名、12 个头文件宏声明键与 1 个 schema 版本字段，逐项见附录 D），六类字段一律禁入（SLA 树脂 / CLI 动作参数 / 运行时派生状态 / GUI 废弃候选 / 预设系统内部 / 打印主机连接），新增配置键须先登记字段字典再落盘——准入流程待定（集合与分类见附录 D）。
+**写入范围**：现状为全量 `FullPrintConfig` 键集落盘、无准入控制（序列化点见 `src/libslic3r/Format/bbs_3mf.cpp`），新增软件参数自动进包。本规范将允许写入的键集定义为**字段白名单**（初始集合 584 键 = 源码定义且落盘 553 + 落盘但 PrintConfig.cpp 未静态定义 31；后者含 18 个遗留前缀别名、12 个头文件宏声明且由 PrintConfig.cpp 循环生成配置定义的键与 1 个 schema 版本字段，逐项见附录 D），六类字段一律禁入（SLA 树脂 / CLI 动作参数 / 运行时派生状态 / GUI 废弃候选 / 预设系统内部 / 打印主机连接），新增配置键须先登记字段字典再落盘——准入流程待定（集合与分类见附录 D）。
 
 **强制禁入项（安全）**：凭据类字段（`print_host`、`print_host_webui`、`printhost_apikey`、`printhost_password`、`printhost_user`、`printhost_port`、`printhost_cafile` 共 7 项）**不应**随包分发——现状 `machine_settings_N.config` 结构性写入这些键（当前样本值为空，用户一旦配置即泄漏），序列化前**应**剔除（待定）。
 
@@ -603,7 +603,7 @@ JSON，条件出现：仅当 3mf 内对官方预设做了修改并保存为项�
 
 **字典状态**：`sample_observed` 只表示样本中出现，不等于批准写入。当前 584 项白名单候选的 `approval` 均为 `pending`（待维护者确认批准写入与适用版本）；25 项 GUI / 废弃候选为 `pending_review`；其余五类（208 项）为 `banned_draft`。只有 `approved` 项可作为写入白名单依据。
 
-**白名单初始集合**：553 项"源码定义且样本落盘" + 31 项"落盘但 PrintConfig.cpp 未静态定义" = 18 项遗留前缀别名（`filament_*` 落盘名 ↔ 无前缀源码定义，如 `filament_retraction_length` ↔ `retraction_length`）+ 12 项头文件宏声明键（`machine_max_{acceleration,jerk,speed}_{x,y,z,e}`）+ 1 项 schema 版本字段（`project_schema_version`）。别名映射的维护机制与新增参数的统一别名规则待定。
+**白名单初始集合**：553 项"源码定义且样本落盘" + 31 项"落盘但 PrintConfig.cpp 未静态定义" = 18 项遗留前缀别名（`filament_*` 落盘名 ↔ 无前缀源码定义，如 `filament_retraction_length` ↔ `retraction_length`）+ 12 项头文件宏声明、由 PrintConfig.cpp 循环生成配置定义的键（`machine_max_{acceleration,jerk,speed}_{x,y,z,e}`，静态默认见字段字典）+ 1 项 schema 版本字段（`project_schema_version`）。别名映射的维护机制与新增参数的统一别名规则待定。
 
 **六类禁入**（源码定义但不允许进项目文件）：
 
