@@ -7409,8 +7409,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "5000, 5000",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7420,7 +7420,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_acceleration_e.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_acceleration_extruding",
@@ -7482,8 +7482,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "1000, 1000",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7493,7 +7493,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_acceleration_x.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_acceleration_y",
@@ -7501,8 +7501,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "1000, 1000",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7512,7 +7512,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_acceleration_y.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_acceleration_z",
@@ -7520,8 +7520,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "500, 200",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7531,7 +7531,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_acceleration_z.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_jerk_e",
@@ -7539,8 +7539,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "2.5, 2.5",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7550,7 +7550,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_jerk_e.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_jerk_x",
@@ -7558,8 +7558,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "10, 10",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7569,7 +7569,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_jerk_x.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_jerk_y",
@@ -7577,8 +7577,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "10, 10",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7588,7 +7588,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_jerk_y.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_jerk_z",
@@ -7596,8 +7596,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "0.2, 0.4",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7607,7 +7607,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_jerk_z.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_junction_deviation",
@@ -7633,8 +7633,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "120, 120",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7644,7 +7644,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_speed_e.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_speed_x",
@@ -7652,8 +7652,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "500, 200",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7663,7 +7663,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_speed_x.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_speed_y",
@@ -7671,8 +7671,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "500, 200",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7682,7 +7682,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_speed_y.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_max_speed_z",
@@ -7690,8 +7690,8 @@
       "alias_kind": "macro_declared",
       "file": "project_settings.config",
       "type": "Float list",
-      "default_status": "none",
-      "default_value": null,
+      "default_status": "static",
+      "default_value": "12, 12",
       "category": "whitelist_candidate",
       "sample_observed": true,
       "source_defined": false,
@@ -7701,7 +7701,7 @@
       "approval": "pending",
       "page": "wiki/settings/printer/motion_ability/machine_max_speed_z.md",
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "头文件宏声明；默认值由预设提供"
+      "note": "头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供"
     },
     {
       "key": "machine_min_extruding_rate",
@@ -10704,7 +10704,7 @@
       "approval": "pending",
       "page": null,
       "approval_note": "批准写入与适用版本待维护者确认",
-      "note": "2.4.0 起落盘；缺失按 legacy 处理"
+      "note": "2.4.0 起落盘；写入端固定写 1；缺失按 legacy 处理"
     },
     {
       "key": "purge_in_prime_tower",

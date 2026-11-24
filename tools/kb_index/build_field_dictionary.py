@@ -660,7 +660,10 @@ def import_v0(v0_path: Path, metadata_path: Path) -> list[FieldRecord]:
         if alias_kind == 'legacy_prefix':
             notes.append('遗留前缀别名；映射机制待确认')
         if alias_kind == 'macro_declared':
-            notes.append('头文件宏声明；默认值由预设提供')
+            if default_status == 'static':
+                notes.append('头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供')
+            else:
+                notes.append('头文件宏声明；默认值由预设提供')
         if key == 'required_nozzle_HRC':
             notes.append('落盘名保留大写 HRC；键页文件名为小写；v0/metadata 记为源码定义')
         if key == 'project_schema_version':

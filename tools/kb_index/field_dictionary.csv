@@ -371,22 +371,22 @@ local_z_wipe_tower_purge_lines,,,project_settings.config,Float,static,3.0,whitel
 long_retractions_when_cut,,,project_settings.config,Boolean list,static,false,whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
 machine_end_gcode,,,project_settings.config,Text,static,M104 S0 ; turn off temperature\nG28 X0  ; home X axis\nM84     ; disable motors\n,whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
 machine_load_filament_time,,,project_settings.config,Float,static,0.0,whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
-machine_max_acceleration_e,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
+machine_max_acceleration_e,,macro_declared,project_settings.config,Float list,static,"5000, 5000",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
 machine_max_acceleration_extruding,,,project_settings.config,Float list,static,"1500, 1250",whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
 machine_max_acceleration_retracting,,,project_settings.config,Float list,static,"1500, 1250",whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
 machine_max_acceleration_travel,,,project_settings.config,Float list,static,"0, 0",whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
-machine_max_acceleration_x,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
-machine_max_acceleration_y,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
-machine_max_acceleration_z,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
-machine_max_jerk_e,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
-machine_max_jerk_x,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
-machine_max_jerk_y,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
-machine_max_jerk_z,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
+machine_max_acceleration_x,,macro_declared,project_settings.config,Float list,static,"1000, 1000",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
+machine_max_acceleration_y,,macro_declared,project_settings.config,Float list,static,"1000, 1000",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
+machine_max_acceleration_z,,macro_declared,project_settings.config,Float list,static,"500, 200",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
+machine_max_jerk_e,,macro_declared,project_settings.config,Float list,static,"2.5, 2.5",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
+machine_max_jerk_x,,macro_declared,project_settings.config,Float list,static,"10, 10",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
+machine_max_jerk_y,,macro_declared,project_settings.config,Float list,static,"10, 10",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
+machine_max_jerk_z,,macro_declared,project_settings.config,Float list,static,"0.2, 0.4",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
 machine_max_junction_deviation,,,project_settings.config,Float list,static,"0, 0",whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
-machine_max_speed_e,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
-machine_max_speed_x,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
-machine_max_speed_y,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
-machine_max_speed_z,,macro_declared,project_settings.config,Float list,none,,whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；默认值由预设提供
+machine_max_speed_e,,macro_declared,project_settings.config,Float list,static,"120, 120",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
+machine_max_speed_x,,macro_declared,project_settings.config,Float list,static,"500, 200",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
+machine_max_speed_y,,macro_declared,project_settings.config,Float list,static,"500, 200",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
+machine_max_speed_z,,macro_declared,project_settings.config,Float list,static,"12, 12",whitelist_candidate,落盘字段,true,false,macro,,,pending,批准写入与适用版本待维护者确认,头文件宏声明；配置定义由 PrintConfig.cpp 动态生成，默认值由源码提供
 machine_min_extruding_rate,,,project_settings.config,Float list,static,"0, 0",whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
 machine_min_travel_rate,,,project_settings.config,Float list,static,"0, 0",whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
 machine_pause_gcode,,,project_settings.config,Text,empty,,whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
@@ -552,7 +552,7 @@ printhost_user,,,project_settings.config,Text,empty,,banned_host_credentials,打
 printing_by_object_gcode,,,project_settings.config,Text,empty,,whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
 printing_filament_types,,,project_settings.config,Text,unknown,,banned_runtime,运行时派生状态,false,true,static,,,banned_draft,草案六类禁入；随规范定稿确认,
 process_flow_support,,,project_settings.config,Text list,static,FLOW_MODE_STANDARD,whitelist_candidate,落盘字段,true,true,static,2.4.0,,pending,批准写入与适用版本待维护者确认,2.4.0 样本新增；适用版本待确认
-project_schema_version,,schema_version,project_settings.config,Integer,none,,whitelist_candidate,落盘字段,true,false,runtime,2.4.0,,pending,批准写入与适用版本待维护者确认,2.4.0 起落盘；缺失按 legacy 处理
+project_schema_version,,schema_version,project_settings.config,Integer,none,,whitelist_candidate,落盘字段,true,false,runtime,2.4.0,,pending,批准写入与适用版本待维护者确认,2.4.0 起落盘；写入端固定写 1；缺失按 legacy 处理
 purge_in_prime_tower,,,project_settings.config,Boolean,static,true,whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
 raft_contact_distance,,,project_settings.config,Float,static,0.1,whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
 raft_expansion,,,project_settings.config,Float,static,1.5,whitelist_candidate,落盘字段,true,true,static,,,pending,批准写入与适用版本待维护者确认,
